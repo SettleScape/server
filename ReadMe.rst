@@ -17,5 +17,5 @@ Copyright
 
 Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| Start by running ``./rebuild.sh``.
+| Get the latest version of the server JAR by running ``./rebuild.sh``.
 | Once that finishes, run ``./start.sh``.
