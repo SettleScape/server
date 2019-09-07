@@ -12,11 +12,7 @@
 **/.classpath
 **/.factorypath
 **/.project
-**/.vscode/*
-!**/.vscode/settings.json
-!**/.vscode/tasks.json
-!**/.vscode/launch.json
-!**/.vscode/extensions.json
+**/.vscode/
 
 ## System files
 **/.directory
