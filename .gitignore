@@ -1,11 +1,15 @@
 
-## Savefiles
-/world/
-/world_nether/
-/world_the_end/
+## Dynamic
+/banned-ips.json
+/banned-players.json
+/eula.txt
+/ops.json
+/usercache.json
+/whitelist.json
+/worlds/
 
 ## Binaries
-**/build/
+/build/
 **.jar
 
 ## IDEs

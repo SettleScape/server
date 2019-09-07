@@ -17,5 +17,5 @@ Copyright
 
 Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-| Start by running `./rebuild.sh`.
-| Once that finishes, run `./start.sh`.
+| Start by running ``./rebuild.sh``.
+| Once that finishes, run ``./start.sh``.
