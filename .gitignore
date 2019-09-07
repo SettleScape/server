@@ -1,0 +1,33 @@
+
+## Savefiles
+/world/
+/world_nether/
+/world_the_end/
+
+## Binaries
+**/build/
+**.jar
+
+## IDEs
+**/.classpath
+**/.factorypath
+**/.project
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
+## System files
+**/.directory
+**/.DS_Store
+**/desktop.ini
+**/thumbs.db
+
+## Misc
+**/logs/
+**/tmp/
+**/*.lock
+**/*.log
+**/*.swp
+**/*.tmp

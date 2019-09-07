@@ -1,0 +1,22 @@
+root=true
+
+## Defaults
+## -----------------------------------------------------------------------------
+[*]
+
+## Tabulation
+indent_style = tab
+indent_size  = 4
+
+## Lines
+end_of_line = lf
+insert_final_newline = true
+max_line_length = off
+
+## Other
+charset = utf-8
+
+## Files that require 2-space indents
+## -----------------------------------------------------------------------------
+[{*.md,*.rst,*.yml}]
+indent_size = 2
