@@ -50,43 +50,31 @@ protections:
             autoRegister: private
         trapped_chest:
             enabled: true
-            autoRegister: private
         furnace:
             enabled: true
-            autoRegister: private
         dispenser:
             enabled: true
-            autoRegister: private
         dropper:
             enabled: true
-            autoRegister: private
         barrel:
             enabled: true
             autoRegister: private
         blast_furnace:
             enabled: true
-            autoRegister: private
         cartography_table:
             enabled: true
-            autoRegister: private
         composter:
             enabled: true
-            autoRegister: private
         grindstone:
             enabled: true
-            autoRegister: private
         lectern:
             enabled: true
-            autoRegister: private
         loom:
             enabled: true
-            autoRegister: private
         smoker:
             enabled: true
-            autoRegister: private
         stonecutter:
             enabled: true
-            autoRegister: private
         shulker_box:
             enabled: true
             autoRegister: private
@@ -142,18 +130,25 @@ protections:
             enabled: true
         iron_door:
             enabled: true
+            autoRegister: private
         oak_door:
             enabled: true
+            autoRegister: private
         spruce_door:
             enabled: true
+            autoRegister: private
         birch_door:
             enabled: true
+            autoRegister: private
         jungle_door:
             enabled: true
+            autoRegister: private
         acacia_door:
             enabled: true
+            autoRegister: private
         dark_oak_door:
             enabled: true
+            autoRegister: private
         iron_trapdoor:
             enabled: true
         oak_trapdoor:
@@ -170,16 +165,22 @@ protections:
             enabled: true
         oak_fence_gate:
             enabled: true
+            autoRegister: private
         spruce_fence_gate:
             enabled: true
+            autoRegister: private
         birch_fence_gate:
             enabled: true
+            autoRegister: private
         jungle_fence_gate:
             enabled: true
+            autoRegister: private
         acacia_fence_gate:
             enabled: true
+            autoRegister: private
         dark_oak_fence_gate:
             enabled: true
+            autoRegister: private
         white_banner:
             enabled: true
         orange_banner:

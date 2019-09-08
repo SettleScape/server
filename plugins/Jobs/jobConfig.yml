@@ -1,14 +1,14 @@
 # Jobs configuration.
 #
 # Edited by roracle to include 1.13 items and item names, prepping for 1.14 as well.
-# 
+#
 # Stores information about each job.
 #
 # NOTE: When having multiple jobs, both jobs will give the income payout to the player
 # even if they give the pay for one action (make the configurations with this in mind)
 # and each job will get the respective experience.
 #
-# e.g If player has 2 jobs where job1 gives 10 income and experience for killing a player 
+# e.g If player has 2 jobs where job1 gives 10 income and experience for killing a player
 # and job2 gives 5 income and experience for killing a player. When the user kills a player
 # they will get 15 income and job1 will gain 10 experience and job2 will gain 5 experience.
 
@@ -104,7 +104,7 @@ Jobs:
       # Quest identification. Can be any ONE word or number or both of them. This doesn't have any real meaning but it can't repeat.
       1:
         # Quest name used for quests list, don't forget to enclose it with " "
-        Name: "Break Oak wood"  
+        Name: "Break Oak wood"
         # List of objectives this quest will require for it to count as finished
         # you can have as many objectives as you want
         Objectives:
@@ -181,7 +181,7 @@ Jobs:
     # To get a list of all available block types, check the
     # bukkit JavaDocs for a complete list of block types
     # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    # 
+    #
     # For kill tags (Kill and custom-kill), the name is the name of the
     # mob.
     # To get a list of all available entity types, check the
@@ -576,7 +576,7 @@ Jobs:
   Woodcutter:
     fullname: Woodcutter
     shortname: W
-    description: Earns money felling and planting trees
+    description: §7Earns money felling and planting trees
     ChatColour: GREEN
     chat-display: full
     max-level: 200
@@ -584,23 +584,10 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Woodpecker"
-        Objectives:
-        - Break;oak_log;50
-        - Break;birch_log;50
-        - Break;jungle_log;50
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Break logs and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 17
+      Id: 258
       Data: 2
     Break:
       #logs - natural; gain income, points, and exp
@@ -692,7 +679,7 @@ Jobs:
   Miner:
     fullname: Miner
     shortname: M
-    description: Earns money mining minerals and ores.
+    description: §7Earns money mining minerals and ores.
     ChatColour: DARK_GRAY
     chat-display: full
     max-level: 200
@@ -701,23 +688,10 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1    
-    Quests:
-      1:
-        Name: "DarkOne"
-        Objectives:
-        - Break;stone;50
-        - Break;granite;50
-        - Break;sandstone;50
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Break blocks and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 270
+      Id: 257
       Data: 0
     TNTBreak:
       stone:
@@ -887,9 +861,9 @@ Jobs:
         experience: 7.5
   Builder:
     fullname: Builder
-    shortname: B
-    description: Earns money for building structures.
-    ChatColour: WHITE
+    shortname: U
+    description: §7Earns money for building structures.
+    ChatColour: RED
     chat-display: full
     max-level: 200
     #slots: 10
@@ -897,25 +871,36 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Architect"
-        Objectives:
-        - Place;spruce_planks;50
-        - Place;birch_planks;50
-        - Place;wool;50
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Place blocks and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
       Item: brick_stairs
     Place:
       #new 1.13 blocks
+      oak_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      spruce_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      birch_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      jungle_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      acacia_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      dark_oak_log:
+        income: 1.75
+        points: 1.75
+        experience: 2
       stripped_oak_wood:
         income: 2
         points: 2
@@ -964,6 +949,14 @@ Jobs:
         income: 2
         points: 2
         experience: 3
+      dirt:
+        income: .25
+        points: .25
+        experience: 1
+      sand:
+        income: .25
+        points: .25
+        experience: 1
       stone:
         income: 1.3
         points: 1.3
@@ -1641,11 +1634,11 @@ Jobs:
         income: 7.5
         points: 7.5
         experience: 7.5
-  Digger:
-    fullname: Digger
-    shortname: D
-    description: Earns money for terraforming the world.
-    ChatColour: GOLD
+  Excavator:
+    fullname: Excavator
+    shortname: E
+    description: §7Earns money for terraforming the world.
+    ChatColour: DARK_AQUA
     chat-display: full
     max-level: 200
     #slots: 10
@@ -1653,23 +1646,10 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Ground Mole"
-        Objectives:
-        - Break;dirt;50
-        - Break;grass_block;50
-        - Break;gravel;50
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Dig blocks and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 269
+      Id: 256
       Data: 0
     Break:
       red_sand:
@@ -1711,10 +1691,10 @@ Jobs:
         points: 10.0
         experience: 10.0
   Farmer:
-    fullname: Farmer
-    shortname: Fa
-    description: Earns money farming crops.
-    ChatColour: BLUE
+    fullname: Herbalist
+    shortname: H
+    description: §7Earns money farming crops.
+    ChatColour: DARK_GREEN
     chat-display: full
     max-level: 200
     #slots: 10
@@ -1722,23 +1702,10 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Regular Joe"
-        Objectives:
-        - Breed;Sheep;10
-        - Shear;White;10
-        - Milk;Cow;3
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Be a farmer and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Item: wooden_hoe
+      Item: iron_hoe
     Tame:
       Wolf:
         income: 5.0
@@ -2043,6 +2010,14 @@ Jobs:
         income: 1
         points: 1
         experience: 1.0
+      pumpkin:
+        income: .5
+        points: .5
+        experience: 1.0
+      melon:
+        income: .5
+        points: .5
+        experience: 1.0
     Place:
       #new 1.13 blocks
       dead_tube_coral_fan:
@@ -2095,6 +2070,10 @@ Jobs:
         income: 1
         points: 1
         experience: 1
+      pumpkin-7:
+        income: 0.5
+        points: 0.5
+        experience: 1.0
       melon_stem:
         income: 1
         points: 1
@@ -2107,29 +2086,16 @@ Jobs:
   Hunter:
     fullname: Hunter
     shortname: H
-    description: Earns money killing animals and monsters.
-    ChatColour: RED
+    description: §7Earns money killing animals and monsters.
+    ChatColour: DARK_RED
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Predator"
-        Objectives:
-        - Kill;Wolf;10
-        - Kill;Creeper;3
-        - Kill;Skeleton;10
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Kill everything what moves and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
       Id: 261
       Data: 0
@@ -2265,8 +2231,8 @@ Jobs:
         experience: 7.5
   Explorer:
     fullname: Explorer
-    shortname: Ex
-    description: Earns money from exploring map.
+    shortname: X
+    description: §7Earns money from exploring map.
     ChatColour: AQUA
     chat-display: full
     max-level: 200
@@ -2274,35 +2240,24 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Galileo"
-        Objectives:
-        - Explore;1;30
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Go on a trip and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
       Id: 301
       Data: 0
     Explore:
       1:
-        income: 5.0
-        points: 5
-        experience: 5.0
+        income: 3.5
+        points: 3.5
+        experience: 3.5
       2:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
+        income: 2
+        points: 2
+        experience: 2
       3:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
+        income: 1
+        points: 1
+        experience: 1
       4:
         income: 0.5
         points: 0.5
@@ -2317,30 +2272,17 @@ Jobs:
         experience: 7.5
   Crafter:
     fullname: Crafter
-    shortname: Cr
-    description: Earns money from crafting items.
-    ChatColour: RED
+    shortname: C
+    description: §7Earns money from crafting items.
+    ChatColour: GOLD
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Master Crafter"
-        Objectives:
-        - Craft;dispenser;10
-        - Craft;chest;10
-        - Craft;ladder;30
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Craft and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
       Item: crafting_table
     Craft:
@@ -2840,10 +2782,6 @@ Jobs:
         income: 7.0
         points: 7.0
         experience: 7.0
-      cake:
-        income: 8.0
-        points: 8.0
-        experience: 10.0
       bed:
         income: 3.0
         points: 3.0
@@ -2856,11 +2794,6 @@ Jobs:
         income: 7.0
         points: 7.0
         experience: 7.0
-    Smelt:
-      cooked_chicken:
-        income: 3.0
-        points: 3.0
-        experience: 3.0
     Kill:
       Player:
         income: 7.5
@@ -2868,30 +2801,17 @@ Jobs:
         experience: 7.5
   Fisherman:
     fullname: Fisherman
-    shortname: Fi
-    description: Earns money from fishing.
-    ChatColour: AQUA
+    shortname: F
+    description: §7Earns money from fishing.
+    ChatColour: BLUE
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Catcher"
-        Objectives:
-        - Fish;cod;2
-        - Fish;salmon;2
-        - Fish;tropical_fish;2
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Catch fish and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
       Item: fishing_rod
     Fish:
@@ -2918,32 +2838,19 @@ Jobs:
         experience: 7.5
   Weaponsmith:
     fullname: Weaponsmith
-    shortname: W
-    description: Earns money from crafting and repairing weapons.
-    ChatColour: DARK_PURPLE
+    shortname: S
+    description: §7Earns money from crafting and repairing weapons.
+    ChatColour: GRAY
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "War never ends"
-        Objectives:
-        - Craft;wooden_sword;2
-        - Craft;iron_chestplate;2
-        - Craft;gold_leggings;2
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Craft weapons and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 58
+      Id: 145
       Data: 0
     Craft:
       wooden_sword:
@@ -3070,33 +2977,20 @@ Jobs:
         experience: 20
   Brewer:
     fullname: Brewer
-    shortname: Br
-    description: Earns money brewing potions.
-    ChatColour: LIGHT_PURPLE
+    shortname: B
+    description: §7Earns money brewing potions.
+    ChatColour: DARK_PURPLE
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Heavy drinker"
-        Objectives:
-        - Brew;glowstone_dust;2
-        - Brew;redstone;2
-        - Brew;sugar;2
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Brew some stuff and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 379
-      Data: 0
+      Id: 374
+      Data: 2
     Brew:
       nether_wart:
         income: 6.0
@@ -3168,9 +3062,9 @@ Jobs:
         experience: 12.0
   Enchanter:
     fullname: Enchanter
-    shortname: E
-    description: Earns money enchanting weapons.
-    ChatColour: DARK_BLUE
+    shortname: N
+    description: §7Earns money enchanting weapons.
+    ChatColour: LIGHT_PURPLE
     chat-display: full
     max-level: 200
     #slots: 10
@@ -3178,23 +3072,10 @@ Jobs:
     income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 10
-    maxDailyQuests: 1
-    Quests:
-      1:
-        Name: "Harry the wizard"
-        Objectives:
-        - Enchant;wood_sword;1
-        - Enchant;diamond_sword;1
-        - Enchant;ARROW_DAMAGE;1
-        RewardCommands:
-        - "money give [playerName] 100"
-        - "msg [playerName] Completed quest!"
-        RewardDesc:
-        - "Be a wizard and get money"
-        - "Get 100 for this!"
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
     Gui:
-      Id: 116
+      Id: 403
       Data: 0
     Enchant:
       wood_sword:
@@ -3352,9 +3233,91 @@ Jobs:
       #  income: 20.0
       #  points: 20.0
       #  experience: 20.0
+  Chef:
+    fullname: Chef
+    shortname: Chef
+    description: §7Earns money cooking food.
+    ChatColour: White
+    chat-display: full
+    max-level: 200
+    #slots: 10
+    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    rejoinCooldown: 3600
+    Gui:
+      Id: 354
+      Data: 0
+    Craft:
+      cake:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      pumpkin_pie:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      bread:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      mushroom_stew:
+        income: 2
+        points: 2
+        experience: 2
+      beetroot_soup:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      rabbit_stew:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      golden_apple:
+        income: 20.0
+        points: 20.0
+        experience: 25.0
+      enchanted_golden_apple:
+        income: 200.0
+        points: 200.0
+        experience: 250.0
+    Smelt:
+      cooked_chicken:
+        income: 1.25
+        points: 1.25
+        experience: 1.25
+      steak:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cooked_porkchop:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cooked_rabbit:
+        income: 1.75
+        points: 1.75
+        experience: 1.75
+      cooked_mutton:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cooked_cod:
+        income: 1.25
+        points: 1.25
+        experience: 1.25
+      cooked_salmon:
+        income: 1.25
+        points: 1.25
+        experience: 1.25
+      baked_potato:
+        income: 1.25
+        points: 1.25
+        experience: 1.25
   None:
     fullname: None
-    shortname: N
+    shortname: /
     ChatColour: WHITE
     chat-display: none
     #max-level: 10

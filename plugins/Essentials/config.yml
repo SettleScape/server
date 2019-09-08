@@ -34,7 +34,7 @@ max-nick-length: 15
 
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
-ignore-colors-in-max-nick-length: false
+ignore-colors-in-max-nick-length: true
 
 # When this option is enabled, display names for hidden users will not be shown. This prevents players from being
 # able to see that they are online while vanished.
@@ -45,7 +45,7 @@ change-displayname: true
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
-#change-playerlist: true
+change-playerlist: true
 
 # When EssentialsChat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
@@ -59,7 +59,7 @@ change-displayname: true
 #add-prefix-in-playerlist: true
 
 # When this option is enabled, player suffixes will be shown in the playerlist.
-# This feature only works for Minecraft version 1.8 and higher. 
+# This feature only works for Minecraft version 1.8 and higher.
 # This value of change-playerlist has to be true
 #add-suffix-in-playerlist: true
 
@@ -76,7 +76,7 @@ force-disable-teleport-safety: false
 teleport-cooldown: 0
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
-teleport-delay: 0
+teleport-delay: 2
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
@@ -86,7 +86,7 @@ teleport-invulnerability: 4
 teleport-to-center: true
 
 # The delay, in seconds, required between /heal or /feed attempts.
-heal-cooldown: 60
+heal-cooldown: 180
 
 # Near Radius
 # The default radius with /near
@@ -95,7 +95,7 @@ near-radius: 200
 
 # What to prevent from /item and /give.
 # e.g item-spawn-blacklist: 10,11,46
-item-spawn-blacklist:
+item-spawn-blacklist: command_block
 
 # Set this to true if you want permission based item spawn rules.
 # Note: The blacklist above will be ignored then.
@@ -125,7 +125,7 @@ drop-items-if-full: false
 
 # Essentials Mail Notification
 # Should we notify players if they have no new mail?
-notify-no-new-mail: true
+notify-no-new-mail: false
 
 # Specifies the duration (in seconds) between each time a player is notified of mail they have.
 # Useful for servers with a lot of mail traffic.
@@ -289,7 +289,7 @@ use-bukkit-permissions: true
 
 # When this option is enabled, one-time use kits (ie. delay < 0) will be
 # removed from the /kit list when a player can no longer use it
-skip-used-one-time-kits-from-kit-list: false
+skip-used-one-time-kits-from-kit-list: true
 
 # Determines the functionality of the /createkit command.
 # If this is true, /createkit will give the user a link with the kit code.
@@ -378,7 +378,7 @@ debug: false
 #locale: en
 
 # Turn off god mode when people leave the server.
-remove-god-on-disconnect: false
+remove-god-on-disconnect: true
 
 # Auto-AFK
 # After this timeout in seconds, the user will be set as AFK.
@@ -390,7 +390,7 @@ auto-afk: 300
 # After this timeout in seconds, the user will be kicked from the server.
 # essentials.afk.kickexempt node overrides this feature.
 # Set to -1 for no timeout.
-auto-afk-kick: -1
+auto-afk-kick: 1800
 
 # Set this to true, if you want to freeze the player, if the player is AFK.
 # Other players or monsters can't push the player out of AFK mode then.
@@ -400,7 +400,7 @@ freeze-afk-players: false
 
 # When the player is AFK, should he be able to pickup items?
 # Enable this, when you don't want people idling in mob traps.
-disable-item-pickup-while-afk: false
+disable-item-pickup-while-afk: true
 
 # This setting controls if a player is marked as active on interaction.
 # When this setting is false, the player would need to manually un-AFK using the /afk command.
@@ -416,7 +416,7 @@ cancel-afk-on-move: true
 # Users with the permission node essentials.sleepingignored will always be ignored.
 sleep-ignores-afk-players: true
 
-# Set the player's list name when they are AFK. This is none by default which specifies that Essentials 
+# Set the player's list name when they are AFK. This is none by default which specifies that Essentials
 # should not interfere with the AFK player's list name.
 # You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
 afk-list-name: "none"
@@ -468,7 +468,7 @@ unsafe-enchantments: false
 
 #Do you want Essentials to keep track of previous location for /back in the teleport listener?
 #If you set this to true any plugin that uses teleport will have the previous location registered.
-register-back-in-listener: false
+register-back-in-listener: true
 
 #Delay to wait before people can cause attack damage after logging in.
 login-attack-delay: 5
@@ -498,7 +498,7 @@ last-message-reply-recipient: true
 last-message-reply-recipient-timeout: 180
 
 # Toggles whether or not clicking mobs with a milk bucket turns them into a baby.
-milk-bucket-easter-egg: true
+milk-bucket-easter-egg: false
 
 # Toggles whether or not the fly status message should be sent to players on join
 send-fly-enable-on-join: true
@@ -524,7 +524,7 @@ command-cooldowns:
 #  '*': 5 # 5 Second cooldown on all commands
 
 # Whether command cooldowns should be persistent past server shutdowns
-command-cooldown-persistence: true
+command-cooldown-persistence: false
 
 # Whether NPC balances should be listed in balance ranking features such as /balancetop.
 # NPC balances can include features like factions from FactionsUUID plugin.
@@ -549,7 +549,7 @@ teleport-back-when-freed-from-jail: true
 
 # Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
 # Set to 0 for no timeout.
-tpa-accept-cancellation: 120
+tpa-accept-cancellation: 30
 
 # Allow players to set hats by clicking on their helmet slot.
 allow-direct-hat: true
@@ -562,7 +562,7 @@ allow-world-in-broadcastworld: true
 # Consider water blocks as "safe," therefore allowing players to teleport
 # using commands such as /home or /spawn to a location that is occupied
 # by water blocks
-is-water-safe: false
+is-water-safe: true
 
 # Should the usermap try to sanitise usernames before saving them?
 # You should only change this to false if you use Minecraft China.
@@ -590,9 +590,12 @@ world-home-permissions: false
 # Create the 'home-rank' below, and give the matching permission: essentials.sethome.multiple.<home-rank>
 # For more information, visit http://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
-  default: 3
-  vip: 5
-  staff: 10
+  default: 1
+  wanderer: 1
+  traveler: 2
+  settler: 3
+  explorer: 4
+  pathfinder: 5
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
@@ -627,7 +630,7 @@ command-costs:
   #kit-tools: 1500
 
 # Set this to a currency symbol you want to use.
-# Remember, if you want to use special characters in this document, 
+# Remember, if you want to use special characters in this document,
 # such as accented letters, you MUST save the file as UTF-8, not ANSI.
 currency-symbol: '$'
 
@@ -643,7 +646,7 @@ min-money: -10000
 economy-log-enabled: false
 
 # Minimum acceptable amount to be used in /pay.
-minimum-pay-amount: 0.001
+minimum-pay-amount: 1.0
 
 # The format of currency, excluding symbols. See currency-symbol-format-locale for symbol configuration.
 #
@@ -721,27 +724,27 @@ protect:
     water-flow: false
     water-bucket-flow: false
     fire-spread: true
-    lava-fire-spread: true
+    lava-fire-spread: false
     flint-fire: false
-    lightning-fire-spread: true
+    lightning-fire-spread: false
     portal-creation: false
-    tnt-explosion: false
+    tnt-explosion: true
     tnt-playerdamage: false
-    tnt-minecart-explosion: false
+    tnt-minecart-explosion: true
     tnt-minecart-playerdamage: false
-    fireball-explosion: false
+    fireball-explosion: true
     fireball-fire: false
     fireball-playerdamage: false
-    witherskull-explosion: false
+    witherskull-explosion: true
     witherskull-playerdamage: false
-    wither-spawnexplosion: false
-    wither-blockreplace: false
+    wither-spawnexplosion: true
+    wither-blockreplace: true
     creeper-explosion: false
     creeper-playerdamage: false
-    creeper-blockdamage: false
+    creeper-blockdamage: true
     enderdragon-blockdamage: true
-    enderman-pickup: false
-    villager-death: false
+    enderman-pickup: true
+    villager-death: true
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
@@ -847,26 +850,26 @@ protect:
   # For which block types would you like to be alerted?
   # You can find a list of items at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html.
   alert:
-    on-placement: LAVA,TNT,LAVA_BUCKET
-    on-use: LAVA_BUCKET
-    on-break:
+    on-placement: TNT,COMMAND_BLOCK
+    on-use:
+    on-break: BEDROCK
 
   blacklist:
 
     # Which blocks should people be prevented from placing?
-    placement: LAVA,TNT,LAVA_BUCKET
+    placement: LAVA,LAVA_BUCKET
 
     # Which items should people be prevented from using?
     usage: LAVA_BUCKET
 
     # Which blocks should people be prevented from breaking?
-    break:
+    break: BEDROCK
 
     # Which blocks should not be pushed by pistons?
     piston:
 
     # Which blocks should not be dispensed by dispensers
-    dispenser:
+    dispenser: LAVA,LAVA_BUCKET
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -881,16 +884,16 @@ newbies:
   # If so, use this format, replacing {DISPLAYNAME} with the player name.
   # If not, set to ''
   #announce-format: ''
-  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  announce-format: '&d{DISPLAYNAME}&d has just logged in for the first time!'
 
   # When we spawn for the first time, which spawnpoint do we use?
   # Set to "none" if you want to use the spawn point of the world.
-  spawnpoint: newbies
+  spawnpoint: default
 
   # Do we want to give users anything on first join? Set to '' to disable
   # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
   #kit: ''
-  kit: tools
+  kit: starter
 
 # What priority should we use for handling respawns?
 # Set this to none, if you want vanilla respawning behaviour.
@@ -905,13 +908,13 @@ respawn-listener-priority: high
 spawn-join-listener-priority: high
 
 # When users die, should they respawn at their first home or bed, instead of the spawnpoint?
-respawn-at-home: false
+respawn-at-home: true
 
 # Teleport all joining players to the spawnpoint
 spawn-on-join: false
 # The following value of `guests` states that all players in group `guests` will be teleported to spawn when joining.
 #spawn-on-join: guests
-# The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining. 
+# The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining.
 #spawn-on-join:
 #- guests
 #- admin

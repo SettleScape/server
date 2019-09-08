@@ -2,10 +2,10 @@
 # As you can see, there's actually not that much to configure without any plugins.
 # For a reference for any variable inside this file, check out the Bukkit Wiki at
 # https://www.spigotmc.org/go/bukkit-yml
-#
+# 
 # If you need help on this file, feel free to join us on irc or leave a message
 # on the forums asking for advice.
-#
+# 
 # IRC: #spigot @ irc.spi.gt
 #    (If this means nothing to you, just go to https://www.spigotmc.org/go/irc )
 # Forums: https://www.spigotmc.org/
@@ -14,34 +14,34 @@
 
 aliases: now-in-commands.yml
 auto-updater:
-    enabled: false
+  enabled: false
 database:
-    username: bukkit
-    driver: org.sqlite.JDBC
-    url: jdbc:sqlite:{DIR}{NAME}.db
+  username: bukkit
+  driver: org.sqlite.JDBC
+  url: jdbc:sqlite:{DIR}{NAME}.db
 settings:
-    minimum-api: none
-    permissions-file: permissions.yml
-    shutdown-message: Server offline
-    allow-end: true
-    use-exact-login-location: false
-    world-container: worlds
-    update-folder: update
-    plugin-profiling: false
-    query-plugins: false
-    deprecated-verbose: default
-    warn-on-overload: true
-    connection-throttle: 4000
-    ping-packet-limit: 100
+  minimum-api: none
+  permissions-file: permissions.yml
+  shutdown-message: Server offline
+  allow-end: true
+  use-exact-login-location: false
+  world-container: worlds
+  update-folder: update
+  plugin-profiling: false
+  query-plugins: false
+  deprecated-verbose: default
+  warn-on-overload: true
+  connection-throttle: 4000
+  ping-packet-limit: 100
 chunk-gc:
-    period-in-ticks: 600
-    load-threshold: 1
+  period-in-ticks: 600
+  load-threshold: 1
 ticks-per:
-    animal-spawns: 400
-    monster-spawns: 1
-    autosave: 6000
+  animal-spawns: 400
+  monster-spawns: 1
+  autosave: 6000
 spawn-limits:
-    monsters: 72
-    animals: 12
-    water-animals: 16
-    ambient: 16
+  monsters: 72
+  animals: 12
+  water-animals: 16
+  ambient: 16

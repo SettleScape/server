@@ -1,4 +1,4 @@
-# 
+#
 # AuctionHouse
 locale: en_us
 decimal_format: '#,##0.00'
@@ -13,21 +13,6 @@ blacklist:
     item: minecraft:command_block
   '3':
     item: minecraft:structure_block
-  example:
-    name: \u00a7cVorpal Sword
-    item: minecraft:diamond_sword
-    lore:
-    - Special Item
-    - Does not list in AuctionHouse
-    enchantments:
-    - ench: minecraft:sharpness
-      level: 10
-    - ench: minecraft:unbreaking
-      level: 3
-    - ench: minecraft:looting
-      level: 3
-    - ench: minecraft:fire_aspect
-      level: 2
 sounds:
   click: ui.button.click
   fail: entity.villager.no
@@ -60,19 +45,19 @@ disabled-worlds: []
 auction:
   listingPrice: 0.0
   listingRate: 0.0
-  listingDuration: 7d0h0m
-  expiredDuration: 14d0h0m
-  unclaimedDuration: 90d0h0m
+  listingDuration: 14d0h0m
+  expiredDuration: 28d0h0m
+  unclaimedDuration: 42d0h0m
   cleanupDuration: 0d24h0m
-  soldDuration: 365d0h0m
+  soldDuration: 56d0h0m
   preventCreative: true
   preventSpectator: true
   maxSellPrice: 100000.0
   salesTax: 0.0
-  allowDamagedItems: false
-  defaultMaxListings: 45
+  allowDamagedItems: true
+  defaultMaxListings: 5
   chronological: true
-  announce: false
+  announce: true
 triggers:
   sign: '[AuctionHouse]'
   block_name: Auction House

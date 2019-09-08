@@ -22,7 +22,9 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 
-## Files that require space indents
+## YAML files vary based on the plugin
 ## -----------------------------------------------------------------------------
-[{*.yml}]
+[*.yml]
 indent_style = space
+[{bukkit.yml,commands.yml,spigot.yml}]
+indent_size = 2

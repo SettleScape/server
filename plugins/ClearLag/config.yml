@@ -284,7 +284,7 @@ item-merger:
 # -- 'remove-entities' lists what entities should be REMOVED on removal
 # -- 'warnings' list warnings to be given out at specified times
 auto-removal:
-  enabled: true
+  enabled: false
   broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
   broadcast-removal: true
   autoremoval-interval: 460

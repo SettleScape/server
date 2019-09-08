@@ -32,6 +32,6 @@ resolvers:
     - VaultResolver
     - DinnerPermsResolver
     - FlatFilePermissionsResolver
-permissions: ## We're not using WEPIF
+permissions: ## We're using GroupManager, and WEPIF redirects everything to that;  so we shouldn't have anything defined here.
     groups:
     users:

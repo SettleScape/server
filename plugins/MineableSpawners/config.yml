@@ -83,7 +83,7 @@ spawner:
   wrong-command: '&cWrong syntax, use /spawner <type>'
 
   # Require individual mob perm? format: "mineablespawners.spawner.<type>", for example "mineablespawners.spawner.cow"
-  require-individual-permission: true
+  require-individual-permission: false
 
   # No perm message for the above
   no-individual-permission: '&cYou don''t have permission to change to that mob type!'
@@ -122,19 +122,19 @@ mining:
   drop-exp: false
 
   # Should the spawner instantly appear in their inventory instead of being dropped on the ground?
-  drop-in-inventory: true
+  drop-in-inventory: false
 
   # Message if inventory is full and drop is cancelled
   inventory-full: '&cYour inventory is full! Please make space before mining this spawner.'
 
   # Should the spawner simply break (like vanilla) if a player doesn't meet one of the requirements?
-  still-break: false
+  still-break: true
 
   # Message when it breaks because they dont meet a requirement
-  still-break-message: '&cYou did not meet all the criterias to drop the spawner.'
+  still-break-message: '&cYou need to be a higher rank to silk-touch spawners.'
 
   # Set a percent change to drop, from 0.00 (0%) to 1.00 (100%)
-  drop-chance: 1.0
+  drop-chance: 0.5
 
 
 #
@@ -149,7 +149,7 @@ eggs:
   no-permission: '&cChanging spawner types with spawn eggs is disabled on this server.'
 
   # Require individual mob perm? format: "mineablespawners.eggchange.<type>", for example "mineablespawners.eggchange.cow"
-  require-individual-permission: true
+  require-individual-permission: false
 
   # No perm message for the above
   no-individual-permission: '&cYou don''t have permission to change to that mob type!'

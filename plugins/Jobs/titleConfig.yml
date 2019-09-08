@@ -10,42 +10,37 @@
 
 Titles:
   Novice:
-    Name: N
-    ShortName: N
-    ChatColour: YELLOW
+    Name: Novice
+    ShortName: Nov
+    ChatColour: GRAY
     levelReq: 0
   Apprentice:
-    Name: A
-    ShortName: A
-    ChatColour: WHITE
-    levelReq: 25
-  Initiate:
-    Name: I
-    ShortName: I
-    ChatColour: GOLD
-    levelReq: 50
-  Journeyman:
-    Name: J
-    ShortName: J
+    Name: Apprentice
+    ShortName: Apr
     ChatColour: DARK_GREEN
-    levelReq: 75
-  Adept:
-    Name: Ad
-    ShortName: Ad
+    levelReq: 25
+  Journeyman:
+    Name: Journeyman
+    ShortName: Jor
+    ChatColour: BLUE
+    levelReq: 50
+  Expert:
+    Name: Expert
+    ShortName: Exp
     ChatColour: DARK_PURPLE
-    levelReq: 100
+    levelReq: 75
   Master:
-    Name: M
-    ShortName: M
-    ChatColour: GRAY
-    levelReq: 125
+    Name: Master
+    ShortName: Mst
+    ChatColour: GOLD
+    levelReq: 100
   Grandmaster:
-    Name: GM
-    ShortName: GM
-    ChatColour: DARK_GRAY
+    Name: Grandmaster
+    ShortName: Gmr
+    ChatColour: WHITE
     levelReq: 150
-  Legendary:
-    Name: L
-    ShortName: L
+  Grandmaster:
+    Name: Legend
+    ShortName: Leg
     ChatColour: BLACK
     levelReq: 200

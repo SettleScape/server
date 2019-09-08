@@ -23,31 +23,31 @@ storage:
   # Filetree storage (standard tree of image files for maps)
   type: filetree
   # SQLite db for map storage (uses dbfile as storage location)
-  #type: sqlite
-  #dbfile: dynmap.db
+  type: sqlite
+  dbfile: dynmap.db
   # MySQL DB for map storage (at 'hostname':'port' with flags "flags" in database 'database' using user 'userid' password 'password' and table prefix 'prefix')
   #type: mysql
-  #hostname: localhost
+  #hostname:
   #port: 3306
-  #database: dynmap
-  #userid: dynmap
-  #password: dynmap
-  #prefix: ""
+  #database:
+  #userid:
+  #password:
+  #prefix: "map"
   #flags: "?allowReconnect=true"
-  
+
 components:
   - class: org.dynmap.ClientConfigurationComponent
-  
+
   - class: org.dynmap.InternalClientUpdateComponent
-    sendhealth: true
-    sendposition: true
-    allowwebchat: true
+    sendhealth: false
+    sendposition: false
+    allowwebchat: false
     webchat-interval: 5
     hidewebchatip: false
     trustclientname: false
     includehiddenplayers: false
     # (optional) if true, color codes in player display names are used
-    use-name-colors: false
+    use-name-colors: true
     # (optional) if true, player login IDs will be used for web chat when their IPs match
     use-player-login-ip: true
     # (optional) if use-player-login-ip is true, setting this to true will cause chat messages not matching a known player IP to be ignored
@@ -64,7 +64,7 @@ components:
   #  hideifshadow: 4
   #  # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
   #  hideifundercover: 14
-  #  # (Optional) if true, players that are crouching/sneaking will be hidden 
+  #  # (Optional) if true, players that are crouching/sneaking will be hidden
     hideifsneaking: false
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
     protected-player-info: false
@@ -72,11 +72,12 @@ components:
     hide-if-invisiblity-potion: true
     # If true, player names are not shown on map, chat, list
     hidenames: false
+
   #- class: org.dynmap.JsonFileClientUpdateComponent
   #  writeinterval: 1
   #  sendhealth: true
   #  sendposition: true
-  #  allowwebchat: true
+  #  allowwebchat: false
   #  webchat-interval: 5
   #  hidewebchatip: false
   #  includehiddenplayers: false
@@ -95,23 +96,26 @@ components:
   #  chatlengthlimit: 256
   #  hide-if-invisiblity-potion: true
   #  hidenames: false
-   
+
   - class: org.dynmap.SimpleWebChatComponent
-    allowchat: true
+    allowchat: false
     # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
     allowurlname: false
-  
+
   # Note: this component is needed for the dmarker commands, and for the Marker API to be available to other plugins
   - class: org.dynmap.MarkersComponent
     type: markers
-    showlabel: false
-    enablesigns: false
+    showlabel: true
+    enablesigns: true
+
     # Default marker set for sign markers
     default-sign-set: markers
+
     # (optional) add spawn point markers to standard marker layer
     showspawn: true
     spawnicon: world
     spawnlabel: "Spawn"
+
     # (optional) layer for showing offline player's positions (for 'maxofflinetime' minutes after logoff)
     showofflineplayers: false
     offlinelabel: "Offline"
@@ -119,6 +123,7 @@ components:
     offlinehidebydefault: true
     offlineminzoom: 0
     maxofflinetime: 30
+
     # (optional) layer for showing player's spawn beds
     showspawnbeds: false
     spawnbedlabel: "Spawn Beds"
@@ -126,15 +131,18 @@ components:
     spawnbedhidebydefault: true
     spawnbedminzoom: 0
     spawnbedformat: "%name%'s bed"
+
     # (optional) show world border (vanilla 1.8+)
     showworldborder: true
-    
+
   - class: org.dynmap.ClientComponent
     type: chat
     allowurlname: false
+
   - class: org.dynmap.ClientComponent
     type: chatballoon
     focuschatballoons: false
+
   - class: org.dynmap.ClientComponent
     type: chatbox
     showplayerfaces: true
@@ -145,26 +153,27 @@ components:
     #visiblelines: 10
     # Optional: send push button
     sendbutton: false
+
   - class: org.dynmap.ClientComponent
     type: playermarkers
     showplayerfaces: true
-    showplayerhealth: true
+    showplayerhealth: false
     # If true, show player body too (only valid if showplayerfaces=true
     showplayerbody: false
     # Option to make player faces small - don't use with showplayerhealth
-    smallplayerfaces: false
+    smallplayerfaces: true
     # Optional - make player faces layer hidden by default
-    hidebydefault: false
+    hidebydefault: true
     # Optional - ordering priority in layer menu (low goes before high - default is 0)
     layerprio: 0
     # Optional - label for player marker layer (default is 'Players')
     label: "Players"
-    
+
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
   - class: org.dynmap.ClientComponent
     type: link
-    
+
   - class: org.dynmap.ClientComponent
     type: timeofdayclock
     showdigitalclock: true
@@ -175,7 +184,7 @@ components:
     label: "Location"
     hidey: false
     show-mcr: false
-    
+
   # Note: more than one logo component can be defined
   #- class: org.dynmap.ClientComponent
   #  type: logo
@@ -190,7 +199,7 @@ components:
   #  timeout: 1800 # in seconds (1800 seconds = 30 minutes)
   #  redirecturl: inactive.html
   #  #showmessage: 'You were inactive for too long.'
-  
+
   #- class: org.dynmap.TestComponent
   #  stuff: "This is some configuration-value"
 
@@ -207,7 +216,7 @@ renderacceleratethreshold: 60
 renderaccelerateinterval: 0.2
 
 # How many update tiles to work on at once (if not defined, default is 1/2 the number of cores)
-tiles-rendered-at-once: 2
+#tiles-rendered-at-once: 2
 
 # If true, use normal priority threads for rendering (versus low priority) - this can keep rendering
 # from starving on busy Windows boxes (Linux JVMs pretty much ignore thread priority), but may result
@@ -235,10 +244,10 @@ tileupdatedelay: 30
 enabletilehash: true
 
 # Optional - hide ores: render as normal stone (so that they aren't revealed by maps)
-#hideores: true
+hideores: true
 
 # Optional - enabled BetterGrass style rendering of grass and snow block sides
-#better-grass: true
+better-grass: true
 
 # Optional - enable smooth lighting by default on all maps supporting it (can be set per map as lighting option)
 smooth-lighting: true
@@ -253,7 +262,7 @@ block-id-alias:
 #    "14": 1
 #    "15": 1
 #    "16": 1
-  
+
 # Default image format for HDMaps (png, jpg, jpg-q75, jpg-q80, jpg-q85, jpg-q90, jpg-q95, jpg-q100)
 # Has no effect on maps with explicit format settings
 image-format: png
@@ -290,7 +299,7 @@ render-triggers:
   - blockformed
   - blockfaded
   - blockspread
-  - pistonmoved
+  #- pistonmoved
   - explosion
   #- blockfromto
   #- blockphysics
@@ -299,7 +308,7 @@ render-triggers:
   #- blockredstone
 
 # Title for the web page - if not specified, defaults to the server's name (unless it is the default of 'Unknown Server')
-#webpage-title: "My Awesome Server Map"
+webpage-title: "SettleScape Map"
 
 # The path where the tile-files are placed.
 tilespath: web/tiles
@@ -318,7 +327,7 @@ exportpath: export
 webserver-port: 8123
 
 # Maximum concurrent session on internal web server - limits resources used in Bukkit server
-max-sessions: 30
+max-sessions: 25
 
 # Disables Webserver portion of Dynmap (Advanced users only)
 disable-webserver: false
@@ -335,7 +344,7 @@ login-required: false
 timesliceinterval: 0.0
 
 # Maximum chunk loads per server tick (1/20th of a second) - reducing this below 90 will impact render performance, but also will reduce server thread load
-maxchunkspertick: 200
+maxchunkspertick: 100
 
 # Progress report interval for fullrender/radiusrender, in tiles.  Must be 100 or greater
 progressloginterval: 100
@@ -343,10 +352,10 @@ progressloginterval: 100
 # Parallel fullrender: if defined, number of concurrent threads used for fullrender or radiusrender
 #   Note: setting this will result in much more intensive CPU use, some additional memory use.  Caution should be used when
 #  setting this to equal or exceed the number of physical cores on the system.
-#parallelrendercnt: 4
+#parallelrendercnt: 2
 
 # Interval the browser should poll for updates.
-updaterate: 2000
+updaterate: 5000
 
 # If nonzero, server will pause fullrender/radiusrender processing when 'fullrenderplayerlimit' or more users are logged in
 fullrenderplayerlimit: 0
@@ -370,9 +379,9 @@ grayplayerswhenhidden: true
 # That is, anyone with first listed permission goes before anyone with second, etc, with users with none of the nodes going last
 player-sort-permission-nodes:
   - bukkit.command.op
-  
+
 # Set sidebaropened: 'true' to pin menu sidebar opened permanently, 'pinned' to default the sidebar to pinned, but allow it to unpin
-#sidebaropened: true
+sidebaropened: false
 
 # Customized HTTP response headers - add 'id: value' pairs to all HTTP response headers (internal web server only)
 #http-response-headers:
@@ -383,7 +392,7 @@ player-sort-permission-nodes:
 trusted-proxies:
   - "127.0.0.1"
   - "0:0:0:0:0:0:0:1"
-  
+
 # Join/quit message format for web chat: set to "" to disable notice on web UI
 joinmessage: "%playername% joined"
 quitmessage: "%playername% quit"
@@ -399,7 +408,7 @@ showlayercontrol: true
 check-banned-ips: true
 
 # Default selection when map page is loaded
-defaultzoom: 0
+defaultzoom: -1
 defaultworld: world
 defaultmap: flat
 # (optional) Zoom level and map to switch to when following a player, if possible
@@ -450,10 +459,10 @@ custom-commands:
         postupdatecommand: ""
 
 # Snapshot cache size, in chunks
-snapshotcachesize: 500
+snapshotcachesize: 512
 # Snapshot cache uses soft references (true), else weak references (false)
 soft-ref-cache: true
-        
+
 # Set to true to enable verbose startup messages - can help with debugging map configuration problems
 # Set to false for a much quieter startup log
 verbose: false

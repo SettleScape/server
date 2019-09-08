@@ -12,10 +12,10 @@ General:
         # Everything in your config related to skill level requirements, skill level bonuses, etc will be multiplied by 10 when this mode is on
         # This change is purely cosmetic, it retains the old feel of mcMMO where you could level up thousands of times
     RetroMode:
-        Enabled: true
+        Enabled: false
     Locale: en_US
     AprilFoolsEvent: true
-    MOTD_Enabled: true
+    MOTD_Enabled: false
     EventBroadcasts: true
     EventInfoOnPlayerJoin: true
     AdminNotifications: true
@@ -414,7 +414,7 @@ Skills:
         # When using Unarmed, picked up items will automatically get moved to a free slot instead of going in the slot
         # of your hand. Should item pickup be disabled when your entire inventory - except for your hand - is full?
         Item_Pickup_Disabled_Full_Inventory: true
-        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed. 
+        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed.
         Items_As_Unarmed: false
     Woodcutting:
         Tree_Feller_Sounds: true
@@ -567,4 +567,3 @@ Particles:
 Sounds:
     # This setting controls the master volume. 1.0 is Max,  0 would be off
     MasterVolume: 1.0
-    

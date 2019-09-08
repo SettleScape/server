@@ -4,3 +4,6 @@ notify:
   silent-chest: true
 settings:
   disable-saving: false
+toggles:
+  any-chest:
+  silent-chest:

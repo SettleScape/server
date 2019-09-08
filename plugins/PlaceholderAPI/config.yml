@@ -14,4 +14,23 @@ cloud_allow_unverified_expansions: false
 boolean:
   'true': 'yes'
   'false': 'no'
-date_format: MM/dd/yy HH:mm:ss
+date_format: yy-MM-dd
+expansions:
+  vault:
+    formatting:
+      thousands: k
+      trillions: T
+      quadrillions: Q
+      billions: B
+      millions: M
+  player:
+    ping_color:
+      medium: '&e'
+      high: '&a'
+      low: '&c'
+  server:
+    tps_color:
+      high: '&a'
+      low: '&c'
+      medium: '&e'
+    server_name: A Minecraft Server

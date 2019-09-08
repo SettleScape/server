@@ -18,14 +18,14 @@ blocked:
   regex: ''
 action: crouchrightclick
 ranges:
-  sameworld: 10.0
+  sameworld: 0.0
   crossworld: 0.0
-  allowcrossworld: false
+  allowcrossworld: true
   blocked-worlds:
   - ThisWorldDoesntExistButItsBlocked
   - NeitherDoesThisOneButItIsToo
 antiscam:
-  countdown: 10
+  countdown: 3
   cancelonchange: true
   preventchangeonaccept: true
   discrepancy-detection: true
@@ -66,7 +66,7 @@ extras:
     - '&fClick to edit your offer!'
     increment: 10.0
     taxpercent: 0
-    mode: type
+    mode: chat
   experience:
     enabled: true
     material: experience_bottle
@@ -76,7 +76,7 @@ extras:
     - '&fClick to edit your offer!'
     increment: 5
     taxpercent: 0
-    mode: type
+    mode: chat
     levelMode: true
   playerpoints:
     enabled: true

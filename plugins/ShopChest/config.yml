@@ -71,6 +71,19 @@ enable-vendor-messages: true
 # distance) will be shown to him.
 only-show-shops-in-sight: true
 
+# Set the quality (speed) for hologram and item updating.
+# Valid values are (from slowest to fastest):
+# 'SLOWEST', 'SLOWER', 'SLOW', 'NORMAL', 'FAST', 'FASTER', 'FASTEST'
+# The faster the value, the more performance will be used, which
+# may lead to TPS loss.
+update-quality: NORMAL
+
+# Set whether interaction with the hologram should be enabled.
+# If set to true, a player can do the exact same thing with the
+# hologram, as with the chest. You can even open the chest if you
+# are the vendor or have permission.
+enable-hologram-interaction: true
+
 # Set whether the hologram's location should be fixed at the bottom,
 # so when it gets more lines, it won't interfere with the item or chest,
 # but goes higher.
@@ -79,17 +92,17 @@ hologram-fixed-bottom: true
 # Set the amount (may be negative) a hologram should be lifted in the y-axis.
 # A value of '1' equals to one block, and a value of '0.25' is equal to the
 # height of one line.
-hologram-lift: 0
+hologram-lift: 0.1
 
 # Set whether players should be allowed to buy or sell less items
 # than the vendor has specified, in case the player does not have enough
 # money or items, or if the chest does not have enough items or space,
 # or if the vendor does not have enough money.
 # The price will be calculated correspondingly.
-auto-calculate-item-amount: false
+auto-calculate-item-amount: true
 
 # Set whether prices may contain decimals (prices of existing shops will stay).
-allow-decimals-in-price: true
+allow-decimals-in-price: false
 
 # Set whether players should be allowed to sell/buy broken items.
 allow-broken-items: false
@@ -98,7 +111,7 @@ allow-broken-items: false
 # appended to the item name. If set to true, the level ("II") will be
 # displayed after the item name, but only if the item does not have a
 # custom name.
-append-potion-level-to-item-name: false
+append-potion-level-to-item-name: true
 
 # Set whether shops should automatically be removed from the database if
 # an error occurred while loading.
@@ -138,7 +151,7 @@ blacklist:
 shop-creation-price:
 
   # ...a normal shop
-  normal: 5
+  normal: 0
 
   # ...an admin shop
   admin: 0
@@ -153,7 +166,7 @@ shop-limits:
   # specific permission may have.
   # If you don't want the players to have a limit by default
   # set the value to -1.
-  default: 5
+  default: 25
 
 # Set the events of AreaShop when shops on that region should be removed.
 # Valid values are: DELETE, UNRENT, RESELL, SELL
@@ -166,8 +179,8 @@ areashop-remove-shops:
 # Set whether the custom WorldGuard flags should be allowed by default.
 worldguard-default-flag-values:
 
-  create-shop: false
-  use-shop: false
+  create-shop: true
+  use-shop: true
   use-admin-shop: false
 
 # Set the types of Towny plots where shop creation should be allowed.

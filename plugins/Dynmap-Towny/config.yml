@@ -1,4 +1,6 @@
 # Dynmap-Towny configuration
+visibility-by-town: true
+visibility-by-nation: true
 update:
   period: 300
 layer:
@@ -10,22 +12,20 @@ layer:
   showArenas: false
   showEmbassies: false
   showWilds: false
-visibility-by-town: true
-visibility-by-nation: true
-infowindow: <div class="infowindow"><span style="font-size:120%;">%regionname% (%nation%)</span><br
-  /> Mayor <span style="font-weight:bold;">%playerowners%</span><br /> Associates
-  <span style="font-weight:bold;">%playermanagers%</span><br/>Flags<br /><span style="font-weight:bold;">%flags%</span></div>
+infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
+  <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Residents:</b>
+  %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
 regionstyle:
-  strokeColor: '#FF0000'
-  strokeOpacity: 0.8
+  homeicon: redflag
+  strokeColor: '#FFFFFF'
+  strokeOpacity: 0.75
   strokeWeight: 3
-  fillColor: '#FF0000'
-  fillOpacity: 0.35
-  homeicon: blueflag
+  fillColor: '#FFFFFF'
+  fillOpacity: 0.33
   capitalicon: king
   fillColorShops: '#0000FF'
-  fillColorArenas: '#FF00FF'
-  fillColorEmbassies: '#00FFFF'
+  fillColorArenas: '#FF0000'
+  fillColorEmbassies: '#FF00FF'
   fillColorWilds: '#00FF00'
   boost: false
 visibleregions: []
@@ -44,7 +44,7 @@ nationstyle:
     fillColor: '#0000FF'
     boost: false
   _none_:
-    homeicon: greenflag
+    homeicon: redflag
 chat:
   sendlogin: true
   sendquit: true
