@@ -1,0 +1,141 @@
+aliases:
+- trade+
+trade-logs: false
+allow-same-ip-trade: true
+permissions:
+  required: false
+  send: tradeplus.send
+  accept: tradeplus.accept
+requestcooldownseconds: 20
+allow-trade-in-creative: false
+blocked:
+  blacklist:
+  - bedrock
+  - monster_egg
+  named-items: false
+  lore:
+  - EXAMPLE_BLOCKED_LORE
+  regex: ''
+action: crouchrightclick
+ranges:
+  sameworld: 10.0
+  crossworld: 0.0
+  allowcrossworld: false
+  blocked-worlds:
+  - ThisWorldDoesntExistButItsBlocked
+  - NeitherDoesThisOneButItIsToo
+antiscam:
+  countdown: 10
+  cancelonchange: true
+  preventchangeonaccept: true
+  discrepancy-detection: true
+gui:
+  title: Your Items <|     |> Their Items
+  spectator-title: Player 1 <|          |> Player 2
+  head: '&7You are trading with: &3&l%PLAYER%'
+  showhead: true
+  accept: '&a&lClick to accept the trade'
+  cancel: '&c&lClick to cancel the trade'
+  showaccept: true
+  theyaccept: ' '
+  theycancel: ' '
+  acceptid: green_stained_glass_pane
+  cancelid: red_stained_glass_pane
+  separatorid: black_stained_glass_pane
+  force:
+    enabled: true
+    type: clock
+    name: '&4&lForce Trade'
+    lore:
+    - '&cClick here to force'
+    - '&cacceptance.'
+    - ''
+    - '&cThis shows only for admins.'
+extras:
+  type:
+    empty: '&eEnter a new amount to offer.'
+    valid: '&aClick output slot to submit offer.'
+    invalid: '&cInvalid amount entered!'
+    maximum: '&cYour balance is %BALANCE%'
+  economy:
+    enabled: true
+    material: gold_ingot
+    display: '&eYour current money offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir current money offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 10.0
+    taxpercent: 0
+    mode: type
+  experience:
+    enabled: true
+    material: experience_bottle
+    display: '&aYour current XP Levels offer is &2%AMOUNT%'
+    theirdisplay: '&aTheir current XP Levels offer is &2%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 5
+    taxpercent: 0
+    mode: type
+    levelMode: true
+  playerpoints:
+    enabled: true
+    material: diamond
+    display: '&bYour current PlayerPoints offer is &3%AMOUNT%'
+    theirdisplay: '&bTheir current PlayerPoints offer is &3%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 5
+    taxpercent: 0
+    mode: type
+  griefprevention:
+    enabled: true
+    material: diamond_pickaxe
+    display: '&eYour current GriefPrevention offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir current GriefPrevention offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 1
+    taxperecent: 0
+    mode: type
+  enjinpoints:
+    enabled: false
+    material: emerald
+    display: '&eYour current EnjinPoints offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir current EnjinPoints offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 1
+    taxpercent: 0
+    mode: type
+  tokenenchant:
+    enabled: true
+    material: enchanted_book
+    display: '&eYour current TokenEnchant tokens offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir current TokenEnchants tokens offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 1
+    taxpercent: 0
+    mode: type
+  tokenmanager:
+    enabled: true
+    material: emerald
+    display: '&eYour current TokenManager tokens offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir current TokenManager tokens offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    increment: 1
+    taxpercent: 0
+    mode: type
+hooks:
+  factions:
+    allow-trades-in-enemy-territory: false
+soundeffects:
+  enabled: true
+  onchange: true
+  onaccept: true
+  oncomplete: true
+  oncountdown: true
+debug-mode: false
+configversion: 3.59

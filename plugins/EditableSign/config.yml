@@ -1,0 +1,65 @@
+# This is a template config file
+# define your parameter and its value like:
+Messages:
+  ErrorMsg: "&c[ES] : Some error occured."
+  CooldownMsg : "&b[ES] you need to wait for &e%remaining% &bseconds until next edit."
+  ConfigReloaded: "&a[ES] Success: config file is reloaded."
+  ESOff: "&a[ES] You're no longer in Sign Edit mode."
+  ESOn: "&a[ES] You're now in Sign Edit mode."
+
+HelpMessages:
+  banner:
+    msg: "=== &e[&aEditableSign Commands List (%version%)&e] &r==="  
+  help:
+    msg: "&a/es help : displays this help menu."
+  reload:
+    msg: "&a/es reload : reloads config file."
+    permission: "EditableSign.reload"
+  debug:
+    msg: "&a/es debug <true|false> : turn on / off the debug mode."
+    permission: "EditableSign.debug"
+
+#
+# the use of WorldGuard,
+# player needs to have WorldGuard region flag USE = allow to edit the sign
+WorldGuard: true
+#
+#
+# Use specific WorldGuard Region name for allowing edit?
+UseRegionName: true
+Regions: []
+#
+#
+# number of seconds the newly edited sign will be non editable.
+#SignCoolDown: 1800
+SignCoolDown: 0
+#
+#
+# number of seconds, until next time you can edit a sign.
+#WriteCoolDown: 600
+WriteCoolDown: 0
+#
+# log .. if this is true, the author and changed content will be push to the log
+Logging: false
+
+# if this option is "true" you will be in the edit mode by default
+DefaultInEdit: false
+
+# adjust these event priority if those event processes from this plugin
+# interfere with other plugins' event processes.
+EventPriorityMap:
+  PlayerInteractEvent: "LOWEST"
+  PlayerJoinEvent: "HIGHEST"
+  PlayerQuitEvent: "HIGHEST"
+  SignChangeEvent: "MONITOR"
+
+# event type
+ClickMode: RIGHT  # or LEFT
+
+#
+BlacklistReplacement: "**"
+Blacklist:
+  - "(?i)\\[buy\\]"
+  - "(?i)\\[sell\\]"
+
+

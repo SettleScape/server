@@ -1,0 +1,8 @@
+**
+!.gitignore
+!data/worlds.txt
+!data/worlds/*.txt
+!settings/Channels.yml
+!settings/ChatConfig.yml
+!settings/config.yml
+!settings/townyperms.yml
