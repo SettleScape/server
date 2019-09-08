@@ -18,5 +18,11 @@ charset = utf-8
 
 ## Files that require 2-space indents
 ## -----------------------------------------------------------------------------
-[{*.md,*.rst,*.yml}]
+[{*.md,*.rst}]
+indent_style = space
 indent_size = 2
+
+## Files that require space indents
+## -----------------------------------------------------------------------------
+[{*.yml}]
+indent_style = space

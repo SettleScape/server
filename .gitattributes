@@ -23,6 +23,8 @@
 
 ## Configuration
 ## -----------------------------------------------------------------------------
+*.conf       text
+*.ini        text
 *.json       text
 *.properties text
 *.xml        text diff=xml

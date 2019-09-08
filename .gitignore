@@ -1,16 +1,27 @@
 
 ## Dynamic
+**/backup/
+**/logs/
+**/tmp/
+**.log
 /banned-ips.json
 /banned-players.json
 /eula.txt
 /ops.json
 /usercache.json
 /whitelist.json
-/worlds/
 
-## Binaries
+## Unversionable
 /build/
+/worlds/
+**.bak
+**.db
 **.jar
+**.lock
+**.old
+**.sqlite
+**.swp
+**.tmp
 
 ## IDEs
 **/.classpath
@@ -23,11 +34,3 @@
 **/.DS_Store
 **/desktop.ini
 **/thumbs.db
-
-## Misc
-**/logs/
-**/tmp/
-**/*.lock
-**/*.log
-**/*.swp
-**/*.tmp
