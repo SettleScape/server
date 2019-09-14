@@ -1,2 +1,1 @@
-Welcome, {PLAYER}!
-Type `/guide` for assistance.
+&7Type `/help` for assistance.&r

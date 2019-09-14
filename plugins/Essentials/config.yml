@@ -419,7 +419,7 @@ sleep-ignores-afk-players: true
 # Set the player's list name when they are AFK. This is none by default which specifies that Essentials
 # should not interfere with the AFK player's list name.
 # You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
-afk-list-name: "zAFK {PLAYER}"
+afk-list-name: "{PLAYER} &7(AFK)&r"
 
 # You can disable the death messages of Minecraft here.
 death-messages: true
@@ -698,7 +698,7 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
   # For EssentialsX changes, take a look at the EssentialsX wiki: https://github.com/EssentialsX/Essentials/wiki
 
-  format: '{DISPLAYNAME} > {MESSAGE}'
+  format: '{DISPLAYNAME} &7>&r {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
