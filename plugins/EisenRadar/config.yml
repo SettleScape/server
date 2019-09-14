@@ -3,13 +3,15 @@
 # TIP: the lower the period, the smoother the radar bar will feel to players
 # TIP: if you are experiencing performance issues, increasing the period can reduce lag
 # default = 1
-period: 1
+period: 1 ## At 20TPS, `1` is about 20fps.
+#period: 2 ## Feels only slightly laggy.  I wouldn't really recommend going higher than this.
+#period: 5 ## At 20TPS, `5` is 250ms, which is about the human reaction time.
 
 # automatically save all radar dots and world setting whenever the world saves
 # this can prevent data loss in the event of a server crash or a power outage
 # pick either: true | false
 # default = true
-autosave: true
+autosave: false ## Happens way too frequently for a feature very few people use.
 
 # radar options
 radar:
@@ -17,26 +19,28 @@ radar:
   # the field of view
   # between 0 and 360, values outside this range will be clamped
   # default = 90
-  fov: 90
+  #fov: 90 ## Make sense
+  fov: 93 ## Allows two cardinal directions to display at once, effectively allowing for diagonals, like NE.  `93` is the value that does this perfectly, at least with a size 29 bar.
 
   # the amount of characters that the radar content will take up
   # at least 0, values below will be clamped
   # TIP: use an uneven number so that radar dots can be positioned directly in the center of the bar
   # default = 31
-  size: 31
+  size: 29 ## This is the same size as the bossbar.
+  #size: 15 ## I like this to be a multiple of the FoV.
 
 # boss bar options
-bossbar:
+bossbar: ## I wish I could disable this...
 
   # the color of the boss bar
   # pick one from: BLUE | GREEN | PINK | PURPLE | RED | WHITE | YELLOW
   # default = BLUE
-  color: BLUE
+  color: WHITE
 
   # the style of the boss bar
   # pick one from: SEGMENTED_6 | SEGMENTED_10 | SEGMENTED_12 | SEGMENTED_20 | SOLID
   # default = SEGMENTED_6
-  style: SEGMENTED_6
+  style: SEGMENTED_12
 
   # list of boss bar flags (may be empty)
   # pick multiple from: CREATE_FOG | DARKEN_SKY | PLAY_BOSS_MUSIC
