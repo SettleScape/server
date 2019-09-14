@@ -1,5 +1,5 @@
 # Chat prefix, shown in front of plugin messages and notifications
-chatprefix: '[LOG] '
+chatprefix: '&8[LOG] &r'
 
 # Chat format, must at least contain the following placeholders
 # {Player}  the player executing the command
@@ -8,7 +8,7 @@ chatprefix: '[LOG] '
 # Colors are supported, use §, not &
 #
 # Players that have the 'commandlog.notice' permission can see these messages
-chatformat: '{Player} entered `{Command}`'
+chatformat: '&8{Player} entered `{Command}`&r'
 
 # Enable/Disable Log to File
 filelog: true
