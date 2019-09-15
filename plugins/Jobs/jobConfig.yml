@@ -733,6 +733,10 @@ Jobs:
         points: 2
         experience: 3
       #origial blocks
+      end_stone:
+        income: 2
+        points: 2
+        experience: 2
       andesite:
         income: 1
         points: 1
@@ -818,9 +822,9 @@ Jobs:
         points: 1
         experience: 1
       netherrack:
-        income: 0.1
-        points: 0.1
-        experience: 0.1
+        income: 0.25
+        points: 0.25
+        experience: 0.25
       prismarine:
         income: 2.5
         points: 2.5
