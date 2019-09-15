@@ -26,3 +26,7 @@ worlds:
     hiddenlimits: [
         ]
     hidestyle: stone
+-   name: world_nether
+    enabled: false
+-   name: world_the_end
+    enabled: false
