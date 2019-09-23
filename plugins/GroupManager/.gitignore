@@ -2,3 +2,7 @@
 !.gitignore
 !config.yml
 !globalgroups.yml
+!worlds
+!worlds/**
+worlds/**/users.yml
+!worlds/**/groups.yml

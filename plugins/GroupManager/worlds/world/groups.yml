@@ -1,0 +1,673 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+
+  #-----------------------------------------------------------------------------
+  Wanderer:
+    default: true
+    permissions:
+    - -towny.command.town.new
+    - -brp.trails
+    - -mcmmo.commands.party.teleport
+    - -mcmmo.commands.ptp
+    - -aa.menu
+    - -aa.help
+    - -pdl.use
+    - -pdl.lookup
+    - -rankup.auto
+    - auctionhouse.auctions.5
+    - auctionhouse.cancel
+    - auctionhouse.expired
+    - auctionhouse.help
+    - auctionhouse.menu
+    - auctionhouse.return
+    - auctionhouse.search
+    - auctionhouse.sell
+    - auctionhouse.selling
+    - auctionhouse.sold
+    - auctionhouse.use
+    - betterrtp.world.Resource
+    - bountyhunters.add
+    - bountyhunters.claim
+    - bountyhunters.compass
+    - bountyhunters.leaderboard
+    - bountyhunters.list
+    - bountyhunters.quote
+    - bountyhunters.title
+    - customgui.open
+    - customgui.open.BetterRealism
+    - customgui.open.BetterRealismHorseArmor
+    - customgui.open.BetterRealismNameTag
+    - customgui.open.Example
+    - customgui.open.FAQs
+    - customgui.open.Guide
+    - customgui.open.PerkShop
+    - customgui.open.PerkShopBenefits
+    - customgui.open.PerkShopCommands
+    - customgui.open.PerkShopDynmap
+    - customgui.open.PerkShopTrails
+    - customgui.open.Ranks
+    - customgui.open.WarpList
+    - customgui.open.JobsAreYouSure
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.build
+    - essentials.compass
+    - essentials.delhome
+    - essentials.depth
+    - essentials.getpos
+    - essentials.help
+    - essentials.helpop
+    - essentials.home
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.kick.notify
+    - essentials.kit
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.motd
+    - essentials.msg
+    - essentials.pay
+    - essentials.pay.multiple
+    - essentials.payconfirmtoggle
+    - essentials.ping
+    - essentials.realname
+    - essentials.rules
+    - essentials.sethome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.spawn
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - lwc.protect
+    - miniboardgames.list
+    - miniboardgames.play
+    - miniboardgames.spectate
+    - miniboardgames.stats
+    - miniboardgames.top
+    - pdl.log
+    - rank.explorer
+    - rank.pathfinder
+    - rank.settler
+    - rank.traveler
+    - rank.wanderer
+    - report.use
+    - shopchest.buy
+    - shopchest.create
+    - shopchest.create.buy
+    - shopchest.create.sell
+    - shopchest.sell
+    - treasurechest.player
+    - treasurehunt.command.help
+    - treasurehunt.command.list
+    - treasurehunt.command.top
+    - treasurehunt.item
+    inheritance: []
+    info:
+      build: true
+      prefix: '&8Wanderer&r '
+
+  #-----------------------------------------------------------------------------
+  Traveller:
+    default: false
+    permissions:
+    - auctionhouse.auctions.10
+    - betterbanner.basic
+    - editablesign.colorsign
+    - editablesign.edit
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.sethome.multiple.traveler
+    - shopchest.limit.50
+    - towny.town.resident
+    inheritance:
+    - Wanderer
+    info:
+      build: true
+      prefix: '&aTraveller&r '
+      auctions: 10
+
+  #-----------------------------------------------------------------------------
+  Settler:
+    default: false
+    permissions:
+    - auctionhouse.auctions.15
+    - betterbanner.intermediate
+    - essentials.clearinventory
+    - essentials.nick
+    - essentials.sethome.multiple.wanderer
+    - shopchest.limit.100
+    - towny.command.town.new
+    inheritance:
+    - Traveller
+    info:
+      build: true
+      prefix: '&9Settler&r '
+
+  #-----------------------------------------------------------------------------
+  Explorer:
+    default: false
+    permissions:
+    - auctionhouse.auctions.20
+    - essentials.back
+    - essentials.hat
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.sethome.multiple.explorer
+    - essentials.workbench
+    - mineablespawners.break
+    - shopchest.limit.150
+    inheritance:
+    - Settler
+    info:
+      build: true
+      prefix: '&dExplorer&r '
+
+  #-----------------------------------------------------------------------------
+  Pathfinder:
+    default: false
+    permissions:
+    - auctionhouse.auctions.25
+    - betterbanner.advanced
+    - essentials.ext
+    - essentials.feed
+    - essentials.heal
+    - essentials.sethome.multiple.pathfinder
+    - shopchest.limit.200
+    inheritance:
+    - Explorer
+    info:
+      build: true
+      prefix: '&6Pathfinder&r '
+
+################################################################################
+#TODO:  Merge the below with the global groups
+
+  #-----------------------------------------------------------------------------
+  Builder:
+    default: false
+    permissions:
+    - aa.arms
+    - aa.base
+    - aa.clone
+    - aa.getas
+    - aa.gravity
+    - aa.head
+    - aa.help
+    - aa.menu
+    - aa.name
+    - aa.pickup
+    - aa.pose
+    - aa.sit
+    - aa.size
+    - aa.tp
+    - aa.visible
+    - editablesign.colorsign
+    - editablesign.edit
+    - headdb.open
+    inheritance:
+    - Wanderer
+    info:
+      build: true
+      prefix: '&6Builder&r '
+
+  #-----------------------------------------------------------------------------
+  Moderator:
+    default: false
+    permissions:
+    - customgui.open.Staff
+    - editablesign.colorsign
+    - editablesign.edit
+    - essentials.afk.kickexempt
+    - essentials.afk.others
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.ban.notify
+    - essentials.broadcast
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.ignoreexempt
+    - essentials.chat.magic
+    - essentials.chat.url
+    - essentials.clearinventory
+    - essentials.enderchest
+    - essentials.exp.others
+    - essentials.ext
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.hat
+    - essentials.helpop.receive
+    - essentials.home
+    - essentials.home.bed
+    - essentials.jails
+    - essentials.kick
+    - essentials.list.hidden
+    - essentials.mail.sendall
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.msg.multiple
+    - essentials.msg.url
+    - essentials.mute
+    - essentials.mute.notify
+    - essentials.mute.offline
+    - essentials.recipe
+    - essentials.seen
+    - essentials.seen.extra
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    - essentials.vanish
+    - essentials.workbench
+    - lwc.shownotices
+    - staff.help
+    - sv.help
+    - sv.keepfly
+    - sv.see.level1
+    - sv.use
+    - sv.use.level1
+    - sv.vanish
+    inheritance:
+    - Builder
+    info:
+      build: true
+      prefix: '&5Mod&r '
+
+  #-----------------------------------------------------------------------------
+  Administrator:
+    default: false
+    permissions:
+    - AAX.commands
+    - AAX.gui
+    - AAX.notify
+    - auction.admin.expire
+    - coreprotect.co
+    - coreprotect.help
+    - coreprotect.inspect
+    - coreprotect.lookup
+    - coreprotect.restore
+    - coreprotect.rollback
+    - editablesign.admin
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.ban
+    - essentials.ban.offline
+    - essentials.banip
+    - essentials.book
+    - essentials.book.author
+    - essentials.book.others
+    - essentials.book.title
+    - essentials.burn
+    - essentials.clearinventory.others
+    - essentials.enderchest.modify
+    - essentials.enderchest.others
+    - essentials.exp
+    - essentials.exp.give
+    - essentials.exp.give.others
+    - essentials.exp.set
+    - essentials.exp.set.others
+    - essentials.feed
+    - essentials.feed.cooldown.bypass
+    - essentials.feed.others
+    - essentials.fly.others
+    - essentials.gamemode
+    - essentials.gamemode.adventure
+    - essentials.gamemode.creative
+    - essentials.gamemode.survival
+    - essentials.getpos.others
+    - essentials.give
+    - essentials.god
+    - essentials.heal
+    - essentials.heal.cooldown.bypass
+    - essentials.heal.others
+    - essentials.home.others
+    - essentials.invsee
+    - essentials.invsee.modify
+    - essentials.item
+    - essentials.kick.exempt
+    - essentials.kill
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.mute.exempt
+    - essentials.near
+    - essentials.near.maxexempt
+    - essentials.near.others
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
+    - essentials.protect.alerts
+    - essentials.repair
+    - essentials.repair.all
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.seen.extra
+    - essentials.skull
+    - essentials.skull.modify
+    - essentials.skull.others
+    - essentials.skull.spawn
+    - essentials.spawner
+    - essentials.spawner.*
+    - essentials.speed
+    - essentials.speed.fly
+    - essentials.speed.others
+    - essentials.speed.walk
+    - essentials.tempban
+    - essentials.tempban.offline
+    - essentials.time
+    - essentials.time.set
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.vanish
+    - essentials.vanish.pvp
+    - essentials.warp.otherplayers
+    - essentials.weather
+    - essentials.whois
+    - lwc.mod
+    - OpenInv.anychest
+    - OpenInv.crossworld
+    - OpenInv.editender
+    - OpenInv.editinv
+    - OpenInv.openender
+    - OpenInv.openenderall
+    - OpenInv.openinv
+    - OpenInv.search
+    - OpenInv.searchenchant
+    - OpenInv.silent
+    - sv.see.level2
+    - sv.use.level2
+    - ticketmanager.admin
+    - ticketmanager.notify
+    - towny.claimed.alltown.build.*
+    - towny.claimed.alltown.destroy.*
+    - towny.claimed.alltown.item_use.*
+    - towny.claimed.alltown.switch.*
+    - xcheck.check
+    - xcheck.receive
+    inheritance:
+    - Moderator
+    info:
+      build: true
+      prefix: '&9Admin&r '
+
+  #-----------------------------------------------------------------------------
+  HeadAdministrator:
+    default: false
+    permissions:
+    - -mcmmo.perks.all
+    - -mcmmo.bypass.hardcoremode
+    - -mcmmo.bypass.arcanebypass
+    - -shopchest.notification.update
+    - aa.arms
+    - aa.base
+    - aa.clone
+    - aa.getas
+    - aa.gravity
+    - aa.head
+    - aa.help
+    - aa.menu
+    - aa.name
+    - aa.pickup
+    - aa.pose
+    - aa.sit
+    - aa.size
+    - aa.tp
+    - aa.visible
+    - advancedportals.*
+    - betterrtp.*
+    - bountyhunters.admin
+    - commandlog.admin
+    - commandlog.history
+    - commandlog.notice
+    - coreprotect.*
+    - essentials.ban.exempt
+    - essentials.delhome.others
+    - essentials.deljail
+    - essentials.delwarp
+    - essentials.eco
+    - essentials.enchant
+    - essentials.enchantments.*
+    - essentials.enchantments.allowunsafe
+    - essentials.gamemode.others
+    - essentials.gc
+    - essentials.god.others
+    - essentials.god.pvp
+    - essentials.invsee.preventmodify
+    - essentials.itemspawn.exempt
+    - essentials.jail.exempt
+    - essentials.kickall
+    - essentials.kill.exempt
+    - essentials.kit.exemptdelay
+    - essentials.kit.others
+    - essentials.kits.*
+    - essentials.nick.others
+    - essentials.sethome.others
+    - essentials.setjail
+    - essentials.setspawn
+    - essentials.setwarp
+    - essentials.speed.bypass
+    - essentials.sudo
+    - essentials.tempban.exempt
+    - essentials.tempban.unlimited
+    - essentials.tpo
+    - essentials.tpohere
+    - essentials.tppos
+    - essentials.tptoggle
+    - essentials.tptoggle.others
+    - essentials.vanish.interact
+    - essentials.vanish.others
+    - essentials.vanish.see
+    - essentials.world
+    - groupmanager.op
+    - headdb.admin
+    - headdb.phead
+    - holograms.addline
+    - holograms.create
+    - holograms.delete
+    - holograms.import
+    - holograms.info
+    - holograms.insertline
+    - holograms.list
+    - holograms.movehere
+    - holograms.near
+    - holograms.refresh
+    - holograms.removeline
+    - holograms.setline
+    - itemsmobloot.item.hideattributes
+    - jobs.*
+    - lwc.*
+    - mcmmo.*
+    - mobloot.gui
+    - mobloot.item.amount
+    - mobloot.item.broadcast
+    - mobloot.item.command.console
+    - mobloot.item.command.player
+    - mobloot.item.lore
+    - mobloot.item.message
+    - mobloot.item.name
+    - mobloot.item.percent
+    - mobloot.item.removelores
+    - noplugin.bypass
+    - noplugin.command.pluginsmenu
+    - shopchest.*
+    - silkspawners.changetype.*
+    - silkspawners.reload
+    - sv.others
+    - sv.see.level3
+    - sv.use.level3
+    - tradeplus.admin
+    - treasurechest.admin
+    - worldedit.*
+    - worldguard.*
+    - lagg.deletedrops
+    - lagg.clear
+    - lagg.check
+    - lagg.check
+    - lagg.killmobs
+    - lagg.area
+    - lagg.unloadchunks
+    - lagg.chunk
+    - lagg.tpchunk
+    - lagg.admin
+    - lagg.gc
+    - lagg.tps
+    - lagg.halt
+    - lagg.help
+    - lagg.reload
+    - bukkit.command.tps
+    inheritance:
+    - Administrator
+    info:
+      build: true
+      prefix: '&aHeadAdmin&r '
+
+  #-----------------------------------------------------------------------------
+  Owner:
+    default: false
+    permissions:
+    - advancedportals.createportal.commandlevel.console
+    - advancedportals.createportal.commandlevel.op
+    - advancedportals.createportal.commandlevel.perms
+    - auctionhouse.cancel.others
+    - auctionhouse.reload
+    - betterrealism.reload
+    - betterrealism.version
+    - bukkit.command.reload
+    - bukkit.command.restart
+    - customgui.clickitem.create
+    - customgui.clickitem.delete
+    - customgui.clickitem.give
+    - customgui.clickitem.take
+    - customgui.converter
+    - customgui.creategui
+    - customgui.edit
+    - customgui.entity.create
+    - customgui.entity.delete
+    - customgui.help
+    - customgui.menu
+    - customgui.open.*
+    - customgui.open.others
+    - customgui.reload
+    - customgui.setclickdelay
+    - customgui.sign.create
+    - customgui.sign.delete
+    - dynmap.*
+    - eisenradar.admin.reload
+    - eisenradar.admin.save
+    - eisenradar.command.eisenradar
+    - eisenradar.get.info
+    - eisenradar.get.list
+    - eisenradar.get.trackers
+    - eisenradar.set.add
+    - eisenradar.set.edit
+    - eisenradar.set.remove
+    - eisenradar.set.settings
+    - eisenradar.set.tracker
+    - essentials.clearinventory.all
+    - essentials.essentials
+    - essentials.geoip.show
+    - essentials.sethome.multiple.pathfinder
+    - essentials.sethome.multiple.unlimited
+    - essentials.spawnmob
+    - essentials.spawnmob.*
+    - essentials.spawnmob.stack
+    - essentials.sudo.exempt
+    - essentials.gamemode.spectator
+    - mineablespawners.eggchange
+    - mineablespawners.give
+    - mineablespawners.spawner
+    - minecraft.command.playsound
+    - minecraft.command.stop
+    - minecraft.command.worldborder
+    - miniboardgames.force
+    - miniboardgames.reload
+    - mmoitems.admin
+    - multiverse.*
+    - pdl.lookup
+    - pdl.use
+    - placeholderapi.admin
+    - plugman.admin
+    - rankup.checkversion
+    - rankup.reload
+    - rtp.biomes
+    - rtp.cooldown
+    - rtp.delay
+    - rtp.placesign
+    - rtp.reload
+    - rtp.set
+    - rtp.tp
+    - rtp.tp.others
+    - rtp.worlds
+    - sv.reload
+    - sv.see.level4
+    - sv.use.level4
+    - tim.reload
+    - towny.command.townyadmin.*
+    - towny.command.townyworld.*
+    - treasurehunt.command.despawn
+    - treasurehunt.command.start
+    - vault.admin
+    - xcheck.bypasscheck
+    - worldborder.fill
+    - tab.group.default
+    - tab.reload
+    - tab.help
+    - tab.uploadlog
+    - tab.uploadconfig
+    - tab.about
+    - tab.permissions
+    - tab.resetconfig
+    - tab.group.default
+    - tab.color.black
+    - tab.color.darkblue
+    - tab.color.darkgreen
+    - tab.color.darkaqua
+    - tab.color.darkred
+    - tab.color.darkpurple
+    - tab.color.gold
+    - tab.color.gray
+    - tab.color.darkgray
+    - tab.color.blue
+    - tab.color.green
+    - tab.color.aqua
+    - tab.color.red
+    - tab.color.lightpurple
+    - tab.color.yellow
+    - tab.color.white
+    - tab.color.magic
+    - tab.color.bold
+    - tab.color.strikethrough
+    - tab.color.underline
+    - tab.color.italic
+    - tab.*
+    - orelogger.help
+    - orelogger.on
+    - chairs.reload
+    inheritance:
+    - HeadAdministrator
+    info:
+      build: true
+      prefix: '&4Owner&r '
