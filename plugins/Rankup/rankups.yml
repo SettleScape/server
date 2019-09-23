@@ -1,47 +1,57 @@
-# see https://github.com/okx-code/Rankup3/wiki/Rank-format      
+# https://github.com/okx-code/Rankup3/wiki/Rank-format
 
-Traveler:
+Traveller:
   rank: 'Wanderer'
-  next: 'Traveler'
+  next: 'Traveller'
   requirements:
-    - 'item obsidian 10'
-    - 'money 10000'
-    - 'mcmmo-power-level 100'
+    - 'money 10000'         # Just a money sink
+    - 'mcmmo-power-level 50 # Proof that you've played some on the server'
+    - 'item diamond 5'      # Proof that you've conquered the overworld
+    - 'item obsidian 5'     # Proof that you're ready to enter the Nether
     - 'group Wanderer'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &a{RANK}&7!'
   rankup:
-    requirements-not-met: '&cYou need to have 10 Obsidian, a Power Level of 100, and a balance of $10,000 to rank up.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $10k, a power level of 50, and the following items: 5 diamons and 5 obsidian.'
+
 Settler:
-  rank: 'Traveler'
+  rank: 'Traveller'
   next: 'Settler'
   requirements:
-    - 'money 30000'
-    - 'mcmmo-power-level 200'
-    - 'group Traveler'
+    - 'money 20000'           # Money sink
+    - 'mcmmo-power-level 100' # Proof of playtime
+    - 'item ghast_tears 5'    # Proof that you've conquered the Nether
+    - 'item eye_of_ender 5'   # Proof that you're ready to enter the End
+    - 'group Traveller'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &9{RANK}&7!'
   rankup:
-    requirements-not-met: '&cYou need a Power Level of 200, and a balance of $30,000 to rank up.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $20k, a power level of 100, and the following items: 5 ghast tears and 5 eyes of ender.'
+
 Explorer:
   rank: 'Settler'
   next: 'Explorer'
   requirements:
-    - 'money 60000'
-    - 'mcmmo-power-level 400'
+    - 'money 30000'            # Money sink
+    - 'mcmmo-power-level 150'  # Proof of playtime
+    - 'item shulker_shell 5'   # Proof that you've conquered the End
+    - 'item end_dragon_head 1' # Proof that you've conquered the End
     - 'group Settler'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &5{RANK}&7!'
   rankup:
-    requirements-not-met: '&cYou need a Power Level of 400, and a balance of $60,000 to rank up.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $30k, a power level of 150, and the following items: 5 shulker shells and 1 end dragon head.'
+
 Pathfinder:
   rank: 'Explorer'
   next: 'Pathfinder'
   requirements:
-    - 'money 100000'
-    - 'mcmmo-power-level 600'
+    - 'money 40000'            # Money sink
+    - 'mcmmo-power-level 200'  # Proof of playtime
+    - 'item nether_star 1'     # Proof that you've beaten the postgame
+    - 'item conduit 1'         # Proof that you've beaten the postgame
     - 'group Explorer'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
   rankup:
-    requirements-not-met: '&cYou need a Power Level of 600, and a balance of $100,000 to rank up.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $40k, a power level of 200, and the following items: 1 nether star and 1 conduit.'
