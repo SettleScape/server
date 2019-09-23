@@ -4,10 +4,10 @@ Traveller:
   rank: 'Wanderer'
   next: 'Traveller'
   requirements:
-    - 'money 10000'         # Just a money sink
-    - 'mcmmo-power-level 50 # Proof that you've played some on the server'
-    - 'item diamond 5'      # Proof that you've conquered the overworld
-    - 'item obsidian 5'     # Proof that you're ready to enter the Nether
+    - 'money 10000'          # Just a money sink
+    - 'mcmmo-power-level 50' # Proof that you've played some on the server'
+    - 'item diamond 5'       # Proof that you've conquered the overworld
+    - 'item obsidian 5'      # Proof that you're ready to enter the Nether
     - 'group Wanderer'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &a{RANK}&7!'
@@ -20,8 +20,8 @@ Settler:
   requirements:
     - 'money 20000'           # Money sink
     - 'mcmmo-power-level 100' # Proof of playtime
-    - 'item ghast_tears 5'    # Proof that you've conquered the Nether
-    - 'item eye_of_ender 5'   # Proof that you're ready to enter the End
+    - 'item ghast_tear 5'     # Proof that you've conquered the Nether
+    - 'item endereye 5'       # Proof that you're ready to enter the End
     - 'group Traveller'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &9{RANK}&7!'
@@ -32,10 +32,10 @@ Explorer:
   rank: 'Settler'
   next: 'Explorer'
   requirements:
-    - 'money 30000'            # Money sink
-    - 'mcmmo-power-level 150'  # Proof of playtime
-    - 'item shulker_shell 5'   # Proof that you've conquered the End
-    - 'item end_dragon_head 1' # Proof that you've conquered the End
+    - 'money 30000'           # Money sink
+    - 'mcmmo-power-level 150' # Proof of playtime
+    - 'item shulker_shell 5'  # Proof that you've conquered the End
+    - 'item dragon_head 1'    # Proof that you've conquered the End
     - 'group Settler'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &5{RANK}&7!'

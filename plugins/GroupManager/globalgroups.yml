@@ -12,15 +12,61 @@
 
 groups:
 
+################################################################################
+# Wrapper groups
+
+  #-----------------------------------------------------------------------------
+  g:server_default:
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+
+  #-----------------------------------------------------------------------------
+  g:server_builder:
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_builder
+    - g:towny_builder
+
+  #-----------------------------------------------------------------------------
+  g:server_moderator:
+    info:
+      suffix: ' &c(mod)&r'
+    inheritance:
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+
+  #-----------------------------------------------------------------------------
+  g:server_admin:
+    info:
+      suffix: ' &c(admin)&r'
+    inheritance:
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+
+################################################################################
 # Permission nodes for GroupManager
 # by ElgarL, snowleo, continued from gabrielcouto's original
 # http://wiki.ess3.net
 
+  #-----------------------------------------------------------------------------
   g:groupmanager_default:
     permissions:
     - groupmanager.notify.self
 
+  #-----------------------------------------------------------------------------
   g:groupmanager_moderator:
+    inheritance:
+    - g:groupmanager_default
     permissions:
     - groupmanager.listgroups
     - groupmanager.manselect
@@ -31,7 +77,10 @@ groups:
     - groupmanager.manulistp
     - groupmanager.notify.other
 
+  #-----------------------------------------------------------------------------
   g:groupmanager_admin:
+    inheritance:
+    - g:groupmanager_moderator
     permissions:
     - groupmanager.mandemote
     - groupmanager.manpromote
@@ -40,17 +89,23 @@ groups:
     - groupmanager.manuadd
     - groupmanager.manudel
 
+################################################################################
 # Permission nodes for CraftBukkit
 # by many devs and contributors
 # http://dl.bukkit.org/
 
+  #-----------------------------------------------------------------------------
   g:bukkit_default:
     permissions:
     - bukkit.broadcast.user
     - bukkit.command.kill
     - bukkit.command.me
+    - bukkit.command.time
 
+  #-----------------------------------------------------------------------------
   g:bukkit_moderator:
+    inheritance:
+    - g:bukkit_default
     permissions:
     - bukkit.command.say
     - bukkit.command.tell
@@ -66,7 +121,10 @@ groups:
     - bukkit.command.whitelist.reload
     - bukkit.command.whitelist.list
 
+  #-----------------------------------------------------------------------------
   g:bukkit_admin:
+    inheritance:
+    - g:bukkit_moderator
     permissions:
     - bukkit.broadcast
     - bukkit.broadcast.admin
@@ -82,7 +140,6 @@ groups:
     - bukkit.command.save.perform
     - bukkit.command.stop
     - bukkit.command.teleport
-    - bukkit.command.time
     - bukkit.command.time.add
     - bukkit.command.time.set
     - bukkit.command.version
@@ -90,13 +147,18 @@ groups:
     - bukkit.command.whitelist.disable
     - bukkit.command.whitelist.enable
 
+################################################################################
 # Permission nodes for Essentials
 # by ementalo, snowleo, and KHobbits
 # http://dev.bukkit.org/server-mods/essentials
-# http://wiki.mc-ess.net/doc/permissions
+# Search permission nodes:  http://wiki.mc-ess.net/doc/permissions
+# Search commands:  https://essinfo.xeya.me/index.php?page=commands
 
+  #-----------------------------------------------------------------------------
   g:essentials_default:
     permissions:
+
+    # Info about the server
     - essentials.help
     - essentials.list
     - essentials.motd
@@ -105,6 +167,7 @@ groups:
     - essentials.jail.allow.help
     - essentials.jail.allow.rules
 
+    # Info about the player
     - essentials.me
     - essentials.exp
     - essentials.ping
@@ -113,10 +176,23 @@ groups:
     - essentials.compass
     - essentials.time
 
+    # Economy
     - essentials.balance
     - essentials.pay
     - essentials.worth
 
+    # Chat
+    - essentials.ignore
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.helpop
+    - essentials.seen
+    - essentials.jail.allow.ping
+
+    # Teleportation
     - essentials.suicide
     - essentials.spawn
     - essentials.tpa
@@ -126,70 +202,48 @@ groups:
     - essentials.warp
     - essentials.warp.list
 
-    - essentials.ignore
-    - essentials.mail
-    - essentials.mail.send
-    - essentials.msg
-    - essentials.msg.color
-    - essentials.msg.format
-    - essentials.seen
-
-    - essentials.afk
-    - essentials.hat
-    - essentials.nick
-    - essentials.nick.color
-    - essentials.kit
-    - essentials.clearinventory
-    - essentials.book
-    - essentials.book.title
-
+    # Homes
     - essentials.home
     - essentials.delhome
     - essentials.sethome
     - essentials.sethome.bed
     - essentials.sethome.multiple
 
+    # Misc
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.build
+    - essentials.hat
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.kit
+    - essentials.clearinventory
+    - essentials.workbench
+    - essentials.book
+    - essentials.book.title
+
+  #-----------------------------------------------------------------------------
   g:essentials_builder:
-    permissions:
-    - essentials.protect
+    inheritance:
+    - g:essentials_default
 
-    - essentials.itemdb
-    - essentials.kits.tools
-    - essentials.powertool
-    - essentials.powertooltoggle
-
-    - essentials.signs.use.*
-    - essentials.signs.create.disposal
-    - essentials.signs.create.mail
-    - essentials.signs.create.protection
-    - essentials.signs.create.trade
-    - essentials.signs.break.disposal
-    - essentials.signs.break.mail
-    - essentials.signs.break.protection
-    - essentials.signs.break.trade
-
+  #-----------------------------------------------------------------------------
   g:essentials_moderator:
+    inheritance:
+    - g:essentials_builder
     permissions:
 
-    - essentials.jail.allow.helpop
-    - essentials.jail.allow.mail
-    - essentials.jail.allow.ping
-    - essentials.jail.allow.seen
-
+    # Chat
     - essentials.broadcast
+    - essentials.helpop.receive
     - essentials.chat.format
     - essentials.chat.magic
     - essentials.chat.question
     - essentials.chat.shout
+    - essentials.chat.url
     - essentials.msg.magic
 
-    - essentials.ext
-    - essentials.ptime
-    - essentials.top
-    - essentials.helpop.receive
-    - essentials.seen.extra
-    - essentials.whois
-
+    # Info
     - essentials.balancetop
     - essentials.invsee
     - essentials.realname
@@ -199,7 +253,20 @@ groups:
     - essentials.home.others
     - essentials.nick.others
     - essentials.ptime.others
+    - essentials.seen.extra
+    - essentials.whois
 
+    # Espionage
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.tptoggle
+    - essentials.vanish
+    - essentials.vanish.effect
+
+    # Punishments
     - essentials.kill
     - essentials.jail.allow.jails
     - essentials.jail.allow.togglejail
@@ -216,16 +283,10 @@ groups:
     - essentials.unban
     - essentials.unbanip
 
-    - essentials.fly
-    - essentials.fly.safelogin
-    - essentials.jump
-    - essentials.tp
-    - essentials.tp.others
-    - essentials.tphere
-    - essentials.tptoggle
-    - essentials.vanish
-    - essentials.vanish.effect
-
+    # Exemptions
+    - essentials.jail.allow.helpop
+    - essentials.jail.allow.mail
+    - essentials.jail.allow.seen
     - essentials.afk.kickexempt
     - essentials.chat.ignoreexempt
     - essentials.ban.exempt
@@ -235,13 +296,18 @@ groups:
     - essentials.jail.exempt
     - essentials.pvpdelay.exempt
 
+  #-----------------------------------------------------------------------------
   g:essentials_admin:
+    inheritance:
+    - g:essentials_moderator
     permissions:
+    # Offline actions (these ignore exemptions)
     - essentials.mute.offline
     - essentials.tempban.offline
     - essentials.togglejail.offline
     - essentials.ban.offline
 
+    # Exemptions
     - essentials.itemspawn.exempt
     - essentials.kit.exemptdelay
     - essentials.near.maxexempt
@@ -250,6 +316,15 @@ groups:
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
 
+    # Misc
+    - essentials.ext
+    - essentials.weather
+    - essentials.setspawn
+    - essentials.reloadall
+    - essentials.plugin
+    - essentials.top
+
+    # Catch-alls
     - essentials.*
     - essentials.worlds.*
     - essentials.warps.*
@@ -258,20 +333,14 @@ groups:
     - essentials.signs.break.*
     - essentials.spawner.*
 
+    # Unevaluated
     - essentials.tppos
-    - essentials.weather
-    - essentials.workbench
-    - essentials.helpop
     - essentials.backup
     - essentials.essentials
-    - essentials.setspawn
-    - essentials.reloadall
-    - essentials.plugin
     - essentials.afk.auto
     - essentials.back
     - essentials.back.ondeath
     - essentials.book.others
-    - essentials.chat.url
     - essentials.delwarp
     - essentials.eco.loan
     - essentials.time.set
@@ -282,23 +351,44 @@ groups:
     - essentials.protect.alerts
     - essentials.protect.admin
     - essentials.protect.ownerinfo
+    - essentials.itemdb
+    - essentials.protect
+    - essentials.jump
+    - essentials.kits.tools
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.ptime
+    - essentials.signs.use.*
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.trade
+    - essentials.signs.break.disposal
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.trade
 
 
+################################################################################
 # Permission nodes for Towny by ElgarL
 # http://dev.bukkit.org/server-mods/towny-advanced/
 
+  #-----------------------------------------------------------------------------
   g:towny_default:
     permissions:
     - towny.chat.local
 
+  #-----------------------------------------------------------------------------
   g:towny_builder:
+    inheritance:
+    - g:towny_default
     permissions:
     - towny.wild.build.6
+    - towny.wild.build.17
     - towny.wild.destroy.6
     - towny.wild.destroy.14
     - towny.wild.destroy.15
     - towny.wild.destroy.16
-    - towny.wild.build.17
     - towny.wild.destroy.17
     - towny.wild.destroy.18
     - towny.wild.destroy.21
@@ -321,7 +411,10 @@ groups:
     - towny.wild.destroy.111
     - towny.wild.destroy.115
 
+  #-----------------------------------------------------------------------------
   g:towny_moderator:
+    inheritance:
+    - g:towny_builder
     permissions:
     - towny.chat.mod
     - towny.wild.switch.64
@@ -331,16 +424,21 @@ groups:
     - towny.wild.build.111
     - towny.wild.build.115
 
+  #-----------------------------------------------------------------------------
   g:towny_admin:
+    inheritance:
+    - g:towny_moderator
     permissions:
     - towny.admin
-    - -towny.wild.destroy.119
-    - -towny.wild.destroy.120
     - towny.chat.admin
+    - towny.wild.destroy.119
+    - towny.wild.destroy.120
 
+################################################################################
 # Permission nodes for VanishNoPacket by mbaxter
 # http://dev.bukkit.org/server-mods/vanish/
 
+  #-----------------------------------------------------------------------------
   g:vanish_moderator:
     permissions:
     - vanish.vanish
@@ -351,7 +449,10 @@ groups:
     - vanish.hooks.dynmap.alwayshidden
     - vanish.hooks.essentials.hide
 
+  #-----------------------------------------------------------------------------
   g:vanish_admin:
+    inheritance:
+    - g:towny_moderator
     permissions:
     - vanish.silentjoin
     - vanish.silentquit
