@@ -13,112 +13,15 @@
 groups:
 
 ################################################################################
-# Permission nodes for GroupManager
-# by ElgarL, snowleo, continued from gabrielcouto's original
-# http://wiki.ess3.net
-
-  #-----------------------------------------------------------------------------
-  g:groupmanager_default:
-    permissions:
-    - groupmanager.notify.self
-
-  #-----------------------------------------------------------------------------
-  g:groupmanager_moderator:
-    inheritance:
-    - g:groupmanager_default
-    permissions:
-    - groupmanager.listgroups
-    - groupmanager.manselect
-    - groupmanager.manwhois
-    - groupmanager.mangcheckp
-    - groupmanager.manglistp
-    - groupmanager.manucheckp
-    - groupmanager.manulistp
-    - groupmanager.notify.other
-
-  #-----------------------------------------------------------------------------
-  g:groupmanager_admin:
-    inheritance:
-    - g:groupmanager_moderator
-    permissions:
-    - groupmanager.mandemote
-    - groupmanager.manpromote
-    - groupmanager.mansave
-    - groupmanager.mantogglevalidate
-    - groupmanager.manuadd
-    - groupmanager.manudel
-    - groupmanager.op
-
-################################################################################
-# Permission nodes for CraftBukkit
-# by many devs and contributors
-# http://dl.bukkit.org/
-
-  #-----------------------------------------------------------------------------
-  g:bukkit_default:
+  g:Default:
     permissions:
     - bukkit.broadcast.user
     - bukkit.command.kill
     - bukkit.command.me
     - bukkit.command.time
     - bukkit.command.tps
-
-  #-----------------------------------------------------------------------------
-  g:bukkit_moderator:
-    inheritance:
-    - g:bukkit_default
-    permissions:
-    - bukkit.command.say
-    - bukkit.command.tell
-    - bukkit.command.kick
-    - bukkit.command.ban
-    - bukkit.command.ban.ip
-    - bukkit.command.ban.player
-    - bukkit.command.unban
-    - bukkit.command.unban.ip
-    - bukkit.command.unban.player
-    - bukkit.command.whitelist.add
-    - bukkit.command.whitelist.remove
-    - bukkit.command.whitelist.reload
-    - bukkit.command.whitelist.list
-
-  #-----------------------------------------------------------------------------
-  g:bukkit_admin:
-    inheritance:
-    - g:bukkit_moderator
-    permissions:
-    - bukkit.broadcast
-    - bukkit.broadcast.admin
-    - bukkit.command.gamemode
-    - bukkit.command.give
-    - bukkit.command.help
-    - bukkit.command.list
-    - bukkit.command.plugins
-    - bukkit.command.reload
-    - bukkit.command.restart
-    - bukkit.command.save
-    - bukkit.command.save.disable
-    - bukkit.command.save.enable
-    - bukkit.command.save.perform
-    - bukkit.command.stop
-    - bukkit.command.teleport
-    - bukkit.command.time.add
-    - bukkit.command.time.set
-    - bukkit.command.version
-    - bukkit.command.whitelist
-    - bukkit.command.whitelist.disable
-    - bukkit.command.whitelist.enable
-
-################################################################################
-# Permission nodes for Essentials
-# by ementalo, snowleo, and KHobbits
-# http://dev.bukkit.org/server-mods/essentials
-# Search permission nodes:  http://wiki.mc-ess.net/doc/permissions
-# Search commands:  https://essinfo.xeya.me/index.php?page=commands
-
-  #-----------------------------------------------------------------------------
-  g:essentials_default:
-    permissions:
+    - groupmanager.notify.self
+    - towny.chat.local
 
     # Info about the server
     - essentials.help
@@ -187,16 +90,72 @@ groups:
     - essentials.book
     - essentials.book.title
 
-  #-----------------------------------------------------------------------------
-  g:essentials_builder:
-    inheritance:
-    - g:essentials_default
+    # Moved from world groups
+    - -mcmmo.commands.party.teleport
+    - -mcmmo.commands.ptp
+    - -rankup.auto
+    - auctionhouse.cancel
+    - auctionhouse.expired
 
-  #-----------------------------------------------------------------------------
-  g:essentials_moderator:
+    - auctionhouse.help
+    - auctionhouse.menu
+    - auctionhouse.return
+    - auctionhouse.search
+    - auctionhouse.sell
+    - auctionhouse.selling
+    - auctionhouse.sold
+    - auctionhouse.use
+    - betterbanner.advanced
+    - lwc.protect
+    - report.use
+    - shopchest.buy
+    - shopchest.create
+    - shopchest.create.buy
+    - shopchest.create.sell
+    - shopchest.sell
+
+################################################################################
+  g:Moderator:
+    info:
+      suffix: ' &c(mod)&r'
     inheritance:
-    - g:essentials_builder
+    - g:Default
     permissions:
+    - bukkit.command.say
+    - bukkit.command.tell
+    - bukkit.command.kick
+    - bukkit.command.ban
+    - bukkit.command.ban.ip
+    - bukkit.command.ban.player
+    - bukkit.command.unban
+    - bukkit.command.unban.ip
+    - bukkit.command.unban.player
+    - bukkit.command.whitelist.add
+    - bukkit.command.whitelist.remove
+    - bukkit.command.whitelist.reload
+    - bukkit.command.whitelist.list
+    - groupmanager.listgroups
+    - groupmanager.manselect
+    - groupmanager.manwhois
+    - groupmanager.mangcheckp
+    - groupmanager.manglistp
+    - groupmanager.manucheckp
+    - groupmanager.manulistp
+    - groupmanager.notify.other
+    - towny.chat.mod
+    - towny.wild.switch.64
+    - towny.wild.build.83
+    - towny.wild.build.86
+    - towny.wild.build.103
+    - towny.wild.build.111
+    - towny.wild.build.115
+    - vanish.vanish
+    - vanish.smokin
+    - vanish.nofollow
+    - vanish.nopickup
+    - vanish.preventincomingdamage
+    - vanish.hooks.dynmap.alwayshidden
+    - vanish.hooks.essentials.hide
 
     # Chat
     - essentials.broadcast
@@ -296,12 +255,85 @@ groups:
     - essentials.togglejail.offline
     - essentials.vanish
     - essentials.workbench
+    - editablesign.colorsign
+    - editablesign.edit
+    - lwc.shownotices
+    - OpenInv.crossworld
+    - OpenInv.openender
+    - OpenInv.openenderall
+    - OpenInv.openinv
+    - OpenInv.silent
 
-  #-----------------------------------------------------------------------------
-  g:essentials_admin:
+################################################################################
+  g:Administrator:
+    info:
+      suffix: ' &c(admin)&r'
     inheritance:
-    - g:essentials_moderator
+    - g:Moderator
     permissions:
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - bukkit.command.gamemode
+    - bukkit.command.give
+    - bukkit.command.help
+    - bukkit.command.list
+    - bukkit.command.plugins
+    - bukkit.command.reload
+    - bukkit.command.restart
+    - bukkit.command.save
+    - bukkit.command.save.disable
+    - bukkit.command.save.enable
+    - bukkit.command.save.perform
+    - bukkit.command.stop
+    - bukkit.command.teleport
+    - bukkit.command.time.add
+    - bukkit.command.time.set
+    - bukkit.command.version
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - groupmanager.mandemote
+    - groupmanager.manpromote
+    - groupmanager.mansave
+    - groupmanager.mantogglevalidate
+    - groupmanager.manuadd
+    - groupmanager.manudel
+    - groupmanager.op
+    - towny.wild.build.6
+    - towny.wild.build.17
+    - towny.wild.destroy.6
+    - towny.wild.destroy.14
+    - towny.wild.destroy.15
+    - towny.wild.destroy.16
+    - towny.wild.destroy.17
+    - towny.wild.destroy.18
+    - towny.wild.destroy.21
+    - towny.wild.destroy.31
+    - towny.wild.destroy.37
+    - towny.wild.destroy.38
+    - towny.wild.destroy.39
+    - towny.wild.destroy.40
+    - towny.wild.destroy.50
+    - towny.wild.destroy.56
+    - towny.wild.destroy.73
+    - towny.wild.destroy.74
+    - towny.wild.destroy.78
+    - towny.wild.destroy.81
+    - towny.wild.destroy.82
+    - towny.wild.destroy.83
+    - towny.wild.destroy.86
+    - towny.wild.destroy.103
+    - towny.wild.destroy.106
+    - towny.wild.destroy.111
+    - towny.wild.destroy.115
+    - towny.admin
+    - towny.chat.admin
+    - towny.wild.destroy.119
+    - towny.wild.destroy.120
+    - vanish.silentjoin
+    - vanish.silentquit
+    - vanish.silentchests
+
     # Offline actions (these ignore exemptions)
     - essentials.mute.offline
     - essentials.tempban.offline
@@ -370,6 +402,34 @@ groups:
     - essentials.signs.break.trade
 
     # Moved from world groups
+    - auction.admin.expire
+    - auctionhouse.cancel.others
+    - auctionhouse.reload
+    - commandlog.admin
+    - commandlog.history
+    - commandlog.notice
+    - coreprotect.*
+    - coreprotect.co
+    - coreprotect.help
+    - coreprotect.inspect
+    - coreprotect.lookup
+    - coreprotect.restore
+    - coreprotect.rollback
+    - dynmap.*
+    - editablesign.admin
+    - editablesign.colorsign
+    - editablesign.edit
+    - eisenradar.admin.reload
+    - eisenradar.admin.save
+    - eisenradar.command.eisenradar
+    - eisenradar.get.info
+    - eisenradar.get.list
+    - eisenradar.get.trackers
+    - eisenradar.set.add
+    - eisenradar.set.edit
+    - eisenradar.set.remove
+    - eisenradar.set.settings
+    - eisenradar.set.tracker
     - essentials.back
     - essentials.back.ondeath
     - essentials.ban
@@ -486,180 +546,6 @@ groups:
     - essentials.weather
     - essentials.whois
     - essentials.world
-
-
-################################################################################
-# Permission nodes for Towny by ElgarL
-# http://dev.bukkit.org/server-mods/towny-advanced/
-
-  #-----------------------------------------------------------------------------
-  g:towny_default:
-    permissions:
-    - towny.chat.local
-
-  #-----------------------------------------------------------------------------
-  g:towny_builder:
-    inheritance:
-    - g:towny_default
-    permissions:
-    - towny.wild.build.6
-    - towny.wild.build.17
-    - towny.wild.destroy.6
-    - towny.wild.destroy.14
-    - towny.wild.destroy.15
-    - towny.wild.destroy.16
-    - towny.wild.destroy.17
-    - towny.wild.destroy.18
-    - towny.wild.destroy.21
-    - towny.wild.destroy.31
-    - towny.wild.destroy.37
-    - towny.wild.destroy.38
-    - towny.wild.destroy.39
-    - towny.wild.destroy.40
-    - towny.wild.destroy.50
-    - towny.wild.destroy.56
-    - towny.wild.destroy.73
-    - towny.wild.destroy.74
-    - towny.wild.destroy.78
-    - towny.wild.destroy.81
-    - towny.wild.destroy.82
-    - towny.wild.destroy.83
-    - towny.wild.destroy.86
-    - towny.wild.destroy.103
-    - towny.wild.destroy.106
-    - towny.wild.destroy.111
-    - towny.wild.destroy.115
-
-  #-----------------------------------------------------------------------------
-  g:towny_moderator:
-    inheritance:
-    - g:towny_builder
-    permissions:
-    - towny.chat.mod
-    - towny.wild.switch.64
-    - towny.wild.build.83
-    - towny.wild.build.86
-    - towny.wild.build.103
-    - towny.wild.build.111
-    - towny.wild.build.115
-
-  #-----------------------------------------------------------------------------
-  g:towny_admin:
-    inheritance:
-    - g:towny_moderator
-    permissions:
-    - towny.admin
-    - towny.chat.admin
-    - towny.wild.destroy.119
-    - towny.wild.destroy.120
-
-    # Moved from world groups
-    - towny.claimed.alltown.build.*
-    - towny.claimed.alltown.destroy.*
-    - towny.claimed.alltown.item_use.*
-    - towny.claimed.alltown.switch.*
-    - towny.command.townyadmin.*
-    - towny.command.townyworld.*
-
-################################################################################
-# Permission nodes for VanishNoPacket by mbaxter
-# http://dev.bukkit.org/server-mods/vanish/
-
-  #-----------------------------------------------------------------------------
-  g:vanish_moderator:
-    permissions:
-    - vanish.vanish
-    - vanish.smokin
-    - vanish.nofollow
-    - vanish.nopickup
-    - vanish.preventincomingdamage
-    - vanish.hooks.dynmap.alwayshidden
-    - vanish.hooks.essentials.hide
-
-  #-----------------------------------------------------------------------------
-  g:vanish_admin:
-    inheritance:
-    - g:towny_moderator
-    permissions:
-    - vanish.silentjoin
-    - vanish.silentquit
-    - vanish.silentchests
-
-################################################################################
-# Misc groups
-
-  #-----------------------------------------------------------------------------
-  g:misc_default:
-    permissions:
-    - -mcmmo.commands.party.teleport
-    - -mcmmo.commands.ptp
-    - -rankup.auto
-    - auctionhouse.cancel
-    - auctionhouse.expired
-    - auctionhouse.help
-    - auctionhouse.menu
-    - auctionhouse.return
-    - auctionhouse.search
-    - auctionhouse.sell
-    - auctionhouse.selling
-    - auctionhouse.sold
-    - auctionhouse.use
-    - betterbanner.advanced
-    - lwc.protect
-    - report.use
-    - shopchest.buy
-    - shopchest.create
-    - shopchest.create.buy
-    - shopchest.create.sell
-    - shopchest.sell
-
-  #-----------------------------------------------------------------------------
-  g:misc_moderator:
-    inheritance:
-    - g:misc_default
-    permissions:
-    - editablesign.colorsign
-    - editablesign.edit
-    - lwc.shownotices
-    - OpenInv.crossworld
-    - OpenInv.openender
-    - OpenInv.openenderall
-    - OpenInv.openinv
-    - OpenInv.silent
-
-  #-----------------------------------------------------------------------------
-  g:misc_admin:
-    inheritance:
-    - g:misc_moderator
-    permissions:
-    - auction.admin.expire
-    - auctionhouse.cancel.others
-    - auctionhouse.reload
-    - commandlog.admin
-    - commandlog.history
-    - commandlog.notice
-    - coreprotect.*
-    - coreprotect.co
-    - coreprotect.help
-    - coreprotect.inspect
-    - coreprotect.lookup
-    - coreprotect.restore
-    - coreprotect.rollback
-    - dynmap.*
-    - editablesign.admin
-    - editablesign.colorsign
-    - editablesign.edit
-    - eisenradar.admin.reload
-    - eisenradar.admin.save
-    - eisenradar.command.eisenradar
-    - eisenradar.get.info
-    - eisenradar.get.list
-    - eisenradar.get.trackers
-    - eisenradar.set.add
-    - eisenradar.set.edit
-    - eisenradar.set.remove
-    - eisenradar.set.settings
-    - eisenradar.set.tracker
     - jobs.*
     - lagg.admin
     - lagg.area
@@ -693,52 +579,13 @@ groups:
     - rankup.checkversion
     - rankup.reload
     - shopchest.*
+    - towny.claimed.alltown.build.*
+    - towny.claimed.alltown.destroy.*
+    - towny.claimed.alltown.item_use.*
+    - towny.claimed.alltown.switch.*
+    - towny.command.townyadmin.*
+    - towny.command.townyworld.*
     - tradeplus.admin
     - vault.admin
     - worldedit.*
     - worldguard.*
-
-################################################################################
-# Wrapper groups
-
-  #-----------------------------------------------------------------------------
-  g:server_default:
-    inheritance:
-    - g:groupmanager_default
-    - g:bukkit_default
-    - g:essentials_default
-    - g:towny_default
-    - g:misc_default
-
-  #-----------------------------------------------------------------------------
-  g:server_builder:
-    inheritance:
-    - g:groupmanager_default
-    - g:bukkit_default
-    - g:essentials_builder
-    - g:towny_builder
-    - g:misc_default
-
-  #-----------------------------------------------------------------------------
-  g:server_moderator:
-    info:
-      suffix: ' &c(mod)&r'
-    inheritance:
-    - g:groupmanager_moderator
-    - g:bukkit_moderator
-    - g:essentials_moderator
-    - g:towny_moderator
-    - g:vanish_moderator
-    - g:misc_moderator
-
-  #-----------------------------------------------------------------------------
-  g:server_admin:
-    info:
-      suffix: ' &c(admin)&r'
-    inheritance:
-    - g:groupmanager_admin
-    - g:bukkit_admin
-    - g:essentials_admin
-    - g:towny_admin
-    - g:vanish_admin
-    - g:misc_admin

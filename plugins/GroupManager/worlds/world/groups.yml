@@ -17,7 +17,7 @@ groups:
       build: true
       prefix: '&8Wanderer&r '
     inheritance:
-    - g:server_default
+    - g:Default
     permissions:
 
     # Setup
