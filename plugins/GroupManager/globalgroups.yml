@@ -141,6 +141,8 @@ groups:
     # Economy
     - essentials.balance
     - essentials.pay
+    - essentials.pay.multiple
+    - essentials.payconfirmtoggle
     - essentials.worth
 
     # Chat
@@ -166,6 +168,7 @@ groups:
 
     # Homes
     - essentials.home
+    - essentials.home.bed
     - essentials.delhome
     - essentials.sethome
     - essentials.sethome.bed
@@ -183,46 +186,6 @@ groups:
     - essentials.workbench
     - essentials.book
     - essentials.book.title
-
-    # Moved from world groups
-    - essentials.afk
-    - essentials.afk.auto
-    - essentials.balance
-    - essentials.balancetop
-    - essentials.build
-    - essentials.compass
-    - essentials.delhome
-    - essentials.depth
-    - essentials.getpos
-    - essentials.help
-    - essentials.helpop
-    - essentials.home
-    - essentials.ignore
-    - essentials.itemdb
-    - essentials.kick.notify
-    - essentials.kit
-    - essentials.list
-    - essentials.mail
-    - essentials.mail.send
-    - essentials.me
-    - essentials.motd
-    - essentials.msg
-    - essentials.pay
-    - essentials.pay.multiple
-    - essentials.payconfirmtoggle
-    - essentials.ping
-    - essentials.realname
-    - essentials.rules
-    - essentials.sethome
-    - essentials.sethome.bed
-    - essentials.sethome.multiple
-    - essentials.spawn
-    - essentials.suicide
-    - essentials.tpa
-    - essentials.tpaccept
-    - essentials.tpahere
-    - essentials.tpdeny
-    - essentials.warp
 
   #-----------------------------------------------------------------------------
   g:essentials_builder:
@@ -299,7 +262,6 @@ groups:
     - essentials.pvpdelay.exempt
 
     # Moved from world groups
-    - essentials.afk.kickexempt
     - essentials.afk.others
     - essentials.balance.others
     - essentials.balancetop
@@ -307,19 +269,14 @@ groups:
     - essentials.broadcast
     - essentials.chat.color
     - essentials.chat.format
-    - essentials.chat.ignoreexempt
     - essentials.chat.magic
     - essentials.chat.url
     - essentials.clearinventory
     - essentials.enderchest
     - essentials.exp.others
     - essentials.ext
-    - essentials.fly
-    - essentials.fly.safelogin
     - essentials.hat
     - essentials.helpop.receive
-    - essentials.home
-    - essentials.home.bed
     - essentials.jails
     - essentials.kick
     - essentials.list.hidden
@@ -416,7 +373,6 @@ groups:
     - essentials.back
     - essentials.back.ondeath
     - essentials.ban
-    - essentials.ban.exempt
     - essentials.banip
     - essentials.ban.offline
     - essentials.book
@@ -466,20 +422,13 @@ groups:
     - essentials.invsee.modify
     - essentials.invsee.preventmodify
     - essentials.item
-    - essentials.itemspawn.exempt
-    - essentials.jail.exempt
     - essentials.kickall
-    - essentials.kick.exempt
     - essentials.kill
-    - essentials.kill.exempt
-    - essentials.kit.exemptdelay
     - essentials.kit.others
     - essentials.kits.*
     - essentials.lightning
     - essentials.lightning.others
-    - essentials.mute.exempt
     - essentials.near
-    - essentials.near.maxexempt
     - essentials.near.others
     - essentials.nick
     - essentials.nick.color
@@ -513,9 +462,7 @@ groups:
     - essentials.speed.others
     - essentials.speed.walk
     - essentials.sudo
-    - essentials.sudo.exempt
     - essentials.tempban
-    - essentials.tempban.exempt
     - essentials.tempban.offline
     - essentials.tempban.unlimited
     - essentials.time
