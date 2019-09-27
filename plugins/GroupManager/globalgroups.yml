@@ -644,13 +644,8 @@ groups:
   #-----------------------------------------------------------------------------
   g:misc_default:
     permissions:
-    - -brp.trails
     - -mcmmo.commands.party.teleport
     - -mcmmo.commands.ptp
-    - -aa.menu
-    - -aa.help
-    - -pdl.use
-    - -pdl.lookup
     - -rankup.auto
     - auctionhouse.cancel
     - auctionhouse.expired
@@ -663,20 +658,13 @@ groups:
     - auctionhouse.sold
     - auctionhouse.use
     - betterbanner.advanced
-    - betterrtp.world.Resource
     - lwc.protect
-    - pdl.log
     - report.use
     - shopchest.buy
     - shopchest.create
     - shopchest.create.buy
     - shopchest.create.sell
     - shopchest.sell
-    - treasurechest.player
-    - treasurehunt.command.help
-    - treasurehunt.command.list
-    - treasurehunt.command.top
-    - treasurehunt.item
 
   #-----------------------------------------------------------------------------
   g:misc_moderator:
@@ -686,49 +674,20 @@ groups:
     - editablesign.colorsign
     - editablesign.edit
     - lwc.shownotices
-    - staff.help
-    - sv.help
-    - sv.keepfly
-    - sv.see.level1
-    - sv.use
-    - sv.use.level1
-    - sv.vanish
+    - OpenInv.crossworld
+    - OpenInv.openender
+    - OpenInv.openenderall
+    - OpenInv.openinv
+    - OpenInv.silent
 
   #-----------------------------------------------------------------------------
   g:misc_admin:
     inheritance:
     - g:misc_moderator
     permissions:
-    - aa.arms
-    - aa.base
-    - aa.clone
-    - aa.getas
-    - aa.gravity
-    - aa.head
-    - aa.help
-    - aa.menu
-    - aa.name
-    - aa.pickup
-    - aa.pose
-    - aa.sit
-    - aa.size
-    - aa.tp
-    - aa.visible
-    - AAX.commands
-    - AAX.gui
-    - AAX.notify
-    - advancedportals.*
-    - advancedportals.createportal.commandlevel.console
-    - advancedportals.createportal.commandlevel.op
-    - advancedportals.createportal.commandlevel.perms
     - auction.admin.expire
     - auctionhouse.cancel.others
     - auctionhouse.reload
-    - betterrealism.reload
-    - betterrealism.version
-    - betterrtp.*
-    - bountyhunters.admin
-    - chairs.reload
     - commandlog.admin
     - commandlog.history
     - commandlog.notice
@@ -754,22 +713,6 @@ groups:
     - eisenradar.set.remove
     - eisenradar.set.settings
     - eisenradar.set.tracker
-    - headdb.admin
-    - headdb.open
-    - headdb.phead
-    - holograms.addline
-    - holograms.create
-    - holograms.delete
-    - holograms.import
-    - holograms.info
-    - holograms.insertline
-    - holograms.list
-    - holograms.movehere
-    - holograms.near
-    - holograms.refresh
-    - holograms.removeline
-    - holograms.setline
-    - itemsmobloot.item.hideattributes
     - jobs.*
     - lagg.admin
     - lagg.area
@@ -794,104 +737,19 @@ groups:
     - minecraft.command.playsound
     - minecraft.command.stop
     - minecraft.command.worldborder
-    - miniboardgames.force
-    - miniboardgames.reload
-    - mmoitems.admin
-    - mobloot.gui
-    - mobloot.item.amount
-    - mobloot.item.broadcast
-    - mobloot.item.command.console
-    - mobloot.item.command.player
-    - mobloot.item.lore
-    - mobloot.item.message
-    - mobloot.item.name
-    - mobloot.item.percent
-    - mobloot.item.removelores
-    - multiverse.*
-    - noplugin.bypass
-    - noplugin.command.pluginsmenu
     - OpenInv.anychest
-    - OpenInv.crossworld
     - OpenInv.editender
     - OpenInv.editinv
-    - OpenInv.openender
-    - OpenInv.openenderall
-    - OpenInv.openinv
     - OpenInv.search
     - OpenInv.searchenchant
-    - OpenInv.silent
-    - orelogger.help
-    - orelogger.on
-    - pdl.lookup
-    - pdl.use
     - placeholderapi.admin
-    - plugman.admin
     - rankup.checkversion
     - rankup.reload
-    - rtp.biomes
-    - rtp.cooldown
-    - rtp.delay
-    - rtp.placesign
-    - rtp.reload
-    - rtp.set
-    - rtp.tp
-    - rtp.tp.others
-    - rtp.worlds
     - shopchest.*
-    - silkspawners.changetype.*
-    - silkspawners.reload
-    - sv.others
-    - sv.reload
-    - sv.see.level2
-    - sv.see.level3
-    - sv.see.level4
-    - sv.use.level2
-    - sv.use.level3
-    - sv.use.level4
-    - tab.*
-    - tab.about
-    - tab.color.aqua
-    - tab.color.black
-    - tab.color.blue
-    - tab.color.bold
-    - tab.color.darkaqua
-    - tab.color.darkblue
-    - tab.color.darkgray
-    - tab.color.darkgreen
-    - tab.color.darkpurple
-    - tab.color.darkred
-    - tab.color.gold
-    - tab.color.gray
-    - tab.color.green
-    - tab.color.italic
-    - tab.color.lightpurple
-    - tab.color.magic
-    - tab.color.red
-    - tab.color.strikethrough
-    - tab.color.underline
-    - tab.color.white
-    - tab.color.yellow
-    - tab.group.default
-    - tab.help
-    - tab.permissions
-    - tab.reload
-    - tab.resetconfig
-    - tab.uploadconfig
-    - tab.uploadlog
-    - ticketmanager.admin
-    - ticketmanager.notify
-    - tim.reload
     - tradeplus.admin
-    - treasurechest.admin
-    - treasurehunt.command.despawn
-    - treasurehunt.command.start
     - vault.admin
-    - worldborder.fill
     - worldedit.*
     - worldguard.*
-    - xcheck.bypasscheck
-    - xcheck.check
-    - xcheck.receive
 
 ################################################################################
 # Wrapper groups
