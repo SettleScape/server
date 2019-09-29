@@ -7,8 +7,8 @@
 &lGriefing Policy:&r
 (These rules apply to the Overworld and the central End island;  everything else is anarchy.)
 1. No grievous griefs (keep the server looking nice)
-2. Active projects are protected.
-3. Salvaging abandoned builds is allowed.
+2. Town hinterlands are protected.
+3. Anything in the wild may be salvaged.
 4. Unlocked containers are fair-game for anyone.
 
 &lModerator Policies:&r
