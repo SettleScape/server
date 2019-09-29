@@ -12,7 +12,7 @@ kits:
   starter:
     delay: -1
     items:
-      - oak_boat 1
+      - spruce_boat 1
       - compass 1
       - apples 5
       - torch 1

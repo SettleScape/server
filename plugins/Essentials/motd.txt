@@ -1,1 +1,4 @@
-&7Type `/help` for assistance.&r
+&7Type `/spawn` for information about SettleScape.&r
+&7Type `/help` for assistance with commands.&r
+&7Go to `GitHub.com/SettleScape/server/issues` to report issues with the server.&r
+&7Go to `Discord.gg/VFs4QJj` to join our server's Discord.&r
