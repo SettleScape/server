@@ -33,25 +33,25 @@ Explorer:
   next: 'Explorer'
   requirements:
     - 'money 40000'           # Money sink
-    - 'mcmmo-power-level 150' # Proof of playtime
+    - 'mcmmo-power-level 200' # Proof of playtime
     - 'item shulker_shell 5'  # Proof that you've conquered the End
     - 'item dragon_head 1'    # Proof that you've conquered the End
     - 'group Settler'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &5{RANK}&7!'
   rankup:
-    requirements-not-met: '&cIn order to rank up, you need a balance of $30k, a power level of 150, and the following items: 5 shulker shells and 1 end dragon head.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $40k, a power level of 200, and the following items: 5 shulker shells and 1 end dragon head.'
 
 Pathfinder:
   rank: 'Explorer'
   next: 'Pathfinder'
   requirements:
     - 'money 80000'            # Money sink
-    - 'mcmmo-power-level 200'  # Proof of playtime
+    - 'mcmmo-power-level 400'  # Proof of playtime
     - 'item nether_star 1'     # Proof that you've beaten the postgame
     - 'item conduit 1'         # Proof that you've beaten the postgame
     - 'group Explorer'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
   rankup:
-    requirements-not-met: '&cIn order to rank up, you need a balance of $40k, a power level of 200, and the following items: 1 nether star and 1 conduit.'
+    requirements-not-met: '&cIn order to rank up, you need a balance of $80k, a power level of 400, and the following items: 1 nether star and 1 conduit.'
