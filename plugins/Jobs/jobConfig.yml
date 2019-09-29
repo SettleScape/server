@@ -715,23 +715,23 @@ Jobs:
       tube_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       brain_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       bubble_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       fire_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       horn_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       #origial blocks
       end_stone:
         income: 2
@@ -932,23 +932,23 @@ Jobs:
       dead_tube_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       dead_brain_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       dead_bubble_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       dead_fire_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       dead_horn_coral_block:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       dried_kelp_block:
         income: 2
         points: 2
@@ -1847,27 +1847,26 @@ Jobs:
         points: 5.0
         experience: 5.0
     Break:
-      #new 1.13 blocks
       tube_coral_fan:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       brain_coral_fan:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       bubble_coral_fan:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       fire_coral_fan:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       horn_coral_fan:
         income: 2
         points: 2
-        experience: 3
+        experience: 2
       kelp_plant:
         income: 1
         points: 1
@@ -1888,16 +1887,14 @@ Jobs:
         income: 1
         points: 1
         experience: 1
-
-      #old blocks
       chorus_plant:
         income: 1.5
         points: 1.5
         experience: 3.0
-      chorus_flower:
-        income: 1.5
-        points: 1.5
-        experience: 3.0
+      chorus_flower: # Buffed, since these take finesse to acquire
+        income: 2
+        points: 2
+        experience: 2.0
       beetroots-7:
         income: 1.5
         points: 1.5
@@ -1922,34 +1919,10 @@ Jobs:
         income: 0.2
         points: 0.2
         experience: 0.2
-      cocoa-2:
-        income: 4
-        points: 4
-        experience: 4.0
-      oak_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      spruce_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      birch_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      jungle_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      acacia_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      dark_oak_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
+      cocoa-2: # Nerfed, because a cocoa farm is way overproductive otherwise
+        income: 3
+        points: 3
+        experience: 3.0
       lily_pad:
         income: 2
         points: 2
@@ -1958,10 +1931,10 @@ Jobs:
         income: 2
         points: 2
         experience: 2.0
-      poppy:
-        income: 2
-        points: 2
-        experience: 2.0
+      poppy: # Nerfed because iron farms make these stupidly abundant
+        income: 1.5
+        points: 1.5
+        experience: 1.5
       blue_orchid:
         income: 2
         points: 2
@@ -1995,20 +1968,20 @@ Jobs:
         points: 2
         experience: 2.0
       brown_mushroom:
-        income: 1
-        points: 1
-        experience: 1.0
+        income: 1.5
+        points: 1.5
+        experience: 1.5
       red_mushroom:
-        income: 1
-        points: 1
-        experience: 1.0
+        income: 1.5
+        points: 1.5
+        experience: 1.5
       vine:
-        income: 1
-        points: 1
-        experience: 1.0
+        income: 1.5
+        points: 1.5
+        experience: 1.5
       cactus:
-        income: 1
-        points: 1
+        income: 1.5
+        points: 1.5
         experience: 1.0
       nether_wart:
         income: 1
@@ -2023,28 +1996,30 @@ Jobs:
         points: .5
         experience: 1.0
     Place:
-      #new 1.13 blocks
-      dead_tube_coral_fan:
+      oak_sapling:
         income: 2
         points: 2
-        experience: 3
-      dead_brain_coral_fan:
+        experience: 2.0
+      spruce_sapling:
         income: 2
         points: 2
-        experience: 3
-      dead_bubble_coral_fan:
+        experience: 2.0
+      birch_sapling:
         income: 2
         points: 2
-        experience: 3
-      dead_fire_coral_fan:
+        experience: 2.0
+      jungle_sapling: # Half the drop chance of normal saplings, so worth more
+        income: 3
+        points: 3
+        experience: 4.0
+      acacia_sapling:
         income: 2
         points: 2
-        experience: 3
-      dead_horn_coral_fan:
+        experience: 2.0
+      dark_oak_sapling:
         income: 2
         points: 2
-        experience: 3
-
+        experience: 2.0
       wheat:
         income: 1
         points: 1
@@ -2065,8 +2040,7 @@ Jobs:
         income: 1
         points: 1
         experience: 1
-      #sugarcane will remove an income/point and experience so it isn't spammed
-      sugar_cane:
+      sugar_cane: # sugarcane will remove an income/point and experience so it isn't spammed
         income: -1
         points: -1
         experience: -1
