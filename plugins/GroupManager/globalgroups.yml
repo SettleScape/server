@@ -12,18 +12,13 @@
 
 groups:
 
+# Player
 ################################################################################
-  g:Default:
+  g:Player:
     permissions:
-    - bukkit.broadcast.user
-    - bukkit.command.kill
-    - bukkit.command.me
-    - bukkit.command.time
-    - bukkit.command.tps
-    - groupmanager.notify.self
-    - towny.chat.local
 
-    # Info about the server
+# Info about the server
+#-------------------------------------------------------------------------------
     - essentials.help
     - essentials.list
     - essentials.motd
@@ -31,35 +26,69 @@ groups:
     - essentials.recipe
     - essentials.jail.allow.help
     - essentials.jail.allow.rules
+    - bukkit.command.tps
+    - essentials.time
+  # - bukkit.command.time
 
-    # Info about the player
+# Info about the player
+#-------------------------------------------------------------------------------
+  # - bukkit.command.me
     - essentials.me
     - essentials.exp
     - essentials.ping
     - essentials.getpos
     - essentials.depth
     - essentials.compass
-    - essentials.time
+    - essentials.jail.allow.ping
+    - essentials.seen
+    - groupmanager.notify.self
 
-    # Economy
+# Economy
+#-------------------------------------------------------------------------------
     - essentials.balance
     - essentials.pay
     - essentials.pay.multiple
     - essentials.payconfirmtoggle
     - essentials.worth
+    - shopchest.buy
+    - shopchest.create
+    - shopchest.create.buy
+    - shopchest.create.sell
+    - shopchest.sell
+    - auctionhouse.cancel
+    - auctionhouse.expired
+    - auctionhouse.help
+    - auctionhouse.menu
+    - auctionhouse.return
+    - auctionhouse.search
+    - auctionhouse.sell
+    - auctionhouse.selling
+    - auctionhouse.sold
+    - auctionhouse.use
 
-    # Chat
+# Chat
+#-------------------------------------------------------------------------------
+  # - bukkit.broadcast.user
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.chat.question
+  # - essentials.chat.url
     - essentials.ignore
     - essentials.mail
     - essentials.mail.send
+  # - bukkit.command.tell
     - essentials.msg
     - essentials.msg.color
     - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.msg.multiple
+  # - essentials.msg.url
     - essentials.helpop
-    - essentials.seen
-    - essentials.jail.allow.ping
+    - towny.chat.local
 
-    # Teleportation
+# Teleportation
+#-------------------------------------------------------------------------------
+  # - bukkit.command.kill
     - essentials.suicide
     - essentials.spawn
     - essentials.tpa
@@ -69,7 +98,8 @@ groups:
     - essentials.warp
     - essentials.warp.list
 
-    # Homes
+# Homes
+#-------------------------------------------------------------------------------
     - essentials.home
     - essentials.home.bed
     - essentials.delhome
@@ -77,7 +107,9 @@ groups:
     - essentials.sethome.bed
     - essentials.sethome.multiple
 
-    # Misc
+# Misc
+#-------------------------------------------------------------------------------
+    - bukkit.command.gamemode.survival
     - essentials.afk
     - essentials.afk.auto
     - essentials.build
@@ -87,53 +119,45 @@ groups:
     - essentials.kit
     - essentials.clearinventory
     - essentials.workbench
+  # - essentials.enderchest
     - essentials.book
     - essentials.book.title
-
-    # Moved from world groups
-    - -mcmmo.commands.party.teleport
-    - -mcmmo.commands.ptp
+    - editablesign.colorsign
+    - editablesign.edit
     - -rankup.auto
-    - auctionhouse.cancel
-    - auctionhouse.expired
 
-    - auctionhouse.help
-    - auctionhouse.menu
-    - auctionhouse.return
-    - auctionhouse.search
-    - auctionhouse.sell
-    - auctionhouse.selling
-    - auctionhouse.sold
-    - auctionhouse.use
-    - betterbanner.advanced
-    - lwc.protect
-    - report.use
-    - shopchest.buy
-    - shopchest.create
-    - shopchest.create.buy
-    - shopchest.create.sell
-    - shopchest.sell
-
+# Moderator
 ################################################################################
   g:Moderator:
     info:
       suffix: ' &c(mod)&r'
-    inheritance:
+    inheritance: # I don't think inheritance works in the global file.
     - g:Default
     permissions:
-    - bukkit.command.say
-    - bukkit.command.tell
-    - bukkit.command.kick
-    - bukkit.command.ban
-    - bukkit.command.ban.ip
-    - bukkit.command.ban.player
-    - bukkit.command.unban
-    - bukkit.command.unban.ip
-    - bukkit.command.unban.player
-    - bukkit.command.whitelist.add
-    - bukkit.command.whitelist.remove
-    - bukkit.command.whitelist.reload
-    - bukkit.command.whitelist.list
+
+# Chat
+#-------------------------------------------------------------------------------
+  # - bukkit.command.say
+    - essentials.broadcast
+    - essentials.helpop.receive
+    - essentials.chat.shout
+    - essentials.mail.sendall
+    - towny.chat.mod
+
+# Info
+#-------------------------------------------------------------------------------
+    - essentials.balancetop
+    - essentials.invsee
+    - essentials.realname
+    - essentials.balance.others
+    - essentials.exp.others
+    - essentials.getpos.others
+    - essentials.home.others
+    - essentials.list.hidden
+    - essentials.ptime.others
+    - essentials.seen.extra
+    - essentials.whois
+    - lwc.shownotices
     - groupmanager.listgroups
     - groupmanager.manselect
     - groupmanager.manwhois
@@ -142,13 +166,16 @@ groups:
     - groupmanager.manucheckp
     - groupmanager.manulistp
     - groupmanager.notify.other
-    - towny.chat.mod
-    - towny.wild.switch.64
-    - towny.wild.build.83
-    - towny.wild.build.86
-    - towny.wild.build.103
-    - towny.wild.build.111
-    - towny.wild.build.115
+
+# Espionage
+#-------------------------------------------------------------------------------
+    - essentials.god
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.tp
+    - essentials.tptoggle
+  # - essentials.vanish
+  # - essentials.vanish.effect
     - vanish.vanish
     - vanish.smokin
     - vanish.nofollow
@@ -156,41 +183,21 @@ groups:
     - vanish.preventincomingdamage
     - vanish.hooks.dynmap.alwayshidden
     - vanish.hooks.essentials.hide
+    - vanish.silentchests
+    - vanish.silentjoin
+    - vanish.silentquit
+    - OpenInv.crossworld
+    - OpenInv.openender
+    - OpenInv.openenderall
+    - OpenInv.openinv
+    - OpenInv.silent
 
-    # Chat
-    - essentials.broadcast
-    - essentials.helpop.receive
-    - essentials.chat.format
-    - essentials.chat.magic
-    - essentials.chat.question
-    - essentials.chat.shout
-    - essentials.chat.url
-    - essentials.msg.magic
-
-    # Info
-    - essentials.balancetop
-    - essentials.invsee
-    - essentials.realname
-    - essentials.balance.others
-    - essentials.exp.others
-    - essentials.getpos.others
-    - essentials.home.others
+# Punishments/Judgements/Actions
+#-------------------------------------------------------------------------------
+    - essentials.afk.others
     - essentials.nick.others
-    - essentials.ptime.others
-    - essentials.seen.extra
-    - essentials.whois
-
-    # Espionage
-    - essentials.fly
-    - essentials.fly.safelogin
-    - essentials.tp
     - essentials.tp.others
     - essentials.tphere
-    - essentials.tptoggle
-    - essentials.vanish
-    - essentials.vanish.effect
-
-    # Punishments
     - essentials.kill
     - essentials.jail.allow.jails
     - essentials.jail.allow.togglejail
@@ -198,16 +205,27 @@ groups:
     - essentials.togglejail
     - essentials.mute
     - essentials.mute.notify
+  # - bukkit.command.kick
     - essentials.kick
     - essentials.kick.notify
+  # - bukkit.command.ban
+  # - bukkit.command.ban.ip
+  # - bukkit.command.ban.player
     - essentials.ban
     - essentials.banip
     - essentials.ban.notify
     - essentials.seen.banreason
+  # - bukkit.command.unban
+  # - bukkit.command.unban.ip
+  # - bukkit.command.unban.player
     - essentials.unban
     - essentials.unbanip
+    - bukkit.command.whitelist.add
+    - bukkit.command.whitelist.remove
+    - bukkit.command.whitelist.list
 
-    # Exemptions
+# Exemptions
+#-------------------------------------------------------------------------------
     - essentials.jail.allow.helpop
     - essentials.jail.allow.mail
     - essentials.jail.allow.seen
@@ -220,64 +238,47 @@ groups:
     - essentials.jail.exempt
     - essentials.pvpdelay.exempt
 
-    # Moved from world groups
-    - essentials.afk.others
-    - essentials.balance.others
-    - essentials.balancetop
-    - essentials.ban.notify
-    - essentials.broadcast
-    - essentials.chat.color
-    - essentials.chat.format
-    - essentials.chat.magic
-    - essentials.chat.url
-    - essentials.clearinventory
-    - essentials.enderchest
-    - essentials.exp.others
-    - essentials.ext
-    - essentials.hat
-    - essentials.helpop.receive
-    - essentials.jails
-    - essentials.kick
-    - essentials.list.hidden
-    - essentials.mail.sendall
-    - essentials.msg.color
-    - essentials.msg.format
-    - essentials.msg.magic
-    - essentials.msg.multiple
-    - essentials.msg.url
-    - essentials.mute
-    - essentials.mute.notify
-    - essentials.mute.offline
-    - essentials.recipe
-    - essentials.seen
-    - essentials.seen.extra
-    - essentials.togglejail
-    - essentials.togglejail.offline
-    - essentials.vanish
-    - essentials.workbench
-    - editablesign.colorsign
-    - editablesign.edit
-    - lwc.shownotices
-    - OpenInv.crossworld
-    - OpenInv.openender
-    - OpenInv.openenderall
-    - OpenInv.openinv
-    - OpenInv.silent
-
+# Administrator
 ################################################################################
   g:Administrator:
     info:
       suffix: ' &c(admin)&r'
-    inheritance:
+    inheritance: # I don't think inheritance works in the global file.
     - g:Moderator
     permissions:
-    - bukkit.broadcast
-    - bukkit.broadcast.admin
+
+# Cheats used for testing
+#-------------------------------------------------------------------------------
+    - bukkit.command.teleport
+    - bukkit.command.time.add
+    - bukkit.command.time.set
     - bukkit.command.gamemode
     - bukkit.command.give
+
+# Server info
+#-------------------------------------------------------------------------------
     - bukkit.command.help
     - bukkit.command.list
     - bukkit.command.plugins
+    - bukkit.command.version
+
+# Configuration
+#-------------------------------------------------------------------------------
+    - groupmanager.mandemote
+    - groupmanager.manpromote
+    - groupmanager.mansave
+    - groupmanager.mantogglevalidate
+    - groupmanager.manuadd
+    - groupmanager.manudel
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - groupmanager.op
+    - towny.admin
+
+# Operations
+#-------------------------------------------------------------------------------
+    - bukkit.command.whitelist.reload
     - bukkit.command.reload
     - bukkit.command.restart
     - bukkit.command.save
@@ -285,62 +286,22 @@ groups:
     - bukkit.command.save.enable
     - bukkit.command.save.perform
     - bukkit.command.stop
-    - bukkit.command.teleport
-    - bukkit.command.time.add
-    - bukkit.command.time.set
-    - bukkit.command.version
-    - bukkit.command.whitelist
-    - bukkit.command.whitelist.disable
-    - bukkit.command.whitelist.enable
-    - groupmanager.mandemote
-    - groupmanager.manpromote
-    - groupmanager.mansave
-    - groupmanager.mantogglevalidate
-    - groupmanager.manuadd
-    - groupmanager.manudel
-    - groupmanager.op
-    - towny.wild.build.6
-    - towny.wild.build.17
-    - towny.wild.destroy.6
-    - towny.wild.destroy.14
-    - towny.wild.destroy.15
-    - towny.wild.destroy.16
-    - towny.wild.destroy.17
-    - towny.wild.destroy.18
-    - towny.wild.destroy.21
-    - towny.wild.destroy.31
-    - towny.wild.destroy.37
-    - towny.wild.destroy.38
-    - towny.wild.destroy.39
-    - towny.wild.destroy.40
-    - towny.wild.destroy.50
-    - towny.wild.destroy.56
-    - towny.wild.destroy.73
-    - towny.wild.destroy.74
-    - towny.wild.destroy.78
-    - towny.wild.destroy.81
-    - towny.wild.destroy.82
-    - towny.wild.destroy.83
-    - towny.wild.destroy.86
-    - towny.wild.destroy.103
-    - towny.wild.destroy.106
-    - towny.wild.destroy.111
-    - towny.wild.destroy.115
-    - towny.admin
-    - towny.chat.admin
-    - towny.wild.destroy.119
-    - towny.wild.destroy.120
-    - vanish.silentjoin
-    - vanish.silentquit
-    - vanish.silentchests
 
-    # Offline actions (these ignore exemptions)
+# Chat
+#-------------------------------------------------------------------------------
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - towny.chat.admin
+
+# Offline actions (these ignore exemptions)
+#-------------------------------------------------------------------------------
     - essentials.mute.offline
     - essentials.tempban.offline
     - essentials.togglejail.offline
     - essentials.ban.offline
 
-    # Exemptions
+# Exemptions
+#-------------------------------------------------------------------------------
     - essentials.itemspawn.exempt
     - essentials.kit.exemptdelay
     - essentials.near.maxexempt
@@ -349,7 +310,8 @@ groups:
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
 
-    # Misc
+# Misc
+#-------------------------------------------------------------------------------
     - essentials.ext
     - essentials.weather
     - essentials.setspawn
@@ -357,17 +319,34 @@ groups:
     - essentials.plugin
     - essentials.top
 
-    # Catch-alls
-    - essentials.*
+# Catch-alls (Unevaluated)
+#-------------------------------------------------------------------------------
+    - coreprotect.*
+    - dynmap.*
+    - essentials.enchantments.*
     - essentials.kits.*
     - essentials.signs.break.*
     - essentials.signs.create.*
     - essentials.signs.use.*
     - essentials.spawner.*
+    - essentials.spawnmob.*
     - essentials.warps.*
     - essentials.worlds.*
+    - jobs.*
+    - lwc.*
+    - mcmmo.*
+    - shopchest.*
+    - towny.claimed.alltown.build.*
+    - towny.claimed.alltown.destroy.*
+    - towny.claimed.alltown.item_use.*
+    - towny.claimed.alltown.switch.*
+    - towny.command.townyadmin.*
+    - towny.command.townyworld.*
+    - worldedit.*
+    - worldguard.*
 
-    # Unevaluated
+# Unevaluated
+#-------------------------------------------------------------------------------
     - essentials.tppos
     - essentials.backup
     - essentials.essentials
@@ -401,21 +380,20 @@ groups:
     - essentials.signs.break.protection
     - essentials.signs.break.trade
 
-    # Moved from world groups
+# Moved from world groups
+#-------------------------------------------------------------------------------
     - auction.admin.expire
     - auctionhouse.cancel.others
     - auctionhouse.reload
     - commandlog.admin
     - commandlog.history
     - commandlog.notice
-    - coreprotect.*
     - coreprotect.co
     - coreprotect.help
     - coreprotect.inspect
     - coreprotect.lookup
     - coreprotect.restore
     - coreprotect.rollback
-    - dynmap.*
     - editablesign.admin
     - editablesign.colorsign
     - editablesign.edit
@@ -447,7 +425,6 @@ groups:
     - essentials.delwarp
     - essentials.eco
     - essentials.enchant
-    - essentials.enchantments.*
     - essentials.enchantments.allowunsafe
     - essentials.enderchest.modify
     - essentials.enderchest.others
@@ -485,7 +462,6 @@ groups:
     - essentials.kickall
     - essentials.kill
     - essentials.kit.others
-    - essentials.kits.*
     - essentials.lightning
     - essentials.lightning.others
     - essentials.near
@@ -512,9 +488,7 @@ groups:
     - essentials.skull.others
     - essentials.skull.spawn
     - essentials.spawner
-    - essentials.spawner.*
     - essentials.spawnmob
-    - essentials.spawnmob.*
     - essentials.spawnmob.stack
     - essentials.speed
     - essentials.speed.bypass
@@ -546,7 +520,6 @@ groups:
     - essentials.weather
     - essentials.whois
     - essentials.world
-    - jobs.*
     - lagg.admin
     - lagg.area
     - lagg.check
@@ -561,9 +534,7 @@ groups:
     - lagg.tpchunk
     - lagg.tps
     - lagg.unloadchunks
-    - lwc.*
     - lwc.mod
-    - mcmmo.*
     - mineablespawners.eggchange
     - mineablespawners.give
     - mineablespawners.spawner
@@ -578,14 +549,5 @@ groups:
     - placeholderapi.admin
     - rankup.checkversion
     - rankup.reload
-    - shopchest.*
-    - towny.claimed.alltown.build.*
-    - towny.claimed.alltown.destroy.*
-    - towny.claimed.alltown.item_use.*
-    - towny.claimed.alltown.switch.*
-    - towny.command.townyadmin.*
-    - towny.command.townyworld.*
     - tradeplus.admin
     - vault.admin
-    - worldedit.*
-    - worldguard.*

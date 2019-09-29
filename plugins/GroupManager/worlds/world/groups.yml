@@ -17,7 +17,7 @@ groups:
       build: true
       prefix: '&8Wanderer&r '
     inheritance:
-    - g:Default
+    - g:Player
     permissions:
 
     # Setup
