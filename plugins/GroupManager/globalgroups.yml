@@ -116,6 +116,8 @@ groups:
     - essentials.hat
     - essentials.nick
     - essentials.nick.color
+    - essentials.nick.format
+    - essentials.nick.magic
     - essentials.kit
     - essentials.clearinventory
     - essentials.workbench
@@ -124,6 +126,7 @@ groups:
     - essentials.book.title
     - editablesign.colorsign
     - editablesign.edit
+    - lwc.protect
     - -rankup.auto
 
 # Moderator
@@ -186,6 +189,7 @@ groups:
     - vanish.silentchests
     - vanish.silentjoin
     - vanish.silentquit
+    - lwc.mod
     - OpenInv.crossworld
     - OpenInv.openender
     - OpenInv.openenderall
@@ -318,6 +322,7 @@ groups:
     - essentials.reloadall
     - essentials.plugin
     - essentials.top
+    - lwc.admin
 
 # Catch-alls (Unevaluated)
 #-------------------------------------------------------------------------------
@@ -333,7 +338,6 @@ groups:
     - essentials.warps.*
     - essentials.worlds.*
     - jobs.*
-    - lwc.*
     - mcmmo.*
     - shopchest.*
     - towny.claimed.alltown.build.*
@@ -534,7 +538,6 @@ groups:
     - lagg.tpchunk
     - lagg.tps
     - lagg.unloadchunks
-    - lwc.mod
     - mineablespawners.eggchange
     - mineablespawners.give
     - mineablespawners.spawner

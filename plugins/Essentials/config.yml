@@ -591,11 +591,11 @@ world-home-permissions: false
 # For more information, visit http://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
   default: 1
-  wanderer: 1
-  traveler: 2
-  settler: 3
-  explorer: 4
-  pathfinder: 5
+  wanderer: 0
+  traveller: 1
+  settler: 2
+  explorer: 3
+  pathfinder: 4
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.

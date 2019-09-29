@@ -20,19 +20,26 @@ groups:
     - g:Player
     permissions:
 
-    # Setup
-    - rank.explorer
-    - rank.pathfinder
-    - rank.settler
-    - rank.traveler
-    - rank.wanderer
-
     # Limit increases
-    - auctionhouse.auctions.5
+    - auctionhouse.auctions.2
+    - shopchest.limit.10
     - essentials.sethome.multiple.wanderer
 
-    # New abilities
+    # Restrictions
+    - -towny.town.resident
     - -towny.command.town.new
+    - -towny.command.nation.new
+    - -essentials.workbench
+    - -essentials.delhome
+    - -essentials.sethome
+    - -essentials.sethome.multiple
+    - -essentials.hat
+    - -essentials.nick
+    - -essentials.nick.color
+    - -essentials.nick.format
+    - -essentials.nick.magic
+    - -essentials.kit
+    - -essentials.clearinventory
 
   #-----------------------------------------------------------------------------
   Traveller:
@@ -40,26 +47,29 @@ groups:
     info:
       build: true
       prefix: '&aTraveller&r '
-      auctions: 10
     inheritance:
     - Wanderer
     permissions:
 
     # Limit increases
-    - auctionhouse.auctions.10
-    - essentials.sethome.multiple.traveler
-    - shopchest.limit.50
+    - auctionhouse.auctions.4
+    - shopchest.limit.20
+    - essentials.sethome.multiple.traveller
 
-    # New abilities
-    - editablesign.edit
-    - editablesign.colorsign
-    - essentials.chat.color
-    - essentials.chat.format
-    - essentials.chat.magic
-    - essentials.msg.color
-    - essentials.msg.format
-    - essentials.msg.magic
-    - towny.town.resident
+    # Basic quality of life improvements
+    - +essentials.workbench
+    - +essentials.clearinventory
+
+    # Unlikely to be a spammer
+    - +essentials.nick
+    - essentials.chat.url
+    - essentials.msg.url
+
+    # Misc
+    - +towny.town.resident
+    - +essentials.delhome
+    - +essentials.sethome
+    - +essentials.sethome.multiple
 
   #-----------------------------------------------------------------------------
   Settler:
@@ -72,18 +82,19 @@ groups:
     permissions:
 
     # Limit increases
-    - auctionhouse.auctions.15
+    - auctionhouse.auctions.6
+    - shopchest.limit.30
     - essentials.sethome.multiple.settler
-    - shopchest.limit.100
 
-    # New abilities
-    - essentials.clearinventory
-    - essentials.hat
-    - essentials.nick
-    - essentials.nick.color
-    - essentials.nick.format
-    - essentials.nick.magic
-    - towny.command.town.new
+    # Cosmetics
+    - +essentials.hat
+    - +essentials.nick.color
+    - +essentials.nick.format
+    - +essentials.nick.magic
+
+    # Misc
+    - +towny.command.town.new
+    - +essentials.kit
 
   #-----------------------------------------------------------------------------
   Explorer:
@@ -96,13 +107,14 @@ groups:
     permissions:
 
     # Limit increases
-    - auctionhouse.auctions.20
-    - shopchest.limit.150
+    - auctionhouse.auctions.8
+    - shopchest.limit.40
     - essentials.sethome.multiple.explorer
 
     # New abilities
+    - +towny.command.nation.new
     - essentials.back
-    - essentials.workbench
+    - essentials.enderchest
     - mineablespawners.break
 
   #-----------------------------------------------------------------------------
@@ -116,11 +128,12 @@ groups:
     permissions:
 
     # Limit increases
-    - auctionhouse.auctions.25
+    - auctionhouse.auctions.10
+    - shopchest.limit.50
     - essentials.sethome.multiple.pathfinder
-    - shopchest.limit.200
 
-    # New abilities
+    # Superpowers
+  # - essentials.fly
     - essentials.ext
     - essentials.feed
     - essentials.heal
