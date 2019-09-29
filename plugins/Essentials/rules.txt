@@ -1,15 +1,14 @@
 &lConduct:&r
 1. Avoid drama;  do not escalate.
 2. Membership in this server is a privilege and limited to friends of friends only.  This is not a public MC server.
-3. Your Discord nickname should be your SettleScape nickname or Minecraft username.
+3. Your Discord nickname and your SettleScape nickname should match.
 4. No ad hominems
 
 &lGriefing Policy:&r
 (These rules apply to the Overworld and the central End island;  everything else is anarchy.)
 1. No grievous griefs (keep the server looking nice)
-2. Town hinterlands are protected.
-3. Anything in the wild may be salvaged.
-4. Unlocked containers are fair-game for anyone.
+2. Towns and their hinterlands are protected, but everything else is fair-game.
+3. Unlocked containers are fair-game anywhere.
 
 &lModerator Policies:&r
 1. Permabans require the agreement of at least two mods, or the decision of an admin.
