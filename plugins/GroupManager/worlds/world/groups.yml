@@ -86,6 +86,11 @@ groups:
     - shopchest.limit.30
     - essentials.sethome.multiple.settler
 
+    # Unlikely to be a griefer
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.protect.exemptusage
+
     # Cosmetics
     - +essentials.hat
     - +essentials.nick.color

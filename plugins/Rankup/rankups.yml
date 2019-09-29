@@ -32,7 +32,7 @@ Explorer:
   rank: 'Settler'
   next: 'Explorer'
   requirements:
-    - 'money 30000'           # Money sink
+    - 'money 40000'           # Money sink
     - 'mcmmo-power-level 150' # Proof of playtime
     - 'item shulker_shell 5'  # Proof that you've conquered the End
     - 'item dragon_head 1'    # Proof that you've conquered the End
@@ -46,7 +46,7 @@ Pathfinder:
   rank: 'Explorer'
   next: 'Pathfinder'
   requirements:
-    - 'money 40000'            # Money sink
+    - 'money 80000'            # Money sink
     - 'mcmmo-power-level 200'  # Proof of playtime
     - 'item nether_star 1'     # Proof that you've beaten the postgame
     - 'item conduit 1'         # Proof that you've beaten the postgame
