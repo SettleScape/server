@@ -1,3 +1,4 @@
+&cSettleScape is currently in beta.&r
 &7Type `/spawn` for information about SettleScape.&r
 &7Type `/help` for assistance with commands.&r
 &7Go to `GitHub.com/SettleScape/server/issues` to report issues.&r
