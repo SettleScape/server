@@ -1,6 +1,6 @@
 # Magnet module
 magnet:
-    enabled: true
+    enabled: false
 
     # The radius around containers that they will suck up
     radius: 2
@@ -11,5 +11,4 @@ magnet:
 
     # A blacklist of items that will NOT be picked up
     # Item names usually work, but be careful
-    blacklist:
-        - 500
+    blacklist: []
