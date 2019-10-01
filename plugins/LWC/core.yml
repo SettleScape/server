@@ -7,7 +7,7 @@ core:
     showMyNotices: false
     opIsLWCAdmin: true
     disableHistory: false
-    townyBorders: false
+    townyBorders: true
     groupPrefix: group.
     updateNotifier: true
 optional:
@@ -16,11 +16,9 @@ optional:
     exemptBlocks: []
     optOut: false
     blacklistedBlocks:
-    - '166'
     - hopper
-    blacklistedPlayers:
-    - player
-    useProtectionLimits: true
+    blacklistedPlayers: []
+    useProtectionLimits: false
     useActionBar: false
 database:
     adapter: sqlite
@@ -32,14 +30,14 @@ database:
     prefix: lwc_
     ping_interval: 300
 protections:
-    denyRedstone: false
+    denyRedstone: true
     denyHoppers: true
     autoRegister: false
-    ignoreBlockDestruction: false
-    ignoreLeftClick: false
+    ignoreBlockDestruction: true
+    ignoreLeftClick: true
     ignoreRightClick: false
-    ignoreExplosions: false
-    allowEntityBreakDoor: false
+    ignoreExplosions: true
+    allowEntityBreakDoor: true
     allowEntityInteract: false
     quiet: false
     readonly-modify: false
