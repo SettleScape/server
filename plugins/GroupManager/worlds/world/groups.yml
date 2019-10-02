@@ -52,7 +52,9 @@ groups:
     permissions:
 
     # Limit increases
+    - -auctionhouse.auctions.2
     - auctionhouse.auctions.4
+    - -shopchest.limit.10
     - shopchest.limit.20
     - essentials.sethome.multiple.traveller
 
@@ -82,7 +84,9 @@ groups:
     permissions:
 
     # Limit increases
+    - -auctionhouse.auctions.4
     - auctionhouse.auctions.6
+    - -shopchest.limit.20
     - shopchest.limit.30
     - essentials.sethome.multiple.settler
 
@@ -112,7 +116,9 @@ groups:
     permissions:
 
     # Limit increases
+    - -auctionhouse.auctions.6
     - auctionhouse.auctions.8
+    - -shopchest.limit.30
     - shopchest.limit.40
     - essentials.sethome.multiple.explorer
 
@@ -133,12 +139,14 @@ groups:
     permissions:
 
     # Limit increases
+    - -auctionhouse.auctions.8
     - auctionhouse.auctions.10
+    - -shopchest.limit.40
     - shopchest.limit.50
     - essentials.sethome.multiple.pathfinder
 
     # Superpowers
-  # - essentials.fly
+    - essentials.fly
     - essentials.ext
     - essentials.feed
     - essentials.heal

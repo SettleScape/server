@@ -30,8 +30,8 @@ database:
     prefix: lwc_
     ping_interval: 300
 protections:
-    denyRedstone: true
-    denyHoppers: true
+    denyRedstone: false
+    denyHoppers: false
     autoRegister: false
     ignoreBlockDestruction: true
     ignoreLeftClick: true
