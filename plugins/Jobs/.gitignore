@@ -1,5 +1,7 @@
 **
 !.gitignore
+!boostedItems.yml
 !generalConfig.yml
 !jobConfig.yml
+!restrictedBlocks.yml
 !titleConfig.yml
