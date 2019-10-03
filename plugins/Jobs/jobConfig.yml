@@ -2107,6 +2107,14 @@ Jobs:
         income: 5.0
         points: 5
         experience: 5.0
+      slime:
+        income: 1.0
+        points: 1
+        experience: 1.0
+      magma_cube:
+        income: 1.0
+        points: 1
+        experience: 1.0
       Wolf:
         income: 10.0
         points: 10
@@ -2131,14 +2139,18 @@ Jobs:
         income: 20.0
         points: 20
         experience: 15.0
+      wither_skeleton:
+        income: 15.0
+        points: 15
+        experience: 15.0
       CAVE_SPIDER:
         income: 20.0
         points: 20
         experience: 15.0
       ENDERMAN:
-        income: 2.0
-        points: 2
-        experience: 2.0
+        income: 20.0
+        points: 20
+        experience: 15.0
       GHAST:
         income: 30.0
         points: 30
@@ -2156,9 +2168,9 @@ Jobs:
         points: 5
         experience: 5.0
       PIG_ZOMBIE:
-        income: 5.0
-        points: 5
-        experience: 5.0
+        income: 12.0
+        points: 12
+        experience: 12.0
       SILVERFISH:
         income: 3.0
         points: 3
@@ -2168,37 +2180,37 @@ Jobs:
         points: 2
         experience: 4.0
       SQUID:
-        income: 2.0
-        points: 2
-        experience: 2.0
+        income: 4.0
+        points: 4
+        experience: 4.0
       RABBIT:
         income: 2.0
         points: 2
         experience: 2.0
       GUARDIAN:
-        income: 2.0
-        points: 2
-        experience: 2.0
+        income: 25.0
+        points: 25
+        experience: 25.0
       SHULKER:
         income: 5.0
         points: 5
         experience: 5.0
       PHANTOM:
-        income: 5.0
-        points: 5
-        experience: 5.0
+        income: 7.0
+        points: 7
+        experience: 7.0
       DROWNED:
-        income: 5.0
-        points: 5
-        experience: 5.0
+        income: 15.0
+        points: 15
+        experience: 15.0
       HUSK:
         income: 5.0
         points: 5
         experience: 5.0
       WITHER:
-        income: 50.0
-        points: 50
-        experience: 120.0
+        income: 250.0
+        points: 250
+        experience: 150.0
       ENDER_DRAGON:
         income: 2000.0
         points: 2000
