@@ -11,7 +11,7 @@ layer:
   showShops: true
   showArenas: true
   showEmbassies: false
-  showWilds: true
+  showWilds: false
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
   <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Residents:</b>
   %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
@@ -20,7 +20,7 @@ regionstyle:
   strokeColor: '#000000'
   strokeOpacity: 0.75
   strokeWeight: 3
-  fillColor: '#000000'
+  fillColor: '#7F7F7F'
   fillOpacity: 0.33
   capitalicon: king
   fillColorShops: '#00FF00'
