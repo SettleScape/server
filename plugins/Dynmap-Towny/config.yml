@@ -23,25 +23,18 @@ regionstyle:
   fillColor: '#000000'
   fillOpacity: 0.33
   capitalicon: king
-  fillColorShops: '#0000FF'
+  fillColorShops: '#00FF00'
   fillColorArenas: '#FF0000'
-  fillColorEmbassies: '#FF00FF'
-  fillColorWilds: '#00FF00'
+  fillColorEmbassies: '#0000FF'
+  fillColorWilds: '#7F7F7F'
   boost: false
 visibleregions: []
 hiddenregions: []
-custstyle:
-  customregion1:
-    strokeColor: '#00FF00'
-    y: 64
-  customregion2:
-    strokeColor: '#007F00'
-    y: 64
-    boost: false
+custstyle: {}
 nationstyle:
-  NationOfBlue:
-    strokeColor: '#0000FF'
-    fillColor: '#0000FF'
+  Vladislavia:
+    strokeColor: '#FF7F00'
+    fillColor: '#FF7F00'
     boost: false
   _none_:
     homeicon: redflag
