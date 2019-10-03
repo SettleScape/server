@@ -1,15 +1,19 @@
                              COPYRIGHT
 
-Files in this repository that are Copyright (C) 2019 Miles B Huff:
+Files in this repository that are Copyright (C) from 2019 by the SettleScape team:
 - .editorconfig
 - .gitattributes
 - .gitconfig
-- **/.gitignore
 - Conduct.rst
 - rebuild.sh
 - start.sh
 - server-icon.png
 - server-icon.svg
+- **/.gitignore
+- plugins/plugins.rst
+- plugins/Essentials/motd.yml
+- plugins/Essentials/rules.yml
+- plugins/Essentials/spawn.yml
 
   Unless otherwise stated, all non-source-code listed above are
 licensed under the CC BY-SA 4.0 (Creative Commons Attribution Share-
