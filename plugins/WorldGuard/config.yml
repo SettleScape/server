@@ -38,7 +38,7 @@ regions:
     explosion-flags-block-entity-damage: true
     high-frequency-flags: false
     protect-against-liquid-flow: false
-    wand: minecraft:leather
+    wand: minecraft:wooden_hoe
     max-claim-volume: 30000
     claim-only-inside-existing-regions: false
     location-flags-only-inside-regions: false
@@ -52,7 +52,7 @@ use-player-teleports: true
 use-particle-effects: true
 security:
     deop-everyone-on-join: false
-    block-in-game-op-command: false
+    block-in-game-op-command: true
     host-keys-allow-forge-clients: false
 host-keys: {}
 summary-on-start: true
@@ -67,7 +67,7 @@ event-handling:
     ignore-hopper-item-move-events: false
 protection:
     item-durability: true
-    remove-infinite-stacks: false
+    remove-infinite-stacks: true
     disable-xp-orb-drops: false
     disable-obsidian-generators: false
 gameplay:
@@ -93,7 +93,7 @@ ignition:
     block-tnt-block-damage: false
     block-lighter: false
 fire:
-    disable-lava-fire-spread: true
+    disable-lava-fire-spread: false
     disable-all-fire-spread: false
     disable-fire-spread-blocks: []
     lava-spread-blocks: []
