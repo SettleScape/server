@@ -1,6 +1,6 @@
 # Dynmap-Towny configuration
-visibility-by-town: true
-visibility-by-nation: true
+visibility-by-town: false
+visibility-by-nation: false
 update:
   period: 300
 layer:
@@ -8,19 +8,19 @@ layer:
   hidebydefault: false
   layerprio: 2
   minzoom: 0
-  showShops: false
-  showArenas: false
+  showShops: true
+  showArenas: true
   showEmbassies: false
-  showWilds: false
+  showWilds: true
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
   <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Residents:</b>
   %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
 regionstyle:
   homeicon: redflag
-  strokeColor: '#FFFFFF'
+  strokeColor: '#000000'
   strokeOpacity: 0.75
   strokeWeight: 3
-  fillColor: '#FFFFFF'
+  fillColor: '#000000'
   fillOpacity: 0.33
   capitalicon: king
   fillColorShops: '#0000FF'
