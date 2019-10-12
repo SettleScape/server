@@ -129,13 +129,18 @@ groups:
     - lwc.protect
     - -rankup.auto
 
+# Donor
+################################################################################
+  g:Donor:
+    permissions:
+    - essentials.fly
+    - essentials.fly.safelogin
+
 # Moderator
 ################################################################################
   g:Moderator:
     info:
       suffix: ' &c(mod)&r'
-    inheritance: # I don't think inheritance works in the global file.
-    - g:Default
     permissions:
 
 # Chat
@@ -242,13 +247,17 @@ groups:
     - essentials.jail.exempt
     - essentials.pvpdelay.exempt
 
-# Administrator
+# Developer/Tester
+################################################################################
+
+# Administrator/DevOps
+################################################################################
+
+# Owner
 ################################################################################
   g:Administrator:
     info:
       suffix: ' &c(admin)&r'
-    inheritance: # I don't think inheritance works in the global file.
-    - g:Moderator
     permissions:
 
 # Cheats used for testing
@@ -482,7 +491,6 @@ groups:
     - essentials.repair.armor
     - essentials.repair.enchanted
     - essentials.seen.extra
-    - essentials.sethome.multiple.pathfinder
     - essentials.sethome.multiple.unlimited
     - essentials.sethome.others
     - essentials.setjail

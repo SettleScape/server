@@ -591,12 +591,11 @@ world-home-permissions: false
 # For more information, visit http://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
   default: 1
-  wanderer: 0
-  traveller: 1
-  settler: 2
-  explorer: 3
-  pathfinder: 4
-
+  zero: 0
+  one: 1
+  two: 2
+  three: 3
+  four: 4
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
 
@@ -605,7 +604,7 @@ sethome-multiple:
 #
 # Leaving this as false will retain Essentials' original behaviour, which is to always
 # change the compass' direction to point towards their first home.
-compass-towards-home-perm: false
+compass-towards-home-perm: true
 
 ############################################################
 # +------------------------------------------------------+ #

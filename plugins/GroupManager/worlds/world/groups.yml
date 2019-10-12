@@ -23,7 +23,8 @@ groups:
     # Limit increases
     - auctionhouse.auctions.2
     - shopchest.limit.10
-    - essentials.sethome.multiple.wanderer
+    - jobs.max.1
+    - essentials.sethome.multiple.zero ## Can still `/home bed`
 
     # Restrictions
     - -towny.town.resident
@@ -40,6 +41,8 @@ groups:
     - -essentials.nick.magic
     - -essentials.kit
     - -essentials.clearinventory
+    - -jobs.command.leave
+    - -jobs.command.leaveall
 
   #-----------------------------------------------------------------------------
   Traveller:
@@ -56,7 +59,8 @@ groups:
     - auctionhouse.auctions.4
     - -shopchest.limit.10
     - shopchest.limit.20
-    - essentials.sethome.multiple.traveller
+    - -essentials.sethome.multiple.zero
+    - essentials.sethome.multiple.one
 
     # Basic quality of life improvements
     - +essentials.workbench
@@ -69,9 +73,7 @@ groups:
 
     # Misc
     - +towny.town.resident
-    - +essentials.delhome
     - +essentials.sethome
-    - +essentials.sethome.multiple
 
   #-----------------------------------------------------------------------------
   Settler:
@@ -88,7 +90,10 @@ groups:
     - auctionhouse.auctions.6
     - -shopchest.limit.20
     - shopchest.limit.30
-    - essentials.sethome.multiple.settler
+    - -jobs.max.1
+    - jobs.max.2
+    - -essentials.sethome.multiple.one
+    - essentials.sethome.multiple.two
 
     # Unlikely to be a griefer
     - essentials.protect.exemptbreak
@@ -104,6 +109,8 @@ groups:
     # Misc
     - +towny.command.town.new
     - +essentials.kit
+    - +essentials.delhome
+    - +essentials.sethome.multiple
 
   #-----------------------------------------------------------------------------
   Explorer:
@@ -120,7 +127,8 @@ groups:
     - auctionhouse.auctions.8
     - -shopchest.limit.30
     - shopchest.limit.40
-    - essentials.sethome.multiple.explorer
+    - -essentials.sethome.multiple.two
+    - essentials.sethome.multiple.three
 
     # New abilities
     - +towny.command.nation.new
@@ -143,10 +151,13 @@ groups:
     - auctionhouse.auctions.10
     - -shopchest.limit.40
     - shopchest.limit.50
-    - essentials.sethome.multiple.pathfinder
+    - -jobs.max.2
+    - jobs.max.3
+    - -essentials.sethome.multiple.three
+    - essentials.sethome.multiple.four
 
     # Superpowers
-    - essentials.fly
+    #- essentials.fly
     - essentials.ext
     - essentials.feed
     - essentials.heal
