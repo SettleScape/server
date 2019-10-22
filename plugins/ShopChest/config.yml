@@ -21,7 +21,7 @@ shop-info-item: "STICK"
 
 # Set whether buys or sells need to be confirmed by the player
 # in order to prevent accidents.
-confirm-shopping: false
+confirm-shopping: true
 
 # Set whether players should be able to select the shop item from the
 # creative inventory if they don't hold an item in their hand.
@@ -54,13 +54,13 @@ enable-debug-log: false
 # in order to allow or deny shop creation in certain locations.
 enable-worldguard-integration: true
 enable-towny-integration: true
-enable-authme-integration: true
-enable-plotsquared-integration: true
-enable-uskyblock-integration: true
-enable-askyblock-integration: true
-enable-islandworld-integration: true
-enable-griefprevention-integration: true
-enable-areashop-integration: true
+enable-authme-integration: false
+enable-plotsquared-integration: false
+enable-uskyblock-integration: false
+enable-askyblock-integration: false
+enable-islandworld-integration: false
+enable-griefprevention-integration: false
+enable-areashop-integration: false
 
 # Set whether the vendor of a shop should get messages when players buy
 # or sell something from/to his shop or when his shop is out of stock.

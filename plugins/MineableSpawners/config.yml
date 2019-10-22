@@ -29,8 +29,7 @@ prevent-anvil-message: '&cSorry, you can''t rename spawners!'
 enable-compatibility: true
 
 # Blacklist worlds you want this plugin to ignore when it comes to mining and changing spawners.
-blacklisted-worlds:
-  - 'shop'
+blacklisted-worlds: []
 blacklisted-message: '&cThat is not allowed in this world!'
 
 # Whether or not to log (to console) spawner placement

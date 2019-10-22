@@ -19,10 +19,10 @@ expansions:
   vault:
     formatting:
       thousands: k
-      trillions: T
-      quadrillions: Q
-      billions: B
-      millions: M
+      trillions: t
+      quadrillions: q
+      billions: b
+      millions: m
   player:
     ping_color:
       medium: '&e'
@@ -33,4 +33,4 @@ expansions:
       high: '&a'
       low: '&c'
       medium: '&e'
-    server_name: A Minecraft Server
+    server_name: SettleScape
