@@ -26,23 +26,33 @@ groups:
     - jobs.max.1
     - essentials.sethome.multiple.zero ## Can still `/home bed`
 
-    # Restrictions
+    # Restrictions (relative to g:Player)
     - -towny.town.resident
     - -towny.command.town.new
     - -towny.command.nation.new
-    - -essentials.workbench
+
     - -essentials.delhome
     - -essentials.sethome
     - -essentials.sethome.multiple
+
+    - -essentials.chat.color
+    - -essentials.chat.format
+    - -essentials.chat.magic
+    - -essentials.chat.url
+    - -essentials.msg.color
+    - -essentials.msg.format
+    - -essentials.msg.magic
+    - -essentials.msg.url
+
     - -essentials.hat
     - -essentials.nick
     - -essentials.nick.color
     - -essentials.nick.format
     - -essentials.nick.magic
+
+    - -essentials.workbench
     - -essentials.kit
     - -essentials.clearinventory
-    - -jobs.command.leave
-    - -jobs.command.leaveall
 
   #-----------------------------------------------------------------------------
   Traveller:
@@ -66,10 +76,15 @@ groups:
     - +essentials.workbench
     - +essentials.clearinventory
 
-    # Unlikely to be a spammer
-    - +essentials.nick
-    - essentials.chat.url
-    - essentials.msg.url
+    # Access to advanced chat features (unlikely to be a spammer)
+    - +essentials.chat.color
+    - +essentials.chat.format
+    - +essentials.chat.magic
+    - +essentials.chat.url
+    - +essentials.msg.color
+    - +essentials.msg.format
+    - +essentials.msg.magic
+    - +essentials.msg.url
 
     # Misc
     - +towny.town.resident
@@ -95,13 +110,14 @@ groups:
     - -essentials.sethome.multiple.one
     - essentials.sethome.multiple.two
 
-    # Unlikely to be a griefer
+    # Abilitiy to place lava etc (unlikely to be a griefer)
     - essentials.protect.exemptbreak
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
 
     # Cosmetics
     - +essentials.hat
+    - +essentials.nick
     - +essentials.nick.color
     - +essentials.nick.format
     - +essentials.nick.magic
@@ -134,7 +150,6 @@ groups:
     - +towny.command.nation.new
     - essentials.back
     - essentials.enderchest
-    - mineablespawners.break
 
   #-----------------------------------------------------------------------------
   Pathfinder:
@@ -155,6 +170,9 @@ groups:
     - jobs.max.3
     - -essentials.sethome.multiple.three
     - essentials.sethome.multiple.four
+
+    # New abilities
+    - mineablespawners.break
 
     # Superpowers
     #- essentials.fly

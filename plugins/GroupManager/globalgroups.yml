@@ -69,6 +69,7 @@ groups:
 # Chat
 #-------------------------------------------------------------------------------
   # - bukkit.broadcast.user
+    - essentials.chat.color
     - essentials.chat.format
     - essentials.chat.magic
     - essentials.chat.question
@@ -129,12 +130,63 @@ groups:
     - lwc.protect
     - -rankup.auto
 
+# Restrictions
+#-------------------------------------------------------------------------------
+    - -jobs.command.leave
+    - -jobs.command.leaveall
+
 # Donor
 ################################################################################
   g:Donor:
+    info:
+      suffix: ' &c(donor)&r'
     permissions:
+
+# Misc
+#-------------------------------------------------------------------------------
+    - +jobs.command.leave
+    - +jobs.command.leaveall
+
+# Exemptions
+#-------------------------------------------------------------------------------
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.protect.exemptusage
+
+# Developer/Tester
+################################################################################
+  g:Developer:
+    info:
+      suffix: ' &c(dev)&r'
+    permissions:
+
+# Cheats used for testing
+#-------------------------------------------------------------------------------
+    - bukkit.command.teleport
+    - bukkit.command.time.add
+    - bukkit.command.time.set
+    - bukkit.command.gamemode
+    - bukkit.command.give
+    - essentials.god
     - essentials.fly
     - essentials.fly.safelogin
+    - lwc.shownotices
+    - +jobs.command.leave
+    - +jobs.command.leaveall
+
+# Server info
+#-------------------------------------------------------------------------------
+    - bukkit.command.help
+    - bukkit.command.list
+    - bukkit.command.plugins
+    - bukkit.command.version
+
+# Exemptions
+#-------------------------------------------------------------------------------
+    - essentials.kit.exemptdelay
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.protect.exemptusage
 
 # Moderator
 ################################################################################
@@ -247,9 +299,6 @@ groups:
     - essentials.jail.exempt
     - essentials.pvpdelay.exempt
 
-# Developer/Tester
-################################################################################
-
 # Administrator/DevOps
 ################################################################################
 
@@ -323,9 +372,8 @@ groups:
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
 
-# Misc
+# Misc (Unevaluated)
 #-------------------------------------------------------------------------------
-    - essentials.ext
     - essentials.weather
     - essentials.setspawn
     - essentials.reloadall
