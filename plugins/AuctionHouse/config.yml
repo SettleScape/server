@@ -45,11 +45,11 @@ disabled-worlds: []
 auction:
   listingPrice: 0.0
   listingRate: 0.0
-  listingDuration: 14d0h0m
-  expiredDuration: 28d0h0m
-  unclaimedDuration: 42d0h0m
+  listingDuration: 90d0h0m
+  expiredDuration: 90d0h0m
+  unclaimedDuration: 90d0h0m
   cleanupDuration: 0d24h0m
-  soldDuration: 56d0h0m
+  soldDuration: 90d0h0m
   preventCreative: true
   preventSpectator: true
   maxSellPrice: 100000.0
