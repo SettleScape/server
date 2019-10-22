@@ -60,19 +60,19 @@ protections:
         blast_furnace:
             enabled: true
         cartography_table:
-            enabled: true
+            enabled: false
         composter:
-            enabled: true
+            enabled: false
         grindstone:
-            enabled: true
+            enabled: false
         lectern:
             enabled: true
         loom:
-            enabled: true
+            enabled: false
         smoker:
             enabled: true
         stonecutter:
-            enabled: true
+            enabled: false
         shulker_box:
             enabled: true
             autoRegister: private
@@ -127,8 +127,7 @@ protections:
         sign:
             enabled: true
         iron_door:
-            enabled: true
-            autoRegister: private
+            enabled: false
         oak_door:
             enabled: true
             autoRegister: private
@@ -148,7 +147,7 @@ protections:
             enabled: true
             autoRegister: private
         iron_trapdoor:
-            enabled: true
+            enabled: false
         oak_trapdoor:
             enabled: true
         spruce_trapdoor:
@@ -180,72 +179,72 @@ protections:
             enabled: true
             autoRegister: private
         white_banner:
-            enabled: true
+            enabled: false
         orange_banner:
-            enabled: true
+            enabled: false
         magenta_banner:
-            enabled: true
+            enabled: false
         light_blue_banner:
-            enabled: true
+            enabled: false
         yellow_banner:
-            enabled: true
+            enabled: false
         lime_banner:
-            enabled: true
+            enabled: false
         pink_banner:
-            enabled: true
+            enabled: false
         gray_banner:
-            enabled: true
+            enabled: false
         light_gray_banner:
-            enabled: true
+            enabled: false
         cyan_banner:
-            enabled: true
+            enabled: false
         purple_banner:
-            enabled: true
+            enabled: false
         blue_banner:
-            enabled: true
+            enabled: false
         brown_banner:
-            enabled: true
+            enabled: false
         green_banner:
-            enabled: true
+            enabled: false
         red_banner:
-            enabled: true
+            enabled: false
         black_banner:
-            enabled: true
+            enabled: false
         white_wall_banner:
-            enabled: true
+            enabled: false
         orange_wall_banner:
-            enabled: true
+            enabled: false
         magenta_wall_banner:
-            enabled: true
+            enabled: false
         light_blue_wall_banner:
-            enabled: true
+            enabled: false
         yellow_wall_banner:
-            enabled: true
+            enabled: false
         lime_wall_banner:
-            enabled: true
+            enabled: false
         pink_wall_banner:
-            enabled: true
+            enabled: false
         gray_wall_banner:
-            enabled: true
+            enabled: false
         light_gray_wall_banner:
-            enabled: true
+            enabled: false
         cyan_wall_banner:
-            enabled: true
+            enabled: false
         purple_wall_banner:
-            enabled: true
+            enabled: false
         blue_wall_banner:
-            enabled: true
+            enabled: false
         brown_wall_banner:
-            enabled: true
+            enabled: false
         green_wall_banner:
-            enabled: true
+            enabled: false
         red_wall_banner:
-            enabled: true
+            enabled: false
         black_wall_banner:
-            enabled: true
+            enabled: false
 modes:
     droptransfer:
         enabled: true
-        crossWorld: false
+        crossWorld: true
     persist:
         enabled: true
