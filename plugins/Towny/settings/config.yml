@@ -419,7 +419,7 @@ global_town_settings:
   minimum_amount_of_residents_in_town_for_outpost: '1'
   # If People should keep their inventories on death in a town
   # Is not guaranteed to work with other keep inventory plugins!
-  keep_inventory_on_death_in_town: 'true'
+  keep_inventory_on_death_in_town: 'false'
   # If People should keep their experience on death in a town
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_town: 'false'
@@ -904,9 +904,9 @@ economy:
 
     price_death: '0.1'
 
-    price_death_town: '0.0'
+    price_death_town: '0.01'
 
-    price_death_nation: '0.0'
+    price_death_nation: '0.05'
 
   banks:
     # Maximum amount of money allowed in town bank
