@@ -50,6 +50,8 @@ groups:
     - -essentials.nick.format
     - -essentials.nick.magic
 
+    - -editablesign.colorsign
+    - -editablesign.edit
     - -essentials.workbench
     - -essentials.kit
     - -essentials.clearinventory
@@ -75,6 +77,8 @@ groups:
     # Basic quality of life improvements
     - +essentials.workbench
     - +essentials.clearinventory
+    - +editablesign.colorsign
+    - +editablesign.edit
 
     # Access to advanced chat features (unlikely to be a spammer)
     - +essentials.chat.color
