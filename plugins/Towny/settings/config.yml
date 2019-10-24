@@ -571,9 +571,9 @@ filters_colour_chat:
 
   modify_chat:
     # Maximum length of Town and Nation names.
-    max_name_length: '12'
+    max_name_length: '16' # Valid MC usernames are 3-16 characters
     # Maximum length of titles and surnames.
-    max_title_length: '12'
+    max_title_length: '16' # Valid MC usernames are 3-16 characters
 
 
   ############################################################
