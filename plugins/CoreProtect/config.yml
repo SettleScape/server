@@ -87,7 +87,7 @@ tree-growth: true
 mushroom-growth: true
 
 # Logs natural vine growth.
-vine-growth: true ## This is a lot to log...
+vine-growth: false ## This is a lot to log...
 
 # Logs when portals such as Nether portals generate naturally.
 portals: true
