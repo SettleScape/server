@@ -58,9 +58,6 @@ towns:
         # Ranks contain additional permissions residents will be
         # granted if they are assigned that specific rank.
         assistant:
-            - towny.command.town.ranks.builder
-            - towny.command.town.ranks.sheriff
-
             - towny.command.town.withdraw
             - towny.command.town.deposit
 
@@ -75,10 +72,21 @@ towns:
 
             - towny.claimed.owntown.item_use.*
 
+        #sheriff
+            - towny.command.town.toggle.jail
+            - towny.command.town.outlaw
+            - towny.outlaw.jailer
+
+        #builder
+            - towny.claimed.townowned.build.*
+            - towny.claimed.townowned.destroy.*
+            - towny.claimed.townowned.switch.*
+
         sheriff:
             - towny.command.town.toggle.jail
             - towny.command.town.outlaw
             - towny.outlaw.jailer
+
         builder:
             - towny.claimed.townowned.build.*
             - towny.claimed.townowned.destroy.*
