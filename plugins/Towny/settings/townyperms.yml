@@ -58,8 +58,8 @@ towns:
         # Ranks contain additional permissions residents will be
         # granted if they are assigned that specific rank.
         assistant:
-            - towny.command.town.rank.builder
-            - towny.command.town.rank.sheriff
+            - towny.command.town.ranks.builder
+            - towny.command.town.ranks.sheriff
 
             - towny.command.town.withdraw
             - towny.command.town.deposit
