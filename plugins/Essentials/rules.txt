@@ -6,10 +6,12 @@
 
 &lGriefing Policy:&r
 (These rules apply to the Overworld and the central End island;  everything else is anarchy.)
-1. No grievous griefs (keep the server looking nice)
-2. Towns and their hinterlands are protected, but everything else is fair-game.
+1. Loot, don't grief.  (Keep the server looking nice.)
+2. Towns and their perimeters are off-limits, but everything else is fair-game.
 3. Unlocked containers are fair-game anywhere.
 
-&lModerator Policies:&r
-1. Permabans require the agreement of at least two mods, or the decision of an admin.
-2. Moderators may issue temp bans and jail sentences as necessary.
+&lStaff Rules:&r
+1. Staff powers should be used for staff purposes only; they should not be used to achieve an advantage in-game.
+2. Moderators may issue temp bans, kicks, and jail sentences as necessary.
+3. Permabans require the agreement of at least two mods/admins.
+4. Players will be removed from the Discord when they quit the server.
