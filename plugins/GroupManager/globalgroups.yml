@@ -46,6 +46,7 @@ groups:
 # Economy
 #-------------------------------------------------------------------------------
     - essentials.balance
+    - essentials.eco.loan
     - essentials.pay
     - essentials.pay.multiple
     - essentials.payconfirmtoggle

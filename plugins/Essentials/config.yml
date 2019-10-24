@@ -76,7 +76,7 @@ force-disable-teleport-safety: false
 teleport-cooldown: 0
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
-teleport-delay: 2
+teleport-delay: 3
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
@@ -115,7 +115,7 @@ item-spawn-blacklist: command_block
 permission-based-item-spawn: false
 
 # Mob limit on the /spawnmob command per execution.
-spawnmob-limit: 8
+spawnmob-limit: 4
 
 # Shall we notify users when using /lightning?
 warn-on-smite: true
@@ -140,17 +140,12 @@ notify-player-of-mail-cooldown: 60
 # If you have two plugin with the same command and you wish to force Essentials to take over, you need an alias.
 # To force essentials to take 'god' alias 'god' to 'egod'.
 # See http://wiki.bukkit.org/Commands.yml#aliases for more information.
-
-overridden-commands:
-#  - god
-#  - info
+overridden-commands: []
 
 # Disabling commands here will prevent Essentials handling the command, this will not affect command conflicts.
 # You should not have to disable commands used in other plugins, they will automatically get priority.
 # See http://wiki.bukkit.org/Commands.yml#aliases to map commands to other plugins.
-disabled-commands:
-#  - nick
-#  - clear
+disabled-commands: []
 
 # These commands will be shown to players with socialSpy enabled.
 # You can add commands from other plugins you may want to track or
@@ -200,92 +195,92 @@ mute-commands:
 # These are the permissions without the "essentials." part.
 #
 # To enable this feature, please set use-bukkit-permissions to false.
-player-commands:
-  - afk
-  - afk.auto
-  - back
-  - back.ondeath
-  - balance
-  - balance.others
-  - balancetop
-  - build
-  - chat.color
-  - chat.format
-  - chat.shout
-  - chat.question
-  - clearinventory
-  - compass
-  - depth
-  - delhome
-  - getpos
-  - geoip.show
-  - help
-  - helpop
-  - home
-  - home.others
-  - ignore
-  - info
-  - itemdb
-  - kit
-  - kits.tools
-  - list
-  - mail
-  - mail.send
-  - me
-  - motd
-  - msg
-  - msg.color
-  - nick
-  - near
-  - pay
-  - ping
-  - protect
-  - r
-  - rules
-  - realname
-  - seen
-  - sell
-  - sethome
-  - setxmpp
-  - signs.create.protection
-  - signs.create.trade
-  - signs.break.protection
-  - signs.break.trade
-  - signs.use.balance
-  - signs.use.buy
-  - signs.use.disposal
-  - signs.use.enchant
-  - signs.use.free
-  - signs.use.gamemode
-  - signs.use.heal
-  - signs.use.info
-  - signs.use.kit
-  - signs.use.mail
-  - signs.use.protection
-  - signs.use.repair
-  - signs.use.sell
-  - signs.use.time
-  - signs.use.trade
-  - signs.use.warp
-  - signs.use.weather
-  - spawn
-  - suicide
-  - time
-  - tpa
-  - tpaccept
-  - tpahere
-  - tpdeny
-  - warp
-  - warp.list
-  - world
-  - worth
-  - xmpp
+player-commands: #TODO:  Move these into GroupManager
+  # - afk
+  # - afk.auto
+  # - back
+  # - back.ondeath
+  # - balance
+  # - balance.others
+  # - balancetop
+  # - build
+  # - chat.color
+  # - chat.format
+  # - chat.shout
+  # - chat.question
+  # - clearinventory
+  # - compass
+  # - depth
+  # - delhome
+  # - getpos
+  # - geoip.show
+  # - help
+  # - helpop
+  # - home
+  # - home.others
+  # - ignore
+  # - info
+  # - itemdb
+  # - kit
+  # - kits.tools
+  # - list
+  # - mail
+  # - mail.send
+  # - me
+  # - motd
+  # - msg
+  # - msg.color
+  # - nick
+  # - near
+  # - pay
+  # - ping
+  # - protect
+  # - r
+  # - rules
+  # - realname
+  # - seen
+  # - sell
+  # - sethome
+  # - setxmpp
+  # - signs.create.protection
+  # - signs.create.trade
+  # - signs.break.protection
+  # - signs.break.trade
+  # - signs.use.balance
+  # - signs.use.buy
+  # - signs.use.disposal
+  # - signs.use.enchant
+  # - signs.use.free
+  # - signs.use.gamemode
+  # - signs.use.heal
+  # - signs.use.info
+  # - signs.use.kit
+  # - signs.use.mail
+  # - signs.use.protection
+  # - signs.use.repair
+  # - signs.use.sell
+  # - signs.use.time
+  # - signs.use.trade
+  # - signs.use.warp
+  # - signs.use.weather
+  # - spawn
+  # - suicide
+  # - time
+  # - tpa
+  # - tpaccept
+  # - tpahere
+  # - tpdeny
+  # - warp
+  # - warp.list
+  # - world
+  # - worth
+  # - xmpp
 
 # Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
 # This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
 # If you wish to use EssentialsX's built-in permissions using the `player-commands` section above, set this to false.
 # Default is true.
-use-bukkit-permissions: true
+use-bukkit-permissions: false
 
 # When this option is enabled, one-time use kits (ie. delay < 0) will be
 # removed from the /kit list when a player can no longer use it
@@ -304,7 +299,7 @@ pastebin-createkit: false
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
-  #- color
+  - color
   #- balance
   #- buy
   #- sell
@@ -317,10 +312,10 @@ enabledSigns:
   #- enchant
   #- gamemode
   #- heal
-  #- info
+  - info
   #- spawnmob
   #- repair
-  #- time
+  # - time
   #- weather
 
 # How many times per second can Essentials signs be interacted with per player.
@@ -422,7 +417,7 @@ sleep-ignores-afk-players: true
 afk-list-name: "{PLAYER} &7(AFK)&r"
 
 # You can disable the death messages of Minecraft here.
-death-messages: true
+death-messages: false
 
 # Should players with permissions be able to join and part silently?
 # You can control this with essentials.silentjoin and essentials.silentquit permissions if it is enabled.
@@ -438,8 +433,7 @@ custom-join-message: "none"
 custom-quit-message: "none"
 
 # Add worlds to this list, if you want to automatically disable god mode there.
-no-god-in-worlds:
-#  - world_nether
+no-god-in-worlds: []
 
 # Set to true to enable per-world permissions for teleporting between worlds with essentials commands.
 # This applies to /world, /back, /tp[a|o][here|all], but not warps.
@@ -498,7 +492,7 @@ last-message-reply-recipient: true
 last-message-reply-recipient-timeout: 180
 
 # Toggles whether or not clicking mobs with a milk bucket turns them into a baby.
-milk-bucket-easter-egg: false
+milk-bucket-easter-egg: true # Makes turtle farming more realistic
 
 # Toggles whether or not the fly status message should be sent to players on join
 send-fly-enable-on-join: true
@@ -524,7 +518,7 @@ command-cooldowns:
 #  '*': 5 # 5 Second cooldown on all commands
 
 # Whether command cooldowns should be persistent past server shutdowns
-command-cooldown-persistence: false
+command-cooldown-persistence: true
 
 # Whether NPC balances should be listed in balance ranking features such as /balancetop.
 # NPC balances can include features like factions from FactionsUUID plugin.
@@ -645,7 +639,7 @@ min-money: -10000
 economy-log-enabled: false
 
 # Minimum acceptable amount to be used in /pay.
-minimum-pay-amount: 1.0
+minimum-pay-amount: 0.0
 
 # The format of currency, excluding symbols. See currency-symbol-format-locale for symbol configuration.
 #
@@ -727,7 +721,7 @@ protect:
     flint-fire: false
     lightning-fire-spread: false
     portal-creation: false
-    tnt-explosion: true
+    tnt-explosion: false # Handled by Towny
     tnt-playerdamage: false
     tnt-minecart-explosion: true
     tnt-minecart-playerdamage: false
@@ -740,10 +734,10 @@ protect:
     wither-blockreplace: true
     creeper-explosion: false
     creeper-playerdamage: false
-    creeper-blockdamage: true
-    enderdragon-blockdamage: true
-    enderman-pickup: true
-    villager-death: true
+    creeper-blockdamage: false # Handled by Towny
+    enderdragon-blockdamage: false
+    enderman-pickup: false # Handled by Towny
+    villager-death: false # Handled by Towny
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
@@ -775,7 +769,7 @@ protect:
       iron_golem: false
       villager: false
       wither: false
-      bat: false
+      bat: true
       witch: false
       horse: false
 
