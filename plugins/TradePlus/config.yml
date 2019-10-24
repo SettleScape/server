@@ -12,6 +12,7 @@ blocked:
   blacklist:
   - bedrock
   - monster_egg
+  - command_block
   named-items: false
   lore:
   - EXAMPLE_BLOCKED_LORE
@@ -21,9 +22,7 @@ ranges:
   sameworld: 0.0
   crossworld: 0.0
   allowcrossworld: true
-  blocked-worlds:
-  - ThisWorldDoesntExistButItsBlocked
-  - NeitherDoesThisOneButItIsToo
+  blocked-worlds: []
 antiscam:
   countdown: 3
   cancelonchange: true
@@ -79,7 +78,7 @@ extras:
     mode: chat
     levelMode: true
   playerpoints:
-    enabled: true
+    enabled: false
     material: diamond
     display: '&bYour current PlayerPoints offer is &3%AMOUNT%'
     theirdisplay: '&bTheir current PlayerPoints offer is &3%AMOUNT%'
@@ -89,8 +88,8 @@ extras:
     taxpercent: 0
     mode: type
   griefprevention:
-    enabled: true
-    material: diamond_pickaxe
+    enabled: false
+    material: fire
     display: '&eYour current GriefPrevention offer is &6%AMOUNT%'
     theirdisplay: '&eTheir current GriefPrevention offer is &6%AMOUNT%'
     lore:
@@ -109,7 +108,7 @@ extras:
     taxpercent: 0
     mode: type
   tokenenchant:
-    enabled: true
+    enabled: false
     material: enchanted_book
     display: '&eYour current TokenEnchant tokens offer is &6%AMOUNT%'
     theirdisplay: '&eTheir current TokenEnchants tokens offer is &6%AMOUNT%'
@@ -119,8 +118,8 @@ extras:
     taxpercent: 0
     mode: type
   tokenmanager:
-    enabled: true
-    material: emerald
+    enabled: false
+    material: book
     display: '&eYour current TokenManager tokens offer is &6%AMOUNT%'
     theirdisplay: '&eTheir current TokenManager tokens offer is &6%AMOUNT%'
     lore:
