@@ -1,5 +1,5 @@
 &cSettleScape is currently in beta.&r
-&7&lWiki:&r &7&nGit.io/Je0Q3&r
-&7&lFeedback:&r &7&nGit.io/Je0Qs&r
-&7&lChatroom:&r &7&nDiscord.gg/VFs4QJj&r
+&7&lWiki:&r &9Git.io/Je0Q3&r
+&7&lFeedback:&r &9Git.io/Je0Qs&r
+&7&lChatroom:&r &9Discord.gg/VFs4QJj&r
 &7&lTip:&r &7You can trade things on the Auction House with `/ah`.&r
