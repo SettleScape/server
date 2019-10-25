@@ -1,5 +1,5 @@
 &cSettleScape is currently in beta.&r
-&7Type `/spawn` for information about SettleScape.&r
-&7Type `/help` for assistance with commands.&r
-&7Go to `GitHub.com/SettleScape/server/issues` to report issues.&r
-&7Go to `Discord.gg/VFs4QJj` to join our server's Discord.&r
+&7Wiki: `https://Git.io/Je0Q3`.&r
+&7Bug tracker: `https://Git.io/Je0Qs` to report issues.&r
+&7Chatroom: `https://Discord.gg/VFs4QJj`.&r
+&7Don't forget: you can trade things on the Auction House with `/ah`.&r
