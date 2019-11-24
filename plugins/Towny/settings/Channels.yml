@@ -33,55 +33,73 @@
 
 Channels:
     general:
-        commands: [g]
+        commands: [tcg]
         type: GLOBAL
-        channeltag: '&f[g]'
+        channeltag: ''
         messagecolour: '&f'
         permission: 'towny.chat.general'
-        craftIRCTag: 'admin'
+        craftIRCTag: 'general'
         range: '-1'
-        
-    town:
-        commands: [tc]
-        type: TOWN
-        channeltag: '&f[&3TC&f]'
-        messagecolour: '&b'
-        permission: 'towny.chat.town'
-        craftIRCTag: 'admin'
-        range: '-1'
-         
-    nation:
-        commands: [nc]
-        type: NATION
-        channeltag: '&f[&6NC&f]'
-        messagecolour: '&e'
-        permission: 'towny.chat.nation'
-        craftIRCTag: 'admin'
-        range: '-1'
-        
-    admin:
-        commands: [a,admin]
+
+    local:
+        commands: [tcl]
         type: DEFAULT
-        channeltag: '&f[&4ADMIN&f]'
+        channeltag: '&7[&fLOC&7]&r'
+        messagecolour: '&f'
+        permission: 'towny.chat.local'
+        craftIRCTag: 'local'
+        range: '100'
+
+    town:
+        commands: [tct]
+        type: TOWN
+        channeltag: '&7[&eTWN&7]&r'
+        messagecolour: '&e'
+        permission: 'towny.chat.town'
+        craftIRCTag: 'town'
+        range: '-1'
+
+    nation:
+        commands: [tcn]
+        type: NATION
+        channeltag: '&7[&bNAT&7]&r'
+        messagecolour: '&b'
+        permission: 'towny.chat.nation'
+        craftIRCTag: 'nation'
+        range: '-1'
+
+    alliance:
+        commands: [tcf]
+        type: ALLIANCE
+        channeltag: '&7[&dALY&7]&r'
+        messagecolour: '&d'
+        permission: 'towny.chat.alliance'
+        craftIRCTag: 'nation'
+        range: '-1'
+
+    dev:
+        commands: [tcd]
+        type: DEFAULT
+        channeltag: '&7[&aDEV&7]&r'
+        messagecolour: '&a'
+        permission: 'towny.chat.dev'
+        craftIRCTag: 'dev'
+        range: '-1'
+
+    mod:
+        commands: [tcm]
+        type: DEFAULT
+        channeltag: '&7[&9MOD&7]&r'
+        messagecolour: '&9'
+        permission: 'towny.chat.mod'
+        craftIRCTag: 'mod'
+        range: '-1'
+
+    admin:
+        commands: [tca]
+        type: DEFAULT
+        channeltag: '&7[&cADM&7]&r'
         messagecolour: '&c'
         permission: 'towny.chat.admin'
         craftIRCTag: 'admin'
         range: '-1'
-        
-    mod:
-        commands: [m,mod]
-        type: DEFAULT
-        channeltag: '&f[&9MOD&f]'
-        messagecolour: '&5'
-        permission: 'towny.chat.mod'
-        craftIRCTag: 'admin'
-        range: '-1'
-        
-    local:
-        commands: [l,lc]
-        type: GLOBAL
-        channeltag: '&f[local]'
-        messagecolour: '&f'
-        permission: 'towny.chat.local'
-        craftIRCTag: 'admin'
-        range: '100'

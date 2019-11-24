@@ -43,6 +43,8 @@ groups:
     - -essentials.msg.format
     - -essentials.msg.magic
     - -essentials.msg.url
+    - -townychat.chat.color
+    - -townychat.chat.format.*
 
     - -essentials.hat
     - -essentials.nick
@@ -89,6 +91,8 @@ groups:
     - +essentials.msg.format
     - +essentials.msg.magic
     - +essentials.msg.url
+    - +townychat.chat.color
+    - +townychat.chat.format.*
 
     # Misc
     - +towny.town.resident

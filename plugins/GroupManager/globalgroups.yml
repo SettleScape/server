@@ -86,7 +86,10 @@ groups:
     - essentials.msg.multiple
   # - essentials.msg.url
     - essentials.helpop
+    - towny.chat.general
     - towny.chat.local
+    - townychat.chat.color
+    - townychat.chat.format.*
 
 # Teleportation
 #-------------------------------------------------------------------------------
@@ -161,6 +164,10 @@ groups:
       suffix: ' &c(dev)&r'
     permissions:
 
+# Chat
+#-------------------------------------------------------------------------------
+    - towny.chat.dev
+
 # Cheats used for testing
 #-------------------------------------------------------------------------------
     - bukkit.command.teleport
@@ -204,6 +211,7 @@ groups:
     - essentials.chat.shout
     - essentials.mail.sendall
     - towny.chat.mod
+    - townychat.mod.*
 
 # Info
 #-------------------------------------------------------------------------------
@@ -253,6 +261,7 @@ groups:
     - OpenInv.openenderall
     - OpenInv.openinv
     - OpenInv.silent
+    - towny.chat.spy
 
 # Punishments/Judgements/Actions
 #-------------------------------------------------------------------------------
@@ -405,6 +414,7 @@ groups:
     - towny.claimed.alltown.switch.*
     - towny.command.townyadmin.*
     - towny.command.townyworld.*
+    - townychat.*
     - worldedit.*
     - worldguard.*
 

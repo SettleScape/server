@@ -48,16 +48,18 @@ towns:
     mayor:
         # Mayors get these permissions in addition to the default set.
         - towny.command.towny.top
-        - towny.command.town.*
-        - towny.command.plot.*
-        - towny.claimed.owntown.*
         - towny.command.nation.new
+        - towny.command.plot.*
+        - towny.command.town.*
         - towny.outlaw.jailer
+        - towny.claimed.owntown.*
 
     ranks:
         # Ranks contain additional permissions residents will be
         # granted if they are assigned that specific rank.
         assistant:
+            - towny.command.plot.*
+
             - towny.command.town.withdraw
             - towny.command.town.deposit
 
@@ -68,29 +70,20 @@ towns:
             - towny.command.town.unclaim
 
             - towny.command.town.toggle.*
-            - towny.command.plot.*
-
-            - towny.claimed.owntown.item_use.*
 
         #sheriff
-            - towny.command.town.toggle.jail
             - towny.command.town.outlaw
             - towny.outlaw.jailer
 
         #builder
-            - towny.claimed.townowned.build.*
-            - towny.claimed.townowned.destroy.*
-            - towny.claimed.townowned.switch.*
+            - towny.claimed.owntown.* ## Everywhere in the town
 
         sheriff:
-            - towny.command.town.toggle.jail
-            - towny.command.town.outlaw
             - towny.outlaw.jailer
+            - towny.command.town.outlaw
 
         builder:
-            - towny.claimed.townowned.build.*
-            - towny.claimed.townowned.destroy.*
-            - towny.claimed.townowned.switch.*
+            - towny.claimed.townowned.* ## Everywhere in the town except for resident-owned plots
 
 # This section of permissions covers players who are members of any town in a nation.
 nations:
