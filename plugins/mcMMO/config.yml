@@ -1,9 +1,9 @@
+
 #
 #  mcMMO configuration
-#  Last updated on 2.1.98-b${BUILD_NUMBER}
+#  Last updated on 2.1.110-b${BUILD_NUMBER}
 #
 #####
-
 #
 #  Settings for mcMMO in general
 ###
@@ -37,12 +37,10 @@ General:
     Config_Update_Overwrite: true
     # Play level-up sounds
     LevelUp_Sounds: true
-
     # This should fix blocks being broken client side, but not server-side.
     # Enable to refresh the chunks around a player at the end of Super Breaker,
     # Giga Drill Breaker, and Berserk. Resource intensive for larger servers.
     Refresh_Chunks: false
-
 #
 #  Settings for the mcMMO scoreboards
 ###
@@ -51,23 +49,17 @@ Scoreboard:
     UseScoreboards: false
     # Display player's power levels below their names?
     Power_Level_Tags: false
-
     # Allow players to use "/mcscoreboard keep" to keep the scoreboard up
     Allow_Keep: true
-
     # Show the /mcstats scoreboard automatically after logging in
     Show_Stats_After_Login: false
-
     # Show scoreboard tips 5 times. Tips are only displayed once for every login session.
     # Set to 0 to never show these tips.
     Tips_Amount: 5
-
     # Add some more color on the board :-)
     Rainbows: false
-
     # Display ability names?
     Ability_Names: true
-
     # Settings for each type of scoreboard
     # Print: Should the command output be printed in chat?
     # Board: Should the command output be displayed in the scoreboard sidebar?
@@ -106,12 +98,10 @@ Scoreboard:
         Skill:
             Board: true
             Display_Time: 30
-
             # Should the board be shown when a player levels up, and for how long?
             # It is recommended to NOT have LevelUp_Time be -1, as this may confuse players.
             LevelUp_Board: true
             LevelUp_Time: 5
-
 Mob_Healthbar:
     # Enabled: Whether or not the feature is enabled at all
     # Display_Type: Per player Default display for mob health bars - HEARTS, BAR, or DISABLED
@@ -119,7 +109,6 @@ Mob_Healthbar:
     Enabled: true
     Display_Type: HEARTS
     Display_Time: 3
-
 Database_Purging:
     # Amount of time (in hours) to wait between database purging
     # To only run at server start, set to 0
@@ -128,19 +117,16 @@ Database_Purging:
     # Any user who hasn't connected in this many months will be purged from the database
     # To never purge old users, set to -1
     Old_User_Cutoff: 6
-
 #
 #  Settings for Backups
 #  Allow mcMMO to create zip backups for config files and flatfile data on shutdown.
 ###
 Backups:
     Enabled: true
-
     Keep:
         Last_24_Hours: true
         Daily_Last_Week: true
         Weekly_Past_Months: true
-
 #
 #  Settings for using a mySQL database
 ###
@@ -167,7 +153,7 @@ MySQL:
         SSL: true
         Port: 3306
         Address: localhost
-
+    Debug: false
 #
 #  Settings for Hardcore mode
 #  Players will not lose stats when their level is below the Level_Threshold
@@ -207,7 +193,6 @@ Hardcore:
             Taming: false
             Unarmed: false
             Woodcutting: false
-
 #
 #  Settings for SMP Mods
 ###
@@ -216,7 +201,6 @@ Mods:
     Armor_Mods_Enabled: false
     Block_Mods_Enabled: false
     Entity_Mods_Enabled: false
-
 #
 #  Settings for mcMMO items
 ###
@@ -235,7 +219,6 @@ Items:
         Sound_Enabled: true
     Flux_Pickaxe:
         Sound_Enabled: true
-
 #
 #  Settings for Parties
 ###
@@ -250,31 +233,26 @@ Party:
     AutoKick_Interval: 12
     # Any user who hasn't connected in this many days will get kicked from their party
     Old_Party_Member_Cutoff: 7
-
     # Settings for party share modes
     Sharing:
         ExpShare_bonus_base: 1.1
         ExpShare_bonus_increase: 1.05
         ExpShare_bonus_cap: 1.5
         Range: 75.0
-
     # Party members level up their party by earning individual experience
     # Newly created parties will not immediately have access to all the party features
     # and have to level up the party a bit before they can use them.
     Leveling:
         Level_Cap: 10
-
         # Uses the regular XP formula but is multiplied by <amount of party members> + <Xp_Curve_Modifier>
         Xp_Curve_Modifier: 3
         Near_Members_Needed: false
         Inform_All_Party_Members_On_LevelUp: false
-
         Chat_UnlockLevel: 1
         Teleport_UnlockLevel: 2
         Alliance_UnlockLevel: 5
         ItemShare_UnlockLevel: 8
         XpShare_UnlockLevel: 10
-
 #
 #  Settings for Abilities
 ###
@@ -306,7 +284,6 @@ Abilities:
     Tools:
         # Use more tool durability while using abilities. Set Durability_Loss to 0 to disable the extra durability damage.
         Durability_Loss: 1
-
 #
 #  Settings for Skills
 #  Level cap of 0 for no limit
@@ -414,13 +391,12 @@ Skills:
         # When using Unarmed, picked up items will automatically get moved to a free slot instead of going in the slot
         # of your hand. Should item pickup be disabled when your entire inventory - except for your hand - is full?
         Item_Pickup_Disabled_Full_Inventory: true
-        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed.
+        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed. 
         Items_As_Unarmed: false
     Woodcutting:
         Tree_Feller_Sounds: true
         Level_Cap: 0
         Ability_Activation_Level_Gate: 10
-
 #
 #  Settings for Double Drops
 ###
@@ -461,6 +437,7 @@ Bonus_Drops:
         Lilac: true
         Rose_Bush: true
         Peony: true
+        Lily_Of_The_Valley: true
     Mining:
         Andesite: true
         Diorite: true
@@ -502,7 +479,6 @@ Bonus_Drops:
         Jungle_Log: true
         Spruce_Wood: true
         Spruce_Log: true
-
 #
 #  Settings for commands
 ###
@@ -538,7 +514,6 @@ Commands:
     adminchat:
         Chat_Prefix_Format: '[[AQUA]][[[WHITE]]{0}[[AQUA]]]'
         Use_Display_Names: true
-
 #
 #  Settings for particles
 ###
@@ -546,17 +521,14 @@ Particles:
     # These settings determine if fireworks should get launched when a player activates/deactivates an ability
     Ability_Activation: false
     Ability_Deactivation: false
-
     # Determines if the fireworks should be a large ball or a small one
     LargeFireworks: true
-
     # Use particle effect when these abilities trigger
     Bleed: true
     Dodge: true
     Flux: true
     Greater_Impact: true
     Call_of_the_Wild: true
-
     # These settings determine if fireworks should get launched when a player levels-up,
     # this will happen by default for every 100 levels.
     LevelUp_Enabled: true

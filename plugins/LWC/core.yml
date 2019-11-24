@@ -10,6 +10,7 @@ core:
     townyBorders: true
     groupPrefix: group.
     updateNotifier: true
+    factionCheck: false
 optional:
     onlyProtectWhenOwnerIsOnline: false
     onlyProtectWhenOwnerIsOffline: false

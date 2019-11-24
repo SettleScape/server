@@ -77,7 +77,7 @@ Optimizations:
     - world
 Logging:
   # With this set to true all players jobs actions will be logged to database for easy to see statistics
-  # This is still in development and in feature it will expand
+  # This is still in development and in future it will expand
   Use: false
 broadcast:
   on-skill-up:
@@ -95,6 +95,9 @@ DailyQuests:
   ResetTime:
     Hour: 4
     Minute: 0
+  # Defines amount of skips player can do on a quest
+  # This allows player to abandon current quest and get new one
+  Skips: 1
 # Enables the schedule manager to boost the server.
 # By default this has been disabled for causing memory leak.
 ScheduleManager:
@@ -120,6 +123,8 @@ enable-pay-for-exploring-when-gliding: false
 disablePaymentIfRiding: false
 # Adds the Jobs xp received to the player's Minecraft XP bar
 add-xp-player: false
+# Do the jobs boost ignore the boosted items usage in off hand?
+enable-boosted-items-in-offhand: true
 # Allows, when losing maximum durability of item then it does not pay the player until it is repaired.
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
@@ -165,6 +170,10 @@ Economy:
     MONEY: 0.0
     EXP: 0.0
     POINTS: 0.0
+  # When set to true income which is belove 0 will get bonus aplied to it
+  # In example, if you would loose 5 bucks for placing diamond block, with 100% payment bonus, that penalty disapears
+  # When this left at false penalty for action will remain unchanged
+  ApplyToNegativeIncome: false
   MinimumOveralPayment:
     # Determines minimum payment. In example if player uses McMMO treefeller and earns only 20%, but at same time he gets 25% penalty from dynamic payment. He can 'get' negative amount of money
     # This will limit it to particular percentage
@@ -311,6 +320,7 @@ ExploitProtections:
     # For how long in days to keep block protection data in data base
     # This will clean block data which ones have -1 as cooldown value
     # Data base cleanup will be performed on each server startup
+    # This cant be more then 14 days
     KeepDataFor: 14
     # All blocks will be protected X sec after player places it on ground.
     GlobalBlockTimer:
@@ -451,10 +461,14 @@ JobsGUI:
   OpenOnBrowse: true
   # Do you want to show chat information when performing /jobs browse command?
   ShowChatBrowse: true
-  # With true left mouse button will join job and right will show more info
-  # With false left mouse button will show more info, right will join job
-  # Don't forget to adjust locale file
+  # With true left mouse button will join job and right will show more info.
+  # With false left mouse button will show more info, right will join job or inversely.
+  # Don't forget to adjust locale file!
   SwitcheButtons: false
+  # Do you want to use the left/right click button to leave from job?
+  # This option click type depend from SwitcheButtons option, if true using the left button and inversely.
+  # Don't forget to adjust locale file
+  UseInversedClickToLeave: false
   # Do you want to show the action names in GUI?
   ShowActionNames: true
   # Defines size in rows of GUI
