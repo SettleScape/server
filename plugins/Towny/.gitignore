@@ -10,3 +10,4 @@ settings/**
 !settings/ChatConfig.yml
 !settings/config.yml
 !settings/townyperms.yml
+!**/ReadMe.md
