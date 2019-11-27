@@ -1,23 +1,42 @@
 # CraftBook Custom Recipes. CraftBook Version: Demo Copy
 # For more information on setting up custom recipes, see the wiki:
 # http://wiki.sk89q.com/wiki/CraftBook/Custom_crafting
-
 crafting-recipes:
 
   # Misc
+  ################################################################################
+
   stitch_hides: # Similar to how rabbit hides can craft leather
     type: shapeless
     ingredients:
       'rotten_flesh': 9
     results:
       'leather': 1
-  # cure_hides: # BetterRealism's recipe.  Pretty overpowered.
-  #   type: furnace
+  nametag:
+    type: shaped
+    ingredients:
+      'gold_ingot': 'g'
+      'string': 's'
+    shape:
+      - '  s'
+      - ' g '
+      - 'g  '
+    results:
+      'nametag': 1
+  # end_portal_frame:
+  #   type: shaped
   #   ingredients:
-  #     'rotten_flesh': 1
+  #     'end_stone': 's'
+  #     'enderpearl': 'p'
+  #     'obisdian': 'o'
+  #   shape:
+  #     - 'p p'
+  #     - 'pop'
+  #     - 'sss'
   #   results:
-  #     'leather': 1
-  enchanted_golden_apple:
+  #     'end_portal_frame': 1
+
+  enchanted_golden_apple: # Original Minecraft recipe
     type: shaped
     ingredients:
       'apple': 'a'
@@ -28,8 +47,200 @@ crafting-recipes:
       - 'ggg'
     results:
       'enchanted_golden_apple': 1
+  totem_of_undying: # Based on the enchanted_golden_apple recipe.
+    type: shaped
+    ingredients:
+      'emerald': 'e'
+      'gold_block': 'g'
+    shape:
+      - 'ggg'
+      - 'ege'
+      - 'ggg'
+    results:
+      'totem_of_undying': 1
+
+  # Soil
+  ################################################################################
+
+  grass_block:
+    type: shaped
+    ingredients:
+      'dirt': 'd'
+      'wheat_seeds': 's'
+      'bonemeal': 'b'
+    shape:
+      - 'sss'
+      - ' b '
+      - ' d '
+    results:
+      'grass_block': 1
+  grass_path:
+    type: shaped
+    ingredients:
+      'grass_block': 'g'
+      'coarse_dirt': 'd'
+    shape:
+      - 'g'
+      - 'd'
+    results:
+      'grass_path': 2
+  podzol:
+    type: shaped
+    ingredients:
+      'coarse_dirt': 'd'
+      'leaves': 'l'
+    shape:
+      - 'lll'
+      - ' d '
+    results:
+      'podzol': 1
+  mycelium:
+    type: shaped
+    ingredients:
+      'podzol': 'd'
+      'brown_mushroom': 'b'
+      'red_mushroom': 'r'
+    shape:
+      - 'rrr'
+      - 'bbb'
+      - ' p '
+    results:
+      'mycelium': 1
+
+  red_sand: # Matches concrete powder recipe.
+    type: shapeless
+    ingredients:
+      'orange_dye': 1
+      'sand': 4
+      'clay': 4
+    results:
+      'red_sand': 8
+
+  # Compressed blocks
+  ################################################################################
+
+  cobweb: # In-line with other compression recipes.
+    type: shapeless
+    ingredients:
+      'string': 9
+    results:
+      'cobweb': 1
+  extract_nether_wart: # Missing recipe.  In-line with other decompression recipes.
+    type: shapeless
+    ingredients:
+      'nether_wart_block': 1
+    results:
+      'nether_wart': 9
+
+  extract_quartz:
+    type: shapeless
+    ingredients:
+      'quartz_block': 1
+    results:
+      'quartz': 4
+  extract_glowstone_dust:
+    type: shapeless
+    ingredients:
+      'glowstone': 1
+    results:
+      'glowstone_dust': 4
+  extract_brown_mushroom:
+    type: shapeless
+    ingredients:
+      'brown_mushroom_block': 1
+    results:
+      'brown_mushroom': 4
+  extract_red_mushroom:
+    type: shapeless
+    ingredients:
+      'red_mushroom_block': 1
+    results:
+      'red_mushroom': 4
+
+  brown_mushroom_block: # Same as glowstone or quartz blocks.
+    type: shaped
+    ingredients:
+      'brown_mushroom': 'm'
+    shape:
+      - 'mm'
+      - 'mm'
+    results:
+      'brown_mushroom_block': 1
+  red_mushroom_block: # Same as glowstone or quartz blocks.
+    type: shaped
+    ingredients:
+      'red_mushroom': 'm'
+    shape:
+      - 'mm'
+      - 'mm'
+    results:
+      'red_mushroom_block': 1
+
+  # Equestrian equipment
+  ################################################################################
+
+  saddle: # Original Minecraft recipe.
+    type: shaped
+    ingredients:
+      'leather': 'l'
+      'iron_ingot': 'i'
+    shape:
+      - 'lll'
+      - 'lil'
+      - 'i i'
+    results:
+      'saddle': 1
+
+  # leather_horse_armor: # Already in the game.
+  #   type: shaped
+  #   ingredients:
+  #     'leather': 'l'
+  #   shape:
+  #     - 'l l'
+  #     - 'lll'
+  #     - 'l l'
+  #   results:
+  #     'leather_horse_armor': 1
+  iron_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+    type: shaped
+    ingredients:
+      'leather': 'l'
+      'iron': 'i'
+      'iron_block': 'b'
+    shape:
+      - 'i i'
+      - 'blb'
+      - 'i i'
+    results:
+      'iron_horse_armor': 1
+  golden_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+    type: shaped
+    ingredients:
+      'leather': 'l'
+      'gold_ingot': 'g'
+      'gold_block': 'b'
+    shape:
+      - 'g g'
+      - 'blb'
+      - 'g g'
+    results:
+      'golden_horse_armor': 1
+  diamond_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+    type: shaped
+    ingredients:
+      'leather': 'l'
+      'diamond': 'd'
+      'diamond_block': 'b'
+    shape:
+      - 'd d'
+      - 'blb'
+      - 'd d'
+    results:
+      'diamond_horse_armor': 1
 
   # Chainmail
+  ################################################################################
+
   chainmail_helmet:
     type: shaped
     ingredients:
@@ -38,7 +249,6 @@ crafting-recipes:
     shape:
       - 'ini'
       - 'n n'
-      - '   '
     results:
       'chainmail_helmet': 1
   chainmail_chestplate:
@@ -69,59 +279,14 @@ crafting-recipes:
       'iron_ingot': 'i'
       'iron_nugget': 'n'
     shape:
-      - '   '
       - 'n n'
       - 'i i'
     results:
       'chainmail_boots': 1
 
-  # Equestrian equipment
-  saddle:
-    type: shaped
-    ingredients:
-      'leather': 'l'
-      'iron_ingot': 'i'
-    shape:
-      - 'lll'
-      - 'lil'
-      - 'i i'
-    results:
-      'saddle': 1
-  diamond_horse_armor:
-    type: shaped
-    ingredients:
-      'wool': 'w'
-      'diamond': 'd'
-    shape:
-      - '  d'
-      - 'dwd'
-      - 'ddd'
-    results:
-      'diamond_horse_armor': 1
-  golden_horse_armor:
-    type: shaped
-    ingredients:
-      'wool': 'w'
-      'gold': 'g'
-    shape:
-      - '  g'
-      - 'gwg'
-      - 'ggg'
-    results:
-      'golden_horse_armor': 1
-  iron_horse_armor:
-    type: shaped
-    ingredients:
-      'wool': 'w'
-      'iron': 'i'
-    shape:
-      - '  i'
-      - 'iwi'
-      - 'iii'
-    results:
-      'iron_horse_armor': 1
-
   # Bedrock and Java recipes
+  ################################################################################
+
   br_barrel:
     type: shaped
     ingredients:
@@ -144,6 +309,7 @@ crafting-recipes:
   #     - 'wsw'
   #   results:
   #     'barrel': 1
+
   br_composter: # Java > 1.15
     type: shaped
     ingredients:
@@ -165,6 +331,7 @@ crafting-recipes:
   #     - 'sss'
   #   results:
   #     'composter': 1
+
   br_dark_prismarine: # Java > 1.15
     type: shaped
     ingredients:
