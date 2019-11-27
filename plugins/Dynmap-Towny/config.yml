@@ -13,7 +13,7 @@ layer:
   showEmbassies: false
   showWilds: false
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
-  <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Residents:</b>
+  <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Resident(s):</b>
   %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
 regionstyle:
   homeicon: redflag
