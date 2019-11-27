@@ -151,21 +151,49 @@ groups:
 
 # Donor
 ################################################################################
+# Important:  Donor perks must not allow a rich griefer to mess with the server.
   g:Donor:
     info:
       suffix: ' &c(donor)&r'
     permissions:
 
-# Misc
+# Exclusives
 #-------------------------------------------------------------------------------
     - +jobs.command.leave
     - +jobs.command.leaveall
+    - +essentials.back.ondeath # Only applies to those who already have `/back`
+    - +essentials.fly
+    - +essentials.fly.safelogin
 
-# Exemptions
+# Misc
 #-------------------------------------------------------------------------------
-    - essentials.protect.exemptbreak
-    - essentials.protect.exemptplacement
-    - essentials.protect.exemptusage
+    - +towny.town.resident
+    - +towny.command.town.new
+    - +towny.command.nation.new
+
+# Quality of Life
+#-------------------------------------------------------------------------------
+    - +essentials.workbench
+    - +essentials.clearinventory
+    - +editablesign.edit
+    - +craftbook.mech.ammeter.use
+    - +craftbook.mech.lightstone.use
+    - +craftbook.mech.paintingswitch.use
+
+# Chat
+#-------------------------------------------------------------------------------
+    - +essentials.chat.color
+    - +essentials.chat.format
+    - +essentials.chat.magic
+    - +essentials.msg.color
+    - +essentials.msg.format
+    - +essentials.msg.magic
+    - +townychat.chat.color
+    - +townychat.chat.format.*
+
+# Cosmetics
+#-------------------------------------------------------------------------------
+    - +essentials.hat
 
 # Developer/Tester
 ################################################################################
