@@ -97,7 +97,7 @@ crafting-recipes:
   mycelium:
     type: shaped
     ingredients:
-      'podzol': 'd'
+      'podzol': 'p'
       'brown_mushroom': 'b'
       'red_mushroom': 'r'
     shape:

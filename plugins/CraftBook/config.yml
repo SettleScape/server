@@ -18,7 +18,6 @@ enabled-mechanics:
 - CustomCrafting
 - CustomDrops
 - DispenserRecipes
-- Footprints
 - HeadDrops
 - JackOLantern
 - Jukebox
@@ -49,6 +48,7 @@ disabled-mechanics:
 - CookingPot
 - Door
 - Elevator
+- Footprints
 - Gate
 - Glowstone
 - HiddenSwitch
