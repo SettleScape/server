@@ -27,7 +27,6 @@ enabled-mechanics:
 - Netherrack
 - PaintingSwitcher
 - Pay
-- SignCopier
 - Snow
 
 # A list of CraftBook mechanics that are disabled, for easy copy/pastability to the enabled list.
@@ -87,6 +86,7 @@ disabled-mechanics:
 - MinecartTemporaryCart
 - MinecartVisionSteering
 - Pipes
+- SignCopier
 - Sponge
 - Teleporter
 - ToggleArea
