@@ -139,7 +139,6 @@ groups:
   # - essentials.enderchest
     - essentials.book
     - essentials.book.title
-    - editablesign.colorsign
     - editablesign.edit
     - lwc.protect
     - -rankup.auto

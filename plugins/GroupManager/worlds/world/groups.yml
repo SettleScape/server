@@ -84,7 +84,6 @@ groups:
     # Basic quality of life improvements
     - +essentials.workbench
     - +essentials.clearinventory
-    - +editablesign.colorsign
     - +editablesign.edit
     - +craftbook.mech.ammeter.use
     - +craftbook.mech.lightstone.use
