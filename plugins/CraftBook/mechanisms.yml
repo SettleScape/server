@@ -9,27 +9,83 @@
 mechanics:
     AI:
         vision-enable:
-        - Zombie
+        - Blaze
+        - Cat
+        - CaveSpider
+        - ChestedHorse
+        - Chicken
+        - Cow
+        - Creeper
+        - Dolphin
+        - Donkey
+        - Drowned
+        - ElderGuardian
+        - Fox
+        - Giant
+        - Golem
+        - Guardian
+        - Horse
+        - Husk
+        - Illager
+        - IronGolem
+        - Llama
+        - MagmaCube
+        - Mule
+        - MushroomCow
+        - Ocelot
+        - Panda
+        - Parrot
+        - Pig
         - PigZombie
-        crit-bow-enable:
+        - Pillager
+        - PolarBear
+        - Rabbit
+        - Raider
+        - Ravager
+        - Sheep
+        - Silverfish
         - Skeleton
-        attack-passive-enable:
+        - SkeletonHorse
+        - Slime
+        - Snowman
+        - Spider
+        - Stray
+        - TraderLlama
+        - Turtle
+        - Villager
+        - Vindicator
+        - WanderingTrader
+        - Witch
+        - WitherSkeleton
+        - Wolf
         - Zombie
+        - ZombieHorse
+        - ZombieVillager
+        crit-bow-enable: []
+        attack-passive-enable:
+        - Blaze
+        - CaveSpider
+        - EnderDragon
+        - Ghast
+        - Illager
+        - Pillager
+        - Raider
+        - Spider
+        - Vindicator
+        - WitherSkeleton
     Ammeter:
         item: minecraft:coal
     BetterLeads:
         stop-mob-target: false
-        owner-unleash-only: false
-        hitch-persists: false
+        owner-unleash-only: true
+        hitch-persists: true
         mob-repel: false
-        allowed-mobs:
-        - ZOMBIE
-        - SPIDER
+        allowed-mobs: []
     BetterPhysics:
-        falling-ladders: true
+        falling-ladders: false
     BetterPistons:
         crushers: true
-        crushers-kill-mobs: false
+        crushers-kill-mobs: true
         crusher-blacklist:
         - minecraft:obsidian
         - minecraft:bedrock
@@ -37,8 +93,8 @@ mechanics:
         - minecraft:end_portal
         - minecraft:end_portal_frame
         - minecraft:end_gateway
-        super-sticky: true
-        super-push: true
+        super-sticky: false
+        super-push: false
         movement-blacklist:
         - minecraft:obsidian
         - minecraft:bedrock
@@ -46,7 +102,7 @@ mechanics:
         - minecraft:end_portal
         - minecraft:end_portal_frame
         - minecraft:end_gateway
-        bounce: true
+        bounce: false
         bounce-blacklist:
         - minecraft:obsidian
         - minecraft:bedrock
@@ -80,8 +136,8 @@ mechanics:
     Bridge:
         enforce-type: true
         allow-redstone: true
-        max-length: 30
-        max-width: 5
+        max-length: 20
+        max-width: 4
         blocks:
         - minecraft:acacia_planks
         - minecraft:acacia_slab
@@ -132,8 +188,8 @@ mechanics:
         item-tracking: false
         require-sign: false
     Chairs:
-        allow-holding-blocks: false
-        regen-health: true
+        allow-holding-blocks: true
+        regen-health: false
         regen-health-amount: 1.0
         blocks:
         - minecraft:acacia_stairs
@@ -168,8 +224,8 @@ mechanics:
         - minecraft:stone_brick_stairs
         - minecraft:stone_stairs
         face-correct-direction: true
-        require-sign: false
-        max-distance: 3
+        require-sign: true
+        max-distance: 2
         max-click-radius: 5
     ChunkAnchor:
         enable-redstone: true
@@ -191,9 +247,9 @@ mechanics:
     DispenserRecipes:
         cannon-enable: true
         fan-enable: true
-        fire-arrows-enable: true
-        snow-shooter-enable: true
-        xp-shooter-enable: true
+        fire-arrows-enable: false
+        snow-shooter-enable: false
+        xp-shooter-enable: false
     Door:
         enforce-type: true
         allow-redstone: true
@@ -253,11 +309,11 @@ mechanics:
     Footprints:
         blocks:
         - minecraft:dirt
+        - minecraft:coarse_dirt
+        - minecraft:red_sand
         - minecraft:sand
         - minecraft:snow
         - minecraft:snow_block
-        - minecraft:ice
-        - minecraft:red_sand
     Gate:
         allow-redstone: true
         limit-columns: true
@@ -288,8 +344,7 @@ mechanics:
         show-name-right-click: true
         drop-rates: {}
         custom-mob-skins: {}
-        ignored-names:
-        - cscorelib
+        ignored-names: []
     HiddenSwitch:
         any-side: true
     ICs:
@@ -370,15 +425,15 @@ mechanics:
         stack-per-move: true
         require-sign: false
     SignCopier:
-        item: minecraft:ink_sac
+        item: minecraft:feather
     Snow:
-        piling: false
-        trample: false
-        partial-trample-only: false
-        jump-trample: false
+        piling: true
+        trample: true
+        partial-trample-only: true
+        jump-trample: true
         place: false
-        slowdown: false
-        realistic: false
+        slowdown: true
+        realistic: true
         high-piling: false
         max-pile-height: 3
         replacable-blocks:
@@ -393,8 +448,8 @@ mechanics:
         animate-falling: false
         falldown-animation-speed: 5
         freeze-water: false
-        melt-in-sunlight: false
-        partial-melt-only: false
+        melt-in-sunlight: true
+        partial-melt-only: true
     Sponge:
         radius: 5
         circular-radius: true

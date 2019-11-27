@@ -9,16 +9,31 @@
 
 # List of mechanics to enable! If they aren't in this list, the server won't load them!
 enabled-mechanics:
-- Variables
-
-# A list of CraftBook mechanics that are disabled, for easy copy/pastability to the enabled list.
-disabled-mechanics:
 - AI
 - Ammeter
 - BetterLeads
+- BetterPlants
+- Bookcase
+- Chairs
+- CustomCrafting
+- CustomDrops
+- DispenserRecipes
+- Footprints
+- HeadDrops
+- JackOLantern
+- Jukebox
+- LightStone
+- MinecartPlaceAnywhere
+- Netherrack
+- PaintingSwitcher
+- Pay
+- SignCopier
+- Snow
+
+# A list of CraftBook mechanics that are disabled, for easy copy/pastability to the enabled list.
+disabled-mechanics:
 - BetterPhysics
 - BetterPistons
-- BetterPlants
 - BoatDecay
 - BoatDrops
 - BoatExitRemover
@@ -26,32 +41,22 @@ disabled-mechanics:
 - BoatSpeedModifiers
 - BoatUncrashable
 - BoatWaterPlaceOnly
-- Bookcase
 - BounceBlocks
 - Bridge
 - Cauldron
-- Chairs
 - ChunkAnchor
 - CommandItems
 - CommandSigns
 - CookingPot
-- CustomCrafting
-- CustomDrops
-- DispenserRecipes
 - Door
 - Elevator
-- Footprints
 - Gate
 - Glowstone
-- HeadDrops
 - HiddenSwitch
 - ICs
-- JackOLantern
-- Jukebox
 - LandBoats
 - LegacyCauldron
 - LegacyCustomDrops
-- LightStone
 - LightSwitch
 - MapChanger
 - Marquee
@@ -72,7 +77,6 @@ disabled-mechanics:
 - MinecartMobBlocker
 - MinecartMoreRails
 - MinecartNoCollide
-- MinecartPlaceAnywhere
 - MinecartRailPlacer
 - MinecartRemoveEntities
 - MinecartReverser
@@ -82,16 +86,12 @@ disabled-mechanics:
 - MinecartTeleporter
 - MinecartTemporaryCart
 - MinecartVisionSteering
-- Netherrack
-- PaintingSwitcher
-- Pay
 - Pipes
-- SignCopier
-- Snow
 - Sponge
 - Teleporter
 - ToggleArea
 - TreeLopper
+- Variables
 - XPStorer
 
 # WARNING! Changing this can result in all ST mechanics acting very weirdly, only change this if you know what you are doing!
@@ -141,7 +141,7 @@ debug-mode-file-logging: false
 debug-flags: []
 
 # Enables random easter eggs. Can be from console messages on startup for a special occasion, to funny little effects with IC's and other mechanics (Always harmless, won't mess anything up)
-easter-eggs: true
+easter-eggs: false
 
 # Random numbers are much more random, with a small cost to CPU usage.
 realistic-randoms: false
@@ -150,7 +150,7 @@ realistic-randoms: false
 show-permission-messages: true
 
 # PersistentStorage stores data that can be accessed across server restart. Method of PersistentStorage storage (Note: DUMMY is practically off, and may cause issues). Can currently be any of the following: YAML, DUMMY, SQLite
-persistent-storage-type: YAML
+persistent-storage-type: SQLite
 
 # Causes mechanics to attempt to convert names to use CBIDs. This can and should be disabled after you believe your servers transition to UUIDs v Names is complete.
 convert-names-to-cbids: false
