@@ -115,6 +115,16 @@ groups:
 # Misc
 #-------------------------------------------------------------------------------
     - bukkit.command.gamemode.survival
+    - craftbook.mech.ammeter.use
+    - craftbook.mech.bookshelf.use
+    - craftbook.mech.chair.use
+    - craftbook.mech.headdrops.break
+    - craftbook.mech.headdrops.kill
+    - craftbook.mech.leads
+    - craftbook.mech.lightstone.use
+    - craftbook.mech.paintingswitch.use
+    - craftbook.mech.pay
+    - craftbook.mech.pay.use
     - essentials.afk
     - essentials.afk.auto
     - essentials.build
@@ -297,6 +307,7 @@ groups:
 
 # Exemptions
 #-------------------------------------------------------------------------------
+    - craftbook.mech.leads.owner-break-only.bypass
     - essentials.jail.allow.helpop
     - essentials.jail.allow.mail
     - essentials.jail.allow.seen
@@ -381,6 +392,10 @@ groups:
     - essentials.protect.exemptbreak
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
+
+# Misc
+#-------------------------------------------------------------------------------
+    - craftbook.mech.chunk
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------

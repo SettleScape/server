@@ -57,6 +57,11 @@ groups:
     - -essentials.workbench
     - -essentials.kit
     - -essentials.clearinventory
+    - -craftbook.mech.ammeter.use
+    - -craftbook.mech.lightstone.use
+    - -craftbook.mech.paintingswitch.use
+    - -craftbook.mech.pay
+    - -craftbook.mech.pay.use
 
   #-----------------------------------------------------------------------------
   Traveller:
@@ -81,6 +86,9 @@ groups:
     - +essentials.clearinventory
     - +editablesign.colorsign
     - +editablesign.edit
+    - +craftbook.mech.ammeter.use
+    - +craftbook.mech.lightstone.use
+    - +craftbook.mech.paintingswitch.use
 
     # Access to advanced chat features (unlikely to be a spammer)
     - +essentials.chat.color
@@ -93,6 +101,8 @@ groups:
     - +essentials.msg.url
     - +townychat.chat.color
     - +townychat.chat.format.*
+    - +craftbook.mech.pay
+    - +craftbook.mech.pay.use
 
     # Misc
     - +towny.town.resident
@@ -183,7 +193,6 @@ groups:
     - mineablespawners.break
 
     # Superpowers
-    #- essentials.fly
     - essentials.ext
     - essentials.feed
     - essentials.heal
