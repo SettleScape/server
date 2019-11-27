@@ -3,34 +3,187 @@
 # http://wiki.sk89q.com/wiki/CraftBook/Custom_crafting
 
 crafting-recipes:
-  shapelessexample:
+
+  # Misc
+  stitch_hides: # Similar to how rabbit hides can craft leather
     type: shapeless
-    ingredients: #mc only supports amount of 1 currently as ingredients.
-      # light wooden plank
-      'wood:2': 3
-      # brown wool
-      'wool:12': 2
-    results:
-      #64 Endstone.
-      '121': 64
-  shapeexample:
-    type: shaped
-    ingredients: #mc only supports amount of 1 currently as ingredients.
-      # light wooden plank
-      'wood:2': 'a'
-      # brown wool
-      'wool:12': 'b'
-    shape: #two of a on top, 2 of b on bottom.
-      - 'aa'
-      - 'bb'
-    results:
-      #64 Endstone.
-      '121': 64
-  furnaceexample:
-    type: furnace
     ingredients:
-      # light wooden plank
-      'wood:2': 1
+      'rotten_flesh': 9
     results:
-      #1 Stone.
-      'stone': 1
+      'leather': 1
+  # cure_hides: # BetterRealism's recipe.  Pretty overpowered.
+  #   type: furnace
+  #   ingredients:
+  #     'rotten_flesh': 1
+  #   results:
+  #     'leather': 1
+  enchanted_golden_apple:
+    type: shaped
+    ingredients:
+      'apple': 'a'
+      'gold_block': 'g'
+    shape:
+      - 'ggg'
+      - 'gag'
+      - 'ggg'
+    results:
+      'enchanted_golden_apple': 1
+
+  # Chainmail
+  chainmail_helmet:
+    type: shaped
+    ingredients:
+      'iron_ingot': 'i'
+      'iron_nugget': 'n'
+    shape:
+      - 'ini'
+      - 'n n'
+      - '   '
+    results:
+      'chainmail_helmet': 1
+  chainmail_chestplate:
+    type: shaped
+    ingredients:
+      'iron_ingot': 'i'
+      'iron_nugget': 'n'
+    shape:
+      - 'n n'
+      - 'ini'
+      - 'ini'
+    results:
+      'chainmail_chestplate': 1
+  chainmail_leggings:
+    type: shaped
+    ingredients:
+      'iron_ingot': 'i'
+      'iron_nugget': 'n'
+    shape:
+      - 'nin'
+      - 'i i'
+      - 'n n'
+    results:
+      'chainmail_leggings': 1
+  chainmail_boots:
+    type: shaped
+    ingredients:
+      'iron_ingot': 'i'
+      'iron_nugget': 'n'
+    shape:
+      - '   '
+      - 'n n'
+      - 'i i'
+    results:
+      'chainmail_boots': 1
+
+  # Equestrian equipment
+  saddle:
+    type: shaped
+    ingredients:
+      'leather': 'l'
+      'iron_ingot': 'i'
+    shape:
+      - 'lll'
+      - 'lil'
+      - 'i i'
+    results:
+      'saddle': 1
+  diamond_horse_armor:
+    type: shaped
+    ingredients:
+      'wool': 'w'
+      'diamond': 'd'
+    shape:
+      - '  d'
+      - 'dwd'
+      - 'ddd'
+    results:
+      'diamond_horse_armor': 1
+  golden_horse_armor:
+    type: shaped
+    ingredients:
+      'wool': 'w'
+      'gold': 'g'
+    shape:
+      - '  g'
+      - 'gwg'
+      - 'ggg'
+    results:
+      'golden_horse_armor': 1
+  iron_horse_armor:
+    type: shaped
+    ingredients:
+      'wool': 'w'
+      'iron': 'i'
+    shape:
+      - '  i'
+      - 'iwi'
+      - 'iii'
+    results:
+      'iron_horse_armor': 1
+
+  # Bedrock and Java recipes
+  br_barrel:
+    type: shaped
+    ingredients:
+      'wood_slab': 'w'
+      'stick': 's'
+    shape:
+      - 'sws'
+      - 's s'
+      - 'sws'
+    results:
+      'barrel': 1
+  # je_barrel:
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 's'
+  #     'wood': 'w'
+  #   shape:
+  #     - 'wsw'
+  #     - 'w w'
+  #     - 'wsw'
+  #   results:
+  #     'barrel': 1
+  br_composter: # Java > 1.15
+    type: shaped
+    ingredients:
+      'wood_slab': 's'
+    shape:
+      - 's s'
+      - 's s'
+      - 'sss'
+    results:
+      'composter': 1
+  # je_composter: # Java < 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 's'
+  #     'fence': 'f'
+  #   shape:
+  #     - 'f f'
+  #     - 'f f'
+  #     - 'sss'
+  #   results:
+  #     'composter': 1
+  br_dark_prismarine: # Java > 1.15
+    type: shaped
+    ingredients:
+      'prismarine_shard': 'p'
+      'black_dye': 'b'
+    shape:
+      - 'ppp'
+      - 'pbp'
+      - 'ppp'
+    results:
+      'dark_prismarine': 1
+  # je_dark_prismarine: # Java < 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'prismarine_shard': 'p'
+  #     'ink_sac': 'i'
+  #   shape:
+  #     - 'ppp'
+  #     - 'pip'
+  #     - 'ppp'
+  #   results:
+  #     'dark_prismarine': 1
