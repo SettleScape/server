@@ -1,0 +1,6 @@
+**
+!.gitignore
+!config.yml
+!mechanisms.yml
+!crafting-recipes.yml
+!custom-drops.yml
