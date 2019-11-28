@@ -9,7 +9,6 @@
 
 # List of mechanics to enable! If they aren't in this list, the server won't load them!
 enabled-mechanics:
-- AI
 - Ammeter
 - BetterLeads
 - BetterPlants
@@ -26,10 +25,10 @@ enabled-mechanics:
 - Netherrack
 - PaintingSwitcher
 - Pay
-- Snow
 
 # A list of CraftBook mechanics that are disabled, for easy copy/pastability to the enabled list.
 disabled-mechanics:
+- AI
 - BetterPhysics
 - BetterPistons
 - BoatDecay
@@ -87,6 +86,7 @@ disabled-mechanics:
 - MinecartVisionSteering
 - Pipes
 - SignCopier
+- Snow
 - Sponge
 - Teleporter
 - ToggleArea
