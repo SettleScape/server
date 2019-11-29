@@ -6,13 +6,13 @@ crafting-recipes:
   # Misc
   ################################################################################
 
-  stitch_hides: # Similar to how rabbit hides can craft leather
+  flesh_to_leather: # Similar to how rabbit hides can craft leather
     type: shapeless
     ingredients:
       'rotten_flesh': 9
     results:
       'leather': 1
-  nametag:
+  name_tag:
     type: shaped
     ingredients:
       'gold_ingot': 'g'
@@ -22,8 +22,8 @@ crafting-recipes:
       - ' g '
       - 'g  '
     results:
-      'nametag': 1
-  # end_portal_frame:
+      'name_tag': 1
+  # end_portal_frame: # Unbreakable, so not good for players to be able to place.
   #   type: shaped
   #   ingredients:
   #     'end_stone': 's'
@@ -62,7 +62,7 @@ crafting-recipes:
   # Soil
   ################################################################################
 
-  grass_block:
+  grass_block: #TODO: Doesn't work
     type: shaped
     ingredients:
       'dirt': 'd'
@@ -74,7 +74,7 @@ crafting-recipes:
       - ' d '
     results:
       'grass_block': 1
-  grass_path:
+  grass_path: #TODO: Doesn't work
     type: shaped
     ingredients:
       'grass_block': 'g'
@@ -84,7 +84,7 @@ crafting-recipes:
       - 'd'
     results:
       'grass_path': 2
-  podzol:
+  podzol: #TODO: Doesn't work
     type: shaped
     ingredients:
       'coarse_dirt': 'd'
@@ -94,7 +94,7 @@ crafting-recipes:
       - ' d '
     results:
       'podzol': 1
-  mycelium:
+  mycelium: #TODO: Doesn't work
     type: shaped
     ingredients:
       'podzol': 'p'
@@ -107,7 +107,7 @@ crafting-recipes:
     results:
       'mycelium': 1
 
-  red_sand: # Matches concrete powder recipe.
+  red_sand: #TODO: Doesn't work # Matches concrete powder recipe.
     type: shapeless
     ingredients:
       'orange_dye': 1
@@ -205,7 +205,7 @@ crafting-recipes:
     type: shaped
     ingredients:
       'leather': 'l'
-      'iron': 'i'
+      'iron_ingot': 'i'
       'iron_block': 'b'
     shape:
       - 'i i'
@@ -287,7 +287,7 @@ crafting-recipes:
   # Bedrock and Java recipes
   ################################################################################
 
-  br_barrel:
+  br_barrel: #TODO: Doesn't work
     type: shaped
     ingredients:
       'wood_slab': 'w'
@@ -310,7 +310,7 @@ crafting-recipes:
   #   results:
   #     'barrel': 1
 
-  br_composter: # Java > 1.15
+  br_composter: #TODO: Doesn't work # Java > 1.15
     type: shaped
     ingredients:
       'wood_slab': 's'
@@ -332,7 +332,7 @@ crafting-recipes:
   #   results:
   #     'composter': 1
 
-  br_dark_prismarine: # Java > 1.15
+  br_dark_prismarine: #TODO: Doesn't work correctly # Java > 1.15
     type: shaped
     ingredients:
       'prismarine_shard': 'p'

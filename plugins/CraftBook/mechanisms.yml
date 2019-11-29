@@ -8,59 +8,7 @@
 
 mechanics:
     AI:
-        vision-enable:
-        - Blaze
-        - Cat
-        - CaveSpider
-        - ChestedHorse
-        - Chicken
-        - Cow
-        - Creeper
-        - Dolphin
-        - Donkey
-        - Drowned
-        - ElderGuardian
-        - Fox
-        - Giant
-        - Golem
-        - Guardian
-        - Horse
-        - Husk
-        - Illager
-        - IronGolem
-        - Llama
-        - MagmaCube
-        - Mule
-        - MushroomCow
-        - Ocelot
-        - Panda
-        - Parrot
-        - Pig
-        - PigZombie
-        - Pillager
-        - PolarBear
-        - Rabbit
-        - Raider
-        - Ravager
-        - Sheep
-        - Silverfish
-        - Skeleton
-        - SkeletonHorse
-        - Slime
-        - Snowman
-        - Spider
-        - Stray
-        - TraderLlama
-        - Turtle
-        - Villager
-        - Vindicator
-        - WanderingTrader
-        - Witch
-        - WitherSkeleton
-        - Wolf
-        - Zombie
-        - ZombieHorse
-        - ZombieVillager
+        vision-enable: []
         crit-bow-enable: []
         attack-passive-enable:
         - Blaze
@@ -68,6 +16,7 @@ mechanics:
         - EnderDragon
         - Ghast
         - Illager
+        - PigZombie
         - Pillager
         - Raider
         - Spider
@@ -300,7 +249,7 @@ mechanics:
         - minecraft:stone_brick_slab
         - minecraft:stone_slab
     Elevator:
-        allow-redstone: false
+        allow-redstone: true
         redstone-player-search-radius: 3
         enable-buttons: true
         allow-looping: false
@@ -339,8 +288,8 @@ mechanics:
         require-player-killed: true
         drop-head-when-mined: true
         override-natural-head-drops: false
-        drop-rate: 0.05
-        looting-rate-modifier: 0.05
+        drop-rate: 0.01
+        looting-rate-modifier: 0.01
         show-name-right-click: true
         drop-rates: {}
         custom-mob-skins: {}
