@@ -252,6 +252,7 @@ groups:
 
 # Info
 #-------------------------------------------------------------------------------
+    - minecraft.banlist
     - essentials.balancetop
     - essentials.invsee
     - essentials.realname
@@ -316,6 +317,8 @@ groups:
   # - bukkit.command.kick
     - essentials.kick
     - essentials.kick.notify
+  # - minecraft.command.ban
+  # - minecraft.command.ban-ip
   # - bukkit.command.ban
   # - bukkit.command.ban.ip
   # - bukkit.command.ban.player
@@ -323,6 +326,8 @@ groups:
     - essentials.banip
     - essentials.ban.notify
     - essentials.seen.banreason
+  # - minecraft.command.pardon
+  # - minecraft.command.pardon-ip
   # - bukkit.command.unban
   # - bukkit.command.unban.ip
   # - bukkit.command.unban.player
@@ -374,16 +379,17 @@ groups:
 
 # Configuration
 #-------------------------------------------------------------------------------
+    - minecraft.command.setworldspawn
     - groupmanager.mandemote
     - groupmanager.manpromote
     - groupmanager.mansave
     - groupmanager.mantogglevalidate
     - groupmanager.manuadd
     - groupmanager.manudel
+    - groupmanager.op
     - bukkit.command.whitelist
     - bukkit.command.whitelist.disable
     - bukkit.command.whitelist.enable
-    - groupmanager.op
     - towny.admin
 
 # Operations
@@ -423,6 +429,7 @@ groups:
 # Misc
 #-------------------------------------------------------------------------------
     - craftbook.mech.chunk
+    - minecraft.command.forceload
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
