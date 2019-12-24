@@ -131,13 +131,37 @@ crafting-recipes:
       'nether_wart_block': 1
     results:
       'nether_wart': 9
+  # extract_prismarine_bricks:
+  #   type: shapeless
+  #   ingredients:
+  #     'prismarine_bricks': 1
+  #   results:
+  #     'prismarine_shard': 9
 
+  extract_prismarine:
+    type: shapeless
+    ingredients:
+      'prismarine': 1
+    results:
+      'prismarine_shard': 4
   extract_quartz:
     type: shapeless
     ingredients:
       'quartz_block': 1
     results:
       'quartz': 4
+  extract_bricks:
+    type: shapeless
+    ingredients:
+      'bricks': 1
+    results:
+      'brick': 4
+  extract_nether_bricks:
+    type: shapeless
+    ingredients:
+      'nether_bricks': 1
+    results:
+      'nether_brick': 4
   extract_glowstone_dust:
     type: shapeless
     ingredients:
@@ -332,14 +356,14 @@ crafting-recipes:
   #   results:
   #     'composter': 1
 
-  br_dark_prismarine: #TODO: Doesn't work correctly # Java > 1.15
+  br_dark_prismarine: # Java > 1.15
     type: shaped
     ingredients:
       'prismarine_shard': 'p'
-      'black_dye': 'b'
+      'ink_sac': 'i'
     shape:
       - 'ppp'
-      - 'pbp'
+      - 'pip'
       - 'ppp'
     results:
       'dark_prismarine': 1
@@ -347,10 +371,10 @@ crafting-recipes:
   #   type: shaped
   #   ingredients:
   #     'prismarine_shard': 'p'
-  #     'ink_sac': 'i'
+  #     'black_dye': 'b'
   #   shape:
   #     - 'ppp'
-  #     - 'pip'
+  #     - 'pbp'
   #     - 'ppp'
   #   results:
   #     'dark_prismarine': 1
