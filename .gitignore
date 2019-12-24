@@ -1,9 +1,11 @@
 
 ## Dynamic
 **/backup/
+**/crash-reports/
 **/logs/
 **/tmp/
 **.log
+/build/
 /banned-ips.json
 /banned-players.json
 /eula.txt
@@ -12,7 +14,6 @@
 /whitelist.json
 
 ## Unversionable
-/build/
 /worlds/
 **.bak
 **.db
