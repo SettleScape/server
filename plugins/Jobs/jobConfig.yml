@@ -1473,6 +1473,54 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      stone_brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      mossy_stone_brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      andesite_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      diorite_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      granite_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      sandstone_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      red_sandstone_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      prismarine_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      nether_brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      red_nether_brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      end_stone_brick_wall:
+        income: 1.5
+        points: 1.5
+        experience: 2
       trapped_chest:
         income: 1.5
         points: 1.5
