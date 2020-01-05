@@ -981,6 +981,10 @@ Jobs:
         income: 0.7
         points: 0.7
         experience: 2
+      end_stone:
+        income: 1.5
+        points: 1.5
+        experience: 2
       oak_planks:
         income: 1.5
         points: 1.5
@@ -1069,6 +1073,10 @@ Jobs:
         income: 0.8
         points: 0.8
         experience: 2
+      red_nether_brick_slab:
+        income: 1.2
+        points: 1.2
+        experience: 2
       quartz_slab:
         income: 0.8
         points: 0.8
@@ -1129,6 +1137,10 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      red_nether_brick_stairs:
+        income: 2.0
+        points: 2.0
+        experience: 2.0
       oak_stairs:
         income: 1.5
         points: 1.5
@@ -1437,6 +1449,10 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      red_nether_bricks:
+        income: 2.0
+        points: 2.0
+        experience: 2
       nether_brick_fence:
         income: 1.5
         points: 1.5
@@ -1470,56 +1486,56 @@ Jobs:
         points: 1.5
         experience: 2
       mossy_cobblestone_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       stone_brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       mossy_stone_brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       andesite_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       diorite_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       granite_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       sandstone_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       red_sandstone_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       prismarine_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       nether_brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.0
+        points: 2.0
         experience: 2
       red_nether_brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.5
+        points: 2.5
         experience: 2
       end_stone_brick_wall:
-        income: 1.5
-        points: 1.5
+        income: 2.25
+        points: 2.25
         experience: 2
       trapped_chest:
         income: 1.5
