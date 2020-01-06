@@ -4,7 +4,7 @@ set -e
 ## Variables
 BUILDDIR='build'
 BUILDJAR='BuildTools.jar'
-  OUTJAR='../server.jar'
+  OUTJAR='server.jar'
  VERSION='1.14.4'
 
 ## Prepare build directory
@@ -17,5 +17,5 @@ curl -o "$BUILDJAR" 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccess
 java -jar "$BUILDJAR" --rev "$VERSION"
 
 ## Deploy the new JAR
-mv spigot*.jar "$OUTJAR"
+mv spigot*.jar "../$OUTJAR"
 exit 0
