@@ -289,7 +289,7 @@ mechanics:
         drop-head-when-mined: true
         override-natural-head-drops: false
         drop-rate: 0.001
-        looting-rate-modifier: 0.03
+        looting-rate-modifier: 0.001
         show-name-right-click: true
         drop-rates: {}
         custom-mob-skins: {}
