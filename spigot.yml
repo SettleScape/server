@@ -3,10 +3,10 @@
 # with caution, and make sure you know what each option does before configuring.
 # For a reference for any variable inside this file, check out the Spigot wiki at
 # http://www.spigotmc.org/wiki/spigot-configuration/
-# 
+#
 # If you need help with the configuration or have any questions related to Spigot,
 # join us at the IRC or drop by our forums and leave a post.
-# 
+#
 # IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
 # Forums: http://www.spigotmc.org/
 
@@ -62,7 +62,7 @@ world-settings:
   default:
     verbose: false
     hopper-amount: 1
-    mob-spawn-range: 6
+    mob-spawn-range: 4
     dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-desert: 14357617
@@ -75,7 +75,7 @@ world-settings:
     seed-outpost: 165745296
     seed-slime: 987234911
     max-tnt-per-tick: 100
-    view-distance: default
+    view-distance: 5
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
@@ -84,10 +84,10 @@ world-settings:
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: false
     entity-activation-range:
-      animals: 32
-      monsters: 32
+      animals: 16
+      monsters: 24
       raiders: 48
-      misc: 16
+      misc: 8
       tick-inactive-villagers: false
     entity-tracking-range:
       players: 48
@@ -99,8 +99,8 @@ world-settings:
       hopper-transfer: 8
       hopper-check: 1
     merge-radius:
-      exp: 3.0
-      item: 2.5
+      exp: 4.0
+      item: 3.0
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -127,7 +127,7 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tick-time:
-      tile: 50
-      entity: 50
+      tile: 1000
+      entity: 1000
     squid-spawn-range:
       min: 45.0
