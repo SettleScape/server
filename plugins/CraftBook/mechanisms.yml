@@ -288,8 +288,8 @@ mechanics:
         require-player-killed: true
         drop-head-when-mined: true
         override-natural-head-drops: false
-        drop-rate: 0.01
-        looting-rate-modifier: 0.01
+        drop-rate: 0.001
+        looting-rate-modifier: 0.03
         show-name-right-click: true
         drop-rates: {}
         custom-mob-skins: {}
