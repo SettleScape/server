@@ -355,7 +355,7 @@ groups:
 # Administrator/DevOps
 ################################################################################
 
-# Owner
+# Administrator
 ################################################################################
   g:Administrator:
     info:
@@ -671,3 +671,10 @@ groups:
     - rankup.reload
     - tradeplus.admin
     - vault.admin
+
+# Owner
+################################################################################
+  g:Owner:
+    info:
+      suffix: ' &c(owner)&r'
+    permissions:

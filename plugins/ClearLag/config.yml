@@ -40,12 +40,10 @@ hopper-limiter:
 # -- 'interval' is how often clearlag will check your ram usage
 # -- 'commands' lists the commands that will be ran upon hitting your ram-limit
 ram-meter:
-  enabled: false
+  enabled: true
   interval: 20
-  ram-limit: 5000
+  ram-limit: 2048
   commands:
-    - 'lagg killmobs'
-    - 'lagg clear'
     - 'lagg gc'
 
 #Configure what the '/lagg halt' command does
@@ -53,7 +51,7 @@ ram-meter:
 # -- 'disable-natural-entity-spawning' disables the server's natural world spawning
 # -- 'halted' this section defines which actions should be halted during '/lagg halt'
 halt-command:
-  remove-entities: true
+  remove-entities: false
   disable-natural-entity-spawning: true
   halted:
     fire: true
@@ -72,15 +70,15 @@ halt-command:
 # -- 'fly-max-speed'  Max speed while flying
 player-speed-limiter:
   enabled: false
-  move-max-speed: 0.7
-  fly-max-speed: 0.8
+  move-max-speed: 0.75
+  fly-max-speed: 0.75
 
 #Set the age of specific items when they're first spawned so they naturally despawn faster, or slower then others
 #Recommended for servers with a lot of item-entities conisting mostly of useless items (Such as stone)
 #Material list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 # -- 'items' Lists the material names of the entities with their spawn-age (In seconds)
 item-spawn-age-setter:
-  enabled: false
+  enabled: true
   items:
     stone: 240
     grass: 240
@@ -114,15 +112,15 @@ item-spawn-age-setter:
 # -- 'max-mobs' means how many bably/adult animals are allowed within the 'check-radius'
 # -- 'check-radius' is the radius of what clearlag will check for 'max-mobs'
 mob-breeding-limiter:
-  enabled: false
-  max-mobs: 6
-  check-radius: 15
+  enabled: true
+  max-mobs: 64
+  check-radius: 16
 
 #Should clearlag purge logs under /logs when the server starts?
 # -- 'days-old' means how many days old can the log be to be deleted
 log-purger:
-  enabled: false
-  days-old: 3
+  enabled: true
+  days-old: 4
 
 #What type of entities SHOULD NOT be removed while doing /lagg area?
 area-filter:
@@ -143,9 +141,9 @@ config-updater:
 # -- 'check-radius' is the radius clearlag will check for nearby entities
 # -- 'max-mobs' is how many entities may be in the radius before the spawning is blocked
 mobegg-limiter:
-  enabled: false
-  check-radius: 8
-  max-mobs: 5
+  enabled: true
+  check-radius: 16
+  max-mobs: 64
 
 #Disable new chunk generation, or just put a cap on how many can load at once.
 #May cause many bugs with Spigot 1.8+, not recommended!
@@ -160,10 +158,10 @@ chunk-limiter:
 # -- Lower it is, the better your entity tick will be and the more CPU cycles you'll save
 # -- If it's too high, expect bugs / lots of lag
 mob-range:
-  enabled: false
-  zombie: 30
-  skeleton: 30
-  creeper: 20
+  enabled: true
+  zombie: 32
+  skeleton: 32
+  creeper: 24
 
 #How long should items/Mobs be left on the ground
 # -- live-time's go by ticks (20 ticks a second)
@@ -180,36 +178,36 @@ live-time:
 #This option disallows the placement of too many tnt-minecarts
 # -- 'radius' is the radius clearlag will check for TNT-Minecarts
 tnt-minecart:
-  enabled: false
-  max: 2
-  radius: 6
+  enabled: true
+  max: 4
+  radius: 8
 
 #This option reduces global dispenser fire rate
 # -- 'time' is in milliseconds
 dispenser-reducer:
-  enabled: false
+  enabled: true
   time: 100
 
 #This option reduces the explosions of mass amounts of tnt, and reduces tnt lag
 # -- 'check-radius' is the radius clearlag will check for primed TNT
 # -- 'max-primed' is the max primed TNT within the radius allowed before clearlag begins to remove
 tnt-reducer:
-  enabled: false
-  check-radius: 5
-  max-primed: 3
+  enabled: true
+  check-radius: 8
+  max-primed: 4
 
 #This option reduces fire spread rate
 # -- 'time' is in milliseconds
 firespread-reducer:
-  enabled: false
+  enabled: true
   time: 2000
 
 #How many entities should one chunk be allowed to hold?
 # -- 'entities' lists all the entities that will be counted
 #     and possibly removed.
 chunk-entity-limiter:
-  enabled: false
-  limit: 10
+  enabled: true
+  limit: 64
   entities:
     - Squid
     - Zombie
@@ -240,16 +238,14 @@ spawn-limiter:
 # -- 'recover-broadcast-message' specifies which message should be broadcasted when TPS recovers
 # -- 'broadcast-enabled' defines whether or not tps-meter should broadcast
 tps-meter:
-  enabled: false
+  enabled: true
   trigger-broadcast-message: '&6[ClearLag] &cThe server is overloaded, executing lag-perventing measures'
   recover-broadcast-message: '&6[ClearLag] &aThe server is no longer overloaded!'
-  broadcast-enabled: false
+  broadcast-enabled: true
   interval: 15
   tps-trigger: 14.0
   tps-recover: 19.0
   commands:
-    - 'lagg killmobs'
-    - 'lagg clear'
     - 'lagg halt'
   recover-commands:
     - 'lagg halt'
@@ -265,7 +261,7 @@ kill-mobs:
     - ARMOR_STAND
     - Horse
 #  - Pig !name="Test" <- This entity will filtered if the name does NOT equal "Test"
-#  - Zombie hasName <- This entity will be filtered if it HAS a name
+    - Zombie hasName # <- This entity will be filtered if it HAS a name
 
 #This nerfs mob-spawners (Natural and player-made)
 #-------------------------------------------------
@@ -277,8 +273,8 @@ kill-mobs:
 # -- 'remove-mobs-on-chunk-unload' is whether or not Clearlag should remove
 # --  the mobs spawned by the mobspawner upon chunk unload (Highly Recommended)
 mobspawner:
-  enabled: false
-  max-spawn: 4
+  enabled: true
+  max-spawn: 12
   remove-mobs-on-chunk-unload: true
 
 #Dont use if you have CB++ or Spigot!

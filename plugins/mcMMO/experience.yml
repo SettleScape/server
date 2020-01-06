@@ -6,8 +6,6 @@
 #
 #####
 
-
-
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
 # These are the only valid colors for Experience Bars, use the exact name found here
 # BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW (As of the time of this update these are the only Bar colors available, this could change in the future so check the BarColor enum to see if it has)
@@ -18,7 +16,7 @@
 #   Splits the boss bar into 12 segments
 #SEGMENTED_20
 #   Splits the boss bar into 20 segments
-#SEGMENTED_6
+#SEGMENTED_4
 #   Splits the boss bar into 6 segments
 #SOLID
 #   The bar is one solid piece
@@ -52,63 +50,63 @@ Experience_Bars:
     Acrobatics:
         Enable: true
         Color: PINK
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Alchemy:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Archery:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Axes:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Excavation:
         Enable: true
         Color: YELLOW
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Fishing:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Herbalism:
         Enable: true
         Color: GREEN
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Mining:
         Enable: true
         Color: YELLOW
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Repair:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Salvage:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Smelting:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Swords:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Taming:
         Enable: true
         Color: RED
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Unarmed:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
     Woodcutting:
         Enable: true
         Color: GREEN
-        BarStyle: SEGMENTED_6
+        BarStyle: SEGMENTED_4
 #
 #  Settings for XP formula
 ###

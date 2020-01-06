@@ -40,7 +40,7 @@ General:
     # This should fix blocks being broken client side, but not server-side.
     # Enable to refresh the chunks around a player at the end of Super Breaker,
     # Giga Drill Breaker, and Berserk. Resource intensive for larger servers.
-    Refresh_Chunks: false
+    Refresh_Chunks: true
 #
 #  Settings for the mcMMO scoreboards
 ###
@@ -48,7 +48,7 @@ Scoreboard:
     # Set this to true to enable scoreboards
     UseScoreboards: false
     # Display player's power levels below their names?
-    Power_Level_Tags: false
+    Power_Level_Tags: true
     # Allow players to use "/mcscoreboard keep" to keep the scoreboard up
     Allow_Keep: true
     # Show the /mcstats scoreboard automatically after logging in
@@ -126,7 +126,7 @@ Backups:
     Keep:
         Last_24_Hours: true
         Daily_Last_Week: true
-        Weekly_Past_Months: true
+        Weekly_Past_Months: false
 #
 #  Settings for using a mySQL database
 ###
@@ -160,7 +160,7 @@ MySQL:
 ###
 Hardcore:
     Death_Stat_Loss:
-        Penalty_Percentage: 75.0
+        Penalty_Percentage: 5.0
         Level_Threshold: 0
         Enabled:
             Acrobatics: false
@@ -206,7 +206,7 @@ Mods:
 ###
 Items:
     Chimaera_Wing:
-        Enabled: true
+        Enabled: false
         Cooldown: 240
         Warmup: 5
         RecentlyHurt_Cooldown: 60
@@ -226,7 +226,7 @@ Party:
     # Enable Hurting other players in the same party
     FriendlyFire: false
     # Maximum size for a party, -1 for infinite
-    MaxSize: -1
+    MaxSize: 4
     # Amount of time (in hours) to wait between automatically kicking old party members
     # To only run at server start, set to 0
     # To never kick old users, set to -1
@@ -294,7 +294,7 @@ Skills:
         Enabled_For_PVE: true
         Prevent_Dodge_Lightning: false
         # Prevent earning Acrobatics XP a few seconds after teleporting
-        XP_After_Teleport_Cooldown: 5
+        XP_After_Teleport_Cooldown: 3
         Level_Cap: 0
     Alchemy:
         # Allow Hoppers to transfer ingredients and brew Rank 1 Alchemy potions
@@ -321,7 +321,7 @@ Skills:
         Drops_Enabled: true
         Override_Vanilla_Treasures: true
         # Always catch fish, even when treasure is found
-        Extra_Fish: false
+        Extra_Fish: true
         Lure_Modifier: 4.0
     Herbalism:
         Level_Cap: 0
@@ -387,12 +387,12 @@ Skills:
         Level_Cap: 0
         Ability_Activation_Level_Gate: 10
         Block_Cracker:
-            SmoothBrick_To_CrackedBrick: true
+            SmoothBrick_To_CrackedBrick: false
         # When using Unarmed, picked up items will automatically get moved to a free slot instead of going in the slot
         # of your hand. Should item pickup be disabled when your entire inventory - except for your hand - is full?
         Item_Pickup_Disabled_Full_Inventory: true
-        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed. 
-        Items_As_Unarmed: false
+        # Any attacks made without a tool, i.e. with one's open hand, a block, etc., will count as unarmed.
+        Items_As_Unarmed: true
     Woodcutting:
         Tree_Feller_Sounds: true
         Level_Cap: 0
@@ -495,7 +495,7 @@ Commands:
         # Prevents players from spamming /mctop or /mcrank
         Player_Cooldown: 1750
     mcmmo:
-        Donate_Message: true
+        Donate_Message: false
     inspect:
         Max_Distance: 30.0
     ptp:
@@ -508,11 +508,11 @@ Commands:
         # to teleport to, from, or within any given world.
         World_Based_Permissions: false
     partychat:
-        Chat_Prefix_Format: '[[GREEN]]([[WHITE]]{0}[[GREEN]])'
+        Chat_Prefix_Format: '[[GRAY]][[[DARK_AQUA]]{0}[[GRAY]]][[RESET]]'
         Use_Display_Names: true
-        Chat_Prefix_Format_Ally: '[[GREEN]](A)[[RESET]]'
+        Chat_Prefix_Format_Ally: '[[GRAY]][[[DARK_PURPLE]]ALY[[GRAY]]][[RESET]]'
     adminchat:
-        Chat_Prefix_Format: '[[AQUA]][[[WHITE]]{0}[[AQUA]]]'
+        Chat_Prefix_Format: '[[GRAY]][[[DARK_RED]]{0}[[GRAY]]][[RESET]]'
         Use_Display_Names: true
 #
 #  Settings for particles
@@ -522,7 +522,7 @@ Particles:
     Ability_Activation: false
     Ability_Deactivation: false
     # Determines if the fireworks should be a large ball or a small one
-    LargeFireworks: true
+    LargeFireworks: false
     # Use particle effect when these abilities trigger
     Bleed: true
     Dodge: true

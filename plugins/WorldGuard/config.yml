@@ -51,7 +51,7 @@ use-player-move-event: true
 use-player-teleports: true
 use-particle-effects: true
 security:
-    deop-everyone-on-join: false
+    deop-everyone-on-join: true
     block-in-game-op-command: true
     host-keys-allow-forge-clients: false
 host-keys: {}

@@ -8,28 +8,28 @@
 Alchemy:
     Catalysis:
         Standard:
-            Rank_1: 0
+            Rank_1: 5
         RetroMode:
-            Rank_1: 0
+            Rank_1: 50
     Concoctions:
         Standard:
             Rank_1: 0
-            Rank_2: 1
-            Rank_3: 35
-            Rank_4: 50
-            Rank_5: 65
-            Rank_6: 75
-            Rank_7: 85
-            Rank_8: 100
+            Rank_2: 14
+            Rank_3: 28
+            Rank_4: 42
+            Rank_5: 56
+            Rank_6: 70
+            Rank_7: 84
+            Rank_8: 98
         RetroMode:
             Rank_1: 0
-            Rank_2: 1
-            Rank_3: 350
-            Rank_4: 500
-            Rank_5: 650
-            Rank_6: 750
-            Rank_7: 850
-            Rank_8: 1000
+            Rank_2: 140
+            Rank_3: 280
+            Rank_4: 420
+            Rank_5: 560
+            Rank_6: 700
+            Rank_7: 840
+            Rank_8: 980
 Archery:
     ArcheryLimitBreak:
         Standard:
@@ -56,12 +56,12 @@ Archery:
             Rank_10: 1000
     ArrowRetrieval:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     SkillShot:
         Standard:
-            Rank_1: 1
+            Rank_1: 5
             Rank_2: 10
             Rank_3: 15
             Rank_4: 20
@@ -82,7 +82,7 @@ Archery:
             Rank_19: 95
             Rank_20: 100
         RetroMode:
-            Rank_1: 1
+            Rank_1: 50
             Rank_2: 100
             Rank_3: 150
             Rank_4: 200
@@ -105,9 +105,9 @@ Archery:
 Acrobatics:
     Dodge:
         Standard:
-            Rank_1: 1
+            Rank_1: 5
         RetroMode:
-            Rank_1: 1
+            Rank_1: 50
 Axes:
     AxesLimitBreak:
         Standard:
@@ -139,9 +139,9 @@ Axes:
             Rank_1: 50
     CriticalStrikes:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     GreaterImpact:
         Standard:
             Rank_1: 25
@@ -149,183 +149,183 @@ Axes:
             Rank_1: 250
     ArmorImpact:
         Standard:
-            Rank_1: 1
-            Rank_2: 10
-            Rank_3: 15
-            Rank_4: 20
-            Rank_5: 25
-            Rank_6: 30
-            Rank_7: 35
-            Rank_8: 40
-            Rank_9: 45
-            Rank_10: 50
-            Rank_11: 55
-            Rank_12: 60
-            Rank_13: 65
-            Rank_14: 70
-            Rank_15: 75
-            Rank_16: 80
-            Rank_17: 85
-            Rank_18: 90
-            Rank_19: 95
-            Rank_20: 100
+            Rank_1: 0
+            Rank_2: 5
+            Rank_3: 10
+            Rank_4: 15
+            Rank_5: 20
+            Rank_6: 25
+            Rank_7: 30
+            Rank_8: 35
+            Rank_9: 40
+            Rank_10: 45
+            Rank_11: 50
+            Rank_12: 55
+            Rank_13: 60
+            Rank_14: 65
+            Rank_15: 70
+            Rank_16: 75
+            Rank_17: 80
+            Rank_18: 85
+            Rank_19: 90
+            Rank_20: 95
         RetroMode:
-            Rank_1: 1
-            Rank_2: 100
-            Rank_3: 150
-            Rank_4: 200
-            Rank_5: 250
-            Rank_6: 300
-            Rank_7: 350
-            Rank_8: 400
-            Rank_9: 450
-            Rank_10: 500
-            Rank_11: 550
-            Rank_12: 600
-            Rank_13: 650
-            Rank_14: 700
-            Rank_15: 750
-            Rank_16: 800
-            Rank_17: 850
-            Rank_18: 900
-            Rank_19: 950
-            Rank_20: 1000
+            Rank_1: 0
+            Rank_2: 50
+            Rank_3: 100
+            Rank_4: 150
+            Rank_5: 200
+            Rank_6: 250
+            Rank_7: 300
+            Rank_8: 350
+            Rank_9: 400
+            Rank_10: 450
+            Rank_11: 500
+            Rank_12: 550
+            Rank_13: 600
+            Rank_14: 650
+            Rank_15: 700
+            Rank_16: 750
+            Rank_17: 800
+            Rank_18: 850
+            Rank_19: 900
+            Rank_20: 950
     AxeMastery:
         Standard:
-            Rank_1: 5
-            Rank_2: 10
-            Rank_3: 15
-            Rank_4: 20
+            Rank_1: 25
+            Rank_2: 50
+            Rank_3: 75
+            Rank_4: 100
         RetroMode:
-            Rank_1: 50
-            Rank_2: 100
-            Rank_3: 150
-            Rank_4: 200
+            Rank_1: 250
+            Rank_2: 500
+            Rank_3: 750
+            Rank_4: 1000
 Taming:
     BeastLore:
         Standard:
-            Rank_1: 1
+            Rank_1: 5
         RetroMode:
-            Rank_1: 1
+            Rank_1: 50
     Gore:
-        Standard:
-            Rank_1: 15
-        RetroMode:
-            Rank_1: 150
-    CallOfTheWild:
-        Standard:
-            Rank_1: 1
-        RetroMode:
-            Rank_1: 1
-    Pummel:
-        Standard:
-            Rank_1: 20
-        RetroMode:
-            Rank_1: 200
-    FastFoodService:
-        Standard:
-            Rank_1: 20
-        RetroMode:
-            Rank_1: 200
-    EnvironmentallyAware:
         Standard:
             Rank_1: 10
         RetroMode:
             Rank_1: 100
-    ThickFur:
+    CallOfTheWild:
         Standard:
             Rank_1: 25
         RetroMode:
             Rank_1: 250
+    Pummel:
+        Standard:
+            Rank_1: 15
+        RetroMode:
+            Rank_1: 150
+    FastFoodService:
+        Standard:
+            Rank_1: 40
+        RetroMode:
+            Rank_1: 400
+    EnvironmentallyAware:
+        Standard:
+            Rank_1: 20
+        RetroMode:
+            Rank_1: 200
+    ThickFur:
+        Standard:
+            Rank_1: 30
+        RetroMode:
+            Rank_1: 300
     HolyHound:
         Standard:
-            Rank_1: 35
+            Rank_1: 100
         RetroMode:
-            Rank_1: 350
+            Rank_1: 1000
     ShockProof:
         Standard:
-            Rank_1: 50
+            Rank_1: 80
         RetroMode:
-            Rank_1: 500
+            Rank_1: 800
     SharpenedClaws:
         Standard:
-            Rank_1: 75
+            Rank_1: 60
         RetroMode:
-            Rank_1: 750
+            Rank_1: 600
 Smelting:
     FuelEfficiency:
         Standard:
-            Rank_1: 10
+            Rank_1: 25
             Rank_2: 50
             Rank_3: 75
         RetroMode:
-            Rank_1: 100
+            Rank_1: 250
             Rank_2: 500
             Rank_3: 750
     UnderstandingTheArt:
         Standard:
-            Rank_1: 10
+            Rank_1: 13
             Rank_2: 25
-            Rank_3: 35
+            Rank_3: 38
             Rank_4: 50
-            Rank_5: 65
+            Rank_5: 63
             Rank_6: 75
-            Rank_7: 85
+            Rank_7: 88
             Rank_8: 100
         RetroMode:
-            Rank_1: 100
+            Rank_1: 130
             Rank_2: 250
-            Rank_3: 350
+            Rank_3: 380
             Rank_4: 500
-            Rank_5: 650
+            Rank_5: 630
             Rank_6: 750
-            Rank_7: 850
+            Rank_7: 880
             Rank_8: 1000
 Salvage:
     ScrapCollector:
         Standard:
-            Rank_1: 1
-            Rank_2: 10
-            Rank_3: 15
-            Rank_4: 20
-            Rank_5: 25
-            Rank_6: 30
-            Rank_7: 35
-            Rank_8: 40
+            Rank_1: 0
+            Rank_2: 7
+            Rank_3: 14
+            Rank_4: 21
+            Rank_5: 28
+            Rank_6: 35
+            Rank_7: 42
+            Rank_8: 49
         RetroMode:
-            Rank_1: 1
-            Rank_2: 100
-            Rank_3: 150
-            Rank_4: 200
-            Rank_5: 250
-            Rank_6: 300
-            Rank_7: 350
-            Rank_8: 400
+            Rank_1: 0
+            Rank_2: 70
+            Rank_3: 140
+            Rank_4: 210
+            Rank_5: 280
+            Rank_6: 350
+            Rank_7: 420
+            Rank_8: 490
     ArcaneSalvage:
         Standard:
-            Rank_1: 10
-            Rank_2: 25
-            Rank_3: 35
-            Rank_4: 50
-            Rank_5: 65
-            Rank_6: 75
-            Rank_7: 85
-            Rank_8: 100
+            Rank_1: 18
+            Rank_2: 27
+            Rank_3: 36
+            Rank_4: 45
+            Rank_5: 54
+            Rank_6: 63
+            Rank_7: 72
+            Rank_8: 81
         RetroMode:
-            Rank_1: 100
-            Rank_2: 250
-            Rank_3: 350
-            Rank_4: 500
-            Rank_5: 650
-            Rank_6: 750
-            Rank_7: 850
-            Rank_8: 1000
+            Rank_1: 180
+            Rank_2: 270
+            Rank_3: 360
+            Rank_4: 450
+            Rank_5: 540
+            Rank_6: 630
+            Rank_7: 720
+            Rank_8: 810
 Mining:
     DoubleDrops:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     SuperBreaker:
         Standard:
             Rank_1: 5
@@ -334,40 +334,40 @@ Mining:
     # For now make sure rank 1 is the same as blast mining rank 1, it's a bit hacky, I'll fix it later
     BiggerBombs:
         Standard:
-            Rank_1: 10
+            Rank_1: 13
         RetroMode:
-            Rank_1: 100
+            Rank_1: 130
     # For now make sure rank 1 is the same as blast mining rank 1, it's a bit hacky, I'll fix it later
     DemolitionsExpertise:
         Standard:
-            Rank_1: 10
+            Rank_1: 13
         RetroMode:
-            Rank_1: 100
+            Rank_1: 130
     BlastMining:
         Standard:
-            Rank_1: 10
+            Rank_1: 13
             Rank_2: 25
-            Rank_3: 35
+            Rank_3: 38
             Rank_4: 50
-            Rank_5: 65
+            Rank_5: 63
             Rank_6: 75
-            Rank_7: 85
+            Rank_7: 88
             Rank_8: 100
         RetroMode:
-            Rank_1: 100
+            Rank_1: 130
             Rank_2: 250
-            Rank_3: 350
+            Rank_3: 380
             Rank_4: 500
-            Rank_5: 650
+            Rank_5: 630
             Rank_6: 750
-            Rank_7: 850
+            Rank_7: 880
             Rank_8: 1000
 Herbalism:
     DoubleDrops:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     GreenTerra:
         Standard:
             Rank_1: 5
@@ -400,19 +400,19 @@ Herbalism:
 Fishing:
     MagicHunter:
         Standard:
-            Rank_1: 20
+            Rank_1: 33
         RetroMode:
-            Rank_1: 200
+            Rank_1: 330
     Shake:
-        Standard:
-            Rank_1: 15
-        RetroMode:
-            Rank_1: 150
-    MasterAngler:
         Standard:
             Rank_1: 50
         RetroMode:
             Rank_1: 500
+    MasterAngler:
+        Standard:
+            Rank_1: 25
+        RetroMode:
+            Rank_1: 250
     IceFishing:
         Standard:
             Rank_1: 5
@@ -433,22 +433,22 @@ Fishing:
             Rank_5: 1000
     TreasureHunter:
         Standard:
-            Rank_1: 1
+            Rank_1: 13
             Rank_2: 25
-            Rank_3: 35
+            Rank_3: 38
             Rank_4: 50
-            Rank_5: 65
+            Rank_5: 63
             Rank_6: 75
-            Rank_7: 85
+            Rank_7: 88
             Rank_8: 100
         RetroMode:
-            Rank_1: 1
+            Rank_1: 130
             Rank_2: 250
-            Rank_3: 350
+            Rank_3: 380
             Rank_4: 500
-            Rank_5: 650
+            Rank_5: 630
             Rank_6: 750
-            Rank_7: 850
+            Rank_7: 880
             Rank_8: 1000
 Swords:
     SwordsLimitBreak:
@@ -476,11 +476,11 @@ Swords:
             Rank_10: 1000
     Stab:
         Standard:
-            Rank_1: 75
-            Rank_2: 100
+            Rank_1: 33
+            Rank_2: 67
         RetroMode:
-            Rank_1: 750
-            Rank_2: 1000
+            Rank_1: 330
+            Rank_2: 670
     CounterAttack:
         Standard:
             Rank_1: 20
@@ -488,15 +488,15 @@ Swords:
             Rank_1: 200
     Rupture:
         Standard:
-            Rank_1: 1
-            Rank_2: 15
-            Rank_3: 75
-            Rank_4: 90
+            Rank_1: 0
+            Rank_2: 25
+            Rank_3: 50
+            Rank_4: 75
         RetroMode:
-            Rank_1: 1
-            Rank_2: 150
-            Rank_3: 750
-            Rank_4: 900
+            Rank_1: 0
+            Rank_2: 250
+            Rank_3: 500
+            Rank_4: 750
     SerratedStrikes:
         Standard:
             Rank_1: 5
@@ -533,28 +533,28 @@ Unarmed:
             Rank_1: 50
     ArrowDeflect:
         Standard:
-            Rank_1: 20
+            Rank_1: 67
         RetroMode:
-            Rank_1: 200
+            Rank_1: 670
     Disarm:
         Standard:
-            Rank_1: 25
+            Rank_1: 33
         RetroMode:
-            Rank_1: 250
+            Rank_1: 330
     IronGrip:
         Standard:
-            Rank_1: 60
+            Rank_1: 33
         RetroMode:
-            Rank_1: 600
+            Rank_1: 330
     IronArmStyle:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
             Rank_2: 25
             Rank_3: 50
             Rank_4: 75
             Rank_5: 100
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
             Rank_2: 250
             Rank_3: 500
             Rank_4: 750
@@ -564,12 +564,12 @@ Woodcutting:
     Splinter:
         Standard:
             Rank_1: 5
-            Rank_2: 30
-            Rank_3: 55
+            Rank_2: 33
+            Rank_3: 67
         RetroMode:
-            Rank_1: 50
-            Rank_2: 300
-            Rank_3: 550
+            Rank_1: 5
+            Rank_2: 330
+            Rank_3: 670
     TreeFeller:
         Standard:
             Rank_1: 5
@@ -585,36 +585,36 @@ Woodcutting:
             Rank_5: 1000
     BarkSurgeon:
         Standard:
-            Rank_1: 70
-            Rank_2: 80
+            Rank_1: 75
+            Rank_2: 85
             Rank_3: 95
         RetroMode:
-            Rank_1: 700
-            Rank_2: 800
+            Rank_1: 750
+            Rank_2: 850
             Rank_3: 950
     NaturesBounty:
         Standard:
-            Rank_1: 40
+            Rank_1: 30
             Rank_2: 60
             Rank_3: 90
         RetroMode:
-            Rank_1: 400
+            Rank_1: 300
             Rank_2: 600
             Rank_3: 900
     HarvestLumber:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     LeafBlower:
         Standard:
-            Rank_1: 15
-            Rank_2: 35
-            Rank_3: 65
+            Rank_1: 20
+            Rank_2: 40
+            Rank_3: 60
         RetroMode:
-            Rank_1: 150
-            Rank_2: 350
-            Rank_3: 650
+            Rank_1: 200
+            Rank_2: 400
+            Rank_3: 600
 Excavation:
     GigaDrillBreaker:
         Standard:
@@ -623,29 +623,29 @@ Excavation:
             Rank_1: 50
     Archaeology:
         Standard:
-            Rank_1: 1
+            Rank_1: 13
             Rank_2: 25
-            Rank_3: 35
+            Rank_3: 38
             Rank_4: 50
-            Rank_5: 65
+            Rank_5: 63
             Rank_6: 75
-            Rank_7: 85
+            Rank_7: 88
             Rank_8: 100
         RetroMode:
-            Rank_1: 1
+            Rank_1: 130
             Rank_2: 250
-            Rank_3: 350
+            Rank_3: 380
             Rank_4: 500
-            Rank_5: 650
+            Rank_5: 630
             Rank_6: 750
-            Rank_7: 850
+            Rank_7: 880
             Rank_8: 1000
 Repair:
     RepairMastery:
         Standard:
-            Rank_1: 1
+            Rank_1: 0
         RetroMode:
-            Rank_1: 1
+            Rank_1: 0
     SuperRepair:
         Standard:
             Rank_1: 40
@@ -653,20 +653,20 @@ Repair:
             Rank_1: 400
     ArcaneForging:
         Standard:
-            Rank_1: 10
+            Rank_1: 13
             Rank_2: 25
-            Rank_3: 35
+            Rank_3: 38
             Rank_4: 50
-            Rank_5: 65
+            Rank_5: 63
             Rank_6: 75
-            Rank_7: 85
+            Rank_7: 88
             Rank_8: 100
         RetroMode:
-            Rank_1: 100
+            Rank_1: 130
             Rank_2: 250
-            Rank_3: 350
+            Rank_3: 380
             Rank_4: 500
-            Rank_5: 650
+            Rank_5: 630
             Rank_6: 750
-            Rank_7: 850
+            Rank_7: 880
             Rank_8: 1000

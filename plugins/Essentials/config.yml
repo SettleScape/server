@@ -444,7 +444,7 @@ world-teleport-permissions: false
 # The number of items given if the quantity parameter is left out in /item or /give.
 # If this number is below 1, the maximum stack size size is given. If over-sized stacks.
 # are not enabled, any number higher than the maximum stack size results in more than one stack.
-default-stack-size: -1
+default-stack-size: 1
 
 # Over-sized stacks are stacks that ignore the normal max stack size.
 # They can be obtained using /give and /item, if the player has essentials.oversizedstacks permission.
@@ -468,13 +468,13 @@ register-back-in-listener: true
 login-attack-delay: 5
 
 #Set the max fly speed, values range from 0.1 to 1.0
-max-fly-speed: 0.8
+max-fly-speed: 0.75
 
 #Set the max walk speed, values range from 0.1 to 1.0
-max-walk-speed: 0.8
+max-walk-speed: 0.75
 
 #Set the maximum amount of mail that can be sent within a minute.
-mails-per-minute: 1000
+mails-per-minute: 60
 
 # Set the maximum time /tempban can be used for in seconds.
 # Set to -1 to disable, and essentials.tempban.unlimited can be used to override.
