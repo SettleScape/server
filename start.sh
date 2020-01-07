@@ -41,9 +41,9 @@ JAVA_OPTS=$(echo                           \
     '-XX:+UseG1GC'                         \
     '-XX:G1HeapRegionSize=32M'             \
     '-XX:G1ReservePercent=25'              \
-    '-XX:G1MixedGCLiveThresholdPercent=33' \
     '-XX:G1NewSizePercent=33'              \
     '-XX:G1MaxNewSizePercent=75'           \
+    '-XX:G1MixedGCLiveThresholdPercent=33' \
     '-XX:TargetSurvivorRatio=92'           \
     '-XX:MaxGCPauseMillis=50'              \
     '-Dusing.aikars.flags=mcflags.emc.gs'  \
@@ -52,4 +52,3 @@ JAVA_OPTS=$(echo                           \
 
 exec screen -d -m -S "Minecraft Server" \
 java $JAVA_OPTS -jar "$SERVER_JAR"
-#script /dev/null #FIXME: This shouldn't be necessary to use `screen -r`.
