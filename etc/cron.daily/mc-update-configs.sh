@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 cd /srv/minecraft
 
 echo 'Updating SettleScape...'
