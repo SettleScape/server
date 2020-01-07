@@ -12,6 +12,12 @@ crafting-recipes:
       'rotten_flesh': 9
     results:
       'leather': 1
+  bookshelves_to_books: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.
+    type: shapeless
+    ingredients:
+      'bookshelf': 1
+    results:
+      'book': 3
   name_tag:
     type: shaped
     ingredients:
