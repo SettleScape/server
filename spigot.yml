@@ -3,10 +3,10 @@
 # with caution, and make sure you know what each option does before configuring.
 # For a reference for any variable inside this file, check out the Spigot wiki at
 # http://www.spigotmc.org/wiki/spigot-configuration/
-#
+# 
 # If you need help with the configuration or have any questions related to Spigot,
 # join us at the IRC or drop by our forums and leave a post.
-#
+# 
 # IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
 # Forums: http://www.spigotmc.org/
 
@@ -63,6 +63,7 @@ world-settings:
     verbose: false
     hopper-amount: 1
     mob-spawn-range: 4
+    view-distance: 5
     dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-desert: 14357617
@@ -75,7 +76,6 @@ world-settings:
     seed-outpost: 165745296
     seed-slime: 987234911
     max-tnt-per-tick: 100
-    view-distance: 5
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200

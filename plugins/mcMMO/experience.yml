@@ -16,7 +16,7 @@
 #   Splits the boss bar into 12 segments
 #SEGMENTED_20
 #   Splits the boss bar into 20 segments
-#SEGMENTED_4
+#SEGMENTED_12
 #   Splits the boss bar into 6 segments
 #SOLID
 #   The bar is one solid piece
@@ -50,63 +50,63 @@ Experience_Bars:
     Acrobatics:
         Enable: true
         Color: PINK
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Alchemy:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Archery:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Axes:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Excavation:
         Enable: true
         Color: YELLOW
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Fishing:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Herbalism:
         Enable: true
         Color: GREEN
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Mining:
         Enable: true
         Color: YELLOW
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Repair:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Salvage:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Smelting:
         Enable: true
         Color: PURPLE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Swords:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Taming:
         Enable: true
         Color: RED
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Unarmed:
         Enable: true
         Color: BLUE
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
     Woodcutting:
         Enable: true
         Color: GREEN
-        BarStyle: SEGMENTED_4
+        BarStyle: SEGMENTED_12
 #
 #  Settings for XP formula
 ###

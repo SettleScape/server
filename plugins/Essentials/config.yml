@@ -426,11 +426,11 @@ allow-silent-join-quit: false
 
 # You can set a custom join message here, set to "none" to disable.
 # You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
-custom-join-message: "none"
+custom-join-message: "&7* &r{PLAYER}&7 has joined the game.&r"
 
 # You can set a custom quit message here, set to "none" to disable.
 # You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
-custom-quit-message: "none"
+custom-quit-message: "&7* &r{PLAYER}&7 has left the game.&r"
 
 # Add worlds to this list, if you want to automatically disable god mode there.
 no-god-in-worlds: []
@@ -465,13 +465,13 @@ unsafe-enchantments: false
 register-back-in-listener: true
 
 #Delay to wait before people can cause attack damage after logging in.
-login-attack-delay: 5
+login-attack-delay: 3
 
 #Set the max fly speed, values range from 0.1 to 1.0
-max-fly-speed: 0.75
+max-fly-speed: 0.5000
 
 #Set the max walk speed, values range from 0.1 to 1.0
-max-walk-speed: 0.75
+max-walk-speed: 0.7857
 
 #Set the maximum amount of mail that can be sent within a minute.
 mails-per-minute: 60
@@ -492,7 +492,7 @@ last-message-reply-recipient: true
 last-message-reply-recipient-timeout: 180
 
 # Toggles whether or not clicking mobs with a milk bucket turns them into a baby.
-milk-bucket-easter-egg: true # Makes turtle farming more realistic
+milk-bucket-easter-egg: true # Makes turtle farming more feasible
 
 # Toggles whether or not the fly status message should be sent to players on join
 send-fly-enable-on-join: true
@@ -514,8 +514,9 @@ world-time-permissions: false
 #  '^ban([^ip])( .*)?': 60 # 60 seconds /ban cooldown.
 # Note: If you have a command that starts with ^, then you can escape it using backslash (\). e.g. \^command: 123
 command-cooldowns:
-#  feed: 100 # 100 second cooldown on /feed command
-#  '*': 5 # 5 Second cooldown on all commands
+  ext:  1200
+  feed: 1200
+  heal: 1200
 
 # Whether command cooldowns should be persistent past server shutdowns
 command-cooldown-persistence: true
@@ -530,13 +531,13 @@ allow-bulk-buy-sell: true
 
 # Delay for the MOTD display for players on join, in milliseconds.
 # This has no effect if the MOTD command or permission are disabled.
-delay-motd: 0
+delay-motd: 250
 
 # A list of commands that should have their complementary confirm commands enabled by default.
 # This is empty by default, for the latest list of valid commands see the latest source config.yml.
 default-enabled-confirm-commands:
-#- pay
-#- clearinventory
+- pay
+- clearinventory
 
 # Whether or not to teleport a player back to their previous position after they have been freed from jail.
 teleport-back-when-freed-from-jail: true
