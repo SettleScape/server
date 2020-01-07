@@ -881,7 +881,7 @@ Jobs:
       Item: brick_stairs
     Place:
       #new 1.13 blocks
-            oak_log:
+      oak_log:
         income: 1.75
         points: 1.75
         experience: 2
@@ -2271,7 +2271,7 @@ Jobs:
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
-    maxDailyQuests: 0
+    maxDailyQuests: 0F
     Gui:
       Item: iron_hoe
     Tame:
