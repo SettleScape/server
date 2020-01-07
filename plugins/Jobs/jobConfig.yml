@@ -1420,7 +1420,7 @@ Jobs:
       granite_stairs:
         income: 1.5
         points: 1.5
-        experience: 2 
+        experience: 2
       polished_granite_stairs:
         income: 1.7
         points: 1.7
@@ -2271,7 +2271,7 @@ Jobs:
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
-    maxDailyQuests: 0F
+    maxDailyQuests: 0
     Gui:
       Item: iron_hoe
     Tame:
