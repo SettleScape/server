@@ -10,9 +10,10 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+	# Protects precious spawn chunks.  Our world spawn is (0,0), which means our spawn chunks should be the same as those in this video:  hhttps://youtu.be/NDYsT013V8A
     spawn:
-        min: {x: -63, y:   0, z: -63}
-        max: {x:  63, y: 255, z:  63}
+        min: {x: -272, y:   0, z: -272}
+        max: {x:  272, y: 255, z:  272}
         members: {}
         flags:
             vehicle-place: allow
@@ -25,12 +26,12 @@ regions:
     hawthorne:
         min: {x: -582, y:   0, z: -4836}
         max: {x: -521, y: 255, z: -4782}
-        members: {lemons}
+        members: {}
         flags:
-            vehicle-place: allow
-            vehicle-destroy: allow
+            vehicle-place: deny
+            vehicle-destroy: deny
             chest-access: deny
             ride: allow
-        owners: {lemons}
+        owners: {}
         type: cuboid
         priority: 0
