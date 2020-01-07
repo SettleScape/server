@@ -10,7 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-	# Protects precious spawn chunks.  Our world spawn is (0,0), which means our spawn chunks should be the same as those in this video:  hhttps://youtu.be/NDYsT013V8A
     spawn:
         min: {x: -272, y:   0, z: -272}
         max: {x:  272, y: 255, z:  272}
