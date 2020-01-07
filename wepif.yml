@@ -25,12 +25,12 @@ ignore-nijiperms-bridges: true
 resolvers:
     enabled:
     - PluginPermissionsResolver
-    - PermissionsExResolver
-    - bPermissionsResolver
+    # - PermissionsExResolver
+    # - bPermissionsResolver
     - GroupManagerResolver
-    - NijiPermissionsResolver
+    # - NijiPermissionsResolver
     - VaultResolver
-    - DinnerPermsResolver
+    # - DinnerPermsResolver
     - FlatFilePermissionsResolver
 permissions: ## We're using GroupManager, and WEPIF redirects everything to that;  so we shouldn't have anything defined here.
     groups:
