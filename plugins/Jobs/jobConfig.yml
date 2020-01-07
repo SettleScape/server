@@ -969,6 +969,26 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      tube_coral_block:
+        income: 2
+        points: 2
+        experience: 2
+      brain_coral_block:
+        income: 2
+        points: 2
+        experience: 2
+      bubble_coral_block:
+        income: 2
+        points: 2
+        experience: 2
+      fire_coral_block:
+        income: 2
+        points: 2
+        experience: 2
+      horn_coral_block:
+        income: 2
+        points: 2
+        experience: 2
       dead_tube_coral_block:
         income: 2
         points: 2
@@ -1069,6 +1089,18 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      lapis_block:
+        income: 1.75
+        points: 1.75
+        experience: 2
+      netherrack:
+        income: 0.6
+        points: 0.6
+        experience: 1
+      nether_wart_block:
+        income: 1
+        points: 1
+        experience: 2
       oak_planks:
         income: 1.5
         points: 1.5
@@ -1160,6 +1192,70 @@ Jobs:
       black_wool:
         income: 1.5
         points: 1.5
+        experience: 2
+      white_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      orange_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      magenta_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      light_blue_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      yellow_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      lime_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      pink_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      gray_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      light_gray_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      cyan_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      purple_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      blue_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      brown_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      green_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      red_carpet:
+        income: 1.25
+        points: 1.25
+        experience: 2
+      black_carpet:
+        income: 1.25
+        points: 1.25
         experience: 2
       gold_block:
         income: 1.5
@@ -1633,6 +1729,34 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
+      oak_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      spruce_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      birch_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      jungle_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      acacia_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      dark_oak_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      iron_door:
+        income: 1.5
+        points: 1.5
+        experience: 2
       iron_trapdoor:
         income: 1.5
         points: 1.5
@@ -1777,6 +1901,18 @@ Jobs:
         income: 1.0
         points: 1.0
         experience: 2
+      mushroom_stem:
+        income: 0.75
+        points: 0.75
+        experience: 1
+      red_mushroom_block:
+        income: 0.75
+        points: 0.75
+        experience: 1
+      brown_mushroom_block:
+        income: 0.75
+        points: 0.75
+        experience: 1
       ender_chest:
         income: 1.5
         points: 1.5
