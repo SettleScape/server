@@ -42,10 +42,11 @@ settings:
 messages:
   no-permission: '&cYou do not have permission to use this command.&r'
   kick:
-    authentication-servers-down: 'Could not reach Mojang''s authentication servers.'
-    connection-throttle: 'Trying to reconnect to frequently. Wait a moment and try again.'
-    flying-player: 'Flying without permission.'
-    flying-vehicle: 'Flying without permission.'
+    authentication-servers-down: Could not reach Mojang's authentication servers.
+    connection-throttle: Trying to reconnect to frequently. Wait a moment and try
+      again.
+    flying-player: Flying without permission.
+    flying-vehicle: Flying without permission.
 timings:
   enabled: true
   verbose: false
@@ -90,7 +91,7 @@ world-settings:
     grass-spread-tick-rate: 2
     bed-search-radius: 1
     fix-zero-tick-instant-grow-farms: true
-    use-faster-eigencraft-redstone: true # You can't really use mods that change how redstone works if you're using this setting.
+    use-faster-eigencraft-redstone: true
     allow-non-player-entities-on-scoreboards: false
     disable-explosion-knockback: false
     parrots-are-unaffected-by-player-movement: false
@@ -141,10 +142,11 @@ world-settings:
       refresh-max: 2d
     hopper:
       cooldown-when-full: true
-      disable-move-event: true # If you have a plugin that listens to InventoryMoveItemEvent, do not enable.
+      disable-move-event: true
     alt-item-despawn-rate:
       enabled: false
-      items: []
+      items:
+        COBBLESTONE: 300
     anti-xray:
       enabled: false
       engine-mode: 1
