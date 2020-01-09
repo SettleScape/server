@@ -22,6 +22,6 @@ While this does unfortunately preclude SettleScape copyrighting most of the conf
 
 Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. Get the latest version of the server JAR by running ``./rebuild.sh``.
+#. Get the latest version of the server JAR by running ``./get-paper.sh``.
 #. Download all the plugins listed in ``./plugins/plugins.rst``.
 #. Run ``./start.sh``.
