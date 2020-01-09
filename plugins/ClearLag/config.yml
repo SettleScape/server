@@ -78,34 +78,8 @@ player-speed-limiter:
 #Material list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 # -- 'items' Lists the material names of the entities with their spawn-age (In seconds)
 item-spawn-age-setter:
-  enabled: true
-  items:
-    stone: 240
-    grass: 240
-    cobblestone: 240
-    log: 240
-    stone_axe: 240
-    stone_pickaxe: 240
-    stone_sword: 240
-    wooden_axe: 240
-    wooden_pickaxe: 240
-    wooden_sword: 240
-    rotten_flesh: 240
-    gravel: 240
-    dirt: 240
-    leather: 200
-    sand: 240
-    bone: 240
-    beef: 240
-    chicken: 160
-    rabbit: 240
-    salmon: 240
-    cactus: 210
-    wool: 180
-    arrow: 160
-    PORKCHOP: 240
-    potato: 240
-    RED_TULIP: 240
+  enabled: false
+  items: []
 
 #Should mobs be nerfed to prevent over-breeding to reduce CPU usage (And possibly raise TPS)
 #When mobs are stuck too close, collisions are extremely intensive putting a pretty mean load on the server
