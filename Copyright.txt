@@ -3,6 +3,7 @@ Files in this repository for which the SettleScape Team owns the Copyright:
 - /.gitattributes
 - /.gitconfig
 - /Conduct.rst
+- /deploy-plugins.sh
 - /get-paper.sh
 - /get-spigot.sh
 - /start.sh
