@@ -1,14 +1,14 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Website: https://papermc.io/
+# Docs: https://paper.readthedocs.org/
 
 verbose: false
 config-version: 20
@@ -40,23 +40,22 @@ settings:
     page-max: 2560
     total-multiplier: 0.98
 messages:
-  no-permission: '&cI''m sorry, but you do not have permission to perform this command.
-    Please contact the server administrators if you believe that this is in error.'
+  no-permission: '&cYou do not have permission to use this command.&r'
   kick:
-    authentication-servers-down: ''
-    connection-throttle: Connection throttled! Please wait before reconnecting.
-    flying-player: Flying is not enabled on this server
-    flying-vehicle: Flying is not enabled on this server
+    authentication-servers-down: 'Could not reach Mojang''s authentication servers.'
+    connection-throttle: 'Trying to reconnect to frequently. Wait a moment and try again.'
+    flying-player: 'Flying without permission.'
+    flying-vehicle: 'Flying without permission.'
 timings:
   enabled: true
-  verbose: true
+  verbose: false
   server-name-privacy: false
   hidden-config-entries:
   - database
   - settings.bungeecord-addresses
   history-interval: 300
   history-length: 3600
-  server-name: Unknown Server
+  server-name: SettleScape
 world-settings:
   default:
     disable-teleportation-suffocation-check: false
@@ -83,7 +82,7 @@ world-settings:
     disable-ice-and-snow: false
     count-all-mobs-for-spawning: false
     keep-spawn-loaded-range: 5
-    keep-spawn-loaded: true
+    keep-spawn-loaded: false
     auto-save-interval: -1
     armor-stands-do-collision-entity-lookups: true
     nether-ceiling-void-damage-height: 0
@@ -101,7 +100,7 @@ world-settings:
     creative-arrow-despawn-rate: -1
     armor-stands-tick: true
     spawner-nerfed-mobs-should-jump: false
-    allow-leashing-undead-horse: false
+    allow-leashing-undead-horse: true
     baby-zombie-movement-modifier: 0.5
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 1
@@ -110,7 +109,7 @@ world-settings:
       disable-pillager-patrols: false
       disable-chest-cat-detection: false
       shield-blocking-delay: 5
-      disable-end-credits: false
+      disable-end-credits: true
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
       disable-relative-projectile-velocity: false
