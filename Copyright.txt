@@ -1,17 +1,24 @@
-Files in this repository for which the SettleScape team owns the Copyright:
-- .editorconfig
-- .gitattributes
-- .gitconfig
-- Conduct.rst
-- rebuild.sh
-- start.sh
-- server-icon.png
-- server-icon.svg
+Files in this repository for which the SettleScape Team owns the Copyright:
+- /.editorconfig
+- /.gitattributes
+- /.gitconfig
+- /Conduct.rst
+- /get-paper.sh
+- /get-spigot.sh
+- /start.sh
+- /server-icon.png
+- /server-icon.svg
 - **/.gitignore
-- plugins/plugins.rst
-- plugins/Essentials/motd.yml
-- plugins/Essentials/rules.yml
-- plugins/Essentials/spawn.yml
+- /etc/**
+- /notes/**
+- /plugins/plugins.rst
+- /plugins/CraftBook/crafting-recipes.yml
+- /plugins/Essentials/motd.yml
+- /plugins/Essentials/rules.yml
+- /plugins/Essentials/spawn.yml
+- /plugins/GroupManager/config.yml
+- /plugins/GroupManager/worlds/world/groups.yml
+- /plugins/Rankup/rankups.yml
 
 Files with the following extensions are to be considered "source-code" for the
 purposes of this document:
