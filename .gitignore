@@ -6,6 +6,7 @@
 **/tmp/
 **.log
 /build/
+/cache/
 /banned-ips.json
 /banned-players.json
 /eula.txt
