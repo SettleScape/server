@@ -59,6 +59,7 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    max-entity-collisions: 4
     verbose: false
     hopper-amount: 1
     mob-spawn-range: 4
