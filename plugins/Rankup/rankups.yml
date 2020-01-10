@@ -21,7 +21,7 @@ Settler:
     - 'money 20000'           # Money sink
     - 'mcmmo-power-level 100' # Proof of playtime
     - 'item ghast_tear 5'     # Proof that you've conquered the Nether
-    - 'item endereye 5'       # Proof that you're ready to enter the End
+    - 'item ender_eye 5'      # Proof that you're ready to enter the End
     - 'group Traveller'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &9{RANK}&7!'
