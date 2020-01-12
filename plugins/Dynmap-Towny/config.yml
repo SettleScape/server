@@ -16,13 +16,13 @@ infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%<
   <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Resident(s):</b>
   %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
 regionstyle:
-  homeicon: redflag
+  homeicon: default
   strokeColor: '#000000'
   strokeOpacity: 0.75
   strokeWeight: 3
   fillColor: '#7F7F7F'
   fillOpacity: 0.33
-  capitalicon: king
+  capitalicon: bighouse
   fillColorShops: '#00FF00'
   fillColorArenas: '#FF0000'
   fillColorEmbassies: '#0000FF'
@@ -43,13 +43,8 @@ nationstyle:
     strokeColor: '#0000FF'
     fillColor: '#0000FF'
     boost: false
-  Vladislavia:
-    strokeColor: '#FF7F00'
-    fillColor: '#FF7F00'
-    boost: false
   _none_:
-    homeicon: redflag
 chat:
-  sendlogin: true
-  sendquit: true
+  sendlogin: false
+  sendquit: false
   format: '&color;2[WEB] %playername%: &color;f%message%'
