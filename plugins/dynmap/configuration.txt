@@ -43,7 +43,7 @@ components:
     sendposition: false
     allowwebchat: false
     webchat-interval: 5
-    hidewebchatip: false
+    hidewebchatip: true
     trustclientname: false
     includehiddenplayers: false
     # (optional) if true, color codes in player display names are used
@@ -67,7 +67,7 @@ components:
   #  # (Optional) if true, players that are crouching/sneaking will be hidden
     hideifsneaking: false
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
-    protected-player-info: false
+    protected-player-info: true
     # If true, hide players with invisibility potion effects active
     hide-if-invisiblity-potion: true
     # If true, player names are not shown on map, chat, list
@@ -75,14 +75,14 @@ components:
 
   #- class: org.dynmap.JsonFileClientUpdateComponent
   #  writeinterval: 1
-  #  sendhealth: true
-  #  sendposition: true
+  #  sendhealth: false
+  #  sendposition: false
   #  allowwebchat: false
   #  webchat-interval: 5
-  #  hidewebchatip: false
+  #  hidewebchatip: true
   #  includehiddenplayers: false
-  #  use-name-colors: false
-  #  use-player-login-ip: false
+  #  use-name-colors: true
+  #  use-player-login-ip: true
   #  require-player-login-ip: false
   #  block-banned-player-chat: true
   #  hideifshadow: 0
@@ -112,8 +112,8 @@ components:
     default-sign-set: markers
 
     # (optional) add spawn point markers to standard marker layer
-    showspawn: true
-    spawnicon: world
+    showspawn: false
+    spawnicon: compass
     spawnlabel: "Spawn"
 
     # (optional) layer for showing offline player's positions (for 'maxofflinetime' minutes after logoff)
@@ -154,20 +154,20 @@ components:
     # Optional: send push button
     sendbutton: false
 
-  - class: org.dynmap.ClientComponent
-    type: playermarkers
-    showplayerfaces: true
-    showplayerhealth: false
-    # If true, show player body too (only valid if showplayerfaces=true
-    showplayerbody: false
-    # Option to make player faces small - don't use with showplayerhealth
-    smallplayerfaces: true
-    # Optional - make player faces layer hidden by default
-    hidebydefault: true
-    # Optional - ordering priority in layer menu (low goes before high - default is 0)
-    layerprio: 0
-    # Optional - label for player marker layer (default is 'Players')
-    label: "Players"
+  # - class: org.dynmap.ClientComponent
+  #   type: playermarkers
+  #   showplayerfaces: true
+  #   showplayerhealth: false
+  #   # If true, show player body too (only valid if showplayerfaces=true
+  #   showplayerbody: false
+  #   # Option to make player faces small - don't use with showplayerhealth
+  #   smallplayerfaces: true
+  #   # Optional - make player faces layer hidden by default
+  #   hidebydefault: true
+  #   # Optional - ordering priority in layer menu (low goes before high - default is 0)
+  #   layerprio: 0
+  #   # Optional - label for player marker layer (default is 'Players')
+  #   label: "Players"
 
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
@@ -366,9 +366,9 @@ per-tick-time-limit: 50
 # If TPS of server is below this setting, update renders processing is paused
 update-min-tps: 18.0
 # If TPS of server is below this setting, full/radius renders processing is paused
-fullrender-min-tps: 18.0
+fullrender-min-tps: 19.0
 # If TPS of server is below this setting, zoom out processing is paused
-zoomout-min-tps: 18.0
+zoomout-min-tps: 19.0
 
 showplayerfacesinmenu: true
 
@@ -394,8 +394,8 @@ trusted-proxies:
   - "0:0:0:0:0:0:0:1"
 
 # Join/quit message format for web chat: set to "" to disable notice on web UI
-joinmessage: "%playername% joined"
-quitmessage: "%playername% quit"
+joinmessage: ""
+quitmessage: ""
 
 spammessage: "You may only chat once every %interval% seconds."
 # format for messages from web: %playername% substitutes sender ID (typically IP), %message% includes text
@@ -430,8 +430,8 @@ msg:
     players: "Players"
     chatrequireslogin: "Chat Requires Login"
     chatnotallowed: "You are not permitted to send chat messages"
-    hiddennamejoin: "Player joined"
-    hiddennamequit: "Player quit"
+    hiddennamejoin: ""
+    hiddennamequit: ""
 
 # URL for client configuration (only need to be tailored for proxies or other non-standard configurations)
 url:

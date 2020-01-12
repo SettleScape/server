@@ -3,14 +3,14 @@
 icons: {
     }
 sets:
-    markers:
+    towny.markerset:
         hide: false
         circles: {
             }
-        deficon: default
+        deficon: house
         areas: {
             }
-        label: Markers
+        label: Towny
         markers:
             towny-tarn:
                 world: world
@@ -20,14 +20,6 @@ sets:
                 y: 75.0
                 z: 2007.0
                 label: Tarn
-            towny-hawthorne:
-                world: world
-                markup: false
-                x: -552.0
-                icon: house
-                y: 74.0
-                z: -4815.0
-                label: Hawthorne
             towny-eventide:
                 world: world
                 markup: false
@@ -36,6 +28,47 @@ sets:
                 y: 76.0
                 z: 1926.0
                 label: Eventide
+        lines: {
+            }
+        layerprio: 2
+    worldguard.markerset:
+        hide: false
+        circles: {
+            }
+        deficon: compass
+        areas: {
+            }
+        label: WorldGuard
+        markers:
+            worldguard-spawn:
+                world: world
+                markup: false
+                x: 0.0
+                icon: compass
+                y: 64.0
+                z: 0.0
+                label: Spawn
+            worldguard-hawthorne:
+                world: world
+                markup: false
+                x: -552.0
+                icon: house
+                y: 74.0
+                z: -4815.0
+                label: Hawthorne
+        lines: {
+            }
+        layerprio: 0
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: pin
+        areas: {
+            }
+        label: Markers
+        markers: {
+            }
         lines: {
             }
         layerprio: 0

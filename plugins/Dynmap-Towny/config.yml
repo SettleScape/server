@@ -40,7 +40,7 @@ custstyle:
     boost: false
 nationstyle:
   _none_:
-    homeicon: greenflag
+    homeicon: default
   NationOfBlue:
     strokeColor: '#0000FF'
     fillColor: '#0000FF'
