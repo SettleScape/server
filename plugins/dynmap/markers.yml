@@ -12,14 +12,6 @@ sets:
             }
         label: Markers
         markers:
-            spawn:
-                world: world
-                markup: false
-                x: 0.0
-                icon: compass
-                y: 65.0
-                z: 0.0
-                label: Spawn
             towny-tarn:
                 world: world
                 markup: false

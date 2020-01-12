@@ -39,11 +39,12 @@ custstyle:
     y: 64
     boost: false
 nationstyle:
+  _none_:
+    homeicon: greenflag
   NationOfBlue:
     strokeColor: '#0000FF'
     fillColor: '#0000FF'
     boost: false
-  _none_:
 chat:
   sendlogin: false
   sendquit: false
