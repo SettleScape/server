@@ -36,7 +36,7 @@ refund-shop-creation: false
 # and notify permitted players on join.
 # The command is not affected by this setting and will continue to
 # check for updates.
-enable-update-checker: true
+enable-update-checker: false
 
 # Set whether buys and sells should be logged in the database.
 enable-economy-log: false
