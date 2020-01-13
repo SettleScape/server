@@ -53,12 +53,12 @@ max-rankup:
   # if set to true, the chat may be spammed for each rankup a player goes through with /maxrankup
   # if set to false, only the last rankup will be shown (if a player starts on rank A, then does
   # /maxrankup and ranks up to B and then C, it will just say "player has ranked up to C")
-  individual-messages: true
+  individual-messages: false
 
 gui:
   rows: 1
   rankup:
-    material: EMERALD_BLOCK
+    material: GREEN_STAINED_GLASS_PANE
     # index can be separated by spaces to show in multiple groups
     # for example: 0-3 9-12 18-21
     # you can also just use a single number instead of a range.
@@ -67,7 +67,7 @@ gui:
     # lore is optional
     lore: '&6Rankup to &b{RANK}'
   cancel:
-    material: REDSTONE_BLOCK
+    material: RED_STAINED_GLASS_PANE
     index: 5-8
     name: '&c&lCancel'
   fill:
