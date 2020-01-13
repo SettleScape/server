@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Report reproducible unexpected/undesired behavior
-title: "[BUG]"
+title: ''
 labels: bug
 assignees: ''
 
