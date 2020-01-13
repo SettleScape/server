@@ -362,14 +362,6 @@ groups:
       suffix: ' &c(admin)&r'
     permissions:
 
-# Cheats used for testing
-#-------------------------------------------------------------------------------
-    - bukkit.command.teleport
-    - bukkit.command.time.add
-    - bukkit.command.time.set
-    - bukkit.command.gamemode
-    - bukkit.command.give
-
 # Server info
 #-------------------------------------------------------------------------------
     - bukkit.command.help
@@ -379,18 +371,11 @@ groups:
 
 # Configuration
 #-------------------------------------------------------------------------------
-    - minecraft.command.setworldspawn
     - groupmanager.mandemote
     - groupmanager.manpromote
     - groupmanager.mansave
-    - groupmanager.mantogglevalidate
     - groupmanager.manuadd
     - groupmanager.manudel
-    - groupmanager.op
-    - bukkit.command.whitelist
-    - bukkit.command.whitelist.disable
-    - bukkit.command.whitelist.enable
-    - towny.admin
 
 # Operations
 #-------------------------------------------------------------------------------
@@ -402,7 +387,6 @@ groups:
     - bukkit.command.save.enable
     - bukkit.command.save.perform
     - bukkit.command.stop
-    - towny.command.admin
 
 # Chat
 #-------------------------------------------------------------------------------
@@ -434,13 +418,42 @@ groups:
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
-    - essentials.weather
-    - essentials.setspawn
     - essentials.reloadall
     - essentials.plugin
     - essentials.top
     - lwc.admin
     - worldguard.region.wand
+
+# Owner
+################################################################################
+  g:Owner:
+    info:
+      suffix: ' &c(owner)&r'
+    permissions:
+
+# Cheats used for testing
+#-------------------------------------------------------------------------------
+    - bukkit.command.teleport
+    - bukkit.command.time.add
+    - bukkit.command.time.set
+    - bukkit.command.gamemode
+    - bukkit.command.give
+
+# Configuration
+#-------------------------------------------------------------------------------
+    - minecraft.command.setworldspawn
+    - groupmanager.mantogglevalidate
+    - groupmanager.op
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - towny.admin
+    - towny.command.admin
+
+# Misc (Unevaluated)
+#-------------------------------------------------------------------------------
+    - essentials.weather
+    - essentials.setspawn
 
 # Catch-alls (Unevaluated)
 #-------------------------------------------------------------------------------
@@ -672,10 +685,3 @@ groups:
     - rankup.reload
     - tradeplus.admin
     - vault.admin
-
-# Owner
-################################################################################
-  g:Owner:
-    info:
-      suffix: ' &c(owner)&r'
-    permissions:
