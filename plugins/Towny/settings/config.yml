@@ -215,14 +215,14 @@ town:
   # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
   max_purchased_blocks_uses_town_levels: 'false'
   # maximum number of plots any single resident can own
-  max_plots_per_resident: '999'
+  max_plots_per_resident: '25'
   # maximum number used in /town claim/unclaim # commands.
   # set to 0 to disable limiting of claim radius value check.
   # keep in mind that the default value of 4 is a radius,
   # and it will allow claiming 9x9 (80 plots) at once.
   max_claim_radius_value: '4'
   # Maximum number of towns allowed on the server.
-  town_limit: '999'
+  town_limit: '25'
 
   # Minimum number of plots any towns plot must be from the next town's own plots.
   # This will prevent town encasement to a certain degree.
@@ -272,7 +272,7 @@ new_world_settings:
     # force_pvp_on is a global flag and overrides any towns flag setting
     force_pvp_on: 'false'
     # If set to false the world will not be included in war events.
-    war_allowed: 'true'
+    war_allowed: 'false'
 
   mobs:
     # world_monsters_on is a global flag setting per world.
@@ -284,7 +284,7 @@ new_world_settings:
     # Allow explosions in this world
     world_explosions_enabled: 'true'
     # force_explosions_on is a global flag and overrides any towns flag setting
-    force_explosions_on: 'true'
+    force_explosions_on: 'false'
 
   fire:
     # Allow fire to be lit and spread in this world.
@@ -372,7 +372,7 @@ global_town_settings:
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
-  allow_town_spawn: 'true'
+  allow_town_spawn: 'peace'
   # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
@@ -393,7 +393,7 @@ global_town_settings:
   # If non zero it delays any spawn request by x seconds.
   teleport_warmup_time: '3'
   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
-  spawn_cooldown_time: '30'
+  spawn_cooldown_time: '3'
   # Number of seconds that must pass before pvp can be toggled by a town.
   # Applies to residents of the town using /res toggle pvp, as well as
   # plots having their PVP toggled using /plot toggle pvp.
@@ -413,7 +413,7 @@ global_town_settings:
   required_number_residents_join_nation: '1'
   # The required number of residents in a town to create a nation
   # If the number is 0, towns will not require a certain amount of residents to create a nation
-  required_number_residents_create_nation: '1'
+  required_number_residents_create_nation: '2'
   # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
   refund_disband_low_residents: 'true'
   # The maximum number of townblocks a town can be away from a nation capital,
@@ -426,7 +426,7 @@ global_town_settings:
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
   # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
-  max_residents_per_town: '100'
+  max_residents_per_town: '7'
   # If Towny should show players the townboard when they login
   display_board_onlogin: 'false'
   # If set to true, Towny will prevent a town from toggling PVP while an outsider is within the town's boundaries.
@@ -483,7 +483,7 @@ global_nation_settings:
 
     # When set to true, players will receive a notification when they enter into a nationzone.
     # Set to false by default because, like the nationzone feature, it will generate more load on servers.
-    show_notifications: 'false'
+    show_notifications: 'true'
   # If Towny should show players the nationboard when they login.
   display_board_onlogin: 'false'
   # If enabled, only allow the nation spawn to be set in the capital city.
@@ -505,7 +505,7 @@ global_nation_settings:
   allow_nation_spawn_travel_ally: 'true'
   # If higher than 0, it will limit how many towns can be joined into a nation.
   # Does not affect existing nations that are already over the limit.
-  max_towns_per_nation: '10'
+  max_towns_per_nation: '7'
   default:
     # If set to true, any newly made nation will have their spawn set to public.
     public: 'false'
@@ -645,7 +645,7 @@ protection:
   # Items which can be blocked or enabled via town/plot flags
   # 25 - noteblock
   # 54 - chest ...etc
-  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,CHEST,TRAPPED_CHEST,FURNACE,DISPENSER,HOPPER,DROPPER,LEVER,COMPARATOR,REPEATER,STONE_PRESSURE_PLATE,ACACIA_PRESSURE_PLATE,BIRCH_PRESSURE_PLATE,DARK_OAK_PRESSURE_PLATE,JUNGLE_PRESSURE_PLATE,OAK_PRESSURE_PLATE,SPRUCE_PRESSURE_PLATE,HEAVY_WEIGHTED_PRESSURE_PLATE,LIGHT_WEIGHTED_PRESSURE_PLATE,STONE_BUTTON,ACACIA_BUTTON,BIRCH_BUTTON,DARK_OAK_BUTTON,JUNGLE_BUTTON,OAK_BUTTON,SPRUCE_BUTTON,ACACIA_DOOR,BIRCH_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,OAK_DOOR,SPRUCE_DOOR,IRON_DOOR,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,OAK_FENCE_GATE,JUNGLE_FENCE_GATE,SPRUCE_FENCE_GATE,ACACIA_TRAPDOOR,BIRCH_TRAPDOOR,DARK_OAK_TRAPDOOR,JUNGLE_TRAPDOOR,OAK_TRAPDOOR,SPRUCE_TRAPDOOR,MINECART,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,STONECUTTER,SMITHING_TABLE,FLETCHING_TABLE,SMOKER,LOOM,LECTERN,GRINDSTONE,COMPOSTER,CARTOGRAPHY_TABLE,BLAST_FURNACE,BELL,BARREL,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BARREL,BREWING_STAND
+  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,FURNACE,DISPENSER,HOPPER,DROPPER,COMPARATOR,REPEATER,MINECART,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,SMOKER,LECTERN,BLAST_FURNACE,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BREWING_STAND
 
   # permitted entities https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig,
@@ -1089,11 +1089,11 @@ jail:
     #Amount that bail costs for normal residents/nomads.
     bail_amount: '100'
     #Amount that bail costs for Town mayors.
-    bail_amount_mayor: '10'
+    bail_amount_mayor: '500'
     #Amount that bail costs for Nation kings.
-    bail_amount_king: '10'
+    bail_amount_king: '1000'
   # Commands which a jailed player cannot use.
-  blacklisted_commands: home,spawn,teleport,tp,tpa,tphere,tpahere,back,dback,ptp,jump,kill,warp,suicide
+  blacklisted_commands: home,spawn,teleport,tp,tpa,tphere,tpahere,back,dback,ptp,jump,kill,warp,suicide,asc,desc,t
 
 
   ############################################################
@@ -1119,7 +1119,7 @@ war:
   #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
   nation_can_be_neutral: 'true'
   #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
-  disallow_one_way_alliance: 'false'
+  disallow_one_way_alliance: 'true'
 
 
   ############################################################
