@@ -10,10 +10,11 @@ CWD="$(pwd)"
 cd "$PLUGIN_DIR"
 
 ## Bukkit.org
-curl -o 'CraftBook.jar'  'https://dev.bukkit.org/projects/craftbook/files/latest'  &
-curl -o 'Vault.jar'      'https://dev.bukkit.org/projects/vault/files/latest'      &
-curl -o 'WorldEdit.jar'  'https://dev.bukkit.org/projects/worldedit/files/latest'  &
-curl -o 'WorldGuard.jar' 'https://dev.bukkit.org/projects/worldguard/files/latest' &
+#TODO: These are all currently blocked by CloudFlare...
+# curl -o 'CraftBook.jar'  'https://dev.bukkit.org/projects/craftbook/files/latest'  &
+# curl -o 'Vault.jar'      'https://dev.bukkit.org/projects/vault/files/latest'      &
+# curl -o 'WorldEdit.jar'  'https://dev.bukkit.org/projects/worldedit/files/latest'  &
+# curl -o 'WorldGuard.jar' 'https://dev.bukkit.org/projects/worldguard/files/latest' &
 
 ## Cleanup
 wait
