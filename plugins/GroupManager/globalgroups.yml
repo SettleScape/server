@@ -402,6 +402,7 @@ groups:
     - bukkit.command.save.enable
     - bukkit.command.save.perform
     - bukkit.command.stop
+    - towny.command.admin
 
 # Chat
 #-------------------------------------------------------------------------------
