@@ -75,6 +75,9 @@ Optimizations:
     Use: false
     List:
     - world
+  Explore:
+    # By setting this to true when there is max amount of players explored a chunk then it will be marked as fully explored and exact players who explored it will not be saved to save some memory
+    Compact: true
 Logging:
   # With this set to true all players jobs actions will be logged to database for easy to see statistics
   # This is still in development and in future it will expand
@@ -98,6 +101,9 @@ DailyQuests:
   # Defines amount of skips player can do on a quest
   # This allows player to abandon current quest and get new one
   Skips: 1
+  # The cost of the quest skip (money).
+  # Default 0, disabling cost of skipping quest.
+  SkipQuestCost: 0.0
 # Enables the schedule manager to boost the server.
 # By default this has been disabled for causing memory leak.
 ScheduleManager:

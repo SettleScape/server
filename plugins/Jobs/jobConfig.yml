@@ -1,24 +1,24 @@
-# Jobs configuration.
-#
+# 
 # Edited by roracle to include 1.13 items and item names, prepping for 1.14 as well.
-#
+# 
 # Stores information about each job.
-#
+# 
 # NOTE: When having multiple jobs, both jobs will give the income payout to the player
 # even if they give the pay for one action (make the configurations with this in mind)
 # and each job will get the respective experience.
-#
-# e.g If player has 2 jobs where job1 gives 10 income and experience for killing a player
+# 
+# e.g If player has 2 jobs where job1 gives 10 income and experience for killing a player 
 # and job2 gives 5 income and experience for killing a player. When the user kills a player
 # they will get 15 income and job1 will gain 10 experience and job2 will gain 5 experience.
 
 Jobs:
-  # Must be one word. This job will be ignored as this is just example of all possible actions.
+  # Must be one word
+  # This job will be ignored as this is just example of all possible actions.
   exampleJob:
-    # full name of the job (displayed when browsing a job, used when joining and leaving)
+    # full name of the job (displayed when browsing a job, used when joining and leaving
     # also can be used as a prefix for the user's name if the option is enabled.
     # Shown as a prefix only when the user has 1 job.
-    #
+
     # NOTE: Must be 1 word
     fullname: Woodcutter
     # Shortened version of the name of the job. Used as a prefix when the user has more than 1 job.
@@ -26,10 +26,10 @@ Jobs:
     description: Earns money felling and planting trees
     # Full description of job to be shown in job browse command
     FullDescription:
-    - "&2Get money for:"
-    - "  &7Planting trees"
-    - "  &7Cutting down trees"
-    - "  &7Killing players"
+    - '&2Get money for:'
+    - '  &7Planting trees'
+    - '  &7Cutting down trees'
+    - '  &7Killing players'
     # The colour of the name, for a full list of supported colours, go to the message config.
     ChatColour: GREEN
     # [OPTIONAL] The colour of the boss bar: GREEN, BLUE, RED, WHITE, YELLOW, PINK, PURPLE.
@@ -54,7 +54,7 @@ Jobs:
     # Available parameters:
     #   numjobs - the number of jobs the player has
     #   joblevel - the level the player has attained in the job.
-    # NOTE: Please take care of the brackets when modifying this equation.
+    #  NOTE: Please take care of the brackets when modifying this equation.
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
     # Equation used for calculating how much income is given per action for the job level.
     # Available parameters:
@@ -62,15 +62,17 @@ Jobs:
     #   baseincome - the income for the action at level 1 (as set in the configuration).
     #   joblevel - the level the player has attained in the job.
     # NOTE: Please take care of the brackets when modifying this equation.
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     # Equation used for calculating how much points is given per action for the job level.
     # Available parameters:
     #   numjobs - the number of jobs the player has
     #   basepoints - the points for the action at level 1 (as set in the configuration).
     #   joblevel - the level the player has attained in the job.
     # NOTE: Please take care of the brackets when modifying this equation.
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-     # Equation used for calculating how much experience is given per action for the job level.
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    # Equation used for calculating how much experience is given per action for the job level.
     # Available parameters:
     #   numjobs - the number of jobs the player has
     #   baseexperience - the experience for the action at level 1 (as set in the configuration).
@@ -81,19 +83,15 @@ Jobs:
     rejoinCooldown: 10
     # GUI icon information when using GUI function
     Gui:
-    # name of the block
+      # Name of the material
       Item: LOG:2
-    # If you want to use this instead of Item name.
-    # id of block
-    #  Id: 17
-    # data of block, usually its 0, but in example Diorite will have id of 1 and data of 3
-    #  Data: 2
-    # enchants in the item
+      # Enchants of the item
       Enchantments:
-      - 'DURABILITY:1'
+      - DURABILITY:1
     # You can use the custom player head:
     # Item: player_head
     #   CustomSkull: Notch
+
     # Defines maximum amount of daily quests player can have from THIS job
     # This will not have effect on overall quest amount player will have
     maxDailyQuests: 3
@@ -101,129 +99,64 @@ Jobs:
     # Each job can have as many daily quests as you want
     # Players will have access to quests from jobs he is currently working at
     Quests:
-      # Quest identification. Can be any ONE word or number or both of them. This doesn't have any real meaning but it can't repeat.
-      1:
-        # Quest name used for quests list, don't forget to enclose it with " "
-        Name: "Break Oak wood"
-        # List of objectives this quest will require for it to count as finished
-        # you can have as many objectives as you want
+      '1':
+        Name: Break Oak wood
         Objectives:
-        # This should be in a format as [actionType];[actionTarget];[amount]
-        # [actionType] can be any valid job action. Look lower for all possible action types
-        # [actionTarget] can be material name, block type, entity name and so on. This is defined in same way as any generic payable job action
-        # [amount] is how many times player should perform this action to complete quest
         - Break;17-0;300
-        # Command list to be performed after quest is finished.
-        # Use [playerName] to insert players name who finished that quest
         RewardCommands:
-        - "money give [playerName] 500"
-        - "msg [playerName] Completed quest!"
-        # Quest description to be used to explain quest requirements or rewards for player
+        - money give [playerName] 500
+        - msg [playerName] Completed quest!
         RewardDesc:
-        - "Break 300 Oak wood"
-        - "Get 500 bucks for this"
-        # Restricted areas to do not get income in quest in the player current location
+        - Break 300 Oak wood
+        - Get 500 bucks for this
         RestrictedAreas:
-        - "Arenas"
-        - "myarena"
-        # Defines chance in getting this quest.
-        # If you have set 10 quests and player can have only 2, then quests with biggest chance will be picked most likely
-        # This will allow to have some rare quests with legendary rewards
+        - Arenas
+        - myarena
         Chance: 40
-        # Defines to which job level you want to give out this quest.
-        # Keep in mind that player will keep quest even if he is over level limit if he got new one while being under
-        # In example: player with level 2 takes quests and levels up to level 5, he still can finish this quest and after next quest reset (check general config file)
-        # he will no longer have option to get this quest
         toLevel: 5
-        # Defines from which level you want to give option to get this quest
-        # You can use both limitations to have limited quests for particular job level ranges
         fromLevel: 3
-      2:
-        Name: "Zombie killer"
+      '2':
+        Name: Zombie killer
         Objectives:
         - Kill;Zombie;50
         RewardCommands:
-        - "money give [playerName] 2000"
-        - "msg [playerName] Completed quest!"
+        - money give [playerName] 2000
+        - msg [playerName] Completed quest!
         RewardDesc:
-        - "Kill 50 zombies"
-        - "Get 2000 for this!"
-      3:
-        Name: "Chicken cooker"
+        - Kill 50 zombies
+        - Get 2000 for this!
+      '3':
+        Name: Chicken cooker
         Objectives:
-        - "Smelt;COOKED_CHICKEN;20"
+        - Smelt;COOKED_CHICKEN;20
         RewardCommands:
-        - "money give [playerName] 300"
-        - "msg [playerName] Completed quest!"
+        - money give [playerName] 300
+        - msg [playerName] Completed quest!
         RewardDesc:
-        - "Cook some chicken breasts"
-        - "Get 300 for this!"
-      4:
-        Name: "Strip logs"
+        - Cook some chicken breasts
+        - Get 300 for this!
+      '4':
+        Name: Strip logs
         Objectives:
-        - "StripLogs;stripped_birch_log;25"
-        - "StripLogs;stripped_acacia_log;25"
+        - StripLogs;stripped_birch_log;25
+        - StripLogs;stripped_acacia_log;25
         RewardCommands:
-        - "msg [playerName] Completed quest!"
+        - msg [playerName] Completed quest!
         RewardDesc:
-        - "Strip 25 birch and acacia logs each!"
-    ########################################################################
-    # Section used to configure what items the job gets paid for, how much
-    # they get paid and how much experience they gain.
-    #
-    # For break and place, the block name or id is used.
-    # You can select a sub-type by using a '-' between the id and the bit
-    # value for the sub-type. e.g LOG-0 = usual log, LOG-2 = birch log
-    # 17-2 = birch log.
-    #
-    # If no sub-type is give, the payout will be for all sub-types.
-    #
-    # To get a list of all available block types, check the
-    # bukkit JavaDocs for a complete list of block types
-    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    #
-    # For kill tags (Kill and custom-kill), the name is the name of the
-    # mob.
-    # To get a list of all available entity types, check the
-    # bukkit JavaDocs for a complete list of entity types
-    # https://minecraft.gamepedia.com/Mob#List_of_mobs
-    #
-    # NOTE: mob names are case sensitive.
-    #
-    # For custom-kill, it is the name of the job (also case sensitive).
-    #
-    # NOTE: If a job has both the pay for killing a player and for killing a
-    # specific class, they will get both payments.
-    ########################################################################
-    # payment for breaking a block
+        - Strip 25 birch and acacia logs each!
     Break:
-      # block name/id (with optional sub-type)
       log:
-        # base income, can be not used if using point system
         income: 5.0
-        # base points, can be not used if using income system
         points: 5.0
-        # base experience
         experience: 5.0
-        # (OPTIONAL) from which level of this job player can get money for this action
-        # if not given, then player will always get money for this action
-        # this can be used for any action
         from-level: 1
-        # (OPTIONAL) until which level player can get money for this action.
-        # if not given, then there is no limit
-        # this can be used for any action
         until-level: 30
-        # (OPTIONAL) Soft limits will allow to stop income/exp/point payment increase at some particular level but allow further general leveling.
-        # In example if player is level 70, he will get paid as he would be at level 50, exp gain will be as he would be at lvl 40 and point gain will be as at level 60
-        # This only applies after players level is higher than provided particular limit.
         softIncomeLimit: 50
         softExpLimit: 40
         softPointsLimit: 60
       gravel:
-        # you can use minuses to take away money if the player break this block
         income: -1.0
         experience: -1.0
-    # Payment for collecting sweet berries or collect from composter
     Collect:
       sweet_berry_bush-3:
         income: 0.5
@@ -233,7 +166,6 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 1.5
-    # payment for stripping wood logs, only for 1.13+ servers
     StripLogs:
       stripped_acacia_log:
         income: 1.0
@@ -243,7 +175,6 @@ Jobs:
         income: 1.0
         points: 1.0
         experience: 1.0
-    # payment for drinking a potion
     Drink:
       water:
         income: 0.5
@@ -254,13 +185,11 @@ Jobs:
       healing_1:
         income: 1.4
         experience: 2.0
-    # payment for breaking a block with tnt
     TNTBreak:
       log:
         income: 5.0
         points: 5.0
         experience: 5.0
-    # payment for placing a block
     Place:
       sapling:
         income: 1.0
@@ -270,48 +199,34 @@ Jobs:
         income: 2.0
         points: 2.0
         experience: 2.0
-    # Payment for trading a villager. Checks results only
     VTrade:
       emerald:
         income: 1.0
         points: 1.0
         experience: 2.0
-      # you can add enchanted book with sub-id
       enchanted_book-12:
         income: 1.0
         experience: 2.0
-    # killing a mob
     Kill:
-      # mob name
       Player:
-        # base income
         income: 7.5
-        # base experience
         experience: 7.5
-    # killing a MythicMob
     MMKill:
-      # mob name
       CustomNameHere:
-        # base income
         income: 7.5
-        # base experience
         experience: 7.5
-    # Killing player with certain job
     custom-kill:
       Woodcutter:
         income: 10.0
         experience: 10.0
-    # Taming animals
     Tame:
       Wolf:
         income: 2.0
         experience: 5.0
-    # Breeding animals
     Breed:
       Wolf:
         income: 2.0
         experience: 5.0
-    # Eating food
     Eat:
       cooked_rabbit:
         income: 5
@@ -319,7 +234,6 @@ Jobs:
       baked_potato:
         income: 5
         experience: 5
-    # Milking cows, only one option is available
     Milk:
       Cow:
         income: 2.0
@@ -327,7 +241,6 @@ Jobs:
       MushroomCow:
         income: 5.0
         experience: 10.0
-    # Shear sheeps by its color
     Shear:
       Black:
         income: 2.0
@@ -377,7 +290,6 @@ Jobs:
       Yellow:
         income: 2.0
         experience: 5.0
-    # dyeing armor
     Dye:
       leather_boots:
         income: 1.0
@@ -391,19 +303,16 @@ Jobs:
       leather_leggings:
         income: 1.0
         experience: 1.0
-      351:
+      '351':
         income: 1.0
         experience: 1.0
-    # Catching fish
     Fish:
       raw_fish:
         income: 20.0
         experience: 25.0
-      # If you are using below version 1.13
       legacy_raw_fish:
         income: 20.0
         experience: 25.0
-    # Repairing items
     Repair:
       wood_sword:
         income: 1.0
@@ -411,7 +320,6 @@ Jobs:
       iron_sword:
         income: 2.0
         experience: 2.0
-    # Crafting items
     Craft:
       wood_sword:
         income: 1.5
@@ -419,11 +327,9 @@ Jobs:
       leather_boots:
         income: 1.0
         experience: 6.0
-      # Add ! at front when you want to pay for crafted items with special names. Always use double quotation marks, same as example
-      "!Healing Bandage":
+      '!Healing Bandage':
         income: 1.0
         experience: 6.0
-    # Smelting ores
     Smelt:
       iron_ingot:
         income: 2.0
@@ -431,23 +337,19 @@ Jobs:
       gold_ingot:
         income: 4.5
         experience: 12
-    # Enchanting items
     Enchant:
-      # You can set item for which player will get money
       wood_sword:
         income: 1.5
         experience: 3.0
       leather_boots:
         income: 1.0
         experience: 6.0
-      # Or/and you can give money for each enchantment they got
       DIG_SPEED-1:
         income: 3.0
         experience: 10.0
       DIG_SPEED-2:
         income: 6.0
         experience: 20.0
-    # Brewing potions
     Brew:
       nether_stalk:
         income: 5.0
@@ -455,60 +357,42 @@ Jobs:
       redstone:
         income: 5.0
         experience: 3.0
-    # Explore options. Each number represents players number in exploring that chunk
-    # 1 means that player is first in this chunk, 2 is second and so on, so you can give money not only for first player who discovers that chunk
     Explore:
-      1:
+      '1':
         income: 5.0
         experience: 5.0
-      2:
+      '2':
         income: 2.5
         experience: 2.5
-      3:
+      '3':
         income: 1.0
         experience: 1.0
-      4:
+      '4':
         income: 0.5
         experience: 0.5
-      5:
+      '5':
         income: 0.1
         experience: 0.1
-    # permissions granted for joining class
     permissions:
-      # example node
-      aaaaaatest.node:
-        # true to give, false to revoke
-        value: true
-        # minimum level needed to grant permission. Use 0 for all levels
-        level: 0
-      aaaaaatest.node2:
-        value: true
-        # Permission granted when reaching level 10
-        level: 10
-    # Permissions granted when particular conditions are meet
+      aaaaaatest:
+        node:
+          value: true
+          level: 0
+        node2:
+          value: true
+          level: 10
     conditions:
-      # Condition name, irrelevant, you can write anything in here
       first:
         requires:
-        # j marks that player should have particular jobs level and higher
         - j:Miner-50
         - j:Digger-50
-        # p marks permission requirement
         - p:essentials.notnoob
         perform:
-        # p marks permission, player will get if given true value, if used false, permission will be taken
         - p:essentials.fly-true
-    # Commands executed when player reached level
     commands:
-      # command name, just to have better idea what this do
       fly:
-        # Command its self, this will be executed from console, so all commands should work
-        # Possible variables are: [player] [jobname] [oldlevel] [newlevel]
         command: manuaddp [player] essentials.fly
-        # When to execute this command first time
         levelFrom: 100
-        # Until when to do this command
-        # This can be set to same level as levelFrom, so this command will be executed only once
         levelUntil: 100
       kit:
         command:
@@ -516,30 +400,20 @@ Jobs:
         - msg [player] Now you can use woodcutter kit!
         levelFrom: 150
         levelUntil: 150
-    # Getting more money when equipped with specific weapon/tool are wearing armor
     items:
-      # Just name, don't have any impact
       firstOne:
-        # Tool/Weapon id. Works for block Break, Fish, Animal tame, Breed, Monster/Player kill.
         id: 278
-        # Items name, should be with color codes
         name: '&8Miner Pickaxe'
-        # Item lore, again should come with color codes
         lore:
         - '&eBobs pick'
         - '&710% bonus XP'
-        # Item enchantments, all enchantment names can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
         enchants:
         - DAMAGE_ALL=1
         - FIRE_ASPECT=1
-        # Money boost: 1.1 is equals 10% more income when 0.9 is equals 10% less from base income
         moneyBoost: 1.1
-        # Exp boost
         expBoost: 1.2
-        # Point boost
         pointBoost: 1.3
       helmet:
-        # Armor id. This one works with all jobs
         id: 310
         name: '&8Armor'
         lore:
@@ -547,32 +421,23 @@ Jobs:
         - '&710% bonus XP'
         moneyBoost: 1.1
         expBoost: 1.1
-    # Limit item use to jobs level
     limitedItems:
-      # Just name, don't have any impact
       firstOne:
-        # Tool/Weapon id. Works for any interact action.
         id: 278
-        # Level of this job player can start using this item
         level: 5
-        # (optional) Items name, option to use color codes
         name: '&8Miner Pickaxe'
-        # (optional) Item lore, again can come with color codes
         lore:
         - '&eBobs pick'
         - '&710% bonus XP'
-        # (optional) Item enchantments, all enchantment names can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
-        # enchant level can increase with jobs level to give best RPG experience
         enchants:
         - DAMAGE_ALL=1
         - FIRE_ASPECT=1
     cmd-on-join:
-    - 'msg [name] Thx for joining this job!'
-    - 'msg [name] Now start working and get money from [jobname] job!'
+    - msg [name] Thx for joining this job!
+    - msg [name] Now start working and get money from [jobname] job!
     cmd-on-leave:
-    - 'msg [name] You have left this awesome [jobname] job'
-    - 'msg [name] See you soon!'
-# from this point you can edit jobs by your liking, rename, remove or add new ones
+    - msg [name] You have left this awesome [jobname] job
+    - msg [name] See you soon!
   Woodcutter:
     fullname: Woodcutter
     shortname: W
@@ -581,8 +446,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -590,7 +457,6 @@ Jobs:
       Id: 258
       Data: 2
     Break:
-      #logs - natural; gain income, points, and exp
       oak_log:
         income: 1.0
         points: 1.0
@@ -615,33 +481,6 @@ Jobs:
         income: 1.0
         points: 1.0
         experience: 1.0
-      #planks - natural in mineshafts; gain some income/points and exp, but less as compromise as it's mainly a building block and used in placement
-      #oak_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #spruce_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #birch_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #jungle_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #acacia_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #dark_oak_planks:
-        #income: 0.25
-        #points: 0.25
-        #experience: .25
-      #stripped logs - crafted/natural; gain income, points, and exp. Compromise for stripping natural logs.
-      #use axe durability to create, just 0.75 income/points to make up for loss, plus 0.25 exp (compromise)
       stripped_oak_log:
         income: 0.75
         points: 0.75
@@ -683,10 +522,11 @@ Jobs:
     ChatColour: DARK_GRAY
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -711,7 +551,6 @@ Jobs:
         points: 0.25
         experience: 0.5
     Break:
-      #new 1.13 blocks (some changed blocks are below)
       tube_coral_block:
         income: 2
         points: 2
@@ -732,7 +571,6 @@ Jobs:
         income: 2
         points: 2
         experience: 2
-      #origial blocks
       end_stone:
         income: 2
         points: 2
@@ -870,17 +708,17 @@ Jobs:
     ChatColour: RED
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
       Item: brick_stairs
     Place:
-      #new 1.13 blocks
       oak_log:
         income: 1.75
         points: 1.75
@@ -1018,16 +856,16 @@ Jobs:
         points: 2
         experience: 3
       dirt:
-        income: .25
-        points: .25
+        income: 0.25
+        points: 0.25
         experience: 1
       coarse_dirt:
-        income: .25
-        points: .25
+        income: 0.25
+        points: 0.25
         experience: 1
       gravel:
-        income: .25
-        points: .25
+        income: 0.25
+        points: 0.25
         experience: 1
       grass_block:
         income: 1
@@ -1042,12 +880,12 @@ Jobs:
         points: 1.25
         experience: 3
       sand:
-        income: .25
-        points: .25
+        income: 0.25
+        points: 0.25
         experience: 1
       red_sand:
-        income: .3
-        points: .3
+        income: 0.3
+        points: 0.3
         experience: 1
       stone:
         income: 1.3
@@ -1068,10 +906,6 @@ Jobs:
       granite:
         income: 1
         points: 1
-        experience: 2
-      polished_granite:
-        income: 1.1
-        points: 1.1
         experience: 2
       diorite:
         income: 1
@@ -1425,18 +1259,6 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
-      red_sandstone:
-        income: 1.2
-        points: 1.2
-        experience: 2
-      cut_red_sandstone:
-        income: 1.3
-        points: 1.3
-        experience: 2
-      chiseled_red_sandstone:
-        income: 1.3
-        points: 1.3
-        experience: 2
       smooth_red_sandstone:
         income: 1.5
         points: 1.5
@@ -1550,10 +1372,6 @@ Jobs:
         points: 1.5
         experience: 2
       dark_prismarine_stairs:
-        income: 1.5
-        points: 1.5
-        experience: 2
-      nether_brick_stairs:
         income: 1.5
         points: 1.5
         experience: 2
@@ -2345,10 +2163,11 @@ Jobs:
     ChatColour: DARK_AQUA
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -2401,10 +2220,11 @@ Jobs:
     ChatColour: DARK_GREEN
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -2591,7 +2411,7 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 3.0
-      chorus_flower: # Buffed, since these take finesse to acquire
+      chorus_flower:
         income: 2
         points: 2
         experience: 2.0
@@ -2619,7 +2439,7 @@ Jobs:
         income: 0.2
         points: 0.2
         experience: 0.2
-      cocoa-2: # Nerfed, because a cocoa farm is way overproductive otherwise
+      cocoa-2:
         income: 3
         points: 3
         experience: 3.0
@@ -2631,7 +2451,7 @@ Jobs:
         income: 2
         points: 2
         experience: 2.0
-      poppy: # Nerfed because iron farms make these stupidly abundant
+      poppy:
         income: 1.5
         points: 1.5
         experience: 1.5
@@ -2688,12 +2508,12 @@ Jobs:
         points: 1
         experience: 1.0
       pumpkin:
-        income: .5
-        points: .5
+        income: 0.5
+        points: 0.5
         experience: 1.0
       melon:
-        income: .5
-        points: .5
+        income: 0.5
+        points: 0.5
         experience: 1.0
     Place:
       oak_sapling:
@@ -2708,7 +2528,7 @@ Jobs:
         income: 2
         points: 2
         experience: 2.0
-      jungle_sapling: # Half the drop chance of normal saplings, so worth more
+      jungle_sapling:
         income: 3
         points: 3
         experience: 4.0
@@ -2740,7 +2560,7 @@ Jobs:
         income: 1
         points: 1
         experience: 1
-      sugar_cane: # sugarcane will remove an income/point and experience so it isn't spammed
+      sugar_cane:
         income: -1
         points: -1
         experience: -1
@@ -2769,8 +2589,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -2927,8 +2749,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -2936,23 +2760,23 @@ Jobs:
       Id: 301
       Data: 0
     Explore:
-      1:
+      '1':
         income: 3.5
         points: 3.5
         experience: 3.5
-      2:
+      '2':
         income: 2
         points: 2
         experience: 2
-      3:
+      '3':
         income: 1
         points: 1
         experience: 1
-      4:
+      '4':
         income: 0.5
         points: 0.5
         experience: 0.5
-      5:
+      '5':
         income: 0.1
         points: 0.1
         experience: 0.1
@@ -2968,8 +2792,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -3028,70 +2854,6 @@ Jobs:
         income: 10.0
         points: 10.0
         experience: 20.0
-      white_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      orange_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      magenta_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      light_blue_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      yellow_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      lime_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      pink_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      gray_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      light_gray_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      cyan_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      purple_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      blue_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      brown_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      green_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      red_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      black_stained_glass:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
       cobblestone_stairs:
         income: 2.5
         points: 2.5
@@ -3497,8 +3259,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -3534,8 +3298,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -3673,8 +3439,10 @@ Jobs:
     chat-display: full
     max-level: 200
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -3757,10 +3525,11 @@ Jobs:
     ChatColour: LIGHT_PURPLE
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
@@ -3860,69 +3629,6 @@ Jobs:
         income: 6.0
         points: 6.0
         experience: 30.0
-      # 1.13+: power
-      # 1.12 and under: arrow_damage
-      #power-1:
-      #  income: 10.0
-      #  points: 10.0
-      #  experience: 10.0
-      #arrow_damage-2:
-      #  income: 20.0
-      # 1.13+: flame
-      # 1.12 and under: arrow_fire
-      #arrow_fire:
-      #  income: 10.0
-      #  points: 10.0
-      #  experience: 30.0
-      # 1.13+: infinity
-      # 1.12 and under: arrow_infinite
-      #arrow_infinite:
-      #  income: 20.0
-      #  points: 20.0
-      #  experience: 50.0
-      # 1.13+: punch
-      # 1.12 and under: arrow_knockback
-      #punch-2:
-      #  income: 20.0
-      #  points: 20.0
-      #  experience: 20.0
-      # 1.13+: sharpness
-      # 1.12 and under: damage_all
-      #damage_all-5:
-      #  income: 50.0
-      #  points: 50.0
-      #  experience: 50.0
-      # 1.13+: bane_of_arthropods
-      # 1.12 and under: damage_arthropods
-      #damage_arthropods-4:
-      #  income: 40.0
-      #  points: 40.0
-      #  experience: 40.0
-      # 1.13+: smite
-      # 1.12 under: damage_undead
-      #damage_undead-1:
-      #  income: 10.0
-      #  points: 10.0
-      #depth_strider-3:
-      #  income: 30.0
-      #  points: 30.0
-      #  experience: 30.0
-      # 1.13+: efficiency
-      # 1.12 under: dig_speed
-      #efficiency-5:
-      #  income: 50.0
-      #  points: 50.0
-      #  experience: 50.0
-      # 1.13+: unbreaking
-      # 1.12 under: durability
-      #durability-1:
-      #  income: 10.0
-      #  points: 10.0
-      #  experience: 10.0
-      #fire_aspect-2:
-      #  income: 20.0
-      #  points: 20.0
-      #  experience: 20.0
   Chef:
     fullname: Chef
     shortname: Chef
@@ -3930,10 +3636,11 @@ Jobs:
     ChatColour: White
     chat-display: full
     max-level: 200
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     rejoinCooldown: 3600
     Gui:
@@ -4010,11 +3717,11 @@ Jobs:
     shortname: /
     ChatColour: WHITE
     chat-display: none
-    #max-level: 10
-    #slots: 10
     leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01) * ((numjobs-1)*0.05))
+    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
+    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
+      * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
     Kill:
       Player:

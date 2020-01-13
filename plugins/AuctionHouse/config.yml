@@ -1,6 +1,5 @@
 # 
 # AuctionHouse
-updateTicks: 20
 blacklist:
   '0':
     item: minecraft:bedrock
@@ -25,6 +24,7 @@ blacklist:
       level: 3
     - ench: minecraft:fire_aspect
       level: 2
+updateTicks: 20
 locale: en_us
 decimal_format: '#,##0.00'
 strict: false
@@ -59,6 +59,9 @@ log:
   purged: true
 disabled-worlds: []
 auction:
+  listingCooldown: 0d0h0m0s
+  minSellPrice: 0.0
+  maxSalesTax: 100000.0
   unclaimedCheckDuration: 0d0h1m
   unclaimedCheckOnWorldChange: true
   sortOrder: oldest
@@ -87,4 +90,4 @@ triggers:
   sign: '[AuctionHouse]'
   block_name: Auction House
   entity_name: Auction House
-configVersion: 19
+configVersion: 22
