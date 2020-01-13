@@ -10,7 +10,7 @@ worlds:
         prefix: flat
         perspective: iso_S_90_lowres
         shader: stdtexture
-        lighting: shadows
+        lighting: shadows-smooth
         image-format: default
         mapzoomin: 1
         mapzoomout: 2
@@ -20,7 +20,7 @@ worlds:
     protected: false
     showborder: true
     sendposition: false
-    sendhealth: true
+    sendhealth: false
     visibilitylimits: [
         ]
     hiddenlimits: [
