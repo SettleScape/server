@@ -1,10 +1,10 @@
- 
+
 version:
   # This is the current version of Towny.  Please do not edit.
   version: '0.62'
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: '0.53'
- 
+  last_run_version: '0.62'
+
 ############################################################
 # +------------------------------------------------------+ #
 # |                    ChatConfig.yml                    | #
@@ -63,13 +63,10 @@ version:
 # Bold = &l, Italics = &o, Underlined = &n,
 # Magic = &k, Strike = &m, Reset = &r
 chatconfigcomments: ''
- 
+
 # Spam_time set the minimum time between messages to be flagged as spam
 spam_time: '0.5'
-heroicdeathtoirc:
-  enabled: 'false'
-  craftirctags: admin
- 
+
 channel_formats:
   # This is the format which will be used for GLOBAL chat/channels.
   # This is also the format used when you have modify_chat.enable: true, but use other plugins to handle chat.
@@ -82,7 +79,7 @@ channel_formats:
   alliance: '{channelTag} {modplayername}&r &7>&r {msgcolour}{msg}'
   # DEFAULT channel types.
   default: '{channelTag} {modplayername}&r &7>&r {msgcolour}{msg}'
- 
+
 tag_formats:
   world: '&7[&f%s&7]&r'
   town: '&7[&e%s&7]&r'
@@ -90,13 +87,13 @@ tag_formats:
   # First %s is the nation tag, second is the town tag.
   # You may also use %t for the town tag and %n for the nation tag!
   both: '&7[&b%n&7|&e%t&7]&r'
- 
+
 colour:
   king: '&d'
   mayor: '&9'
   resident: '&a'
   nomad: '&f'
- 
+
 modify_chat:
   # This is used for when you don't have another plugin to format chat.
   # or you want some other plugin to handle open chat, but want Towny formatting.
@@ -111,6 +108,6 @@ modify_chat:
   alone_message: 'false'
   # This allows you to set your alone message.
   alone_message_string: No one in range can hear you or you are alone in this channel.
- 
+
 # If true players will see [Towny] Modes set: general when they log in.
 display_modes_set_on_join: 'false'

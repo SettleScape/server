@@ -7,6 +7,7 @@
 # You may assign any Permission nodes here, including those from other plugins.
 # You may also create any custom ranks you require.
 
+
 # The 'nomad' permission set covers players not in any town
 nomad:
     - towny.wild.*
@@ -24,6 +25,10 @@ nomad:
     - towny.command.town.list
     - towny.command.plot.perm
     - towny.command.nation.list
+    - towny.command.nation.allylist
+    - towny.command.nation.townlist
+    - towny.command.nation.enemylist
+    - towny.command.towny.war.hud
     - towny.town.resident
     - towny.town.spawn.public
     - towny.chat.general
@@ -47,10 +52,12 @@ towns:
         - towny.town.spawn.town
     mayor:
         # Mayors get these permissions in addition to the default set.
-        - towny.command.towny.top
         - towny.command.nation.new
+        - towny.command.nation.join
+        - towny.command.nation.leave
         - towny.command.plot.*
         - towny.command.town.*
+        - towny.command.towny.top
         - towny.outlaw.jailer
         - towny.claimed.owntown.*
 
@@ -70,17 +77,24 @@ towns:
             - towny.command.town.unclaim
 
             - towny.command.town.toggle.*
+            - towny.claimed.owntown.switch.*
+
+            # assistants are able to grant the following ranks
+            - towny.command.town.rank.sheriff
+            - towny.command.town.rank.builter
 
         #sheriff
             - towny.command.town.outlaw
+            - towny.command.town.toggle.jail
             - towny.outlaw.jailer
 
         #builder
             - towny.claimed.owntown.* ## Everywhere in the town
 
         sheriff:
-            - towny.outlaw.jailer
             - towny.command.town.outlaw
+            - towny.command.town.toggle.jail
+            - towny.outlaw.jailer
 
         builder:
             - towny.claimed.townowned.* ## Everywhere in the town except for resident-owned plots
@@ -90,6 +104,8 @@ nations:
     default:
         # All nation members get these permissions.
         - towny.chat.nation
+        - towny.chat.alliance
+
         - towny.command.nation.online
         - towny.command.nation.deposit
 
@@ -97,9 +113,12 @@ nations:
         - towny.nation.spawn.nation
         - towny.nation.spawn.ally
         - towny.town.spawn.nation
+        - towny.town.spawn.ally
+
     king:
         # Kings get these permissions in addition to the default set.
         - towny.command.nation.*
+        - towny.command.nation.deposit.other
 
     ranks:
         assistant:
@@ -107,4 +126,5 @@ nations:
             - towny.command.nation.invite.add
 
             - towny.command.nation.ally.*
-            - towny.command.nation enemy
+            - towny.command.nation.enemy
+            - towny.command.nation.deposit.other
