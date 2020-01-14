@@ -7,7 +7,7 @@ ClearLagg          ?.?.?     ????-??-??  ????-??-??  (autoupdates)
 CommandLog         1.2       2016-07-09  2020-01-12  https://spigotmc.org/resources/command-log-reborn.21176/updates
 CoreProtect        2.17.5    2019-05-31  2020-01-12  https://spigotmc.org/resources/coreprotect.8631/updates
 CraftBook          3.10.1    2020-01-01  2020-01-12  https://dev.bukkit.org/projects/craftbook/files
-Dynmap             3.0-b9    2019-12-22  2020-01-12  https://spigotmc.org/resources/dynmap.274/updates
+Dynmap             3.0-b5    2019-07-22  2020-01-14  https://dev.bukkit.org/projects/dynmap/files
 Dynmap-Towny       0.74      2019-11-08  2020-01-12  https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard  CUSTOM    2019-11-27  2020-01-11  https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.0.4     2019-08-16  2020-01-12  https://spigotmc.org/resources/editablesign.2502/updates
