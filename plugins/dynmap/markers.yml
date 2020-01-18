@@ -12,14 +12,6 @@ sets:
             }
         label: Towny
         markers:
-            towny-tarn:
-                world: world
-                markup: false
-                x: -516.0
-                icon: house
-                y: 75.0
-                z: 2007.0
-                label: Tarn
             towny-eventide:
                 world: world
                 markup: false
@@ -67,8 +59,31 @@ sets:
         areas: {
             }
         label: Markers
-        markers: {
-            }
+        markers:
+            djin:
+                world: world
+                markup: false
+                x: 3048.0
+                icon: pin
+                y: 65.0
+                z: 3791.0
+                label: Djin
+            marker_1:
+                world: world
+                markup: false
+                x: 6604.0
+                icon: pin
+                y: 65.0
+                z: 2665.0
+                label: kuiil
+            kuiil:
+                world: world
+                markup: false
+                x: 6604.0
+                icon: pin
+                y: 65.0
+                z: 2665.0
+                label: Kuiil
         lines: {
             }
         layerprio: 0
