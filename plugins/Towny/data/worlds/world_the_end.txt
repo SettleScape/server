@@ -1,0 +1,54 @@
+towns=
+
+pvp=true
+forcepvp=true
+# Can players found towns and claim plots in this world?
+claimable=false
+worldmobs=true
+forcetownmobs=true
+firespread=false
+forcefirespread=false
+explosions=false
+forceexplosions=false
+endermanprotect=true
+disableplayertrample=true
+disablecreaturetrample=true
+
+
+# Unclaimed Zone settings.
+unclaimedZoneBuild=true
+unclaimedZoneDestroy=true
+unclaimedZoneSwitch=true
+unclaimedZoneItemUse=true
+unclaimedZoneName=Wilderness
+
+# The following settings are only used if you are not using any permissions provider plugin
+unclaimedZoneIgnoreIds=SAPLING,GOLD_ORE,IRON_ORE,COAL_ORE,LOG,LEAVES,LAPIS_ORE,LONG_GRASS,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,TORCH,DIAMOND_ORE,LADDER,RAILS,REDSTONE_ORE,GLOWING_REDSTONE_ORE,CACTUS,CLAY,SUGAR_CANE_BLOCK,PUMPKIN,GLOWSTONE,LOG_2,VINE,NETHER_WARTS,COCOA
+
+
+# The following settings control what blocks are deleted upon a townblock being unclaimed
+usingPlotManagementDelete=true
+plotManagementDeleteIds=BED_BLOCK,TORCH,REDSTONE_WIRE,SIGN_POST,WOODEN_DOOR,WALL_SIGN,STONE_PLATE,IRON_DOOR_BLOCK,WOOD_PLATE,REDSTONE_TORCH_OFF,REDSTONE_TORCH_ON,DIODE_BLOCK_OFF,DIODE_BLOCK_ON
+
+
+# The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
+usingPlotManagementMayorDelete=true
+plotManagementMayorDelete=WALL_SIGN,SIGN_POST
+
+# If enabled when a town claims a townblock a snapshot will be taken at the time it is claimed.
+# When the townblock is unclaimded its blocks will begin to revert to the original snapshot.
+usingPlotManagementRevert=false
+# Any block Id's listed here will not be respawned. Instead it will revert to air.
+plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,MOB_SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,SIGN_POST,WALL_SIGN,GLOWSTONE
+
+# If enabled any damage caused by explosions will repair itself.
+usingPlotManagementWildRegen=true
+PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,tntprimed,explosiveminecart
+usingPlotManagementWildRegenDelay=20
+
+# This setting is used to enable or disable Towny in this world.
+usingTowny=false
+
+# This setting is used to enable or disable Event war in this world.
+warAllowed=true
+metadata=

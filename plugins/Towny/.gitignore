@@ -1,13 +1,13 @@
 **
 !.gitignore
 !data/
-data/**
 !data/worlds.txt
+!data/worlds
 !data/worlds/*.txt
 !settings/
-settings/**
 !settings/Channels.yml
 !settings/ChatConfig.yml
 !settings/config.yml
 !settings/townyperms.yml
 !**/ReadMe.md
+
