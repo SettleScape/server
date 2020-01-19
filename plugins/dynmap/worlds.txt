@@ -14,7 +14,7 @@ worlds:
         perspective: iso_S_90_lowres
         shader: stdtexture
         lighting: shadows-smooth
-        background: "#7f7f7f"
+        background: "#3F3F3F"
         mapzoomin: 0
         mapzoomout: 0
         boostzoom: 1
@@ -26,7 +26,7 @@ worlds:
     #     perspective: iso_SE_60_lowres
     #     shader: stdtexture
     #     lighting: shadows-smooth
-    #     background: "#7f7f7f"
+    #     background: "#3F3F3F"
     #     mapzoomin: 0
     #     mapzoomout: 0
     #     boostzoom: 1
