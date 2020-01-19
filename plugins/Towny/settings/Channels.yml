@@ -84,15 +84,15 @@ Channels:
     mod:
         commands: [tcm]
         type: DEFAULT
-        channeltag: '&7[&9MOD&7]&r'
-        messagecolour: '&9'
+        channeltag: '&7[&cMOD&7]&r'
+        messagecolour: '&c'
         permission: 'towny.chat.mod'
         range: '-1'
 
     admin:
         commands: [tca]
         type: DEFAULT
-        channeltag: '&7[&cADM&7]&r'
-        messagecolour: '&c'
+        channeltag: '&7[&9ADM&7]&r'
+        messagecolour: '&9'
         permission: 'towny.chat.admin'
         range: '-1'
