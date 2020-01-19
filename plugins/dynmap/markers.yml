@@ -12,14 +12,6 @@ sets:
             }
         label: Towny
         markers:
-            towny.eventide:
-                world: world
-                markup: false
-                x: 1199.0
-                icon: house
-                y: 76.0
-                z: 1926.0
-                label: Eventide
             towny.hawthorne:
                 world: world
                 markup: false
@@ -28,6 +20,14 @@ sets:
                 y: 74.0
                 z: -4815.0
                 label: Hawthorne
+            towny.eventide:
+                world: world
+                markup: false
+                x: 1199.0
+                icon: house
+                y: 76.0
+                z: 1926.0
+                label: Eventide
         lines: {
             }
         layerprio: 2
