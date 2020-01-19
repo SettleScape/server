@@ -5,7 +5,7 @@ forcepvp=true
 # Can players found towns and claim plots in this world?
 claimable=false
 worldmobs=true
-forcetownmobs=true
+forcetownmobs=false
 firespread=false
 forcefirespread=false
 explosions=false
@@ -43,11 +43,11 @@ plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,MOS
 
 # If enabled any damage caused by explosions will repair itself.
 usingPlotManagementWildRegen=true
-PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,tntprimed,explosiveminecart
-usingPlotManagementWildRegenDelay=20
+PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball
+usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
-usingTowny=false
+usingTowny=true
 
 # This setting is used to enable or disable Event war in this world.
 warAllowed=true
