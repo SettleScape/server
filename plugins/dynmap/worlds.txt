@@ -2,21 +2,46 @@ worlds:
 -   name: world
     title: Overworld
     enabled: true
-    extrazoomout: 4
+    bigworld: true
+    tileupdatedelay: 20
+    extrazoomout: 6
     maps:
     -   class: org.dynmap.hdmap.HDMap
+        title: "Flat"
         name: flat
-        title: "Overhead"
         prefix: flat
+        image-format: default
         perspective: iso_S_90_lowres
         shader: stdtexture
         lighting: shadows-smooth
-        image-format: default
-        mapzoomin: 1
-        mapzoomout: 2
-        boostzoom: 0
-        append_to_world: ''
-        protected: false
+        background: "#7f7f7f"
+        mapzoomin: 0
+        mapzoomout: 0
+        boostzoom: 1
+    # -   class: org.dynmap.hdmap.HDMap
+    #     title: "Isometric"
+    #     name: surface
+    #     prefix: surface
+    #     image-format: default
+    #     perspective: iso_SE_60_lowres
+    #     shader: stdtexture
+    #     lighting: shadows-smooth
+    #     background: "#7f7f7f"
+    #     mapzoomin: 0
+    #     mapzoomout: 0
+    #     boostzoom: 1
+    # -   class: org.dynmap.hdmap.HDMap
+    #     title: "Cave"
+    #     name: cave
+    #     prefix: cave
+    #     image-format: default
+    #     perspective: iso_SE_60_lowres
+    #     shader: lit-cave
+    #     lighting: night-smooth
+    #     background: "#000000"
+    #     mapzoomin: 0
+    #     mapzoomout: 0
+    #     boostzoom: 1
     protected: false
     showborder: true
     sendposition: false
@@ -27,6 +52,58 @@ worlds:
         ]
     hidestyle: stone
 -   name: world_nether
+    title: The Nether
     enabled: false
+    bigworld: false
+    tileupdatedelay: 20
+    extrazoomout: 6
+    maps:
+    # -   class: org.dynmap.hdmap.HDMap
+    #     title: "Cross-Section"
+    #     name: nether
+    #     prefix: nether
+    #     image-format: default
+    #     perspective: iso_S_90_lowres
+    #     shader: stdtexture
+    #     lighting: nethershadows
+    #     background: "#290606"
+    #     mapzoomin: 0
+    #     mapzoomout: 0
+    #     boostzoom: 1
+    protected: false
+    showborder: true
+    sendposition: false
+    sendhealth: false
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: netherrack
 -   name: world_the_end
+    title: The End
     enabled: false
+    bigworld: false
+    tileupdatedelay: 20
+    extrazoomout: 6
+    maps:
+    # -   class: org.dynmap.hdmap.HDMap
+    #     title: "Surface"
+    #     name: the_end
+    #     prefix: the_end
+    #     image-format: default
+    #     perspective: iso_S_90_lowres
+    #     shader: stdtexture
+    #     lighting: night-smooth
+    #     background: "#110d18"
+    #     mapzoomin: 0
+    #     mapzoomout: 0
+    #     boostzoom: 1
+    protected: false
+    showborder: true
+    sendposition: false
+    sendhealth: false
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    hidestyle: end_stone

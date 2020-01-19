@@ -10,7 +10,7 @@ update:
 layer:
   name: WorldGuard
   hidebydefault: false
-  layerprio: 0
+  layerprio: 1
   minzoom: 0
 use3dregions: false
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>

@@ -14,7 +14,7 @@ EditableSign       7.0.4     2019-08-16  2020-01-12  https://spigotmc.org/resour
 EssentialsX        2.17.1    2019-07-30  2020-01-12  https://github.com/EssentialsX/Essentials/releases
 Group Manager      0.2.0     2019-04-28  2020-01-12  https://github.com/GroupManager/GroupManager/releases
 Jobs               4.15.2    2020-01-06  2020-01-12  https://spigotmc.org/resources/jobs-reborn.4216/updates
-mcMMO              2.1.111   2019-12-11  2020-01-12  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
+mcMMO              2.1.111   2020-01-14  2020-01-18  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
 Mineable Spawners  2.0.8     2019-08-15  2020-01-12  https://spigotmc.org/resources/mineablespawners-1-13-1-14-silkspawners-with-extras.59921/updates
 Modern LWC         2.1.5     2019-07-17  2020-01-12  https://spigotmc.org/resources/modern-lwc-continuation-of-lwc.2162/updates
 OpenInv            4.0.8     2019-12-12  2020-01-12  https://github.com/lishid/OpenInv/releases
@@ -23,7 +23,7 @@ PlaceholderAPI     2.10.4    2019-09-19  2020-01-12  https://spigotmc.org/resour
 ProtocolLib        4.5.0     2019-12-24  2020-01-12  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.6.1     2020-01-02  2020-01-12  https://spigotmc.org/resources/rankup.17933/updates
 ShopChest          1.13-SS   2020-01-03  2020-01-12  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild/
-Towny              0.95.1.6  2020-01-08  2020-01-13  https://github.com/TownyAdvanced/Towny/releases
+Towny              0.95.2.10 2020-01-18  2020-01-18  https://github.com/TownyAdvanced/Towny/releases
 TradePlus          3.5.8     2019-07-23  2020-01-12  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.2     2019-04-28  2020-01-12  https://dev.bukkit.org/projects/vault/files
 WorldEdit          7.0.1     2019-08-12  2020-01-12  https://dev.bukkit.org/projects/worldedit/files

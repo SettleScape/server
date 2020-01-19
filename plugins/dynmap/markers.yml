@@ -12,7 +12,15 @@ sets:
             }
         label: Towny
         markers:
-            towny-eventide:
+            towny.hawthorne:
+                world: world
+                markup: false
+                x: -552.0
+                icon: house
+                y: 74.0
+                z: -4815.0
+                label: Hawthorne
+            towny.eventide:
                 world: world
                 markup: false
                 x: 1199.0
@@ -32,7 +40,7 @@ sets:
             }
         label: WorldGuard
         markers:
-            worldguard-spawn:
+            worldguard.spawn:
                 world: world
                 markup: false
                 x: 0.0
@@ -40,17 +48,9 @@ sets:
                 y: 64.0
                 z: 0.0
                 label: Spawn
-            worldguard-hawthorne:
-                world: world
-                markup: false
-                x: -552.0
-                icon: house
-                y: 74.0
-                z: -4815.0
-                label: Hawthorne
         lines: {
             }
-        layerprio: 0
+        layerprio: 1
     markers:
         hide: false
         circles: {
@@ -68,14 +68,6 @@ sets:
                 y: 65.0
                 z: 3791.0
                 label: Djin
-            marker_1:
-                world: world
-                markup: false
-                x: 6604.0
-                icon: pin
-                y: 65.0
-                z: 2665.0
-                label: kuiil
             kuiil:
                 world: world
                 markup: false
