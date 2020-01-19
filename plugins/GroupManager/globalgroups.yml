@@ -98,6 +98,7 @@ groups:
     - essentials.spawn
     - essentials.tpa
     - essentials.tpaccept
+    - essentials.tpdecline
     - essentials.tpahere
     - essentials.tpdeny
     - essentials.warp
@@ -438,6 +439,7 @@ groups:
     - bukkit.command.time.set
     - bukkit.command.gamemode
     - bukkit.command.give
+    - minecraft.command.summon
 
 # Configuration
 #-------------------------------------------------------------------------------

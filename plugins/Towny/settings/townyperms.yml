@@ -73,7 +73,8 @@ towns:
             - towny.command.town.invite.add
             - towny.command.town.kick
 
-            - towny.command.town.claim.*
+            - towny.command.town.buy
+            - towny.command.town.claim.town
             - towny.command.town.unclaim
 
             - towny.command.town.toggle.*
