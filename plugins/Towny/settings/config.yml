@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.95.2.7
+  version: 0.95.2.10
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.95.2.7
+  last_run_version: 0.95.2.10
 # The language file you wish to use
 language: english.yml
  
@@ -765,6 +765,10 @@ notification:
   # If the notification.owner option should show name or {title} name.
   # Titles are the ones granted by nation kings.
   owner_shows_nation_title: 'false'
+  # This setting only applies to servers running spigot, paper or bungeecord.
+  # On servers using craftbukkit.jar the notifications will always appear in the chat.
+  # When set to false the notifications will appear in the chat rather than the action bar.
+  notifications_appear_in_action_bar: 'true'
  
  
  
