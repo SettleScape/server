@@ -41,3 +41,14 @@ Entity Collisions
 * `paper.yml`
 
   * `max-entity-collisions`
+
+Time until Inactive
+================================================================================
+
+* `plugins/Essentials/config.yml`
+
+  * `auto-afk`
+
+* `plugins/Towny/config.yml`
+
+  * `inactive_after_time`
