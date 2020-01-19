@@ -98,7 +98,7 @@ groups:
     - essentials.spawn
     - essentials.tpa
     - essentials.tpaccept
-    - essentials.tpdecline
+    - essentials.tpacancel
     - essentials.tpahere
     - essentials.tpdeny
     - essentials.warp
