@@ -1,7 +1,7 @@
  
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: '0.62'
+  version: '0.65'
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: '0.62'
  
@@ -63,8 +63,6 @@ version:
 # Bold = &l, Italics = &o, Underlined = &n,
 # Magic = &k, Strike = &m, Reset = &r
 chatconfigcomments: ''
- 
-# Spam_time set the minimum time between messages to be flagged as spam
 spam_time: '0.5'
  
 channel_formats:
@@ -95,9 +93,9 @@ colour:
   nomad: '&f'
  
 modify_chat:
-  # This is used for when you don't have another plugin to format chat.
-  # or you want some other plugin to handle open chat, but want Towny formatting.
-  # It will cause Towny to overwrite any other plugins alterations to the format.
+  # When true Towny will format all ChannelTypes,
+  # When false Towny will only format TOWN, NATION, ALLIANCE, DEFAULT types.
+  # When false Towny will not format GLOBAL types, leaving other chat plugins to do the work.
   enable: 'false'
   # If true the chat formats will be read from below to allow per world formatting.
   # These can then be altered individually.
