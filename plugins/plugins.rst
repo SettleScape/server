@@ -30,4 +30,5 @@ TradePlus          3.5.8     2019-07-23  2020-01-12  https://github.com/Trophoni
 Vault              1.7.2     2019-04-28  2020-01-12  https://dev.bukkit.org/projects/vault/files
 WorldEdit          7.0.1     2019-08-12  2020-01-12  https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.2     2020-01-05  2020-01-12  https://dev.bukkit.org/projects/worldguard/files
+WorldGuard-Towny   1.1.0     2020-01-03  2020-01-20  https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  ========  ==========  ==========  ===
