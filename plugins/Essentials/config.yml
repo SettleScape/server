@@ -91,7 +91,7 @@ heal-cooldown: 180
 # Near Radius
 # The default radius with /near
 # Used to use chat radius but we are going to make it separate.
-near-radius: 200
+near-radius: 256
 
 # What to prevent from /item and /give.
 # e.g item-spawn-blacklist: 10,11,46
