@@ -146,7 +146,7 @@ components:
   - class: org.dynmap.ClientComponent
     type: chatbox
     showplayerfaces: true
-    messagettl: 5
+    messagettl: 0
     # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
     #scrollback: 100
     # Optiona; set maximum number of lines visible for chatbox
