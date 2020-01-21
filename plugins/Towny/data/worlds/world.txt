@@ -1,4 +1,4 @@
-towns=Ugab,Delta,Tarn
+towns=Ugab,Delta,Tarn,Mithrandir
 
 pvp=true
 forcepvp=false
