@@ -52,3 +52,16 @@ Time until Inactive
 * `plugins/Towny/config.yml`
 
   * `inactive_after_time`
+
+Join/Quit Messages
+================================================================================
+
+* `plugins/Essentials/config.yml`
+
+  * `custom-join-message`
+  * `custom-quit-message`
+
+* `plugins/dynmap/configuration.txt`
+
+  * `joinmessage`
+  * `quitmessage`
