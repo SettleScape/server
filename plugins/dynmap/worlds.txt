@@ -46,11 +46,14 @@ worlds:
     showborder: true
     sendposition: false
     sendhealth: false
-    visibilitylimits: [
-        ]
+    visibilitylimits:
+      - x0: -29696
+        z0: -32768
+        x1: 35840
+        z1: 32768
     hiddenlimits: [
         ]
-    hidestyle: stone
+    hidestyle: air
 -   name: world_nether
     title: The Nether
     enabled: false
@@ -74,11 +77,14 @@ worlds:
     showborder: true
     sendposition: false
     sendhealth: false
-    visibilitylimits: [
-        ]
+    visibilitylimits:
+      - x0: -3712
+        z0: -4096
+        x1: 4480
+        z1: 4096
     hiddenlimits: [
         ]
-    hidestyle: netherrack
+    hidestyle: air
 -   name: world_the_end
     title: The End
     enabled: false
@@ -102,8 +108,11 @@ worlds:
     showborder: true
     sendposition: false
     sendhealth: false
-    visibilitylimits: [
-        ]
+    visibilitylimits:
+      - x0: -29696
+        z0: -32768
+        x1: 35840
+        z1: 32768
     hiddenlimits: [
         ]
-    hidestyle: end_stone
+    hidestyle: air
