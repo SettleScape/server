@@ -394,8 +394,8 @@ trusted-proxies:
   - "0:0:0:0:0:0:0:1"
 
 # Join/quit message format for web chat: set to "" to disable notice on web UI
-joinmessage: ""
-quitmessage: ""
+joinmessage: "&7* &r{PLAYER}&7 has joined the game.&r"
+quitmessage: "&7* &r{PLAYER}&7 has left the game.&r"
 
 spammessage: "You may only chat once every %interval% seconds."
 # format for messages from web: %playername% substitutes sender ID (typically IP), %message% includes text
