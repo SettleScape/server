@@ -85,7 +85,7 @@ crafting-recipes:
     ingredients:
       'dirt': 'd'
       'wheat_seeds': 's'
-      'bonemeal': 'b'
+      'bone_meal': 'b'
     shape:
       - 'sss'
       - ' b '
