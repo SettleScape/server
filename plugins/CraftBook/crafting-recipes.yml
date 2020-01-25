@@ -29,18 +29,18 @@ crafting-recipes:
       - 'g  '
     results:
       'name_tag': 1
-  crossbow_dispenser: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'crossbow': 'x'
-      'cobblestone': 'c'
-      'redstone': 'r'
-    shape:
-      - 'ccc'
-      - 'cxc'
-      - 'crc'
-    results:
-      'dispenser': 1
+  # crossbow_dispenser: #TODO: Doesn't work #BUG: CraftBook doesn't seem to know how to handle crossbows, and treats it like an empty space.
+  #   type: shaped
+  #   ingredients:
+  #     'crossbow': 'x'
+  #     'cobblestone': 'c'
+  #     'redstone': 'r'
+  #   shape:
+  #     - 'ccc'
+  #     - 'cxc'
+  #     - 'crc'
+  #   results:
+  #     'dispenser': 1
   # end_portal_frame: # Unbreakable, so not good for players to be able to place.
   #   type: shaped
   #   ingredients:
