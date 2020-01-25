@@ -186,6 +186,12 @@ crafting-recipes:
       'glowstone': 1
     results:
       'glowstone_dust': 4
+  extract_clay_ball:
+    type: shapeless
+    ingredients:
+      'clay': 1
+    results:
+      'clay_ball': 4
   extract_brown_mushroom:
     type: shapeless
     ingredients:
