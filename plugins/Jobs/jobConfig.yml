@@ -518,7 +518,7 @@ Jobs:
   Miner:
     fullname: Miner
     shortname: M
-    description: §7Earns money mining minerals and ores.
+    description: §7Paid for breaking pick-blocks with a pickaxe.
     ChatColour: DARK_GRAY
     chat-display: full
     max-level: 200
@@ -551,6 +551,738 @@ Jobs:
         points: 0.25
         experience: 0.5
     Break:
+      obsidian:
+        income: 5
+        points: 5
+        experience: 5
+      ender_chest:
+        income: 4
+        points: 4
+        experience: 4
+      anvil:
+        income: 3
+        points: 3
+        experience: 3
+      chipped_anvil:
+        income: 3
+        points: 3
+        experience: 3
+      damaged_anvil:
+        income: 3
+        points: 3
+        experience: 3
+      coal_block:
+        income: 2
+        points: 2
+        experience: 2
+      diamond_block:
+        income: 3
+        points: 3
+        experience: 3
+      emerald_block:
+        income: 3
+        points: 3
+        experience: 3
+      iron_block:
+        income: 2
+        points: 2
+        experience: 2
+      redstone_block:
+        income: 1
+        points: 1
+        experience: 1
+      enchanting_table:
+        income: 4
+        points: 4
+        experience: 4
+      iron_bars:
+        income: 1
+        points: 1
+        experience: 1
+      iron_door:
+        income: 1.5
+        points: 1.5
+        experience: 1
+      iron_trapdoor:
+        income: 1.5
+        points: 1.5
+        experience: 1
+      spawner:
+        income: 50
+        points: 50
+        experience: 50
+      dispenser:
+        income: 3
+        points: 3
+        experience: 3
+      dropper:
+        income: 3
+        points: 3
+        experience: 3
+      furnace:
+        income: 2
+        points: 2
+        experience: 2
+      gold_block:
+        income: 2
+        points: 2
+        experience: 2
+      coal_ore:
+        income: 3
+        points: 2
+        experience: 2
+      diamond_ore:
+        income: 10
+        points: 10
+        experience: 10
+      emerald_ore:
+        income: 15
+        points: 15
+        experience: 30
+      end_stone:
+        income: 2
+        points: 2
+        experience: 2
+      end_stone_brick_wall:
+        income: 2
+        points: 2
+        experience: 2
+      end_stone_brick_stairs:
+        income: 4
+        points: 4
+        experience: 4
+      gold_ore:
+        income: 5
+        points: 4
+        experience: 2
+      hopper:
+        income: 3
+        points: 3
+        experience: 3
+      iron_ore:
+        income: 3.5
+        points: 3
+        experience: 2
+      lapis_block:
+        income: 3
+        points: 3
+        experience: 3
+      lapis_ore:
+        income: 7.5
+        points: 6
+        experience: 2
+      nether_quartz_ore:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      redstone_ore:
+        income: 2.5
+        points: 2
+        experience: 2
+      bone_block:
+        income: 2.5
+        points: 2
+        experience: 2
+      brick_stairs:
+        income: 2
+        points: 2
+        experience: 2
+      bricks:
+        income: 2
+        points: 2
+        experience: 2
+      cobblestone:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cobblestone_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cobblestone_wall:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      mossy_cobblestone:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      mossy_cobblestone_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      mossy_cobblestone_wall:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      nether_bricks:
+        income: 1.0
+        points: 1
+        experience: 1.0
+      nether_brick_stairs:
+        income: 3
+        points: 3
+        experience: 3
+      nether_brick_fence:
+        income: 1
+        points: 1
+        experience: 1
+      nether_brick_wall:
+        income: 1
+        points: 1
+        experience: 1
+      red_nether_bricks:
+        income: 1.0
+        points: 1
+        experience: 1.0
+      red_nether_brick_stairs:
+        income: 3
+        points: 3
+        experience: 3
+      red_nether_brick_wall:
+        income: 1
+        points: 1
+        experience: 1
+      stone_slab:
+        income: 1
+        points: 1
+        experience: 1
+      smooth_stone_slab:
+        income: 1
+        points: 1
+        experience: 1
+      cobblestone_slab:
+        income: 1
+        points: 1
+        experience: 1
+      mossy_cobblestone_slab:
+        income: 1
+        points: 1
+        experience: 1
+      stone_brick_slab:
+        income: 1
+        points: 1
+        experience: 1
+      mossy_stone_brick_slab:
+        income: 1
+        points: 1
+        experience: 1
+      andesite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      polished_andesite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      diorite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      polished_diorite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      granite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      polished_granite_slab:
+        income: 1
+        points: 1
+        experience: 1
+      sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      cut_sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      smooth_sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      red_sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      cut_red_sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      smooth_red_sandstone_slab:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      brick_slab:
+        income: 2
+        points: 2
+        experience: 2
+      prismarine_slab:
+        income: 2
+        points: 2
+        experience: 2
+      prismarine_brick_slab:
+        income: 2
+        points: 2
+        experience: 2
+      dark_prismarine_slab:
+        income: 2
+        points: 2
+        experience: 2
+      nether_brick_slab:
+        income: 1
+        points: 1
+        experience: 1
+      red_nether_brick_slab:
+        income: 1
+        points: 1
+        experience: 1
+      quartz_slab:
+        income: 1
+        points: 1
+        experience: 1
+      smooth_quartz_slab:
+        income: 1
+        points: 1
+        experience: 1
+      purpur_slab:
+        income: 2
+        points: 2
+        experience: 2
+      end_stone_brick_slab:
+        income: 2
+        points: 2
+        experience: 2
+      white_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      orange_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      magenta_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      light_blue_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      yellow_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      lime_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      pink_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      gray_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      light_gray_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      cyan_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      purple_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      blue_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      brown_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      green_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      red_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      black_concrete:
+        income: 2
+        points: 2
+        experience: 2
+      dark_prismarine:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      dark_prismarine_stairs:
+        income: 3
+        points: 3
+        experience: 3
+      prismarine:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      prismarine_stairs:
+        income: 3
+        points: 3
+        experience: 3
+      prismarine_wall:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      prismarine_bricks:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      prismarine_brick_stairs:
+        income: 3
+        points: 3
+        experience: 3
+      andesite:
+        income: 1
+        points: 1
+        experience: 1
+      andesite_wall:
+        income: 1
+        points: 1
+        experience: 1
+      andesite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1    
+      polished_andesite:
+        income: 1
+        points: 1
+        experience: 1
+      polished_andesite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      diorite:
+        income: 1
+        points: 1
+        experience: 1
+      diorite_wall:
+        income: 1
+        points: 1
+        experience: 1
+      diorite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1    
+      polished_diorite:
+        income: 1
+        points: 1
+        experience: 1
+      polished_diorite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      granite:
+        income: 1
+        points: 1
+        experience: 1
+      granite_wall:
+        income: 1
+        points: 1
+        experience: 1
+      granite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1    
+      polished_granite:
+        income: 1
+        points: 1
+        experience: 1
+      polished_granite_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      stone:
+        income: 1
+        points: 1
+        experience: 1
+      stone_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      smooth_stone:
+        income: 1
+        points: 1
+        experience: 1
+      stone_bricks:
+        income: 1
+        points: 1
+        experience: 1
+      stone_brick_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      stone_brick_wall:
+        income: 1
+        points: 1
+        experience: 1
+      cracked_stone_bricks:
+        income: 1
+        points: 1
+        experience: 1
+      mossy_stone_bricks:
+        income: 1
+        points: 1
+        experience: 1
+      mossy_stone_brick_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      mossy_stone_brick_wall:
+        income: 1
+        points: 1
+        experience: 1
+      chiseled_stone_bricks:
+        income: 1
+        points: 1
+        experience: 1
+      white_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      orange_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      magenta_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      light_blue_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      yellow_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      lime_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      pink_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      gray_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      light_gray_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      cyan_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      purple_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      blue_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      brown_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      green_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      red_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      black_glazed_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      white_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      orange_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      magenta_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      light_blue_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      yellow_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      lime_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      pink_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      gray_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      light_gray_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      cyan_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      purple_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      blue_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      brown_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      green_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      red_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      black_terracotta:
+        income: 1
+        points: 1
+        experience: 1
+      quartz_block:
+        income: 1
+        points: 1
+        experience: 1
+      quartz_stairs:
+        income: 1.25
+        points: 1.25
+        experience: 1
+      chiseled_quartz_block:
+        income: 1
+        points: 1
+        experience: 1
+      quartz_pillar:
+        income: 1
+        points: 1
+        experience: 1
+      smooth_quartz:
+        income: 1
+        points: 1
+        experience: 1
+      smooth_quartz_stairs:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      sandstone_stairs:
+        income: 0.2
+        points: 0.2
+        experience: 0.25
+      sandstone_wall:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      chiseled_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      cut_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      smooth_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      smooth_sandstone_stairs:
+        income: 0.2
+        points: 0.2
+        experience: 0.25
+      red_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      red_sandstone_wall:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      red_sandstone_stairs:
+        income: 0.2
+        points: 0.2
+        experience: 0.25
+      cut_red_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      chiseled_red_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      smooth_red_sandstone:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      smooth_red_sandstone_stairs:
+        income: 0.2
+        points: 0.2
+        experience: 0.25
+      ice:
+        income: 0.15
+        points: 0.15
+        experience: 0.2
+      packed_ice:
+        income: 0.2
+        points: 0.2
+        experience: 0.2
+      blue_ice:
+        income: 0.25
+        points: 0.25
+        experience: 0.25
+      magma_block:
+        income: 0.25
+        points: 0.25
+        experience: 0.25
+      netherrack:
+        income: 0.25
+        points: 0.25
+        experience: 0.25
       tube_coral_block:
         income: 2
         points: 2
@@ -571,115 +1303,211 @@ Jobs:
         income: 2
         points: 2
         experience: 2
-      end_stone:
+      purpur_block:
         income: 2
         points: 2
         experience: 2
-      andesite:
-        income: 1
-        points: 1
-        experience: 1
-      stone:
-        income: 1
-        points: 1
-        experience: 1
-      granite:
-        income: 1
-        points: 1
-        experience: 1
-      diorite:
-        income: 1
-        points: 1
-        experience: 1
-      sandstone:
-        income: 0.15
-        points: 0.15
-        experience: 0.2
-      chiseled_sandstone:
-        income: 0.15
-        points: 0.15
-        experience: 0.2
-      cut_sandstone:
-        income: 0.15
-        points: 0.15
-        experience: 0.2
-      coal_ore:
-        income: 3
+      purpur_pillar:
+        income: 2
         points: 2
         experience: 2
-      redstone_ore:
+      purpur_stairs:
         income: 2.5
+        points: 2.5
+        experience: 2.5
+      glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      white_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      orange_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      magenta_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      light_blue_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      yellow_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      lime_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      pink_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      gray_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      light_gray_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      cyan_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      purple_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      blue_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      brown_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      green_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      red_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      black_stained_glass:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      white_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      orange_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      magenta_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      light_blue_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      yellow_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      lime_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      pink_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      gray_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      light_gray_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      cyan_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      purple_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      blue_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      brown_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      green_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      red_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      black_stained_glass_pane:
+        income: 1.5
+        points: 1.5
+        experience: 2
+      rail:
+        income: 1
+        points: 1
+        experience: 1
+      activator_rail:
+        income: 1
+        points: 1
+        experience: 1
+      detector_rail:
+        income: 1
+        points: 1
+        experience: 1
+      powered_rail:
+        income: 1
+        points: 1
+        experience: 1
+      stone_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      heavy_weighted_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      light_weighted_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      stone_button:
+        income: 1
+        points: 1
+        experience: 1
+      blast_furnace:
+        income: 2
         points: 2
         experience: 2
-      iron_ore:
-        income: 3.5
-        points: 3
+      brewing_stand:
+        income: 2
+        points: 2
         experience: 2
-      gold_ore:
-        income: 5
-        points: 4
+      cauldron:
+        income: 2
+        points: 2
         experience: 2
-      lapis_ore:
-        income: 7.5
-        points: 6
-        experience: 2
-      diamond_ore:
-        income: 10
-        points: 10
-        experience: 10
-      emerald_ore:
-        income: 15
-        points: 15
-        experience: 30
-      nether_quartz_ore:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      obsidian:
-        income: 5
-        points: 5
-        experience: 5
-      cobblestone_wall:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      mossy_cobblestone_wall:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      nether_bricks:
-        income: 1.0
-        points: 1
-        experience: 1.0
-      nether_brick_stairs:
+      stonecutter:
         income: 3
         points: 3
         experience: 3
-      nether_brick_fence:
-        income: 1
-        points: 1
-        experience: 1
-      netherrack:
-        income: 0.25
-        points: 0.25
-        experience: 0.25
-      prismarine:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      prismarine_bricks:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      dark_prismarine:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
+      smoker:
+        income: 3
+        points: 3
+        experience: 3
+      grindstone:
+        income: 3
+        points: 3
+        experience: 3
     Place:
-      rail:
-        income: 2.0
-        points: 2.0
-        experience: 2.0
       iron_ore:
         income: -5.0
         points: -5
