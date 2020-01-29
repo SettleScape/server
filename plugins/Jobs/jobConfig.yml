@@ -704,7 +704,7 @@ Jobs:
   Builder:
     fullname: Builder
     shortname: U
-    description: §7Earns money for building structures.
+    description: §7Paid for placing things.
     ChatColour: RED
     chat-display: full
     max-level: 200
@@ -1715,10 +1715,6 @@ Jobs:
         income: 1.5
         points: 1.5
         experience: 2
-      redstone_lamp:
-        income: 1.0
-        points: 1.0
-        experience: 2
       mushroom_stem:
         income: 0.75
         points: 0.75
@@ -2151,6 +2147,190 @@ Jobs:
         income: 2.5
         points: 2.5
         experience: 2
+      rail:
+        income: 1
+        points: 1
+        experience: 1
+      activator_rail:
+        income: 1
+        points: 1
+        experience: 1
+      detector_rail:
+        income: 1
+        points: 1
+        experience: 1
+      powered_rail:
+        income: 1
+        points: 1
+        experience: 1
+      lever:
+        income: 1
+        points: 1
+        experience: 1
+      stone_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      heavy_weighted_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      light_weighted_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      oak_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      spruce_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      birch_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      jungle_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      acacia_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      dark_oak_pressure_plate:
+        income: 1
+        points: 1
+        experience: 1
+      stone_button:
+        income: 1
+        points: 1
+        experience: 1
+      oak_button:
+        income: 1
+        points: 1
+        experience: 1
+      spruce_button:
+        income: 1
+        points: 1
+        experience: 1
+      birch_button:
+        income: 1
+        points: 1
+        experience: 1
+      jungle_button:
+        income: 1
+        points: 1
+        experience: 1
+      acacia_button:
+        income: 1
+        points: 1
+        experience: 1
+      dark_oak_button:
+        income: 1
+        points: 1
+        experience: 1
+      spawner:
+        income: 50
+        points: 50
+        experience: 50
+      dispenser:
+        income: 2
+        points: 2
+        experience: 2
+      dropper:
+        income: 2
+        points: 2
+        experience: 2
+      note_block:
+        income: 3
+        points: 3
+        experience: 3
+      observer:
+        income: 2
+        points: 2
+        experience: 2
+      piston:
+        income: 2
+        points: 2
+        experience: 2
+      sticky_piston:
+        income: 2
+        points: 2
+        experience: 2
+      redstone_wire:
+        income: 0.25
+        points: 0.25
+        experience: 0.25
+      tripwire_hook:
+        income: 1
+        points: 1
+        experience: 1
+      repeater:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      comparator:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      redstone_torch:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      redstone_wall_torch:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      daylight_detector:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      redstone_lamp:
+        income: 1
+        points: 1
+        experience: 1
+      torch:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      wall_torch:
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      lantern:
+        income: 0.75
+        points: 0.75
+        experience: 0.75
+      furnace:
+        income: 2
+        points: 2
+        experience: 2
+      blast_furnace:
+        income: 2
+        points: 2
+        experience: 2
+      brewing_stand:
+        income: 2
+        points: 2
+        experience: 2
+      cauldron:
+        income: 2
+        points: 2
+        experience: 2
+      stonecutter:
+        income: 3
+        points: 3
+        experience: 3
+      smoker:
+        income: 3
+        points: 3
+        experience: 3
+      grindstone:
+        income: 3
+        points: 3
+        experience: 3
     Kill:
       Player:
         income: 7.5
