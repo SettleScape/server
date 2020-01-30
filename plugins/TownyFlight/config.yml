@@ -8,23 +8,23 @@ pluginPrefix: ''
 
 language:
   # Message shown when flight activated.
-  flightOnMsg: §6Set fly mode §cenabled§6. §r
+  flightOnMsg: ?6Set fly mode ?cenabled?6. ?r
   # Message shown when flight de-activated.
-  flightOffMsg: §6Set fly mode §cdisabled§6. §r
+  flightOffMsg: ?6Set fly mode ?cdisabled?6. ?r
   # Message shown when player lacks a town.
-  noTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
+  noTownMsg: ?6Flight is ?cdisabled?6 in the Wilderness. ?r
   # Message shown when flight cannot be turned on.
-  notInTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
+  notInTownMsg: ?6Flight is ?cdisabled?6 in the Wilderness. ?r
   # Message shown when a player has flight taken away.
-  flightDeactivatedMsg: §6Entering §cWilderness§6; §r
+  flightDeactivatedMsg: ?6Entering ?cWilderness?6; ?r
   # Message shown when a player has flight taken away because of PVP.
-  flightDeactivatedPVPMsg: §6Entering §cPVP§6; §r
+  flightDeactivatedPVPMsg: ?6Entering ?cPVP?6; ?r
   # Message shown when a player has flight taken away by console.
-  flightDeactivatedConsoleMsg: §cCommand§6 issued; §r
+  flightDeactivatedConsoleMsg: ?cCommand?6 issued; ?r
   # Message shown when a player lacks a permission node.
-  noPermission: '§4Flight requires the Donor rank, which you can get here: §9Patreon.com/settlescape§4.&r'
+  noPermission: '?4Flight requires the Donor rank, which you can get here: ?9Patreon.com/settlescape?4.&r'
   # Message shown when war is active and flight is disallowed.
-  notDuringWar: §6Flight is §cdisabled§6 during wars. §r
+  notDuringWar: ?6Flight is ?cdisabled?6 during wars. ?r
 #################
 #    Options    #
 #################
