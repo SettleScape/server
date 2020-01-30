@@ -13,7 +13,7 @@ Dynmap-WorldGuard  CUSTOM    2019-11-27  2020-01-11  https://github.com/webbukki
 EditableSign       7.0.4     2019-08-16  2020-01-12  https://spigotmc.org/resources/editablesign.2502/updates
 EssentialsX        2.17.1    2019-07-30  2020-01-12  https://github.com/EssentialsX/Essentials/releases
 Group Manager      0.2.0     2019-04-28  2020-01-12  https://github.com/GroupManager/GroupManager/releases
-Jobs               4.15.2    2020-01-06  2020-01-12  https://spigotmc.org/resources/jobs-reborn.4216/updates
+Jobs               4.15.4    2020-01-29  2020-01-29  https://spigotmc.org/resources/jobs-reborn.4216/updates
 mcMMO              2.1.114   2020-01-27  2020-01-29  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
 Mineable Spawners  2.0.8     2019-08-15  2020-01-12  https://spigotmc.org/resources/mineablespawners-1-13-1-14-silkspawners-with-extras.59921/updates
 Modern LWC         2.1.5     2019-07-17  2020-01-12  https://spigotmc.org/resources/modern-lwc-continuation-of-lwc.2162/updates

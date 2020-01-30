@@ -73,6 +73,9 @@ Optimizations:
     # By setting this to true, Jobs plugin will be disabled in given worlds
     # Only commands can be performed from disabled worlds with jobs.disabledworld.commands permission node
     Use: false
+    # If true, will changes the list behaviour, so if a world is added to list
+    # the payments will only works in the given worlds.
+    UseAsWhiteList: false
     List:
     - world
   Explore:
