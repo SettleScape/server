@@ -26,6 +26,7 @@ ShopChest          1.13-SS   2020-01-03  2020-01-12  https://ci.codemc.io/job/Ep
 Towny              0.95.2.12 2020-01-26  2020-01-29  https://github.com/TownyAdvanced/Towny/releases
 TownyChat          0.65      2019-12-16  2020-01-20  https://github.com/TownyAdvanced/TownyChat/releases
 TownyNameUpdater   4.0       2019-08-17  2020-01-20  https://github.com/TownyAdvanced/TownyNameUpdater
+TownyFlight        1.5.5     2020-01-22  2020-01-29  https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.5.8     2019-07-23  2020-01-12  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.2     2019-04-28  2020-01-12  https://dev.bukkit.org/projects/vault/files
 WorldEdit          7.0.1     2019-08-12  2020-01-12  https://dev.bukkit.org/projects/worldedit/files
