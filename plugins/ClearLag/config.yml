@@ -8,10 +8,12 @@
 #--------------------------------------------------------------------#
 #          All possible mob names: https://goo.gl/cch8YK             #
 #--------------------------------------------------------------------#
-config-version: 16
+config-version: 17
 
 # -- 'use-internal-tps' Should clearlag just use the calculated internal TPS? (Improves accuracy)
+# -- 'language' Clearlag supports multiple languages (English, Spanish, Japanese) translated by the community
 settings:
+  language: English
   auto-update: true
   enable-api: true
   use-internal-tps: true
@@ -24,6 +26,21 @@ global-broadcasts:
   enabled: true
   use-permission-for-broadcasts: false
   permission: bukkit.broadcast
+
+#Monitors your server's main thread for locking/freezing. Helps figure out what's causing lag-spikes
+# NOTE: This will outprint mostly just stacktraces. It's up to YOU to interpret the stacktrace
+# NOTE: (!Important!) Clearlag will print EVERYTHING to your Spigot/Bukkit server logs!
+# NOTE: A large 'Garbage collection time' generally means the spike was caused by the Garbage collector (Memory issue basically..)
+# -- 'enabled' Should this be enabled (Prints data to your logs, not ingame chat)
+# -- 'min-elapsed-time' How long (IN MILLISECONDS) of a server-tick constitutes a freeze/lock? I don't recommend going under ~80
+# -- 'check-interval' How often (IN MILLISECONDS) should the server be checked? Lower the number, more accurate the timings
+# -- 'follow-stack' Should Clearlag keep printing the stacktrace every time it changes (Can be very spammy)?
+# Help-> https://dev.bukkit.org/projects/clearlagg/pages/finding-the-cause-of-lag-spikes
+lag-spike-helper:
+  enabled: false
+  min-elapsed-time: 500
+  check-interval: 100
+  follow-stack: true
 
 #Limits the amount of item transfers for all the hoppers in a single chunk
 # -- 'transfer-limit' How many transfers per check interval until the hopper should be disabled
@@ -74,7 +91,7 @@ player-speed-limiter:
   fly-max-speed: 0.75
 
 #Set the age of specific items when they're first spawned so they naturally despawn faster, or slower then others
-#Recommended for servers with a lot of item-entities conisting mostly of useless items (Such as stone)
+#Recommended for servers with a lot of item-entities consisting mostly of useless items (Such as stone)
 #Material list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 # -- 'items' Lists the material names of the entities with their spawn-age (In seconds)
 item-spawn-age-setter:
@@ -234,8 +251,9 @@ kill-mobs:
     - Wolf
     - ARMOR_STAND
     - Horse
+    - Zombie hasName
 #  - Pig !name="Test" <- This entity will filtered if the name does NOT equal "Test"
-    - Zombie hasName # <- This entity will be filtered if it HAS a name
+#  - Zombie hasName <- This entity will be filtered if it HAS a name
 
 #This nerfs mob-spawners (Natural and player-made)
 #-------------------------------------------------
@@ -267,6 +285,8 @@ item-merger:
 #
 # -- 'remove-entities' lists what entities should be REMOVED on removal
 # -- 'warnings' list warnings to be given out at specified times
+# -- 'item-filter' What ground-items should NOT be removed during removal
+# -- 'remove-entities' What entities SHOULD be removed during removal
 auto-removal:
   enabled: false
   broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
@@ -295,7 +315,7 @@ auto-removal:
   warnings:
     - 'time:540 msg:&4[ClearLag] &cWarning Ground items will be removed in &7+remaining &cseconds!'
 
-#What should be removed during /lagg clear
+#What should be removed during /lagg clear, nearly the same thing as auto-removal
 command-remove:
   world-filter:
   # - this_world <-This world will be ignored during removal!
@@ -349,51 +369,51 @@ limit:
 # \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/ \/
 # >    READ FOR HELP -> https://dev.bukkit.org/projects/clearlagg/pages/config-setup <- READ FOR HELP    <
 # /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\ /\
-# custom-trigger-removal:
-#   enabled: false
-#   triggers:
-#     trigger1:
-#       trigger-type: tps-trigger
-#       run-interval: 5
-#       tps-trigger: 14.0
-#       tps-recover: 19.0
-#       jobs:
-#         command-executor:
-#           commands:
-#             - 'lagg killmobs'
-#             - 'lagg clear'
-#             - 'lagg halt'
-#           recover-commands:
-#             - 'lagg halt'
-#         entity-clearer:
-#           execute-job-time: 120
-#           warnings:
-#             - 'time:60 msg:&4[ClearLag] &cEntities/drops will be purged in &7+remaining &cseconds!'
-#             - 'time:100 msg:&4[ClearLag] &cEntities/drops will be purged in &720 &cseconds!'
-#             - 'time:110 msg:&4[ClearLag] &cEntities/drops will be purged in &710 &cseconds!'
-#           world-filter:
-#           # - world <-This world will be ignored during removal
-#           removeEntities:
-#             - item
-#             - zombie !hasName
-#             - skeleton !hasName
-#             - pig !hasName
-#             - cow !hasName
-#     trigger2:
-#       trigger-type: entity-limit-trigger
-#       run-interval: 25
-#       limit: 200
-#       world-filter:
-#         # - world <-This world will be ignored during checking
-#       entity-limits:
-#         - zombie
-#         - skeleton
-#         - enderman
-#       jobs:
-#         entity-clearer:
-#           world-filter:
-#           # - world <-This world will be ignored during removal
-#           remove-entities:
-#             - zombie
-#             - skeleton
-#             - enderman
+custom-trigger-removal:
+  enabled: false
+  triggers:
+    trigger1:
+      trigger-type: tps-trigger
+      run-interval: 5
+      tps-trigger: 14.0
+      tps-recover: 19.0
+      jobs:
+        command-executor:
+          commands:
+            - 'lagg killmobs'
+            - 'lagg clear'
+            - 'lagg halt'
+          recover-commands:
+            - 'lagg halt'
+        entity-clearer:
+          execute-job-time: 120
+          warnings:
+            - 'time:60 msg:&4[ClearLag] &cEntities/drops will be purged in &7+remaining &cseconds!'
+            - 'time:100 msg:&4[ClearLag] &cEntities/drops will be purged in &720 &cseconds!'
+            - 'time:110 msg:&4[ClearLag] &cEntities/drops will be purged in &710 &cseconds!'
+          world-filter:
+          # - world <-This world will be ignored during removal
+          removeEntities:
+            - item
+            - zombie !hasName
+            - skeleton !hasName
+            - pig !hasName
+            - cow !hasName
+    trigger2:
+      trigger-type: entity-limit-trigger
+      run-interval: 25
+      limit: 200
+      world-filter:
+        # - world <-This world will be ignored during checking
+      entity-limits:
+        - zombie
+        - skeleton
+        - enderman
+      jobs:
+        entity-clearer:
+          world-filter:
+          # - world <-This world will be ignored during removal
+          remove-entities:
+            - zombie
+            - skeleton
+            - enderman

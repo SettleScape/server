@@ -1,3 +1,4 @@
+
 # A volume of 1.0 is pretty loud
 # Keep this in mind
 Sounds:
@@ -60,3 +61,7 @@ Sounds:
         Enable: true
         Volume: 2.0
         Pitch: 2.0
+    GLASS:
+        Enable: true
+        Volume: 1.0
+        Pitch: 1.0
