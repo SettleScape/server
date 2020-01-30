@@ -84,6 +84,14 @@ sets:
                 y: 65.0
                 z: 2665.0
                 label: Kuiil
+            shovel:
+                world: world
+                markup: false
+                x: 8004.0
+                icon: pin
+                y: 66.0
+                z: -2501.0
+                label: Temple of Shovel
         lines: {
             }
         layerprio: 0
