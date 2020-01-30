@@ -1,5 +1,5 @@
 # TownyFlight by LlmDl.
-Version: 1.5.4
+Version: 1.5.5
 # Prefix to messages seen in game.
 pluginPrefix: ''
 ####################
@@ -22,7 +22,7 @@ language:
   # Message shown when a player has flight taken away by console.
   flightDeactivatedConsoleMsg: §cCommand§6 issued; §r
   # Message shown when a player lacks a permission node.
-  noPermission: '§4Flight requires the Donor rank, which you can get here: §9Patreon.com/settlescape§4. &r'
+  noPermission: '§4Flight requires the Donor rank, which you can get here: §9Patreon.com/settlescape§4.&r'
   # Message shown when war is active and flight is disallowed.
   notDuringWar: §6Flight is §cdisabled§6 during wars. §r
 #################
