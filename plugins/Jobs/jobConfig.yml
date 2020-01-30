@@ -925,7 +925,7 @@ Jobs:
       andesite_stairs:
         income: 0.3125
         points: 0.3125
-        experience: 0.25    
+        experience: 0.25
       polished_andesite:
         income: 0.25
         points: 0.25
@@ -945,7 +945,7 @@ Jobs:
       diorite_stairs:
         income: 0.3125
         points: 0.3125
-        experience: 0.25    
+        experience: 0.25
       polished_diorite:
         income: 0.25
         points: 0.25
@@ -965,7 +965,7 @@ Jobs:
       granite_stairs:
         income: 0.3125
         points: 0.3125
-        experience: 0.25    
+        experience: 0.25
       polished_granite:
         income: 0.25
         points: 0.25
@@ -1882,7 +1882,7 @@ Jobs:
       andesite_stairs:
         income: 1.25
         points: 1.25
-        experience: 1    
+        experience: 1
       polished_andesite:
         income: 1
         points: 1
@@ -1902,7 +1902,7 @@ Jobs:
       diorite_stairs:
         income: 1.25
         points: 1.25
-        experience: 1    
+        experience: 1
       polished_diorite:
         income: 1
         points: 1
@@ -1922,7 +1922,7 @@ Jobs:
       granite_stairs:
         income: 1.25
         points: 1.25
-        experience: 1    
+        experience: 1
       polished_granite:
         income: 1
         points: 1
@@ -3156,10 +3156,6 @@ Jobs:
         points: 1.5
         experience: 2
       crafting_table:
-        income: 1.5
-        points: 1.5
-        experience: 2
-      furnace:
         income: 1.5
         points: 1.5
         experience: 2
@@ -4513,7 +4509,7 @@ Jobs:
         income: 7.5
         points: 7.5
         experience: 7.5
- Hunter:
+  Hunter:
     fullname: Hunter
     shortname: H
     description: §7Paid for killing animals and monsters.
