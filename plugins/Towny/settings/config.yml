@@ -905,14 +905,14 @@ resident_settings:
   # after Two months (default) of not logging in
   delete_old_residents:
     enable: 'true'
-    deleted_after_time: 90d
+    deleted_after_time: 180d
     delete_economy_account: 'false'
     # When true only residents who have no town will be deleted.
     delete_only_townless: 'false'
   # The name of the town a resident will automatically join when he first registers.
   default_town_name: ''
   # If true, players can only use beds in plots they personally own.
-  deny_bed_use: 'false'
+  deny_bed_use: 'true'
   # If true, players who join the server for the first time will cause the msg_registration message in the language files to be shown server-wide.
   is_showing_welcome_message: 'true'
  
