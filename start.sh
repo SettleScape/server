@@ -50,5 +50,9 @@ JAVA_OPTS=$(echo                           \
 | xargs)
 # echo $JAVA_OPTS && exit
 
+##BUG: TownyFlight's colors seem to get saved in a corrupted state on server restarts.  We need to reset the file before starting the server in order for it to display right.
+git checkout plugins/TownyFlight/config.yml
+
+## Start the server
 exec screen -d -m -S "Minecraft Server" \
 java $JAVA_OPTS -jar "$SERVER_JAR"
