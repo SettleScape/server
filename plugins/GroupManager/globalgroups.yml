@@ -162,8 +162,11 @@ groups:
     - +jobs.command.leave
     - +jobs.command.leaveall
     - +essentials.back.ondeath # Only applies to those who already have `/back`
-    - +essentials.fly
-    - +essentials.fly.safelogin
+    # - +essentials.fly
+    # - +essentials.fly.safelogin
+    - townyflight.command.tfly
+    - townyflight.alltowns
+
 
 # Misc
 #-------------------------------------------------------------------------------
@@ -216,6 +219,7 @@ groups:
     - essentials.god
     - essentials.fly
     - essentials.fly.safelogin
+    - townyflight.bypass
     - lwc.shownotices
     - +jobs.command.leave
     - +jobs.command.leaveall
@@ -280,6 +284,7 @@ groups:
     - essentials.god
     - essentials.fly
     - essentials.fly.safelogin
+    - townyflight.bypass
     - essentials.tp
     - essentials.tptoggle
   # - essentials.vanish
@@ -388,6 +393,7 @@ groups:
     - bukkit.command.save.enable
     - bukkit.command.save.perform
     - bukkit.command.stop
+    - townyflight.command.tfly.reload
 
 # Chat
 #-------------------------------------------------------------------------------
