@@ -75,7 +75,7 @@ Optimizations:
     Use: false
     # If true, will changes the list behaviour, so if a world is added to list
     # the payments will only works in the given worlds.
-    UseAsWhiteList: false
+    UseAsWhiteList: true
     List:
     - world
   Explore:
@@ -91,19 +91,19 @@ broadcast:
     use: false
   on-level-up:
     # Do all players get a message when someone goes up a level?
-    use: false
+    use: true
     # For what levels you want to broadcast message? Keep it at 0 if you want for all of them
     levels:
-    - 0
+    - 100
 DailyQuests:
   # Defines time in 24hour format when we want to give out new daily quests
   # Any daily quests given before reset will be invalid and new ones will be given out
   ResetTime:
-    Hour: 4
-    Minute: 0
+    Hour: 0
+    Minute: 20
   # Defines amount of skips player can do on a quest
   # This allows player to abandon current quest and get new one
-  Skips: 1
+  Skips: 0
   # The cost of the quest skip (money).
   # Default 0, disabling cost of skipping quest.
   SkipQuestCost: 0.0
@@ -138,7 +138,7 @@ enable-boosted-items-in-offhand: true
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
   # Do not disable this if you don't know what mean this option.
-  Use: true
+  Use: false
   # What items (tools) are whitelisted the player get paid, when this item has durability loss?
   # Enchantments are supported, usage:
   # itemName=ENCHANTMENT_NAME-level
@@ -310,18 +310,18 @@ ExploitProtections:
   Furnaces:
     # When enabled, players interacted furnaces will be saved into a file and will be reassigned after restart to keep giving out money
     # Players will no longer need to click on furnace to get paid from it after server restart
-    Reassign: false
+    Reassign: true
     # Defines max available furnaces each player can have to get paid from
     # This can be overridden with jobs.maxfurnaces.[amount] permission node
-    MaxDefaultAvailable: 20
+    MaxDefaultAvailable: 0
   BrewingStands:
     # When enabled, players interacted brewing stands will be saved into file and will be reassigned after restart to keep giving out money
     # Players will no longer need to click on brewing stand to get paid from it after server restart
-    Reassign: false
+    Reassign: true
     # Defines max available brewing stands each player can have to get paid from
     # Set to 0 if you want to disable this limitation
     # This can be overridden with jobs.maxbrewingstands.[amount] permission node
-    MaxDefaultAvailable: 20
+    MaxDefaultAvailable: 0
   General:
     # Enable blocks protection, like ore, from exploiting by placing and destroying same block again and again.
     # Modify restrictedBlocks.yml for blocks you want to protect
@@ -334,7 +334,7 @@ ExploitProtections:
     # All blocks will be protected X sec after player places it on ground.
     GlobalBlockTimer:
       use: true
-      timer: 3
+      timer: 1
     # Enable silk touch protection.
     # With this enabled players wont get paid for broken blocks from restrictedblocks list with silk touch tool.
     SilkTouchProtection: false
@@ -342,22 +342,22 @@ ExploitProtections:
       # This section controls how much damage player should do to monster for player to get paid
       # This prevents from killing monsters in one hit when they suffer in example fall damage
       Use: false
-      Percentage: 60
+      Percentage: 25
   # McMMO abilities
   McMMO:
     # Players will get part of money from cutting trees with treefeller ability enabled.
     # 0.2 means 20% of original price
-    TreeFellerMultiplier: 0.2
+    TreeFellerMultiplier: 0.25
     # Players will get part of money from braking blocks with gigaDrill ability enabled.
     # 0.2 means 20% of original price
-    gigaDrillMultiplier: 0.2
+    gigaDrillMultiplier: 0.50
     # Players will get part of money from braking blocks with super breaker ability enabled.
     # 0.2 means 20% of original price
-    superBreakerMultiplier: 0.2
+    superBreakerMultiplier: 0.375
   # MythicMobs plugin support
   # Disable if you having issues with it or using old version
   MythicMobs:
-    enabled: true
+    enabled: false
   Spawner:
     # Prevent slime splitting when they are from spawner
     # Protects agains exploiting as new splited slimes is treated as naturally spawned and not from spawner
@@ -377,11 +377,11 @@ use-breeder-finder: true
 # Players can leave job and return later with some level loss during that
 # You can fix players level if his job level is at max level
 old-job:
-  level-loss-percentage: 30
-  fix-at-max-level: true
+  level-loss-percentage: 20
+  fix-at-max-level: false
   # Percentage to loose when leaving job at max level
   # Only works when fix-at-max-level is set to false
-  level-loss-from-max-level: 30
+  level-loss-from-max-level: 20
 ActionBars:
   Messages:
     # When this set to true player will see action bar messages by default
@@ -503,7 +503,7 @@ PageRow:
     AmountToShow: 10
 JobsLeave:
   # Allows to confirm the /jobs leave and leaveall commands, to confirm the leave.
-  EnableConfirmation: false
+  EnableConfirmation: true
   # Specify the confirm expiry time.
   # Time in seconds.
-  ConfirmExpiryTime: 10
+  ConfirmExpiryTime: 5
