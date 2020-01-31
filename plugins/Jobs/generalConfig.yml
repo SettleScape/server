@@ -350,7 +350,7 @@ ExploitProtections:
     TreeFellerMultiplier: 0.25
     # Players will get part of money from braking blocks with gigaDrill ability enabled.
     # 0.2 means 20% of original price
-    gigaDrillMultiplier: 0.50
+    gigaDrillMultiplier: 0.5
     # Players will get part of money from braking blocks with super breaker ability enabled.
     # 0.2 means 20% of original price
     superBreakerMultiplier: 0.375
