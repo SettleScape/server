@@ -51,8 +51,11 @@ JAVA_OPTS=$(echo                           \
 # echo $JAVA_OPTS && exit
 
 ##BUG: TownyFlight's colors seem to get saved in a corrupted state on server restarts.  We need to reset the file before starting the server in order for it to display right.
-git checkout plugins/TownyFlight/config.yml
+git checkout plugins/TownyFlight/config.yml > /dev/null
 
 ## Start the server
-exec screen -d -m -S "Minecraft Server" \
+exec screen -d -m -S "SettleScape" \
 java $JAVA_OPTS -jar "$SERVER_JAR"
+##NOTE: Type `screen -r SettleScape` to attach to the SettleScape screen.
+##NOTE: Press Ctrl+A,Ctrl+D to detatch from the SettleScape screen.
+##NOTE: Type `screen -S SettleScape -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
