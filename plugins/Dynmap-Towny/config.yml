@@ -25,7 +25,7 @@ regionstyle:
   capitalicon: bighouse
   fillColorShops: '#FFFF00'
   fillColorArenas: '#FF0000'
-  fillColorEmbassies: '#7F7F7F'
+  fillColorEmbassies: '#000000'
   fillColorWilds: '#00FF00'
   boost: false
 visibleregions: []
