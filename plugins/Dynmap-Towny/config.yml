@@ -10,8 +10,8 @@ layer:
   minzoom: 0
   showShops: true
   showArenas: true
-  showEmbassies: false
-  showWilds: false
+  showEmbassies: true
+  showWilds: true
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
   <br> <b>Nation:</b> %nation% <br> <b>Mayor:</b> %playerowners% <br> <b>Resident(s):</b>
   %playermanagers% <br> <b>Flags:</b> <br> %flags% </div>
@@ -23,10 +23,10 @@ regionstyle:
   fillColor: '#7F7F7F'
   fillOpacity: 0.33
   capitalicon: bighouse
-  fillColorShops: '#00FF00'
+  fillColorShops: '#FFFF00'
   fillColorArenas: '#FF0000'
-  fillColorEmbassies: '#0000FF'
-  fillColorWilds: '#7F7F7F'
+  fillColorEmbassies: '#7F7F7F'
+  fillColorWilds: '#00FF00'
   boost: false
 visibleregions: []
 hiddenregions: []
