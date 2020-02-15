@@ -478,6 +478,8 @@ JobsGUI:
   # This option click type depend from SwitcheButtons option, if true using the left button and inversely.
   # Don't forget to adjust locale file
   UseInversedClickToLeave: false
+  # Allows players to join a specified job via GUI.
+  DisableJoiningJobThroughGui: false
   # Do you want to show the action names in GUI?
   ShowActionNames: true
   # Defines size in rows of GUI
@@ -494,16 +496,22 @@ JobsGUI:
     Material: BOOK
   Filler:
     Material: GRAY_STAINED_GLASS_PANE
-PageRow:
-  JobsTop:
-    # Defines amount of players to be shown in one page for /jobs top & /jobs gtop
-    AmountToShow: 15
-  Placeholders:
-    # Defines amount of placeholders to be shown in one page for /jobs placeholders
-    AmountToShow: 10
-JobsLeave:
-  # Allows to confirm the /jobs leave and leaveall commands, to confirm the leave.
-  EnableConfirmation: true
-  # Specify the confirm expiry time.
-  # Time in seconds.
-  ConfirmExpiryTime: 5
+Commands:
+  # Do you want to filter the hidden player names from tab-complete?
+  FilterHiddenPlayersInTabComplete: false
+  PageRow:
+    JobsTop:
+      # Defines amount of players to be shown in one page for /jobs top & /jobs gtop
+      AmountToShow: 15
+    Placeholders:
+      # Defines amount of placeholders to be shown in one page for /jobs placeholders
+      AmountToShow: 10
+  JobsLeave:
+    # Defines how job leave works.
+    # If this is true, then the user must have another permission to leave the job. jobs.command.leave.jobName
+    UsePerPermissionLeave: false
+    # Allows to confirm the /jobs leave and leaveall commands, to confirm the leave.
+    EnableConfirmation: false
+    # Specify the confirm expiry time.
+    # Time in seconds.
+    ConfirmExpiryTime: 5
