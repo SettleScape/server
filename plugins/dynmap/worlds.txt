@@ -25,7 +25,7 @@ worlds:
     #     image-format: default
     #     perspective: iso_SE_60_lowres
     #     shader: stdtexture
-    #     lighting: shadows-smooth
+    #     lighting: nightandday-smooth
     #     background: "#3F3F3F"
     #     mapzoomin: 0
     #     mapzoomout: 0
