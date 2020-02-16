@@ -130,7 +130,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: stone
+      Item: iron_pickaxe
     TNTBreak:
       chipped_anvil:
         income: 0.75
@@ -2063,7 +2063,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: bricks
+      Item: brick_stairs
     Place:
       oak_log:
         income: 1.75
@@ -4299,7 +4299,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: blaze_powder
+      Item: experience_bottle
     Brew:
       nether_wart:
         income: 6.0
@@ -4526,7 +4526,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: hay_block
+      Item: wheat
     Tame:
       Wolf:
         income: 5.0
@@ -4890,7 +4890,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: iron_sword
+      Item: crossbow
     Break:
       cobweb:
         income: 5.0
@@ -5175,7 +5175,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: leather_boots
+      Item: compass
     Explore:
       '1':
         income: 3.5
