@@ -381,7 +381,7 @@ player-sort-permission-nodes:
   - bukkit.command.op
 
 # Set sidebaropened: 'true' to pin menu sidebar opened permanently, 'pinned' to default the sidebar to pinned, but allow it to unpin
-sidebaropened: false
+sidebaropened: pinned
 
 # Customized HTTP response headers - add 'id: value' pairs to all HTTP response headers (internal web server only)
 #http-response-headers:
@@ -399,7 +399,7 @@ quitmessage: "&7* &r{PLAYER}&7 has left the game.&r"
 
 spammessage: "You may only chat once every %interval% seconds."
 # format for messages from web: %playername% substitutes sender ID (typically IP), %message% includes text
-webmsgformat: "&color;2[WEB] %playername%: &color;f%message%"
+webmsgformat: ""
 
 # Control whether layer control is presented on the UI (default is true)
 showlayercontrol: true

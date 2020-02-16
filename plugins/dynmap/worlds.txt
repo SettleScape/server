@@ -59,7 +59,7 @@ worlds:
     enabled: false
     bigworld: false
     tileupdatedelay: 20
-    extrazoomout: 6
+    extrazoomout: 4
     maps:
     # -   class: org.dynmap.hdmap.HDMap
     #     title: "Cross-Section"
@@ -87,32 +87,32 @@ worlds:
     hidestyle: air
 -   name: world_the_end
     title: The End
-    enabled: false
-    bigworld: false
+    enabled: true
+    bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 6
+    extrazoomout: 5
     maps:
-    # -   class: org.dynmap.hdmap.HDMap
-    #     title: "Surface"
-    #     name: the_end
-    #     prefix: the_end
-    #     image-format: default
-    #     perspective: iso_S_90_lowres
-    #     shader: stdtexture
-    #     lighting: night-smooth
-    #     background: "#110d18"
-    #     mapzoomin: 0
-    #     mapzoomout: 0
-    #     boostzoom: 1
+    -   class: org.dynmap.hdmap.HDMap
+        title: "Surface"
+        name: the_end
+        prefix: the_end
+        image-format: default
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: brightnight-smooth
+        background: "#110d18"
+        mapzoomin: 0
+        mapzoomout: 0
+        boostzoom: 1
     protected: false
     showborder: true
     sendposition: false
     sendhealth: false
     visibilitylimits:
-      - x0: -29696
-        z0: -32768
-        x1: 35840
-        z1: 32768
+      - x0: -16384
+        z0: -16384
+        x1: 16384
+        z1: 16384
     hiddenlimits: [
         ]
     hidestyle: air

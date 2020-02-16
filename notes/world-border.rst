@@ -16,7 +16,7 @@ Current world borders
 
 **The End**
 
-* `worldborder set 32768`
+* `worldborder set 16384`
 * `worldborder center 0 0`
 
 Synergistic settings
