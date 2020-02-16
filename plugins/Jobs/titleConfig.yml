@@ -34,13 +34,3 @@ Titles:
     ShortName: Mst
     ChatColour: GOLD
     levelReq: 100
-  Grandmaster:
-    Name: Grandmaster
-    ShortName: Gmr
-    ChatColour: WHITE
-    levelReq: 150
-  Grandmaster:
-    Name: Legend
-    ShortName: Leg
-    ChatColour: BLACK
-    levelReq: 200
