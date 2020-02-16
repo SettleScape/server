@@ -1,5 +1,12 @@
 # 
 # AuctionHouse
+announce:
+  chat:
+    listings: true
+    purchases: true
+  action_bar:
+    listings: false
+    purchases: false
 blacklist:
   '0':
     item: minecraft:bedrock
@@ -30,6 +37,7 @@ decimal_format: '#,##0.00'
 strict: false
 chatHook: true
 sounds:
+  sold: block.note_block.chime
   click: ui.button.click
   fail: entity.villager.no
   drop: entity.player.burp
@@ -59,6 +67,9 @@ log:
   purged: true
 disabled-worlds: []
 auction:
+  action_bar: false
+  showSeconds: true
+  spawnerInfo: true
   listingCooldown: 0d0h0m0s
   minSellPrice: 0.0
   maxSalesTax: 100000.0
@@ -90,4 +101,4 @@ triggers:
   sign: '[AuctionHouse]'
   block_name: Auction House
   entity_name: Auction House
-configVersion: 22
+configVersion: 25

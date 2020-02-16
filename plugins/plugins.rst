@@ -2,7 +2,7 @@
 =================  ========  ==========  ==========  ===
 Plugin             Version   Released    Checked     URL
 =================  ========  ==========  ==========  ===
-AuctionHouse       1.9.2     2020-01-10  2020-01-12  https://spigotmc.org/resources/auctionhouse.61836/updates
+AuctionHouse       2.0.8     2020-02-09  2020-02-16  https://spigotmc.org/resources/auctionhouse.61836/updates
 ClearLagg          ?.?.?     ????-??-??  ????-??-??  (autoupdates)
 CommandLog         1.2       2016-07-09  2020-01-12  https://spigotmc.org/resources/command-log-reborn.21176/updates
 CoreProtect        2.17.5    2019-05-31  2020-02-02  https://spigotmc.org/resources/coreprotect.8631/updates
