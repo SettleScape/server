@@ -13,25 +13,62 @@
 
 Jobs:
   ################################################################################
-  Woodcutter:
-    fullname: Woodcutter
-    shortname: W
-    description: §7Earns money felling and planting trees
-    ChatColour: GREEN
+  None:
+    fullname: None
+    shortname: /
+    ChatColour: WHITE
+    chat-display: none
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
+  ################################################################################
+  Landscaper:
+    fullname: Landscaper
+    shortname: L
+    description: §7Paid for breaking shovel-blocks with a shovel and axe-blocks with an axe.
+    ChatColour: YELLOW
     chat-display: full
     max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Id: 258
-      Data: 2
+      Item: grass_block
     Break:
+      # Digger
+      red_sand:
+        income: 1
+        points: 1
+        experience: 1
+      coarse_dirt:
+        income: 1
+        points: 1
+        experience: 1
+      dirt:
+        income: 0.25
+        points: 0.25
+        experience: 0.25
+      grass_block:
+        income: 0.3
+        points: 0.3
+        experience: 0.3
+      gravel:
+        income: 1
+        points: 1
+        experience: 1.0
+      sand:
+        income: 0.4
+        points: 0.4
+        experience: 0.5
+      clay:
+        income: 1
+        points: 1
+        experience: 1.0
+      # Woodcutter
       oak_log:
         income: 1.0
         points: 1.0
@@ -84,21 +121,18 @@ Jobs:
   Miner:
     fullname: Miner
     shortname: M
-    description: §7Paid for breaking pick-blocks with a pickaxe.
-    ChatColour: DARK_GRAY
+    description: §7Paid for breaking pick-blocks with a pick.
+    ChatColour: GRAY
     chat-display: full
     max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Id: 257
-      Data: 0
+      Item: stone
     TNTBreak:
       chipped_anvil:
         income: 0.75
@@ -2017,21 +2051,19 @@ Jobs:
   ################################################################################
   Builder:
     fullname: Builder
-    shortname: U
+    shortname: B
     description: §7Paid for placing things.
-    ChatColour: RED
+    ChatColour: LIGHT_PURPLE
     chat-display: full
     max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Item: brick_stairs
+      Item: brick_block
     Place:
       oak_log:
         income: 1.75
@@ -3642,740 +3674,17 @@ Jobs:
         points: 3
         experience: 3
   ################################################################################
-  Excavator:
-    fullname: Excavator
-    shortname: E
-    description: §7Earns money for terraforming the world.
-    ChatColour: DARK_AQUA
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Id: 256
-      Data: 0
-    Break:
-      red_sand:
-        income: 1
-        points: 1
-        experience: 1
-      coarse_dirt:
-        income: 1
-        points: 1
-        experience: 1
-      dirt:
-        income: 0.25
-        points: 0.25
-        experience: 0.25
-      grass_block:
-        income: 0.3
-        points: 0.3
-        experience: 0.3
-      gravel:
-        income: 1
-        points: 1
-        experience: 1.0
-      sand:
-        income: 0.4
-        points: 0.4
-        experience: 0.5
-      clay:
-        income: 1
-        points: 1
-        experience: 1.0
-  ################################################################################
-  Farmer:
-    fullname: Herbalist
-    shortname: H
-    description: §7Earns money farming crops.
-    ChatColour: DARK_GREEN
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Item: iron_hoe
-    Tame:
-      Wolf:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-      Horse:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-      Parrot:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-      Ocelot:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-      Llama:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-    Breed:
-      Horse:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Sheep:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Cow:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      mushroom_cow:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Pig:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Chicken:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Wolf:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Ocelot:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Rabbit:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Llama:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Turtle:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-    Shear:
-      Red:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Orange:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Yellow:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Green:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Blue:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Navy:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Magenta:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Pink:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      White:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Light_Gray:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Black:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Brown:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Purple:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Cyan:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Gray:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      Lime:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-    Milk:
-      Cow:
-        income: 5.0
-        points: 5.0
-        experience: 5.0
-    Break:
-      tube_coral_fan:
-        income: 2
-        points: 2
-        experience: 2
-      brain_coral_fan:
-        income: 2
-        points: 2
-        experience: 2
-      bubble_coral_fan:
-        income: 2
-        points: 2
-        experience: 2
-      fire_coral_fan:
-        income: 2
-        points: 2
-        experience: 2
-      horn_coral_fan:
-        income: 2
-        points: 2
-        experience: 2
-      kelp_plant:
-        income: 1
-        points: 1
-        experience: 1
-      kelp:
-        income: 1
-        points: 1
-        experience: 1
-      seagrass:
-        income: 1
-        points: 1
-        experience: 1
-      tall_seagrass:
-        income: 1
-        points: 1
-        experience: 1
-      sea_pickle:
-        income: 1
-        points: 1
-        experience: 1
-      chorus_plant:
-        income: 1.5
-        points: 1.5
-        experience: 3.0
-      chorus_flower:
-        income: 2
-        points: 2
-        experience: 2.0
-      beetroots-3:
-        income: 1.5
-        points: 1.5
-        experience: 3.0
-      wheat-7:
-        income: 1.5
-        points: 1.5
-        experience: 3.0
-      carrots-7:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
-      potatoes-7:
-        income: 1.0
-        points: 1.0
-        experience: 1.0
-      pumpkin-7:
-        income: 0.5
-        points: 0.5
-        experience: 1.0
-      sugar_cane:
-        income: 0.2
-        points: 0.2
-        experience: 0.2
-      cocoa-2:
-        income: 3
-        points: 3
-        experience: 3.0
-      lily_pad:
-        income: 2
-        points: 2
-        experience: 2.0
-      dandelion:
-        income: 2
-        points: 2
-        experience: 2.0
-      poppy:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      blue_orchid:
-        income: 2
-        points: 2
-        experience: 2.0
-      allium:
-        income: 2
-        points: 2
-        experience: 2.0
-      azure_bluet:
-        income: 2
-        points: 2
-        experience: 2.0
-      red_tulip:
-        income: 2
-        points: 2
-        experience: 2.0
-      orange_tulip:
-        income: 2
-        points: 2
-        experience: 2.0
-      white_tulip:
-        income: 2
-        points: 2
-        experience: 2.0
-      pink_tulip:
-        income: 2
-        points: 2
-        experience: 2.0
-      oxeye_daisy:
-        income: 2
-        points: 2
-        experience: 2.0
-      brown_mushroom:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      red_mushroom:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      vine:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      cactus:
-        income: 1.5
-        points: 1.5
-        experience: 1.0
-      nether_wart:
-        income: 1
-        points: 1
-        experience: 1.0
-      pumpkin:
-        income: 0.5
-        points: 0.5
-        experience: 1.0
-      melon:
-        income: 0.5
-        points: 0.5
-        experience: 1.0
-    Place:
-      oak_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      spruce_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      birch_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      jungle_sapling:
-        income: 3
-        points: 3
-        experience: 4.0
-      acacia_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      dark_oak_sapling:
-        income: 2
-        points: 2
-        experience: 2.0
-      wheat:
-        income: 1
-        points: 1
-        experience: 1
-      potatoes:
-        income: 1
-        points: 1
-        experience: 1
-      carrots:
-        income: 1
-        points: 1
-        experience: 1
-      beetroots:
-        income: 1
-        points: 1
-        experience: 1
-      cocoa:
-        income: 1
-        points: 1
-        experience: 1
-      sugar_cane:
-        income: -1
-        points: -1
-        experience: -1
-      pumpkin_stem:
-        income: 1
-        points: 1
-        experience: 1
-      pumpkin-7:
-        income: 0.5
-        points: 0.5
-        experience: 1.0
-      melon_stem:
-        income: 1
-        points: 1
-        experience: 1
-  ################################################################################
-  Hunter:
-    fullname: Hunter
-    shortname: H
-    description: §7Paid for killing animals and monsters.
-    ChatColour: DARK_RED
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Id: 261
-      Data: 0
-    Break:
-      cobweb:
-        income: 5.0
-        points: 5
-        experience: 5.0
-    Kill:
-      bat:
-        income: 2.0
-        points: 2
-        experience: 2.0
-      cat:
-        income: 2.0
-        points: 2
-        experience: 2.0
-      chicken:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      cod:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      cow:
-        income: 6.0
-        points: 6
-        experience: 6.0
-      donkey:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      horse:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      fox:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      mooshroom:
-        income: 7.0
-        points: 7
-        experience: 7.0
-      mule:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      ocelot:
-        income: 10.0
-        points: 10
-        experience: 10.0
-      parrot:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      pig:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      rabbit:
-        income: 2.0
-        points: 2
-        experience: 2.0
-      salmon:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      sheep:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      squid:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      tropical_fish:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      turtle:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      villager:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      wandering_trader:
-        income: 10.0
-        points: 10
-        experience: 10.0
-      pufferfish:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      dolphin:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      llama:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      trader_llama:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      panda:
-        income: 4.0
-        points: 4
-        experience: 4.0
-      polar_bear:
-        income: 10.0
-        points: 10
-        experience: 5.0
-      wolf:
-        income: 10.0
-        points: 10
-        experience: 5.0
-      blaze:
-        income: 20.0
-        points: 20
-        experience: 15.0
-      cave_spider:
-        income: 20.0
-        points: 20
-        experience: 15.0
-      creeper:
-        income: 15.0
-        points: 15
-        experience: 15.0
-      drowned:
-        income: 15.0
-        points: 15
-        experience: 15.0
-      elder_guardian:
-        income: 50.0
-        points: 50
-        experience: 50.0
-      enderman:
-        income: 20.0
-        points: 20
-        experience: 15.0
-      endermite:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      ghast:
-        income: 30.0
-        points: 30
-        experience: 30.0
-      evoker:
-        income: 20.0
-        points: 20
-        experience: 20.0
-      guardian:
-        income: 25.0
-        points: 25
-        experience: 25.0
-      husk:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      magma_cube:
-        income: 1.0
-        points: 1
-        experience: 1.0
-      phantom:
-        income: 7.0
-        points: 7
-        experience: 7.0
-      pillager:
-        income: 12.0
-        points: 12
-        experience: 15.0
-      ravager:
-        income: 15.0
-        points: 15
-        experience: 15.0
-      shulker:
-        income: 7.5
-        points: 7
-        experience: 7.0
-      silverfish:
-        income: 3.0
-        points: 3
-        experience: 5.0
-      skeleton:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      skeleton_horse:
-        income: 5.0
-        points: 5
-        experience: 5.0
-      slime:
-        income: 1.0
-        points: 1
-        experience: 1.0
-      spider:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      stray:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      vex:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      vindicator:
-        income: 12.0
-        points: 12
-        experience: 15.0
-      witch:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      wither_skeleton:
-        income: 15.0
-        points: 15
-        experience: 15.0
-      wither:
-        income: 250.0
-        points: 250
-        experience: 150.0
-      ender_dragon:
-        income: 2000.0
-        points: 2000
-        experience: 2000.0
-      zombie:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      zombie_villager:
-        income: 10.0
-        points: 10
-        experience: 15.0
-      zombie_pigman:
-        income: 12.0
-        points: 12
-        experience: 12.0
-      iron_golem:
-        income: 30.0
-        points: 30
-        experience: 30.0
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
-  ################################################################################
-  Explorer:
-    fullname: Explorer
-    shortname: X
-    description: §7Earns money from exploring map.
-    ChatColour: AQUA
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Id: 301
-      Data: 0
-    Explore:
-      '1':
-        income: 3.5
-        points: 3.5
-        experience: 3.5
-      '2':
-        income: 2
-        points: 2
-        experience: 2
-      '3':
-        income: 1
-        points: 1
-        experience: 1
-      '4':
-        income: 0.5
-        points: 0.5
-        experience: 0.5
-      '5':
-        income: 0.1
-        points: 0.1
-        experience: 0.1
-  ################################################################################
   Crafter:
     fullname: Crafter
     shortname: C
-    description: §7Earns money from crafting items.
+    description: §7Paid for crafting and repairing things.
     ChatColour: GOLD
     chat-display: full
     max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
@@ -4829,61 +4138,6 @@ Jobs:
         income: 7.0
         points: 7.0
         experience: 7.0
-  ################################################################################
-  Fisherman:
-    fullname: Fisherman
-    shortname: F
-    description: §7Earns money from fishing.
-    ChatColour: BLUE
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Item: fishing_rod
-    Fish:
-      cod:
-        income: 15.0
-        points: 15.0
-        experience: 15.0
-      salmon:
-        income: 20.0
-        points: 20.0
-        experience: 25.0
-      tropical_fish:
-        income: 25.0
-        points: 25.0
-        experience: 25.0
-      pufferfish:
-        income: 25.0
-        points: 25.0
-        experience: 25.0
-  ################################################################################
-  Weaponsmith:
-    fullname: Weaponsmith
-    shortname: S
-    description: §7Earns money from crafting and repairing weapons.
-    ChatColour: GRAY
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Id: 145
-      Data: 0
-    Craft:
       wooden_sword:
         income: 1.0
         points: 1.0
@@ -4976,6 +4230,38 @@ Jobs:
         income: 20.0
         points: 20.0
         experience: 40.0
+      cake:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      pumpkin_pie:
+        income: 2.5
+        points: 2.5
+        experience: 2.5
+      bread:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      mushroom_stew:
+        income: 2
+        points: 2
+        experience: 2
+      beetroot_soup:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      rabbit_stew:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      golden_apple:
+        income: 20.0
+        points: 20.0
+        experience: 25.0
+      enchanted_golden_apple:
+        income: 200.0
+        points: 200.0
+        experience: 250.0
     Repair:
       wood_sword:
         income: 1.0
@@ -4993,33 +4279,18 @@ Jobs:
         income: 4.0
         points: 4.0
         experience: 4.0
-    Smelt:
-      iron_ingot:
-        income: 1.3
-        points: 1.3
-        experience: 2.0
-      gold_ingot:
-        income: 5.0
-        points: 5.0
-        experience: 10
-      diamond:
-        income: 7.0
-        points: 7.0
-        experience: 20
   ################################################################################
-  Brewer:
-    fullname: Brewer
-    shortname: B
-    description: §7Earns money brewing potions.
-    ChatColour: DARK_PURPLE
+  Alchemist:
+    fullname: Alchemist
+    shortname: A
+    description: §7Paid for brewing potions, smelting/cooking anything in a furnace, and enchanting things.
+    ChatColour: BLUE
     chat-display: full
     max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
@@ -5094,25 +4365,6 @@ Jobs:
         income: 12.0
         points: 12.0
         experience: 12.0
-  ################################################################################
-  Enchanter:
-    fullname: Enchanter
-    shortname: N
-    description: §7Earns money enchanting weapons.
-    ChatColour: LIGHT_PURPLE
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    maxDailyQuests: 0
-    Gui:
-      Id: 403
-      Data: 0
     Enchant:
       wood_sword:
         income: 1.5
@@ -5206,58 +4458,19 @@ Jobs:
         income: 6.0
         points: 6.0
         experience: 30.0
-  ################################################################################
-  Chef:
-    fullname: Chef
-    shortname: Chef
-    description: §7Earns money cooking food.
-    ChatColour: White
-    chat-display: full
-    max-level: 200
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    rejoinCooldown: 3600
-    Gui:
-      Id: 354
-      Data: 0
-    Craft:
-      cake:
-        income: 4.0
-        points: 4.0
-        experience: 5.0
-      pumpkin_pie:
-        income: 2.5
-        points: 2.5
-        experience: 2.5
-      bread:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      mushroom_stew:
-        income: 2
-        points: 2
-        experience: 2
-      beetroot_soup:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      rabbit_stew:
-        income: 1.5
-        points: 1.5
-        experience: 1.5
-      golden_apple:
-        income: 20.0
-        points: 20.0
-        experience: 25.0
-      enchanted_golden_apple:
-        income: 200.0
-        points: 200.0
-        experience: 250.0
     Smelt:
+      iron_ingot:
+        income: 1.3
+        points: 1.3
+        experience: 2.0
+      gold_ingot:
+        income: 5.0
+        points: 5.0
+        experience: 10
+      diamond:
+        income: 7.0
+        points: 7.0
+        experience: 20
       cooked_chicken:
         income: 1.25
         points: 1.25
@@ -5291,14 +4504,684 @@ Jobs:
         points: 1.25
         experience: 1.25
   ################################################################################
-  None:
-    fullname: None
-    shortname: /
-    ChatColour: WHITE
-    chat-display: none
-    leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-    income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
-      * ((numjobs-1)*0.05))
-    experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  Farmer:
+    fullname: Farmer
+    shortname: F
+    description: §7Paid for breaking and placing things related to agriculture. Additionally includes actions with hoes, actions with shears, milking animals, taming animals, and breeding animals.
+    ChatColour: GREEN
+    chat-display: full
+    max-level: 200
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
+    Gui:
+      Item: hay_block
+    Tame:
+      Wolf:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+      Horse:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+      Parrot:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+      Ocelot:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+      Llama:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+    Breed:
+      Horse:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Sheep:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Cow:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      mushroom_cow:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Pig:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Chicken:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Wolf:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Ocelot:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Rabbit:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Llama:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Turtle:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+    Shear:
+      Red:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Orange:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Yellow:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Green:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Blue:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Navy:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Magenta:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Pink:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      White:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Light_Gray:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Black:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Brown:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Purple:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Cyan:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Gray:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+      Lime:
+        income: 4.0
+        points: 4.0
+        experience: 5.0
+    Milk:
+      Cow:
+        income: 5.0
+        points: 5.0
+        experience: 5.0
+    Break:
+      tube_coral_fan:
+        income: 2
+        points: 2
+        experience: 2
+      brain_coral_fan:
+        income: 2
+        points: 2
+        experience: 2
+      bubble_coral_fan:
+        income: 2
+        points: 2
+        experience: 2
+      fire_coral_fan:
+        income: 2
+        points: 2
+        experience: 2
+      horn_coral_fan:
+        income: 2
+        points: 2
+        experience: 2
+      kelp_plant:
+        income: 1
+        points: 1
+        experience: 1
+      kelp:
+        income: 1
+        points: 1
+        experience: 1
+      seagrass:
+        income: 1
+        points: 1
+        experience: 1
+      tall_seagrass:
+        income: 1
+        points: 1
+        experience: 1
+      sea_pickle:
+        income: 1
+        points: 1
+        experience: 1
+      chorus_plant:
+        income: 1.5
+        points: 1.5
+        experience: 3.0
+      chorus_flower:
+        income: 2
+        points: 2
+        experience: 2.0
+      beetroots-3:
+        income: 1.5
+        points: 1.5
+        experience: 3.0
+      wheat-7:
+        income: 1.5
+        points: 1.5
+        experience: 3.0
+      carrots-7:
+        income: 1.0
+        points: 1.0
+        experience: 1.0
+      potatoes-7:
+        income: 1.0
+        points: 1.0
+        experience: 1.0
+      pumpkin-7:
+        income: 0.5
+        points: 0.5
+        experience: 1.0
+      sugar_cane:
+        income: 0.2
+        points: 0.2
+        experience: 0.2
+      cocoa-2:
+        income: 3
+        points: 3
+        experience: 3.0
+      lily_pad:
+        income: 2
+        points: 2
+        experience: 2.0
+      dandelion:
+        income: 2
+        points: 2
+        experience: 2.0
+      poppy:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      blue_orchid:
+        income: 2
+        points: 2
+        experience: 2.0
+      allium:
+        income: 2
+        points: 2
+        experience: 2.0
+      azure_bluet:
+        income: 2
+        points: 2
+        experience: 2.0
+      red_tulip:
+        income: 2
+        points: 2
+        experience: 2.0
+      orange_tulip:
+        income: 2
+        points: 2
+        experience: 2.0
+      white_tulip:
+        income: 2
+        points: 2
+        experience: 2.0
+      pink_tulip:
+        income: 2
+        points: 2
+        experience: 2.0
+      oxeye_daisy:
+        income: 2
+        points: 2
+        experience: 2.0
+      brown_mushroom:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      red_mushroom:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      vine:
+        income: 1.5
+        points: 1.5
+        experience: 1.5
+      cactus:
+        income: 1.5
+        points: 1.5
+        experience: 1.0
+      nether_wart:
+        income: 1
+        points: 1
+        experience: 1.0
+      pumpkin:
+        income: 0.5
+        points: 0.5
+        experience: 1.0
+      melon:
+        income: 0.5
+        points: 0.5
+        experience: 1.0
+    Place:
+      oak_sapling:
+        income: 2
+        points: 2
+        experience: 2.0
+      spruce_sapling:
+        income: 2
+        points: 2
+        experience: 2.0
+      birch_sapling:
+        income: 2
+        points: 2
+        experience: 2.0
+      jungle_sapling:
+        income: 3
+        points: 3
+        experience: 4.0
+      acacia_sapling:
+        income: 2
+        points: 2
+        experience: 2.0
+      dark_oak_sapling:
+        income: 2
+        points: 2
+        experience: 2.0
+      wheat:
+        income: 1
+        points: 1
+        experience: 1
+      potatoes:
+        income: 1
+        points: 1
+        experience: 1
+      carrots:
+        income: 1
+        points: 1
+        experience: 1
+      beetroots:
+        income: 1
+        points: 1
+        experience: 1
+      cocoa:
+        income: 1
+        points: 1
+        experience: 1
+      sugar_cane:
+        income: -1
+        points: -1
+        experience: -1
+      pumpkin_stem:
+        income: 1
+        points: 1
+        experience: 1
+      pumpkin-7:
+        income: 0.5
+        points: 0.5
+        experience: 1.0
+      melon_stem:
+        income: 1
+        points: 1
+        experience: 1
+  ################################################################################
+  Hunter:
+    fullname: Hunter
+    shortname: H
+    description: §7Paid for killing. Includes fishing.
+    ChatColour: RED
+    chat-display: full
+    max-level: 200
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
+    Gui:
+      Item: iron_sword
+    Break:
+      cobweb:
+        income: 5.0
+        points: 5
+        experience: 5.0
+    Kill:
+      bat:
+        income: 2.0
+        points: 2
+        experience: 2.0
+      cat:
+        income: 2.0
+        points: 2
+        experience: 2.0
+      chicken:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      cod:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      cow:
+        income: 6.0
+        points: 6
+        experience: 6.0
+      donkey:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      horse:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      fox:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      mooshroom:
+        income: 7.0
+        points: 7
+        experience: 7.0
+      mule:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      ocelot:
+        income: 10.0
+        points: 10
+        experience: 10.0
+      parrot:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      pig:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      rabbit:
+        income: 2.0
+        points: 2
+        experience: 2.0
+      salmon:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      sheep:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      squid:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      tropical_fish:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      turtle:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      villager:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      wandering_trader:
+        income: 10.0
+        points: 10
+        experience: 10.0
+      pufferfish:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      dolphin:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      llama:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      trader_llama:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      panda:
+        income: 4.0
+        points: 4
+        experience: 4.0
+      polar_bear:
+        income: 10.0
+        points: 10
+        experience: 5.0
+      wolf:
+        income: 10.0
+        points: 10
+        experience: 5.0
+      blaze:
+        income: 20.0
+        points: 20
+        experience: 15.0
+      cave_spider:
+        income: 20.0
+        points: 20
+        experience: 15.0
+      creeper:
+        income: 15.0
+        points: 15
+        experience: 15.0
+      drowned:
+        income: 15.0
+        points: 15
+        experience: 15.0
+      elder_guardian:
+        income: 50.0
+        points: 50
+        experience: 50.0
+      enderman:
+        income: 20.0
+        points: 20
+        experience: 15.0
+      endermite:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      ghast:
+        income: 30.0
+        points: 30
+        experience: 30.0
+      evoker:
+        income: 20.0
+        points: 20
+        experience: 20.0
+      guardian:
+        income: 25.0
+        points: 25
+        experience: 25.0
+      husk:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      magma_cube:
+        income: 1.0
+        points: 1
+        experience: 1.0
+      phantom:
+        income: 7.0
+        points: 7
+        experience: 7.0
+      pillager:
+        income: 12.0
+        points: 12
+        experience: 15.0
+      ravager:
+        income: 15.0
+        points: 15
+        experience: 15.0
+      shulker:
+        income: 7.5
+        points: 7
+        experience: 7.0
+      silverfish:
+        income: 3.0
+        points: 3
+        experience: 5.0
+      skeleton:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      skeleton_horse:
+        income: 5.0
+        points: 5
+        experience: 5.0
+      slime:
+        income: 1.0
+        points: 1
+        experience: 1.0
+      spider:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      stray:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      vex:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      vindicator:
+        income: 12.0
+        points: 12
+        experience: 15.0
+      witch:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      wither_skeleton:
+        income: 15.0
+        points: 15
+        experience: 15.0
+      wither:
+        income: 250.0
+        points: 250
+        experience: 150.0
+      ender_dragon:
+        income: 2000.0
+        points: 2000
+        experience: 2000.0
+      zombie:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      zombie_villager:
+        income: 10.0
+        points: 10
+        experience: 15.0
+      zombie_pigman:
+        income: 12.0
+        points: 12
+        experience: 12.0
+      iron_golem:
+        income: 30.0
+        points: 30
+        experience: 30.0
+      Player:
+        income: 7.5
+        points: 7.5
+        experience: 7.5\
+    Fish:
+      cod:
+        income: 15.0
+        points: 15.0
+        experience: 15.0
+      salmon:
+        income: 20.0
+        points: 20.0
+        experience: 25.0
+      tropical_fish:
+        income: 25.0
+        points: 25.0
+        experience: 25.0
+      pufferfish:
+        income: 25.0
+        points: 25.0
+        experience: 25.0
+  ################################################################################
+  Explorer:
+    fullname: Explorer
+    shortname: X
+    description: §7Paid for exploring.
+    ChatColour: AQUA
+    chat-display: full
+    max-level: 200
+    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
+    rejoinCooldown: 3600
+    maxDailyQuests: 0
+    Gui:
+      Item: leather_boots
+    Explore:
+      '1':
+        income: 3.5
+        points: 3.5
+        experience: 3.5
+      '2':
+        income: 2
+        points: 2
+        experience: 2
+      '3':
+        income: 1
+        points: 1
+        experience: 1
+      '4':
+        income: 0.5
+        points: 0.5
+        experience: 0.5
+      '5':
+        income: 0.1
+        points: 0.1
+        experience: 0.1
