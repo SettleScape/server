@@ -50,27 +50,27 @@ Experience_Bars:
             ExtraDetails: false
     Acrobatics:
         Enable: true
-        Color: PINK
+        Color: AQUA
         BarStyle: SEGMENTED_12
     Alchemy:
         Enable: true
-        Color: PURPLE
+        Color: BLUE
         BarStyle: SEGMENTED_12
     Archery:
         Enable: true
-        Color: BLUE
+        Color: LIGHT_PURPLE
         BarStyle: SEGMENTED_12
     Axes:
         Enable: true
-        Color: BLUE
+        Color: DARK_RED
         BarStyle: SEGMENTED_12
     Excavation:
         Enable: true
-        Color: YELLOW
+        Color: WHITE
         BarStyle: SEGMENTED_12
     Fishing:
         Enable: true
-        Color: PURPLE
+        Color: DARK_AQUA
         BarStyle: SEGMENTED_12
     Herbalism:
         Enable: true
@@ -78,35 +78,35 @@ Experience_Bars:
         BarStyle: SEGMENTED_12
     Mining:
         Enable: true
-        Color: YELLOW
+        Color: DARK_GRAY
         BarStyle: SEGMENTED_12
     Repair:
         Enable: true
-        Color: PURPLE
+        Color: GRAY
         BarStyle: SEGMENTED_12
     Salvage:
         Enable: true
-        Color: PURPLE
+        Color: YELLOW
         BarStyle: SEGMENTED_12
     Smelting:
         Enable: true
-        Color: PURPLE
+        Color: GOLD
         BarStyle: SEGMENTED_12
     Swords:
         Enable: true
-        Color: BLUE
+        Color: RED
         BarStyle: SEGMENTED_12
     Taming:
         Enable: true
-        Color: RED
+        Color: DARK_PURPLE
         BarStyle: SEGMENTED_12
     Unarmed:
         Enable: true
-        Color: BLUE
+        Color: BLACK
         BarStyle: SEGMENTED_12
     Woodcutting:
         Enable: true
-        Color: GREEN
+        Color: DARK_GREEN
         BarStyle: SEGMENTED_12
 #
 #  Settings for XP formula
