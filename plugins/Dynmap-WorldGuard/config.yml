@@ -15,8 +15,7 @@ layer:
 use3dregions: false
 infowindow: <div class="infowindow"> <span style="font-size:large">%regionname%</span>
   <br> <b>Parent:</b> %parent% <br> <b>Owner(s):</b> %groupowners% %playerowners%
-  <br> <b>Member(s):</b> %groupmembers% %playermembers% <br> <b>Flags:</b> <br> %flags%
-  <b>Priority:</b> %priority% </div>
+  <br> <b>Member(s):</b> %groupmembers% %playermembers%</div>
 regionstyle:
   strokeColor: '#000000'
   strokeOpacity: 0.75
