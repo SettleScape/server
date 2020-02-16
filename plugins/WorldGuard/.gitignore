@@ -1,8 +1,8 @@
 **
 !.gitignore
-!**.yml
+!./config.yml
 !worlds
-worlds/**
 !world
-world/**
+!world_nether
+!world_the_end
 !regions.yml
