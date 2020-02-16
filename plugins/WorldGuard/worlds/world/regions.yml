@@ -15,71 +15,71 @@ regions:
         max: {x: 272, y: 255, z: 272}
         members: {}
         flags:
-            other-explosion: deny
-            lava-fire: allow
-            water-flow: allow
-            invincible: deny
-            leaf-decay: allow
-            snow-fall: deny
-            firework-damage: deny
-            mob-damage: allow
-            ravager-grief: deny
-            mushroom-growth: deny
-            lightning: allow
-            wither-damage: deny
-            ice-form: deny
-            use-shop: allow
-            chorus-fruit-teleport: allow
-            enderman-grief: deny
-            pvp: deny
-            mob-spawning: allow
-            crop-growth: allow
-            entry: allow
-            exit: allow
-            send-chat: allow
-            creeper-explosion: deny
-            vine-growth: allow
-            damage-animals: allow
-            snow-melt: deny
-            tnt: deny
-            exit-via-teleport: allow
-            receive-chat: allow
-            ghast-fireball: deny
-            entity-item-frame-destroy: deny
-            frosted-ice-form: deny
-            mycelium-spread: allow
-            ice-melt: deny
-            block-trampling: deny
-            vehicle-destroy: allow
-            chest-access: allow
-            ride: allow
-            fire-spread: deny
-            enderdragon-block-damage: deny
-            sleep: allow
-            vehicle-place: allow
-            snowman-trails: deny
-            mcmmo: allow
             block-break: deny
-            entity-painting-destroy: deny
-            lighter: deny
-            pistons: deny
-            deny-spawn: ['minecraft:zombie_pigman']
             block-place: deny
-            enderpearl: allow
-            item-drop: allow
-            soil-dry: allow
-            exp-drops: allow
-            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
+            block-trampling: deny
+            chest-access: allow
+            chorus-fruit-teleport: allow
             create-shop: deny
-            town-creation: deny
+            creeper-explosion: deny
+            crop-growth: allow
+            damage-animals: allow
+            deny-spawn: ['minecraft:zombie_pigman']
+            enderdragon-block-damage: deny
+            enderman-grief: deny
+            enderpearl: allow
+            entity-item-frame-destroy: deny
+            entity-painting-destroy: deny
+            entry: allow
+            exit-via-teleport: allow
+            exit: allow
+            exp-drops: allow
             fall-damage: allow
-            item-pickup: allow
-            item-frame-rotation: deny
-            potion-splash: deny
+            fire-spread: deny
+            firework-damage: deny
+            frosted-ice-form: deny
             frosted-ice-melt: allow
-            lava-flow: allow
+            ghast-fireball: deny
             grass-growth: allow
+            ice-form: deny
+            ice-melt: deny
+            invincible: deny
+            item-drop: allow
+            item-frame-rotation: deny
+            item-pickup: allow
+            lava-fire: allow
+            lava-flow: allow
+            leaf-decay: allow
+            lighter: deny
+            lightning: allow
+            mcmmo: allow
+            mob-damage: allow
+            mob-spawning: allow
+            mushroom-growth: deny
+            mycelium-spread: allow
+            other-explosion: deny
+            pistons: deny
+            potion-splash: deny
+            pvp: deny
+            ravager-grief: deny
+            receive-chat: allow
+            ride: allow
+            send-chat: allow
+            sleep: allow
+            snow-fall: deny
+            snow-melt: deny
+            snowman-trails: deny
+            soil-dry: allow
+            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
+            tnt: deny
+            town-creation: deny
             use-admin-shop: allow
+            use-shop: allow
+            vehicle-destroy: allow
+            vehicle-place: allow
+            vine-growth: allow
+            water-flow: allow
+            wither-damage: deny
         owners: {}
         type: cuboid
         priority: 0

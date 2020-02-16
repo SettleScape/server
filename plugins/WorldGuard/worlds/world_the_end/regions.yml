@@ -15,56 +15,56 @@ regions:
         max: {x: 272, y: 255, z: 272}
         members: {}
         flags:
-            other-explosion: deny
-            lava-fire: allow
-            water-flow: allow
-            chorus-fruit-teleport: allow
-            enderman-grief: deny
-            pvp: deny
-            mob-spawning: allow
-            crop-growth: allow
-            entry: allow
-            exit: allow
-            send-chat: allow
-            vine-growth: allow
-            damage-animals: allow
-            tnt: deny
-            exit-via-teleport: allow
-            ghast-fireball: deny
-            receive-chat: allow
-            entity-item-frame-destroy: deny
-            frosted-ice-form: deny
-            mycelium-spread: allow
-            ice-melt: deny
-            block-trampling: deny
-            vehicle-destroy: allow
-            chest-access: allow
-            ride: allow
-            fire-spread: deny
-            enderdragon-block-damage: deny
-            sleep: allow
-            vehicle-place: allow
-            snowman-trails: deny
-            mcmmo: allow
             block-break: deny
-            entity-painting-destroy: deny
-            lighter: deny
-            pistons: deny
             block-place: deny
-            enderpearl: allow
-            item-drop: allow
-            soil-dry: allow
-            exp-drops: allow
-            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
+            block-trampling: deny
+            chest-access: allow
+            chorus-fruit-teleport: allow
             create-shop: deny
-            town-creation: deny
+            crop-growth: allow
+            damage-animals: allow
+            enderdragon-block-damage: deny
+            enderman-grief: deny
+            enderpearl: allow
+            entity-item-frame-destroy: deny
+            entity-painting-destroy: deny
+            entry: allow
+            exit-via-teleport: allow
+            exit: allow
+            exp-drops: allow
             fall-damage: allow
-            item-pickup: allow
-            item-frame-rotation: deny
-            potion-splash: deny
+            fire-spread: deny
+            frosted-ice-form: deny
             frosted-ice-melt: allow
-            lava-flow: allow
+            ghast-fireball: deny
             grass-growth: allow
+            ice-melt: deny
+            item-drop: allow
+            item-frame-rotation: deny
+            item-pickup: allow
+            lava-fire: allow
+            lava-flow: allow
+            lighter: deny
+            mcmmo: allow
+            mob-spawning: allow
+            mycelium-spread: allow
+            other-explosion: deny
+            pistons: deny
+            potion-splash: deny
+            pvp: deny
+            receive-chat: allow
+            ride: allow
+            send-chat: allow
+            sleep: allow
+            snowman-trails: deny
+            soil-dry: allow
+            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
+            tnt: deny
+            town-creation: deny
+            vehicle-destroy: allow
+            vehicle-place: allow
+            vine-growth: allow
+            water-flow: allow
         owners: {}
         type: cuboid
         priority: 0
