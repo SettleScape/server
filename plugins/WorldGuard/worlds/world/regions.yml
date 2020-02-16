@@ -11,26 +11,89 @@
 #
 regions:
     spawn:
-        min: {x: -272, y:   0, z: -272}
-        max: {x:  272, y: 255, z:  272}
+        min: {x: -272, y: 0, z: -272}
+        max: {x: 272, y: 255, z: 272}
         members: {}
         flags:
-            vehicle-place: allow
+            other-explosion: deny
+            lava-fire: allow
+            water-flow: allow
+            invincible: deny
+            leaf-decay: allow
+            snow-fall: deny
+            firework-damage: deny
+            mob-damage: allow
+            ravager-grief: deny
+            mushroom-growth: deny
+            lightning: allow
+            wither-damage: deny
+            ice-form: deny
+            use-shop: allow
+            chorus-fruit-teleport: allow
+            enderman-grief: deny
+            pvp: deny
+            mob-spawning: allow
+            crop-growth: allow
+            entry: allow
+            exit: allow
+            send-chat: allow
+            creeper-explosion: deny
+            vine-growth: allow
+            damage-animals: allow
+            snow-melt: deny
+            tnt: deny
+            exit-via-teleport: allow
+            receive-chat: allow
+            ghast-fireball: deny
+            entity-item-frame-destroy: deny
+            frosted-ice-form: deny
+            mycelium-spread: allow
+            ice-melt: deny
+            block-trampling: deny
             vehicle-destroy: allow
             chest-access: allow
             ride: allow
+            fire-spread: deny
+            enderdragon-block-damage: deny
+            sleep: allow
+            vehicle-place: allow
+            snowman-trails: deny
+            mcmmo: allow
+            block-break: deny
+            entity-painting-destroy: deny
+            lighter: deny
+            pistons: deny
+            deny-spawn: ['minecraft:zombie_pigman']
+            block-place: deny
+            enderpearl: allow
+            item-drop: allow
+            soil-dry: allow
+            exp-drops: allow
+            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
+            create-shop: deny
+            town-creation: deny
+            fall-damage: allow
+            item-pickup: allow
+            item-frame-rotation: deny
+            potion-splash: deny
+            frosted-ice-melt: deny
+            lava-flow: allow
+            grass-growth: allow
+            use-admin-shop: allow
         owners: {}
         type: cuboid
         priority: 0
     hawthorne:
-        min: {x: -582, y:   0, z: -4836}
+        min: {x: -582, y: 0, z: -4836}
         max: {x: -521, y: 255, z: -4782}
         members: {}
-        flags:
-            vehicle-place: deny
-            vehicle-destroy: deny
-            chest-access: deny
-            ride: allow
+        flags: {vehicle-place: deny, vehicle-destroy: deny, chest-access: deny, ride: allow}
         owners: {}
         type: cuboid
+        priority: 0
+    __global__:
+        members: {}
+        flags: {}
+        owners: {}
+        type: global
         priority: 0
