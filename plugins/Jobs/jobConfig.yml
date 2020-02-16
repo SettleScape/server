@@ -80,16 +80,6 @@ Jobs:
         income: 0.75
         points: 0.75
         experience: 0.25
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
-    custom-kill:
-      Woodcutter:
-        income: 10.0
-        points: 10.0
-        experience: 10.0
   ################################################################################
   Miner:
     fullname: Miner
@@ -2024,11 +2014,6 @@ Jobs:
         income: -15
         points: -15
         experience: -30
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
   ################################################################################
   Builder:
     fullname: Builder
@@ -3656,11 +3641,6 @@ Jobs:
         income: 3
         points: 3
         experience: 3
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
   ################################################################################
   Excavator:
     fullname: Excavator
@@ -3709,16 +3689,6 @@ Jobs:
         income: 1
         points: 1
         experience: 1.0
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
-    custom-kill:
-      Digger:
-        income: 10.0
-        points: 10.0
-        experience: 10.0
   ################################################################################
   Farmer:
     fullname: Herbalist
@@ -4083,11 +4053,6 @@ Jobs:
         income: 1
         points: 1
         experience: 1
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
   ################################################################################
   Hunter:
     fullname: Hunter
@@ -4354,8 +4319,8 @@ Jobs:
         points: 30
         experience: 30.0
       Player:
-        income: 9.0
-        points: 9
+        income: 7.5
+        points: 7.5
         experience: 7.5
   ################################################################################
   Explorer:
@@ -4397,10 +4362,6 @@ Jobs:
         income: 0.1
         points: 0.1
         experience: 0.1
-    Kill:
-      Player:
-        income: 7.5
-        experience: 7.5
   ################################################################################
   Crafter:
     fullname: Crafter
@@ -4868,11 +4829,6 @@ Jobs:
         income: 7.0
         points: 7.0
         experience: 7.0
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
   ################################################################################
   Fisherman:
     fullname: Fisherman
@@ -4908,11 +4864,6 @@ Jobs:
         income: 25.0
         points: 25.0
         experience: 25.0
-    Kill:
-      Player:
-        income: 7.5
-        points: 7.5
-        experience: 7.5
   ################################################################################
   Weaponsmith:
     fullname: Weaponsmith
@@ -5351,6 +5302,3 @@ Jobs:
     points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(joblevel-1)*0.01)
       * ((numjobs-1)*0.05))
     experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
-    Kill:
-      Player:
-        income: 7.5
