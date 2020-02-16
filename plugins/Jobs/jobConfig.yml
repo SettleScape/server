@@ -14,21 +14,17 @@
 Jobs:
   ################################################################################
   None:
-    fullname: None
-    shortname: /
-    ChatColour: WHITE
+    fullname: Unemployed
+    shortname: '-'
+    ChatColour: BLACK
     chat-display: none
-    leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
-    income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
-    points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) - ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
-    experience-progression-equation: baseexperience - (baseexperience * ((numjobs - 1) * 0.01))
   ################################################################################
   Landscaper:
     fullname: Landscaper
     shortname: L
     description: §7Paid for breaking shovel-blocks with a shovel and axe-blocks with an axe.
     ChatColour: YELLOW
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -123,7 +119,7 @@ Jobs:
     shortname: M
     description: §7Paid for breaking pick-blocks with a pick.
     ChatColour: GRAY
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -2054,7 +2050,7 @@ Jobs:
     shortname: B
     description: §7Paid for placing things.
     ChatColour: LIGHT_PURPLE
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -3679,7 +3675,7 @@ Jobs:
     shortname: C
     description: §7Paid for crafting and repairing things.
     ChatColour: GOLD
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -4285,7 +4281,7 @@ Jobs:
     shortname: A
     description: §7Paid for brewing potions, smelting/cooking anything in a furnace, and enchanting things.
     ChatColour: BLUE
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -4294,8 +4290,7 @@ Jobs:
     rejoinCooldown: 3600
     maxDailyQuests: 0
     Gui:
-      Id: 374
-      Data: 2
+      Item: blaze_powder
     Brew:
       nether_wart:
         income: 6.0
@@ -4509,7 +4504,7 @@ Jobs:
     shortname: F
     description: §7Paid for breaking and placing things related to agriculture. Additionally includes actions with hoes, actions with shears, milking animals, taming animals, and breeding animals.
     ChatColour: GREEN
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -4871,7 +4866,7 @@ Jobs:
     shortname: H
     description: §7Paid for killing. Includes fishing.
     ChatColour: RED
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
@@ -5154,7 +5149,7 @@ Jobs:
     shortname: X
     description: §7Paid for exploring.
     ChatColour: AQUA
-    chat-display: full
+    chat-display: none
     max-level: 100
     leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
     income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) - ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
