@@ -22,7 +22,7 @@ regions:
     claim-only-inside-existing-regions: false
     location-flags-only-inside-regions: false
     max-region-count-per-player:
-        default: 7
+        default: 0
     use-paper-entity-origin: false
 auto-invincible: false
 auto-invincible-group: false
@@ -44,7 +44,7 @@ event-handling:
     block-entity-spawns-with-untraceable-cause: false
     interaction-whitelist: []
     emit-block-use-at-feet: []
-    ignore-hopper-item-move-events: false
+    ignore-hopper-item-move-events: true
 protection:
     item-durability: true
     remove-infinite-stacks: true
@@ -90,15 +90,15 @@ mobs:
     block-fireball-block-damage: false
     anti-wolf-dumbness: false
     allow-tamed-spawns: true
-    disable-enderman-griefing: false
+    disable-enderman-griefing: true
     disable-snowman-trails: false
     block-painting-destroy: false
     block-item-frame-destroy: false
     block-armor-stand-destroy: false
-    block-plugin-spawning: true
+    block-plugin-spawning: false
     block-above-ground-slimes: false
     block-other-explosions: false
-    block-zombie-door-destruction: false
+    block-zombie-door-destruction: true
     block-creature-spawn: []
 player-damage:
     disable-fall-damage: false
@@ -110,7 +110,7 @@ player-damage:
     disable-contact-damage: false
     teleport-on-suffocation: false
     disable-void-damage: false
-    teleport-on-void-falling: false
+    teleport-on-void-falling: true
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false

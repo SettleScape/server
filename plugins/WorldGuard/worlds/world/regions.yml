@@ -17,69 +17,28 @@ regions:
         flags:
             block-break: deny
             block-place: deny
-            block-trampling: deny
-            chest-access: allow
-            chorus-fruit-teleport: allow
             create-shop: deny
             creeper-explosion: deny
-            crop-growth: allow
-            damage-animals: allow
             deny-spawn: ['minecraft:zombie_pigman']
-            enderdragon-block-damage: deny
-            enderman-grief: deny
-            enderpearl: allow
             entity-item-frame-destroy: deny
             entity-painting-destroy: deny
-            entry: allow
-            exit-via-teleport: allow
-            exit: allow
-            exp-drops: allow
-            fall-damage: allow
-            fire-spread: deny
             firework-damage: deny
             frosted-ice-form: deny
-            frosted-ice-melt: allow
-            ghast-fireball: deny
-            grass-growth: allow
             ice-form: deny
             ice-melt: deny
-            invincible: deny
-            item-drop: allow
             item-frame-rotation: deny
-            item-pickup: allow
-            lava-fire: allow
-            lava-flow: allow
-            leaf-decay: allow
             lighter: deny
-            lightning: allow
-            mcmmo: allow
-            mob-damage: allow
-            mob-spawning: allow
             mushroom-growth: deny
-            mycelium-spread: allow
             other-explosion: deny
             pistons: deny
             potion-splash: deny
             pvp: deny
             ravager-grief: deny
-            receive-chat: allow
-            ride: allow
-            send-chat: allow
-            sleep: allow
             snow-fall: deny
             snow-melt: deny
             snowman-trails: deny
-            soil-dry: allow
-            spawn: {world: world, x: 0.0, y: 64.0, z: 0.0, pitch: 0.0, yaw: 0.0}
             tnt: deny
             town-creation: deny
-            use-admin-shop: allow
-            use-shop: allow
-            vehicle-destroy: allow
-            vehicle-place: allow
-            vine-growth: allow
-            water-flow: allow
-            wither-damage: deny
         owners: {}
         type: cuboid
         priority: 0
@@ -87,13 +46,96 @@ regions:
         min: {x: -582, y: 0, z: -4836}
         max: {x: -521, y: 255, z: -4782}
         members: {}
-        flags: {vehicle-place: deny, vehicle-destroy: deny, chest-access: deny, ride: allow}
+        flags:
+            block-break: deny
+            block-place: deny
+            chest-access: deny
+            chorus-fruit-teleport: deny
+            create-shop: deny
+            creeper-explosion: deny
+            enderpearl: deny
+            entity-item-frame-destroy: deny
+            entity-painting-destroy: deny
+            item-frame-rotation: deny
+            lava-fire: deny
+            lighter: deny
+            mob-spawning: deny
+            other-explosion: deny
+            pistons: deny
+            pvp: deny
+            tnt: deny
+            town-creation: deny
+            vehicle-destroy: deny
+            vehicle-place: deny
         owners: {}
         type: cuboid
         priority: 0
     __global__:
         members: {}
-        flags: {}
+        flags:
+            block-break: allow
+            block-place: allow
+            block-trampling: deny
+            chest-access: allow
+            chorus-fruit-teleport: allow
+            create-shop: allow
+            creeper-explosion: allow
+            crop-growth: allow
+            damage-animals: allow
+            enderdragon-block-damage: deny
+            enderman-grief: deny
+            enderpearl: allow
+            entity-item-frame-destroy: allow
+            entity-painting-destroy: allow
+            entry: allow
+            exit-via-teleport: allow
+            exit: allow
+            exp-drops: allow
+            fall-damage: allow
+            fire-spread: deny
+            firework-damage: allow
+            frosted-ice-form: allow
+            frosted-ice-melt: allow
+            ghast-fireball: deny
+            grass-growth: allow
+            ice-form: allow
+            ice-melt: allow
+            invincible: deny
+            item-drop: allow
+            item-frame-rotation: allow
+            item-pickup: allow
+            lava-fire: allow
+            lava-flow: allow
+            leaf-decay: allow
+            lighter: allow
+            lightning: allow
+            mcmmo: allow
+            mob-damage: allow
+            mob-spawning: allow
+            mushroom-growth: allow
+            mycelium-spread: allow
+            other-explosion: allow
+            pistons: allow
+            potion-splash: allow
+            pvp: allow
+            ravager-grief: deny
+            receive-chat: allow
+            ride: allow
+            send-chat: allow
+            sleep: allow
+            snow-fall: allow
+            snow-melt: allow
+            snowman-trails: allow
+            soil-dry: allow
+            tnt: allow
+            town-creation: allow
+            use-admin-shop: allow
+            use-shop: allow
+            vehicle-destroy: allow
+            vehicle-place: allow
+            vine-growth: allow
+            water-flow: allow
+            wither-damage: deny
         owners: {}
         type: global
         priority: 0
