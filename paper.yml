@@ -1,14 +1,14 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Website: https://papermc.io/
+# Docs: https://paper.readthedocs.org/
 
 verbose: false
 config-version: 20
@@ -43,8 +43,7 @@ messages:
   no-permission: '&cYou do not have permission to use this command.&r'
   kick:
     authentication-servers-down: Could not reach Mojang's authentication servers.
-    connection-throttle: Trying to reconnect to frequently. Wait a moment and try
-      again.
+    connection-throttle: Trying to reconnect too frequently -- wait a moment and try again.
     flying-player: Flying without permission.
     flying-vehicle: Flying without permission.
 timings:
@@ -97,8 +96,8 @@ world-settings:
     parrots-are-unaffected-by-player-movement: false
     container-update-tick-rate: 3
     prevent-tnt-from-moving-in-water: false
-    non-player-arrow-despawn-rate: 60
-    creative-arrow-despawn-rate: 60
+    non-player-arrow-despawn-rate: 200
+    creative-arrow-despawn-rate: 0
     armor-stands-tick: true
     spawner-nerfed-mobs-should-jump: false
     allow-leashing-undead-horse: true
