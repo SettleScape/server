@@ -138,7 +138,7 @@ enable-boosted-items-in-offhand: true
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
   # Do not disable this if you don't know what mean this option.
-  Use: false
+  Use: true
   # What items (tools) are whitelisted the player get paid, when this item has durability loss?
   # Enchantments are supported, usage:
   # itemName=ENCHANTMENT_NAME-level
