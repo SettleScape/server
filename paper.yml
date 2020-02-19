@@ -1,14 +1,14 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Website: https://papermc.io/
+# Docs: https://paper.readthedocs.org/
 
 verbose: false
 config-version: 20
@@ -153,7 +153,7 @@ world-settings:
       chunk-edge-mode: 2
       max-chunk-section-index: 15
       update-radius: 1
-      hidden-blocks:
+      hidden-blocks: # We can only hide blocks that aren't exposed to air.
       - coal_ore
       - lapis_ore
       - redstone_ore
@@ -162,8 +162,8 @@ world-settings:
       - gold_ore
       - emerald_ore
       - diamond_ore
-      - chest
-      - lava
+      - chest # Buried treasure
+      - lava # Prevents cheating around lava blocks while strip-mining in the Nether
       replacement-blocks: []
     generator-settings:
       flat-bedrock: false
