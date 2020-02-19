@@ -1,14 +1,14 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-#
+# 
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-#
+# 
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/
-# Docs: https://paper.readthedocs.org/
+# Website: https://papermc.io/ 
+# Docs: https://paper.readthedocs.org/ 
 
 verbose: false
 config-version: 20
@@ -43,7 +43,8 @@ messages:
   no-permission: '&cYou do not have permission to use this command.&r'
   kick:
     authentication-servers-down: Could not reach Mojang's authentication servers.
-    connection-throttle: Trying to reconnect too frequently -- wait a moment and try again.
+    connection-throttle: Trying to reconnect too frequently -- wait a moment and try
+      again.
     flying-player: Flying without permission.
     flying-vehicle: Flying without permission.
 timings:
@@ -147,27 +148,23 @@ world-settings:
       items:
         COBBLESTONE: 300
     anti-xray:
-      enabled: false
+      enabled: true
       engine-mode: 1
       chunk-edge-mode: 2
-      max-chunk-section-index: 3
-      update-radius: 2
+      max-chunk-section-index: 15
+      update-radius: 1
       hidden-blocks:
-      - gold_ore
-      - iron_ore
       - coal_ore
       - lapis_ore
-      - mossy_cobblestone
-      - obsidian
-      - chest
-      - diamond_ore
       - redstone_ore
-      - clay
+      - nether_quartz_ore
+      - iron_ore
+      - gold_ore
       - emerald_ore
-      - ender_chest
-      replacement-blocks:
-      - stone
-      - oak_planks
+      - diamond_ore
+      - chest
+      - lava
+      replacement-blocks: []
     generator-settings:
       flat-bedrock: false
     squid-spawn-height:
