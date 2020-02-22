@@ -27,14 +27,14 @@ crafting-recipes:
   coal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
     type: shapeless
     ingredients:
-      'water': 1 # bottle
+      'glass_bottle': 1 #TODO: Water bottle
       'coal': 1
     results:
       'black_dye': 1
-  charcoal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
+  charcoal_to_dye: #TODO: Doesn't work # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
     type: shapeless
     ingredients:
-      'water': 1 # bottle
+      'glass_bottle': 1 #TODO: Water bottle
       'charcoal': 1
     results:
       'black_dye': 1
@@ -355,50 +355,50 @@ crafting-recipes:
   # Bedrock and Java recipes
   ################################################################################
 
-  br_barrel: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'wood_slab': 'w'
-      'stick': 's'
-    shape:
-      - 'sws'
-      - 's s'
-      - 'sws'
-    results:
-      'barrel': 1
-  je_barrel:
-    type: shaped
-    ingredients:
-      'wood_slab': 's'
-      'wood': 'w'
-    shape:
-      - 'wsw'
-      - 'w w'
-      - 'wsw'
-    results:
-      'barrel': 1
+  # br_barrel: #TODO: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 'w'
+  #     'stick': 's'
+  #   shape:
+  #     - 'sws'
+  #     - 's s'
+  #     - 'sws'
+  #   results:
+  #     'barrel': 1
+  # je_barrel: #TODO: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 's'
+  #     'wood': 'w'
+  #   shape:
+  #     - 'wsw'
+  #     - 'w w'
+  #     - 'wsw'
+  #   results:
+  #     'barrel': 1
 
-  br_composter: #TODO: Doesn't work # Java > 1.15
-    type: shaped
-    ingredients:
-      'wood_slab': 's'
-    shape:
-      - 's s'
-      - 's s'
-      - 'sss'
-    results:
-      'composter': 1
-  je_composter: # Java < 1.15
-    type: shaped
-    ingredients:
-      'wood_slab': 's'
-      'fence': 'f'
-    shape:
-      - 'f f'
-      - 'f f'
-      - 'sss'
-    results:
-      'composter': 1
+  # br_composter: #TODO: Doesn't work # Java > 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 's'
+  #   shape:
+  #     - 's s'
+  #     - 's s'
+  #     - 'sss'
+  #   results:
+  #     'composter': 1
+  # je_composter: #TODO: Doesn't work # Java < 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'wood_slab': 's'
+  #     'fence': 'f'
+  #   shape:
+  #     - 'f f'
+  #     - 'f f'
+  #     - 'sss'
+  #   results:
+  #     'composter': 1
 
   br_dark_prismarine: # Java > 1.15
     type: shaped
