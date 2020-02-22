@@ -30,14 +30,14 @@ crafting-recipes:
       'glass_bottle': 1 #TODO: Water bottle
       'coal': 1
     results:
-      'black_dye': 1
+      'ink_sac': 1
   charcoal_to_dye: #TODO: Doesn't work # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
     type: shapeless
     ingredients:
       'glass_bottle': 1 #TODO: Water bottle
       'charcoal': 1
     results:
-      'black_dye': 1
+      'ink_sac': 1
   name_tag:
     type: shaped
     ingredients:
