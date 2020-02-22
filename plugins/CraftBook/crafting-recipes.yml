@@ -18,6 +18,26 @@ crafting-recipes:
       'bookshelf': 1
     results:
       'book': 3
+  melons_to_slices: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.  3-7 when manual;  we're doing 4 with the recipe, so manual is still worthwhile.
+    type: shapeless
+    ingredients:
+      'melon': 1
+    results:
+      'melon_slice': 4
+  coal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
+    type: shapeless
+    ingredients:
+      'water': 1 # bottle
+      'coal': 1
+    results:
+      'black_dye': 1
+  charcoal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
+    type: shapeless
+    ingredients:
+      'water': 1 # bottle
+      'charcoal': 1
+    results:
+      'black_dye': 1
   name_tag:
     type: shaped
     ingredients:
@@ -346,17 +366,17 @@ crafting-recipes:
       - 'sws'
     results:
       'barrel': 1
-  # je_barrel:
-  #   type: shaped
-  #   ingredients:
-  #     'wood_slab': 's'
-  #     'wood': 'w'
-  #   shape:
-  #     - 'wsw'
-  #     - 'w w'
-  #     - 'wsw'
-  #   results:
-  #     'barrel': 1
+  je_barrel:
+    type: shaped
+    ingredients:
+      'wood_slab': 's'
+      'wood': 'w'
+    shape:
+      - 'wsw'
+      - 'w w'
+      - 'wsw'
+    results:
+      'barrel': 1
 
   br_composter: #TODO: Doesn't work # Java > 1.15
     type: shaped
@@ -368,17 +388,17 @@ crafting-recipes:
       - 'sss'
     results:
       'composter': 1
-  # je_composter: # Java < 1.15
-  #   type: shaped
-  #   ingredients:
-  #     'wood_slab': 's'
-  #     'fence': 'f'
-  #   shape:
-  #     - 'f f'
-  #     - 'f f'
-  #     - 'sss'
-  #   results:
-  #     'composter': 1
+  je_composter: # Java < 1.15
+    type: shaped
+    ingredients:
+      'wood_slab': 's'
+      'fence': 'f'
+    shape:
+      - 'f f'
+      - 'f f'
+      - 'sss'
+    results:
+      'composter': 1
 
   br_dark_prismarine: # Java > 1.15
     type: shaped
@@ -391,14 +411,14 @@ crafting-recipes:
       - 'ppp'
     results:
       'dark_prismarine': 1
-  # je_dark_prismarine: # Java < 1.15
-  #   type: shaped
-  #   ingredients:
-  #     'prismarine_shard': 'p'
-  #     'black_dye': 'b'
-  #   shape:
-  #     - 'ppp'
-  #     - 'pbp'
-  #     - 'ppp'
-  #   results:
-  #     'dark_prismarine': 1
+  je_dark_prismarine: # Java < 1.15
+    type: shaped
+    ingredients:
+      'prismarine_shard': 'p'
+      'black_dye': 'b'
+    shape:
+      - 'ppp'
+      - 'pbp'
+      - 'ppp'
+    results:
+      'dark_prismarine': 1
