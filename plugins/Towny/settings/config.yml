@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.95.2.15
+  version: 0.95.2.17
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.95.2.15
+  last_run_version: 0.95.2.17
 # The language file you wish to use
 language: english.yml
  
