@@ -43,8 +43,8 @@ regions:
         type: cuboid
         priority: 0
     hawthorne:
-        min: {x: -582, y: 0, z: -4836}
-        max: {x: -521, y: 255, z: -4782}
+        min: {x: -704, y: 0, z: -4848}
+        max: {x: -353, y: 255, z: -4561}
         members: {}
         flags:
             block-break: deny
