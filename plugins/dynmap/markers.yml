@@ -3,6 +3,39 @@
 icons: {
     }
 sets:
+    geography:
+        hide: true
+        circles: {
+            }
+        deficon: world
+        areas: {
+            }
+        label: Geography
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
+    worldguard.markerset:
+        hide: false
+        circles: {
+            }
+        deficon: compass
+        areas: {
+            }
+        label: WorldGuard
+        markers:
+            worldguard.spawn:
+                world: world
+                markup: false
+                x: 0.0
+                icon: compass
+                y: 64.0
+                z: 0.0
+                label: Spawn
+        lines: {
+            }
+        layerprio: 1
     towny.markerset:
         hide: false
         circles: {
@@ -39,26 +72,6 @@ sets:
         lines: {
             }
         layerprio: 2
-    worldguard.markerset:
-        hide: false
-        circles: {
-            }
-        deficon: compass
-        areas: {
-            }
-        label: WorldGuard
-        markers:
-            worldguard.spawn:
-                world: world
-                markup: false
-                x: 0.0
-                icon: compass
-                y: 64.0
-                z: 0.0
-                label: Spawn
-        lines: {
-            }
-        layerprio: 1
     markers:
         hide: false
         circles: {
@@ -68,6 +81,14 @@ sets:
             }
         label: Markers
         markers:
+            shovel:
+                world: world
+                markup: false
+                x: 8004.0
+                icon: pin
+                y: 66.0
+                z: -2501.0
+                label: Temple of Shovel
             djin:
                 world: world
                 markup: false
@@ -84,16 +105,8 @@ sets:
                 y: 65.0
                 z: 2665.0
                 label: Kuiil
-            shovel:
-                world: world
-                markup: false
-                x: 8004.0
-                icon: pin
-                y: 66.0
-                z: -2501.0
-                label: Temple of Shovel
         lines: {
             }
-        layerprio: 0
+        layerprio: 3
 playersets: {
     }
