@@ -65,3 +65,7 @@ Sounds:
         Enable: true
         Volume: 1.0
         Pitch: 1.0
+    ITEM_CONSUMED:
+        Enable: true
+        Volume: 1.0
+        Pitch: 1.0
