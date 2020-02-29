@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
-FILE='plugins.zip'
-[ -f "$FILE" ] && rm "$FILE"
-zip -9 "$FILE" 'plugins/'*'.jar'
-scp "$FILE" 'settlescape:/srv/minecraft/settlescape/plugins'
-rm "$FILE"
+cd plugins
+for PLUGIN in "$@"; do
+    scp "$PLUGIN.jar" 'minecraft@settlescape:/srv/minecraft/settlescape/plugins'
+done
+cd ..
+exit 0
