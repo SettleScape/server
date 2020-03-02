@@ -38,7 +38,7 @@ sets:
                 label: Adidas
         lines: {
             }
-        layerprio: 2
+        layerprio: 4
     geography:
         hide: true
         circles: {
@@ -51,7 +51,7 @@ sets:
             }
         lines: {
             }
-        layerprio: 0
+        layerprio: 1
     worldguard.markerset:
         hide: false
         circles: {
@@ -71,15 +71,15 @@ sets:
                 label: Spawn
         lines: {
             }
-        layerprio: 1
-    markers:
-        hide: false
+        layerprio: 3
+    outposts:
+        hide: true
         circles: {
             }
         deficon: pin
         areas: {
             }
-        label: Markers
+        label: Outposts
         markers:
             djin:
                 world: world
@@ -107,6 +107,19 @@ sets:
                 label: Kuiil
         lines: {
             }
-        layerprio: 3
+        layerprio: 2
+    markers:
+        hide: true
+        circles: {
+            }
+        deficon: pin
+        areas: {
+            }
+        label: Detail
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
 playersets: {
     }
