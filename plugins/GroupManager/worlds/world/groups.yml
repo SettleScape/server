@@ -9,65 +9,32 @@
 # Local group inheritances define your promotion tree when using 'manpromote/mandemote'
 
 groups:
-  Pathfinder:
-    default: false
-    permissions:
-    - -auctionhouse.auctions.8
-    - -shopchest.limit.40
-    - -jobs.max.2
-    - -essentials.sethome.multiple.three
-    - auctionhouse.auctions.10
-    - essentials.ext
-    - essentials.feed
-    - essentials.heal
-    - essentials.sethome.multiple.four
-    - jobs.max.3
-    - mineablespawners.break
-    - shopchest.limit.50
-    inheritance:
-    - explorer
-    info:
-      build: true
-      prefix: '&6Pathfinder&r '
-      suffix: ''
-  Settler:
-    default: false
-    permissions:
-    - +essentials.hat
-    - +essentials.nick
-    - +essentials.nick.color
-    - +essentials.nick.format
-    - +essentials.nick.magic
-    - +towny.command.town.new
-    - +essentials.kit
-    - +essentials.delhome
-    - +essentials.sethome.multiple
-    - -auctionhouse.auctions.4
-    - -shopchest.limit.20
-    - -jobs.max.1
-    - -essentials.sethome.multiple.one
-    - auctionhouse.auctions.6
-    - essentials.protect.exemptbreak
-    - essentials.protect.exemptplacement
-    - essentials.protect.exemptusage
-    - essentials.sethome.multiple.two
-    - jobs.max.2
-    - shopchest.limit.30
-    inheritance:
-    - traveller
-    info:
-      build: true
-      prefix: '&9Settler&r '
-      suffix: ''
+
+  #-----------------------------------------------------------------------------
   Wanderer:
     default: true
+    info:
+      build: true
+      prefix: '&8Wanderer&r '
+    inheritance:
+    - g:Player
     permissions:
+
+    # Limit increases
+    - auctionhouse.auctions.2
+    - shopchest.limit.10
+    - jobs.max.1
+    - essentials.sethome.multiple.zero ## Can still `/home bed`
+
+    # Restrictions (relative to g:Player)
     - -towny.town.resident
     - -towny.command.town.new
     - -towny.command.nation.new
+
     - -essentials.delhome
     - -essentials.sethome
     - -essentials.sethome.multiple
+
     - -essentials.chat.color
     - -essentials.chat.format
     - -essentials.chat.magic
@@ -78,11 +45,13 @@ groups:
     - -essentials.msg.url
     - -townychat.chat.color
     - -townychat.chat.format.*
+
     - -essentials.hat
     - -essentials.nick
     - -essentials.nick.color
     - -essentials.nick.format
     - -essentials.nick.magic
+
     - -editablesign.colorsign
     - -editablesign.edit
     - -essentials.workbench
@@ -93,25 +62,34 @@ groups:
     - -craftbook.mech.paintingswitch.use
     - -craftbook.mech.pay
     - -craftbook.mech.pay.use
-    - auctionhouse.auctions.2
-    - essentials.sethome.multiple.zero
-    - jobs.max.1
-    - shopchest.limit.10
-    inheritance:
-    - g:player
-    info:
-      build: true
-      prefix: '&8Wanderer&r '
-      suffix: ''
+
+  #-----------------------------------------------------------------------------
   Traveller:
     default: false
+    info:
+      build: true
+      prefix: '&aTraveller&r '
+    inheritance:
+    - Wanderer
     permissions:
+
+    # Limit increases
+    - -auctionhouse.auctions.2
+    - auctionhouse.auctions.4
+    - -shopchest.limit.10
+    - shopchest.limit.20
+    - -essentials.sethome.multiple.zero
+    - essentials.sethome.multiple.one
+
+    # Basic quality of life improvements
     - +essentials.workbench
     - +essentials.clearinventory
     - +editablesign.edit
     - +craftbook.mech.ammeter.use
     - +craftbook.mech.lightstone.use
     - +craftbook.mech.paintingswitch.use
+
+    # Access to advanced chat features (unlikely to be a spammer)
     - +essentials.chat.color
     - +essentials.chat.format
     - +essentials.chat.magic
@@ -124,35 +102,96 @@ groups:
     - +townychat.chat.format.*
     - +craftbook.mech.pay
     - +craftbook.mech.pay.use
+
+    # Misc
     - +towny.town.resident
     - +essentials.sethome
-    - -auctionhouse.auctions.2
-    - -shopchest.limit.10
-    - -essentials.sethome.multiple.zero
-    - auctionhouse.auctions.4
-    - essentials.sethome.multiple.one
-    - shopchest.limit.20
+
+  #-----------------------------------------------------------------------------
+  Settler:
+    default: false
     inheritance:
-    - wanderer
+    - Traveller
     info:
       build: true
-      prefix: '&aTraveller&r '
-      suffix: ''
+      prefix: '&9Settler&r '
+    permissions:
+
+    # Limit increases
+    - -auctionhouse.auctions.4
+    - auctionhouse.auctions.6
+    - -shopchest.limit.20
+    - shopchest.limit.30
+    - -jobs.max.1
+    - jobs.max.2
+    - -essentials.sethome.multiple.one
+    - essentials.sethome.multiple.two
+
+    # Abilitiy to place lava etc (unlikely to be a griefer)
+    - essentials.protect.exemptbreak
+    - essentials.protect.exemptplacement
+    - essentials.protect.exemptusage
+
+    # Cosmetics
+    - +essentials.hat
+    - +essentials.nick
+    - +essentials.nick.color
+    - +essentials.nick.format
+    - +essentials.nick.magic
+
+    # Misc
+    - +towny.command.town.new
+    - +essentials.kit
+    - +essentials.delhome
+    - +essentials.sethome.multiple
+
+  #-----------------------------------------------------------------------------
   Explorer:
     default: false
-    permissions:
-    - +towny.command.nation.new
-    - -auctionhouse.auctions.6
-    - -shopchest.limit.30
-    - -essentials.sethome.multiple.two
-    - auctionhouse.auctions.8
-    - essentials.back
-    - essentials.enderchest
-    - essentials.sethome.multiple.three
-    - shopchest.limit.40
-    inheritance:
-    - settler
     info:
       build: true
       prefix: '&dExplorer&r '
-      suffix: ''
+    inheritance:
+    - Settler
+    permissions:
+
+    # Limit increases
+    - -auctionhouse.auctions.6
+    - auctionhouse.auctions.8
+    - -shopchest.limit.30
+    - shopchest.limit.40
+    - -essentials.sethome.multiple.two
+    - essentials.sethome.multiple.three
+
+    # New abilities
+    - +towny.command.nation.new
+    - essentials.back
+    - essentials.enderchest
+
+  #-----------------------------------------------------------------------------
+  Pathfinder:
+    default: false
+    info:
+      build: true
+      prefix: '&6Pathfinder&r '
+    inheritance:
+    - Explorer
+    permissions:
+
+    # Limit increases
+    - -auctionhouse.auctions.8
+    - auctionhouse.auctions.10
+    - -shopchest.limit.40
+    - shopchest.limit.50
+    - -jobs.max.2
+    - jobs.max.3
+    - -essentials.sethome.multiple.three
+    - essentials.sethome.multiple.four
+
+    # New abilities
+    - mineablespawners.break
+
+    # Superpowers
+    - essentials.ext
+    - essentials.feed
+    - essentials.heal
