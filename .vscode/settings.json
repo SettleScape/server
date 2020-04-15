@@ -1,0 +1,29 @@
+// This file is JSONC and supports comments.
+{
+    "files.associations": {
+
+        // Extensions
+        "**/*.mcmeta": "json",
+        "**/EisenRadar/**/*.lang": "properties",
+        "**/mcMMO/**/*.users": "csv (colon)",
+
+        // Dynmap
+        "**/dynmap/*.txt": "yaml",
+        "**/dynmap/colorschemes/*.txt": "csv (whitespace)",
+        "**/dynmap/templates/*.txt": "yaml",
+
+        // Towny
+        "**/Towny/data/nations/**/*.txt": "properties",
+        "**/Towny/data/residents/**/*.txt": "properties",
+        "**/Towny/data/townblocks/**/*.data": "properties",
+        "**/Towny/data/towns/**/*.txt": "properties",
+        "**/Towny/data/worlds/**/*.txt": "properties",
+
+        // Specific files
+        "eula.txt": "properties",
+        "**/dynmap/version.txt": "plaintext",
+        "**/dynmap/FIXME.txt": "plaintext",
+        "**/Towny/data/townblocks.txt": "csv",
+        "**/WorldGuard/**/blacklist.txt": "ini",
+    },
+}
