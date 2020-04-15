@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.1.2
+  version: 0.96.1.3
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.1.2
+  last_run_version: 0.96.1.3
 # The language file you wish to use
 language: english.yml
 
@@ -396,6 +396,8 @@ global_town_settings:
   movement_cancels_spawn_warmup: 'true'
   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
   spawn_cooldown_time: '3'
+  # Decides whether confirmations should appear if you spawn to an area with an associated cost.
+  spawn_warnings: 'true'
   # Number of seconds that must pass before pvp can be toggled by a town.
   # Applies to residents of the town using /res toggle pvp, as well as
   # plots having their PVP toggled using /plot toggle pvp.
@@ -410,6 +412,10 @@ global_town_settings:
   # Enables the [~Home] message.
   # If false it will make it harder for enemies to find the home block during a war
   show_town_notifications: 'true'
+  # When set above zero this is the largest number of residents a town can support before they join/create a nation.
+  # Do not set this value to an amount less than the required_number_residents_join_nation below.
+  # Do not set this value to an amount less than the required_number_residents_create_nation below.
+  maximum_number_residents_without_nation: '0'
   # The required number of residents in a town to join a nation
   # If the number is 0, towns will not require a certain amount of residents to join a nation
   required_number_residents_join_nation: '1'
@@ -513,6 +519,9 @@ global_nation_settings:
     public: 'false'
     # If set to true, any newly made nation will have open status and any town may join without an invite.
     open: 'false'
+  # This setting determines the list of allowed nation map colors.
+  # The color codes are in hex format.
+  allowed_map_colors: aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00
 
 
   ############################################################
@@ -567,6 +576,8 @@ plugin:
     # The time each "day", when taxes will be collected.
     # MUST be less than day_interval. Default is 12h (midday).
     new_day_time: 19h
+    # Whether towns with no claimed townblocks should be deleted when the new day is run.
+    delete_0_plot_towns: 'true'
 
   # Lots of messages to tell you what's going on in the server with time taken for events.
   debug_mode: 'false'
@@ -772,7 +783,7 @@ notification:
   # When set to false the notifications will appear in the chat rather than the action bar.
   notifications_appear_in_action_bar: 'true'
   # This settings set the duration the actionbar (The text above the inventory bar) lasts in seconds
-  notification_actionbar_duration: '5'
+  notification_actionbar_duration: '1'
 
 
 
