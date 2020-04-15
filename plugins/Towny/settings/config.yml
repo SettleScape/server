@@ -770,7 +770,7 @@ notification:
   # When set to false the notifications will appear in the chat rather than the action bar.
   notifications_appear_in_action_bar: 'true'
   # This settings set the duration the actionbar (The text above the inventory bar) lasts in seconds
-  notification_actionbar_duration: '15'
+  notification_actionbar_duration: '5'
 
 
 
