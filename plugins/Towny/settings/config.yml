@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.0.3
+  version: 0.96.0.5
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.0.3
+  last_run_version: 0.96.0.5
 # The language file you wish to use
 language: english.yml
 
@@ -769,6 +769,8 @@ notification:
   # On servers using craftbukkit.jar the notifications will always appear in the chat.
   # When set to false the notifications will appear in the chat rather than the action bar.
   notifications_appear_in_action_bar: 'true'
+  # This settings set the duration the actionbar (The text above the inventory bar) lasts in seconds
+  notification_actionbar_duration: '15'
 
 
 
