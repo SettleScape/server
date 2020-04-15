@@ -308,7 +308,7 @@ new_world_settings:
       unclaim_delete: NONE
 
     mayor_plotblock_delete:
-      enabled: 'false'
+      enabled: 'true'
       # These items will be deleted upon a mayor using /plot clear
       # To disable deleting replace the current entries with NONE.
       mayor_plot_delete: ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,OAK_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR

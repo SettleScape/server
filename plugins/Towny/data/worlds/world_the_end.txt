@@ -23,11 +23,11 @@ unclaimedZoneItemUse=true
 unclaimedZoneName=Wilderness
 
 # The following settings are only used if you are not using any permissions provider plugin
-unclaimedZoneIgnoreIds=*
+unclaimedZoneIgnoreIds=NONE
 
 
 # The following settings control what blocks are deleted upon a townblock being unclaimed
-usingPlotManagementDelete=true
+usingPlotManagementDelete=false
 plotManagementDeleteIds=NONE
 
 
@@ -43,7 +43,7 @@ plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_
 
 # If enabled any damage caused by explosions will repair itself.
 usingPlotManagementWildRegen=true
-PlotManagementWildRegenEntities=Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball
+PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball
 usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
