@@ -7,3 +7,5 @@ settings:
 toggles:
   any-chest:
     162b530e-8df5-4997-af36-94c58789100f: false
+  silent-chest:
+    162b530e-8df5-4997-af36-94c58789100f: false
