@@ -14,7 +14,7 @@ EssentialsX        2.17.2    2020-02-22  2020-02-20  https://github.com/Essentia
 Group Manager      0.2.0     2019-04-28  2020-01-12  https://github.com/GroupManager/GroupManager/releases
 Jobs Reborn        4.15.5    2020-02-15  2020-02-15  https://spigotmc.org/resources/jobs-reborn.4216/updates
 mcMMO              2.1.118   2020-02-28  2020-02-28  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
-Mineable Spawners  2.0.8     2019-08-15  2020-01-12  https://spigotmc.org/resources/mineablespawners-1-13-1-14-silkspawners-with-extras.59921/updates
+Mineable Spawners  3.0.3     2020-04-13  2020-04-14  https://spigotmc.org/resources/mineablespawners-1-13-1-14-silkspawners-with-extras.59921/updates
 Modern LWC         2.1.5     2019-07-17  2020-01-12  https://spigotmc.org/resources/modern-lwc-continuation-of-lwc.2162/updates
 OpenInv            4.0.8     2019-12-12  2020-01-12  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1     2019-06-04  2020-01-12  https://github.com/SimonOrJ/PhantomSMP/releases
