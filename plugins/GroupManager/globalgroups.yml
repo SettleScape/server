@@ -142,6 +142,7 @@ groups:
     - essentials.book.title
     - editablesign.edit
     - lwc.protect
+    - mineablespawners.mine
     - -rankup.auto
 
 # Restrictions
@@ -679,7 +680,8 @@ groups:
     - lagg.unloadchunks
     - mineablespawners.eggchange
     - mineablespawners.give
-    - mineablespawners.spawner
+    - mineablespawners.set
+    - mineablespawners.types
     - minecraft.command.playsound
     - minecraft.command.stop
     - minecraft.command.worldborder

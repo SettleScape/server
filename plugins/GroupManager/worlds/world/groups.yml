@@ -25,6 +25,7 @@ groups:
     - shopchest.limit.10
     - jobs.max.1
     - essentials.sethome.multiple.zero ## Can still `/home bed`
+    - mineablespawners.minechance.7 ## Technically 0
 
     # Restrictions (relative to g:Player)
     - -towny.town.resident
@@ -62,6 +63,7 @@ groups:
     - -craftbook.mech.paintingswitch.use
     - -craftbook.mech.pay
     - -craftbook.mech.pay.use
+    - -mineablespawners.mine
 
   #-----------------------------------------------------------------------------
   Traveller:
@@ -80,6 +82,8 @@ groups:
     - shopchest.limit.20
     - -essentials.sethome.multiple.zero
     - essentials.sethome.multiple.one
+    - -mineablespawners.minechance.7
+    - mineablespawners.minechance.6
 
     # Basic quality of life improvements
     - +essentials.workbench
@@ -106,6 +110,7 @@ groups:
     # Misc
     - +towny.town.resident
     - +essentials.sethome
+    - +mineablespawners.mine
 
   #-----------------------------------------------------------------------------
   Settler:
@@ -126,6 +131,8 @@ groups:
     - jobs.max.2
     - -essentials.sethome.multiple.one
     - essentials.sethome.multiple.two
+    - -mineablespawners.minechance.6
+    - mineablespawners.minechance.5
 
     # Abilitiy to place lava etc (unlikely to be a griefer)
     - essentials.protect.exemptbreak
@@ -162,6 +169,8 @@ groups:
     - shopchest.limit.40
     - -essentials.sethome.multiple.two
     - essentials.sethome.multiple.three
+    - -mineablespawners.minechance.5
+    - mineablespawners.minechance.4
 
     # New abilities
     - +towny.command.nation.new
@@ -187,9 +196,11 @@ groups:
     - jobs.max.3
     - -essentials.sethome.multiple.three
     - essentials.sethome.multiple.four
+    - -mineablespawners.minechance.4
+    - mineablespawners.minechance.3
 
     # New abilities
-    - mineablespawners.break
+    # - mineablespawners.eggchange
 
     # Superpowers
     - essentials.ext
