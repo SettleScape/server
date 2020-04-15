@@ -23,27 +23,27 @@ unclaimedZoneItemUse=true
 unclaimedZoneName=Wilderness
 
 # The following settings are only used if you are not using any permissions provider plugin
-unclaimedZoneIgnoreIds=SAPLING,GOLD_ORE,IRON_ORE,COAL_ORE,LOG,LEAVES,LAPIS_ORE,LONG_GRASS,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,TORCH,DIAMOND_ORE,LADDER,RAILS,REDSTONE_ORE,GLOWING_REDSTONE_ORE,CACTUS,CLAY,SUGAR_CANE_BLOCK,PUMPKIN,GLOWSTONE,LOG_2,VINE,NETHER_WARTS,COCOA
+unclaimedZoneIgnoreIds=*
 
 
 # The following settings control what blocks are deleted upon a townblock being unclaimed
 usingPlotManagementDelete=true
-plotManagementDeleteIds=BED_BLOCK,TORCH,REDSTONE_WIRE,SIGN_POST,WOODEN_DOOR,WALL_SIGN,STONE_PLATE,IRON_DOOR_BLOCK,WOOD_PLATE,REDSTONE_TORCH_OFF,REDSTONE_TORCH_ON,DIODE_BLOCK_OFF,DIODE_BLOCK_ON
+plotManagementDeleteIds=NONE
 
 
 # The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
 usingPlotManagementMayorDelete=true
-plotManagementMayorDelete=WALL_SIGN,SIGN_POST
+plotManagementMayorDelete=ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,OAK_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR
 
 # If enabled when a town claims a townblock a snapshot will be taken at the time it is claimed.
 # When the townblock is unclaimded its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air.
-plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,MOB_SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,SIGN_POST,WALL_SIGN,GLOWSTONE
+plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,SWEET_BERRY_BUSH
 
 # If enabled any damage caused by explosions will repair itself.
 usingPlotManagementWildRegen=true
-PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball
+PlotManagementWildRegenEntities=Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball
 usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
