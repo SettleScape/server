@@ -1,5 +1,5 @@
 # TownyFlight by LlmDl.
-Version: 1.5.6
+Version: 1.5.7
 # Prefix to messages seen in game.
 pluginPrefix: ''
 ####################
@@ -11,7 +11,7 @@ language:
   flightOnMsg: §6Set fly mode §cenabled§6. §r
   # Message shown when flight de-activated.
   flightOffMsg: §6Set fly mode §cdisabled§6. §r
-  # Message shown when player lacks a town.
+  # Message shown when player lacks a town. 
   noTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
   # Message shown when flight cannot be turned on.
   notInTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
