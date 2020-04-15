@@ -24,7 +24,7 @@ Rankup             3.6.1     2020-01-02  2020-01-12  https://spigotmc.org/resour
 ShopChest          1.13-SS   2020-01-18  2020-02-02  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild/
 Towny              --------- ----------  ----------  https://github.com/TownyAdvanced/Towny/releases
 TownyChat          --------- ----------  ----------  https://github.com/TownyAdvanced/TownyChat/releases
-TownyNameUpdater   4.0       2019-08-17  2020-02-28  https://github.com/TownyAdvanced/TownyNameUpdater
+TownyNameUpdater   --------- ----------  ----------  https://github.com/TownyAdvanced/TownyNameUpdater
 TownyFlight        --------- ----------  ----------  https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.5.8     2019-07-23  2020-01-12  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.2     2019-04-28  2020-02-02  https://www.spigotmc.org/resources/vault.34315/updates
