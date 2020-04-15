@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.1.1
+  version: 0.96.1.2
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.1.1
+  last_run_version: 0.96.1.2
 # The language file you wish to use
 language: english.yml
 
@@ -392,6 +392,8 @@ global_town_settings:
   is_nation_ally_spawning_requiring_public_status: 'false'
   # If non zero it delays any spawn request by x seconds.
   teleport_warmup_time: '3'
+  # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
+  movement_cancels_spawn_warmup: 'true'
   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
   spawn_cooldown_time: '3'
   # Number of seconds that must pass before pvp can be toggled by a town.
@@ -1020,10 +1022,14 @@ economy:
     # if a resident can't pay his town tax then he is kicked from the town.
     # if a town or nation fails to pay it's upkeep it is deleted.
     enabled: 'true'
-    # Maximum tax amount allowed when using flat taxes
-    max_tax_amount: '100.0'
-    # maximum tax percentage allowed when taxing by percentages
-    max_tax_percent: '10'
+    # Maximum tax amount allowed for townblocks sold to players.
+    max_plot_tax_amount: '100.0'
+    # Maximum tax amount allowed for towns when using flat taxes.
+    max_town_tax_amount: '100.0'
+    # Maximum tax amount allowed for nations when using flat taxes.
+    max_nation_tax_amount: '250.0'
+    # Maximum tax percentage allowed when taxing by percentages for towns.
+    max_town_tax_percent: '10'
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
     price_nation_upkeep: '50.0'
