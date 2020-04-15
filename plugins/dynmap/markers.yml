@@ -72,14 +72,14 @@ sets:
         lines: {
             }
         layerprio: 1
-    markers:
+    outposts:
         hide: false
         circles: {
             }
         deficon: pin
         areas: {
             }
-        label: Markers
+        label: Outposts
         markers:
             djin:
                 world: world
@@ -107,6 +107,19 @@ sets:
                 label: Kuiil
         lines: {
             }
-        layerprio: 3
+        layerprio: 1
+    markers:
+        hide: true
+        circles: {
+            }
+        deficon: pin
+        areas: {
+            }
+        label: Detail
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
 playersets: {
     }
