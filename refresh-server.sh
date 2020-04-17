@@ -4,7 +4,7 @@ set -e
 ## Variables
    TYPE='paper'
  OUTJAR='server.jar'
-VERSION='1.14.4'
+VERSION='1.15.2'
 
 ## Do the thing
 case "$TYPE" in

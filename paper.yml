@@ -18,7 +18,7 @@ settings:
   save-player-data: true
   region-file-cache-size: 256
   incoming-packet-spam-threshold: 300
-  use-alternative-luck-formula: false
+  use-alternative-luck-formula: true
   use-versioned-world: false
   suggest-player-names-when-null-tab-completions: true
   enable-player-collisions: true
@@ -59,6 +59,13 @@ timings:
   server-name: SettleScape
 world-settings:
   default:
+    tracker-update-distance: 1.0
+    light-queue-size: 20
+    seed-based-feature-search: true
+    portal-create-radius: 16
+    iron-golems-can-spawn-in-air: false
+    entities-target-with-follow-range: false
+    zombie-villager-infection-chance: -1.0
     disable-teleportation-suffocation-check: false
     remove-corrupt-tile-entities: false
     fixed-chunk-inhabited-time: -1
@@ -106,6 +113,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 2
     game-mechanics:
+      nerf-pigmen-from-nether-portals: false
       scan-for-legacy-ender-dragon: true
       disable-pillager-patrols: false
       disable-chest-cat-detection: true
@@ -115,6 +123,14 @@ world-settings:
       disable-sprint-interruption-on-attack: false
       disable-relative-projectile-velocity: false
       disable-unloaded-chunk-enderpearl-exploit: true
+      pillager-patrols:
+        spawn-chance: 0.2
+        spawn-delay:
+          per-player: false
+          ticks: 12000
+        start:
+          per-player: true
+          day: 7
     max-growth-height:
       cactus: 3
       reeds: 3

@@ -12,6 +12,7 @@
 
 config-version: 12
 settings:
+  log-villager-deaths: false
   debug: false
   save-user-cache-on-stop-only: false
   bungeecord: false
@@ -59,6 +60,8 @@ stats:
   forced-stats: {}
 world-settings:
   default:
+    seed-endcity: 10387313
+    trident-despawn-rate: 1200
     max-entity-collisions: 4
     verbose: false
     hopper-amount: 1
@@ -84,6 +87,7 @@ world-settings:
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: false
     entity-activation-range:
+      water: 16
       animals: 16
       monsters: 24
       raiders: 48

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 SERVER_JAR='./server.jar'
+JAVA='/lib/jvm/java-8-jdk/bin/java'
+[ ! -f "$JAVA" ] && JAVA='java'
 
 ## Official 1.14.4 client options.
 # VANILLA_OPTS=$(echo                    \
@@ -52,7 +54,7 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 exec screen -d -m -S "SettleScape" \
-java $JAVA_OPTS -jar "$SERVER_JAR"
+"$JAVA" $JAVA_OPTS -jar "$SERVER_JAR"
 ##NOTE: Type `screen -r SettleScape` to attach to the SettleScape screen.
 ##NOTE: Press Ctrl+A,Ctrl+D to detatch from the SettleScape screen.
 ##NOTE: Type `screen -S SettleScape -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
