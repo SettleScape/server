@@ -73,7 +73,7 @@ Optimizations:
     # By setting this to true, Jobs plugin will be disabled in given worlds
     # Only commands can be performed from disabled worlds with jobs.disabledworld.commands permission node
     Use: false
-    # If true, will changes the list behaviour, so if a world is added to list
+    # If true, will changes the list behavior, so if a world is added to list
     # the payments will only works in the given worlds.
     UseAsWhiteList: true
     List:
@@ -220,6 +220,7 @@ Economy:
   AccountName: Server
   Taxes:
     # Do you want to use taxes feature for jobs payment?
+    # You can bypass taxes with permission jobs.tax.bypass
     use: false
     # Username should be with Correct capitalization, it can be same as setup in server account before
     AccountName: Server

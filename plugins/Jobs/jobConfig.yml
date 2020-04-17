@@ -5285,18 +5285,86 @@ Jobs:
     # Each job can have as many daily quests as you want
     # Players will have access to quests from jobs he is currently working at
     Quests:
-      '1':
+      # Quest identification. Can be any ONE word or number or both of them. This doesn't have any real meaning but it can't repeat.
+      first:
+        # Quest name used for quests list, don't forget to enclose it with " "
         Name: Break Oak wood
+        # This should be in a format as [actionType];[actionTarget];[amount]
+        # [actionType] can be any valid job action. Look lower for all possible action types
+        # [actionTarget] can be material name, block type, entity name and so on. This is defined in same way as any generic payable job action
+        # [amount] is how many times player should perform this action to complete quest
         Objectives: '- Break;17-0;300'
+        # Command list to be performed after quest is finished.
+        # Use [playerName] to insert players name who finished that quest
         RewardCommands:
         - money give [playerName] 500
         - msg [playerName] Completed quest!
+        # Quest description to be used to explain quest requirements or rewards for player
         RewardDesc:
         - Break 300 Oak wood
         - Get 500 bucks for this
+        # Restricted areas where player cant progress his quest
         RestrictedAreas:
         - Arenas
         - myarena
+        # Defines chance in getting this quest.
+        # If you have set 10 quests and player can have only 2, then quests with biggest chance will be picked most likely
+        # This will allow to have some rare quests with legendary rewards
         Chance: 40
+        # Defines from which level you want to give option to get this quest
+        # You can use both limitations to have limited quests for particular job level ranges
         fromLevel: 3
+        # Defines to which job level you want to give out this quest.
+        # Keep in mind that player will keep quest even if he is over level limit if he got new one while being under
+        # In example: player with level 2 takes quests and levels up to level 5, he still can finish this quest and after next quest reset (check general config file)
+        # he will no longer have option to get this quest
         toLevel: 5
+    # ########################################################################
+    # Section used to configure what items the job gets paid for, how much
+    # they get paid and how much experience they gain.
+
+    # For break and place, the block material name is used.
+    # e.g ACACIA_LOG, DARK_OAK_FENCE, BIRCH_DOOR
+
+    # To get a list of all available block types, check the
+    # bukkit JavaDocs for a complete list of block types
+    # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+    # For kill tags (Kill and custom-kill), the name is the name of the mob.
+    # To get a list of all available entity types, check the
+    # bukkit JavaDocs for a complete list of entity types
+    # https://minecraft.gamepedia.com/Mob#List_of_mobs
+
+    # NOTE: mob names are case sensitive.
+
+    # For custom-kill, it is the name of the job (also case sensitive).
+
+    # NOTE: If a job has both the pay for killing a player and for killing a specific class, they will get both payments.
+    # #######################################################################
+    # payment for breaking a block
+    Break:
+      # block name/id (with optional sub-type)
+      oak_log:
+        # base income, can be not used if using point system
+        income: 5.0
+        # base points, can be not used if using income system
+        points: 5.0
+        # base experience
+        experience: 5.0
+        # (OPTIONAL) from which level of this job player can get money for this action
+        # if not given, then player will always get money for this action
+        # this can be used for any action
+        from-level: 1
+        # (OPTIONAL) until which level player can get money for this action.
+        # if not given, then there is no limit
+        # this can be used for any action
+        until-level: 30
+        # (OPTIONAL) Soft limits will allow to stop income/exp/point payment increase at some particular level but allow further general leveling.
+        # In example if player is level 70, he will get paid as he would be at level 50, exp gain will be as he would be at lvl 40 and point gain will be as at level 60
+        # This only applies after players level is higher than provided particular limit.
+        softIncomeLimit: 50
+        softExpLimit: 40
+        softPointsLimit: 60
+      gravel:
+        # you can use minuses to take away money if the player break this block
+        income: -1.0

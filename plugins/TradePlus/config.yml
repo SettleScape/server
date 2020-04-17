@@ -33,14 +33,19 @@ gui:
   spectator-title: Player 1 <|          |> Player 2
   head: '&7You are trading with: &3&l%PLAYER%'
   showhead: true
-  accept: '&a&lClick to accept the trade'
-  cancel: '&c&lClick to cancel the trade'
+  accept:
+    display: '&a&lClick to accept the trade'
+    theirdisplay: ' '
+    type: green_stained_glass_pane
+    customModelData: 0
+  cancel:
+    display: '&c&lClick to cancel the trade'
+    theirdisplay: ' '
+    type: red_stained_glass_pane
+    customModelData: 0
   showaccept: true
   theyaccept: ' '
   theycancel: ' '
-  acceptid: green_stained_glass_pane
-  cancelid: red_stained_glass_pane
-  separatorid: black_stained_glass_pane
   force:
     enabled: true
     type: clock
@@ -50,12 +55,17 @@ gui:
     - '&cacceptance.'
     - ''
     - '&cThis shows only for admins.'
+  separator:
+    type: black_stained_glass_pane
+    customModelData: 0
 extras:
   type:
     empty: '&eEnter a new amount to offer.'
     valid: '&aClick output slot to submit offer.'
     invalid: '&cInvalid amount entered!'
     maximum: '&cYour balance is %BALANCE%'
+    prefix: '&6&l!!&6> '
+    customModelData: 0
   economy:
     enabled: true
     material: gold_ingot
@@ -66,6 +76,7 @@ extras:
     increment: 10.0
     taxpercent: 0
     mode: chat
+    customModelData: 0
   experience:
     enabled: true
     material: experience_bottle
@@ -77,6 +88,7 @@ extras:
     taxpercent: 0
     mode: chat
     levelMode: true
+    customModelData: 0
   playerpoints:
     enabled: false
     material: diamond
@@ -87,6 +99,7 @@ extras:
     increment: 5
     taxpercent: 0
     mode: type
+    customModelData: 0
   griefprevention:
     enabled: false
     material: fire
@@ -97,6 +110,7 @@ extras:
     increment: 1
     taxperecent: 0
     mode: type
+    customModelData: 0
   enjinpoints:
     enabled: false
     material: emerald
@@ -107,6 +121,7 @@ extras:
     increment: 1
     taxpercent: 0
     mode: type
+    customModelData: 0
   tokenenchant:
     enabled: false
     material: enchanted_book
@@ -117,6 +132,7 @@ extras:
     increment: 1
     taxpercent: 0
     mode: type
+    customModelData: 0
   tokenmanager:
     enabled: false
     material: book
@@ -127,6 +143,7 @@ extras:
     increment: 1
     taxpercent: 0
     mode: type
+    customModelData: 0
 hooks:
   factions:
     allow-trades-in-enemy-territory: false
@@ -137,4 +154,5 @@ soundeffects:
   oncomplete: true
   oncountdown: true
 debug-mode: false
-configversion: 3.58
+configversion: 3.66
+trade-command-compatible-mode: false
