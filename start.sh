@@ -54,7 +54,7 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 exec screen -d -m -S "SettleScape" \
-"$JAVA" $JAVA_OPTS -jar "$SERVER_JAR"
+"$JAVA" $JAVA_OPTS -jar "$SERVER_JAR" nogui
 ##NOTE: Type `screen -r SettleScape` to attach to the SettleScape screen.
 ##NOTE: Press Ctrl+A,Ctrl+D to detatch from the SettleScape screen.
 ##NOTE: Type `screen -S SettleScape -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
