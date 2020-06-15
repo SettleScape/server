@@ -26,4 +26,5 @@
         "**/Towny/data/townblocks.txt": "csv",
         "**/WorldGuard/**/blacklist.txt": "ini",
     },
+    "restructuredtext.confPath": "",
 }
