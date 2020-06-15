@@ -52,10 +52,12 @@ groups:
     - essentials.payconfirmtoggle
     - essentials.worth
     - shopchest.buy
+    - shopchest.sell
     - shopchest.create
     - shopchest.create.buy
     - shopchest.create.sell
-    - shopchest.sell
+    - shopchest.create.protected
+    - shopchest.extend.protected
     - auctionhouse.cancel
     - auctionhouse.expired
     - auctionhouse.help
@@ -167,7 +169,6 @@ groups:
     # - +essentials.fly.safelogin
     - townyflight.command.tfly
     - townyflight.alltowns
-
 
 # Misc
 #-------------------------------------------------------------------------------
@@ -290,6 +291,7 @@ groups:
     - essentials.tptoggle
   # - essentials.vanish
   # - essentials.vanish.effect
+    - shopchest.openOther
     - vanish.vanish
     - vanish.smokin
     - vanish.nofollow
@@ -375,6 +377,7 @@ groups:
     - bukkit.command.list
     - bukkit.command.plugins
     - bukkit.command.version
+    - shopchest.notification.update
 
 # Configuration
 #-------------------------------------------------------------------------------
@@ -383,6 +386,7 @@ groups:
     - groupmanager.mansave
     - groupmanager.manuadd
     - groupmanager.manudel
+    - shopchest.config
 
 # Operations
 #-------------------------------------------------------------------------------
@@ -394,6 +398,8 @@ groups:
     - bukkit.command.save.enable
     - bukkit.command.save.perform
     - bukkit.command.stop
+    - shopchest.update
+    - shopchest.reload
     - townyflight.command.tfly.reload
 
 # Chat
@@ -418,11 +424,16 @@ groups:
     - essentials.protect.exemptbreak
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
+    - shopchest.external.bypass
 
 # Misc
 #-------------------------------------------------------------------------------
     - craftbook.mech.chunk
     - minecraft.command.forceload
+    - shopchest.extend.other
+    - shopchest.remove.other
+    - shopchest.create.admin
+    - shopchest.remove.admin
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
@@ -447,6 +458,7 @@ groups:
     - bukkit.command.gamemode
     - bukkit.command.give
     - minecraft.command.summon
+    - minecraft.command.tp
 
 # Configuration
 #-------------------------------------------------------------------------------
@@ -458,6 +470,7 @@ groups:
     - bukkit.command.whitelist.enable
     - towny.admin
     - towny.command.admin
+    - minecraft.command.seed
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
@@ -479,7 +492,6 @@ groups:
     - essentials.worlds.*
     - jobs.*
     - mcmmo.*
-    - shopchest.*
     - towny.claimed.alltown.build.*
     - towny.claimed.alltown.destroy.*
     - towny.claimed.alltown.item_use.*
