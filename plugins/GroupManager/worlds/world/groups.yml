@@ -19,6 +19,7 @@ groups:
     inheritance:
     - g:Player
     permissions:
+    - +essentials.kits.wanderer_prize
 
     # Limit increases
     - auctionhouse.auctions.2
@@ -81,6 +82,7 @@ groups:
     inheritance:
     - Wanderer
     permissions:
+    - +essentials.kits.traveller_prize
 
     # Limit increases
     - -auctionhouse.auctions.2
@@ -133,6 +135,7 @@ groups:
       build: true
       prefix: '&9Settler&r '
     permissions:
+    - +essentials.kits.settler_prize
 
     # Limit increases
     - -auctionhouse.auctions.4
@@ -171,6 +174,7 @@ groups:
     inheritance:
     - Settler
     permissions:
+    - +essentials.kits.explorer_prize
 
     # Limit increases
     - -auctionhouse.auctions.6
@@ -201,6 +205,7 @@ groups:
     inheritance:
     - Explorer
     permissions:
+    - +essentials.kits.pathfinder_prize
 
     # Limit increases
     - -auctionhouse.auctions.8

@@ -115,6 +115,11 @@ groups:
     - essentials.sethome.bed
     - essentials.sethome.multiple
 
+# Kits
+#-------------------------------------------------------------------------------
+    - essentials.kit
+    - -essentials.kits.*
+
 # Misc
 #-------------------------------------------------------------------------------
     - bukkit.command.gamemode.survival
@@ -136,8 +141,6 @@ groups:
     - essentials.nick.color
     - essentials.nick.format
     - essentials.nick.magic
-    - essentials.kit
-    - essentials.kits.starter
     - essentials.clearinventory
     - essentials.workbench
   # - essentials.enderchest
