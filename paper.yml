@@ -1,20 +1,20 @@
 # This is the main configuration file for Paper.
 # As you can see, there's tons to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
-# 
+#
 # Discord: https://paperdiscord.emc.gs
 # IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
-# Website: https://papermc.io/ 
-# Docs: https://paper.readthedocs.org/ 
+# Website: https://papermc.io/
+# Docs: https://paper.readthedocs.org/
 
 allow-perm-block-break-exploits: false
 verbose: false
 config-version: 20
 settings:
-  console-has-all-permissions: false
+  console-has-all-permissions: true
   chunk-tasks-per-tick: 1000
   load-permissions-yml-before-plugins: true
   bungee-online-mode: true
@@ -65,7 +65,7 @@ timings:
 world-settings:
   default:
     phantoms-do-not-spawn-on-creative-players: true
-    phantoms-only-attack-insomniacs: true
+    phantoms-only-attack-insomniacs: false
     delay-chunk-unloads-by: 10s
     tracker-update-distance: 1.0
     light-queue-size: 20
