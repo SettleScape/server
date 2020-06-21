@@ -11,7 +11,7 @@
 groups:
 
   #-----------------------------------------------------------------------------
-  Wanderer:
+  Wanderer: # Starting rank.  Basically a vanilla experience.
     default: true
     info:
       build: true
@@ -22,51 +22,58 @@ groups:
 
     # Limit increases
     - auctionhouse.auctions.2
-    - shopchest.limit.10
+    - shopchest.limit.0
     - jobs.max.1
-    - essentials.sethome.multiple.zero ## Can still `/home bed`
-    - mineablespawners.minechance.7 ## Technically 0
+    - essentials.sethome.multiple.zero # Can still `/home bed`.
+    - mineablespawners.minechance.7 # Technically 0
 
-    # Restrictions (relative to g:Player)
-    - -towny.town.resident
-    - -towny.command.town.new
-    - -towny.command.nation.new
-
+    # Wanderers can only `/home bed`.
     - -essentials.delhome
     - -essentials.sethome
     - -essentials.sethome.multiple
 
-    - -essentials.chat.color
+    # Basic text formatting is reserved for a higher rank, since it *can* be kind of spammy.
     - -essentials.chat.format
-    - -essentials.chat.magic
-    - -essentials.chat.url
-    - -essentials.msg.color
     - -essentials.msg.format
-    - -essentials.msg.magic
-    - -essentials.msg.url
-    - -townychat.chat.color
     - -townychat.chat.format.*
-
-    - -essentials.hat
-    - -essentials.nick
-    - -essentials.nick.color
     - -essentials.nick.format
+
+    # Text colors are reserved for a higher rank, since they *can* be kind of spammy.
+    - -essentials.chat.color
+    - -essentials.msg.color
+    - -townychat.chat.color
+    - -essentials.nick.color
+
+    # Text magic is spammy, and so reserved for a higher rank.
+    - -essentials.chat.magic
+    - -essentials.msg.magic
     - -essentials.nick.magic
 
-    - -editablesign.colorsign
+    # URLs in chat can be used to spam and phish, and is reserved for a higher rank.
+    - -essentials.chat.url
+    - -essentials.msg.url
+
+    # Quality of Life comes with higher ranks
     - -editablesign.edit
     - -essentials.workbench
-    - -essentials.kit
     - -essentials.clearinventory
     - -craftbook.mech.ammeter.use
     - -craftbook.mech.lightstone.use
     - -craftbook.mech.paintingswitch.use
     - -craftbook.mech.pay
-    - -craftbook.mech.pay.use
+
+    # No casual teleports -- we want Wanderers to have to actually explore the world (and escape Spawn), rather than just teleport to the biggest town and instantly gear up.
+    - -essentials.tpa
+    - -essentials.tpaccept
+    - -essentials.tpacancel
+    - -essentials.tpahere
+
+    # Special powers come with higher ranks
+    - -essentials.hat
     - -mineablespawners.mine
 
   #-----------------------------------------------------------------------------
-  Traveller:
+  Traveller: # Has beaten the Overworld.  Adds some Quality of Life features;  reduces spam prevention.
     default: false
     info:
       build: true
@@ -78,42 +85,47 @@ groups:
     # Limit increases
     - -auctionhouse.auctions.2
     - auctionhouse.auctions.4
-    - -shopchest.limit.10
-    - shopchest.limit.20
+    - -shopchest.limit.0
+    - shopchest.limit.10
     - -essentials.sethome.multiple.zero
     - essentials.sethome.multiple.one
     - -mineablespawners.minechance.7
     - mineablespawners.minechance.6
 
     # Basic quality of life improvements
+    - +editablesign.edit
     - +essentials.workbench
     - +essentials.clearinventory
-    - +editablesign.edit
     - +craftbook.mech.ammeter.use
     - +craftbook.mech.lightstone.use
     - +craftbook.mech.paintingswitch.use
 
-    # Access to advanced chat features (unlikely to be a spammer)
-    - +essentials.chat.color
+    # Access to standard chat formatting
     - +essentials.chat.format
-    - +essentials.chat.magic
-    - +essentials.chat.url
-    - +essentials.msg.color
     - +essentials.msg.format
-    - +essentials.msg.magic
+    - +townychat.chat.format.bold
+    - +townychat.chat.format.italic
+    - +townychat.chat.format.underline
+    - +townychat.chat.format.strike
+    - +essentials.nick.format
+
+    # Access to URL formatting (since they're unlikely to be a spammer if they've gotten this far)
+    - +essentials.chat.url
     - +essentials.msg.url
-    - +townychat.chat.color
-    - +townychat.chat.format.*
-    - +craftbook.mech.pay
-    - +craftbook.mech.pay.use
+
+    # Has escaped Spawn legitimately; may now teleport.
+    - +essentials.tpa
+    - +essentials.tpaccept
+    - +essentials.tpacancel
+    - +essentials.tpahere
 
     # Misc
-    - +towny.town.resident
+    - +craftbook.mech.pay
     - +essentials.sethome
     - +mineablespawners.mine
 
   #-----------------------------------------------------------------------------
-  Settler:
+  Settler: # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
     default: false
     inheritance:
     - Traveller
@@ -125,8 +137,8 @@ groups:
     # Limit increases
     - -auctionhouse.auctions.4
     - auctionhouse.auctions.6
-    - -shopchest.limit.20
-    - shopchest.limit.30
+    - -shopchest.limit.10
+    - shopchest.limit.20
     - -jobs.max.1
     - jobs.max.2
     - -essentials.sethome.multiple.one
@@ -139,21 +151,19 @@ groups:
     - essentials.protect.exemptplacement
     - essentials.protect.exemptusage
 
-    # Cosmetics
-    - +essentials.hat
-    - +essentials.nick
+    # Text colors
+    - +essentials.chat.color
+    - +essentials.msg.color
+    - +townychat.chat.color
     - +essentials.nick.color
-    - +essentials.nick.format
-    - +essentials.nick.magic
 
     # Misc
-    - +towny.command.town.new
-    - +essentials.kit
+    - +essentials.hat
     - +essentials.delhome
     - +essentials.sethome.multiple
 
   #-----------------------------------------------------------------------------
-  Explorer:
+  Explorer: # Has beaten the End. Adds End-related abilities.
     default: false
     info:
       build: true
@@ -165,20 +175,25 @@ groups:
     # Limit increases
     - -auctionhouse.auctions.6
     - auctionhouse.auctions.8
-    - -shopchest.limit.30
+    - -shopchest.limit.20
     - shopchest.limit.40
     - -essentials.sethome.multiple.two
     - essentials.sethome.multiple.three
     - -mineablespawners.minechance.5
     - mineablespawners.minechance.4
 
+    # Access to text magic
+    - +essentials.chat.magic
+    - +essentials.msg.magic
+    - townychat.chat.format.magic
+    - +essentials.nick.magic
+
     # New abilities
-    - +towny.command.nation.new
     - essentials.back
     - essentials.enderchest
 
   #-----------------------------------------------------------------------------
-  Pathfinder:
+  Pathfinder: # Has beaten MineCraft. Gets special powers.
     default: false
     info:
       build: true
@@ -191,7 +206,7 @@ groups:
     - -auctionhouse.auctions.8
     - auctionhouse.auctions.10
     - -shopchest.limit.40
-    - shopchest.limit.50
+    - shopchest.limit.80
     - -jobs.max.2
     - jobs.max.3
     - -essentials.sethome.multiple.three

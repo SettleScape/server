@@ -137,6 +137,7 @@ groups:
     - essentials.nick.format
     - essentials.nick.magic
     - essentials.kit
+    - essentials.kits.starter
     - essentials.clearinventory
     - essentials.workbench
   # - essentials.enderchest
@@ -472,6 +473,10 @@ groups:
     - towny.command.admin
     - minecraft.command.seed
 
+# Catch-alls
+#-------------------------------------------------------------------------------
+    - essentials.kits.*
+
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
     - essentials.weather
@@ -524,7 +529,6 @@ groups:
     - essentials.itemdb
     - essentials.protect
     - essentials.jump
-    - essentials.kits.tools
     - essentials.powertool
     - essentials.powertooltoggle
     - essentials.ptime
@@ -552,7 +556,6 @@ groups:
     - coreprotect.restore
     - coreprotect.rollback
     - editablesign.admin
-    - editablesign.colorsign
     - editablesign.edit
     - eisenradar.admin.reload
     - eisenradar.admin.save
@@ -618,7 +621,6 @@ groups:
     - essentials.item
     - essentials.kickall
     - essentials.kill
-    - essentials.kit.others
     - essentials.lightning
     - essentials.lightning.others
     - essentials.near
