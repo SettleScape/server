@@ -10,9 +10,12 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+allow-perm-block-break-exploits: false
 verbose: false
 config-version: 20
 settings:
+  console-has-all-permissions: false
+  chunk-tasks-per-tick: 1000
   load-permissions-yml-before-plugins: true
   bungee-online-mode: true
   save-player-data: true
@@ -29,7 +32,7 @@ settings:
     secret: ''
   async-chunks:
     enable: true
-    load-threads: -1
+    threads: -1
   watchdog:
     early-warning-every: 5000
     early-warning-delay: 10000
@@ -39,6 +42,8 @@ settings:
   book-size:
     page-max: 2560
     total-multiplier: 0.98
+  unsupported-settings:
+    allow-piston-duplication: false
 messages:
   no-permission: '&cYou do not have permission to use this command.&r'
   kick:
@@ -59,6 +64,9 @@ timings:
   server-name: SettleScape
 world-settings:
   default:
+    phantoms-do-not-spawn-on-creative-players: true
+    phantoms-only-attack-insomniacs: true
+    delay-chunk-unloads-by: 10s
     tracker-update-distance: 1.0
     light-queue-size: 20
     seed-based-feature-search: true
@@ -185,3 +193,5 @@ world-settings:
       flat-bedrock: false
     squid-spawn-height:
       maximum: 0.0
+    viewdistances:
+      no-tick-view-distance: -1
