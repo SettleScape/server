@@ -1,31 +1,28 @@
-
 ## Dynamic
-**/backup/
+/build/
+**/cache/
+
+## Logs
 **/crash-reports/
 **/logs/
-**/tmp/
 **.log
-/build/
-/cache/
-/banned-ips.json
-/banned-players.json
-/eula.txt
-/ops.json
-/usercache.json
-/version_history.json
-/whitelist.json
 
-## Unversionable
-/worlds/
-**.bak
-**.db
-**.jar
+## Temporary files
 **.lock
-**.old
-**.sqlite
 **.swp
 **.tmp
+**/tmp/
+
+## Unversionable
+**.db
+**.jar
+**.sqlite
 **.zip
+
+## Backups
+**/backup/
+**.bak
+**.old
 
 ## IDEs
 **/.classpath

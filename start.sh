@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-SERVER_JAR='./server.jar'
+SERVER_PATH='./server'
+SERVER_JAR='server.jar'
 JAVA='/lib/jvm/java-8-jdk/bin/java'
 [ ! -f "$JAVA" ] && JAVA='java'
 
@@ -53,8 +54,9 @@ JAVA_OPTS=$(echo                           \
 # echo $JAVA_OPTS && exit
 
 ## Start the server
+cd "$SERVER_PATH"
 exec screen -d -m -S "SettleScape" \
-"$JAVA" $JAVA_OPTS -jar "$SERVER_JAR" --nogui #--forceUpgrade
-##NOTE: Type `screen -r SettleScape` to attach to the SettleScape screen.
-##NOTE: Press Ctrl+A,Ctrl+D to detatch from the SettleScape screen.
-##NOTE: Type `screen -S SettleScape -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
+"$JAVA" $JAVA_OPTS -jar "./$SERVER_JAR" --nogui #--forceUpgrade
+#NOTE: Type `screen -r SettleScape` to attach to the SettleScape screen.
+#NOTE: Press Ctrl+A,Ctrl+D to detatch from the SettleScape screen.
+#NOTE: Type `screen -S SettleScape -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
