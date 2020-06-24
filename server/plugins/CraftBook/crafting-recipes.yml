@@ -6,50 +6,22 @@ crafting-recipes:
   # Misc
   ################################################################################
 
-  flesh_to_leather: # Similar to how rabbit hides can craft leather
-    type: shapeless
-    ingredients:
-      'rotten_flesh': 9
-    results:
-      'leather': 1
-  bookshelves_to_books: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.
-    type: shapeless
-    ingredients:
-      'bookshelf': 1
-    results:
-      'book': 3
-  melons_to_slices: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.  3-7 when manual;  we're doing 4 with the recipe, so manual is still worthwhile.
-    type: shapeless
-    ingredients:
-      'melon': 1
-    results:
-      'melon_slice': 4
-  coal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
-    type: shapeless
-    ingredients:
-      'glass_bottle': 1 #TODO: Water bottle
-      'coal': 1
-    results:
-      'ink_sac': 1
-  charcoal_to_dye: #TODO: Doesn't work # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
-    type: shapeless
-    ingredients:
-      'glass_bottle': 1 #TODO: Water bottle
-      'charcoal': 1
-    results:
-      'ink_sac': 1
-  name_tag:
-    type: shaped
-    ingredients:
-      'gold_ingot': 'g'
-      'string': 's'
-    shape:
-      - '  s'
-      - ' g '
-      - 'g  '
-    results:
-      'name_tag': 1
-  # crossbow_dispenser: #TODO: Doesn't work #BUG: CraftBook doesn't seem to know how to handle crossbows, and treats it like an empty space.
+  # coal_to_dye: # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
+  #   type: shapeless
+  #   ingredients:
+  #     'glass_bottle': 1 #TODO: Water bottle
+  #     'coal': 1
+  #   results:
+  #     'ink_sac': 1
+  # charcoal_to_dye: #FIXME: Doesn't work # Similar to how you might make such ink irl (ie, for use with a quill), and expensive-enough to be balanced.
+  #   type: shapeless
+  #   ingredients:
+  #     'glass_bottle': 1 #TODO: Water bottle
+  #     'charcoal': 1
+  #   results:
+  #     'ink_sac': 1
+
+  # crossbow_dispenser: #FIXME: Doesn't work #BUG: CraftBook doesn't seem to know how to handle crossbows, and treats it like an empty space.
   #   type: shaped
   #   ingredients:
   #     'crossbow': 'x'
@@ -61,18 +33,31 @@ crafting-recipes:
   #     - 'crc'
   #   results:
   #     'dispenser': 1
-  # end_portal_frame: # Unbreakable, so not good for players to be able to place.
-  #   type: shaped
-  #   ingredients:
-  #     'end_stone': 's'
-  #     'enderpearl': 'p'
-  #     'obisdian': 'o'
-  #   shape:
-  #     - 'p p'
-  #     - 'pop'
-  #     - 'sss'
-  #   results:
-  #     'end_portal_frame': 1
+
+  end_portal_frame:
+    type: shaped
+    ingredients:
+      'end_stone': 's'
+      'enderpearl': 'p'
+      'bedrock': 'b'
+    shape:
+      - 'p p'
+      - 'pbp'
+      - 'sss'
+    results:
+      'end_portal_frame': 1
+
+  name_tag:
+    type: shaped
+    ingredients:
+      'gold_ingot': 'g'
+      'string': 's'
+    shape:
+      - '  s'
+      - ' g '
+      - 'g  '
+    results:
+      'name_tag': 1
 
   enchanted_golden_apple: # Original Minecraft recipe
     type: shaped
@@ -85,6 +70,7 @@ crafting-recipes:
       - 'ggg'
     results:
       'enchanted_golden_apple': 1
+
   totem_of_undying: # Based on the enchanted_golden_apple recipe.
     type: shaped
     ingredients:
@@ -100,62 +86,88 @@ crafting-recipes:
   # Soil
   ################################################################################
 
-  grass_block: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'dirt': 'd'
-      'wheat_seeds': 's'
-      'bone_meal': 'b'
-    shape:
-      - 'sss'
-      - ' b '
-      - ' d '
-    results:
-      'grass_block': 1
-  grass_path: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'grass_block': 'g'
-      'coarse_dirt': 'd'
-    shape:
-      - 'g'
-      - 'd'
-    results:
-      'grass_path': 2
-  podzol: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'coarse_dirt': 'd'
-      'leaves': 'l'
-    shape:
-      - 'lll'
-      - ' d '
-    results:
-      'podzol': 1
-  mycelium: #TODO: Doesn't work
-    type: shaped
-    ingredients:
-      'podzol': 'p'
-      'brown_mushroom': 'b'
-      'red_mushroom': 'r'
-    shape:
-      - 'rrr'
-      - 'bbb'
-      - ' p '
-    results:
-      'mycelium': 1
+  # grass_block: #FIXME: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'dirt': 'd'
+  #     'wheat_seeds': 's'
+  #     'bone_meal': 'b'
+  #   shape:
+  #     - 'sss'
+  #     - ' b '
+  #     - ' d '
+  #   results:
+  #     'grass_block': 1
+  # grass_path: #FIXME: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'grass_block': 'g'
+  #     'coarse_dirt': 'd'
+  #   shape:
+  #     - 'g'
+  #     - 'd'
+  #   results:
+  #     'grass_path': 2
+  # podzol: #FIXME: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'coarse_dirt': 'd'
+  #     'leaves': 'l'
+  #   shape:
+  #     - 'lll'
+  #     - ' d '
+  #   results:
+  #     'podzol': 1
+  # mycelium: #FIXME: Doesn't work
+  #   type: shaped
+  #   ingredients:
+  #     'podzol': 'p'
+  #     'brown_mushroom': 'b'
+  #     'red_mushroom': 'r'
+  #   shape:
+  #     - 'rrr'
+  #     - 'bbb'
+  #     - ' p '
+  #   results:
+  #     'mycelium': 1
 
-  red_sand: #TODO: Doesn't work # Matches concrete powder recipe.
-    type: shapeless
-    ingredients:
-      'orange_dye': 1
-      'sand': 4
-      'clay': 4
-    results:
-      'red_sand': 8
+  # red_sand: #FIXME: Doesn't work # Matches concrete powder recipe.
+  #   type: shapeless
+  #   ingredients:
+  #     'orange_dye': 1
+  #     'sand': 4
+  #     'clay': 4
+  #   results:
+  #     'red_sand': 8
 
   # Compressed blocks
   ################################################################################
+
+  bookshelves_to_books: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.
+    type: shapeless
+    ingredients:
+      'bookshelf': 1
+    results:
+      'book': 3
+  melons_to_slices: # Can be done manually in vanilla;  no reason there can't be a recipe for convenience.  3-7 when manual;  we're doing 4 with the recipe, so manual is still worthwhile.
+    type: shapeless
+    ingredients:
+      'melon': 1
+    results:
+      'melon_slice': 4
+
+  flesh_to_leather: # Similar to how rabbit hides can craft leather
+    type: shapeless
+    ingredients:
+      'rotten_flesh': 9
+    results:
+      'leather': 1
+  eggs_to_chicken: #TODO: Test # Actually reduces overall per-egg spawn chances.  A harmless addition to the game.
+    type: shapeless
+    ingredients:
+      'eggs': 9
+    results:
+      'chicken_spawn_egg': 1
 
   cobweb: # In-line with other compression recipes.
     type: shapeless
@@ -169,12 +181,6 @@ crafting-recipes:
       'nether_wart_block': 1
     results:
       'nether_wart': 9
-  # extract_prismarine_bricks:
-  #   type: shapeless
-  #   ingredients:
-  #     'prismarine_bricks': 1
-  #   results:
-  #     'prismarine_shard': 9
 
   extract_prismarine:
     type: shapeless
@@ -269,39 +275,36 @@ crafting-recipes:
   #     - 'l l'
   #   results:
   #     'leather_horse_armor': 1
-  iron_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+  iron_horse_armor: # Based on the leather horse armor recipe.
     type: shaped
     ingredients:
       'leather': 'l'
       'iron_ingot': 'i'
-      'iron_block': 'b'
     shape:
       - 'i i'
-      - 'blb'
+      - 'ili'
       - 'i i'
     results:
       'iron_horse_armor': 1
-  golden_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+  golden_horse_armor: # Based on the leather horse armor recipe.
     type: shaped
     ingredients:
       'leather': 'l'
       'gold_ingot': 'g'
-      'gold_block': 'b'
     shape:
       - 'g g'
-      - 'blb'
+      - 'glg'
       - 'g g'
     results:
       'golden_horse_armor': 1
-  diamond_horse_armor: # Based on the leather horse armor recipe, but modified to make it expensive.
+  diamond_horse_armor: # Based on the leather horse armor recipe.
     type: shaped
     ingredients:
       'leather': 'l'
       'diamond': 'd'
-      'diamond_block': 'b'
     shape:
       - 'd d'
-      - 'blb'
+      - 'dld'
       - 'd d'
     results:
       'diamond_horse_armor': 1
@@ -309,7 +312,7 @@ crafting-recipes:
   # Chainmail
   ################################################################################
 
-  chainmail_helmet:
+  chainmail_helmet: # Based on the chain recipe from 1.16.
     type: shaped
     ingredients:
       'iron_ingot': 'i'
@@ -319,7 +322,7 @@ crafting-recipes:
       - 'n n'
     results:
       'chainmail_helmet': 1
-  chainmail_chestplate:
+  chainmail_chestplate: # Based on the chain recipe from 1.16.
     type: shaped
     ingredients:
       'iron_ingot': 'i'
@@ -330,7 +333,7 @@ crafting-recipes:
       - 'ini'
     results:
       'chainmail_chestplate': 1
-  chainmail_leggings:
+  chainmail_leggings: # Based on the chain recipe from 1.16.
     type: shaped
     ingredients:
       'iron_ingot': 'i'
@@ -341,7 +344,7 @@ crafting-recipes:
       - 'n n'
     results:
       'chainmail_leggings': 1
-  chainmail_boots:
+  chainmail_boots: # Based on the chain recipe from 1.16.
     type: shaped
     ingredients:
       'iron_ingot': 'i'
@@ -378,7 +381,7 @@ crafting-recipes:
   #   results:
   #     'barrel': 1
 
-  # br_composter: #TODO: Doesn't work # Java > 1.15
+  # br_composter: #TODO: Doesn't work # Java >= 1.15
   #   type: shaped
   #   ingredients:
   #     'wood_slab': 's'
@@ -400,25 +403,25 @@ crafting-recipes:
   #   results:
   #     'composter': 1
 
-  br_dark_prismarine: # Java > 1.15
-    type: shaped
-    ingredients:
-      'prismarine_shard': 'p'
-      'ink_sac': 'i'
-    shape:
-      - 'ppp'
-      - 'pip'
-      - 'ppp'
-    results:
-      'dark_prismarine': 1
-  je_dark_prismarine: # Java < 1.15
-    type: shaped
-    ingredients:
-      'prismarine_shard': 'p'
-      'black_dye': 'b'
-    shape:
-      - 'ppp'
-      - 'pbp'
-      - 'ppp'
-    results:
-      'dark_prismarine': 1
+  # br_dark_prismarine: # Java >= 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'prismarine_shard': 'p'
+  #     'ink_sac': 'i'
+  #   shape:
+  #     - 'ppp'
+  #     - 'pip'
+  #     - 'ppp'
+  #   results:
+  #     'dark_prismarine': 1
+  # je_dark_prismarine: # Java < 1.15
+  #   type: shaped
+  #   ingredients:
+  #     'prismarine_shard': 'p'
+  #     'black_dye': 'b'
+  #   shape:
+  #     - 'ppp'
+  #     - 'pbp'
+  #     - 'ppp'
+  #   results:
+  #     'dark_prismarine': 1
