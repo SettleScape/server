@@ -162,12 +162,12 @@ crafting-recipes:
       'rotten_flesh': 9
     results:
       'leather': 1
-  eggs_to_chicken: #TODO: Test # Actually reduces overall per-egg spawn chances.  A harmless addition to the game.
-    type: shapeless
-    ingredients:
-      'eggs': 9
-    results:
-      'chicken_spawn_egg': 1
+  # eggs_to_chicken: #FIXME: Doesn't work #TODO: Test # Actually reduces overall per-egg spawn chances.  A harmless addition to the game.
+  #   type: shapeless
+  #   ingredients:
+  #     'eggs': 9
+  #   results:
+  #     'chicken_spawn_egg': 1
 
   cobweb: # In-line with other compression recipes.
     type: shapeless
