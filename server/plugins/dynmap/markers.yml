@@ -38,7 +38,7 @@ sets:
                 label: Adidas
         lines: {
             }
-        layerprio: 2
+        layerprio: 5
     geography:
         hide: true
         circles: {
@@ -61,7 +61,7 @@ sets:
             }
         label: WorldGuard
         markers:
-            worldguard.spawn:
+            worldguard.world.spawn:
                 world: world
                 markup: false
                 x: 0.0
@@ -69,25 +69,25 @@ sets:
                 y: 64.0
                 z: 0.0
                 label: Spawn
-            worldguard.spawn_nether:
-                world: world
+            worldguard.world_nether.spawn:
+                world: world_nether
                 markup: false
                 x: 0.0
-                icon: compass
-                y: 64.0
+                icon: tower
+                y: 0.0
                 z: 0.0
-                label: Spawn
-            worldguard.spawn_end:
-                world: world
+                label: Server Jail
+            worldguard.world_the_end.spawn:
+                world: world_the_end
                 markup: false
-                x: 0.0
+                x: 100.0
                 icon: compass
                 y: 64.0
                 z: 0.0
                 label: Spawn
         lines: {
             }
-        layerprio: 1
+        layerprio: 4
     outposts:
         hide: false
         circles: {
@@ -123,7 +123,59 @@ sets:
                 label: Kuiil
         lines: {
             }
-        layerprio: 1
+        layerprio: 3
+    portals:
+        hide: false
+        circles: {
+            }
+        deficon: portal
+        areas: {
+            }
+        label: Portals
+        markers: 
+            exit_portal:
+                world: world_the_end
+                markup: false
+                x: 0.0
+                icon: portal
+                y: 64.0
+                z: 0.0
+                label: Exit Portal
+            gateway_1a:
+                world: world_the_end
+                markup: false
+                x: 0.0
+                icon: portal
+                y: 64.0
+                z: 96.0
+                label: Gateway 1A
+            gateway_1b:
+                world: world_the_end
+                markup: false
+                x: -1.0
+                icon: portal
+                y: 64.0
+                z: -1072.0
+                label: Gateway 1B
+            gateway_2a:
+                world: world_the_end
+                markup: false
+                x: -57.0
+                icon: portal
+                y: 64.0
+                z: 77.0
+                label: Gateway 2A
+            gateway_2b:
+                world: world_the_end
+                markup: false
+                x: -608.0
+                icon: portal
+                y: 64.0
+                z: 821.0
+                label: Gateway 2B
+        lines: {
+            }
+        layerprio: 2
     markers:
         hide: true
         circles: {
@@ -136,6 +188,6 @@ sets:
             }
         lines: {
             }
-        layerprio: 0
+        layerprio: 1
 playersets: {
     }
