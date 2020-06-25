@@ -1,6 +1,6 @@
 **
 !.gitignore
-!./config.yml
+!config.yml
 !worlds
 !world
 !world_nether
