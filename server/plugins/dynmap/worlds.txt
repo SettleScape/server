@@ -7,9 +7,9 @@ worlds:
     extrazoomout: 6
     maps:
     -   class: org.dynmap.hdmap.HDMap
-        title: "Flat"
-        name: flat
-        prefix: flat
+        title: "Surface"
+        name: surface
+        prefix: surface
         image-format: default
         perspective: iso_S_90_lowres
         shader: stdtexture
@@ -18,30 +18,6 @@ worlds:
         mapzoomin: 0
         mapzoomout: 0
         boostzoom: 1
-    # -   class: org.dynmap.hdmap.HDMap
-    #     title: "Isometric"
-    #     name: surface
-    #     prefix: surface
-    #     image-format: default
-    #     perspective: iso_SE_60_lowres
-    #     shader: stdtexture
-    #     lighting: nightandday-smooth
-    #     background: "#3F3F3F"
-    #     mapzoomin: 0
-    #     mapzoomout: 0
-    #     boostzoom: 1
-    # -   class: org.dynmap.hdmap.HDMap
-    #     title: "Cave"
-    #     name: cave
-    #     prefix: cave
-    #     image-format: default
-    #     perspective: iso_SE_60_lowres
-    #     shader: lit-cave
-    #     lighting: night-smooth
-    #     background: "#000000"
-    #     mapzoomin: 0
-    #     mapzoomout: 0
-    #     boostzoom: 1
     protected: false
     showborder: true
     sendposition: false
@@ -56,23 +32,23 @@ worlds:
     hidestyle: air
 -   name: world_nether
     title: The Nether
-    enabled: false
-    bigworld: false
+    enabled: true
+    bigworld: true
     tileupdatedelay: 20
     extrazoomout: 4
     maps:
-    # -   class: org.dynmap.hdmap.HDMap
-    #     title: "Cross-Section"
-    #     name: nether
-    #     prefix: nether
-    #     image-format: default
-    #     perspective: iso_S_90_lowres
-    #     shader: stdtexture
-    #     lighting: nethershadows
-    #     background: "#290606"
-    #     mapzoomin: 0
-    #     mapzoomout: 0
-    #     boostzoom: 1
+    -   class: org.dynmap.hdmap.HDMap
+        title: "Cross-Section"
+        name: nether
+        prefix: nether
+        image-format: default
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: nethershadows
+        background: "#290606"
+        mapzoomin: 0
+        mapzoomout: 0
+        boostzoom: 1
     protected: false
     showborder: true
     sendposition: false

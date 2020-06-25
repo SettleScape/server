@@ -2,11 +2,11 @@
 ## Automatically update some plugins.
 
 ## Configurable variables
-PLUGIN_DIR='./plugins'
+PLUGIN_DIR='./server/plugins'
 
 ## Setup
 echo 'Updating plugins...'
-CWD="$(pwd)"
+CWD=$(pwd)
 cd "$PLUGIN_DIR"
 
 ## Bukkit.org
