@@ -69,6 +69,22 @@ sets:
                 y: 64.0
                 z: 0.0
                 label: Spawn
+            worldguard.spawn_nether:
+                world: world
+                markup: false
+                x: 0.0
+                icon: compass
+                y: 64.0
+                z: 0.0
+                label: Spawn
+            worldguard.spawn_end:
+                world: world
+                markup: false
+                x: 0.0
+                icon: compass
+                y: 64.0
+                z: 0.0
+                label: Spawn
         lines: {
             }
         layerprio: 1
