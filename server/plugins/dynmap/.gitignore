@@ -1,6 +1,11 @@
 **
+
 !.gitignore
 !configuration.txt
 !worlds.txt
 !markers.yml
 !custom-*.txt
+
+!web
+!web/images
+!web/images/dynmap.ico
