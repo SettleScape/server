@@ -9,3 +9,6 @@
 !web
 !web/images
 !web/images/dynmap.ico
+!web/css
+!web/css/embedded.css
+!web/css/override.css
