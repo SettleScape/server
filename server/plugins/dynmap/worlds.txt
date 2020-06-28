@@ -35,7 +35,7 @@ worlds:
     enabled: true
     bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 4
+    extrazoomout: 3
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Cross-Section"
@@ -66,7 +66,7 @@ worlds:
     enabled: true
     bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 5
+    extrazoomout: 4
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
