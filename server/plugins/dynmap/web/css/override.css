@@ -1,0 +1,85 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Variables */
+
+:root {
+    --compass_size: 100px;
+    --compass_margin: 10px;
+    --sidebar_width: calc(2 * var(--compass_size))
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Compass settings */
+
+.compass_flat,
+.compass_N,
+.compass_E,
+.compass_W,
+.compass_S {
+
+    /* Give the compass a more-regular size */
+    height: var(--compass_size);
+    width: var(--compass_size);
+
+    /* Center the compass on the sidebar */
+    top: 0;
+    right: 0;
+    margin: var(--compass_margin) calc(calc(var(--sidebar_width) - var(--compass_size)) / 2);
+}
+
+/* Put the sidebar below the compass*/
+.dynmap .sidebar {
+    top: calc(var(--compass_margin) + var(--compass_size));
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Sidebar settings */
+
+/* Resize the sidebar */
+.dynmap .sidebar {
+    height: auto;
+    width: var(--sidebar_width);
+}
+
+/* Peek the sidebar, and open fully when hovered. */
+.dynmap .sidebar {
+	margin-right: calc(var(--sidebar_width) / -2);
+}
+.dynmap .sidebar:hover {
+	margin-right: 0px;
+}
+
+/* Hide sidebar toggles, since it's always open */
+.dynmap .sidebar .hitbar,
+.dynmap .sidebar .panel > .pin {
+	display: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Controls settings */
+
+.leaflet-top.leaflet-left {
+    display: grid;
+}
+.leaflet-top.leaflet-left > .leaflet-control-zoom {
+    grid-column: 2;
+    grid-row: 1;
+}
+.leaflet-top.leaflet-left > .coord-control {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+.leaflet-top.leaflet-left > .leaflet-control-layers {
+    grid-column: 1;
+    grid-row: 2;
+}
+.leaflet-top.leaflet-left > .leaflet-control-layers > .leaflet-control-layers-toggle {
+    margin: auto;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Chat settings */
+
+.chat {
+    display: none;
+}
