@@ -1,14 +1,13 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* Variables */
-
 :root {
-    --compass_size: 100px;
-    --compass_margin: 10px;
-    --sidebar_width: calc(2 * var(--compass_size))
+    --base_margin: 10px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Compass settings */
+
+:root {
+    --compass_size: 105px;
+}
 
 .compass_flat,
 .compass_N,
@@ -20,32 +19,70 @@
     height: var(--compass_size);
     width: var(--compass_size);
 
-    /* Center the compass on the sidebar */
-    top: 0;
-    right: 0;
-    margin: var(--compass_margin) calc(calc(var(--sidebar_width) - var(--compass_size)) / 2);
-}
+    /* Move the compass to the bottom-left */
+    top: unset;
+    right: unset;
+    bottom: 0px;
+    left: 0px;
 
-/* Put the sidebar below the compass*/
-.dynmap .sidebar {
-    top: calc(var(--compass_margin) + var(--compass_size));
+    /* Specify a margin */
+    margin: var(--base_margin);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* Sidebar settings */
+/* Clock/Sidebar */
 
-/* Resize the sidebar */
+:root {
+    --sidebar_bkgd: rgba(0, 0, 0, 0.6);
+    --clock_width: 150px;
+    --clock_height: 60px;
+}
+
+/* Clock */
+.largeclock {
+
+    /* Put at the top-right */
+    top: 0px;
+    right: 0px;
+    bottom: unset;
+    left: unset;
+
+    /* Resize to match sidebar */
+    height: var(--clock_height);
+    width: var(--clock_width);
+
+    /* Remove borders, etc */
+    border: 0px;
+    border-radius: unset;
+    box-shadow: unset;
+
+    /* Background */
+    background: var(--sidebar_bkgd);
+}
+
+/* Sidebar */
 .dynmap .sidebar {
+
+    /* Put at the top-right, under the clock */
+    top: var(--clock_height);
+    right: 0px;
+    bottom: unset;
+    left: unset;
+
+    /* Dynamic height and fixed width */
     height: auto;
-    width: var(--sidebar_width);
-}
+    width: var(--clock_width);
 
-/* Peek the sidebar, and open fully when hovered. */
-.dynmap .sidebar {
-	margin-right: calc(var(--sidebar_width) / -2);
-}
-.dynmap .sidebar:hover {
-	margin-right: 0px;
+    /* Always show the sidebar */
+    margin-right: 0px;
+
+    /* Remove borders, etc */
+    border: 0px;
+    border-radius: unset;
+    box-shadow: unset;
+
+    /* Background */
+    background: var(--sidebar_bkgd);
 }
 
 /* Hide sidebar toggles, since it's always open */
@@ -55,26 +92,50 @@
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* Controls settings */
+/* Controls */
 
-.leaflet-top.leaflet-left {
+/* Combine controls into one thing */
+.dynmap .leaflet-control-container {
+    display: flex;
+    margin: calc(var(--base_margin) / 2);
+}
+.dynmap .leaflet-control-container > * {
+    position: unset;
+    margin: 0px;
+}
+.dynmap .leaflet-control-container > * > * {
+    margin: calc(var(--base_margin) / 2);
+}
+
+/* Gridify controls */
+.dynmap .leaflet-control-container .leaflet-top.leaflet-left {
     display: grid;
 }
-.leaflet-top.leaflet-left > .leaflet-control-zoom {
-    grid-column: 2;
-    grid-row: 1;
-}
-.leaflet-top.leaflet-left > .coord-control {
+.dynmap .leaflet-control-container * > .coord-control {
     grid-column: 1;
     grid-row: 1;
-
 }
-.leaflet-top.leaflet-left > .leaflet-control-layers {
+.dynmap .leaflet-control-container * > .leaflet-control-layers {
     grid-column: 1;
     grid-row: 2;
 }
-.leaflet-top.leaflet-left > .leaflet-control-layers > .leaflet-control-layers-toggle {
+.dynmap .leaflet-control-container * > .leaflet-control-zoom {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Prettify controls */
+.dynmap .leaflet-control-container * > .coord-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dynmap .leaflet-control-container * > .leaflet-control-layers > .leaflet-control-layers-toggle {
     margin: auto;
+}
+.dynmap .leaflet-control-container * > .dynmap-link.leaflet-control {
+    padding: unset;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
