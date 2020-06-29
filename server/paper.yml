@@ -75,20 +75,20 @@ world-settings:
     entities-target-with-follow-range: false
     zombie-villager-infection-chance: -1.0
     disable-teleportation-suffocation-check: false
-    remove-corrupt-tile-entities: false
+    remove-corrupt-tile-entities: true
     fixed-chunk-inhabited-time: -1
     optimize-explosions: true
     per-player-mob-spawns: true
-    experience-merge-max-value: -1
+    experience-merge-max-value: 667
     use-vanilla-world-scoreboard-name-coloring: false
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
     prevent-moving-into-unloaded-chunks: true
-    max-auto-save-chunks-per-tick: 12
+    max-auto-save-chunks-per-tick: 16
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 4
+    max-entity-collisions: 0
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
@@ -96,7 +96,7 @@ world-settings:
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
-    count-all-mobs-for-spawning: false
+    count-all-mobs-for-spawning: true
     keep-spawn-loaded-range: 5
     keep-spawn-loaded: false
     auto-save-interval: -1
@@ -104,12 +104,12 @@ world-settings:
     nether-ceiling-void-damage-height: 0
     water-over-lava-flow-speed: 5
     grass-spread-tick-rate: 2
-    bed-search-radius: 1
+    bed-search-radius: 2
     fix-zero-tick-instant-grow-farms: true
     use-faster-eigencraft-redstone: true
     allow-non-player-entities-on-scoreboards: false
     disable-explosion-knockback: false
-    parrots-are-unaffected-by-player-movement: false
+    parrots-are-unaffected-by-player-movement: true
     container-update-tick-rate: 3
     prevent-tnt-from-moving-in-water: false
     non-player-arrow-despawn-rate: 200
@@ -118,7 +118,7 @@ world-settings:
     spawner-nerfed-mobs-should-jump: false
     allow-leashing-undead-horse: true
     baby-zombie-movement-modifier: 0.5
-    all-chunks-are-slime-chunks: false
+    all-chunks-are-slime-chunks: true
     mob-spawner-tick-rate: 2
     game-mechanics:
       nerf-pigmen-from-nether-portals: false
@@ -158,12 +158,12 @@ world-settings:
         min: 20
         max: 40
     lootables:
-      auto-replenish: false
+      auto-replenish: true
       restrict-player-reloot: true
       reset-seed-on-fill: true
       max-refills: -1
-      refresh-min: 12h
-      refresh-max: 2d
+      refresh-min: 1d
+      refresh-max: 1d
     hopper:
       cooldown-when-full: true
       disable-move-event: true

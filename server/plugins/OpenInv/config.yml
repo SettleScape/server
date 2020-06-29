@@ -3,7 +3,5 @@ settings:
   disable-saving: false
   locale: en_US
 toggles:
-  any-chest:
-    162b530e-8df5-4997-af36-94c58789100f: false
-  silent-chest:
-    162b530e-8df5-4997-af36-94c58789100f: false
+  any-chest: []
+  silent-chest: []
