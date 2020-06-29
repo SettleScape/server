@@ -1,9 +1,7 @@
-config-version: 3
-notify:
-  any-chest: true
-  silent-chest: true
+config-version: 4
 settings:
   disable-saving: false
+  locale: en_US
 toggles:
   any-chest:
     162b530e-8df5-4997-af36-94c58789100f: false
