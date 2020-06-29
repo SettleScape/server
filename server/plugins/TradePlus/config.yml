@@ -77,11 +77,12 @@ extras:
     taxpercent: 0
     mode: chat
     customModelData: 0
+    name: money
   experience:
     enabled: true
     material: experience_bottle
     display: '&aYour current XP Levels offer is &2%AMOUNT%'
-    theirdisplay: '&aTheir current XP Levels offer is &2%AMOUNT%'
+    theirdisplay: '&aTheir current XP Levels offer is &2%AMOUNT% &a(+%LEVELS% levels)'
     lore:
     - '&fClick to edit your offer!'
     increment: 5
@@ -89,6 +90,7 @@ extras:
     mode: chat
     levelMode: true
     customModelData: 0
+    name: experience points
   playerpoints:
     enabled: false
     material: diamond
@@ -100,6 +102,7 @@ extras:
     taxpercent: 0
     mode: type
     customModelData: 0
+    name: player points
   griefprevention:
     enabled: false
     material: fire
@@ -111,6 +114,7 @@ extras:
     taxperecent: 0
     mode: type
     customModelData: 0
+    name: grief prevention
   enjinpoints:
     enabled: false
     material: emerald
@@ -122,6 +126,7 @@ extras:
     taxpercent: 0
     mode: type
     customModelData: 0
+    name: enjin points
   tokenenchant:
     enabled: false
     material: enchanted_book
@@ -133,6 +138,7 @@ extras:
     taxpercent: 0
     mode: type
     customModelData: 0
+    name: token enchant points
   tokenmanager:
     enabled: false
     material: book
@@ -144,9 +150,20 @@ extras:
     taxpercent: 0
     mode: type
     customModelData: 0
+    name: tokens
+  votingplugin:
+    name: vote points
+    material: sunflower
+    display: '&7Your current vote points offer is &b%AMOUNT%'
+    theirdisplay: '&7Their current vote points offer is &b%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    taxpercent: 0
 hooks:
   factions:
     allow-trades-in-enemy-territory: false
+  worldguard:
+    trading-flag: true
 soundeffects:
   enabled: true
   onchange: true
@@ -154,5 +171,11 @@ soundeffects:
   oncomplete: true
   oncountdown: true
 debug-mode: false
-configversion: 3.66
+configversion: 3.71
 trade-command-compatible-mode: false
+excess-chest:
+  enabled: true
+  title: '&7Your inventory is full!'
+spectate:
+  enabled: true
+  broadcast: true

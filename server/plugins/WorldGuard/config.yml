@@ -45,6 +45,7 @@ event-handling:
     interaction-whitelist: []
     emit-block-use-at-feet: []
     ignore-hopper-item-move-events: true
+    break-hoppers-on-denied-move: true
 protection:
     item-durability: true
     remove-infinite-stacks: true
@@ -144,6 +145,7 @@ dynamics:
     disable-crop-growth: false
     disable-soil-dehydration: false
     snow-fall-blocks: []
+    disable-coral-block-fade: false
 blacklist:
     use-as-whitelist: false
     logging:
