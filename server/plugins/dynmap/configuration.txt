@@ -55,16 +55,16 @@ components:
     # (optional) block player login IDs that are banned from chatting
     block-banned-player-chat: true
     # Require login for web-to-server chat (requires login-enabled: true)
-    webchat-requires-login: false
+    webchat-requires-login: true
     # If set to true, users must have dynmap.webchat permission in order to chat
     webchat-permissions: false
     # Limit length of single chat messages
     chatlengthlimit: 256
-  #  # Optional - make players hidden when they are inside/underground/in shadows (#=light level: 0=full shadow,15=sky)
-  #  hideifshadow: 4
-  #  # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
-  #  hideifundercover: 14
-  #  # (Optional) if true, players that are crouching/sneaking will be hidden
+    # Optional - make players hidden when they are inside/underground/in shadows (#=light level: 0=full shadow,15=sky)
+    hideifshadow: 4
+    # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
+    hideifundercover: 14
+    # (Optional) if true, players that are crouching/sneaking will be hidden
     hideifsneaking: false
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
     protected-player-info: true
@@ -233,7 +233,7 @@ save-pending-period: 900
 zoomoutperiod: 30
 
 # Control whether zoom out tiles are validated on startup (can be needed if zoomout processing is interrupted, but can be expensive on large maps)
-initial-zoomout-validate: true
+initial-zoomout-validate: false
 
 # Default delay on processing of updated tiles, in seconds.  This can reduce potentially expensive re-rendering
 # of frequently updated tiles (such as due to machines, pistons, quarries or other automation).  Values can
@@ -308,7 +308,7 @@ render-triggers:
   #- blockredstone
 
 # Title for the web page - if not specified, defaults to the server's name (unless it is the default of 'Unknown Server')
-webpage-title: "SettleScape Map"
+webpage-title: "SettleScape™ Map"
 
 # The path where the tile-files are placed.
 tilespath: web/tiles
@@ -341,7 +341,7 @@ login-enabled: false
 login-required: false
 
 # Period between tile renders for fullrender, in seconds (non-zero to pace fullrenders, lessen CPU load)
-timesliceinterval: 0.0
+timesliceinterval: 0.05
 
 # Maximum chunk loads per server tick (1/20th of a second) - reducing this below 90 will impact render performance, but also will reduce server thread load
 maxchunkspertick: 100
@@ -366,7 +366,7 @@ per-tick-time-limit: 50
 # If TPS of server is below this setting, update renders processing is paused
 update-min-tps: 18.0
 # If TPS of server is below this setting, full/radius renders processing is paused
-fullrender-min-tps: 19.0
+fullrender-min-tps: 20.0
 # If TPS of server is below this setting, zoom out processing is paused
 zoomout-min-tps: 19.0
 
@@ -399,7 +399,7 @@ quitmessage: "&7* &r{PLAYER}&7 has left the game.&r"
 
 spammessage: "You may only chat once every %interval% seconds."
 # format for messages from web: %playername% substitutes sender ID (typically IP), %message% includes text
-webmsgformat: ""
+webmsgformat: "%playername%: %message%"
 
 # Control whether layer control is presented on the UI (default is true)
 showlayercontrol: true
@@ -410,7 +410,7 @@ check-banned-ips: true
 # Default selection when map page is loaded
 defaultzoom: -1
 defaultworld: world
-defaultmap: flat
+defaultmap: surface
 # (optional) Zoom level and map to switch to when following a player, if possible
 #followzoom: 3
 #followmap: surface

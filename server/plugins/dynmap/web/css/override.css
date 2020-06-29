@@ -47,7 +47,7 @@
     bottom: unset;
     left: unset;
 
-    /* Resize to match sidebar */
+    /* Size */
     height: var(--clock_height);
     width: var(--clock_width);
 
@@ -69,12 +69,9 @@
     bottom: unset;
     left: unset;
 
-    /* Dynamic height and fixed width */
-    height: auto;
+    /* Size */
+    height: calc(100% - var(--clock_height));
     width: var(--clock_width);
-
-    /* Always show the sidebar */
-    margin-right: 0px;
 
     /* Remove borders, etc */
     border: 0px;
@@ -85,10 +82,12 @@
     background: var(--sidebar_bkgd);
 }
 
-/* Hide sidebar toggles, since it's always open */
-.dynmap .sidebar .hitbar,
-.dynmap .sidebar .panel > .pin {
-	display: none;
+/* Fix issues with player list */
+.dynmap .sidebar .playerlist .player {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* opacity: 1; */
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
