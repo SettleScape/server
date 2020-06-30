@@ -1,4 +1,5 @@
 # Dynmap-Towny configuration
+dynamic-nation-colors: true
 visibility-by-town: false
 visibility-by-nation: false
 update:
