@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.1.7
+  version: 0.96.1.11
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.1.7
+  last_run_version: 0.96.1.11
 # The language file you wish to use
 language: english.yml
 
@@ -251,11 +251,17 @@ town:
   # Maximum number of towns allowed on the server.
   town_limit: '0'
 
+  # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
+  # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
+  min_distances_ignored_for_towns_in_same_nation: 'true'
+
   # Minimum number of plots any towns plot must be from the next town's own plots.
+  # Does not affect towns which are in the same nation.
   # This will prevent town encasement to a certain degree.
   min_plot_distance_from_town_plot: '0'
 
   # Minimum number of plots any towns home plot must be from the next town.
+  # Does not affect towns which are in the same nation.
   # This will prevent someone founding a town right on your doorstep
   min_distance_from_town_homeblock: '10'
 
@@ -470,6 +476,7 @@ global_town_settings:
   # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
   outsiders_prevent_pvp_toggle: 'true'
   # If set to true, when a world has forcepvp set to true, homeblocks of towns will not be affected and have PVP set to off.
+  # Does not have any effect when Event War is active.
   homeblocks_prevent_forcepvp: 'false'
   # The amount of residents a town needs to claim an outpost,
   # Setting this value to 0, means a town can claim outposts no matter how many residents
@@ -981,13 +988,13 @@ economy:
   nation_rename_cost: '1000'
 
   spawn_travel:
-    # Cost to use /town spawn
+    # Cost to use /town spawn.
     price_town_spawn_travel: '0.0'
     # Cost to use '/town spawn [town]' to another town in your nation.
     price_town_nation_spawn_travel: '25.0'
     # Cost to use '/town spawn [town]' to another town in a nation that is allied with your nation.
     price_town_ally_spawn_travel: '50.0'
-    # Cost to use /town spawn [town]
+    # Maximum cost to use /town spawn [town] that mayors can set using /t set spawncost.
     # This is paid to the town you goto.
     price_town_public_spawn_travel: '100.0'
     # When set to true, any cost paid by a player to use any variant of '/town spawn' will be paid to the town bank.
@@ -1070,6 +1077,8 @@ economy:
     max_nation_tax_amount: '250.0'
     # Maximum tax percentage allowed when taxing by percentages for towns.
     max_town_tax_percent: '10'
+    # The maximum amount of money that can be taken from a balance when using a percent tax, this is the default for all new towns.
+    max_town_tax_percent_amount: '10000'
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
     price_nation_upkeep: '50.0'
@@ -1227,6 +1236,7 @@ war:
       firework_on_attacked: 'true'
 
     # If true and the monarch/king dies the nation is removed from the war.
+    # Also removes a town from the war event when the mayor dies.
     remove_on_monarch_death: 'false'
     # If enabled players will be able to break/place any blocks in enemy plots during a war.
     # This setting SHOULD NOT BE USED unless you want the most chaotic war possible.
