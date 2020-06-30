@@ -253,12 +253,12 @@ town:
 
   # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
   # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
-  min_distances_ignored_for_towns_in_same_nation: 'true'
+  min_distances_ignored_for_towns_in_same_nation: 'false'
 
   # Minimum number of plots any towns plot must be from the next town's own plots.
   # Does not affect towns which are in the same nation.
   # This will prevent town encasement to a certain degree.
-  min_plot_distance_from_town_plot: '0'
+  min_plot_distance_from_town_plot: '2'
 
   # Minimum number of plots any towns home plot must be from the next town.
   # Does not affect towns which are in the same nation.
@@ -1072,13 +1072,13 @@ economy:
     # Maximum tax amount allowed for townblocks sold to players.
     max_plot_tax_amount: '100.0'
     # Maximum tax amount allowed for towns when using flat taxes.
-    max_town_tax_amount: '100.0'
+    max_town_tax_amount: '250.0'
     # Maximum tax amount allowed for nations when using flat taxes.
     max_nation_tax_amount: '250.0'
     # Maximum tax percentage allowed when taxing by percentages for towns.
-    max_town_tax_percent: '10'
+    max_town_tax_percent: '67'
     # The maximum amount of money that can be taken from a balance when using a percent tax, this is the default for all new towns.
-    max_town_tax_percent_amount: '10000'
+    max_town_tax_percent_amount: '1000'
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
     price_nation_upkeep: '50.0'
