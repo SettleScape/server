@@ -1,30 +1,28 @@
 Files in this repository for which the SettleScape Team owns the Copyright:
-- /.editorconfig
-- /.gitattributes
-- /.gitconfig
-- /Conduct.rst
-- /deploy-plugins.sh
-- /refresh-server.sh
-- /refresh-plugins.sh
-- /start.sh
-- /server-icon.png
-- /server-icon.svg
+(Note: This section uses the same syntax as `.gitignore` files, apart from
+the `- ` at the start of each line.)
+- /**
+- !/server/
 - **/.gitignore
-- /etc/**
-- /notes/**
-- /plugins/plugins.rst
-- /plugins/CraftBook/crafting-recipes.yml
-- /plugins/dynmap/worlds.txt
-- /plugins/Essentials/motd.yml
-- /plugins/Essentials/rules.yml
-- /plugins/Essentials/spawn.yml
-- /plugins/GroupManager/config.yml
-- /plugins/GroupManager/worlds/world/groups.yml
-- /plugins/Rankup/rankups.yml
+- /server/server-icon.png
+- /server/plugins/CraftBook/crafting-recipes.yml
+- /server/plugins/dynmap/marers.yml
+- /server/plugins/dynmap/worlds.txt
+- /server/plugins/dynmap/web/css/embedded.css
+- /server/plugins/dynmap/web/css/override.css
+- /server/plugins/dynmap/web/images/favicon.ico
+- /server/plugins/Essentials/kits.yml
+- /server/plugins/Essentials/motd.yml
+- /server/plugins/Essentials/rules.yml
+- /server/plugins/Essentials/spawn.yml
+- /server/plugins/GroupManager/config.yml
+- /server/plugins/GroupManager/worlds/world/groups.yml
+- /server/plugins/Rankup/rankups.yml
 
 Files with the following extensions are to be considered "source-code" for the
 purposes of this document:
 - .bash
+- .css
 - .sh
 All other files are to be considered "non-source-code" for the purposes of this
 document.
