@@ -1,5 +1,5 @@
 :root {
-    --base_margin: 10px;
+    --base_margin: 10;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -22,8 +22,8 @@
     /* Move the compass to the bottom-left */
     top: unset;
     right: unset;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
 
     /* Specify a margin */
     margin: var(--base_margin);
@@ -34,16 +34,16 @@
 
 :root {
     --sidebar_bkgd: rgba(0, 0, 0, 0.6);
-    --clock_width: 150px;
-    --clock_height: 60px;
+    --clock_width: 150;
+    --clock_height: 60;
 }
 
 /* Clock */
 .largeclock {
 
     /* Put at the top-right */
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     bottom: unset;
     left: unset;
 
@@ -52,7 +52,7 @@
     width: var(--clock_width);
 
     /* Remove borders, etc */
-    border: 0px;
+    border: 0;
     border-radius: unset;
     box-shadow: unset;
 
@@ -65,7 +65,7 @@
 
     /* Put at the top-right, under the clock */
     top: var(--clock_height);
-    right: 0px;
+    right: 0;
     bottom: unset;
     left: unset;
 
@@ -74,7 +74,7 @@
     width: var(--clock_width);
 
     /* Remove borders, etc */
-    border: 0px;
+    border: 0;
     border-radius: unset;
     box-shadow: unset;
 
@@ -100,7 +100,7 @@
 }
 .dynmap .leaflet-control-container > * {
     position: unset;
-    margin: 0px;
+    margin: 0;
 }
 .dynmap .leaflet-control-container > * > * {
     margin: calc(var(--base_margin) / 2);
