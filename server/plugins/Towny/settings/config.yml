@@ -341,10 +341,10 @@ new_world_settings:
       unclaim_delete: NONE
 
     mayor_plotblock_delete:
-      enabled: 'true'
+      enabled: 'false'
       # These items will be deleted upon a mayor using /plot clear
       # To disable deleting replace the current entries with NONE.
-      mayor_plot_delete: ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,OAK_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR
+      mayor_plot_delete: NONE
 
     revert_on_unclaim:
       # *** WARNING***
@@ -362,7 +362,7 @@ new_world_settings:
       enabled: 'false'
       speed: 1s
       # These block types will NOT be regenerated
-      block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,SWEET_BERRY_BUSH
+      block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE
 
     wild_revert_on_mob_explosion:
       # Enabling this will slowly regenerate holes created in the
@@ -465,7 +465,7 @@ global_town_settings:
   nation_requires_proximity: '333.0'
   # List of blocks which can be modified on farm plots, as long as player is also allowed in the plot's '/plot perm' line.
   # Not included by default but some servers add GRASS_BLOCK,FARMLAND,DIRT to their list.
-  farm_plot_allow_blocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_LOG,JUNGLE_SAPLING,JUNGLE_LEAVES,OAK_LOG,OAK_SAPLING,OAK_LEAVES,BIRCH_LOG,BIRCH_SAPLING,BIRCH_LEAVES,ACACIA_LOG,ACACIA_SAPLING,ACACIA_LEAVES,DARK_OAK_LOG,DARK_OAK_SAPLING,DARK_OAK_LEAVES,SPRUCE_LOG,SPRUCE_SAPLING,SPRUCE_LEAVES,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE
+  farm_plot_allow_blocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
   # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
@@ -755,7 +755,7 @@ unclaimed:
   unclaimed_zone_build: 'true'
   unclaimed_zone_destroy: 'true'
   unclaimed_zone_item_use: 'true'
-  unclaimed_zone_ignore: SAPLING,GOLD_ORE,IRON_ORE,COAL_ORE,LOG,LEAVES,LAPIS_ORE,LONG_GRASS,YELLOW_FLOWER,RED_ROSE,BROWN_MUSHROOM,RED_MUSHROOM,TORCH,DIAMOND_ORE,LADDER,RAILS,REDSTONE_ORE,GLOWING_REDSTONE_ORE,CACTUS,CLAY,SUGAR_CANE_BLOCK,PUMPKIN,GLOWSTONE,LOG_2,VINE,NETHER_WARTS,COCOA
+  unclaimed_zone_ignore: NONE
   unclaimed_zone_switch: 'true'
 
 
@@ -920,24 +920,24 @@ invite_system:
   cancel_command: tcancel
   # When set for more than 0m, the amount of time (in minutes) which must have passed between
   # a player's first log in and when they can be invited to a town.
-  cooldowntime: 0m
+  cooldowntime: 20m
   # You can increase these limits but it is not recommended. Invites/requests are not saved between server reloads/stops.
   maximum_invites_sent:
     # How many invites a town can send out to players, to join the town.
     town_toplayer: '9'
     # How many invites a nation can send out to towns, to join the nation.
-    nation_totown: '5'
+    nation_totown: '4'
     # How many requests a nation can send out to other nations, to ally with the nation.
     # Only used when war.disallow_one_way_alliance is set to true.
-    nation_tonation: '5'
+    nation_tonation: '4'
   # You can increase these limits but it is not recommended. Invites/requests are not saved between server reloads/stops.
   maximum_invites_received:
     # How many invites can one player have from towns.
-    player: '5'
+    player: '4'
     # How many invites can one town have from nations.
-    town: '5'
+    town: '4'
     # How many requests can one nation have from other nations for an alliance.
-    nation: '5'
+    nation: '9'
   # When set above 0, the maximum distance a player can be from a town's spawn in order to receive an invite.
   # Use this setting to require players to be near or inside a town before they can be invited.
   maximum_distance_from_town_spawn: '1000'
@@ -991,18 +991,18 @@ economy:
     # Cost to use /town spawn.
     price_town_spawn_travel: '0.0'
     # Cost to use '/town spawn [town]' to another town in your nation.
-    price_town_nation_spawn_travel: '25.0'
+    price_town_nation_spawn_travel: '0.0'
     # Cost to use '/town spawn [town]' to another town in a nation that is allied with your nation.
-    price_town_ally_spawn_travel: '50.0'
+    price_town_ally_spawn_travel: '0.0'
     # Maximum cost to use /town spawn [town] that mayors can set using /t set spawncost.
     # This is paid to the town you goto.
-    price_town_public_spawn_travel: '100.0'
+    price_town_public_spawn_travel: '0.0'
     # When set to true, any cost paid by a player to use any variant of '/town spawn' will be paid to the town bank.
     # When false the amount will be paid to the server account whose name is set in the closed economy setting below..
-    town_spawn_cost_paid_to_town: 'true'
+    town_spawn_cost_paid_to_town: 'false'
 
   # The daily upkeep to remain neutral during a war. Neutrality will exclude you from a war event, as well as deterring enemies.
-  price_nation_neutrality: '100.0'
+  price_nation_neutrality: '50.0'
 
   new_expand:
     # How much it costs to start a nation.
@@ -1076,7 +1076,7 @@ economy:
     # Maximum tax amount allowed for nations when using flat taxes.
     max_nation_tax_amount: '250.0'
     # Maximum tax percentage allowed when taxing by percentages for towns.
-    max_town_tax_percent: '67'
+    max_town_tax_percent: '10'
     # The maximum amount of money that can be taken from a balance when using a percent tax, this is the default for all new towns.
     max_town_tax_percent_amount: '1000'
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
