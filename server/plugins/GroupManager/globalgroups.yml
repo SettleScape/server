@@ -147,7 +147,6 @@ groups:
     - essentials.book
     - essentials.book.title
     - editablesign.edit
-    - lwc.protect
     - mineablespawners.mine
     - -rankup.auto
 
@@ -226,7 +225,6 @@ groups:
     - essentials.fly
     - essentials.fly.safelogin
     - townyflight.bypass
-    - lwc.shownotices
     - +jobs.command.leave
     - +jobs.command.leaveall
 
@@ -275,7 +273,6 @@ groups:
     - essentials.ptime.others
     - essentials.seen.extra
     - essentials.whois
-    - lwc.shownotices
     - groupmanager.listgroups
     - groupmanager.manselect
     - groupmanager.manwhois
@@ -306,7 +303,6 @@ groups:
     - vanish.silentchests
     - vanish.silentjoin
     - vanish.silentquit
-    - lwc.mod
     - OpenInv.crossworld
     - OpenInv.openender
     - OpenInv.openenderall
@@ -444,7 +440,6 @@ groups:
     - essentials.reloadall
     - essentials.plugin
     - essentials.top
-    - lwc.admin
     - worldguard.region.wand
 
 # Owner

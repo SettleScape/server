@@ -15,7 +15,6 @@ Group Manager      0.2.0      2019-12-26  2020-06-29  https://github.com/GroupMa
 Jobs Reborn        4.15.7     2020-04-02  2020-04-16  https://spigotmc.org/resources/jobs-reborn.4216/updates
 mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
 Mineable Spawners  3.0.5      2020-06-27  2020-06-29  https://github.com/dnyferguson/MineableSpawners/releases
-Modern LWC         2.1.5      2019-07-17  2020-06-29  https://spigotmc.org/resources/modern-lwc-continuation-of-lwc.2162/updates
 OpenInv            4.1.2      2020-06-25  2020-04-16  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  2020-06-29  https://github.com/SimonOrJ/PhantomSMP/releases
 PlaceholderAPI     2.10.6     2020-05-02  2020-06-29  https://spigotmc.org/resources/placeholderapi.6245/updates
