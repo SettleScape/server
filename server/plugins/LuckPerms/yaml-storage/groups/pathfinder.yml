@@ -2,8 +2,10 @@ name: pathfinder # Has beaten Minecraft. Gets special powers.
 parents:
 - explorer
 prefixes:
-- '&6Pathfinder&r ': {priority: 5}
+- '&6Pathfinder&r '
 permissions:
+- displayname.Pathfinder
+- weight.5
 - essentials.kits.pathfinder
 
 # Limit increases

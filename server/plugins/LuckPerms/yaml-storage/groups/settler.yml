@@ -2,8 +2,10 @@ name: settler # Has beaten the Nether. Adds cosmetic features; reduces griefing 
 parents:
 - traveller
 prefixes:
-- '&9Settler&r ': {priority: 3}
+- '&9Settler&r '
 permissions:
+- displayname.Settler
+- weight.3
 - essentials.kits.settler
 
 # Limit increases

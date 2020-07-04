@@ -1,7 +1,11 @@
-name: admin # Administrator
+name: administrator # Sysadmins and such
+parents:
+- tester
 suffixes:
-- ' &c(admin)&r': {priority: 4}
+- ' &c(admin)&r'
 permissions:
+- displayname.Administrator
+- weight.14
 
 # Server info
 #-------------------------------------------------------------------------------

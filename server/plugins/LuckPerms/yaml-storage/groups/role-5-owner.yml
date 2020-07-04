@@ -1,5 +1,11 @@
 name: owner # Operator / God
+parents:
+- donor
+- moderator
+- administrator
 suffixes:
-- ' &c(owner)&r': {priority: 5}
+- ' &c(owner)&r'
 permissions:
+- displayname.Owner
+- weight.15
 - luckperms.autoop

@@ -1,7 +1,11 @@
-name: dev # Developer/Tester
+name: tester # QA (Quality Assurance)
+parents:
+- default
 suffixes:
-- ' &c(dev)&r': {priority: 2}
+- ' &c(QA)&r'
 permissions:
+- displayname.Tester
+- weight.12
 
 # Chat
 #-------------------------------------------------------------------------------

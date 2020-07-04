@@ -1,7 +1,11 @@
-name: mod # Moderator
+name: moderator
+parents:
+- default
 suffixes:
-- ' &c(mod)&r': {priority: 3}
+- ' &c(mod)&r'
 permissions:
+- displayname.Moderator
+- weight.13
 
 # Chat
 #-------------------------------------------------------------------------------

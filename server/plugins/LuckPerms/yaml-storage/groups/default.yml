@@ -1,7 +1,7 @@
 name: default
-suffixes:
-- '': {priority: 0}
 permissions:
+- displayname.Default
+- weight.-1
 
 # Info about the server
 #-------------------------------------------------------------------------------

@@ -1,7 +1,11 @@
 name: donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
+parents:
+- default
 suffixes:
-- ' &c(donor)&r': {priority: 1}
+- ' &c(donor)&r'
 permissions:
+- displayname.Donor
+- weight.11
 
 # Exclusives
 #-------------------------------------------------------------------------------
