@@ -1,8 +1,8 @@
-name: wanderer # Starting rank.  Basically a vanilla experience.
+name: rank-1 # Starting rank.  Basically a vanilla experience.
 parents:
-- g-player
+- role-player
 prefixes:
-- '&8Wanderer&r ': {priority: 50}
+- '&8Wanderer&r ': {priority: 1}
 permissions:
 - essentials.kits.wanderer_prize
 

@@ -1,5 +1,5 @@
-name: g-owner
+name: role-owner # Operator / God
 suffixes:
-- ' &c(owner)&r': {priority: 50}
+- ' &c(owner)&r': {priority: 5}
 permissions:
 - luckperms.autoop

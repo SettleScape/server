@@ -1,6 +1,6 @@
-name: g-developer # Developer/Tester
+name: role-dev # Developer/Tester
 suffixes:
-- ' &c(dev)&r': {priority: 50}
+- ' &c(dev)&r': {priority: 2}
 permissions:
 
 # Chat

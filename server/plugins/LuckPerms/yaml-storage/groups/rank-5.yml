@@ -1,8 +1,8 @@
-name: pathfinder # Has beaten Minecraft. Gets special powers.
+name: rank-5 # Has beaten Minecraft. Gets special powers.
 parents:
-- explorer
+- rank-4
 prefixes:
-- '&6Pathfinder&r ': {priority: 50}
+- '&6Pathfinder&r ': {priority: 5}
 permissions:
 - essentials.kits.pathfinder_prize
 

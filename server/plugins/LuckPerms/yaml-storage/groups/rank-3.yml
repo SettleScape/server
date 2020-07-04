@@ -1,8 +1,8 @@
-name: settler # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
+name: rank-3 # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
 parents:
-- traveller
+- rank-2
 prefixes:
-- '&9Settler&r ': {priority: 50}
+- '&9Settler&r ': {priority: 3}
 permissions:
 - essentials.kits.settler_prize
 

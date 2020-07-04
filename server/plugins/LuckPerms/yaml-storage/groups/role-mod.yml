@@ -1,6 +1,6 @@
-name: g-moderator
+name: role-mod # Moderator
 suffixes:
-- ' &c(mod)&r': {priority: 50}
+- ' &c(mod)&r': {priority: 3}
 permissions:
 
 # Chat

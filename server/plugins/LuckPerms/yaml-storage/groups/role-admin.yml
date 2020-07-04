@@ -1,6 +1,6 @@
-name: g-administrator
+name: role-admin # Administrator
 suffixes:
-- ' &c(admin)&r': {priority: 50}
+- ' &c(admin)&r': {priority: 4}
 permissions:
 
 # Server info

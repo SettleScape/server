@@ -1,8 +1,8 @@
-name: traveller # Has beaten the Overworld.  Adds some Quality of Life features;  reduces spam prevention.
+name: rank-2 # Has beaten the Overworld.  Adds some Quality of Life features;  reduces spam prevention.
 parents:
-- wanderer
+- rank-1
 prefixes:
-- '&aTraveller&r ': {priority: 50}
+- '&aTraveller&r ': {priority: 2}
 permissions:
 - essentials.kits.traveller_prize
 

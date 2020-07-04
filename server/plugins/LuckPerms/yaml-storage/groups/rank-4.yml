@@ -1,8 +1,8 @@
-name: explorer # Has beaten the End. Adds End-related abilities.
+name: rank-4 # Has beaten the End. Adds End-related abilities.
 parents:
-- settler
+- rank-3
 prefixes:
-- '&dExplorer&r ': {priority: 50}
+- '&dExplorer&r ': {priority: 4}
 permissions:
 - essentials.kits.explorer_prize
 

@@ -1,4 +1,6 @@
-name: g-player
+name: role-player
+suffixes:
+- '': {priority: 0}
 permissions:
 
 # Info about the server

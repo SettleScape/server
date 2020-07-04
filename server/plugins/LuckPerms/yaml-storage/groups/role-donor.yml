@@ -1,6 +1,6 @@
-name: g-donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
+name: role-donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
 suffixes:
-- ' &c(donor)&r': {priority: 50}
+- ' &c(donor)&r': {priority: 1}
 permissions:
 
 # Exclusives
