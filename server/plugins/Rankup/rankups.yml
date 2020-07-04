@@ -1,56 +1,56 @@
 # https://github.com/okx-code/Rankup3/wiki/Rank-format
 
-Traveller:
-  rank: 'Wanderer'
-  next: 'Traveller'
+rank-2:
+  rank: 'rank-1'
+  next: 'rank-2'
   requirements:
     - 'money 10000'          # Just a money sink
     - 'mcmmo-power-level 50' # Proof that you've played some on the server'
     - 'item diamond 5'       # Proof that you've conquered the overworld
     - 'item obsidian 5'      # Proof that you're ready to enter the Nether
-    - 'group Wanderer'
+    - 'group rank-1'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &a{RANK}&7!'
   rankup:
     requirements-not-met: '&cIn order to rank up, you need a balance of $10k, a power level of 50, and the following items: 5 diamons and 5 obsidian.'
 
-Settler:
-  rank: 'Traveller'
-  next: 'Settler'
+rank-3:
+  rank: 'rank-2'
+  next: 'rank-3'
   requirements:
     - 'money 20000'           # Money sink
     - 'mcmmo-power-level 100' # Proof of playtime
     - 'item ghast_tear 5'     # Proof that you've conquered the Nether
     - 'item ender_eye 5'      # Proof that you're ready to enter the End
-    - 'group Traveller'
+    - 'group rank-2'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &9{RANK}&7!'
   rankup:
     requirements-not-met: '&cIn order to rank up, you need a balance of $20k, a power level of 100, and the following items: 5 ghast tears and 5 eyes of ender.'
 
-Explorer:
-  rank: 'Settler'
-  next: 'Explorer'
+rank-4:
+  rank: 'rank-3'
+  next: 'rank-4'
   requirements:
     - 'money 40000'           # Money sink
     - 'mcmmo-power-level 200' # Proof of playtime
     - 'item shulker_shell 5'  # Proof that you've conquered the End
     - 'item dragon_head 1'    # Proof that you've conquered the End
-    - 'group Settler'
+    - 'group rank-3'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &5{RANK}&7!'
   rankup:
     requirements-not-met: '&cIn order to rank up, you need a balance of $40k, a power level of 200, and the following items: 5 shulker shells and 1 end dragon head.'
 
-Pathfinder:
-  rank: 'Explorer'
-  next: 'Pathfinder'
+rank-5:
+  rank: 'rank-4'
+  next: 'rank-5'
   requirements:
     - 'money 80000'            # Money sink
     - 'mcmmo-power-level 400'  # Proof of playtime
     - 'item nether_star 1'     # Proof that you've beaten the postgame
     - 'item conduit 1'         # Proof that you've beaten the postgame
-    - 'group Explorer'
+    - 'group rank-4'
   commands:
     - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
   rankup:
