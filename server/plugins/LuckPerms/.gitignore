@@ -4,3 +4,5 @@
 !yaml-storage/
 !yaml-storage/groups/
 !yaml-storage/groups/**
+!yaml-storage/tracks/
+!yaml-storage/tracks/**

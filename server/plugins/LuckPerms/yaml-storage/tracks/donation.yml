@@ -1,0 +1,4 @@
+name: donation
+groups:
+- player
+- donor
