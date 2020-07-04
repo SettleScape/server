@@ -1,0 +1,6 @@
+**
+!.gitignore
+!config.yml
+!yaml-storage/
+!yaml-storage/groups/
+!yaml-storage/groups/**

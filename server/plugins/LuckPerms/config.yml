@@ -168,7 +168,7 @@ split-storage:
   enabled: true
   methods:
     # These options don't need to be modified if split storage isn't enabled.
-    user: h2
+    user: yml
     group: yml
     track: h2
     uuid: h2
@@ -200,7 +200,7 @@ sync-minutes: -1
 # - When using a file-based storage type, LuckPerms can monitor the data files for changes, and
 #   automatically update when changes are detected.
 # - If you don't want this feature to be active, set this option to false.
-watch-files: false
+watch-files: true
 
 # Define which messaging service should be used by the plugin.
 #
@@ -459,7 +459,7 @@ apply-wildcards: true
 # - That being: If a user has been granted "example", then the player should have also be
 #   automatically granted "example.function", "example.another", "example.deeper.nesting",
 #   and so on.
-apply-sponge-implicit-wildcards: false
+apply-sponge-implicit-wildcards: true
 
 # If the plugin should parse regex permissions.
 #
