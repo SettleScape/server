@@ -1,1 +1,0 @@
-# LuckPerms UUID lookup cache
