@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&aTraveller&r ': {priority: 2}
 permissions:
-- essentials.kits.traveller_prize
+- essentials.kits.traveller
 
 # Limit increases
 - auctionhouse.auctions.2: {value: false}

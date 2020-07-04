@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&dExplorer&r ': {priority: 4}
 permissions:
-- essentials.kits.explorer_prize
+- essentials.kits.explorer
 
 # Limit increases
 - auctionhouse.auctions.6: {value: false}

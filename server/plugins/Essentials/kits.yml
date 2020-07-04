@@ -20,23 +20,23 @@ kits:
       - torch 1
 
   #-----------------------------------------------------------------------------
-  wanderer_prize:
+  wanderer:
     delay: -1
     items:
       - tropical_fish_spawn_egg 1
-  traveller_prize:
+  traveller:
     delay: -1
     items:
       - bat_spawn_egg 1
-  settler_prize:
+  settler:
     delay: -1
     items:
       - magma_cube_spawn_egg 1 #TODO: Change to something passive and fairly useless after the Nether Update.
-  explorer_prize:
+  explorer:
     delay: -1
     items:
       - endermite_spawn_egg 1
-  pathfinder_prize:
+  pathfinder:
     delay: -1
     items:
       - silverfish_spawn_egg 1

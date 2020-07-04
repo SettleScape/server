@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&9Settler&r ': {priority: 3}
 permissions:
-- essentials.kits.settler_prize
+- essentials.kits.settler
 
 # Limit increases
 - auctionhouse.auctions.4: {value: false}

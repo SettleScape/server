@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&8Wanderer&r ': {priority: 1}
 permissions:
-- essentials.kits.wanderer_prize
+- essentials.kits.wanderer
 
 # Limit increases
 - auctionhouse.auctions.2

@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&6Pathfinder&r ': {priority: 5}
 permissions:
-- essentials.kits.pathfinder_prize
+- essentials.kits.pathfinder
 
 # Limit increases
 - auctionhouse.auctions.8: {value: false}
