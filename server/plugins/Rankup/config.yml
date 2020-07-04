@@ -44,7 +44,7 @@ permission-rankup: false
 
 # how people should confirm ranking up
 # options are: gui, text or none
-confirmation-type: 'gui'
+confirmation-type: 'text'
 
 # how long, in seconds, people have to wait between a successful /rankup or /prestige
 # set to 0 to disable.
@@ -61,7 +61,7 @@ max-rankup:
   # if set to true, the chat may be spammed for each rankup a player goes through with /maxrankup
   # if set to false, only the last rankup will be shown (if a player starts on rank A, then does
   # /maxrankup and ranks up to B and then C, it will just say "player has ranked up to C")
-  individual-messages: false
+  individual-messages: true
 
 # options when using the text rankup confirmation
 text:
@@ -92,9 +92,7 @@ placeholders:
 # the first represents thousands (1,000) then millions (1,000,000) then billions (1,000,000,000) etc.
 shorten:
 - 'k'
-- 'mil'
-- 'bil'
-- 'tril'
-- 'Q'
-- 'Qu'
-- 'S'
+- 'm'
+- 'b'
+- 't'
+- 'q'
