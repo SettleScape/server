@@ -41,7 +41,7 @@ server: global
 # - To get around this, you can use a player's uuid directly in the command, or enable this option.
 # - When this is set to 'true', the server facility is used. This may use a number of methods,
 #   including checking the servers local cache, or making a request to the Mojang API.
-use-server-uuid-cache: false
+use-server-uuid-cache: true
 
 
 
@@ -165,11 +165,11 @@ data:
 # - The connection options above still have to be correct for each type here.
 split-storage:
   # Don't touch this if you don't want to use split storage!
-  enabled: false
+  enabled: true
   methods:
     # These options don't need to be modified if split storage isn't enabled.
     user: h2
-    group: h2
+    group: yml
     track: h2
     uuid: h2
     log: h2
@@ -200,7 +200,7 @@ sync-minutes: -1
 # - When using a file-based storage type, LuckPerms can monitor the data files for changes, and
 #   automatically update when changes are detected.
 # - If you don't want this feature to be active, set this option to false.
-watch-files: true
+watch-files: false
 
 # Define which messaging service should be used by the plugin.
 #
@@ -398,7 +398,7 @@ inheritance-traversal-algorithm: depth-first-pre-order
 #
 # Effectively when this setting is 'true': the tree is flattened, and rules applied afterwards,
 # and when this setting is 'false':, the rules are just applied during each step of the traversal.
-post-traversal-inheritance-sort: false
+post-traversal-inheritance-sort: true
 
 # Defines the mode used to determine whether a set of contexts are satisfied.
 #
@@ -534,7 +534,7 @@ group-weight:
 #
 # - When set to 'false', all players will be de-opped, and the /op and /deop commands will be
 #   disabled.
-enable-ops: true
+enable-ops: false
 
 # Enables or disables a special permission based system in LuckPerms for controlling OP status.
 #
@@ -545,7 +545,7 @@ enable-ops: true
 #   will be de-opped unless they have the permission node, and the op/deop commands will be
 #   disabled.
 # - It is recommended that you use this option instead of assigning a single '*' permission.
-auto-op: false
+auto-op: true
 
 # Defines if "opped" players should be able to use all LuckPerms commands by default.
 #
@@ -583,7 +583,7 @@ vault-npc-op-status: false
 # If the vault-server option below should be used.
 #
 # - When this option is set to false, the server value defined above under "server" is used.
-use-vault-server: false
+use-vault-server: true
 
 # The name of the server used within Vault operations.
 #
@@ -622,4 +622,4 @@ update-client-command-list: true
 
 # If LuckPerms should attempt to resolve Vanilla command target selectors for LP commands.
 # See here for more info: https://minecraft.gamepedia.com/Commands#Target_selectors
-resolve-command-selectors: false
+resolve-command-selectors: true
