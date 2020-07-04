@@ -1,4 +1,4 @@
-name: role-mod # Moderator
+name: mod # Moderator
 suffixes:
 - ' &c(mod)&r': {priority: 3}
 permissions:

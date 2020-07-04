@@ -1,4 +1,4 @@
-name: role-player
+name: default
 suffixes:
 - '': {priority: 0}
 permissions:

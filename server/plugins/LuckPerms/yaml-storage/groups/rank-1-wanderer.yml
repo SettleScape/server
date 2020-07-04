@@ -1,6 +1,6 @@
-name: rank-1 # Starting rank.  Basically a vanilla experience.
+name: wanderer # Starting rank.  Basically a vanilla experience.
 parents:
-- role-player
+- default
 prefixes:
 - '&8Wanderer&r ': {priority: 1}
 permissions:

@@ -1,6 +1,6 @@
-name: rank-3 # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
+name: settler # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
 parents:
-- rank-2
+- traveller
 prefixes:
 - '&9Settler&r ': {priority: 3}
 permissions:

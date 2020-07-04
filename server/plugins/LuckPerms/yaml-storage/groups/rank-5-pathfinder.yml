@@ -1,6 +1,6 @@
-name: rank-5 # Has beaten Minecraft. Gets special powers.
+name: pathfinder # Has beaten Minecraft. Gets special powers.
 parents:
-- rank-4
+- explorer
 prefixes:
 - '&6Pathfinder&r ': {priority: 5}
 permissions:

@@ -1,6 +1,6 @@
-name: rank-4 # Has beaten the End. Adds End-related abilities.
+name: explorer # Has beaten the End. Adds End-related abilities.
 parents:
-- rank-3
+- settler
 prefixes:
 - '&dExplorer&r ': {priority: 4}
 permissions:

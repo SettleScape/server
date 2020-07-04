@@ -1,4 +1,4 @@
-name: role-donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
+name: donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
 suffixes:
 - ' &c(donor)&r': {priority: 1}
 permissions:

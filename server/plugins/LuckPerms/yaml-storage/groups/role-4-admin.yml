@@ -1,4 +1,4 @@
-name: role-admin # Administrator
+name: admin # Administrator
 suffixes:
 - ' &c(admin)&r': {priority: 4}
 permissions:

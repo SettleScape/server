@@ -1,4 +1,4 @@
-name: role-dev # Developer/Tester
+name: dev # Developer/Tester
 suffixes:
 - ' &c(dev)&r': {priority: 2}
 permissions:

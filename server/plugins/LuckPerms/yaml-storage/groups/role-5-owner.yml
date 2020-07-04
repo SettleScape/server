@@ -1,4 +1,4 @@
-name: role-owner # Operator / God
+name: owner # Operator / God
 suffixes:
 - ' &c(owner)&r': {priority: 5}
 permissions:

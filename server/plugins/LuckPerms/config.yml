@@ -170,7 +170,7 @@ split-storage:
     # These options don't need to be modified if split storage isn't enabled.
     user: yml
     group: yml
-    track: h2
+    track: yml
     uuid: h2
     log: h2
 
