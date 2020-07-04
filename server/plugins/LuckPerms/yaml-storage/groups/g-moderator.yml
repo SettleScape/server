@@ -1,85 +1,116 @@
 name: g-moderator
+suffixes:
+- ' &c(mod)&r': {priority: 50}
 permissions:
+
+# Chat
+#-------------------------------------------------------------------------------
+# - bukkit.command.say
+- essentials.broadcast
+- essentials.helpop.receive
+- essentials.chat.shout
+- essentials.mail.sendall
+- towny.chat.mod
 - townychat.mod.*
+
+# Info
+#-------------------------------------------------------------------------------
+- minecraft.banlist
+- essentials.balancetop
+- essentials.invsee
+- essentials.realname
+- essentials.balance.others
+- essentials.exp.others
+- essentials.getpos.others
+- essentials.home.others
+- essentials.list.hidden
+- essentials.ptime.others
+- essentials.seen.extra
+- essentials.whois
+- groupmanager.listgroups
+- groupmanager.manselect
+- groupmanager.manwhois
+- groupmanager.mangcheckp
+- groupmanager.manglistp
+- groupmanager.manucheckp
+- groupmanager.manulistp
+- groupmanager.notify.other
+
+# Espionage
+#-------------------------------------------------------------------------------
+- essentials.god
+- essentials.fly
+- essentials.fly.safelogin
+- townyflight.bypass
+- essentials.tp
+- essentials.tptoggle
+# - essentials.vanish
+# - essentials.vanish.effect
+- shopchest.openOther
+- vanish.vanish
+- vanish.smokin
+- vanish.nofollow
+- vanish.nopickup
+- vanish.preventincomingdamage
+- vanish.hooks.dynmap.alwayshidden
+- vanish.hooks.essentials.hide
+- vanish.silentchests
+- vanish.silentjoin
+- vanish.silentquit
 - OpenInv.crossworld
 - OpenInv.openender
 - OpenInv.openenderall
 - OpenInv.openinv
 - OpenInv.silent
-- bukkit.command.whitelist.add
-- bukkit.command.whitelist.list
-- bukkit.command.whitelist.remove
-- craftbook.mech.leads.owner-break-only.bypass
-- essentials.afk.kickexempt
+- towny.chat.spy
+
+# Punishments/Judgements/Actions
+#-------------------------------------------------------------------------------
 - essentials.afk.others
-- essentials.balance.others
-- essentials.balancetop
-- essentials.ban
-- essentials.ban.exempt
-- essentials.ban.notify
-- essentials.banip
-- essentials.broadcast
-- essentials.chat.ignoreexempt
-- essentials.chat.shout
-- essentials.exp.others
-- essentials.fly
-- essentials.fly.safelogin
-- essentials.getpos.others
-- essentials.god
-- essentials.helpop.receive
-- essentials.home.others
-- essentials.invsee
-- essentials.jail.allow.helpop
-- essentials.jail.allow.jails
-- essentials.jail.allow.mail
-- essentials.jail.allow.seen
-- essentials.jail.allow.togglejail
-- essentials.jail.exempt
-- essentials.jails
-- essentials.kick
-- essentials.kick.exempt
-- essentials.kick.notify
-- essentials.kill
-- essentials.list.hidden
-- essentials.mail.sendall
-- essentials.mute
-- essentials.mute.exempt
-- essentials.mute.notify
 - essentials.nick.others
-- essentials.ptime.others
-- essentials.pvpdelay.exempt
-- essentials.realname
-- essentials.seen.banreason
-- essentials.seen.extra
-- essentials.tempban.exempt
-- essentials.togglejail
-- essentials.tp
 - essentials.tp.others
 - essentials.tphere
-- essentials.tptoggle
+- essentials.kill
+- essentials.jail.allow.jails
+- essentials.jail.allow.togglejail
+- essentials.jails
+- essentials.togglejail
+- essentials.mute
+- essentials.mute.notify
+# - bukkit.command.kick
+- essentials.kick
+- essentials.kick.notify
+# - minecraft.command.ban
+# - minecraft.command.ban-ip
+# - bukkit.command.ban
+# - bukkit.command.ban.ip
+# - bukkit.command.ban.player
+- essentials.ban
+- essentials.banip
+- essentials.ban.notify
+- essentials.seen.banreason
+# - minecraft.command.pardon
+# - minecraft.command.pardon-ip
+# - bukkit.command.unban
+# - bukkit.command.unban.ip
+# - bukkit.command.unban.player
 - essentials.unban
 - essentials.unbanip
-- essentials.whois
-- groupmanager.listgroups
-- groupmanager.mangcheckp
-- groupmanager.manglistp
-- groupmanager.manselect
-- groupmanager.manucheckp
-- groupmanager.manulistp
-- groupmanager.manwhois
-- groupmanager.notify.other
-- minecraft.banlist
-- shopchest.openOther
-- towny.chat.mod
-- towny.chat.spy
-- townyflight.bypass
-- vanish.hooks.dynmap.alwayshidden
-- vanish.hooks.essentials.hide
-- vanish.nofollow
-- vanish.nopickup
-- vanish.preventincomingdamage
-- vanish.silentchests
-- vanish.silentjoin
-- vanish.silentquit
-- vanish.smokin
-- vanish.vanish
+- bukkit.command.whitelist.add
+- bukkit.command.whitelist.remove
+- bukkit.command.whitelist.list
+
+# Exemptions
+#-------------------------------------------------------------------------------
+- craftbook.mech.leads.owner-break-only.bypass
+- essentials.jail.allow.helpop
+- essentials.jail.allow.mail
+- essentials.jail.allow.seen
+- essentials.afk.kickexempt
+- essentials.chat.ignoreexempt
+- essentials.ban.exempt
+- essentials.kick.exempt
+- essentials.mute.exempt
+- essentials.tempban.exempt
+- essentials.jail.exempt
+- essentials.pvpdelay.exempt

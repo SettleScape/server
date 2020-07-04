@@ -1,10 +1,28 @@
 name: g-administrator
+suffixes:
+- ' &c(admin)&r': {priority: 50}
 permissions:
-- bukkit.broadcast
-- bukkit.broadcast.admin
+
+# Server info
+#-------------------------------------------------------------------------------
 - bukkit.command.help
 - bukkit.command.list
 - bukkit.command.plugins
+- bukkit.command.version
+- shopchest.notification.update
+
+# Configuration
+#-------------------------------------------------------------------------------
+- groupmanager.mandemote
+- groupmanager.manpromote
+- groupmanager.mansave
+- groupmanager.manuadd
+- groupmanager.manudel
+- shopchest.config
+
+# Operations
+#-------------------------------------------------------------------------------
+- bukkit.command.whitelist.reload
 - bukkit.command.reload
 - bukkit.command.restart
 - bukkit.command.save
@@ -12,38 +30,46 @@ permissions:
 - bukkit.command.save.enable
 - bukkit.command.save.perform
 - bukkit.command.stop
-- bukkit.command.version
-- bukkit.command.whitelist.reload
-- craftbook.mech.chunk
+- shopchest.update
+- shopchest.reload
+- townyflight.command.tfly.reload
+
+# Chat
+#-------------------------------------------------------------------------------
+- bukkit.broadcast
+- bukkit.broadcast.admin
+- towny.chat.admin
+
+# Offline actions (these ignore exemptions)
+#-------------------------------------------------------------------------------
+- essentials.mute.offline
+- essentials.tempban.offline
+- essentials.togglejail.offline
 - essentials.ban.offline
+
+# Exemptions
+#-------------------------------------------------------------------------------
 - essentials.itemspawn.exempt
 - essentials.kit.exemptdelay
-- essentials.mute.offline
 - essentials.near.maxexempt
-- essentials.plugin
+- essentials.sudo.exempt
 - essentials.protect.exemptbreak
 - essentials.protect.exemptplacement
 - essentials.protect.exemptusage
-- essentials.reloadall
-- essentials.sudo.exempt
-- essentials.tempban.offline
-- essentials.togglejail.offline
-- essentials.top
-- groupmanager.mandemote
-- groupmanager.manpromote
-- groupmanager.mansave
-- groupmanager.manuadd
-- groupmanager.manudel
-- minecraft.command.forceload
-- shopchest.config
-- shopchest.create.admin
-- shopchest.extend.other
 - shopchest.external.bypass
-- shopchest.notification.update
-- shopchest.reload
-- shopchest.remove.admin
+
+# Misc
+#-------------------------------------------------------------------------------
+- craftbook.mech.chunk
+- minecraft.command.forceload
+- shopchest.extend.other
 - shopchest.remove.other
-- shopchest.update
-- towny.chat.admin
-- townyflight.command.tfly.reload
+- shopchest.create.admin
+- shopchest.remove.admin
+
+# Misc (Unevaluated)
+#-------------------------------------------------------------------------------
+- essentials.reloadall
+- essentials.plugin
+- essentials.top
 - worldguard.region.wand

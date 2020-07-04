@@ -1,22 +1,36 @@
-name: g-developer
+name: g-developer # Developer/Tester
+suffixes:
+- ' &c(dev)&r': {priority: 50}
 permissions:
-- bukkit.command.gamemode
-- bukkit.command.give
-- bukkit.command.help
-- bukkit.command.list
-- bukkit.command.plugins
+
+# Chat
+#-------------------------------------------------------------------------------
+- towny.chat.dev
+
+# Cheats used for testing
+#-------------------------------------------------------------------------------
 - bukkit.command.teleport
 - bukkit.command.time.add
 - bukkit.command.time.set
-- bukkit.command.version
+- bukkit.command.gamemode
+- bukkit.command.give
+- essentials.god
 - essentials.fly
 - essentials.fly.safelogin
-- essentials.god
+- townyflight.bypass
+- jobs.command.leave
+- jobs.command.leaveall
+
+# Server info
+#-------------------------------------------------------------------------------
+- bukkit.command.help
+- bukkit.command.list
+- bukkit.command.plugins
+- bukkit.command.version
+
+# Exemptions
+#-------------------------------------------------------------------------------
 - essentials.kit.exemptdelay
 - essentials.protect.exemptbreak
 - essentials.protect.exemptplacement
 - essentials.protect.exemptusage
-- jobs.command.leave
-- jobs.command.leaveall
-- towny.chat.dev
-- townyflight.bypass

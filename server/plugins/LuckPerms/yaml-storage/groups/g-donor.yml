@@ -1,25 +1,44 @@
-name: g-donor
+name: g-donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
+suffixes:
+- ' &c(donor)&r': {priority: 50}
 permissions:
-- townychat.chat.format.*
+
+# Exclusives
+#-------------------------------------------------------------------------------
+- jobs.command.leave
+- jobs.command.leaveall
+- essentials.back.ondeath # Only applies to those who already have `/back`
+# - essentials.fly
+# - essentials.fly.safelogin
+- townyflight.command.tfly
+- townyflight.alltowns
+
+# Misc
+#-------------------------------------------------------------------------------
+- towny.town.resident
+- towny.command.town.new
+- towny.command.nation.new
+
+# Quality of Life
+#-------------------------------------------------------------------------------
+- essentials.workbench
+- essentials.clearinventory
+- editablesign.edit
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
 - craftbook.mech.paintingswitch.use
-- editablesign.edit
-- essentials.back.ondeath
+
+# Chat
+#-------------------------------------------------------------------------------
 - essentials.chat.color
 - essentials.chat.format
 - essentials.chat.magic
-- essentials.clearinventory
-- essentials.hat
 - essentials.msg.color
 - essentials.msg.format
 - essentials.msg.magic
-- essentials.workbench
-- jobs.command.leave
-- jobs.command.leaveall
-- towny.command.nation.new
-- towny.command.town.new
-- towny.town.resident
 - townychat.chat.color
-- townyflight.alltowns
-- townyflight.command.tfly
+- townychat.chat.format.*
+
+# Cosmetics
+#-------------------------------------------------------------------------------
+- essentials.hat

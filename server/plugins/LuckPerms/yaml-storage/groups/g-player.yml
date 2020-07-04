@@ -1,8 +1,47 @@
 name: g-player
 permissions:
-- essentials.kits.*:
-    value: false
-- townychat.chat.format.*
+
+# Info about the server
+#-------------------------------------------------------------------------------
+- essentials.help
+- essentials.list
+- essentials.motd
+- essentials.rules
+- essentials.recipe
+- essentials.jail.allow.help
+- essentials.jail.allow.rules
+- bukkit.command.tps
+- essentials.time
+# - bukkit.command.time
+
+# Info about the player
+#-------------------------------------------------------------------------------
+# - bukkit.command.me
+- essentials.me
+- essentials.exp
+- essentials.ping
+- essentials.getpos
+- essentials.depth
+- essentials.compass
+- essentials.jail.allow.ping
+- essentials.seen
+- groupmanager.notify.self
+
+# Economy
+#-------------------------------------------------------------------------------
+- essentials.balance
+- essentials.eco.loan
+- essentials.pay
+- essentials.pay.multiple
+- essentials.payconfirmtoggle
+- essentials.worth
+- shopchest.buy
+- shopchest.sell
+- shopchest.create
+- shopchest.create.buy
+- shopchest.create.sell
+- shopchest.create.protected
+- shopchest.extend.protected
 - auctionhouse.cancel
 - auctionhouse.expired
 - auctionhouse.help
@@ -13,8 +52,61 @@ permissions:
 - auctionhouse.selling
 - auctionhouse.sold
 - auctionhouse.use
+
+# Chat
+#-------------------------------------------------------------------------------
+# - bukkit.broadcast.user
+- essentials.chat.color
+- essentials.chat.format
+- essentials.chat.magic
+- essentials.chat.question
+# - essentials.chat.url
+- essentials.ignore
+- essentials.mail
+- essentials.mail.send
+# - bukkit.command.tell
+- essentials.msg
+- essentials.msg.color
+- essentials.msg.format
+- essentials.msg.magic
+- essentials.msg.multiple
+# - essentials.msg.url
+- essentials.helpop
+- towny.chat.general
+- towny.chat.local
+- townychat.chat.color
+- townychat.chat.format.*
+
+# Teleportation
+#-------------------------------------------------------------------------------
+# - bukkit.command.kill
+- essentials.suicide
+- essentials.spawn
+- essentials.tpa
+- essentials.tpaccept
+- essentials.tpacancel
+- essentials.tpahere
+- essentials.tpdeny
+- essentials.warp
+- essentials.warp.list
+
+# Homes
+#-------------------------------------------------------------------------------
+- essentials.home
+- essentials.home.bed
+- essentials.delhome
+- essentials.sethome
+- essentials.sethome.bed
+- essentials.sethome.multiple
+
+# Kits
+#-------------------------------------------------------------------------------
+- essentials.kit
+- essentials.kits.*: {value: false}
+
+# Misc
+#-------------------------------------------------------------------------------
 - bukkit.command.gamemode.survival
-- bukkit.command.tps
 - craftbook.mech.ammeter.use
 - craftbook.mech.bookshelf.use
 - craftbook.mech.chair.use
@@ -25,85 +117,24 @@ permissions:
 - craftbook.mech.paintingswitch.use
 - craftbook.mech.pay
 - craftbook.mech.pay.use
-- editablesign.edit
 - essentials.afk
 - essentials.afk.auto
-- essentials.balance
-- essentials.book
-- essentials.book.title
 - essentials.build
-- essentials.chat.color
-- essentials.chat.format
-- essentials.chat.magic
-- essentials.chat.question
-- essentials.clearinventory
-- essentials.compass
-- essentials.delhome
-- essentials.depth
-- essentials.eco.loan
-- essentials.exp
-- essentials.getpos
 - essentials.hat
-- essentials.help
-- essentials.helpop
-- essentials.home
-- essentials.home.bed
-- essentials.ignore
-- essentials.jail.allow.help
-- essentials.jail.allow.ping
-- essentials.jail.allow.rules
-- essentials.kit
-- essentials.list
-- essentials.mail
-- essentials.mail.send
-- essentials.me
-- essentials.motd
-- essentials.msg
-- essentials.msg.color
-- essentials.msg.format
-- essentials.msg.magic
-- essentials.msg.multiple
 - essentials.nick
 - essentials.nick.color
 - essentials.nick.format
 - essentials.nick.magic
-- essentials.pay
-- essentials.pay.multiple
-- essentials.payconfirmtoggle
-- essentials.ping
-- essentials.recipe
-- essentials.rules
-- essentials.seen
-- essentials.sethome
-- essentials.sethome.bed
-- essentials.sethome.multiple
-- essentials.spawn
-- essentials.suicide
-- essentials.time
-- essentials.tpa
-- essentials.tpacancel
-- essentials.tpaccept
-- essentials.tpahere
-- essentials.tpdeny
-- essentials.warp
-- essentials.warp.list
+- essentials.clearinventory
 - essentials.workbench
-- essentials.worth
-- groupmanager.notify.self
-- jobs.command.leave:
-    value: false
-- jobs.command.leaveall:
-    value: false
+# - essentials.enderchest
+- essentials.book
+- essentials.book.title
+- editablesign.edit
 - mineablespawners.mine
-- rankup.auto:
-    value: false
-- shopchest.buy
-- shopchest.create
-- shopchest.create.buy
-- shopchest.create.protected
-- shopchest.create.sell
-- shopchest.extend.protected
-- shopchest.sell
-- towny.chat.general
-- towny.chat.local
-- townychat.chat.color
+- rankup.auto: {value: false}
+
+# Restrictions
+#-------------------------------------------------------------------------------
+- jobs.command.leave: {value: false}
+- jobs.command.leaveall: {value: false}

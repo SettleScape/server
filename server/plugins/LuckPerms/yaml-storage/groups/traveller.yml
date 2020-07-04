@@ -1,42 +1,49 @@
-name: traveller
-permissions:
-- auctionhouse.auctions.2:
-    value: false
-- auctionhouse.auctions.4
-- craftbook.mech.ammeter.use
-- craftbook.mech.lightstone.use
-- craftbook.mech.paintingswitch.use
-- craftbook.mech.pay
-- editablesign.edit
-- essentials.chat.format
-- essentials.chat.url
-- essentials.clearinventory
-- essentials.kits.traveller_prize
-- essentials.msg.format
-- essentials.msg.url
-- essentials.nick.format
-- essentials.sethome
-- essentials.sethome.multiple.one
-- essentials.sethome.multiple.zero:
-    value: false
-- essentials.tpa
-- essentials.tpacancel
-- essentials.tpaccept
-- essentials.tpahere
-- essentials.workbench
-- mineablespawners.mine
-- mineablespawners.minechance.6
-- mineablespawners.minechance.7:
-    value: false
-- shopchest.limit.0:
-    value: false
-- shopchest.limit.10
-- townychat.chat.format.bold
-- townychat.chat.format.italic
-- townychat.chat.format.strike
-- townychat.chat.format.underline
+name: traveller # Has beaten the Overworld.  Adds some Quality of Life features;  reduces spam prevention.
 parents:
 - wanderer
 prefixes:
-- '&aTraveller&r ':
-    priority: 50
+- '&aTraveller&r ': {priority: 50}
+permissions:
+- essentials.kits.traveller_prize
+
+# Limit increases
+- auctionhouse.auctions.2: {value: false}
+- auctionhouse.auctions.4
+- shopchest.limit.0: {value: false}
+- shopchest.limit.10
+- essentials.sethome.multiple.zero: {value: false}
+- essentials.sethome.multiple.one
+- mineablespawners.minechance.7: {value: false}
+- mineablespawners.minechance.6
+
+# Basic quality of life improvements
+- editablesign.edit
+- essentials.workbench
+- essentials.clearinventory
+- craftbook.mech.ammeter.use
+- craftbook.mech.lightstone.use
+- craftbook.mech.paintingswitch.use
+
+# Access to standard chat formatting
+- essentials.chat.format
+- essentials.msg.format
+- townychat.chat.format.bold
+- townychat.chat.format.italic
+- townychat.chat.format.underline
+- townychat.chat.format.strike
+- essentials.nick.format
+
+# Access to URL formatting (since they're unlikely to be a spammer if they've gotten this far)
+- essentials.chat.url
+- essentials.msg.url
+
+# Has escaped Spawn legitimately; may now teleport.
+- essentials.tpa
+- essentials.tpaccept
+- essentials.tpacancel
+- essentials.tpahere
+
+# Misc
+- craftbook.mech.pay
+- essentials.sethome
+- mineablespawners.mine

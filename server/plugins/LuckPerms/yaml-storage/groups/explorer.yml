@@ -1,26 +1,27 @@
-name: explorer
-permissions:
-- auctionhouse.auctions.6:
-    value: false
-- auctionhouse.auctions.8
-- essentials.back
-- essentials.chat.magic
-- essentials.enderchest
-- essentials.kits.explorer_prize
-- essentials.msg.magic
-- essentials.nick.magic
-- essentials.sethome.multiple.three
-- essentials.sethome.multiple.two:
-    value: false
-- mineablespawners.minechance.4
-- mineablespawners.minechance.5:
-    value: false
-- shopchest.limit.20:
-    value: false
-- shopchest.limit.40
-- townychat.chat.format.magic
+name: explorer # Has beaten the End. Adds End-related abilities.
 parents:
 - settler
 prefixes:
-- '&dExplorer&r ':
-    priority: 50
+- '&dExplorer&r ': {priority: 50}
+permissions:
+- essentials.kits.explorer_prize
+
+# Limit increases
+- auctionhouse.auctions.6: {value: false}
+- auctionhouse.auctions.8
+- shopchest.limit.20: {value: false}
+- shopchest.limit.40
+- essentials.sethome.multiple.two: {value: false}
+- essentials.sethome.multiple.three
+- mineablespawners.minechance.5: {value: false}
+- mineablespawners.minechance.4
+
+# Access to text magic
+- essentials.chat.magic
+- essentials.msg.magic
+- townychat.chat.format.magic
+- essentials.nick.magic
+
+# New abilities
+- essentials.back
+- essentials.enderchest

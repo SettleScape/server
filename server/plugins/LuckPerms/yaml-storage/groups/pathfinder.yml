@@ -1,26 +1,27 @@
-name: pathfinder
-permissions:
-- auctionhouse.auctions.10
-- auctionhouse.auctions.8:
-    value: false
-- essentials.ext
-- essentials.feed
-- essentials.heal
-- essentials.kits.pathfinder_prize
-- essentials.sethome.multiple.four
-- essentials.sethome.multiple.three:
-    value: false
-- jobs.max.2:
-    value: false
-- jobs.max.3
-- mineablespawners.minechance.3
-- mineablespawners.minechance.4:
-    value: false
-- shopchest.limit.40:
-    value: false
-- shopchest.limit.80
+name: pathfinder # Has beaten Minecraft. Gets special powers.
 parents:
 - explorer
 prefixes:
-- '&6Pathfinder&r ':
-    priority: 50
+- '&6Pathfinder&r ': {priority: 50}
+permissions:
+- essentials.kits.pathfinder_prize
+
+# Limit increases
+- auctionhouse.auctions.8: {value: false}
+- auctionhouse.auctions.10
+- shopchest.limit.40: {value: false}
+- shopchest.limit.80
+- jobs.max.2: {value: false}
+- jobs.max.3
+- essentials.sethome.multiple.three: {value: false}
+- essentials.sethome.multiple.four
+- mineablespawners.minechance.4: {value: false}
+- mineablespawners.minechance.3
+
+# New abilities
+# - mineablespawners.eggchange
+
+# Superpowers
+- essentials.ext
+- essentials.feed
+- essentials.heal

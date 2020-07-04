@@ -1,71 +1,59 @@
-name: wanderer
-permissions:
-- townychat.chat.format.*:
-    value: false
-- auctionhouse.auctions.2
-- craftbook.mech.ammeter.use:
-    value: false
-- craftbook.mech.lightstone.use:
-    value: false
-- craftbook.mech.paintingswitch.use:
-    value: false
-- craftbook.mech.pay:
-    value: false
-- editablesign.edit:
-    value: false
-- essentials.chat.color:
-    value: false
-- essentials.chat.format:
-    value: false
-- essentials.chat.magic:
-    value: false
-- essentials.chat.url:
-    value: false
-- essentials.clearinventory:
-    value: false
-- essentials.delhome:
-    value: false
-- essentials.hat:
-    value: false
-- essentials.kits.wanderer_prize
-- essentials.msg.color:
-    value: false
-- essentials.msg.format:
-    value: false
-- essentials.msg.magic:
-    value: false
-- essentials.msg.url:
-    value: false
-- essentials.nick.color:
-    value: false
-- essentials.nick.format:
-    value: false
-- essentials.nick.magic:
-    value: false
-- essentials.sethome:
-    value: false
-- essentials.sethome.multiple:
-    value: false
-- essentials.sethome.multiple.zero
-- essentials.tpa:
-    value: false
-- essentials.tpacancel:
-    value: false
-- essentials.tpaccept:
-    value: false
-- essentials.tpahere:
-    value: false
-- essentials.workbench:
-    value: false
-- jobs.max.1
-- mineablespawners.mine:
-    value: false
-- mineablespawners.minechance.7
-- shopchest.limit.0
-- townychat.chat.color:
-    value: false
+name: wanderer # Starting rank.  Basically a vanilla experience.
 parents:
 - g-player
 prefixes:
-- '&8Wanderer&r ':
-    priority: 50
+- '&8Wanderer&r ': {priority: 50}
+permissions:
+- essentials.kits.wanderer_prize
+
+# Limit increases
+- auctionhouse.auctions.2
+- essentials.sethome.multiple.zero # Can still `/home bed`.
+- jobs.max.1
+- mineablespawners.minechance.7 # Technically 0
+- shopchest.limit.0
+
+# Wanderers can only `/home bed`.
+- essentials.delhome: {value: false}
+- essentials.sethome: {value: false}
+- essentials.sethome.multiple: {value: false}
+
+# Basic text formatting is reserved for a higher rank, since it *can* be kind of spammy.
+- townychat.chat.format.*: {value: false}
+- essentials.chat.format:  {value: false}
+- essentials.msg.format:   {value: false}
+- essentials.nick.format:  {value: false}
+
+# Text colors are reserved for a higher rank, since they *can* be kind of spammy.
+- townychat.chat.color:  {value: false}
+- essentials.chat.color: {value: false}
+- essentials.msg.color:  {value: false}
+- essentials.nick.color: {value: false}
+
+# Text magic is spammy, and so reserved for a higher rank.
+- essentials.chat.magic: {value: false}
+- essentials.msg.magic:  {value: false}
+- essentials.nick.magic: {value: false}
+
+# URLs in chat can be used to spam and phish, and is reserved for a higher rank.
+- essentials.chat.url: {value: false}
+- essentials.msg.url:  {value: false}
+
+# Quality of Life comes with higher ranks
+- craftbook.mech.ammeter.use: {value: false}
+- craftbook.mech.lightstone.use: {value: false}
+- craftbook.mech.paintingswitch.use: {value: false}
+- craftbook.mech.pay: {value: false}
+- editablesign.edit: {value: false}
+- essentials.clearinventory: {value: false}
+- essentials.workbench: {value: false}
+
+# No casual teleports -- we want Wanderers to have to actually explore the world (and escape Spawn), rather than just teleport to the biggest town and instantly gear up.
+- essentials.tpa:       {value: false}
+- essentials.tpacancel: {value: false}
+- essentials.tpaccept:  {value: false}
+- essentials.tpahere:   {value: false}
+
+# Special powers come with higher ranks
+- essentials.hat: {value: false}
+- mineablespawners.mine: {value: false}

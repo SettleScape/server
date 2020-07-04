@@ -1,5 +1,41 @@
 name: g-owner
+suffixes:
+- ' &c(owner)&r': {priority: 50}
 permissions:
+
+# Cheats used for testing
+#-------------------------------------------------------------------------------
+- bukkit.command.teleport
+- bukkit.command.time.add
+- bukkit.command.time.set
+- bukkit.command.gamemode
+- bukkit.command.give
+- minecraft.command.summon
+- minecraft.command.tp
+
+# Configuration
+#-------------------------------------------------------------------------------
+- minecraft.command.setworldspawn
+- groupmanager.mantogglevalidate
+- groupmanager.op
+- bukkit.command.whitelist
+- bukkit.command.whitelist.disable
+- bukkit.command.whitelist.enable
+- towny.admin
+- towny.command.admin
+- minecraft.command.seed
+
+# Catch-alls
+#-------------------------------------------------------------------------------
+- essentials.kits.*
+
+# Misc (Unevaluated)
+#-------------------------------------------------------------------------------
+- essentials.weather
+- essentials.setspawn
+
+# Catch-alls (Unevaluated)
+#-------------------------------------------------------------------------------
 - coreprotect.*
 - dynmap.*
 - essentials.enchantments.*
@@ -22,22 +58,46 @@ permissions:
 - townychat.*
 - worldedit.*
 - worldguard.*
-- OpenInv.anychest
-- OpenInv.editender
-- OpenInv.editinv
-- OpenInv.search
-- OpenInv.searchenchant
+
+# Unevaluated
+#-------------------------------------------------------------------------------
+- essentials.tppos
+- essentials.backup
+- essentials.essentials
+- essentials.afk.auto
+- essentials.back
+- essentials.back.ondeath
+- essentials.book.others
+- essentials.delwarp
+- essentials.eco.loan
+- essentials.time.set
+- essentials.setwarp
+- essentials.spawner
+- essentials.thunder
+- essentials.world
+- essentials.protect.alerts
+- essentials.protect.admin
+- essentials.protect.ownerinfo
+- essentials.itemdb
+- essentials.protect
+- essentials.jump
+- essentials.powertool
+- essentials.powertooltoggle
+- essentials.ptime
+- essentials.signs.create.disposal
+- essentials.signs.create.mail
+- essentials.signs.create.protection
+- essentials.signs.create.trade
+- essentials.signs.break.disposal
+- essentials.signs.break.mail
+- essentials.signs.break.protection
+- essentials.signs.break.trade
+
+# Moved from world groups
+#-------------------------------------------------------------------------------
 - auction.admin.expire
 - auctionhouse.cancel.others
 - auctionhouse.reload
-- bukkit.command.gamemode
-- bukkit.command.give
-- bukkit.command.teleport
-- bukkit.command.time.add
-- bukkit.command.time.set
-- bukkit.command.whitelist
-- bukkit.command.whitelist.disable
-- bukkit.command.whitelist.enable
 - commandlog.admin
 - commandlog.history
 - commandlog.notice
@@ -60,13 +120,11 @@ permissions:
 - eisenradar.set.remove
 - eisenradar.set.settings
 - eisenradar.set.tracker
-- essentials.afk.auto
 - essentials.back
 - essentials.back.ondeath
-- essentials.backup
 - essentials.ban
-- essentials.ban.offline
 - essentials.banip
+- essentials.ban.offline
 - essentials.book
 - essentials.book.author
 - essentials.book.others
@@ -78,7 +136,6 @@ permissions:
 - essentials.deljail
 - essentials.delwarp
 - essentials.eco
-- essentials.eco.loan
 - essentials.enchant
 - essentials.enchantments.allowunsafe
 - essentials.enderchest.modify
@@ -114,8 +171,6 @@ permissions:
 - essentials.invsee.modify
 - essentials.invsee.preventmodify
 - essentials.item
-- essentials.itemdb
-- essentials.jump
 - essentials.kickall
 - essentials.kill
 - essentials.lightning
@@ -127,13 +182,7 @@ permissions:
 - essentials.nick.format
 - essentials.nick.magic
 - essentials.nick.others
-- essentials.powertool
-- essentials.powertooltoggle
-- essentials.protect
-- essentials.protect.admin
 - essentials.protect.alerts
-- essentials.protect.ownerinfo
-- essentials.ptime
 - essentials.repair
 - essentials.repair.all
 - essentials.repair.armor
@@ -144,14 +193,6 @@ permissions:
 - essentials.setjail
 - essentials.setspawn
 - essentials.setwarp
-- essentials.signs.break.disposal
-- essentials.signs.break.mail
-- essentials.signs.break.protection
-- essentials.signs.break.trade
-- essentials.signs.create.disposal
-- essentials.signs.create.mail
-- essentials.signs.create.protection
-- essentials.signs.create.trade
 - essentials.skull
 - essentials.skull.modify
 - essentials.skull.others
@@ -168,14 +209,13 @@ permissions:
 - essentials.tempban
 - essentials.tempban.offline
 - essentials.tempban.unlimited
-- essentials.thunder
 - essentials.time
 - essentials.time.set
 - essentials.tp
-- essentials.tp.others
 - essentials.tphere
 - essentials.tpo
 - essentials.tpohere
+- essentials.tp.others
 - essentials.tppos
 - essentials.tptoggle
 - essentials.tptoggle.others
@@ -190,8 +230,6 @@ permissions:
 - essentials.weather
 - essentials.whois
 - essentials.world
-- groupmanager.mantogglevalidate
-- groupmanager.op
 - lagg.admin
 - lagg.area
 - lagg.check
@@ -211,16 +249,15 @@ permissions:
 - mineablespawners.set
 - mineablespawners.types
 - minecraft.command.playsound
-- minecraft.command.seed
-- minecraft.command.setworldspawn
 - minecraft.command.stop
-- minecraft.command.summon
-- minecraft.command.tp
 - minecraft.command.worldborder
+- OpenInv.anychest
+- OpenInv.editender
+- OpenInv.editinv
+- OpenInv.search
+- OpenInv.searchenchant
 - placeholderapi.admin
 - rankup.checkversion
 - rankup.reload
-- towny.admin
-- towny.command.admin
 - tradeplus.admin
 - vault.admin
