@@ -2,11 +2,10 @@ name: explorer # Has beaten the End. Adds End-related abilities.
 parents:
 - settler
 prefixes:
-- '&dExplorer&r '
+- '&dExplorer&r': {}
 permissions:
-- displayname.Explorer
-- weight.4
-- essentials.kits.explorer
+- weight.13
+# - essentials.kits.explorer
 
 # Limit increases
 - auctionhouse.auctions.6: {value: false}

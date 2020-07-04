@@ -2,10 +2,10 @@ name: administrator # Sysadmins and such
 parents:
 - tester
 suffixes:
-- ' &c(admin)&r'
+- '&c(admin)&r': {}
 permissions:
-- displayname.Administrator
-- weight.14
+- weight.23
+# - displayname.admin
 
 # Server info
 #-------------------------------------------------------------------------------

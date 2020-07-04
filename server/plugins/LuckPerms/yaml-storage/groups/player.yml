@@ -1,7 +1,7 @@
 name: player
 permissions:
-- displayname.Player
 - weight.-1
+# - displayname.default
 
 # Info about the server
 #-------------------------------------------------------------------------------

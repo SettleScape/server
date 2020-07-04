@@ -2,10 +2,9 @@ name: donor # Important:  Donor perks must not allow a rich griefer to mess with
 parents:
 - default
 suffixes:
-- ' &c(donor)&r'
+- '&c(donor)&r': {}
 permissions:
-- displayname.Donor
-- weight.11
+- weight.20
 
 # Exclusives
 #-------------------------------------------------------------------------------

@@ -2,10 +2,10 @@ name: traveller # Has beaten the Overworld.  Adds some Quality of Life features;
 parents:
 - wanderer
 prefixes:
-- '&aTraveller&r '
+- '&aTraveller&r': {}
 permissions:
-- displayname.Traveller
-- weight.2
+- weight.11
+# - displayname.traveler
 - essentials.kits.traveller
 
 # Limit increases

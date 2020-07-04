@@ -2,10 +2,10 @@ name: tester # QA (Quality Assurance)
 parents:
 - default
 suffixes:
-- ' &c(QA)&r'
+- '&c(QA)&r': {}
 permissions:
-- displayname.Tester
-- weight.12
+- weight.22
+# - displayname.qa
 
 # Chat
 #-------------------------------------------------------------------------------

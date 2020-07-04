@@ -1,0 +1,7 @@
+# I hate everything about how LuckPerms configures default ranks.  Every little bit.
+name: default
+parents:
+- wanderer
+permissions:
+- weight.0
+- displayname.wanderer

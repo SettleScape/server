@@ -2,10 +2,10 @@ name: moderator
 parents:
 - default
 suffixes:
-- ' &c(mod)&r'
+- '&c(mod)&r': {}
 permissions:
-- displayname.Moderator
-- weight.13
+- weight.21
+# - displayname.mod
 
 # Chat
 #-------------------------------------------------------------------------------

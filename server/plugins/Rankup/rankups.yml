@@ -1,15 +1,15 @@
 # https://github.com/okx-code/Rankup3/wiki/Rank-format
 
 #-------------------------------------------------------------------------------
-wanderer:
-  rank: 'default'
-  next: 'wanderer'
-  requirements:
-    - 'group default'
-  commands:
-    - 'broadcast {PLAYER} &7has been promoted to &a{RANK}&7!'
-  rankup:
-    requirements-not-met: 'If you are seeing this, then something went wrong. Please contact an admin.'
+# wanderer:
+#   rank: 'default'
+#   next: 'wanderer'
+#   requirements:
+#     - 'group default'
+#   commands:
+#     - 'broadcast {PLAYER} &7has been promoted to &a{RANK}&7!'
+#   rankup:
+#     requirements-not-met: 'If you are seeing this, then something went wrong. Please contact an admin.'
 
 #-------------------------------------------------------------------------------
 traveller:

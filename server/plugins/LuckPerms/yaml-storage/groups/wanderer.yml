@@ -2,10 +2,10 @@ name: wanderer # Starting rank.  Basically a vanilla experience.
 parents:
 - player
 prefixes:
-- '&8Wanderer&r '
+- '&8Wanderer&r': {}
+meta:
 permissions:
-- displayname.Wanderer
-- weight.1
+- weight.10
 - essentials.kits.wanderer
 
 # Limit increases

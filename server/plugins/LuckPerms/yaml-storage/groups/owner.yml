@@ -4,8 +4,9 @@ parents:
 - moderator
 - administrator
 suffixes:
-- ' &c(owner)&r'
+- '&c(owner)&r': {}
 permissions:
-- displayname.Owner
-- weight.15
+- weight.24
+# - displayname.operator
+# - displayname.op
 - luckperms.autoop
