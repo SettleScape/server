@@ -1,0 +1,26 @@
+name: explorer
+permissions:
+- auctionhouse.auctions.6:
+    value: false
+- auctionhouse.auctions.8
+- essentials.back
+- essentials.chat.magic
+- essentials.enderchest
+- essentials.kits.explorer_prize
+- essentials.msg.magic
+- essentials.nick.magic
+- essentials.sethome.multiple.three
+- essentials.sethome.multiple.two:
+    value: false
+- mineablespawners.minechance.4
+- mineablespawners.minechance.5:
+    value: false
+- shopchest.limit.20:
+    value: false
+- shopchest.limit.40
+- townychat.chat.format.magic
+parents:
+- settler
+prefixes:
+- '&dExplorer&r ':
+    priority: 50

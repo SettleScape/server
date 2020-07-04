@@ -1,0 +1,33 @@
+name: settler
+permissions:
+- auctionhouse.auctions.4:
+    value: false
+- auctionhouse.auctions.6
+- essentials.chat.color
+- essentials.delhome
+- essentials.hat
+- essentials.kits.settler_prize
+- essentials.msg.color
+- essentials.nick.color
+- essentials.protect.exemptbreak
+- essentials.protect.exemptplacement
+- essentials.protect.exemptusage
+- essentials.sethome.multiple
+- essentials.sethome.multiple.one:
+    value: false
+- essentials.sethome.multiple.two
+- jobs.max.1:
+    value: false
+- jobs.max.2
+- mineablespawners.minechance.5
+- mineablespawners.minechance.6:
+    value: false
+- shopchest.limit.10:
+    value: false
+- shopchest.limit.20
+- townychat.chat.color
+parents:
+- traveller
+prefixes:
+- '&9Settler&r ':
+    priority: 50

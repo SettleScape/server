@@ -1,0 +1,22 @@
+name: g-developer
+permissions:
+- bukkit.command.gamemode
+- bukkit.command.give
+- bukkit.command.help
+- bukkit.command.list
+- bukkit.command.plugins
+- bukkit.command.teleport
+- bukkit.command.time.add
+- bukkit.command.time.set
+- bukkit.command.version
+- essentials.fly
+- essentials.fly.safelogin
+- essentials.god
+- essentials.kit.exemptdelay
+- essentials.protect.exemptbreak
+- essentials.protect.exemptplacement
+- essentials.protect.exemptusage
+- jobs.command.leave
+- jobs.command.leaveall
+- towny.chat.dev
+- townyflight.bypass

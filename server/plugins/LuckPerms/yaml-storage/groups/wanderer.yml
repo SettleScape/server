@@ -1,0 +1,71 @@
+name: wanderer
+permissions:
+- townychat.chat.format.*:
+    value: false
+- auctionhouse.auctions.2
+- craftbook.mech.ammeter.use:
+    value: false
+- craftbook.mech.lightstone.use:
+    value: false
+- craftbook.mech.paintingswitch.use:
+    value: false
+- craftbook.mech.pay:
+    value: false
+- editablesign.edit:
+    value: false
+- essentials.chat.color:
+    value: false
+- essentials.chat.format:
+    value: false
+- essentials.chat.magic:
+    value: false
+- essentials.chat.url:
+    value: false
+- essentials.clearinventory:
+    value: false
+- essentials.delhome:
+    value: false
+- essentials.hat:
+    value: false
+- essentials.kits.wanderer_prize
+- essentials.msg.color:
+    value: false
+- essentials.msg.format:
+    value: false
+- essentials.msg.magic:
+    value: false
+- essentials.msg.url:
+    value: false
+- essentials.nick.color:
+    value: false
+- essentials.nick.format:
+    value: false
+- essentials.nick.magic:
+    value: false
+- essentials.sethome:
+    value: false
+- essentials.sethome.multiple:
+    value: false
+- essentials.sethome.multiple.zero
+- essentials.tpa:
+    value: false
+- essentials.tpacancel:
+    value: false
+- essentials.tpaccept:
+    value: false
+- essentials.tpahere:
+    value: false
+- essentials.workbench:
+    value: false
+- jobs.max.1
+- mineablespawners.mine:
+    value: false
+- mineablespawners.minechance.7
+- shopchest.limit.0
+- townychat.chat.color:
+    value: false
+parents:
+- g-player
+prefixes:
+- '&8Wanderer&r ':
+    priority: 50

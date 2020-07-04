@@ -1,0 +1,25 @@
+name: g-donor
+permissions:
+- townychat.chat.format.*
+- craftbook.mech.ammeter.use
+- craftbook.mech.lightstone.use
+- craftbook.mech.paintingswitch.use
+- editablesign.edit
+- essentials.back.ondeath
+- essentials.chat.color
+- essentials.chat.format
+- essentials.chat.magic
+- essentials.clearinventory
+- essentials.hat
+- essentials.msg.color
+- essentials.msg.format
+- essentials.msg.magic
+- essentials.workbench
+- jobs.command.leave
+- jobs.command.leaveall
+- towny.command.nation.new
+- towny.command.town.new
+- towny.town.resident
+- townychat.chat.color
+- townyflight.alltowns
+- townyflight.command.tfly
