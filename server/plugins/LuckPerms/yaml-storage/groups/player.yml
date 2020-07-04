@@ -1,6 +1,6 @@
-name: default
+name: player
 permissions:
-- displayname.Default
+- displayname.Player
 - weight.-1
 
 # Info about the server

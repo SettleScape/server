@@ -1,6 +1,6 @@
 name: wanderer # Starting rank.  Basically a vanilla experience.
 parents:
-- default
+- player
 prefixes:
 - '&8Wanderer&r '
 permissions:
