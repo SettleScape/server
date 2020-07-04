@@ -1,4 +1,5 @@
 /worlds/
+/.console_history
 /banned-ips.json
 /banned-players.json
 /eula.txt
