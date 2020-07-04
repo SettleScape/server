@@ -11,7 +11,6 @@ Dynmap-Towny       0.80       2020-04-27  2020-06-29  https://github.com/TownyAd
 Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-06-29  https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.0.4      2019-08-16  2020-06-29  https://spigotmc.org/resources/editablesign.2502/updates
 EssentialsX        2.17.2     2020-02-22  2020-06-29  https://github.com/EssentialsX/Essentials/releases
-Group Manager      0.2.0      2019-12-26  2020-06-29  https://github.com/GroupManager/GroupManager/releases
 Jobs Reborn        4.15.7     2020-04-02  2020-04-16  https://spigotmc.org/resources/jobs-reborn.4216/updates
 LuckPerms          5.1.26     2020-05-20  2020-07-03  https://www.spigotmc.org/resources/luckperms.28140/updates
 mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
