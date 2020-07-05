@@ -3,7 +3,7 @@ set -e
 
 ## Handle paths
 CWD=$(pwd)
-TWD='server/plugins'
+TWD='plugins'
 [[ ! "$CWD" == *"/$TWD" ]] && cd "./$TWD"
 
 ## Handle input

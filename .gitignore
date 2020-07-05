@@ -1,19 +1,15 @@
-## Dynamic
-/build/
-**/cache/
-
 ## Logs
-**/crash-reports/
 **/logs/
 **.log
 
 ## Temporary files
-**.lock
-**.swp
-**.tmp
 **/tmp/
+**.tmp
+**.swp
+**.lock
 
 ## Unversionable
+**/cache/
 **.db
 **.jar
 **.sqlite

@@ -3,7 +3,7 @@ set -e
 
 ## Variables
    TYPE='paper'
- OUTJAR='server/server.jar'
+ OUTJAR='server.jar'
 VERSION='1.15.2'
 
 ## Do the thing

@@ -1,4 +1,10 @@
+## Unversionable paths created by Minecraft
+/cache/
+/crash-reports/
+/build/
 /worlds/
+
+## Other
 /.console_history
 /banned-ips.json
 /banned-players.json

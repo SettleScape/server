@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-SERVER_PATH='./server'
+SERVER_PATH='./'
 SERVER_JAR='server.jar'
 JAVA='/lib/jvm/java-8-jdk/bin/java'
 [ ! -f "$JAVA" ] && JAVA='java'

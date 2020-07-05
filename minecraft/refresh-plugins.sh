@@ -2,7 +2,7 @@
 ## Automatically update some plugins.
 
 ## Configurable variables
-PLUGIN_DIR='./server/plugins'
+PLUGIN_DIR='./plugins'
 
 ## Setup
 echo 'Updating plugins...'

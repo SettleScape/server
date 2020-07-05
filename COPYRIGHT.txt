@@ -1,23 +1,26 @@
 Files in this repository for which the SettleScape Team owns the Copyright:
-(Note: This section uses the same syntax as `.gitignore` files, apart from
-the `- ` at the start of each line.)
+(Note: This section uses the same syntax as an inverted `.gitignore` files,
+apart from the `- ` at the start of each line.)
 - /**
-- !/server/
+- !/minecraft/
 - **/.gitignore
-- /server/server-icon.png
-- /server/plugins/CraftBook/crafting-recipes.yml
-- /server/plugins/dynmap/marers.yml
-- /server/plugins/dynmap/worlds.txt
-- /server/plugins/dynmap/web/css/embedded.css
-- /server/plugins/dynmap/web/css/override.css
-- /server/plugins/dynmap/web/images/favicon.ico
-- /server/plugins/Essentials/kits.yml
-- /server/plugins/Essentials/motd.yml
-- /server/plugins/Essentials/rules.yml
-- /server/plugins/Essentials/spawn.yml
-- /server/plugins/GroupManager/config.yml
-- /server/plugins/GroupManager/worlds/world/groups.yml
-- /server/plugins/Rankup/rankups.yml
+- /minecraft/*.png
+- /minecraft/*.svg
+- /minecraft/*.bash
+- /minecraft/*.sh
+- /minecraft/plugins/CraftBook/crafting-recipes.yml
+- /minecraft/plugins/dynmap/marers.yml
+- /minecraft/plugins/dynmap/worlds.txt
+- /minecraft/plugins/dynmap/web/css/embedded.css
+- /minecraft/plugins/dynmap/web/css/override.css
+- /minecraft/plugins/dynmap/web/images/favicon.ico
+- /minecraft/plugins/Essentials/kits.yml
+- /minecraft/plugins/Essentials/motd.yml
+- /minecraft/plugins/Essentials/rules.yml
+- /minecraft/plugins/Essentials/spawn.yml
+- /minecraft/plugins/GroupManager/config.yml
+- /minecraft/plugins/GroupManager/worlds/world/groups.yml
+- /minecraft/plugins/Rankup/rankups.yml
 
 Files with the following extensions are to be considered "source-code" for the
 purposes of this document:
