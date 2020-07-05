@@ -130,7 +130,7 @@
     align-items: center;
     justify-content: center;
 }
-.dynmap .leaflet-control-container * > .coord-control br {
+.dynmap .leaflet-control-container * > .coord-control > br {
     display: none;
 }
 .dynmap .leaflet-control-container * > .leaflet-control-layers > .leaflet-control-layers-toggle {
