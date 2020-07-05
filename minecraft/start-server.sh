@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 SERVER_PATH='./'
 SERVER_JAR='server.jar'
 JAVA='/lib/jvm/java-8-jdk/bin/java'
