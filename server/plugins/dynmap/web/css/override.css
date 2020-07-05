@@ -1,5 +1,5 @@
 :root {
-    --base_margin: 10;
+    --base_margin: 10px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -34,8 +34,8 @@
 
 :root {
     --sidebar_bkgd: rgba(0, 0, 0, 0.6);
-    --clock_width: 150;
-    --clock_height: 60;
+    --clock_width: 150px;
+    --clock_height: 60px;
 }
 
 /* Clock */
