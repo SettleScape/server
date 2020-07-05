@@ -89,7 +89,7 @@ eggs:
 explode:
   drop: false
   # The chance it will drop in percentage from 0-100
-  chance: 100
+  chance: 0
   # Configure worlds spawners will not drop when exploded
   blacklisted-worlds: []
 
