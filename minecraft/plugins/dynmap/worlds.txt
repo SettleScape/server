@@ -45,7 +45,8 @@ worlds:
         perspective: iso_S_90_lowres
         shader: stdtexture
         lighting: nethershadows
-        background: "#290606"
+      # background: "#290606"
+        background: "#000000"
         mapzoomin: 0
         mapzoomout: 0
         boostzoom: 1
