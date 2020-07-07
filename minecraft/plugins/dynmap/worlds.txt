@@ -1,91 +1,92 @@
 worlds:
-
--   name: world
-    title: Overworld
-    enabled: true
-    bigworld: true
+################################################################################
+-   name:       world
+    title:      Overworld
+    enabled:    true
+    bigworld:   true
     showborder: true
-    hidestyle: air
+    hidestyle:  air
     center:
     -   x: 3072
-        y: 64
-        z: 0
+        y:   64
+        z:    0
     visibilitylimits:
     -   x0: -29696
         z0: -32768
-        x1: 35840
-        z1: 32768
+        x1:  35840
+        z1:  32768
     maps:
-    -   class: org.dynmap.hdmap.HDMap
-        title: "Surface"
+    -   class:  org.dynmap.hdmap.HDMap
+        title:  Surface
         prefix: surface
-        name: surface
+        name:   surface
         maximumheight: 256
-        background: "#3F3F3F"
-        backgroundday: "#7EAAFF"
-        backgroundnight: "#030406"
-        lighting: shadows-smooth
-        shader: stdtexture
-        perspective: iso_S_90_vlowres
+        background:      \#3F3F3F
+        backgroundday:   \#7EAAFF
+        backgroundnight: \#030406
+        lighting:     shadows-smooth
+        shader:       stdtexture
+        perspective:  iso_S_90_vlowres
         image-format: png
-        mapzoomin: 2
+        mapzoomin:  2
         mapzoomout: 5
-
--   name: world_nether
-    title: The Nether
-    enabled: true
-    bigworld: true
+################################################################################
+-   name:       world_nether
+    title:      The Nether
+    enabled:    true
+    bigworld:   true
     showborder: true
-    hidestyle: air
+    hidestyle:  air
     center:
     -   x: 384
-        y: 64
-        z: 0
+        y:  64
+        z:   0
     visibilitylimits:
     -   x0: -3712
         z0: -4096
-        x1: 4480
-        z1: 4096
+        x1:  4480
+        z1:  4096
     maps:
-    -   class: org.dynmap.hdmap.HDMap
-        title: "Cross-Section"
+    -   class:  org.dynmap.hdmap.HDMap
+        title:  Cross-Section
         prefix: nether
-        name: nether
+        name:   nether
         maximumheight: 128
-       #background: "#290606"
-        background: "#000000"
-        lighting: nethershadows
-        shader: stdtexture
-        perspective: iso_S_90_vlowres
+       #background:  \#290606
+        background:  \#000000
+        lighting:     nethershadows
+        shader:       stdtexture
+        perspective:  iso_S_90_vlowres
         image-format: png
-        mapzoomin: 2
+        mapzoomin:  2
         mapzoomout: 2
-
--   name: world_the_end
-    title: The End
-    enabled: true
-    bigworld: true
+################################################################################
+-   name:       world_the_end
+    title:      The End
+    enabled:    true
+    bigworld:   true
     showborder: true
-    hidestyle: air
+    hidestyle:  air
     center:
-    -   x: 0
+    -   x:  0
         y: 64
-        z: 0
+        z:  0
     visibilitylimits:
     -   x0: -16384
         z0: -16384
-        x1: 16384
-        z1: 16384
+        x1:  16384
+        z1:  16384
     maps:
-    -   class: org.dynmap.hdmap.HDMap
-        title: "Surface"
+    -   class:  org.dynmap.hdmap.HDMap
+        title:  Surface
         prefix: the_end
-        name: the_end
+        name:   the_end
         maximumheight: 256
-        background: "#110d18"
-        lighting: brightnight-smooth
-        shader: stdtexture
-        perspective: iso_S_90_vlowres
+        background:  \#110d18
+        lighting:     brightnight-smooth
+        shader:       stdtexture
+        perspective:  iso_S_90_vlowres
         image-format: png
-        mapzoomin: 2
+        mapzoomin:  2
         mapzoomout: 3
+################################################################################
