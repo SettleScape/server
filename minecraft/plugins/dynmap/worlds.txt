@@ -4,92 +4,88 @@ worlds:
     enabled: true
     bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 6
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
         name: surface
         prefix: surface
-        image-format: default
-        perspective: iso_S_90_lowres
+        image-format: png
+        perspective: iso_S_90_vlowres
         shader: stdtexture
         lighting: shadows-smooth
         background: "#3F3F3F"
-        mapzoomin: 0
-        mapzoomout: 0
-        boostzoom: 1
-    protected: false
+		backgroundday: "#7EAAFF"
+		backgroundnight: "#030406"
+		maximumheight: 256
+        mapzoomin: 2
+        mapzoomout: 5
     showborder: true
-    sendposition: false
-    sendhealth: false
+	center:
+	-   x: 3072
+	    y: 64
+		z: 0
     visibilitylimits:
-      - x0: -29696
+    -   x0: -29696
         z0: -32768
         x1: 35840
         z1: 32768
-    hiddenlimits: [
-        ]
     hidestyle: air
 -   name: world_nether
     title: The Nether
     enabled: true
     bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 3
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Cross-Section"
         name: nether
         prefix: nether
-        image-format: default
-        perspective: iso_S_90_lowres
+        image-format: png
+        perspective: iso_S_90_vlowres
         shader: stdtexture
         lighting: nethershadows
       # background: "#290606"
         background: "#000000"
-        mapzoomin: 0
-        mapzoomout: 0
-        boostzoom: 1
-    protected: false
+		maximumheight: 128
+        mapzoomin: 2
+        mapzoomout: 2
     showborder: true
-    sendposition: false
-    sendhealth: false
+	center:
+	-   x: 384
+	    y: 64
+		z: 0
     visibilitylimits:
-      - x0: -3712
+    -   x0: -3712
         z0: -4096
         x1: 4480
         z1: 4096
-    hiddenlimits: [
-        ]
     hidestyle: air
 -   name: world_the_end
     title: The End
     enabled: true
     bigworld: true
     tileupdatedelay: 20
-    extrazoomout: 4
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
         name: the_end
         prefix: the_end
-        image-format: default
-        perspective: iso_S_90_lowres
+        image-format: png
+        perspective: iso_S_90_vlowres
         shader: stdtexture
         lighting: brightnight-smooth
         background: "#110d18"
-        mapzoomin: 0
-        mapzoomout: 0
-        boostzoom: 1
-    protected: false
+		maximumheight: 256
+        mapzoomin: 2
+        mapzoomout: 3
     showborder: true
-    sendposition: false
-    sendhealth: false
+	center:
+	-   x: 0
+	    y: 64
+		z: 0
     visibilitylimits:
-      - x0: -16384
+    -   x0: -16384
         z0: -16384
         x1: 16384
         z1: 16384
-    hiddenlimits: [
-        ]
     hidestyle: air
