@@ -18,16 +18,16 @@ worlds:
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
-        name: surface
         prefix: surface
-        image-format: png
-        perspective: iso_S_90_vlowres
-        shader: stdtexture
-        lighting: shadows-smooth
+        name: surface
+        maximumheight: 256
         background: "#3F3F3F"
         backgroundday: "#7EAAFF"
         backgroundnight: "#030406"
-        maximumheight: 256
+        lighting: shadows-smooth
+        shader: stdtexture
+        perspective: iso_S_90_vlowres
+        image-format: png
         mapzoomin: 2
         mapzoomout: 5
 
@@ -49,15 +49,15 @@ worlds:
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Cross-Section"
-        name: nether
         prefix: nether
-        image-format: png
-        perspective: iso_S_90_vlowres
-        shader: stdtexture
-        lighting: nethershadows
-      # background: "#290606"
-        background: "#000000"
+        name: nether
         maximumheight: 128
+       #background: "#290606"
+        background: "#000000"
+        lighting: nethershadows
+        shader: stdtexture
+        perspective: iso_S_90_vlowres
+        image-format: png
         mapzoomin: 2
         mapzoomout: 2
 
@@ -79,13 +79,13 @@ worlds:
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
-        name: the_end
         prefix: the_end
-        image-format: png
-        perspective: iso_S_90_vlowres
-        shader: stdtexture
-        lighting: brightnight-smooth
-        background: "#110d18"
+        name: the_end
         maximumheight: 256
+        background: "#110d18"
+        lighting: brightnight-smooth
+        shader: stdtexture
+        perspective: iso_S_90_vlowres
+        image-format: png
         mapzoomin: 2
         mapzoomout: 3
