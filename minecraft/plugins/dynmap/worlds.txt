@@ -1,9 +1,20 @@
 worlds:
+
 -   name: world
     title: Overworld
     enabled: true
     bigworld: true
-    tileupdatedelay: 20
+    showborder: true
+    hidestyle: air
+	center:
+	-   x: 3072
+	    y: 64
+		z: 0
+    visibilitylimits:
+    -   x0: -29696
+        z0: -32768
+        x1: 35840
+        z1: 32768
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
@@ -19,22 +30,22 @@ worlds:
 		maximumheight: 256
         mapzoomin: 2
         mapzoomout: 5
-    showborder: true
-	center:
-	-   x: 3072
-	    y: 64
-		z: 0
-    visibilitylimits:
-    -   x0: -29696
-        z0: -32768
-        x1: 35840
-        z1: 32768
-    hidestyle: air
+
 -   name: world_nether
     title: The Nether
     enabled: true
     bigworld: true
-    tileupdatedelay: 20
+    showborder: true
+    hidestyle: air
+	center:
+	-   x: 384
+	    y: 64
+		z: 0
+    visibilitylimits:
+    -   x0: -3712
+        z0: -4096
+        x1: 4480
+        z1: 4096
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Cross-Section"
@@ -49,22 +60,22 @@ worlds:
 		maximumheight: 128
         mapzoomin: 2
         mapzoomout: 2
-    showborder: true
-	center:
-	-   x: 384
-	    y: 64
-		z: 0
-    visibilitylimits:
-    -   x0: -3712
-        z0: -4096
-        x1: 4480
-        z1: 4096
-    hidestyle: air
+
 -   name: world_the_end
     title: The End
     enabled: true
     bigworld: true
-    tileupdatedelay: 20
+    showborder: true
+    hidestyle: air
+	center:
+	-   x: 0
+	    y: 64
+		z: 0
+    visibilitylimits:
+    -   x0: -16384
+        z0: -16384
+        x1: 16384
+        z1: 16384
     maps:
     -   class: org.dynmap.hdmap.HDMap
         title: "Surface"
@@ -78,14 +89,3 @@ worlds:
 		maximumheight: 256
         mapzoomin: 2
         mapzoomout: 3
-    showborder: true
-	center:
-	-   x: 0
-	    y: 64
-		z: 0
-    visibilitylimits:
-    -   x0: -16384
-        z0: -16384
-        x1: 16384
-        z1: 16384
-    hidestyle: air
