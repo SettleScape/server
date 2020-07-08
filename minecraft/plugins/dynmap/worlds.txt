@@ -22,14 +22,13 @@ worlds:
         name:   surface
         maximumheight: 256
         background:      "#3F3F3F"
-        backgroundday:   "#7EAAFF"
-        backgroundnight: "#030406"
+       #backgroundnight: "#090B13"
         lighting:     shadows-smooth
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
+        perspective:  iso_S_90_lowres
         image-format: png
-        mapzoomin:  2
-        mapzoomout: 3
+        mapzoomin:  1
+        mapzoomout: 4
 ################################################################################
 -   name:       world_nether
     title:      The Nether
@@ -56,10 +55,10 @@ worlds:
         background:  "#000000"
         lighting:     nethershadows
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
+        perspective:  iso_S_90_lowres
         image-format: png
-        mapzoomin:  2
-        mapzoomout: 0
+        mapzoomin:  1
+        mapzoomout: 1
 ################################################################################
 -   name:       world_the_end
     title:      The End
@@ -85,8 +84,8 @@ worlds:
         background:  "#110d18"
         lighting:     brightnight-smooth
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
+        perspective:  iso_S_90_lowres
         image-format: png
-        mapzoomin:  2
-        mapzoomout: 1
+        mapzoomin:  1
+        mapzoomout: 2
 ################################################################################
