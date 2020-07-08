@@ -21,9 +21,9 @@ worlds:
         prefix: surface
         name:   surface
         maximumheight: 256
-        background:      \#3F3F3F
-        backgroundday:   \#7EAAFF
-        backgroundnight: \#030406
+        background:      "#3F3F3F"
+        backgroundday:   "#7EAAFF"
+        backgroundnight: "#030406"
         lighting:     shadows-smooth
         shader:       stdtexture
         perspective:  iso_S_90_vlowres
@@ -52,8 +52,8 @@ worlds:
         prefix: nether
         name:   nether
         maximumheight: 128
-       #background:  \#290606
-        background:  \#000000
+       #background:  "#290606"
+        background:  "#000000"
         lighting:     nethershadows
         shader:       stdtexture
         perspective:  iso_S_90_vlowres
@@ -82,7 +82,7 @@ worlds:
         prefix: the_end
         name:   the_end
         maximumheight: 256
-        background:  \#110d18
+        background:  "#110d18"
         lighting:     brightnight-smooth
         shader:       stdtexture
         perspective:  iso_S_90_vlowres
