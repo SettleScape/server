@@ -368,7 +368,7 @@ new_world_settings:
       # Enabling this will slowly regenerate holes created in the
       # wilderness by monsters exploding.
       enabled: 'true'
-      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball
+      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull
       delay: 5s
  
  
