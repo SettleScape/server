@@ -92,6 +92,8 @@ permissions:
 - essentials.ban
 - essentials.banip
 - essentials.ban.notify
+- essentials.tempban
+- essentials.tempbanip
 - essentials.seen.banreason
 # - minecraft.command.pardon
 # - minecraft.command.pardon-ip
@@ -113,6 +115,7 @@ permissions:
 - essentials.afk.kickexempt
 - essentials.chat.ignoreexempt
 - essentials.ban.exempt
+- essentials.tempban.exempt
 - essentials.kick.exempt
 - essentials.mute.exempt
 - essentials.tempban.exempt

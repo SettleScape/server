@@ -268,27 +268,6 @@ player-commands: #TODO:  Move these into GroupManager
   # - sell
   # - sethome
   # - setxmpp
-  # - signs.create.protection
-  # - signs.create.trade
-  # - signs.break.protection
-  # - signs.break.trade
-  # - signs.use.balance
-  # - signs.use.buy
-  # - signs.use.disposal
-  # - signs.use.enchant
-  # - signs.use.free
-  # - signs.use.gamemode
-  # - signs.use.heal
-  # - signs.use.info
-  # - signs.use.kit
-  # - signs.use.mail
-  # - signs.use.protection
-  # - signs.use.repair
-  # - signs.use.sell
-  # - signs.use.time
-  # - signs.use.trade
-  # - signs.use.warp
-  # - signs.use.weather
   # - spawn
   # - suicide
   # - time

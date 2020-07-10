@@ -19,14 +19,24 @@ permissions:
 - mineablespawners.minechance.6
 
 # Basic quality of life improvements
-- editablesign.edit
 - essentials.workbench
 - essentials.clearinventory
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
 - craftbook.mech.paintingswitch.use
 
-# Access to standard chat formatting
+# Handy sign utilities
+- craftbook.mech.pay
+- editablesign.edit
+- essentials.editsign
+- essentials.signs.create.disposal
+- essentials.signs.use.disposal
+- essentials.signs.break.disposal
+# - essentials.signs.create.mail
+# - essentials.signs.use.mail
+# - essentials.signs.break.mail
+
+# Access to standard text formatting
 - essentials.chat.format
 - essentials.msg.format
 - townychat.chat.format.bold
@@ -34,6 +44,7 @@ permissions:
 - townychat.chat.format.underline
 - townychat.chat.format.strike
 - essentials.nick.format
+- essentials.signs.format
 
 # Access to URL formatting (since they're unlikely to be a spammer if they've gotten this far)
 - essentials.chat.url
@@ -46,6 +57,5 @@ permissions:
 - essentials.tpahere
 
 # Misc
-- craftbook.mech.pay
 - essentials.sethome
 - mineablespawners.mine
