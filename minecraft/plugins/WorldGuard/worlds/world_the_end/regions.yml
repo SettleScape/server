@@ -14,6 +14,7 @@ regions:
         min: {x: -272, y: 0, z: -272}
         max: {x: 272, y: 255, z: 272}
         members: {}
+        dynmap-boost: true
         flags: {other-explosion: deny, wither-damage: deny, use: allow, block-trampling: deny,
             lighter: deny, enderman-grief: deny, pvp: deny, block-place: deny, enderdragon-block-damage: deny,
             creeper-explosion: deny, vehicle-place: deny, snowman-trails: deny, town-creation: deny,

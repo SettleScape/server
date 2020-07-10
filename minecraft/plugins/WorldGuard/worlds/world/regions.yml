@@ -17,7 +17,6 @@ regions:
         flags:
             other-explosion: deny
             frosted-ice-form: deny
-            dynmap-boost: true
             snow-fall: deny
             ice-melt: deny
             chest-access: allow
