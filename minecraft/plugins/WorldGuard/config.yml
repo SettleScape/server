@@ -1,5 +1,3 @@
-#NOTE:  Some of these protections exist in other plugins -- make sure to only set them in one place, to maximize performance.
-#NOTE:  Equivalent permissions in Towny are to be preferred in all cases, since they integrate with towns, and WorldGuard does not.
 regions:
     uuid-migration:
         perform-on-next-start: false
@@ -72,35 +70,35 @@ physics:
     allow-portal-anywhere: false
     disable-water-damage-blocks: []
 ignition:
-    block-tnt: false # Handled by Towny (world_explosions_enabled)
-    block-tnt-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
-    block-lighter: false # Handled by Towny (item_use_ids)
+    block-tnt: false
+    block-tnt-block-damage: false
+    block-lighter: false
 fire:
     disable-lava-fire-spread: false
-    disable-all-fire-spread: false # Handled by Towny (world_firespread_enabled)
+    disable-all-fire-spread: false
     disable-fire-spread-blocks: []
     lava-spread-blocks: []
 mobs:
-    block-creeper-explosions: false # Handled by Towny (world_explosions_enabled)
-    block-creeper-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
-    block-wither-explosions: false # Handled by Towny (world_explosions_enabled)
-    block-wither-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
-    block-wither-skull-explosions: false # Handled by Towny (world_explosions_enabled)
-    block-wither-skull-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
-    block-enderdragon-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
+    block-creeper-explosions: false
+    block-creeper-block-damage: false
+    block-wither-explosions: false
+    block-wither-block-damage: false
+    block-wither-skull-explosions: false
+    block-wither-skull-block-damage: false
+    block-enderdragon-block-damage: false
     block-enderdragon-portal-creation: false
-    block-fireball-explosions: false # Handled by Towny (world_explosions_enabled)
-    block-fireball-block-damage: false # Handled by Towny (wild_revert_on_mob_explosion)
+    block-fireball-explosions: false
+    block-fireball-block-damage: false
     anti-wolf-dumbness: true
     allow-tamed-spawns: true
-    disable-enderman-griefing: false # Handled by Towny (enderman_protect)
+    disable-enderman-griefing: false
     disable-snowman-trails: false
     block-painting-destroy: false
     block-item-frame-destroy: false
     block-armor-stand-destroy: false
     block-plugin-spawning: false
     block-above-ground-slimes: false
-    block-other-explosions: false # Handled by Towny (world_explosions_enabled, wild_revert_on_mob_explosion)
+    block-other-explosions: false
     block-zombie-door-destruction: true
     block-creature-spawn: []
 player-damage:
@@ -116,14 +114,14 @@ player-damage:
     teleport-on-void-falling: false
     disable-explosion-damage: false
     disable-mob-damage: false
-    disable-death-messages: false # Handled by Essentials (death-messages)
+    disable-death-messages: false
     reset-fall-on-void-teleport: false
 chest-protection:
-    enable: false # Handled whatever chest-locking plugin we're using at any given time.
+    enable: false
     disable-off-check: false
 crops:
-    disable-creature-trampling: false # Handled in Towny (disable_creature_crop_trampling)
-    disable-player-trampling: false # Handled in Towny (disable_player_crop_trampling)
+    disable-creature-trampling: false
+    disable-player-trampling: false
 weather:
     prevent-lightning-strike-blocks: []
     disable-lightning-strike-fire: false
