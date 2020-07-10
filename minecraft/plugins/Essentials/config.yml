@@ -34,9 +34,7 @@ max-nick-length: 16 # Valid MC usernames are 3-16 characters
 
 # A list of phrases that cannot be used in nicknames. You can include regular expressions here.
 # Users with essentials.nick.blacklist.bypass will be able to bypass this filter.
-nick-blacklist:
-#- Notch
-#- '^Dinnerbone'
+nick-blacklist: []
 
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
@@ -85,7 +83,7 @@ force-safe-teleport-location: false
 # If a player has any passengers, the teleport will fail. Should their passengers be dismounted before they are teleported?
 # If this is set to true, Essentials will dismount the player's passengers before teleporting.
 # If this is set to false, attempted teleports will be canceled with a warning.
-teleport-passenger-dismount: true
+teleport-passenger-dismount: false
 
 # The delay, in seconds, required between /home, /tp, etc.
 teleport-cooldown: 0
@@ -202,22 +200,19 @@ socialspy-listen-muted-players: true
 
 # When a player changes world, should EssentialsX reset their flight?
 # This will disable flight if the player does not have essentials.fly.
-world-change-fly-reset: true
+world-change-fly-reset: false
 
 # When a player changes world, should we reset their speed according to their permissions?
 # This resets the player's speed to the default if they don't have essentials.speed.
 # If the player doesn't have essentials.speed.bypass, this resets their speed to the maximum specified above.
-world-change-speed-reset: true
+world-change-speed-reset: false
 
 # Mute Commands
 # These commands will be disabled when a player is muted.
 # Use '*' to disable every command.
 # Essentials already disabled Essentials messaging commands by default.
 # It only cares about the root command, not args after that (it sees /f chat the same as /f)
-mute-commands:
-  - f
-  - kittycannon
- # - '*'
+mute-commands: []
 
 # If you do not wish to use a permission system, you can define a list of 'player perms' below.
 # This list has no effect if you are using a supported permissions system.
@@ -346,7 +341,7 @@ enabledSigns:
   - info
   #- spawnmob
   #- repair
-  # - time
+  #- time
   #- weather
 
 # How many times per second can Essentials signs be interacted with per player.
@@ -379,15 +374,15 @@ backup:
   #command: 'rdiff-backup World1 backups/World1'
 
 # Set this true to enable permission per warp.
-per-warp-permission: false
+per-warp-permission: true
 
 # Sort output of /list command by groups.
 # You can hide and merge the groups displayed in /list by defining the desired behaviour here.
 # Detailed instructions and examples can be found on the wiki: http://wiki.ess3.net/wiki/List
 list:
     # To merge groups, list the groups you wish to merge
-    #Staff: owner admin moderator
-    Admins: owner admin
+    #foo: bar baz
+    admins: owner admin
     # To limit groups, set a max user limit
     #builder: 20
     # To hide groups, set the group as hidden
@@ -464,7 +459,7 @@ death-messages: false
 # curse of vanishing when they die?
 # You can set this to "keep" (to keep the item), "drop" (to drop the item), or "delete" (to delete the item).
 # Defaults to "keep"
-vanishing-items-policy: keep
+vanishing-items-policy: delete
 
 # How should essentials handle players with the essentials.keepinv permission who have items with
 # curse of binding when they die?
@@ -489,7 +484,7 @@ custom-quit-message: "&7* &r{PLAYER}&7 has left the game.&r"
 # You can disable join and quit messages when the player count reaches a certain limit.
 # When the player count is below this number, join/quit messages will always be shown.
 # Set this to -1 to always show join and quit messages regardless of player count.
-hide-join-quit-messages-above: -1
+hide-join-quit-messages-above: 12
 
 # Add worlds to this list, if you want to automatically disable god mode there.
 no-god-in-worlds: []
@@ -537,7 +532,7 @@ mails-per-minute: 60
 
 # Set the maximum time /mute can be used for in seconds.
 # Set to -1 to disable, and essentials.mute.unlimited can be used to override.
-max-mute-time: -1
+max-mute-time: 86400
 
 # Set the maximum time /tempban can be used for in seconds.
 # Set to -1 to disable, and essentials.tempban.unlimited can be used to override.
@@ -580,6 +575,7 @@ command-cooldowns:
   ext:  1200
   feed: 1200
   heal: 1200
+  rest: 1200
 
 # Whether command cooldowns should be persistent past server shutdowns
 command-cooldown-persistence: true
@@ -632,7 +628,7 @@ safe-usermap-names: true
 
 # Should Essentials output logs when a command block executes a command?
 # Example: CommandBlock at <x>,<y>,<z> issued server command: /<command>
-log-command-block-commands: true
+log-command-block-commands: false
 
 # Set the maximum speed for projectiles spawned with /fireball.
 max-projectile-speed: 8
@@ -679,10 +675,10 @@ compass-towards-home-perm: true
 
 # If no home is set, would you like to send the player to spawn?
 # If set to false, players will not be teleported when they run /home without setting a home first.
-spawn-if-no-home: true
+spawn-if-no-home: false
 
 # Should players be asked to provide confirmation for homes which they attempt to overwrite?
-confirm-home-overwrite: false
+confirm-home-overwrite: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -823,25 +819,25 @@ protect:
     portal-creation: false
     tnt-explosion: false # Handled by Towny
     tnt-playerdamage: false
-    tnt-itemdamage: false
+    tnt-itemdamage: true
     tnt-minecart-explosion: true
     tnt-minecart-playerdamage: false
-    tnt-minecart-itemdamage: false
+    tnt-minecart-itemdamage: true
     fireball-explosion: true
     fireball-fire: false
     fireball-playerdamage: false
     fireball-itemdamage: false
     witherskull-explosion: true
     witherskull-playerdamage: false
-    witherskull-itemdamage: false
+    witherskull-itemdamage: true
     wither-spawnexplosion: true
     wither-blockreplace: true
     creeper-explosion: false
     creeper-playerdamage: false
-    creeper-itemdamage: false
+    creeper-itemdamage: true
     creeper-blockdamage: false # Handled by Towny
     ender-crystal-explosion: false
-    enderdragon-blockdamage: false
+    enderdragon-blockdamage: true
     enderman-pickup: false # Handled by Towny
     villager-death: false # Handled by Towny
     bed-explosion: false
@@ -850,9 +846,9 @@ protect:
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
     # Prevents zombies from breaking down doors
-    zombie-door-break: false
+    zombie-door-break: true
     # Prevents Ravagers from stealing blocks
-    ravager-thief: false
+    ravager-thief: true
     # Prevents sheep from turning grass to dirt
     sheep-eat-grass: false
     # Prevent certain transformations.
