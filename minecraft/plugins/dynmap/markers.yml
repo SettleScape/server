@@ -94,38 +94,6 @@ sets:
         hide: false
         layerprio: 2
         markers:
-            gateway_13_in:
-                label: Gateway 13
-                icon: portal
-                world: world_the_end
-                markup: false
-                x: -57.0
-                y: 76.0
-                z: 77.0
-            gateway_5_in:
-                label: Gateway 5
-                icon: portal
-                world: world_the_end
-                markup: false
-                x: 0.0
-                y: 76.0
-                z: -96.0
-            gateway_13_out:
-                label: Gateway 13
-                icon: portal
-                world: world_the_end
-                markup: false
-                x: -609.0
-                y: 78.0
-                z: 820.0
-            gateway_5_out:
-                label: Gateway 5
-                icon: portal
-                world: world_the_end
-                markup: false
-                x: -1.0
-                y: 68.0
-                z: -1073.0
             exit_portal:
                 label: Exit Portal
                 icon: portal
@@ -134,6 +102,38 @@ sets:
                 x: 0.0
                 y: 62.0
                 z: 0.0
+            gateway_5_in:
+                label: Gateway 5
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 0.0
+                y: 76.0
+                z: -96.0
+            gateway_5_out:
+                label: Gateway 5
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -1.0
+                y: 68.0
+                z: -1073.0
+            gateway_13_in:
+                label: Gateway 13
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -57.0
+                y: 76.0
+                z: 77.0
+            gateway_13_out:
+                label: Gateway 13
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -609.0
+                y: 78.0
+                z: 820.0
         areas: {
             }
         circles: {
