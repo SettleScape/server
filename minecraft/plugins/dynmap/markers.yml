@@ -97,38 +97,38 @@ sets:
             }
         label: Portals
         markers:
-            gateway_2a:
+            gateway_13_in:
                 world: world_the_end
                 markup: false
                 x: -57.0
                 icon: portal
                 y: 76.0
                 z: 77.0
-                label: Gateway 2A
-            gateway_1a:
+                label: Gateway 13
+            gateway_5_in:
                 world: world_the_end
                 markup: false
                 x: 0.0
                 icon: portal
                 y: 76.0
                 z: -96.0
-                label: Gateway 1A
-            gateway_2b:
+                label: Gateway 5
+            gateway_13_out:
                 world: world_the_end
                 markup: false
                 x: -609.0
                 icon: portal
                 y: 78.0
                 z: 820.0
-                label: Gateway 2B
-            gateway_1b:
+                label: Gateway 13
+            gateway_5_out:
                 world: world_the_end
                 markup: false
                 x: -1.0
                 icon: portal
                 y: 68.0
                 z: -1073.0
-                label: Gateway 1B
+                label: Gateway 5
             exit_portal:
                 world: world_the_end
                 markup: false
