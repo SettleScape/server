@@ -41,7 +41,7 @@ plotManagementIgnoreIds=GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_
 
 # If enabled any damage caused by explosions will repair itself.
 usingPlotManagementWildRegen=true
-PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball
+PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull
 usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
