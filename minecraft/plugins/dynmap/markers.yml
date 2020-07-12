@@ -102,6 +102,86 @@ sets:
                 x: 0.0
                 y: 62.0
                 z: 0.0
+            gateway_0_in:
+                label: Gateway 0
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 94.0
+                y: 76.0
+                z: 0.0
+            gateway_0_out:
+                label: Gateway 0
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 1083.0
+                y: 75.0
+                z: 0.0
+            gateway_X_in:
+                label: Gateway 1
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 90.0
+                y: 76.0
+                z: -29.0
+            gateway_X_out:
+                label: Gateway 1
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 1041.0
+                y: 66.0
+                z: -349.0
+            gateway_X_in:
+                label: Gateway 2
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 76.0
+                y: 76.0
+                z: -56.0
+            gateway_X_out:
+                label: Gateway 2
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 839.0
+                y: 70.0
+                z: -607.0
+            gateway_X_in:
+                label: Gateway 3
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 56.0
+                y: 76.0
+                z: -77.0
+            gateway_X_out:
+                label: Gateway 3
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 619.0
+                y: 73.0
+                z: -848.0
+            gateway_X_in:
+                label: Gateway 4
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 29.0
+                y: 76.0
+                z: -91.0
+            gateway_X_out:
+                label: Gateway 4
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 287.0
+                y: 67.0
+                z: -976.0
             gateway_5_in:
                 label: Gateway 5
                 icon: portal
@@ -109,21 +189,133 @@ sets:
                 markup: false
                 x: 0.0
                 y: 76.0
-                z: -96.0
+                z: -95.0
             gateway_5_out:
                 label: Gateway 5
                 icon: portal
                 world: world_the_end
                 markup: false
-                x: -1.0
+                x: 0.0
                 y: 68.0
-                z: -1073.0
+                z: -1072.0
+            gateway_X_in:
+                label: Gateway 6
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -29.0
+                y: 76.0
+                z: -91.0
+            gateway_X_out:
+                label: Gateway 6
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -311.0
+                y: 68.0
+                z: -959.0
+            gateway_X_in:
+                label: Gateway 7
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -56.0
+                y: 76.0
+                z: -77.0
+            gateway_X_out:
+                label: Gateway 7
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -656.0
+                y: 68.0
+                z: -896.0
+            gateway_X_in:
+                label: Gateway 8
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -77.0
+                y: 76.0
+                z: -56.0
+            gateway_X_out:
+                label: Gateway 8
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -816.0
+                y: 71.0
+                z: -592.0
+            gateway_X_in:
+                label: Gateway 9
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -91.0
+                y: 76.0
+                z: -29.0
+            gateway_X_out:
+                label: Gateway 9
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -976.0
+                y: 67.0
+                z: -310.0
+            gateway_X_in:
+                label: Gateway 10
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -95.0
+                y: 76.0
+                z: 0.0
+            gateway_X_out:
+                label: Gateway 10
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -1056.0
+                y: 68.0
+                z: -16.0
+            gateway_X_in:
+                label: Gateway 11
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -91.0
+                y: 76.0
+                z: 29.0
+            gateway_X_out:
+                label: Gateway 11
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -1024.0
+                y: 70.0
+                z: 330.0
+            gateway_X_in:
+                label: Gateway 12
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -77.0
+                y: 76.0
+                z: 56.0
+            gateway_X_out:
+                label: Gateway 12
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -863.0
+                y: 67.0
+                z: 616.0
             gateway_13_in:
                 label: Gateway 13
                 icon: portal
                 world: world_the_end
                 markup: false
-                x: -57.0
+                x: -56.0
                 y: 76.0
                 z: 77.0
             gateway_13_out:
@@ -131,9 +323,105 @@ sets:
                 icon: portal
                 world: world_the_end
                 markup: false
-                x: -609.0
+                x: -608.0
                 y: 78.0
                 z: 820.0
+            gateway_X_in:
+                label: Gateway 14
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -29.0
+                y: 76.0
+                z: 91.0
+            gateway_X_out:
+                label: Gateway 14
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -325.0
+                y: 66.0
+                z: 1010.0
+            gateway_X_in:
+                label: Gateway 15
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 0.0
+                y: 76.0
+                z: 96.0
+            gateway_X_out:
+                label: Gateway 15
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: -16.0
+                y: 69.0
+                z: 1009.0
+            gateway_X_in:
+                label: Gateway 16
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 29.0
+                y: 76.0
+                z: 91.0
+            gateway_X_out:
+                label: Gateway 16
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 342.0
+                y: 70.0
+                z: 1039.0
+            gateway_X_in:
+                label: Gateway 17
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 56.0
+                y: 76.0
+                z: 77.0
+            gateway_X_out:
+                label: Gateway 17
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 616.0
+                y: 81.0
+                z: 869.0
+            gateway_X_in:
+                label: Gateway 18
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 77.0
+                y: 76.0
+                z: 56.0
+            gateway_X_out:
+                label: Gateway 18
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 879.0
+                y: 69.0
+                z: 671.0
+            gateway_X_in:
+                label: Gateway 19
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 91.0
+                y: 76.0
+                z: 29.0
+            gateway_X_out:
+                label: Gateway 19
+                icon: portal
+                world: world_the_end
+                markup: false
+                x: 975.0
+                y: 72.0
+                z: 294.0
         areas: {
             }
         circles: {
