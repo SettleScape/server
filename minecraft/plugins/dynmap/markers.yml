@@ -461,6 +461,14 @@ sets:
                 y: 65.0
                 z: 2665.0
                 label: Kuiil
+            serenisle:
+                world: world
+                markup: false
+                x: 3867.0
+                icon: pin
+                y: 65.0
+                z: 35.0
+                label: Serenity Island
         lines: {
             }
         layerprio: 3
@@ -472,15 +480,8 @@ sets:
         areas: {
             }
         label: Detail
-        markers:
-            serenisle:
-                world: world
-                markup: false
-                x: 3867.0
-                icon: pin
-                y: 65.0
-                z: 35.0
-                label: serenisle
+        markers: [
+            ]
         lines: {
             }
         layerprio: 1
