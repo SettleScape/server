@@ -480,8 +480,8 @@ sets:
         areas: {
             }
         label: Detail
-        markers: [
-            ]
+        markers: {
+            }
         lines: {
             }
         layerprio: 1
