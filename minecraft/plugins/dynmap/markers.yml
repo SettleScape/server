@@ -468,7 +468,7 @@ sets:
                 icon: pin
                 y: 65.0
                 z: 35.0
-                label: Serenity Island
+                label: Serenity
         lines: {
             }
         layerprio: 3
