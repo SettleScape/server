@@ -62,7 +62,7 @@ world-settings:
   default:
     end-portal-sound-radius: 0
     seed-endcity: 10387313
-    trident-despawn-rate: 1200
+    trident-despawn-rate: 2400
     max-entity-collisions: 4
     verbose: false
     hopper-amount: 1
@@ -79,7 +79,7 @@ world-settings:
     seed-ocean: 14357621
     seed-outpost: 165745296
     seed-slime: 987234911
-    max-tnt-per-tick: 100
+    max-tnt-per-tick: 64
     enable-zombie-pigmen-portal-spawns: true
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
@@ -88,8 +88,8 @@ world-settings:
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: false
     entity-activation-range:
-      villagers: 32
-      flying-monsters: 32
+      villagers: 48
+      flying-monsters: 24
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true

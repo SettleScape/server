@@ -84,7 +84,7 @@ world-settings:
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
     prevent-moving-into-unloaded-chunks: true
-    max-auto-save-chunks-per-tick: 16
+    max-auto-save-chunks-per-tick: 8
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
@@ -146,8 +146,8 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 600
     despawn-ranges:
-      soft: 28
-      hard: 80
+      soft: 32
+      hard: 64
     lightning-strike-distance-limit:
       sound: -1
       impact-sound: -1

@@ -43,7 +43,7 @@ ticks-per:
   monster-spawns: 4
   autosave: 6000
 spawn-limits:
-  monsters: 48
-  animals: 8
+  monsters: 12
+  animals: 6
   water-animals: 4
-  ambient: 2
+  ambient: 4
