@@ -184,8 +184,15 @@ sets:
         areas: {
             }
         label: Detail
-        markers: {
-            }
+        markers:
+            serenisle:
+                world: world
+                markup: false
+                x: 3867.0
+                icon: pin
+                y: 65.0
+                z: 35.0
+                label: serenisle
         lines: {
             }
         layerprio: 1
