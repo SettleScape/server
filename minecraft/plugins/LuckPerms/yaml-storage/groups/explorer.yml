@@ -22,6 +22,7 @@ permissions:
 - essentials.msg.magic
 - townychat.chat.format.magic
 - essentials.nick.magic
+- essentials.signs.magic
 
 # New abilities
 - essentials.back

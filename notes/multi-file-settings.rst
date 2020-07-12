@@ -15,19 +15,19 @@ When changing View Distance, you need to edit the following:
 
 * `server.properties`
 
-  * `view-distance`
+  1. `view-distance`
 
 * `spigot.yml`
 
-  * `view-distance` (Should be same as in `server.properties`.)
+  1. `view-distance` (Should be same as in `server.properties`.)
 
-  * `mob-spawn-range` (Should generally be `1` less than `view-distance`.)
+  2. `mob-spawn-range` (Should generally be `1` less than `view-distance`.)
 
-  * `*range*` (Make sure these don't exceed the blocks loaded by the view-distance.)
+  3. `*range*` (Make sure these don't exceed the blocks loaded by the view-distance.)
 
 * `paper.yml`
 
-  * `despawn-ranges`
+  2. `despawn-ranges`
 
     * `hard` (Should generally be equal to the blocks loaded by the view-distance.)
 
@@ -49,7 +49,7 @@ Time until Inactive
 
   * `auto-afk`
 
-* `plugins/Towny/config.yml`
+* `plugins/Towny/settings/config.yml`
 
   * `inactive_after_time`
 
@@ -58,10 +58,39 @@ Join/Quit Messages
 
 * `plugins/Essentials/config.yml`
 
-  * `custom-join-message`
-  * `custom-quit-message`
+  1. `custom-join-message`
+  2. `custom-quit-message`
+  3. `death-messages`
 
 * `plugins/dynmap/configuration.txt`
 
-  * `joinmessage`
-  * `quitmessage`
+  1. `joinmessage`
+  2. `quitmessage`
+
+* `plugins/WorldGuard/config.yml`
+
+  3. `disable-death-messages`
+
+Protections
+================================================================================
+Prefer Towny's protections, where possible -- they're integrated with Towny, whereas WorldGuard's are not.
+
+* `plugins/WorldGuard/config.yml`
+
+  * `ignition.block-*`
+  * `fire.disable-all-fire-spread`
+  * `mobs.block-*-explosions`
+  * `mobs.block-*-block-damage`
+  * `mobs.disable-enderman-griefing`
+  * `crops.disable-creature-trampling`
+  * `crops.player-creature-trampling`
+
+* `plugins/Towny/settings/config.yml`
+
+  * `protection.item_use_ids`
+  * `new_world_settings.fire.world_firespread_enabled`
+  * `new_world_settings.explosions.world_explosions_enabled`
+  * `new_world_settings.plot_management.wild_revert_on_mob_explosion`
+  * `new_world_settings.enderman_protect`
+  * `new_world_settings.disable_creature_crop_trampling`
+  * `new_world_settings.disable_player_crop_trampling`

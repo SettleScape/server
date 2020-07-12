@@ -23,7 +23,7 @@ regions:
     location-flags-only-inside-regions: false
     max-region-count-per-player:
         default: 0
-    use-paper-entity-origin: false
+    use-paper-entity-origin: true
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
@@ -45,7 +45,7 @@ event-handling:
     interaction-whitelist: []
     emit-block-use-at-feet: []
     ignore-hopper-item-move-events: true
-    break-hoppers-on-denied-move: true
+    break-hoppers-on-denied-move: false
 protection:
     item-durability: true
     remove-infinite-stacks: true
@@ -89,9 +89,9 @@ mobs:
     block-enderdragon-portal-creation: false
     block-fireball-explosions: false
     block-fireball-block-damage: false
-    anti-wolf-dumbness: false
+    anti-wolf-dumbness: true
     allow-tamed-spawns: true
-    disable-enderman-griefing: true
+    disable-enderman-griefing: false
     disable-snowman-trails: false
     block-painting-destroy: false
     block-item-frame-destroy: false
@@ -111,7 +111,7 @@ player-damage:
     disable-contact-damage: false
     teleport-on-suffocation: false
     disable-void-damage: false
-    teleport-on-void-falling: true
+    teleport-on-void-falling: false
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false

@@ -132,8 +132,17 @@ permissions:
 # - essentials.enderchest
 - essentials.book
 - essentials.book.title
-- editablesign.edit
 - mineablespawners.mine
+- editablesign.edit
+- essentials.editsign
+- essentials.signs.format
+- essentials.signs.magic
+- essentials.signs.create.disposal
+- essentials.signs.use.disposal
+- essentials.signs.break.disposal
+# - essentials.signs.create.mail
+# - essentials.signs.use.mail
+# - essentials.signs.break.mail
 - rankup.auto: {value: false}
 
 # Restrictions

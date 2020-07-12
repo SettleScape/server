@@ -21,21 +21,24 @@ permissions:
 - essentials.sethome.multiple: {value: false}
 
 # Basic text formatting is reserved for a higher rank, since it *can* be kind of spammy.
-- townychat.chat.format.*: {value: false}
+- townychat.chat.format:   {value: false}
 - essentials.chat.format:  {value: false}
 - essentials.msg.format:   {value: false}
 - essentials.nick.format:  {value: false}
+- essentials.signs.format: {value: false}
 
 # Text colors are reserved for a higher rank, since they *can* be kind of spammy.
-- townychat.chat.color:  {value: false}
-- essentials.chat.color: {value: false}
-- essentials.msg.color:  {value: false}
-- essentials.nick.color: {value: false}
+- townychat.chat.color:   {value: false}
+- essentials.chat.color:  {value: false}
+- essentials.msg.color:   {value: false}
+- essentials.nick.color:  {value: false}
+- essentials.signs.color: {value: false}
 
 # Text magic is spammy, and so reserved for a higher rank.
-- essentials.chat.magic: {value: false}
-- essentials.msg.magic:  {value: false}
-- essentials.nick.magic: {value: false}
+- essentials.chat.magic:  {value: false}
+- essentials.msg.magic:   {value: false}
+- essentials.nick.magic:  {value: false}
+- essentials.signs.magic: {value: false}
 
 # URLs in chat can be used to spam and phish, and is reserved for a higher rank.
 - essentials.chat.url: {value: false}
@@ -46,9 +49,16 @@ permissions:
 - craftbook.mech.lightstone.use: {value: false}
 - craftbook.mech.paintingswitch.use: {value: false}
 - craftbook.mech.pay: {value: false}
-- editablesign.edit: {value: false}
 - essentials.clearinventory: {value: false}
 - essentials.workbench: {value: false}
+- essentials.signs.create.disposal: {value: false}
+- essentials.signs.use.disposal: {value: false}
+- essentials.signs.break.disposal: {value: false}
+- essentials.signs.create.mail: {value: false}
+- essentials.signs.use.mail: {value: false}
+- essentials.signs.break.mail: {value: false}
+- essentials.editsign: {value: false}
+- editablesign.edit: {value: false}
 
 # No casual teleports -- we want Wanderers to have to actually explore the world (and escape Spawn), rather than just teleport to the biggest town and instantly gear up.
 - essentials.tpa:       {value: false}

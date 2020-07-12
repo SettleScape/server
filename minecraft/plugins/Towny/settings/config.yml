@@ -368,7 +368,7 @@ new_world_settings:
       # Enabling this will slowly regenerate holes created in the
       # wilderness by monsters exploding.
       enabled: 'true'
-      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball
+      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull
       delay: 5s
  
  
@@ -713,7 +713,7 @@ protection:
   disable_creature_pressureplate_stone: 'true'
  
   # Globally remove living entities in all worlds that have their flag set.
-  world_mob_removal_entities: Phantom
+  world_mob_removal_entities: ''
  
   # Prevent the spawning of villager babies in the world.
   world_prevent_villager_breeding: 'false'

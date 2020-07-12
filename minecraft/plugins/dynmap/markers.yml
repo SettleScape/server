@@ -89,57 +89,57 @@ sets:
             }
         layerprio: 1
     portals:
-        hide: false
-        circles: {
-            }
-        deficon: portal
-        areas: {
-            }
         label: Portals
+        deficon: portal
+        hide: false
+        layerprio: 2
         markers:
-            gateway_2a:
-                world: world_the_end
-                markup: false
-                x: -57.0
+            exit_portal:
+                label: Exit Portal
                 icon: portal
-                y: 76.0
-                z: 77.0
-                label: Gateway 2A
-            gateway_1a:
                 world: world_the_end
                 markup: false
                 x: 0.0
+                y: 62.0
+                z: 0.0
+            gateway_5_in:
+                label: Gateway 5
                 icon: portal
-                y: 76.0
-                z: -96.0
-                label: Gateway 1A
-            gateway_2b:
                 world: world_the_end
                 markup: false
-                x: -609.0
+                x: 0.0
+                y: 76.0
+                z: -96.0
+            gateway_5_out:
+                label: Gateway 5
                 icon: portal
-                y: 78.0
-                z: 820.0
-                label: Gateway 2B
-            gateway_1b:
                 world: world_the_end
                 markup: false
                 x: -1.0
-                icon: portal
                 y: 68.0
                 z: -1073.0
-                label: Gateway 1B
-            exit_portal:
+            gateway_13_in:
+                label: Gateway 13
+                icon: portal
                 world: world_the_end
                 markup: false
-                x: 0.0
+                x: -57.0
+                y: 76.0
+                z: 77.0
+            gateway_13_out:
+                label: Gateway 13
                 icon: portal
-                y: 62.0
-                z: 0.0
-                label: Exit Portal
+                world: world_the_end
+                markup: false
+                x: -609.0
+                y: 78.0
+                z: 820.0
+        areas: {
+            }
+        circles: {
+            }
         lines: {
             }
-        layerprio: 2
     outposts:
         hide: false
         circles: {
