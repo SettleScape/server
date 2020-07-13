@@ -2,11 +2,14 @@
 set -e
 
 ## Variables
+VERSION='1.15.2'
    TYPE='paper'
  OUTJAR='server.jar'
-VERSION='1.15.2'
+ OUTDIR='../'
+    CWD=$(pwd)
 
 ## Do the thing
+cd "$OUTDIR"
 case "$TYPE" in
 
     'bukkit')
@@ -38,4 +41,5 @@ case "$TYPE" in
 esac
 
 ## Cleanup
+cd "$CWD"
 exit 0

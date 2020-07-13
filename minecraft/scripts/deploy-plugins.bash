@@ -4,8 +4,8 @@
 set -e
 
 ## Handle paths
+TWD='../plugins'
 CWD=$(pwd)
-TWD='plugins'
 [[ ! "$CWD" == *"/$TWD" ]] && cd "./$TWD"
 
 ## Handle input
