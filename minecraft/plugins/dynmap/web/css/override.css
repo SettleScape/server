@@ -146,3 +146,15 @@
 .chat {
     display: none;
 }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Map markers */
+
+.dynmap .leaflet-map-pane .leaflet-marker-pane .leaflet-marker-icon {
+    display: flex;
+    flex-direction: column;
+}
+.dynmap .leaflet-map-pane .leaflet-marker-pane .leaflet-marker-icon .markerName-show {
+    position: relative;
+    left: -50%;
+}
