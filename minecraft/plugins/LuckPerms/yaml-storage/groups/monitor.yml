@@ -1,0 +1,26 @@
+name: monitor # Intended for community moderators and the like.  Not proper staff.
+parents:
+- default
+suffixes:
+- '&c(monitor)&r': {}
+permissions:
+- weight.21
+# - displayname.mon
+
+# Chat
+#-------------------------------------------------------------------------------
+- essentials.chat.ignoreexempt
+- towny.chat.spy
+- towny.chat.mod
+- townychat.mod
+
+# Punishments/Judgements/Actions
+#-------------------------------------------------------------------------------
+- essentials.mute
+- essentials.mute.notify
+- essentials.mute.exempt
+
+# Nicknames
+#-------------------------------------------------------------------------------
+- essentials.realname
+- essentials.nick.others

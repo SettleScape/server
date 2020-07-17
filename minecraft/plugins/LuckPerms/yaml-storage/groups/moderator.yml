@@ -1,10 +1,10 @@
-name: moderator
+name: moderator # For staff moderators, who are empowered to hunt down all rule-violators.  Chat moderation is inherited from `monitor`.
 parents:
-- default
+- monitor
 suffixes:
 - '&c(mod)&r': {}
 permissions:
-- weight.21
+- weight.22
 # - displayname.mod
 
 # Chat
@@ -14,15 +14,12 @@ permissions:
 - essentials.helpop.receive
 - essentials.chat.shout
 - essentials.mail.sendall
-- towny.chat.mod
-- townychat.mod.*
 
 # Info
 #-------------------------------------------------------------------------------
 - minecraft.banlist
 - essentials.balancetop
 - essentials.invsee
-- essentials.realname
 - essentials.balance.others
 - essentials.exp.others
 - essentials.getpos.others
@@ -66,12 +63,10 @@ permissions:
 - OpenInv.openenderall
 - OpenInv.openinv
 - OpenInv.silent
-- towny.chat.spy
 
 # Punishments/Judgements/Actions
 #-------------------------------------------------------------------------------
 - essentials.afk.others
-- essentials.nick.others
 - essentials.tp.others
 - essentials.tphere
 - essentials.kill
@@ -79,8 +74,6 @@ permissions:
 - essentials.jail.allow.togglejail
 - essentials.jails
 - essentials.togglejail
-- essentials.mute
-- essentials.mute.notify
 # - bukkit.command.kick
 - essentials.kick
 - essentials.kick.notify
@@ -113,11 +106,9 @@ permissions:
 - essentials.jail.allow.mail
 - essentials.jail.allow.seen
 - essentials.afk.kickexempt
-- essentials.chat.ignoreexempt
 - essentials.ban.exempt
 - essentials.tempban.exempt
 - essentials.kick.exempt
-- essentials.mute.exempt
 - essentials.tempban.exempt
 - essentials.jail.exempt
 - essentials.pvpdelay.exempt

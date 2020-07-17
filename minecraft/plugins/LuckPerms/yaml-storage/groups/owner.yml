@@ -6,7 +6,7 @@ parents:
 suffixes:
 - '&c(owner)&r': {}
 permissions:
-- weight.24
+- weight.25
 # - displayname.operator
 # - displayname.op
 - luckperms.autoop
