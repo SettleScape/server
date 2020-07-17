@@ -45,7 +45,7 @@ permissions:
 - essentials.god
 - essentials.fly
 - essentials.fly.safelogin
-- townyflight.bypass
+# - townyflight.bypass
 - essentials.tp
 - essentials.tptoggle
 # - essentials.vanish
