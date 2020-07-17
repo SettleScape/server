@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.2.2
+  version: 0.96.2.3
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.2.2
+  last_run_version: 0.96.2.3
 # The language file you wish to use
 language: english.yml
  
@@ -488,6 +488,9 @@ global_town_settings:
   # If People should keep their inventories on death in a town
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_town: 'false'
+  # If People should keep their inventories on death in an arena townblock
+  # Is not guaranteed to work with other keep inventory plugins!
+  keep_inventory_on_death_in_arena: 'false'
   # If People should keep their experience on death in a town
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_town: 'false'
@@ -801,6 +804,11 @@ notification:
   # Requires the above using_titles to be set to true.
   # Title and Subtitle shown when entering a town or the wilderness. By default 1st line is blank, the 2nd line shows {townname} or {wilderness}.
   # You may use colour codes &f, &c and so on.
+  # For town_title and town_subtitle you may use: 
+  # {townname} - Name of the town.
+  # {town_motd} - Shows the townboard message.
+  # {town_residents} - Shows the number of residents in the town.
+  # {town_residents_online} - Shows the number of residents online currently.
   titles:
     # Entering Town Upper Title Line
     town_title: ''
