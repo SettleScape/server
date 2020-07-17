@@ -1,10 +1,12 @@
 #!/bin/sh
+CWD=$(pwd)
 cd /srv/minecraft
-
-echo 'Updating SettleScape...'
+## Update SettleScape
 cd settlescape
 sudo -u minecraft git pull
-sudo -u minecraft sh 'refresh-server.sh' &
-sudo -u minecraft sh 'refresh-plugins.sh' &
-wait
-cd ..
+## Update Paper
+cd minecraft/scripts
+sudo -u minecraft sh 'refresh-server.sh'
+## Cleanup
+cd "$CWD"
+exit 0
