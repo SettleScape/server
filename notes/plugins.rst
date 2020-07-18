@@ -7,7 +7,7 @@ CommandLog         1.2        2016-07-09  2020-06-29  https://spigotmc.org/resou
 CoreProtect        2.17.5     2020-02-13  2020-06-29  https://spigotmc.org/resources/coreprotect.8631/updates
 CraftBook          3.10.2-SS  2020-06-25  2020-06-29  https://dev.bukkit.org/projects/craftbook/files
 Dynmap             3.0.1      2020-06-07  2020-06-29  https://www.spigotmc.org/resources/dynmap.274/updates
-Dynmap-Towny       0.80       2020-04-27  2020-06-29  https://github.com/TownyAdvanced/Dynmap-Towny/releases
+Dynmap-Towny       0.81       2020-07-18  2020-07-18  https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-06-29  https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.0.4      2019-08-16  2020-06-29  https://spigotmc.org/resources/editablesign.2502/updates
 EssentialsX        2.18.0     2020-07-09  2020-07-09  https://github.com/EssentialsX/Essentials/releases
