@@ -4,9 +4,9 @@
 set -e
 
 ## Handle paths
-TWD='../plugins'
+TWD='plugins'
 CWD=$(pwd)
-[[ ! "$CWD" == *"/$TWD" ]] && cd "./$TWD"
+[[ ! "$CWD" == *"/$TWD" ]] && cd "../$TWD"
 
 ## Handle input
 # INPUT=$@
@@ -15,7 +15,7 @@ CWD=$(pwd)
 ## Send specified plugins to the server
 for PLUGIN in $INPUT; do
     [[ ! "$PLUGIN" == *'.jar' ]] && PLUGIN="${PLUGIN}.jar"
-    scp "$PLUGIN" "minecraft@settlescape:/srv/minecraft/settlescape/minecraft/$TWD"
+    scp "$PLUGIN" "minecraft@settlescape:/srv/minecraft/settlescape/minecraft/$TWD/"
 done
 
 ## Cleanup
