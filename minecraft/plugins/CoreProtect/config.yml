@@ -24,17 +24,17 @@ api-enabled: true
 
 # If no radius is specified in a rollback or restore, this value will be
 # used as the radius. Set to "0" to disable automatically adding a radius.
-default-radius: 10
+default-radius: 0
 
 # The maximum radius that can be used in a command. Set to "0" to disable.
 # To run a rollback or restore without a radius, you can use "r:#global".
-max-radius: 100
+max-radius: 64
 
 # If enabled, items taken from containers (etc) will be included in rollbacks.
 rollback-items: true
 
 # If enabled, entities, such as killed animals, will be included in rollbacks.
-rollback-entities: true
+rollback-entities: false
 
 # If enabled, generic data, like zombies burning in daylight, won't be logged.
 skip-generic-data: true
@@ -66,10 +66,10 @@ block-ignite: false ## Technically, we don't care if a block's been ignited -- o
 explosions: true
 
 # Track when an entity changes a block, such as an Enderman destroying blocks.
-entity-change: false ## Will end-up logging every time a sheep munches on grass.  Better to handle this in other ways, such as by making it so Endermen can't pick up blocks in the first place.
+entity-change: false ## Will end-up logging every time a sheep munches on grass.  Better to handle this in other ways, such as by making it so Endermen can't pick up blocks in the first place, which we do in Towny.
 
 # Logs killed entities, such as killed cows and enderman.
-entity-kills: false ## Entities are protected by Towny.  Entities outside of Towny are fair-game.  Even if protected entities are killed, it's better to spawn-egg them back in, rather than use this core protect setting, since it will have almost entirely false positives.
+entity-kills: false ## Entities are protected by Towny.  Entities outside of Towny are fair-game.  Even if protected entities are killed, it's better to spawn-egg them back in, rather than use this coreprotect setting, since it will have almost entirely false positives.
 
 # Logs text on signs. If disabled, signs will be blank when rolled back.
 sign-text: true
@@ -90,11 +90,11 @@ mushroom-growth: true
 vine-growth: false ## This is a lot to log...
 
 # Logs when portals such as Nether portals generate naturally.
-portals: true
+portals: false ## Why would we care about this?
 
 # Logs water flow. If water destroys other blocks, such as torches,
 # this allows it to be properly rolled back.
-water-flow: false ## Water flows a *lot*, and isn't all that harmful, on the whole.
+water-flow: true
 
 # Logs lava flow. If lava destroys other blocks, such as torches,
 # this allows it to be properly rolled back.
@@ -107,11 +107,11 @@ liquid-tracking: true
 
 # Track item transactions, such as when a player takes items from a
 # chest, furnace, or dispenser. Necessary for any item based rollbacks.
-item-transactions: false ## Unnecessary, since everyone has unlimited LWC locks.
+item-transactions: false ## Mostly unnecessary, since players can put anything they care about into a chest only they can access.
 
 # Track player interactions, such as when a player opens a door, presses
 # a button, or opens a chest. Player interactions can't be rolled back.
-player-interactions: false ## Unnecessary, since this is all protected by Towny.
+player-interactions: false ## Probably not worth the cost.
 
 # Logs messages that players send in the chat.
 player-messages: true
