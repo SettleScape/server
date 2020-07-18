@@ -715,7 +715,7 @@ protection:
   disable_creature_pressureplate_stone: 'false'
  
   # Globally remove living entities in all worlds that have their flag set.
-  world_mob_removal_entities: ''
+  world_mob_removal_entities: Bat
  
   # Prevent the spawning of villager babies in the world.
   world_prevent_villager_breeding: 'false'
@@ -1045,7 +1045,7 @@ economy:
  
     price_death_town: '0.0'
  
-    price_death_nation: '0.05'
+    price_death_nation: '0.00'
  
   banks:
     # Maximum amount of money allowed in town bank
