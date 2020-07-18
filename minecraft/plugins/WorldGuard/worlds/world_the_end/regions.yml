@@ -14,7 +14,6 @@ regions:
         min: {x: -272, y: 0, z: -272}
         max: {x: 272, y: 255, z: 272}
         members: {}
-        dynmap-boost: true
         flags: {other-explosion: deny, wither-damage: deny, use: allow, block-trampling: deny,
             lighter: deny, enderman-grief: deny, pvp: deny, block-place: deny, enderdragon-block-damage: deny,
             creeper-explosion: deny, vehicle-place: deny, snowman-trails: deny, town-creation: deny,
@@ -25,22 +24,7 @@ regions:
         priority: 0
     __global__:
         members: {}
-        flags: {other-explosion: allow, lava-fire: allow, water-flow: allow, invincible: deny,
-            snow-fall: allow, leaf-decay: allow, firework-damage: allow, mob-damage: allow,
-            ravager-grief: deny, mushroom-growth: allow, lightning: allow, ice-form: allow,
-            wither-damage: deny, use-shop: allow, chorus-fruit-teleport: allow, enderman-grief: deny,
-            pvp: allow, mob-spawning: allow, crop-growth: allow, exit: allow, entry: allow,
-            send-chat: allow, creeper-explosion: allow, vine-growth: allow, damage-animals: allow,
-            snow-melt: allow, tnt: allow, receive-chat: allow, exit-via-teleport: allow,
-            ghast-fireball: deny, entity-item-frame-destroy: allow, frosted-ice-form: allow,
-            mycelium-spread: allow, ice-melt: allow, block-trampling: deny, vehicle-destroy: allow,
-            chest-access: allow, ride: allow, fire-spread: deny, enderdragon-block-damage: deny,
-            sleep: allow, vehicle-place: allow, snowman-trails: allow, mcmmo: allow,
-            block-break: allow, entity-painting-destroy: allow, lighter: allow, pistons: allow,
-            block-place: allow, enderpearl: allow, item-drop: allow, soil-dry: allow,
-            exp-drops: allow, create-shop: allow, town-creation: allow, fall-damage: allow,
-            item-frame-rotation: allow, item-pickup: allow, potion-splash: allow,
-            frosted-ice-melt: allow, lava-flow: allow, grass-growth: allow, use-admin-shop: allow}
+        flags: {}
         owners: {}
         type: global
         priority: 0

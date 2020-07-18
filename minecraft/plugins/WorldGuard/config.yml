@@ -14,9 +14,9 @@ regions:
     cancel-chat-without-recipients: true
     nether-portal-protection: false
     fake-player-build-override: true
-    explosion-flags-block-entity-damage: true
+    explosion-flags-block-entity-damage: false
     high-frequency-flags: false
-    protect-against-liquid-flow: false
+    protect-against-liquid-flow: true
     wand: minecraft:wooden_hoe
     max-claim-volume: 30000
     claim-only-inside-existing-regions: false
@@ -27,7 +27,7 @@ regions:
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
-use-player-move-event: true
+use-player-move-event: false
 use-player-teleports: true
 use-particle-effects: true
 security:
@@ -115,7 +115,7 @@ player-damage:
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false
-    reset-fall-on-void-teleport: false
+    reset-fall-on-void-teleport: true
 chest-protection:
     enable: false
     disable-off-check: false
