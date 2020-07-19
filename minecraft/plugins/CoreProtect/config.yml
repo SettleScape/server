@@ -129,14 +129,14 @@ username-changes: true
 worldedit: false ## Restricted only to administrators, which have ultimate trust anyway.
 
 # CoreProtect is donationware. Obtain a donation key from coreprotect.net/donate/
-donation-key: 
+donation-key: #TODO: Request upstream to move this into a second YAML file, so I don't have to worry about accidentally committing it.
 
 # Logs items dropped by players.
-item-drops: true
+item-drops: false ## Not useful unless we're trying to detect hacked accounts, and that's honestly a bigger issue than our server.  Not worth the resources to track.
 
 # Logs items picked up by players.
-item-pickups: true
+item-pickups: false ## Not useful unless we're trying to detect hacked accounts, and that's honestly a bigger issue than our server.  Not worth the resources to track.
 
 # Track all hopper transactions, such as when a hopper removes items from a
 # chest, furnace, or dispenser.
-hopper-transactions: true
+hopper-transactions: false ## Not necessary, since you have to have build permissions to loot a chest with a hopper, and the way our server is configured, this always coincides with chest access.
