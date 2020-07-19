@@ -19,7 +19,7 @@ OpenInv            4.1.2      2020-07-15  2020-07-19  https://github.com/lishid/
 PhantomSMP         1.1.1      2019-06-04  2020-07-19  https://github.com/SimonOrJ/PhantomSMP/releases
 PlaceholderAPI     2.10.6     2020-05-02  2020-07-19  https://spigotmc.org/resources/placeholderapi.6245/updates
 ProtocolLib        4.5.1      2020-06-03  2020-07-19  https://github.com/dmulloy2/ProtocolLib/releases
-Rankup             3.6.1      2020-04-25  2020-07-04  https://www.spigotmc.org/resources/rankup.76964/updates
+Rankup             3.9        2020-07-17  2020-07-19  https://www.spigotmc.org/resources/rankup.76964/updates
 ShopChest          1.13-SS    2020-06-27  2020-07-19  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
 Towny              0.96.2.3   2020-07-11  2020-07-19  https://github.com/TownyAdvanced/Towny/releases
 TownyChat          0.73       2020-07-11  2020-07-19  https://github.com/TownyAdvanced/TownyChat/releases
