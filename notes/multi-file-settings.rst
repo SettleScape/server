@@ -73,6 +73,7 @@ Join/Quit Messages
 
 Protections
 ================================================================================
+
 Order of preference for different protection plugins:  Towny > WorldGuard > EssentialsXProtect.
 For the sake of brevity, EssentialsXProtect is not included below.
 
@@ -95,3 +96,13 @@ For the sake of brevity, EssentialsXProtect is not included below.
   * `new_world_settings.enderman_protect`
   * `new_world_settings.disable_creature_crop_trampling`
   * `new_world_settings.disable_player_crop_trampling`
+
+Cooldowns
+================================================================================
+
+This one is weird, in that the same setting is in the same file twice.
+
+* `plugins/Essentials/config.yml`
+
+  * `heal-cooldown`
+  * `command-cooldowns`
