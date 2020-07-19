@@ -89,6 +89,7 @@ permissions:
 - essentials.tpacancel
 - essentials.tpahere
 - essentials.tpdeny
+# - essentials.tptoggle
 - essentials.warp
 - essentials.warp.list
 

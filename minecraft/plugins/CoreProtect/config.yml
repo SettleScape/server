@@ -24,7 +24,7 @@ api-enabled: true
 
 # If no radius is specified in a rollback or restore, this value will be
 # used as the radius. Set to "0" to disable automatically adding a radius.
-default-radius: 0
+default-radius: 5 ## Distance at which you can open a chest in Vanilla Minecraft (inclusive), so a good default.  While it may seem like a bad idea to have a default for rollbacks and restores, it's basically essentially for lookups.
 
 # The maximum radius that can be used in a command. Set to "0" to disable.
 # To run a rollback or restore without a radius, you can use "r:#global".
@@ -51,10 +51,10 @@ block-break: true
 natural-break: true
 
 # Properly track block movement, such as sand or gravel falling.
-block-movement: true
+block-movement: false ## Not worth tracking, because they only move in the y axis, and Towny protects 100% of the y-axis.
 
 # Properly track blocks moved by pistons.
-pistons: true
+pistons: false ## Not particularly useful, since Towny protects against this.  This is a lot to track, with not much benefit.
 
 # Logs blocks that burn up in a fire.
 block-burn: true ## Shouldn't be possible, since this is disabled in Essentials.
@@ -81,7 +81,7 @@ buckets: true
 leaf-decay: false ## Leaves aren't important-enough to justify logging
 
 # Logs tree growth. Trees are linked to the player who planted the sappling.
-tree-growth: true
+tree-growth: false ## Not necessary, since we can just inspect the tree's trunk.
 
 # Logs mushroom growth.
 mushroom-growth: true
@@ -94,7 +94,7 @@ portals: false ## Why would we care about this?
 
 # Logs water flow. If water destroys other blocks, such as torches,
 # this allows it to be properly rolled back.
-water-flow: true
+water-flow: true ## Important for rolling back griefed redstone contraptions.
 
 # Logs lava flow. If lava destroys other blocks, such as torches,
 # this allows it to be properly rolled back.
@@ -103,7 +103,7 @@ lava-flow: true
 # Allows liquid to be properly tracked and linked to players.
 # For example, if a player places water which flows and destroys torches,
 # it can all be properly restored by rolling back that single player.
-liquid-tracking: true
+liquid-tracking: true ## Important for tracking liquid griefs, such as are done against redstone 
 
 # Track item transactions, such as when a player takes items from a
 # chest, furnace, or dispenser. Necessary for any item based rollbacks.
@@ -111,7 +111,7 @@ item-transactions: false ## Mostly unnecessary, since players can put anything t
 
 # Track player interactions, such as when a player opens a door, presses
 # a button, or opens a chest. Player interactions can't be rolled back.
-player-interactions: false ## Probably not worth the cost.
+player-interactions: true ## *Rarely* useful, but is essential for avoiding drama when friends turn on friends.
 
 # Logs messages that players send in the chat.
 player-messages: true

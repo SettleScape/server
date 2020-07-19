@@ -13,6 +13,7 @@ permissions:
 - bukkit.command.list
 - bukkit.command.plugins
 - bukkit.command.version
+- essentials.whois.ip
 - shopchest.notification.update
 
 # Configuration

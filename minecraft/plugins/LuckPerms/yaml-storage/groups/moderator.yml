@@ -9,45 +9,41 @@ permissions:
 
 # Chat
 #-------------------------------------------------------------------------------
-# - bukkit.command.say
-- essentials.broadcast
-- essentials.helpop.receive
-- essentials.chat.shout
-- essentials.mail.sendall
+
+- essentials.helpop.receive # Receive messages sent to staff
+- essentials.chat.shout # Anonymous, server-wide messages
+- essentials.mail.sendall # Can send everyone a message they will see even if they aren't logged-in
 
 # Info
 #-------------------------------------------------------------------------------
-- minecraft.banlist
-- essentials.balancetop
-- essentials.invsee
-- essentials.balance.others
-- essentials.exp.others
-- essentials.getpos.others
-- essentials.home.others
-- essentials.list.hidden
-- essentials.ptime.others
+
+- essentials.balancetop # For quickly glancing at who has the most money
+- essentials.balance.others # For seeing how much money a player has, to help gauge whether they might be cheating.
+
+- essentials.ptime.others # For seeing if someone has a ridiculous amount of playtime, maybe in a short period.  Helps to detect botters.
 - essentials.seen.extra
 - essentials.whois
-- groupmanager.listgroups
-- groupmanager.manselect
-- groupmanager.manwhois
-- groupmanager.mangcheckp
-- groupmanager.manglistp
-- groupmanager.manucheckp
-- groupmanager.manulistp
-- groupmanager.notify.other
+- essentials.whois.ip
 
 # Espionage
 #-------------------------------------------------------------------------------
-- essentials.god
-- essentials.fly
+
+- essentials.god # To protect the mod from PvP and the like while performing moderator duties
+- essentials.fly # To allow the mod to quickly access hard-to-access places to perform moderator duties
 - essentials.fly.safelogin
 # - townyflight.bypass
-- essentials.tp
-- essentials.tptoggle
+
+- essentials.home.others # To teleport to what are often other players' bases, to examine their stashes.
+- essentials.tpoffline # To teleport to a player's logout location -- perhaps their base, or some other relevant location.
+- essentials.tp # To teleport to another player without their knowlede or confirmation
+# - essentials.tpo # Overrides `/tptoggle`, which we don't currently use.
+
+- coreprotect.help
+- coreprotect.inspect # Lets you click to inspect a block
+- coreprotect.lookup # Lets you inspect blocks in a radius, with additional detail
+
 # - essentials.vanish
 # - essentials.vanish.effect
-- shopchest.openOther
 - vanish.vanish
 - vanish.smokin
 - vanish.nofollow
@@ -55,60 +51,54 @@ permissions:
 - vanish.preventincomingdamage
 - vanish.hooks.dynmap.alwayshidden
 - vanish.hooks.essentials.hide
-- vanish.silentchests
 - vanish.silentjoin
 - vanish.silentquit
-- OpenInv.crossworld
+- essentials.list.hidden
+
+# - essentials.invsee
+- OpenInv.openinv
 - OpenInv.openender
 - OpenInv.openenderall
-- OpenInv.openinv
+- OpenInv.crossworld
 - OpenInv.silent
+- shopchest.openOther
+- vanish.silentchests
 
 # Punishments/Judgements/Actions
 #-------------------------------------------------------------------------------
-- essentials.afk.others
-- essentials.tp.others
-- essentials.tphere
-- essentials.kill
-- essentials.jail.allow.jails
-- essentials.jail.allow.togglejail
-- essentials.jails
-- essentials.togglejail
-# - bukkit.command.kick
+
+- minecraft.smite
+# - essentials.kill
+
+- essentials.jail.allow.togglejail # Lets you get yourself out of jail
+- essentials.togglejail # How you actually jail people
+- essentials.jails # Info about jails
+- essentials.jail.exempt # Cannot be jailed
+
 - essentials.kick
 - essentials.kick.notify
-# - minecraft.command.ban
-# - minecraft.command.ban-ip
-# - bukkit.command.ban
-# - bukkit.command.ban.ip
-# - bukkit.command.ban.player
-- essentials.ban
-- essentials.banip
-- essentials.ban.notify
+- essentials.kick.exempt
+- essentials.afk.kickexempt
+
 - essentials.tempban
 - essentials.tempbanip
+- essentials.tempban.exempt
+
+# - essentials.ban
+# - essentials.banip
+# - essentials.ban.notify
+- essentials.ban.exempt
+- minecraft.banlist
 - essentials.seen.banreason
-# - minecraft.command.pardon
-# - minecraft.command.pardon-ip
-# - bukkit.command.unban
-# - bukkit.command.unban.ip
-# - bukkit.command.unban.player
+
 - essentials.unban
 - essentials.unbanip
-- bukkit.command.whitelist.add
-- bukkit.command.whitelist.remove
+
+# - bukkit.command.whitelist.add
+# - bukkit.command.whitelist.remove
 - bukkit.command.whitelist.list
 
-# Exemptions
+# Misc
 #-------------------------------------------------------------------------------
+
 - craftbook.mech.leads.owner-break-only.bypass
-- essentials.jail.allow.helpop
-- essentials.jail.allow.mail
-- essentials.jail.allow.seen
-- essentials.afk.kickexempt
-- essentials.ban.exempt
-- essentials.tempban.exempt
-- essentials.kick.exempt
-- essentials.tempban.exempt
-- essentials.jail.exempt
-- essentials.pvpdelay.exempt
