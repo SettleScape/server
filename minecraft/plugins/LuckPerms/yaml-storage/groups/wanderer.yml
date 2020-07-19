@@ -44,6 +44,9 @@ permissions:
 - essentials.chat.url: {value: false}
 - essentials.msg.url:  {value: false}
 
+# Saving text in-game should be reserved for higher, more-trusted ranks.
+- essentials.itemlore: {value: false}
+
 # Quality of Life comes with higher ranks
 - craftbook.mech.ammeter.use: {value: false}
 - craftbook.mech.lightstone.use: {value: false}
