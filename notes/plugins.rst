@@ -11,7 +11,7 @@ Dynmap-Towny       0.81       2020-07-18  2020-07-19  https://github.com/TownyAd
 Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-07-19  https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.0.4      2019-08-16  2020-07-19  https://spigotmc.org/resources/editablesign.2502/updates
 EssentialsX        2.18.0     2020-07-09  2020-07-19  https://github.com/EssentialsX/Essentials/releases
-Jobs Reborn        4.15.7     2020-04-02  2020-04-16  https://spigotmc.org/resources/jobs-reborn.4216/updates
+Jobs Reborn        4.15.11    2020-05-11  2020-07-19  https://spigotmc.org/resources/jobs-reborn.4216/updates
 LuckPerms          5.1.26     2020-05-20  2020-07-19  https://www.spigotmc.org/resources/luckperms.28140/updates
 mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resources/official-mcmmo-original-author-returns.64348/updates
 Mineable Spawners  3.0.5      2020-06-27  2020-07-19  https://github.com/dnyferguson/MineableSpawners/releases
@@ -28,6 +28,6 @@ TownyFlight        1.6.1      2020-06-03  2020-07-19  https://github.com/TownyAd
 TradePlus          3.7.1      2020-06-06  2020-06-29  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.3      2020-07-17  2020-07-19  https://www.spigotmc.org/resources/vault.34315/updates
 WorldEdit          7.1.0      2020-01-26  2020-07-19  https://dev.bukkit.org/projects/worldedit/files
-WorldGuard         7.0.3      2020-06-26  2020-06-29  https://dev.bukkit.org/projects/worldguard/files
+WorldGuard         7.0.3      2020-06-26  2020-07-19  https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny   1.1.0      2020-01-03  2020-07-19  https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  =========  ==========  ==========  ===

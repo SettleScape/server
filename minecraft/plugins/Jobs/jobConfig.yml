@@ -5368,3 +5368,7 @@ Jobs:
       gravel:
         # you can use minuses to take away money if the player break this block
         income: -1.0
+    permissions:
+      firstNode:
+        # The permission node
+        permission: aaaaaatest.node

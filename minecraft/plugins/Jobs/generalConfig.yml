@@ -108,9 +108,13 @@ DailyQuests:
   # Default 0, disabling cost of skipping quest.
   SkipQuestCost: 0.0
 # Enables the schedule manager to boost the server.
-# By default this has been disabled for causing memory leak.
 ScheduleManager:
   Use: false
+# Fire players if their work time has expired at a job.
+# Setting time to 0, will not works.
+# For this to work, the player needs to get a new job for the timer to start.
+# Counting in hours
+JobExpirationTime: 0
 # Maximum number of jobs a player can join.
 # Use 0 for no maximum
 # Keep in mind that jobs.max.[amount] will bypass this setting
@@ -397,6 +401,9 @@ BossBar:
   # If enabled boss bar will update after each action
   # If disabled, BossBar will update only on each payment. This can save some server resources
   ShowOnEachAction: false
+  # Defines in how many parts bossabr will be split visually
+  # Valid options: 1, 6, 10, 12, 20
+  SegementCount: 1
   # How long in sec to show BossBar for player
   # If you have disabled ShowOnEachAction, then keep this number higher than payment interval for better experience
   Timer: 6
