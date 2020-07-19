@@ -127,3 +127,16 @@ username-changes: true
 
 # Logs changes made via the plugin "WorldEdit" if it's in use on your server.
 worldedit: false ## Restricted only to administrators, which have ultimate trust anyway.
+
+# CoreProtect is donationware. Obtain a donation key from coreprotect.net/donate/
+donation-key: 
+
+# Logs items dropped by players.
+item-drops: true
+
+# Logs items picked up by players.
+item-pickups: true
+
+# Track all hopper transactions, such as when a hopper removes items from a
+# chest, furnace, or dispenser.
+hopper-transactions: true
