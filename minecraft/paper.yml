@@ -118,7 +118,7 @@ world-settings:
     spawner-nerfed-mobs-should-jump: false
     allow-leashing-undead-horse: true
     baby-zombie-movement-modifier: 0.5
-    all-chunks-are-slime-chunks: true
+    all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 2
     game-mechanics:
       nerf-pigmen-from-nether-portals: false
