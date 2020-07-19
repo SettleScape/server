@@ -6,42 +6,17 @@ suffixes:
 permissions:
 - weight.20
 
-# Exclusives
-#-------------------------------------------------------------------------------
+# Jobs are generally seen as fixed class specializations;  but donors may change theirs.
 - jobs.command.leave
 - jobs.command.leaveall
-- essentials.back.ondeath # Only applies to those who already have `/back`
-# - essentials.fly
-# - essentials.fly.safelogin
+
+# Only applies to those who already have `/back`
+- essentials.back.ondeath
+
+# Donors don't get kicked for AFKing.  This is the closest you'll get to permaloading a chunk.
+- essentials.afk.kickexempt
+
+# Fly
 - townyflight.command.tfly
 - townyflight.alltowns
-
-# Misc
-#-------------------------------------------------------------------------------
-- towny.town.resident
-- towny.command.town.new
-- towny.command.nation.new
-
-# Quality of Life
-#-------------------------------------------------------------------------------
-- essentials.workbench
-- essentials.clearinventory
-- editablesign.edit
-- craftbook.mech.ammeter.use
-- craftbook.mech.lightstone.use
-- craftbook.mech.paintingswitch.use
-
-# Chat
-#-------------------------------------------------------------------------------
-- essentials.chat.color
-- essentials.chat.format
-- essentials.chat.magic
-- essentials.msg.color
-- essentials.msg.format
-- essentials.msg.magic
-- townychat.chat.color
-- townychat.chat.format
-
-# Cosmetics
-#-------------------------------------------------------------------------------
-- essentials.hat
+# - essentials.fly.safelogin
