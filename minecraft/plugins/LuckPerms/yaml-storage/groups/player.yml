@@ -77,7 +77,7 @@ permissions:
 - towny.chat.general
 - towny.chat.local
 - townychat.chat.color
-- townychat.chat.format.*
+- townychat.chat.format
 
 # Teleportation
 #-------------------------------------------------------------------------------
@@ -105,7 +105,7 @@ permissions:
 # Kits
 #-------------------------------------------------------------------------------
 - essentials.kit
-- essentials.kits.*: {value: false}
+- essentials.kits: {value: false}
 
 # Misc
 #-------------------------------------------------------------------------------

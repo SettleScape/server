@@ -40,7 +40,7 @@ permissions:
 - essentials.msg.format
 - essentials.msg.magic
 - townychat.chat.color
-- townychat.chat.format.*
+- townychat.chat.format
 
 # Cosmetics
 #-------------------------------------------------------------------------------
