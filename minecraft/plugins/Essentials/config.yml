@@ -790,42 +790,42 @@ protect:
     lava-flow: false
     water-flow: false
     water-bucket-flow: false
-    fire-spread: true
+    fire-spread: false
     lava-fire-spread: false
     lava-itemdamage: false
     flint-fire: false
     lightning-fire-spread: false
     portal-creation: false
-    tnt-explosion: false # Handled by Towny
+    tnt-explosion: false
     tnt-playerdamage: false
-    tnt-itemdamage: true
-    tnt-minecart-explosion: true
+    tnt-itemdamage: false
+    tnt-minecart-explosion: false
     tnt-minecart-playerdamage: false
     tnt-minecart-itemdamage: true
-    fireball-explosion: true
+    fireball-explosion: false
     fireball-fire: false
     fireball-playerdamage: false
     fireball-itemdamage: false
-    witherskull-explosion: true
+    witherskull-explosion: false
     witherskull-playerdamage: false
     witherskull-itemdamage: true
-    wither-spawnexplosion: true
+    wither-spawnexplosion: false
     wither-blockreplace: true
     creeper-explosion: false
     creeper-playerdamage: false
     creeper-itemdamage: true
-    creeper-blockdamage: false # Handled by Towny
+    creeper-blockdamage: false
     ender-crystal-explosion: false
     enderdragon-blockdamage: true
-    enderman-pickup: false # Handled by Towny
-    villager-death: false # Handled by Towny
+    enderman-pickup: false
+    villager-death: false
     bed-explosion: false
     respawn-anchor-explosion: false
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
     # Prevents zombies from breaking down doors
-    zombie-door-break: true
+    zombie-door-break: false
     # Prevents Ravagers from stealing blocks
     ravager-thief: true
     # Prevents sheep from turning grass to dirt

@@ -73,7 +73,8 @@ Join/Quit Messages
 
 Protections
 ================================================================================
-Prefer Towny's protections, where possible -- they're integrated with Towny, whereas WorldGuard's are not.
+Order of preference for different protection plugins:  Towny > WorldGuard > EssentialsXProtect.
+For the sake of brevity, EssentialsXProtect is not included below.
 
 * `plugins/WorldGuard/config.yml`
 
