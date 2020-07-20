@@ -47,10 +47,10 @@ Animation:
 # When using this, it will ignore "Beacon Ranges" configuration.
 # this is 10 times faster than "Beacon Ranges"
 Beacon Range Calculator:
-  Enable: false
+  Enable: true
   # The formula:
   # (percentage / 100) * power
-  Percentage: 100
+  Percentage: 50
 
 Beacon Ranges:
   '0': 0
@@ -62,10 +62,11 @@ Beacon Ranges:
 
 Calculator:
   Block Powers:
-    GOLD_BLOCK: 1
     IRON_BLOCK: 1
+    GOLD_BLOCK: 2
     EMERALD_BLOCK: 3
-    DIAMOND_BLOCK: 2
+    DIAMOND_BLOCK: 4
+  # NETHERITE_BLOCK: 5
   Maximum Height Check: 6
   Must Be Perfect: true
 
@@ -79,7 +80,7 @@ Beacon Item:
   Lore:
   - "&7"
   - "&8   [&b&l+&8] &7Effects:"
-  - "&8        » {effects}"
+  - "&8        > {effects}"
   - "&7"
   Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8)"
   Deactivated Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8) &c[DEACTIVATED]"
@@ -103,10 +104,15 @@ Economy:
         Locale:
           '1000': k
           '1000000': m
-          '1000000000': g
+          '1000000000': b
           '1000000000000': t
-          '1000000000000000': p
-          '1000000000000000000': e
+          '1000000000000000': qa
+          '1000000000000000000': qi
+          '1000000000000000000000': sx
+          '1000000000000000000000000': sp
+          '1000000000000000000000000000': oc
+          '1000000000000000000000000000000': no
+          '1000000000000000000000000000000000': dc
   Experience:
     Currency: "Exp"
     Display Name: "Experience"
