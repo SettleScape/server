@@ -17,19 +17,24 @@ regions:
         flags:
             other-explosion: deny
             frosted-ice-form: deny
-            snow-fall: deny
             ice-melt: deny
+            snow-fall: deny
+            interact: allow
+            vehicle-destroy: allow
             chest-access: allow
             firework-damage: deny
+            ride: allow
+            sleep: allow
+            vehicle-place: allow
             snowman-trails: deny
             block-break: deny
             ravager-grief: deny
             entity-painting-destroy: deny
             mushroom-growth: deny
             ice-form: deny
+            chorus-fruit-teleport: deny
             lighter: deny
             pvp: deny
-            pistons: deny
             deny-spawn: ['minecraft:zombie_pigman']
             block-place: deny
             creeper-explosion: deny
@@ -37,6 +42,7 @@ regions:
             town-creation: deny
             item-frame-rotation: deny
             potion-splash: deny
+            frosted-ice-melt: deny
             snow-melt: deny
             tnt: deny
             entity-item-frame-destroy: deny
@@ -50,7 +56,7 @@ regions:
         members: {}
         flags: {other-explosion: deny, chorus-fruit-teleport: deny, lava-fire: deny,
             dynmap-boost: true, block-trampling: deny, vehicle-destroy: deny, lighter: deny,
-            chest-access: deny, pistons: deny, block-place: deny, fire-spread: deny,
+            pistons: deny, chest-access: deny, block-place: deny, fire-spread: deny,
             enderpearl: deny, creeper-explosion: deny, vehicle-place: deny, create-shop: deny,
             town-creation: deny, item-frame-rotation: deny, block-break: deny, tnt: deny,
             entity-painting-destroy: deny, entity-item-frame-destroy: deny}
