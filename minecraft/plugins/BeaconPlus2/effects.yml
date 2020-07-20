@@ -11,102 +11,8 @@
 # xor - logic gate xor ("^")
 #
 # Example: "not animal or tamed and player"
-status:
-  Enabled: true
-  Remove When Leave: true
-  Type: BoostBeaconEffect
-  Display Name: "Dispell"
-  Description: "Removes negative status effects"
-  Mode: "player and tamed"
-  Effects:
-  - BAD_OMEN ## *Extremely* useful when you have villagers.
-  - CONFUSION
-  - HARM
-  - HUNGER
-  - LEVITATION
-  - POISON
-  - SLOW
-  - SLOW_DIGGING
-  - UNLUCK
-  - WEAKNESS
-  - WITHER
-  Levels:
-  - Cost:
-      Money: 50000
-      Experience: 0
-    Speed Up Time: 20 ## in ticks (20 ticks == 1 second)
-    Extra Description: ""
-slowness:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Slowness"
-  Description: "Slow nearby mobs"
-  Mode: "not player and not tamed"
-  Effect: SLOW
-  Levels:
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 15%" ## Vanilla
-  - Cost:
-      Money: 20000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 30%" ## Vanilla
-furnace:
-  Enabled: true
-  Type: FurnaceBoostEffect
-  Display Name: "Bellows"
-  Description: "Hastens nearby furnaces"
-  Levels:
-  - Cost:
-      Money: 2500
-      Experience: 0
-    Speed Up Time: 25
-    Extra Description: "by 25%"
-  - Cost:
-      Money: 5000
-      Experience: 0
-    Speed Up Time: 50
-    Extra Description: "by 50%"
-  - Cost:
-      Money: 7500
-      Experience: 0
-    Speed Up Time: 75
-    Extra Description: "by 75%"
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Speed Up Time: 100
-    Extra Description: "by 100%" ## Same boost that Blast Furnaces and Smokers give.
-spawner:
-  Enabled: true
-  Type: SpawnerBoostEffect
-  Display Name: "Hatch"
-  Description: "Speeds spawners up"
-  Levels:
-  - Cost:
-      Money: 12500
-      Experience: 0
-    Speed Up Percentage: 25
-    Extra Description: "by 25%"
-  - Cost:
-      Money: 25000
-      Experience: 0
-    Speed Up Percentage: 50
-    Extra Description: "by 50%"
-  - Cost:
-      Money: 37500
-      Experience: 0
-    Speed Up Percentage: 75
-    Extra Description: "by 75%"
-  - Cost:
-      Money: 50000
-      Experience: 0
-    Speed Up Percentage: 100
-    Extra Description: "by 100%"
+
+################################################################################
 experience:
   Enabled: true
   Remove When Leave: true
@@ -134,129 +40,8 @@ experience:
       Experience: 0
     Multiplier: 2.0
     Extra Description: "by 100%"
-speed:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Speed"
-  Description: "Increases movement speed"
-  Mode: "player"
-  Effect: SPEED
-  Levels:
-  - Cost:
-      Money: 5000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
-jump:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Jump Boost"
-  Description: "Increases jump height"
-  Mode: "player"
-  Effect: JUMP
-  Levels:
-  - Cost:
-      Money: 5000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 50%" ## Vanilla
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 100%" ## Vanilla
-strength:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Strength"
-  Description: "Increases outgoing damage"
-  Mode: "player and tamed"
-  Effect: INCREASE_DAMAGE
-  Levels:
-  - Cost:
-      Money: 15000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 3hp" ## Vanilla
-  - Cost:
-      Money: 30000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 6hp" ## Vanilla
-resistance:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Resistance"
-  Description: "Reduces incoming damage"
-  Mode: "player and tamed"
-  Effect: DAMAGE_RESISTANCE
-  Levels:
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
-  - Cost:
-      Money: 20000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
-haste:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Mode: "player"
-  Display Name: "Haste"
-  Description: "Hastens block breaking"
-  Effect: FAST_DIGGING
-  Levels:
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
-  - Cost:
-      Money: 20000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
-regeneration:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Regeneration"
-  Description: "Heal over time"
-  Mode: "player and tamed"
-  Effect: REGENERATION
-  Levels:
-  - Cost:
-      Money: 50000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: "(2hp/5s)" ## Vanilla
-fullbright:
-  Enabled: true
-  Remove When Leave: true
-  Type: BasicBeaconEffect
-  Display Name: "Night Vision"
-  Description: "Allows you to see in the dark"
-  Mode: "player"
-  Effect: NIGHT_VISION
-  Levels:
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Amplifier: 0
-    Extra Description: ""
+
+################################################################################
 flight:
   Enabled: false ## This is currently just a donor perk;  but I'm open to enabling this.
   Remove When Leave: true
@@ -284,3 +69,244 @@ flight:
       Experience: 0
     Height: 128
     Extra Description: "(Max height: 128)"
+
+################################################################################
+fullbright:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Night Vision"
+  Description: "Allows you to see in the dark"
+  Mode: "player"
+  Effect: NIGHT_VISION
+  Levels:
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: ""
+
+################################################################################
+furnace:
+  Enabled: true
+  Type: FurnaceBoostEffect
+  Display Name: "Bellows"
+  Description: "Hastens nearby furnaces"
+  Levels:
+  - Cost:
+      Money: 2500
+      Experience: 0
+    Speed Up Time: 25
+    Extra Description: "by 25%"
+  - Cost:
+      Money: 5000
+      Experience: 0
+    Speed Up Time: 50
+    Extra Description: "by 50%"
+  - Cost:
+      Money: 7500
+      Experience: 0
+    Speed Up Time: 75
+    Extra Description: "by 75%"
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Speed Up Time: 100
+    Extra Description: "by 100%" ## Same boost that Blast Furnaces and Smokers give.
+
+################################################################################
+haste:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Mode: "player"
+  Display Name: "Haste"
+  Description: "Hastens block breaking"
+  Effect: FAST_DIGGING
+  Levels:
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 20%" ## Vanilla
+  - Cost:
+      Money: 20000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 40%" ## Vanilla
+
+################################################################################
+jump:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Jump Boost"
+  Description: "Increases jump height"
+  Mode: "player"
+  Effect: JUMP
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 50%" ## Vanilla
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 100%" ## Vanilla
+
+################################################################################
+regeneration:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Regeneration"
+  Description: "Heal over time"
+  Mode: "player and tamed"
+  Effect: REGENERATION
+  Levels:
+  - Cost:
+      Money: 50000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "(2hp/5s)" ## Vanilla
+
+################################################################################
+resistance:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Resistance"
+  Description: "Reduces incoming damage"
+  Mode: "player and tamed"
+  Effect: DAMAGE_RESISTANCE
+  Levels:
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 20%" ## Vanilla
+  - Cost:
+      Money: 20000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 40%" ## Vanilla
+
+################################################################################
+slowness:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Slowness"
+  Description: "Slow nearby mobs"
+  Mode: "not player and not tamed"
+  Effect: SLOW
+  Levels:
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 15%" ## Vanilla
+  - Cost:
+      Money: 20000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 30%" ## Vanilla
+
+################################################################################
+spawner:
+  Enabled: true
+  Type: SpawnerBoostEffect
+  Display Name: "Hatch"
+  Description: "Speeds spawners up"
+  Levels:
+  - Cost:
+      Money: 12500
+      Experience: 0
+    Speed Up Percentage: 25
+    Extra Description: "by 25%"
+  - Cost:
+      Money: 25000
+      Experience: 0
+    Speed Up Percentage: 50
+    Extra Description: "by 50%"
+  - Cost:
+      Money: 37500
+      Experience: 0
+    Speed Up Percentage: 75
+    Extra Description: "by 75%"
+  - Cost:
+      Money: 50000
+      Experience: 0
+    Speed Up Percentage: 100
+    Extra Description: "by 100%"
+
+################################################################################
+speed:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Speed"
+  Description: "Increases movement speed"
+  Mode: "player"
+  Effect: SPEED
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 20%" ## Vanilla
+  - Cost:
+      Money: 10000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 40%" ## Vanilla
+
+################################################################################
+status:
+  Enabled: true
+  Remove When Leave: true
+  Type: BoostBeaconEffect
+  Display Name: "Dispell"
+  Description: "Removes negative status effects"
+  Mode: "player and tamed"
+  Effects:
+  - BAD_OMEN ## *Extremely* useful when you have villagers.
+  - CONFUSION
+  - HARM
+  - HUNGER
+  - LEVITATION
+  - POISON
+  - SLOW
+  - SLOW_DIGGING
+  - UNLUCK
+  - WEAKNESS
+  - WITHER
+  Levels:
+  - Cost:
+      Money: 50000
+      Experience: 0
+    Speed Up Time: 20 ## in ticks (20 ticks == 1 second)
+    Extra Description: ""
+
+################################################################################
+strength:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Strength"
+  Description: "Increases outgoing damage"
+  Mode: "player and tamed"
+  Effect: INCREASE_DAMAGE
+  Levels:
+  - Cost:
+      Money: 15000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: "by 3hp" ## Vanilla
+  - Cost:
+      Money: 30000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "by 6hp" ## Vanilla
