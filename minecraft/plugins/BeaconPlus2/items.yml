@@ -1,55 +1,46 @@
 Activate Item:
   Type: BEDROCK
-  Display Name: "&8> &7&lDEACTIVATED&8 <"
+  Display Name: "&c&lDEACTIVATED"
 Deactivate Item:
   Type: END_ROD
-  Display Name: "&8> &a&lACTIVATED&8 <"
+  Display Name: "&a&lACTIVATED"
 Too Low Item:
   Type: LIGHT_GRAY_STAINED_GLASS_PANE
-  Display Name: "&8> &c&lLEVEL TOO LOW&8 <"
+  Display Name: "&0"
 Back Item: 
   Type: BARRIER
   Display Name: "Go Back"
 Upgrade Item:
-  Display Name: "&8[ &d&l{level_name}&8 ]"
+  Display Name: "&f&l{level_name}"
   Lore:
-  - "&8"
-  - "&8      [&b&l+&8] &7Description: &f{level_description}&6{level_extradescription}"
-  - "&8      [&b&l+&8] &7Current Level: &eTier {level_tier_roman}"
-  - "&8      [&b&l+&8] &7Status: &e{level_active}"
-  - "&8"
+  - "&8&l+ &7Level: &eTier {level_tier_roman}"
+  - "&8&l+ &7Effect: &f{level_description}&e{level_extradescription}"
+  - "&8&l+ &7Status: &e{level_active}"
 Upgrade Info:
-  Display Name: "&8[ &a&lINFORMATION&8 ]"
+  Display Name: "&f&lINFORMATION"
   Lore:
-  - "&8"
-  - "&8      [&b&l+&8] &7Next Level: &f{level_nexttier}/{level_maxtier}"
-  - "&8      [&b&l+&8] &7Upgrade Cost: &f{level_nextcost:Money}"
-  - "&8      [&b&l+&8] &7Next Upgrade: &f{level_nextextradescription}"
-  - "&8"
+  - "&8&l+ &7Level: &eTier {level_tier_roman}"
+  - "&8&l+ &7Effect: &f{level_description}&e{level_extradescription}"
 Maxed Upgrade Info:
-  Display Name: "&8[ &a&lINFORMATION&8 ]"
+  Display Name: "&f&lINFORMATION"
   Lore:
-  - "&8"
-  - "&8      [&b&l+&8] &7Level: &e{level_maxtier}/{level_maxtier}"
-  - "&8      [&b&l+&8] &7Next Upgrade: &c&lMaxed Upgrade"
-  - "&8"
+  - "&8&l+ &7Level: &eTier {level_tier_roman}"
+  - "&8&l+ &7Effect: &f{level_description}&e{level_extradescription}"
 Upgrade Button Money:
   Type: EMERALD
-  Display Name: "&8[ &a&lUPGRADE USING MONEY&8 ]"
+  Display Name: "&fSpend &e${level_nextcost:Money}&f to upgrade this effect"
   Lore:
-  - "&8"
-  - "&8      <&5&l!&8> &dClick Here to Upgrade this Effect &8<&5&l!&8>"
-  - "&8"
+  - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
+  - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
 Upgrade Button Experience:
   Type: EXPERIENCE_BOTTLE
-  Display Name: "&8[ &a&lUPGRADE USING EXPERIENCE&8 ]"
-  Lore:
-  - "&8"
-  - "&8      <&5&l!&8> &dClick Here to Upgrade this Effect &8<&5&l!&8>"
-  - "&8"
+  Display Name: "&fSpend &e{level_nextcost:Experience}&f to upgrade this effect"
+  Lore: 
+  - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
+  - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
 Maxed Upgrade Button Money:
   Type: LIGHT_GRAY_STAINED_GLASS_PANE
-  Display Name: "&8[ &c&lMAXIMUM UPGRADE REACHED&8 ]"
+  Display Name: "&0"
 Maxed Upgrade Button Experience:
   Type: LIGHT_GRAY_STAINED_GLASS_PANE
-  Display Name: "&8[ &c&lMAXIMUM UPGRADE REACHED&8 ]"
+  Display Name: "&0"

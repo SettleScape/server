@@ -73,23 +73,21 @@ Calculator:
 Beacon Effect:
   Activated Status: "&aActivated"
   Deactivated Status: "&cDeactivated"
-  Low Level Status: "&cLow Level"
+  Low Level Status: "&e?"
 
 Beacon Item:
-  Display Name: "&aBeacon"
+  Display Name: "Beacon"
   Lore:
-  - "&7"
-  - "&8   [&b&l+&8] &7Effects:"
-  - "&8        > {effects}"
-  - "&7"
-  Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8)"
-  Deactivated Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8) &c[DEACTIVATED]"
-  Effect Lore Empty: "&c- No Effect -"
+  - "&8&l+ &7Effects:"
+  - "&8&l  + {effects}"
+  Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8)"
+  Deactivated Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8) (&cDEACTIVATED&8)"
+  Effect Lore Empty: "&f?"
 
 Economy:
   Vault:
     Currency: "$"
-    Display Name: "Money"
+    Display Name: "Dollars"
     Formatting:
       Enable: true
       Raw Digits: true
@@ -97,7 +95,7 @@ Economy:
       Rounding:
         Enable: true
         # HALF_DOWN, HALF_UP, HALF_EVEN, CEILING, DOWN, UP, FLOOR, UNNECESSARY
-        Mode: HALF_DOWN
+        Mode: CEILING
         Scale: 2
       Suffixing:
         Enable: true
@@ -114,25 +112,30 @@ Economy:
           '1000000000000000000000000000000': no
           '1000000000000000000000000000000000': dc
   Experience:
-    Currency: "Exp"
+    Currency: "XP"
     Display Name: "Experience"
     Formatting:
       Enable: true
       Raw Digits: true
       Strip Trailing Zeros: true
       Rounding:
-        Enable: false
-        Mode: HALF_DOWN
+        Enable: true
+        Mode: CEILING
         Scale: 2
       Suffixing:
-        Enable: false
+        Enable: true
         Locale:
           '1000': k
           '1000000': m
-          '1000000000': g
+          '1000000000': b
           '1000000000000': t
-          '1000000000000000': p
-          '1000000000000000000': e
+          '1000000000000000': qa
+          '1000000000000000000': qi
+          '1000000000000000000000': sx
+          '1000000000000000000000000': sp
+          '1000000000000000000000000000': oc
+          '1000000000000000000000000000000': no
+          '1000000000000000000000000000000000': dc
   
 Listener:
   # Disable the use of customized listener priority and ignore cancelled and use

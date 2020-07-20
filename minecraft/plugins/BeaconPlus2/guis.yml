@@ -7,11 +7,11 @@
 
 ################################################################################
 Upgrade GUI:
-  Title: "&1Beacon - Upgrade"
+  Title: "Beacon"
   Items:
     " ":
       Type: LIGHT_GRAY_STAINED_GLASS_PANE
-      Display Name: "&7"
+      Display Name: "&0"
     B:
       Type: BEACON
       Template:
@@ -49,25 +49,23 @@ Upgrade GUI:
 
 ################################################################################
 Main GUI:
-  Title: "&1Beacon"
+  Title: "Beacon"
   Items:
     " ":
       Type: LIGHT_GRAY_STAINED_GLASS_PANE
-      Display Name: "&7"
+      Display Name: "&0"
     X:
       Type: BEACON
-      Display Name: "&8[ &a&lINFORMATION&8 ]"
+      Display Name: "&f&lINFORMATION"
       Lore:
-      - "&8"
-      - "&8      [&b&l+&8] &7Range: &d{beacon_range}&7 blocks"
-      - "&8      [&b&l+&8] &7Power: &d{beacon_power}"
-    # - "&8        > &eNetherite Block &8(&b+5&8) &7x&d{beacon_power_source:NETHERITE_BLOCK}"
-      - "&8        > &eDiamond Block &8(&b+4&8) &7x&d{beacon_power_source:DIAMOND_BLOCK}"
-      - "&8        > &eEmerald Block &8(&b+3&8) &7x&d{beacon_power_source:EMERALD_BLOCK}"
-      - "&8        > &eGold Block &8(&b+2&8) &7x&d{beacon_power_source:GOLD_BLOCK}"
-      - "&8        > &eIron Block &8(&b+1&8) &7x&d{beacon_power_source:IRON_BLOCK}"
-      - "&8      [&b&l+&8] &7Location: &8(&d{beacon_x}&8, &d{beacon_y}&8, &d{beacon_z}&8)&7 in &e{beacon_world}"
-      - "&8"
+      - "&8&l+ &7Range: &e{beacon_range}&f blocks"
+      - "&8&l+ &7Power: &e{beacon_power}"
+    # - "&8&l  + &fNetherite Block &8(&7+&f5&8) &7x&e{beacon_power_source:NETHERITE_BLOCK}"
+      - "&8&l  + &fDiamond Block &8(&7+&f4&8) &7x&e{beacon_power_source:DIAMOND_BLOCK}"
+      - "&8&l  + &fEmerald Block &8(&7+&f3&8) &7x&e{beacon_power_source:EMERALD_BLOCK}"
+      - "&8&l  + &fGold Block &8(&7+&f2&8) &7x&e{beacon_power_source:GOLD_BLOCK}"
+      - "&8&l  + &fIron Block &8(&7+&f1&8) &7x&e{beacon_power_source:IRON_BLOCK}"
+      - "&8&l+ &7Location: &8(&e{beacon_x}&8, &e{beacon_y}&8, &e{beacon_z}&8)&7 in &f{beacon_world}"
     B:
       Type: FURNACE
       Template:
