@@ -122,7 +122,7 @@ Main GUI:
       Type: ENDER_EYE
       Template:
         Name: UPGRADE_ITEM
-        Value: nightvision
+        Value: fullbright
     F:
       Type: FEATHER
       Template:
@@ -144,6 +144,6 @@ Main GUI:
         Name: UPGRADE_ITEM
         Value: status
   Mapping:
-  - " SH   ABV"
-  - " RJ X FEL"
-  - " TG   DMP"
+  - " SH   LB "
+  - " RJ X EV "
+  - " TG   MD "
