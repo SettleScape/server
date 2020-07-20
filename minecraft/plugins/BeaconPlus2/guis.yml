@@ -103,11 +103,6 @@ Main GUI:
       Template:
         Name: UPGRADE_ITEM
         Value: furnace
-    A:
-      Type: DIAMOND_HOE
-      Template:
-        Name: UPGRADE_ITEM
-        Value: growth
     M:
       Type: MOB_SPAWNER
       Template:
@@ -128,11 +123,6 @@ Main GUI:
       Template:
         Name: UPGRADE_ITEM
         Value: flight
-    P:
-      Type: OXEYE_DAISY
-      Template:
-        Name: UPGRADE_ITEM
-        Value: peaceful
     L:
       Type: SOUL_SAND
       Template:

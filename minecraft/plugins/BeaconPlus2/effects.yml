@@ -81,42 +81,6 @@ furnace:
       Experience: 0
     Speed Up Time: 100
     Extra Description: "by 100%" ## Same boost that Blast Furnaces and Smokers give.
-growth:
-  Enabled: false ## Might make it too easy to get *insane* amounts of money;  need to run this by experienced members of the community.
-  Type: CropsBoostEffect
-  Display Name: "Fertilizer"
-  Description: "Plants start partially grown"
-  Levels:
-  - Cost:
-      Money: 5000
-      Experience: 0
-    Speed Up Stage: 1
-    Extra Description: "(skip 1 growth stage)"
-  - Cost:
-      Money: 10000
-      Experience: 0
-    Speed Up Stage: 2
-    Extra Description: "(skip 2 growth stages)"
-  - Cost:
-      Money: 15000
-      Experience: 0
-    Speed Up Stage: 3
-    Extra Description: "(skip 3 growth stages)"
-  - Cost:
-      Money: 20000
-      Experience: 0
-    Speed Up Stage: 4
-    Extra Description: "(skip 4 growth stages)"
-  - Cost:
-      Money: 25000
-      Experience: 0
-    Speed Up Stage: 5
-    Extra Description: "(skip 5 growth stages)"
-  - Cost:
-      Money: 30000
-      Experience: 0
-    Speed Up Stage: 6
-    Extra Description: "(skip 6 growth stages)"
 spawner:
   Enabled: true
   Type: SpawnerBoostEffect
@@ -320,14 +284,3 @@ flight:
       Experience: 0
     Height: 128
     Extra Description: "(Max height: 128)"
-peaceful:
-  Enabled: false ## Hard-freezes mobs in-place, even in mid-air.  Also completely disables mob AI.
-  Disable AI: true
-  AI Target Check: false
-  Type: StupidAI
-  Display Name: "Pacifier"
-  Description: "Removes mob aggression"
-  Levels:
-  - Cost:
-      Money: 100000
-      Experience: 0
