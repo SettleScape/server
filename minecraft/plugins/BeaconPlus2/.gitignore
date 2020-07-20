@@ -1,0 +1,6 @@
+**
+!.gitignore
+!config.yml
+!effects.yml
+!guis.yml
+!items.yml

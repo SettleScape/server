@@ -1,0 +1,390 @@
+# Mode expressions
+# player - select players
+# animal - select animals
+# creature - select creature
+# all - select all
+# tamed - select tamed animal
+#
+# not - negate selection ("!")
+# or - logic gate or ("||")
+# and - logic gate and ("&&")
+# xor - logic gate xor ("^")
+#
+# Example: "not animal or tamed and player"
+cure:
+  Enabled: true
+  Type: BoostBeaconEffect
+  Display Name: "Cure"
+  Description: "Cure players nearby from bad effects"
+  Mode: "player"
+  Remove When Leave: true
+  Effects:
+  - SLOW
+  - HUNGER
+  - HARM
+  - WITHER
+  - BAD_OMEN
+  - SLOW
+  - SLOW_DIGGING
+  - CONFUSION
+  - WEAKNESS
+  - POISON
+  - LEVITATION
+  - UNLUCK
+  Levels:
+  - Cost:
+      Money: 15000
+      Experience: 15
+    # in ticks, 20 ticks = 1 second
+    Speed Up Time: 20
+    Extra Description: "Medicine"
+  - Cost:
+      Money: 30000
+      Experience: 30
+    Speed Up Time: 40
+    Extra Description: "First aid"
+  - Cost:
+      Money: 60000
+      Experience: 60
+    Speed Up Time: 60
+    Extra Description: "Antidote"
+slowdown:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Slowerize"
+  Description: "Slow down monster nearby"
+  Remove When Leave: true
+  # only for BasicBeaconEffect (Optional)
+  Mode: "not player and not tamed"
+  Effect: SLOW
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "Slowness"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Very slow"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Speed like a snail"
+furnace:
+  Enabled: true
+  Type: FurnaceBoostEffect
+  Display Name: "Furnace Booster"
+  Description: "Boost your furnace cook time"
+  Levels:
+  - Cost:
+      Money: 12500
+      Experience: 25
+    Speed Up Time: 12
+    Extra Description: "Boost furnace cook time up to 12%"
+  - Cost:
+      Money: 25000
+      Experience: 50
+    Speed Up Time: 25
+    Extra Description: "Boost furnace cook time up to 25%"
+  - Cost:
+      Money: 60000
+      Experience: 120
+    Speed Up Time: 50
+    Extra Description: "Boost furnace cook time up to 50%"
+  - Cost:
+      Money: 150000
+      Experience: 300
+    Speed Up Time: 75
+    Extra Description: "Boost furnace cook time up to 75%"
+crops:
+  Enabled: true
+  Type: CropsBoostEffect
+  Display Name: "Crops Booster"
+  Description: "Skip crops growing stage"
+  Levels:
+  - Cost:
+      Money: 25000
+      Experience: 50
+    Speed Up Stage: 1
+    Extra Description: "Skip 1 crops stage"
+  - Cost:
+      Money: 60000
+      Experience: 120
+    Speed Up Stage: 2
+    Extra Description: "Skip 2 crops stage"
+  - Cost:
+      Money: 150000
+      Experience: 300
+    Speed Up Stage: 3
+    Extra Description: "Skip 3 crops stage"
+  - Cost:
+      Money: 400000
+      Experience: 600
+    Speed Up Stage: 4
+    Extra Description: "Skip 4 crops stage"
+  - Cost:
+      Money: 1000000
+      Experience: 900
+    Speed Up Stage: 5
+    Extra Description: "Skip 5 crops stage"
+  - Cost:
+      Money: 2400000
+      Experience: 1200
+    Speed Up Stage: 6
+    Extra Description: "Skip 6 crops stage"
+spawners:
+  Enabled: true
+  Type: SpawnerBoostEffect
+  Display Name: "Spawner Booster"
+  Description: "Speeds up mobspawner spawn time"
+  Levels:
+  - Cost:
+      Money: 25000
+      Experience: 50
+    Speed Up Percentage: 10
+    Extra Description: "Speeds up Creature minimum spawn time to 10%"
+  - Cost:
+      Money: 60000
+      Experience: 120
+    Speed Up Percentage: 20
+    Extra Description: "Speeds up Creature minimum spawn time to 20%"
+  - Cost:
+      Money: 150000
+      Experience: 300
+    Speed Up Percentage: 30
+    Extra Description: "Speeds up Creature minimum spawn time to 30%"
+  - Cost:
+      Money: 400000
+      Experience: 600
+    Speed Up Percentage: 40
+    Extra Description: "Speeds up Creature minimum spawn time to 40%"
+  - Cost:
+      Money: 1000000
+      Experience: 900
+    Speed Up Percentage: 50
+    Extra Description: "Speeds up Creature minimum spawn time to 50%"
+experience:
+  Enabled: true
+  Type: ExperienceBoostEffect
+  Display Name: "Experience Booster"
+  Description: "Multiply gained experience"
+  Levels:
+  - Cost:
+      Money: 240000
+      Experience: -1
+    Multiplier: 1.5
+    Extra Description: "Multiply gained experience to x1.5"
+  - Cost:
+      Money: 280000
+      Experience: -1
+    Multiplier: 1.6
+    Extra Description: "Multiply gained experience to x1.6"
+  - Cost:
+      Money: 300000
+      Experience: -1
+    Multiplier: 1.7
+    Extra Description: "Multiply gained experience to x1.7"
+  - Cost:
+      Money: 320000
+      Experience: -1
+    Multiplier: 1.8
+    Extra Description: "Multiply gained experience to x1.8"
+  - Cost:
+      Money: 340000
+      Experience: -1
+    Multiplier: 1.9
+    Extra Description: "Multiply gained experience to x1.9"
+speed:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Speed Boost"
+  Description: "Speeds up your movement"
+  Remove When Leave: true
+  Mode: "player"
+  Effect: SPEED
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "Double speed"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Super speed"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Sonic speed"
+jump:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Jump Boost"
+  Description: "Add more height to your jump"
+  Remove When Leave: true
+  Mode: "player"
+  Effect: JUMP
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "High jump ability"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Super high jump ability"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Spring boots equipment"
+strength:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Strength"
+  Description: "Makes you more stronger"
+  Remove When Leave: true
+  Mode: "player"
+  Effect: INCREASE_DAMAGE
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "Sharp knife"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Lightweight sword"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Kings of weapon"
+resist:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Resistance"
+  Description: "Defends you from enemy's attack"
+  Remove When Leave: true
+  Mode: "player"
+  Effect: DAMAGE_RESISTANCE
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "Chain armor"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Avoidance Technique"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Immune of damages?"
+fastdig:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Remove When Leave: true
+  Mode: "player"
+  Display Name: "Fast Miner"
+  Description: "Speeds up block break duration"
+  Effect: FAST_DIGGING
+  Levels:
+  - Cost:
+      Money: 5000
+      Experience: 5
+    Amplifier: 0
+    Extra Description: "Mini digger"
+  - Cost:
+      Money: 10000
+      Experience: 10
+    Amplifier: 1
+    Extra Description: "Fullstack digger"
+  - Cost:
+      Money: 20000
+      Experience: 20
+    Amplifier: 2
+    Extra Description: "Over powered digger"
+regeneration:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Remove When Leave: true
+  Display Name: "Regeneration"
+  Description: "Regenerate your health"
+  Mode: "player"
+  Effect: REGENERATION
+  Levels:
+  - Cost:
+      Money: 50000
+      Experience: 50
+    Amplifier: 0
+    Extra Description: "An angel will regenerate your health"
+  - Cost:
+      Money: 150000
+      Experience: 150
+    Amplifier: 1
+    Extra Description: "Semi-Immortal"
+nightvision:
+  Enabled: true
+  Type: BasicBeaconEffect
+  Display Name: "Night Vision"
+  Description: "Allows you to see at night/dark place"
+  Mode: "player"
+  Effect: NIGHT_VISION
+  Remove When Leave: true
+  Levels:
+  - Cost:
+      Money: 17500
+      Experience: 18
+    Amplifier: 0
+    Extra Description: "Everynight is day"
+flying:
+  Enabled: true
+  Display Name: "Feather Flying"
+  Type: FlyEffect
+  Description: "Allows you to fly around the beacon"
+  Levels:
+  - Cost:
+      Money: 50000
+      Experience: 100
+    Height: 10
+    Extra Description: "Jetpack maximum height - 10 blocks"
+  - Cost:
+      Money: 100000
+      Experience: 200
+    Height: 20
+    Extra Description: "Helicopter maximum height - 20 blocks"
+  - Cost:
+      Money: 200000
+      Experience: 400
+    Height: 30
+    Extra Description: "Air plane maximum height - 30 blocks"
+  - Cost:
+      Money: 400000
+      Experience: 800
+    Height: 40
+    Extra Description: "Rocket maximum height - 40 blocks"
+peaceful:
+  Enabled: true
+  Type: StupidAI
+  Disable AI: true
+  AI Target Check: false
+  Display Name: "Peaceful Area"
+  Description: "We are friends right? We are come in peace!"
+  Levels:
+  - Cost:
+      Money: 50000000
+      Experience: 1000
+    Extra Description: "Hostile mobs are nice and kind"

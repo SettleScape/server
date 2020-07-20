@@ -1,0 +1,164 @@
+Configuration Version: bp2-2.7
+
+Check Interval In Seconds: 3
+Power Check Interval In Seconds: 3
+
+Show Plugin Error: true
+
+Check For Update: true
+
+# Beacon must have nothing above it in order to enable
+Must Beam Through Sky: true
+
+# Only count layer if its perfectly filled
+Only Count Perfect Structure: true
+
+# Should we calculate the Y coordinate?
+# Example if you set this to true, and the max beacon range is 20 blocks
+# then you cannot fly over Y=20. If this set to false, it doesn't care how high you are in the sky
+# as long as you're inside X and Z range coordinate.
+Count Height Range: false
+
+# Don't give effect to any block/entities that are lower than beacon Y level
+# this option defaultly set to true based on vanilla beacon behaviour
+Disable Lower Height: true
+
+Permissions:
+  Open: "beaconplus.open"
+  Open Upgrade: "beaconplus.open.upgrade"
+  Upgrade: "beaconplus.upgrade"
+
+Particle:
+  Enable: true
+  # EXPLOSION_LARGE, EXPLOSION_HUGE, SPELL, SPELL_INSTANT, SPELL_WITCH, DRIP_WATER, 
+  # DRIP_LAVA, VILLAGER_ANGRY, LAVA, FOOTSTEP, SNOWBALL, SLIME, HEART, BARRIER, WATER_DROP, 
+  # ITEM_TAKE, MOB_APPEARANCE
+  Type: SPELL_WITCH
+  # in ticks
+  Interval: 7
+  Stay On Top: true
+  
+Animation:
+  Play transition on GUI open: true
+  Play only once at the beginning: true
+  First Layer: PURPLE_STAINED_GLASS_PANE
+  Second Layer: MAGENTA_STAINED_GLASS_PANE
+
+# When using this, it will ignore "Beacon Ranges" configuration.
+# this is 10 times faster than "Beacon Ranges"
+Beacon Range Calculator:
+  Enable: false
+  # The formula:
+  # (percentage / 100) * power
+  Percentage: 100
+
+Beacon Ranges:
+  '0': 0
+  '9': 10
+  '34': 20
+  '83': 30
+  '164': 40
+  '285': 50
+
+Calculator:
+  Block Powers:
+    GOLD_BLOCK: 1
+    IRON_BLOCK: 1
+    EMERALD_BLOCK: 3
+    DIAMOND_BLOCK: 2
+  Maximum Height Check: 6
+  Must Be Perfect: true
+
+Beacon Effect:
+  Activated Status: "&aActivated"
+  Deactivated Status: "&cDeactivated"
+  Low Level Status: "&cLow Level"
+
+Beacon Item:
+  Display Name: "&aBeacon"
+  Lore:
+  - "&7"
+  - "&8   [&b&l+&8] &7Effects:"
+  - "&8        » {effects}"
+  - "&7"
+  Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8)"
+  Deactivated Effect Lore: "&f{effect_name} &8(&dTier {effect_level_roman}&8) &c[DEACTIVATED]"
+  Effect Lore Empty: "&c- No Effect -"
+
+Economy:
+  Vault:
+    Currency: "$"
+    Display Name: "Money"
+    Formatting:
+      Enable: true
+      Raw Digits: true
+      Strip Trailing Zeros: true
+      Rounding:
+        Enable: true
+        # HALF_DOWN, HALF_UP, HALF_EVEN, CEILING, DOWN, UP, FLOOR, UNNECESSARY
+        Mode: HALF_DOWN
+        Scale: 2
+      Suffixing:
+        Enable: true
+        Locale:
+          '1000': k
+          '1000000': m
+          '1000000000': g
+          '1000000000000': t
+          '1000000000000000': p
+          '1000000000000000000': e
+  Experience:
+    Currency: "Exp"
+    Display Name: "Experience"
+    Formatting:
+      Enable: true
+      Raw Digits: true
+      Strip Trailing Zeros: true
+      Rounding:
+        Enable: false
+        Mode: HALF_DOWN
+        Scale: 2
+      Suffixing:
+        Enable: false
+        Locale:
+          '1000': k
+          '1000000': m
+          '1000000000': g
+          '1000000000000': t
+          '1000000000000000': p
+          '1000000000000000000': e
+  
+Listener:
+  # Disable the use of customized listener priority and ignore cancelled and use
+  # the built-in listener anyway.
+  Use Hard Coded Listener: false
+  Priority:
+    Chunk Load: HIGHEST
+    Chunk Unload: HIGHEST
+    Player Quit: HIGHEST
+    Player Interact: HIGHEST
+    Spawner Spawn: HIGHEST
+    Player Exp Change: HIGHEST
+    Furnace Burn: HIGHEST
+    Furnace Smelt: HIGHEST
+    Block Place: HIGHEST
+    Block Break: MONITOR
+    Entity Target Living Entity: HIGHEST
+    Entity Damage: HIGHEST
+    Inventory Click: HIGHEST
+    Inventory Move: HIGHEST
+  Ignore Cancelled:
+    Chunk Load: true
+    Chunk Unload: true
+    Player Quit: true
+    Player Interact: true
+    Spawner Spawn: true
+    Player Exp Change: true
+    Furnace Burn: true
+    Furnace Smelt: true
+    Block Place: true
+    Block Break: true
+    Entity Target Living Entity: true
+    Entity Damage: true
+    Inventory Click: true
+    Inventory Move: true
