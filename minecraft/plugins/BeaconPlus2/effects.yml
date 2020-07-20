@@ -199,7 +199,7 @@ regeneration:
   Effect: REGENERATION
   Levels:
   - Cost:
-      Money: 20000
+      Money: 15000
       Experience: 0
     Amplifier: 0
     Extra Description: " (2hp/5s)" ## Vanilla
@@ -370,12 +370,12 @@ weakness:
   Effect: WEAKNESS
   Levels:
   - Cost:
-      Money: 20000
+      Money: 15000
       Experience: 0
     Amplifier: 0
     Extra Description: "4hp" ## Vanilla
   - Cost:
-      Money: 40000
+      Money: 30000
       Experience: 0
     Amplifier: 1
     Extra Description: "8hp" ## Vanilla
