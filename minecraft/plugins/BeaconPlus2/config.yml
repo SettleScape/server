@@ -50,7 +50,7 @@ Beacon Range Calculator:
   Enable: true
   # The formula:
   # (percentage / 100) * power
-  Percentage: 50
+  Percentage: 25
 
 Beacon Ranges:
   '0': 0

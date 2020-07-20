@@ -21,22 +21,22 @@ experience:
   Description: "Increases XP gain by "
   Levels:
   - Cost:
-      Money: 25000
+      Money: 10000
       Experience: 0
     Multiplier: 1.25
     Extra Description: "25%"
   - Cost:
-      Money: 50000
+      Money: 20000
       Experience: 0
     Multiplier: 1.5
     Extra Description: "50%"
   - Cost:
-      Money: 75000
+      Money: 30000
       Experience: 0
     Multiplier: 1.75
     Extra Description: "75%"
   - Cost:
-      Money: 100000
+      Money: 40000
       Experience: 0
     Multiplier: 2.0
     Extra Description: "100%"
@@ -52,7 +52,7 @@ fire_resistance:
   Effect: FIRE_RESISTANCE
   Levels:
   - Cost:
-      Money: 50000
+      Money: 30000
       Experience: 0
     Amplifier: 0
     Extra Description: ""
@@ -97,7 +97,7 @@ fullbright:
   Effect: NIGHT_VISION
   Levels:
   - Cost:
-      Money: 10000
+      Money: 7500
       Experience: 0
     Amplifier: 0
     Extra Description: ""
@@ -162,7 +162,7 @@ outline:
   Effect: GLOWING
   Levels:
   - Cost:
-      Money: 15000
+      Money: 10000
       Experience: 0
     Amplifier: 0
     Extra Description: ""
@@ -199,7 +199,7 @@ regeneration:
   Effect: REGENERATION
   Levels:
   - Cost:
-      Money: 50000
+      Money: 20000
       Experience: 0
     Amplifier: 0
     Extra Description: " (2hp/5s)" ## Vanilla
@@ -215,12 +215,12 @@ resistance:
   Effect: DAMAGE_RESISTANCE
   Levels:
   - Cost:
-      Money: 10000
+      Money: 15000
       Experience: 0
     Amplifier: 0
     Extra Description: "20%" ## Vanilla
   - Cost:
-      Money: 20000
+      Money: 15000
       Experience: 0
     Amplifier: 1
     Extra Description: "40%" ## Vanilla
@@ -236,7 +236,7 @@ slowfalling:
   Effect: SLOW_FALLING
   Levels:
   - Cost:
-      Money: 15000
+      Money: 7500
       Experience: 0
     Amplifier: 0
     Extra Description: ""
@@ -252,12 +252,12 @@ slowness:
   Effect: SLOW
   Levels:
   - Cost:
-      Money: 10000
+      Money: 7500
       Experience: 0
     Amplifier: 0
     Extra Description: "15%" ## Vanilla
   - Cost:
-      Money: 20000
+      Money: 15000
       Experience: 0
     Amplifier: 1
     Extra Description: "30%" ## Vanilla
@@ -275,17 +275,17 @@ spawner:
     Speed Up Percentage: 25
     Extra Description: "25%"
   - Cost:
-      Money: 25000
+      Money: 12500
       Experience: 0
     Speed Up Percentage: 50
     Extra Description: "50%"
   - Cost:
-      Money: 37500
+      Money: 12500
       Experience: 0
     Speed Up Percentage: 75
     Extra Description: "75%"
   - Cost:
-      Money: 50000
+      Money: 12500
       Experience: 0
     Speed Up Percentage: 100
     Extra Description: "100%"
@@ -333,7 +333,7 @@ status:
   - WITHER
   Levels:
   - Cost:
-      Money: 50000
+      Money: 30000
       Experience: 0
     Speed Up Time: 20 ## in ticks (20 ticks == 1 second)
     Extra Description: ""
