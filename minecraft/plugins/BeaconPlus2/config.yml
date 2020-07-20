@@ -39,7 +39,7 @@ Particle:
   Stay On Top: true
   
 Animation:
-  Play transition on GUI open: true
+  Play transition on GUI open: false
   Play only once at the beginning: true
   First Layer: PURPLE_STAINED_GLASS_PANE
   Second Layer: MAGENTA_STAINED_GLASS_PANE

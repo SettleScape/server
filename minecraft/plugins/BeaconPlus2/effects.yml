@@ -42,7 +42,7 @@ experience:
     Extra Description: " by 100%"
 
 ################################################################################
-fireresistance:
+fire_resistance:
   Enabled: true
   Remove When Leave: true
   Type: BasicBeaconEffect

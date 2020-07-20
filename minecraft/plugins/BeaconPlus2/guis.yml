@@ -68,87 +68,82 @@ Main GUI:
       - "&8        > &eIron Block &8(&b+1&8) &7x&d{beacon_power_source:IRON_BLOCK}"
       - "&8      [&b&l+&8] &7Location: &8(&d{beacon_x}&8, &d{beacon_y}&8, &d{beacon_z}&8)&7 in &e{beacon_world}"
       - "&8"
-    S:
-      Type: LEATHER_BOOTS
-      Template:
-        Name: UPGRADE_ITEM
-        Value: speed
-    H:
-      Type: GOLDEN_PICKAXE
-      Template:
-        Name: UPGRADE_ITEM
-        Value: haste
-    R:
-      Type: SHIELD
-      Template:
-        Name: UPGRADE_ITEM
-        Value: resistance
-    J:
-      Type: SLIME_BLOCK
-      Template:
-        Name: UPGRADE_ITEM
-        Value: jump
-    T:
-      Type: IRON_SWORD
-      Template:
-        Name: UPGRADE_ITEM
-        Value: strength
-    G:
-      Type: APPLE
-      Template:
-        Name: UPGRADE_ITEM
-        Value: regeneration
     B:
       Type: FURNACE
       Template:
         Name: UPGRADE_ITEM
         Value: furnace
-    M:
-      Type: MOB_SPAWNER
-      Template:
-        Name: UPGRADE_ITEM
-        Value: spawner
-    E:
-      Type: EXPERIENCE_BOTTLE
-      Template:
-        Name: UPGRADE_ITEM
-        Value: experience
-    V:
-      Type: ENDER_EYE
-      Template:
-        Name: UPGRADE_ITEM
-        Value: fullbright
-    F:
-      Type: FEATHER
-      Template:
-        Name: UPGRADE_ITEM
-        Value: slowfalling
-    L:
-      Type: SOUL_SAND
-      Template:
-        Name: UPGRADE_ITEM
-        Value: slowness
     D:
       Type: POTION
       Template:
         Name: UPGRADE_ITEM
         Value: status
+    E:
+      Type: EXPERIENCE_BOTTLE
+      Template:
+        Name: UPGRADE_ITEM
+        Value: experience
+    G:
+      Type: APPLE
+      Template:
+        Name: UPGRADE_ITEM
+        Value: regeneration
+    H:
+      Type: GOLDEN_PICKAXE
+      Template:
+        Name: UPGRADE_ITEM
+        Value: haste
+    L:
+      Type: SOUL_SAND
+      Template:
+        Name: UPGRADE_ITEM
+        Value: slowness
+    I:
+      Type: LAVA_BUCKET
+      Template:
+        Name: UPGRADE_ITEM
+        Value: fire_resistance
+    J:
+      Type: SLIME_BLOCK
+      Template:
+        Name: UPGRADE_ITEM
+        Value: jump
+    M:
+      Type: MOB_SPAWNER
+      Template:
+        Name: UPGRADE_ITEM
+        Value: spawner
+    R:
+      Type: SHIELD
+      Template:
+        Name: UPGRADE_ITEM
+        Value: resistance
+    S:
+      Type: LEATHER_BOOTS
+      Template:
+        Name: UPGRADE_ITEM
+        Value: speed
+    T:
+      Type: IRON_SWORD
+      Template:
+        Name: UPGRADE_ITEM
+        Value: strength
+    V:
+      Type: ENDER_EYE
+      Template:
+        Name: UPGRADE_ITEM
+        Value: fullbright
     W:
       Type: WOOD_SWORD
       Template:
         Name: UPGRADE_ITEM
         Value: weakness
-    I:
-      Type: LAVA_BUCKET
-      Template:
-        Name: UPGRADE_ITEM
-        Value: fireresistance
     Z:
       Type: SPECTRAL_ARROW
       Template:
         Name: UPGRADE_ITEM
         Value: outline
   Mapping:
-  - " SH   LVB"  
-  - " RJ X IZM" 
-  - " TG   WDE" 
+  - "LSH   JVZ"  
+  - " RI X  GD" 
+  - "WT    BME" 
