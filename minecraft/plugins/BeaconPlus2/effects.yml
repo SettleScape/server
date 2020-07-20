@@ -24,22 +24,38 @@ experience:
       Money: 25000
       Experience: 0
     Multiplier: 1.25
-    Extra Description: "by 25%"
+    Extra Description: " by 25%"
   - Cost:
       Money: 50000
       Experience: 0
     Multiplier: 1.5
-    Extra Description: "by 50%"
+    Extra Description: " by 50%"
   - Cost:
       Money: 75000
       Experience: 0
     Multiplier: 1.75
-    Extra Description: "by 75%"
+    Extra Description: " by 75%"
   - Cost:
       Money: 100000
       Experience: 0
     Multiplier: 2.0
-    Extra Description: "by 100%"
+    Extra Description: " by 100%"
+
+################################################################################
+fireresistance:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Fire Resistance"
+  Description: "Eliminates fire damage"
+  Mode: "player and tamed"
+  Effect: FIRE_RESISTANCE
+  Levels:
+  - Cost:
+      Money: 50000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: ""
 
 ################################################################################
 flight:
@@ -53,22 +69,22 @@ flight:
       Money: 25000
       Experience: 0
     Height: 16
-    Extra Description: "(Max height: 16)"
+    Extra Description: " (Max height: 16)"
   - Cost:
       Money: 50000
       Experience: 0
     Height: 32
-    Extra Description: "(Max height: 32)"
+    Extra Description: " (Max height: 32)"
   - Cost:
       Money: 75000
       Experience: 0
     Height: 64
-    Extra Description: "(Max height: 64)"
+    Extra Description: " (Max height: 64)"
   - Cost:
       Money: 100000
       Experience: 0
     Height: 128
-    Extra Description: "(Max height: 128)"
+    Extra Description: " (Max height: 128)"
 
 ################################################################################
 fullbright:
@@ -97,22 +113,22 @@ furnace:
       Money: 2500
       Experience: 0
     Speed Up Time: 25
-    Extra Description: "by 25%"
+    Extra Description: " by 25%"
   - Cost:
       Money: 5000
       Experience: 0
     Speed Up Time: 50
-    Extra Description: "by 50%"
+    Extra Description: " by 50%"
   - Cost:
       Money: 7500
       Experience: 0
     Speed Up Time: 75
-    Extra Description: "by 75%"
+    Extra Description: " by 75%"
   - Cost:
       Money: 10000
       Experience: 0
     Speed Up Time: 100
-    Extra Description: "by 100%" ## Same boost that Blast Furnaces and Smokers give.
+    Extra Description: " by 100%" ## Same boost that Blast Furnaces and Smokers give.
 
 ################################################################################
 haste:
@@ -128,12 +144,28 @@ haste:
       Money: 10000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
+    Extra Description: " by 20%" ## Vanilla
   - Cost:
       Money: 20000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
+    Extra Description: " by 40%" ## Vanilla
+
+################################################################################
+outline:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Mode: "not player and not tamed"
+  Display Name: "Glowing"
+  Description: "Outlines mobs"
+  Effect: GLOWING
+  Levels:
+  - Cost:
+      Money: 15000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: ""
 
 ################################################################################
 jump:
@@ -149,12 +181,12 @@ jump:
       Money: 5000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 50%" ## Vanilla
+    Extra Description: " by 50%" ## Vanilla
   - Cost:
       Money: 10000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 100%" ## Vanilla
+    Extra Description: " by 100%" ## Vanilla
 
 ################################################################################
 regeneration:
@@ -170,7 +202,7 @@ regeneration:
       Money: 50000
       Experience: 0
     Amplifier: 0
-    Extra Description: "(2hp/5s)" ## Vanilla
+    Extra Description: " (2hp/5s)" ## Vanilla
 
 ################################################################################
 resistance:
@@ -186,12 +218,28 @@ resistance:
       Money: 10000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
+    Extra Description: " by 20%" ## Vanilla
   - Cost:
       Money: 20000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
+    Extra Description: " by 40%" ## Vanilla
+
+################################################################################
+slowfalling:
+  Enabled: false ## Game-ruining for Elytra users, and no way to disable.
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Slow Falling"
+  Description: "Slows and softens falls"
+  Mode: "all"
+  Effect: SLOW_FALLING
+  Levels:
+  - Cost:
+      Money: 15000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: ""
 
 ################################################################################
 slowness:
@@ -207,12 +255,12 @@ slowness:
       Money: 10000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 15%" ## Vanilla
+    Extra Description: " by 15%" ## Vanilla
   - Cost:
       Money: 20000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 30%" ## Vanilla
+    Extra Description: " by 30%" ## Vanilla
 
 ################################################################################
 spawner:
@@ -225,22 +273,22 @@ spawner:
       Money: 12500
       Experience: 0
     Speed Up Percentage: 25
-    Extra Description: "by 25%"
+    Extra Description: " by 25%"
   - Cost:
       Money: 25000
       Experience: 0
     Speed Up Percentage: 50
-    Extra Description: "by 50%"
+    Extra Description: " by 50%"
   - Cost:
       Money: 37500
       Experience: 0
     Speed Up Percentage: 75
-    Extra Description: "by 75%"
+    Extra Description: " by 75%"
   - Cost:
       Money: 50000
       Experience: 0
     Speed Up Percentage: 100
-    Extra Description: "by 100%"
+    Extra Description: " by 100%"
 
 ################################################################################
 speed:
@@ -249,19 +297,19 @@ speed:
   Type: BasicBeaconEffect
   Display Name: "Speed"
   Description: "Increases movement speed"
-  Mode: "player"
+  Mode: "player and tamed"
   Effect: SPEED
   Levels:
   - Cost:
       Money: 5000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 20%" ## Vanilla
+    Extra Description: " by 20%" ## Vanilla
   - Cost:
       Money: 10000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 40%" ## Vanilla
+    Extra Description: " by 40%" ## Vanilla
 
 ################################################################################
 status:
@@ -304,9 +352,30 @@ strength:
       Money: 15000
       Experience: 0
     Amplifier: 0
-    Extra Description: "by 3hp" ## Vanilla
+    Extra Description: " by 3hp" ## Vanilla
   - Cost:
       Money: 30000
       Experience: 0
     Amplifier: 1
-    Extra Description: "by 6hp" ## Vanilla
+    Extra Description: " by 6hp" ## Vanilla
+
+################################################################################
+weakness:
+  Enabled: true
+  Remove When Leave: true
+  Type: BasicBeaconEffect
+  Display Name: "Weakness"
+  Description: "Decreases mob damage"
+  Mode: "not player and not tamed"
+  Effect: WEAKNESS
+  Levels:
+  - Cost:
+      Money: 20000
+      Experience: 0
+    Amplifier: 0
+    Extra Description: " by 4hp" ## Vanilla
+  - Cost:
+      Money: 40000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: " by 8hp" ## Vanilla

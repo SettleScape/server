@@ -122,7 +122,7 @@ Main GUI:
       Type: FEATHER
       Template:
         Name: UPGRADE_ITEM
-        Value: flight
+        Value: slowfalling
     L:
       Type: SOUL_SAND
       Template:
@@ -133,7 +133,22 @@ Main GUI:
       Template:
         Name: UPGRADE_ITEM
         Value: status
+    W:
+      Type: WOOD_SWORD
+      Template:
+        Name: UPGRADE_ITEM
+        Value: weakness
+    I:
+      Type: LAVA_BUCKET
+      Template:
+        Name: UPGRADE_ITEM
+        Value: fireresistance
+    Z:
+      Type: SPECTRAL_ARROW
+      Template:
+        Name: UPGRADE_ITEM
+        Value: outline
   Mapping:
-  - " SH   LB "
-  - " RJ X EV "
-  - " TG   MD "
+  - " SH   LVB"  
+  - " RJ X IZM" 
+  - " TG   WDE" 

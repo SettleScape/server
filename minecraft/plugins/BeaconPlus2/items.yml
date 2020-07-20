@@ -14,7 +14,7 @@ Upgrade Item:
   Display Name: "&8[ &d&l{level_name}&8 ]"
   Lore:
   - "&8"
-  - "&8      [&b&l+&8] &7Description: &f{level_description} &6{level_extradescription}"
+  - "&8      [&b&l+&8] &7Description: &f{level_description}&6{level_extradescription}"
   - "&8      [&b&l+&8] &7Current Level: &eTier {level_tier_roman}"
   - "&8      [&b&l+&8] &7Status: &e{level_active}"
   - "&8"
