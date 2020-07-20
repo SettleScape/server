@@ -18,6 +18,7 @@ mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resou
 Mineable Spawners  3.0.5      2020-06-27  2020-07-19  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.2      2020-07-15  2020-07-19  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  2020-07-19  https://github.com/SimonOrJ/PhantomSMP/releases
+ParticleLib        1.5.1      2020-06-27  2020-07-20  https://github.com/bytez1337/particlelib/releases
 PlaceholderAPI     2.10.6     2020-05-02  2020-07-19  https://spigotmc.org/resources/placeholderapi.6245/updates
 ProtocolLib        4.5.1      2020-06-03  2020-07-19  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.9        2020-07-17  2020-07-19  https://spigotmc.org/resources/rankup.76964/updates
