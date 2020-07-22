@@ -323,7 +323,7 @@ new_world_settings:
  
   fire:
     # Allow fire to be lit and spread in this world.
-    world_firespread_enabled: 'true'
+    world_firespread_enabled: 'false'
     # force_fire_on is a global flag and overrides any towns flag setting
     force_fire_on: 'false'
  
