@@ -6,7 +6,7 @@ permissions:
 # Info about the server
 #-------------------------------------------------------------------------------
 - essentials.help
-- essentials.list
+- essentials.list # See who's online.  Like a CLI version of the `Tab` menu.
 - essentials.motd
 - essentials.rules
 - essentials.recipe

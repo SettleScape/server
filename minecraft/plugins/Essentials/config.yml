@@ -221,65 +221,7 @@ mute-commands: []
 # These are the permissions without the "essentials." part.
 #
 # To enable this feature, please set use-bukkit-permissions to false.
-player-commands: #TODO:  Move these into GroupManager
-  # - afk
-  # - afk.auto
-  # - back
-  # - back.ondeath
-  # - balance
-  # - balance.others
-  # - balancetop
-  # - build
-  # - chat.color
-  # - chat.format
-  # - chat.shout
-  # - chat.question
-  # - clearinventory
-  # - compass
-  # - depth
-  # - delhome
-  # - getpos
-  # - geoip.show
-  # - help
-  # - helpop
-  # - home
-  # - home.others
-  # - ignore
-  # - info
-  # - itemdb
-  # - kit
-  # - kits.tools
-  # - list
-  # - mail
-  # - mail.send
-  # - me
-  # - motd
-  # - msg
-  # - msg.color
-  # - nick
-  # - near
-  # - pay
-  # - ping
-  # - protect
-  # - r
-  # - rules
-  # - realname
-  # - seen
-  # - sell
-  # - sethome
-  # - setxmpp
-  # - spawn
-  # - suicide
-  # - time
-  # - tpa
-  # - tpaccept
-  # - tpahere
-  # - tpdeny
-  # - warp
-  # - warp.list
-  # - world
-  # - worth
-  # - xmpp
+player-commands: []
 
 # Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
 # This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
@@ -305,23 +247,7 @@ pastebin-createkit: false
 
 enabledSigns:
   - color
-  #- balance
-  #- buy
-  #- sell
-  #- trade
-  #- free
-  #- disposal
-  #- warp
-  #- kit
-  #- mail
-  #- enchant
-  #- gamemode
-  #- heal
   - info
-  #- spawnmob
-  #- repair
-  #- time
-  #- weather
 
 # How many times per second can Essentials signs be interacted with per player.
 # Values should be between 1-20, 20 being virtually no lag protection.
@@ -353,21 +279,19 @@ backup:
   #command: 'rdiff-backup World1 backups/World1'
 
 # Set this true to enable permission per warp.
-per-warp-permission: true
+per-warp-permission: false
 
 # Sort output of /list command by groups.
 # You can hide and merge the groups displayed in /list by defining the desired behaviour here.
 # Detailed instructions and examples can be found on the wiki: http://wiki.ess3.net/wiki/List
-list:
+list: {}
     # To merge groups, list the groups you wish to merge
-    #foo: bar baz
-    admins: owner admin
+    #Staff: owner admin tester moderator monitor
+    #Players: pathfinder explorer settler traveller wanderer default '*' donor
     # To limit groups, set a max user limit
-    #builder: 20
+    #default: 0
     # To hide groups, set the group as hidden
     #default: hidden
-    # Uncomment the line below to simply list all players with no grouping
-    #Players: '*'
 
 # Displays real names in /list next to players who are using a nickname.
 real-names-on-list: false
