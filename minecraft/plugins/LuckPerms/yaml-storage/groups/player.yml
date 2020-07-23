@@ -109,6 +109,8 @@ permissions:
 
 # Misc
 #-------------------------------------------------------------------------------
+- beaconplus.open
+- beaconplus.upgrade
 - bukkit.command.gamemode.survival
 - craftbook.mech.ammeter.use
 - craftbook.mech.bookshelf.use
