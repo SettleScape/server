@@ -378,7 +378,11 @@ grayplayerswhenhidden: true
 # Use player permissions to order player list: first to last, players are ordered by first permission listed that they have
 # That is, anyone with first listed permission goes before anyone with second, etc, with users with none of the nodes going last
 player-sort-permission-nodes:
-  - bukkit.command.op
+  - essentials.kits.pathfinder
+  - essentials.kits.explorer
+  - essentials.kits.settler
+  - essentials.kits.traveller
+  - essentials.kits.wanderer
 
 # Set sidebaropened: 'true' to pin menu sidebar opened permanently, 'pinned' to default the sidebar to pinned, but allow it to unpin
 sidebaropened: pinned

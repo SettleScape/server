@@ -5,7 +5,7 @@ prefixes:
 - '&dExplorer&r': {}
 permissions:
 - weight.13
-# - essentials.kits.explorer
+- essentials.kits.explorer
 
 # Limit increases
 - auctionhouse.auctions.6: {value: false}
