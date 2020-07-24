@@ -1,0 +1,45 @@
+#!/bin/bash
+## This script removes old files to save space.
+
+## Cariables.
+declare -a DIRS=(
+    'logs' 
+    'crash-reports' 
+    'plugins/AuctionHouse/logs' 
+    'plugins/CommandLog' 
+    'plugins/mcMMO/backup' 
+    'plugins/Towny/backup' 
+)
+declare -a EXTS=(
+    '.log.gz' 
+    '.txt' 
+    '.log' 
+    '.txt' 
+    '.zip' 
+    '.zip' 
+)
+
+## Set starting directory.
+CWD="$(pwd)/.."
+cd "$CWD"
+
+## Do the thing.
+declare -i I=0
+while [[ I -lt ${#DIRS[@]} && I -lt ${#EXTS[@]} ]]; do
+
+    ## Go to the target directory and print a summary of what files will be deleted.
+    cd "${DIRS[I]}"
+    printf "\n\033[1m$(pwd)/*${EXTS[I]}\033[0m\n"
+
+    ## Delete files older than 7 days.
+    find . -type f -mtime +7 |\
+    grep "\\${EXTS[I]}$" |\
+    xargs rm -fv
+
+    ## Done.
+    cd "$CWD"
+    I=$I+1
+
+## Done-done.
+done
+exit 0
