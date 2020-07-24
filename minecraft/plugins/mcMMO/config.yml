@@ -319,7 +319,7 @@ Skills:
     Fishing:
         Level_Cap: 0
         Drops_Enabled: true
-        Override_Vanilla_Treasures: true
+        Override_Vanilla_Treasures: false
         # Always catch fish, even when treasure is found
         Extra_Fish: true
         Lure_Modifier: 4.0
