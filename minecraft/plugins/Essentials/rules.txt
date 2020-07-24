@@ -1,17 +1,28 @@
 &lConduct:&r
-1. Avoid drama;  do not escalate.
-2. Membership in this server is a privilege and limited to friends of friends only.  This is not a public MC server.
-3. Your Discord nickname and your SettleScape nickname should match.
-4. No ad hominems
+1. Always de-escalate.
+2. Avoid logical fallacies.
+3. Do not violate trust.
 
 &lGriefing Policy:&r
-(These rules apply to the Overworld and the central End island;  everything else is anarchy.)
-1. Loot, don't grief.  (Keep the server looking nice.)
-2. Towns and their perimeters are off-limits, but everything else is fair-game.
-3. Unlocked containers are fair-game anywhere.
+1. Loot, don't grief.
+2. No looting in Towns, even if you have access.  Always ask permission.
+3. Do not ruin for the sake of ruining.
+
+&lCheating Policy:&r
+1. You may not take advantage of any software or hardware exploits in the SettleScape server, or in Minecraft while you are playing on the SettleScape server.  (Some "exploits" are grey-areas;  ask an administrator to assess permissibility.)
+2. Those who silently reveal novel exploits in SettleScape to just SettleScape staff will be rewarded with in-game currency.
+
+&lNickname Policy:&r
+1. No obscenities.  Violators will have their nickname removed, and repeat offenders may permanently lose the ability to set custom nicknames.
+2. Your Discord nickname and your SettleScape nickname should match.
 
 &lStaff Rules:&r
 1. Staff powers should be used for staff purposes only; they should not be used to achieve an advantage in-game.
 2. Moderators may issue temp bans, kicks, and jail sentences as necessary.
 3. Permabans require the agreement of at least two mods/admins.
 4. Players will be removed from the Discord when they quit the server.
+
+&lTerms & Conditions:&r
+1. Access to SettleScape (henceforth "THE SERVICE") is a privilege, and the SETTLESCAPE TEAM reserves the right to temporarily or permanently deprive you of THE SERVICE at any time and for any reason.
+2. All information that is sent to THE SERVICE, including but not limited to in-game chat and client IP addresses, may be logged, read by the SETTLESCAPE TEAM, stored in perpetuity, and provided to any third party.
+3. The above are limited only where required by applicable legislation.

@@ -14,6 +14,6 @@ interpersonal strife.
 Contents
 ================================================================================
 
-1. Avoid drama;  do not escalate.
-2. No *ad hominems*.
-3. Avoid logical fallacies.
+1. Always de-escalate.
+2. Avoid logical fallacies.
+3. Do not violate trust.
