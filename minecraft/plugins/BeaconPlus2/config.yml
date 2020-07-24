@@ -1,4 +1,4 @@
-Configuration Version: bp2-2.7
+Configuration Version: bp2-2.8
 
 Check Interval In Seconds: 3
 Power Check Interval In Seconds: 3
@@ -69,6 +69,10 @@ Calculator:
   # NETHERITE_BLOCK: 5
   Maximum Height Check: 6
   Must Be Perfect: true
+
+Entity Filter:
+#  Only accept very specific entities, prevents ArmorStand being affected
+   High Filtered: true
 
 Beacon Effect:
   Activated Status: "&aActivated"
