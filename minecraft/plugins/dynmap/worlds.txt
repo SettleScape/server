@@ -23,16 +23,16 @@ worlds:
         maximumheight: 256
         background:      "#3F3F3F"
        #backgroundnight: "#090B13"
-        lighting:     shadows
+        lighting:     shadows-smooth
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
-        image-format: jpg-q75
-        mapzoomin:  2
-        mapzoomout: 3
+        perspective:  iso_S_90_lowres
+        image-format: png
+        mapzoomin:  1
+        mapzoomout: 4
 ################################################################################
 -   name:       world_nether
     title:      The Nether
-    enabled:    false
+    enabled:    true
     bigworld:   true
     showborder: true
     hidestyle:  air
@@ -53,12 +53,12 @@ worlds:
         maximumheight: 128
        #background:  "#290606"
         background:  "#000000"
-        lighting:     nether
+        lighting:     nethershadows
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
-        image-format: jpg-q75
-        mapzoomin:  2
-        mapzoomout: 0
+        perspective:  iso_S_90_lowres
+        image-format: png
+        mapzoomin:  1
+        mapzoomout: 1
 ################################################################################
 -   name:       world_the_end
     title:      The End
@@ -82,10 +82,10 @@ worlds:
         name:   the_end
         maximumheight: 256
         background:  "#110d18"
-        lighting:     brightnight
+        lighting:     brightnight-smooth
         shader:       stdtexture
-        perspective:  iso_S_90_vlowres
-        image-format: jpg-q75
-        mapzoomin:  2
-        mapzoomout: 1
+        perspective:  iso_S_90_lowres
+        image-format: png
+        mapzoomin:  1
+        mapzoomout: 2
 ################################################################################
