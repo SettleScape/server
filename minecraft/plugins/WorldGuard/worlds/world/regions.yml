@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    nearlands:
+        min: {x: -6639, y: 0, z: 4465}
+        max: {x: -6464, y: 255, z: 4715}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     spawn:
         min: {x: -272, y: 0, z: -272}
         max: {x: 272, y: 255, z: 272}
@@ -17,8 +25,8 @@ regions:
         flags:
             other-explosion: deny
             frosted-ice-form: deny
-            ice-melt: deny
             snow-fall: deny
+            ice-melt: deny
             interact: allow
             vehicle-destroy: allow
             chest-access: allow
@@ -28,8 +36,8 @@ regions:
             vehicle-place: allow
             snowman-trails: deny
             block-break: deny
-            ravager-grief: deny
             entity-painting-destroy: deny
+            ravager-grief: deny
             mushroom-growth: deny
             ice-form: deny
             chorus-fruit-teleport: deny
@@ -42,8 +50,8 @@ regions:
             town-creation: deny
             item-frame-rotation: deny
             potion-splash: deny
-            frosted-ice-melt: deny
             snow-melt: deny
+            frosted-ice-melt: deny
             tnt: deny
             entity-item-frame-destroy: deny
             use-admin-shop: allow
@@ -54,8 +62,8 @@ regions:
         min: {x: -704, y: 0, z: -4848}
         max: {x: -353, y: 255, z: -4561}
         members: {}
-        flags: {other-explosion: deny, chorus-fruit-teleport: deny, lava-fire: deny,
-            dynmap-boost: true, block-trampling: deny, vehicle-destroy: deny, lighter: deny,
+        flags: {other-explosion: deny, lava-fire: deny, chorus-fruit-teleport: deny,
+            dynmap-boost: true, block-trampling: deny, lighter: deny, vehicle-destroy: deny,
             pistons: deny, chest-access: deny, block-place: deny, fire-spread: deny,
             enderpearl: deny, creeper-explosion: deny, vehicle-place: deny, create-shop: deny,
             town-creation: deny, item-frame-rotation: deny, block-break: deny, tnt: deny,
