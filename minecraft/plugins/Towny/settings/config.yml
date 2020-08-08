@@ -504,7 +504,7 @@ global_town_settings:
   # # The ranks to be given preference when assigning a new mayor, listed in order of descending preference.
   # All ranks should be as defined in `townyperms.yml`.
   # For example, to give a `visemayor` preference over an `assistant`, change this parameter to `visemayor,assistant`.
-  order_of_mayoral_succession: assistant
+  order_of_mayoral_succession: heir,assistant,builder,sheriff
  
  
   ############################################################
@@ -598,7 +598,7 @@ plugin:
     backups_are_deleted_after: 4d
  
     # Valid entries are: tar for tar.gz and zip for zip, use none for no backup.
-    flatfile_backup_type: tar
+    flatfile_backup_type: tar.gz
  
   interfacing:
  
@@ -708,7 +708,7 @@ protection:
  
   # Materials which can be lit on fire even when firespread is disabled.
   # Still requires the use of the flint and steel.
-  fire_spread_bypass_materials: NETHERRACK,SOUL_SAND,SOUL_SOIL
+  fire_spread_bypass_materials: NETHERRACK,SOUL_SAND,SOUL_SOIL,OBSIDIAN,BEDROCK
  
   # permitted entities https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig, 

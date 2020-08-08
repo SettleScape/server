@@ -64,6 +64,9 @@ towns:
     ranks:
         # Ranks contain additional permissions residents will be
         # granted if they are assigned that specific rank.
+        heir:
+            # This is a dummy rank used to designate a mayoral successor.
+
         assistant:
             - towny.command.plot.*
 
