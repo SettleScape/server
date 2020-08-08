@@ -45,7 +45,7 @@ sets:
                 world: world
                 markup: false
                 x: -6546.0
-                icon: compass
+                icon: world
                 y: 107.0
                 z: 4591.0
                 label: Nearlands
