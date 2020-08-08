@@ -142,7 +142,7 @@ add-xp-player: false
 enable-boosted-items-in-offhand: true
 # Do you want to prevent crop resizing payment when placing more cactus?
 # This option is only related to: sugar_cane, cactus, kelp, bamboo
-prevent-crop-resize-payment: false
+prevent-crop-resize-payment: true
 # Allows, when losing maximum durability of item then it does not pay the player until it is repaired.
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
@@ -408,7 +408,7 @@ BossBar:
   ShowOnEachAction: false
   # Defines in how many parts bossbar will be split visually
   # Valid options: 1, 6, 10, 12, 20
-  SegmentCount: 1
+  SegmentCount: 12
   # How long in sec to show BossBar for player
   # If you have disabled ShowOnEachAction, then keep this number higher than payment interval for better experience
   Timer: 6
@@ -528,7 +528,7 @@ Commands:
     # If this is true, then the user must have another permission to leave the job. jobs.command.leave.jobName
     UsePerPermissionLeave: false
     # Allows to confirm the /jobs leave and leaveall commands, to confirm the leave.
-    EnableConfirmation: false
+    EnableConfirmation: true
     # Specify the confirm expiry time.
     # Time in seconds.
     ConfirmExpiryTime: 5
