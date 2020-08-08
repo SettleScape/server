@@ -3,42 +3,6 @@
 icons: {
     }
 sets:
-    towny.markerset:
-        hide: false
-        circles: {
-            }
-        deficon: house
-        areas: {
-            }
-        label: Towny
-        markers:
-            towny.hawthorne:
-                world: world
-                markup: false
-                x: -552.0
-                icon: house
-                y: 74.0
-                z: -4815.0
-                label: Hawthorne
-            towny.eventide:
-                world: world
-                markup: false
-                x: 1199.0
-                icon: house
-                y: 76.0
-                z: 1926.0
-                label: Eventide
-            towny.adidas:
-                world: world
-                markup: false
-                x: -130.0
-                icon: house
-                y: 74.0
-                z: -1470.0
-                label: Adidas
-        lines: {
-            }
-        layerprio: 2
     geography:
         hide: true
         circles: {
@@ -77,6 +41,14 @@ sets:
                 y: 64.0
                 z: 0.0
                 label: Spawn
+            world:
+                world: world
+                markup: false
+                x: -6546.0
+                icon: compass
+                y: 107.0
+                z: 4591.0
+                label: Nearlands
             worldguard.world_the_end.spawn:
                 world: world_the_end
                 markup: false
