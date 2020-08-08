@@ -1,15 +1,13 @@
 #!/bin/sh
 set -e
+. './env.sh'
 
 ## Variables
-VERSION='1.15.2'
-   TYPE='paper'
- OUTJAR='server.jar'
- OUTDIR='../'
-    CWD=$(pwd)
+TYPE='paper'
+ CWD=$(pwd)
 
 ## Do the thing
-cd "$OUTDIR"
+cd "$ENV_SERVER_ROOT"
 case "$TYPE" in
 
     'bukkit')
@@ -29,14 +27,14 @@ case "$TYPE" in
 
         ## Perform the build
         curl -o "$BUILDJAR" 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
-        java -jar "$BUILDJAR" --rev "$VERSION"
+        java -jar "$BUILDJAR" --rev "$ENV_VERSION"
 
         ## Deploy the new JAR
-        mv spigot*.jar "../$OUTJAR"
+        mv spigot*.jar "../$ENV_SERVER_JAR"
     ;;
 
     'paper')
-        curl -o "$OUTJAR" "https://papermc.io/api/v1/paper/${VERSION}/latest/download"
+        curl -o "$ENV_SERVER_JAR" "https://papermc.io/api/v1/paper/${ENV_VERSION}/latest/download"
     ;;
 esac
 

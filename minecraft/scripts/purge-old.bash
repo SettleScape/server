@@ -1,7 +1,8 @@
 #!/bin/bash
 ## This script removes old files to save space.
+source './env.sh'
 
-## Cariables.
+## Variables.
 declare -a DIRS=(
     'logs' 
     'crash-reports' 
