@@ -156,7 +156,7 @@ outline:
   Enabled: true
   Remove When Leave: true
   Type: BasicBeaconEffect
-  Mode: "not player and not tamed"
+  Mode: "not player and not animal"
   Display Name: "Glowing"
   Description: "Outlines mobs"
   Effect: GLOWING
@@ -227,7 +227,7 @@ resistance:
 
 ################################################################################
 slowfalling:
-  Enabled: false ## Game-ruining for Elytra users, and no way to disable.
+  Enabled: false ## Game-ruining for Elytra users.
   Remove When Leave: true
   Type: BasicBeaconEffect
   Display Name: "Slow Falling"
@@ -248,7 +248,7 @@ slowness:
   Type: BasicBeaconEffect
   Display Name: "Slowness"
   Description: "Slow nearby mobs by "
-  Mode: "not player and not tamed"
+  Mode: "not player and not animal"
   Effect: SLOW
   Levels:
   - Cost:
