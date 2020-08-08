@@ -2,20 +2,20 @@
 =================  =========  ==========  ==========  ===
 Plugin             Version    Released    Checked     URL
 =================  =========  ==========  ==========  ===
-AuctionHouse       2.0.8      2020-02-09  2020-07-19  https://spigotmc.org/resources/61836/updates
-BeaconPlus         2.1.13     2020-07-23  2020-07-23  https://spigotmc.org/resources/67056/updates
-CommandLog         1.2        2016-07-09  2020-07-19  https://spigotmc.org/resources/21176/updates
-CoreProtect        2.19.1     2020-07-17  2020-07-19  https://spigotmc.org/resources/8631/updates
-CraftBook          3.10.2-SS  2020-06-25  2020-07-19  https://dev.bukkit.org/projects/craftbook/files
-Dynmap             3.0.1      2020-06-07  2020-07-19  https://spigotmc.org/resources/274/updates
+AuctionHouse       2.0.8      2020-02-09  2020-08-08  https://spigotmc.org/resources/61836/updates
+BeaconPlus         2.1.23     2020-05-08  2020-08-08  https://spigotmc.org/resources/67056/updates
+CommandLog         1.2        2016-07-09  2020-08-08  https://spigotmc.org/resources/21176/updates
+CoreProtect        2.19.1     2020-07-17  2020-08-08  https://spigotmc.org/resources/8631/updates
+CraftBook          3.10.2     2020-06-25  2020-08-08  https://dev.bukkit.org/projects/craftbook/files
+Dynmap             3.1-b2     2020-06-07  2020-08-08  https://spigotmc.org/resources/274/updates
 Dynmap-Towny       0.81       2020-07-18  2020-07-19  https://github.com/TownyAdvanced/Dynmap-Towny/releases
-Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-07-19  https://github.com/webbukkit/Dynmap-WorldGuard/releases
-EditableSign       7.0.4      2019-08-16  2020-07-19  https://spigotmc.org/resources/2502/updates
-EssentialsX        2.18.0     2020-07-09  2020-07-19  https://github.com/EssentialsX/Essentials/releases
-Jobs Reborn        4.15.11    2020-05-11  2020-07-19  https://spigotmc.org/resources/4216/updates
-LuckPerms          5.1.26     2020-05-20  2020-07-19  https://spigotmc.org/resources/28140/updates
+Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-08-08  https://github.com/webbukkit/Dynmap-WorldGuard/releases
+EditableSign       7.0.4      2019-08-16  2020-08-08  https://spigotmc.org/resources/2502/updates
+EssentialsX        2.18.0     2020-07-09  2020-08-08  https://github.com/EssentialsX/Essentials/releases
+Jobs Reborn        4.16.0     2020-07-07  2020-08-08  https://spigotmc.org/resources/4216/updates
+LuckPerms          5.1.26     2020-05-20  2020-08-08  https://spigotmc.org/resources/28140/updates
 mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resources/64348/updates
-Mineable Spawners  3.0.5      2020-06-27  2020-07-19  https://github.com/dnyferguson/MineableSpawners/releases
+Mineable Spawners  3.0.7      2020-02-08  2020-08-08  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.2      2020-07-15  2020-07-19  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  2020-07-19  https://github.com/SimonOrJ/PhantomSMP/releases
 ParticleLib        1.5.1      2020-06-27  2020-07-20  https://github.com/bytez1337/particlelib/releases

@@ -5274,6 +5274,8 @@ Jobs:
       # Enchants of the item
       Enchantments:
       - DURABILITY:1
+      # Slot number to show the item in the specified row
+      slot: 5
     # You can use the custom player head:
     # Item: player_head
     #   CustomSkull: Notch

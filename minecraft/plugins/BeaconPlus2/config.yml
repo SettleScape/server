@@ -1,4 +1,4 @@
-Configuration Version: bp2-2.8
+Configuration Version: bp2-2.9
 
 Check Interval In Seconds: 3
 Power Check Interval In Seconds: 3
@@ -37,6 +37,7 @@ Particle:
   # in ticks
   Interval: 7
   Stay On Top: true
+  Prevent Synchronously Run: true
   
 Animation:
   Play transition on GUI open: false
@@ -69,6 +70,7 @@ Calculator:
   # NETHERITE_BLOCK: 5
   Maximum Height Check: 6
   Must Be Perfect: true
+  Prevent Synchronously Run: true
 
 Entity Filter:
 #  Only accept very specific entities, prevents ArmorStand being affected
