@@ -81,7 +81,7 @@ extras:
   experience:
     enabled: true
     material: experience_bottle
-    display: '&aYour current XP Levels offer is &2%AMOUNT%'
+    display: '&aYour current XP Levels offer is &2%AMOUNT% &c(%LEVELS% levels)'
     theirdisplay: '&aTheir current XP Levels offer is &2%AMOUNT% &a(+%LEVELS% levels)'
     lore:
     - '&fClick to edit your offer!'
@@ -159,6 +159,7 @@ extras:
     lore:
     - '&fClick to edit your offer!'
     taxpercent: 0
+    enabled: false
 hooks:
   factions:
     allow-trades-in-enemy-territory: false
@@ -171,7 +172,7 @@ soundeffects:
   oncomplete: true
   oncountdown: true
 debug-mode: false
-configversion: 3.71
+configversion: 3.77
 trade-command-compatible-mode: false
 excess-chest:
   enabled: true
