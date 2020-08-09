@@ -1,7 +1,7 @@
 
 #
 #  mcMMO configuration
-#  Last updated on 2.1.118-b${BUILD_NUMBER}
+#  Last updated on 2.1.139-b${BUILD_NUMBER}
 #
 #####
 #
@@ -439,6 +439,18 @@ Bonus_Drops:
         Peony: true
         Lily_Of_The_Valley: true
         Potato: true
+        Weeping_Vines: true
+        Warped_Roots: true
+        Nether_Wart_Block: true
+        Crimson_Fungus: true
+        Warped_Wart_Block: true
+        Shroomlight: true
+        Crimson_Roots: true
+        Twisting_Vines: true
+        Bamboo_Sapling: true
+        Warped_Stem: true
+        Warped_Fungus: true
+        Crimson_Stem: true
     Mining:
         Andesite: true
         Diorite: true
@@ -467,6 +479,23 @@ Bonus_Drops:
         Sandstone: true
         Stone: true
         Cobblestone: true
+        Netherite_Scrap: true
+        Gilded_Blackstone: true
+        Ancient_Debris: true
+        Warped_Nylium: true
+        Nether_Gold_Ore: true
+        Nether_Bricks: true
+        Red_Nether_Bricks: true
+        Crimson_Nylium: true
+        Redstone_Dust: true
+        Crying_Obsidian: true
+        Blackstone: true
+        Polished_Basalt: true
+        Cracked_Nether_Bricks: true
+        Basalt: true
+        Chiseled_Nether_Bricks: true
+        Chain: true
+        Gold_Nugget: true
     Woodcutting:
         Acacia_Wood: true
         Acacia_Log: true
@@ -480,6 +509,25 @@ Bonus_Drops:
         Jungle_Log: true
         Spruce_Wood: true
         Spruce_Log: true
+        Shroomlight: true
+        Crimson_Roots: true
+        Warped_Stem: true
+        Warped_Roots: true
+        Warped_Hyphae: true
+        Stripped_Crimson_Hyphae: true
+        Crimson_Stem: true
+        Crimson_Hyphae: true
+        Stripped_Warped_Hyphae: true
+    Smelting:
+        Iron_Ingot: true
+        Gold_Ingot: true
+        Emerald: true
+        Diamond: true
+        Lapis_Lazuli: true
+        Coal: true
+        Nether_Quartz: true
+        Quartz: true
+        Redstone: true
 #
 #  Settings for commands
 ###

@@ -1,7 +1,7 @@
 
 #
 #  Experience configuration
-#  Last updated on 2.1.114-b${BUILD_NUMBER}
+#  Last updated on 2.1.139-b${BUILD_NUMBER}
 #
 #  Configure the experience formula and experience settings here.
 #
@@ -233,6 +233,7 @@ Experience_Values:
         Snow: 20
         Snow_Block: 40
         Soul_Sand: 40
+        Soul_Soil: 40
     Woodcutting:
         Oak_Log: 70
         Spruce_Log: 80
@@ -261,6 +262,15 @@ Experience_Values:
         Red_Mushroom_Block: 70
         Brown_Mushroom_Block: 70
         Mushroom_Stem: 80
+        Shroomlight: 100
+        Crimson_Hyphae: 50
+        Warped_Stem: 35
+        Crimson_Stem: 35
+        Stripped_Warped_Hyphae: 50
+        Warped_Hyphae: 50
+        Warped_Wart_Block: 1
+        Stripped_Crimson_Hyphae: 50
+        Nether_Wart_Block: 1
     Herbalism:
         Bee_Nest: 200
         Sweet_Berry_Bush: 300
@@ -337,6 +347,16 @@ Experience_Values:
         Cornflower: 150
         Lily_Of_The_Valley: 150
         Wither_Rose: 500
+        Twisting_Vines_Plant: 10
+        Warped_Wart_Block: 3
+        Crimson_Fungus: 50
+        Nether_Sprouts: 10
+        Weeping_Vines_Plant: 10
+        Warped_Roots: 6
+        Nether_Wart_Block: 3
+        Warped_Fungus: 50
+        Shroomlight: 250
+        Crimson_Roots: 6
     Mining:
         Magma_Block: 30
         Tube_Coral_Block: 75
@@ -396,6 +416,19 @@ Experience_Values:
         Purpur_Pillar: 250
         Purpur_Slab: 150
         Purpur_Stairs: 250
+        Bone_Block: 500
+        Nether_Gold_Ore: 1300
+        Chiseled_Nether_Bricks: 50
+        Warped_Nylium: 5
+        Chain: 100
+        Crying_Obsidian: 3000
+        Blackstone: 55
+        Red_Nether_Bricks: 50
+        Cracked_Nether_Bricks: 50
+        Gilded_Blackstone: 200
+        Ancient_Debris: 7777
+        Basalt: 40
+        Crimson_Nylium: 5
     Repair:
         Base: 1000.0
         Wood: 0.6
@@ -406,6 +439,7 @@ Experience_Values:
         Leather: 1.6
         String: 1.8
         Other: 1.5
+        Netherite: 6.0
     Smelting:
         Coal_Ore: 10
         Diamond_Ore: 75
@@ -415,6 +449,8 @@ Experience_Values:
         Lapis_Ore: 40
         Nether_Quartz_Ore: 25
         Redstone_Ore: 15
+        Nether_Gold_Ore: 35
+        Ancient_Debris: 200
     Taming:
         Animal_Taming:
             Llama: 1200
@@ -492,3 +528,10 @@ Experience_Values:
             Trader_Llama: 1.0
             Wandering_trader: 1.0
             Bee: 1.5
+            Strider: 1.2
+            Zoglin: 2.5
+            Hoglin: 4.0
+            Piglin: 2.0
+            Zombie_Pigman: 3.0
+            Piglin_Brute: 4.5
+            Zombified_Piglin: 3.0

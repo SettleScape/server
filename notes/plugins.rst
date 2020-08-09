@@ -14,7 +14,7 @@ EditableSign       7.0.4      2019-08-16  2020-08-08  https://spigotmc.org/resou
 EssentialsX        2.18.0     2020-07-09  2020-08-08  https://github.com/EssentialsX/Essentials/releases
 Jobs Reborn        4.16.0     2020-07-07  2020-08-08  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.1.26     2020-05-20  2020-08-08  https://spigotmc.org/resources/28140/updates
-mcMMO              2.1.118    2020-02-28  2020-04-16  https://spigotmc.org/resources/64348/updates
+mcMMO              2.1.139    2020-08-06  2020-08-08  https://spigotmc.org/resources/64348/updates
 Mineable Spawners  3.0.7      2020-08-02  2020-08-08  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.3      2020-07-15  2020-08-08  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  2020-08-08  https://github.com/SimonOrJ/PhantomSMP/releases
