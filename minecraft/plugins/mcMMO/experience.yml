@@ -119,12 +119,12 @@ Experience_Formula:
     Curve: LINEAR
     # If invalid values are entered mcMMO will not start and print an error in the console
     Linear_Values:
-        base: 1020
+        base: 980
         multiplier: 20
     Exponential_Values:
-        multiplier: 0.1
-        exponent: 1.8
-        base: 2000
+        multiplier: 1000.0
+        exponent: 0.25
+        base: 0
     # Cumulative experience curves will use a players power level instead of their skill level,
     # players with high power levels will have to gain a lot more experience to reach the next level in every skill.
     Cumulative_Curve: false
@@ -150,7 +150,7 @@ Experience_Formula:
         Archery: 1.0
         Axes: 1.0
         Repair: 1.0
-        Fishing: 1.0
+        Fishing: 0.3333
         Alchemy: 1.0
     # XP earned by players with the permission mcmmo.perks.xp.customboost.<skillname> will get multiplied
     # with 1.25 by default, resulting in a 25% XP boost
@@ -439,7 +439,7 @@ Experience_Values:
         Leather: 1.6
         String: 1.8
         Other: 1.5
-        Netherite: 6.0
+        Netherite: 10.0
     Smelting:
         Coal_Ore: 10
         Diamond_Ore: 75
