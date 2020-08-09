@@ -3692,10 +3692,6 @@ Jobs:
     Gui:
       Item: crafting_table
     Craft:
-      dried_kelp_block:
-        income: 2.0
-        points: 2.0
-        experience: 2.0
       stick:
         income: 0.1
         points: 0.1
@@ -4020,14 +4016,6 @@ Jobs:
         income: 0.2
         points: 0.2
         experience: 0.2
-      slime_block:
-        income: 2.0
-        points: 2.0
-        experience: 2.0
-      prismarine:
-        income: 3.0
-        points: 3.0
-        experience: 3.0
       prismarine_bricks:
         income: 3.0
         points: 3.0
