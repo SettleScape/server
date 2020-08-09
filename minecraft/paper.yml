@@ -92,7 +92,7 @@ world-settings:
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
-    portal-search-radius: 128
+    portal-search-radius: 32
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
