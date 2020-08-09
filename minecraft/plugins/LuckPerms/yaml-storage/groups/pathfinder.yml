@@ -23,5 +23,5 @@ permissions:
 - essentials.ext    # Puts you out if you're on fire.  Nice.
 - essentials.feed   # Fills your hunger bar.  No idea what it does to satiation.
 - essentials.heal   # Also removes potion effects.  Hopefully only negative?  Haven't tested.
-- essentials.repair # Can be used to repair one held item.
+# - essentials.repair # Can be used to repair one held item.
 - essentials.rest   # Counts as having slept, and therefore resets the phantom counter.

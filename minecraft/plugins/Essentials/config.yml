@@ -475,11 +475,11 @@ world-time-permissions: false
 #  '^ban([^ip])( .*)?': 60 # 60 seconds /ban cooldown.
 # Note: If you have a command that starts with ^, then you can escape it using backslash (\). e.g. \^command: 123
 command-cooldowns:
-  essentials:ext:    1200
-  essentials:feed:   1200
-  essentials:heal:   1200
-  essentials:rest:   1200
-  essentials:repair: 1200
+  ext:    1200
+  feed:   1200
+  heal:   1200
+# repair: 1200
+  rest:   1200
 
 # Whether command cooldowns should be persistent past server shutdowns
 command-cooldown-persistence: true
