@@ -26,7 +26,7 @@ Feedback:
             SendTitles: true
         # Send notifications to the chat or actionbar of other nearby players when a user activates an ability
         AbilityActivation:
-            SendNotificationToOtherPlayers: true
+            SendNotificationToOtherPlayers: false
     #The actionbar is the message location right above the health bar
     ## If you disable the action bar messages, mcMMO will send the message to the chat system instead
     ActionBarNotifications:
