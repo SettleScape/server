@@ -2,7 +2,7 @@
 =================  =========  ==========  ==========  ===
 Plugin             Version    Released    Checked     URL
 =================  =========  ==========  ==========  ===
-AuctionHouse       2.1-rc6    2020-08-02  2020-08-13  https://spigotmc.org/resources/61836/updates
+AuctionHouse       2.0.8      2020-02-09  2020-08-08  https://spigotmc.org/resources/61836/updates
 BeaconPlus         2.1.23     2020-08-04  2020-08-08  https://spigotmc.org/resources/67056/updates
 CommandLog         1.2        2016-07-09  2020-08-08  https://spigotmc.org/resources/21176/updates
 CoreProtect        2.19.1     2020-07-17  2020-08-08  https://spigotmc.org/resources/8631/updates
@@ -29,7 +29,7 @@ TownyNameUpdater   5.0        2020-04-25  2020-08-08  https://github.com/TownyAd
 TownyFlight        1.6.2      2020-07-20  2020-08-08  https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.77       2020-08-03  2020-08-08  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.3      2020-07-17  2020-08-08  https://spigotmc.org/resources/34315/updates
-WorldEdit          7.2.0-b3   2020-08-10  2020-08-13  https://dev.bukkit.org/projects/worldedit/files
-WorldGuard         7.0.4-b1   2020-06-26  2020-08-13  https://dev.bukkit.org/projects/worldguard/files
+WorldEdit          7.1.0      2020-01-26  2020-08-08  https://dev.bukkit.org/projects/worldedit/files
+WorldGuard         7.0.3      2020-06-26  2020-08-08  https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny   1.1.0      2020-01-03  2020-08-08  https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  =========  ==========  ==========  ===
