@@ -400,9 +400,9 @@ Herbalism:
 Fishing:
     MagicHunter:
         Standard:
-            Rank_1: 33
+            Rank_1: 999
         RetroMode:
-            Rank_1: 330
+            Rank_1: 9990
     Shake:
         Standard:
             Rank_1: 50
