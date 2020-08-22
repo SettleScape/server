@@ -70,3 +70,38 @@ pathfinder:
     - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
   rankup:
     requirements-not-met: '&cIn order to rank up to {RANK}, you need a balance of ${MONEY}, a power level of {AMOUNT mcmmo-power-level}, and the following items: 1 nether star and 1 conduit.'
+
+#-------------------------------------------------------------------------------
+pathfinder+:
+  rank: 'pathfinder'
+  next: 'pathfinder+'
+  requirements:
+    - 'mcmmo-power-level 600'
+  commands:
+    - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
+  rankup:
+    requirements-not-met: '&cIn order to rank up to {RANK}, you need a power level of {AMOUNT mcmmo-power-level}.'
+
+
+#-------------------------------------------------------------------------------
+pathfinder++:
+  rank: 'pathfinder+'
+  next: 'pathfinder++'
+  requirements:
+    - 'mcmmo-power-level 800'
+  commands:
+    - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
+  rankup:
+    requirements-not-met: '&cIn order to rank up to {RANK}, you need a power level of {AMOUNT mcmmo-power-level}.'
+
+
+#-------------------------------------------------------------------------------
+pathfinder+++:
+  rank: 'pathfinder++'
+  next: 'pathfinder+++'
+  requirements:
+    - 'mcmmo-power-level 1000'
+  commands:
+    - 'broadcast {PLAYER} &7has been promoted to &6{RANK}&7!'
+  rankup:
+    requirements-not-met: '&cIn order to rank up to {RANK}, you need a power level of {AMOUNT mcmmo-power-level}.'

@@ -1,0 +1,16 @@
+name: pathfinder+++
+parents:
+- pathfinder++
+permissions:
+- weight.17
+- displayname.pathfinder # Treated the same as Pathfinder for most purposes.
+
+# Limit increases
+- auctionhouse.auctions.14: {value: false}
+- auctionhouse.auctions.16
+- shopchest.limit.140: {value: false}
+- shopchest.limit.160
+- essentials.sethome.multiple.six: {value: false}
+- essentials.sethome.multiple.seven
+- mineablespawners.minechance.1: {value: false}
+- mineablespawners.minechance.0

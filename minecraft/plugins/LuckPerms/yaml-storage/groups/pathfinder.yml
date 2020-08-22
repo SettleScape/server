@@ -7,6 +7,9 @@ permissions:
 - weight.14
 - essentials.kits.pathfinder
 
+# Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no new abilities or ranks exist.
+- rankup.auto
+
 # Limit increases
 - auctionhouse.auctions.8: {value: false}
 - auctionhouse.auctions.10
