@@ -150,6 +150,16 @@ haste:
       Experience: 0
     Amplifier: 1
     Extra Description: "40%" ## Vanilla
+  - Cost:
+      Money: 40000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "60%" ## Vanilla
+  - Cost:
+      Money: 80000
+      Experience: 0
+    Amplifier: 1
+    Extra Description: "80%" ## Vanilla
 
 ################################################################################
 outline:
