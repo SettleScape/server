@@ -3,7 +3,7 @@
 Plugin             Version    Released    Checked     URL
 =================  =========  ==========  ==========  ===
 AuctionHouse       2.0.8      2020-02-09  2020-08-08  https://spigotmc.org/resources/61836/updates
-BeaconPlus         2.1.23     2020-08-04  2020-08-08  https://spigotmc.org/resources/67056/updates
+BeaconPlus         2.1.25     2020-08-17  2020-08-22  https://spigotmc.org/resources/67056/updates
 CommandLog         1.2        2016-07-09  2020-08-08  https://spigotmc.org/resources/21176/updates
 CoreProtect        2.19.1     2020-07-17  2020-08-08  https://spigotmc.org/resources/8631/updates
 CraftBook          3.10.2     2020-06-25  2020-08-08  https://dev.bukkit.org/projects/craftbook/files
