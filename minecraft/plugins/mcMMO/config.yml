@@ -226,13 +226,13 @@ Party:
     # Enable Hurting other players in the same party
     FriendlyFire: false
     # Maximum size for a party, -1 for infinite
-    MaxSize: 4
+    MaxSize: 5
     # Amount of time (in hours) to wait between automatically kicking old party members
     # To only run at server start, set to 0
     # To never kick old users, set to -1
-    AutoKick_Interval: 12
+    AutoKick_Interval: -1
     # Any user who hasn't connected in this many days will get kicked from their party
-    Old_Party_Member_Cutoff: 7
+    Old_Party_Member_Cutoff: 90
     # Settings for party share modes
     Sharing:
         ExpShare_bonus_base: 1.1
@@ -243,16 +243,16 @@ Party:
     # Newly created parties will not immediately have access to all the party features
     # and have to level up the party a bit before they can use them.
     Leveling:
-        Level_Cap: 10
+        Level_Cap: 1
         # Uses the regular XP formula but is multiplied by <amount of party members> + <Xp_Curve_Modifier>
         Xp_Curve_Modifier: 3
-        Near_Members_Needed: false
-        Inform_All_Party_Members_On_LevelUp: false
+        Near_Members_Needed: true
+        Inform_All_Party_Members_On_LevelUp: true
         Chat_UnlockLevel: 1
-        Teleport_UnlockLevel: 2
-        Alliance_UnlockLevel: 5
-        ItemShare_UnlockLevel: 8
-        XpShare_UnlockLevel: 10
+        Teleport_UnlockLevel: 1
+        Alliance_UnlockLevel: 1
+        ItemShare_UnlockLevel: 1
+        XpShare_UnlockLevel: 1
 #
 #  Settings for Abilities
 ###
@@ -557,11 +557,11 @@ Commands:
         # to teleport to, from, or within any given world.
         World_Based_Permissions: false
     partychat:
-        Chat_Prefix_Format: '[[GRAY]][[[DARK_AQUA]]{0}[[GRAY]]][[RESET]]'
+        Chat_Prefix_Format: '[[GRAY]][[[WHITE]]PTY[[GRAY]]][[RESET]]'
         Use_Display_Names: true
-        Chat_Prefix_Format_Ally: '[[GRAY]][[[DARK_PURPLE]]ALY[[GRAY]]][[RESET]]'
+        Chat_Prefix_Format_Ally: '[[GRAY]][[[BLACK]]ALY[[GRAY]]][[RESET]]'
     adminchat:
-        Chat_Prefix_Format: '[[GRAY]][[[DARK_RED]]{0}[[GRAY]]][[RESET]]'
+        Chat_Prefix_Format: '[[GRAY]][[[RED]]ADM[[GRAY]]][[RESET]]'
         Use_Display_Names: true
 #
 #  Settings for particles
