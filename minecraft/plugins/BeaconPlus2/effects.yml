@@ -48,7 +48,7 @@ fire_resistance:
   Type: BasicBeaconEffect
   Display Name: "Fire Resistance"
   Description: "Eliminates fire damage"
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effect: FIRE_RESISTANCE
   Levels:
   - Cost:
@@ -150,16 +150,16 @@ haste:
       Experience: 0
     Amplifier: 1
     Extra Description: "40%" ## Vanilla
-  - Cost:
-      Money: 40000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "60%" ## Vanilla
-  - Cost:
-      Money: 80000
-      Experience: 0
-    Amplifier: 1
-    Extra Description: "80%" ## Vanilla
+# - Cost:
+#     Money: 40000
+#     Experience: 0
+#   Amplifier: 1
+#   Extra Description: "60%" ## Vanilla
+# - Cost:
+#     Money: 80000
+#     Experience: 0
+#   Amplifier: 1
+#   Extra Description: "80%" ## Vanilla
 
 ################################################################################
 outline:
@@ -205,7 +205,7 @@ regeneration:
   Type: BasicBeaconEffect
   Display Name: "Regeneration"
   Description: "Heal over time "
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effect: REGENERATION
   Levels:
   - Cost:
@@ -221,7 +221,7 @@ resistance:
   Type: BasicBeaconEffect
   Display Name: "Resistance"
   Description: "Reduces incoming damage by "
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effect: DAMAGE_RESISTANCE
   Levels:
   - Cost:
@@ -307,7 +307,7 @@ speed:
   Type: BasicBeaconEffect
   Display Name: "Speed"
   Description: "Increases movement speed by "
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effect: SPEED
   Levels:
   - Cost:
@@ -328,7 +328,7 @@ status:
   Type: BoostBeaconEffect
   Display Name: "Dispell"
   Description: "Removes negative status effects"
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effects:
   - BAD_OMEN ## *Extremely* useful when you have villagers.
   - CONFUSION
@@ -355,7 +355,7 @@ strength:
   Type: BasicBeaconEffect
   Display Name: "Strength"
   Description: "Increases outgoing damage by "
-  Mode: "player and tamed"
+  Mode: "player or tamed"
   Effect: INCREASE_DAMAGE
   Levels:
   - Cost:

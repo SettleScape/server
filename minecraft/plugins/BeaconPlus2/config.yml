@@ -24,7 +24,7 @@ Count Height Range: false
 
 # Don't give effect to any block/entities that are lower than beacon Y level
 # this option defaultly set to true based on vanilla beacon behaviour
-Disable Lower Height: true
+Disable Lower Height: false
 
 Permissions:
   Open: "beaconplus.open"
