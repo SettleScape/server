@@ -1,4 +1,4 @@
-Configuration Version: bp2-2.9
+Configuration Version: bp2-2.10
 
 Check Interval In Seconds: 3
 Power Check Interval In Seconds: 3
@@ -9,6 +9,9 @@ Check For Update: true
 
 # Beacon must have nothing above it in order to enable
 Must Beam Through Sky: true
+# Beacons in nether don't need to beam through the sky
+# cause there will always bedrock above it.
+Nether Exceptional Through Sky: true
 
 # Only count layer if its perfectly filled
 Only Count Perfect Structure: true
@@ -162,6 +165,7 @@ Listener:
     Entity Damage: HIGHEST
     Inventory Click: HIGHEST
     Inventory Move: HIGHEST
+    Player Teleport: HIGHEST
   Ignore Cancelled:
     Chunk Load: true
     Chunk Unload: true
@@ -177,3 +181,4 @@ Listener:
     Entity Damage: true
     Inventory Click: true
     Inventory Move: true
+    Player Teleport: true
