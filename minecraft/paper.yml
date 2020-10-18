@@ -14,6 +14,7 @@ allow-perm-block-break-exploits: false
 verbose: false
 config-version: 20
 settings:
+  max-joins-per-tick: 3
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: -1
   console-has-all-permissions: true
