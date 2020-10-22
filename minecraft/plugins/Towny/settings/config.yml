@@ -1089,7 +1089,7 @@ economy:
     # if a resident can't pay his plot tax he loses his plot.
     # if a resident can't pay his town tax then he is kicked from the town.
     # if a town or nation fails to pay it's upkeep it is deleted.
-    enabled: 'false'
+    enabled: 'true'
     # Maximum tax amount allowed for townblocks sold to players.
     max_plot_tax_amount: '100.0'
     # Maximum tax amount allowed for towns when using flat taxes.
@@ -1110,16 +1110,16 @@ economy:
     nation_pertown_upkeep_affected_by_nation_level_modifier: 'false'
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
-    price_town_upkeep: '0.0'
+    price_town_upkeep: '1.0'
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
     town_plotbased_upkeep: 'true'
     # If set to true, the plot-based-upkeep system will be modified by the Town Levels' upkeep modifiers.
     town_plotbased_upkeep_affected_by_town_level_modifier: 'false'
     # If set to any amount over zero, if a town's plot-based upkeep totals less than this value, the town will pay the minimum instead.
-    town_plotbased_upkeep_minimum_amount: '0.0'
+    town_plotbased_upkeep_minimum_amount: '50.0'
     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
-    price_town_overclaimed_upkeep_penalty: '0.0'
+    price_town_overclaimed_upkeep_penalty: '10.0'
     # Uses total number of plots that the town is overclaimed by, to determine the price_town_overclaimed_upkeep_penalty cost.
     # If set to true the penalty is calculated (# of plots overclaimed X price_town_overclaimed_upkeep_penalty).
     price_town_overclaimed_upkeep_penalty_plotbased: 'true'
