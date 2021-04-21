@@ -2,15 +2,15 @@
 =================  =========  ==========  ==========  ===
 Plugin             Version    Released    Checked     URL
 =================  =========  ==========  ==========  ===
-AuctionHouse       2.0.8      2020-02-09  2020-08-08  https://spigotmc.org/resources/61836/updates
-BeaconPlus         2.1.26     2020-09-02  2020-10-18  https://spigotmc.org/resources/67056/updates
-CommandLog         1.2        2016-07-09  2020-08-08  https://spigotmc.org/resources/21176/updates
-CoreProtect        2.19.1     2020-07-17  2020-08-08  https://spigotmc.org/resources/8631/updates
-CraftBook          3.10.2     2020-06-25  2020-08-08  https://dev.bukkit.org/projects/craftbook/files
-Dynmap             3.1-b2     2020-06-07  2020-08-08  https://spigotmc.org/resources/274/updates
+AuctionHouse       2.0.8      2020-02-09  2021-04-20  https://spigotmc.org/resources/61836/updates
+BeaconPlus         2.1.26     2020-09-02  2021-04-20  https://spigotmc.org/resources/67056/updates
+CommandLog         1.2        2016-07-09  2021-04-20  https://spigotmc.org/resources/21176/updates
+CoreProtect        2.19.5     2021-03-11  2021-04-20  https://spigotmc.org/resources/8631/updates
+CraftBook          3.10.2     2020-06-25  2021-04-20  https://dev.bukkit.org/projects/craftbook/files
+Dynmap             3.1        2021-03-17  2021-04-20  https://spigotmc.org/resources/274/updates
 Dynmap-Towny       0.81       2020-07-18  2020-08-08  https://github.com/TownyAdvanced/Dynmap-Towny/releases
-Dynmap-WorldGuard  CUSTOM     2019-12-15  2020-08-08  https://github.com/webbukkit/Dynmap-WorldGuard/releases
-EditableSign       7.0.4      2019-08-16  2020-08-08  https://spigotmc.org/resources/2502/updates
+Dynmap-WorldGuard  CUSTOM     2019-12-15  2021-04-20  https://github.com/webbukkit/Dynmap-WorldGuard/releases
+EditableSign       7.0.4      2019-08-16  2021-04-20  https://spigotmc.org/resources/2502/updates
 EssentialsX        2.18.0     2020-07-09  2020-08-08  https://github.com/EssentialsX/Essentials/releases
 Jobs Reborn        4.16.0     2020-07-07  2020-08-08  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.1.26     2020-05-20  2020-08-08  https://spigotmc.org/resources/28140/updates
