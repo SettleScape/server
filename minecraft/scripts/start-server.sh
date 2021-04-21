@@ -3,7 +3,7 @@
 
 ## Figure out which Java to use.  (Proprietary Java preferred.)
 I=0
-while [ ! -f "$JAVA" ]; do
+until [ -f "$JAVA" ]; do
     case $I in
     ## Java 8 provides maximum compatibility for old plugins.
     0) JAVA='/lib/jvm/java-8-jdk/jre/bin/java' ;;
@@ -14,7 +14,7 @@ while [ ! -f "$JAVA" ]; do
     ## If none of the above worked, try using the system's default java.
     *) JAVA=`which java` ;;
     esac
-    I=`expr $I+1`
+    I=`expr $I + 1`
 done
 
 ## Official 1.14.4 client options.
@@ -68,7 +68,7 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 cd "$ENV_SERVER_ROOT"
-# screen -d -m -S "$ENV_SCREEN_NAME" \
+screen -d -m -S "$ENV_SCREEN_NAME" \
 "$JAVA" $JAVA_OPTS -jar "./$ENV_SERVER_JAR" --nogui #--forceUpgrade
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
 #NOTE: Press Ctrl+A, Ctrl+D to detatch from the SettleScape screen.
