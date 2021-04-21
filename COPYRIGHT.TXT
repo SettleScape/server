@@ -6,8 +6,7 @@ apart from the `- ` at the start of each line.)
 - **/.gitignore
 - /minecraft/*.png
 - /minecraft/*.svg
-- /minecraft/*.bash
-- /minecraft/*.sh
+- /minecraft/scripts/**
 - /minecraft/plugins/CraftBook/crafting-recipes.yml
 - /minecraft/plugins/dynmap/marers.yml
 - /minecraft/plugins/dynmap/worlds.txt
