@@ -104,7 +104,7 @@ fullbright:
 
 ################################################################################
 furnace:
-  Enabled: true
+  Enabled: false ## This breaks all in-range furnaces that use bamboo as a fuel source.
   Type: FurnaceBoostEffect
   Display Name: "Bellows"
   Description: "Hastens nearby furnaces by "
