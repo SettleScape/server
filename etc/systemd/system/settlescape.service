@@ -4,16 +4,13 @@ Description=settlescape server
 [Service]
 Type=idle
 
-Environment="START_SCRIPT=start-service.sh"
-Environment="SCREEN_NAME=SettleScape"
-
-ExecStart="/srv/minecraft/settlescape/scripts/$START_SCRIPT"
-ExecStop=/usr/bin/screen -S "$SCREEN_NAME" -X stuff 'stop \n'
+ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.sh"
+ExecStop=/usr/bin/screen -S 'SettleScape' -X stuff 'stop \n'
 
 Restart=on-failure
 RestartSec=1s
 
-WorkingDirectory=/srv/minecraft/settlescape
+WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
 
 User=minecraft
 Group=minecraft
