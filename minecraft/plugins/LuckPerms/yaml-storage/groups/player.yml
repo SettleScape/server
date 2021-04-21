@@ -147,6 +147,7 @@ permissions:
 # - essentials.signs.create.mail
 # - essentials.signs.use.mail
 # - essentials.signs.break.mail
+- mcmmo.commands.mcrank
 - rankup.auto: {value: false}
 
 # Restrictions
