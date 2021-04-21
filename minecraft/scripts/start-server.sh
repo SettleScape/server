@@ -1,9 +1,21 @@
 #!/bin/sh
 . './env.sh'
 
-## Prefer Java 8 for better compatibility with old plugins
-JAVA='/lib/jvm/java-8-jdk/bin/java'
-[ ! -f "$JAVA" ] && JAVA='java'
+## Figure out which Java to use.  (Proprietary Java preferred.)
+I=0
+while [ ! -f "$JAVA" ]; do
+    case $I in
+    ## Java 8 provides maximum compatibility for old plugins.
+    0) JAVA='/lib/jvm/java-8-jdk/jre/bin/java' ;;
+    1) JAVA='/lib/jvm/java-8-openjdk/jre/bin/java' ;;
+    ## Java 11 is an LTS release, and is well-tolerated by our plugins.
+    2) JAVA='/lib/jvm/java-11-jdk/jre/bin/java' ;;
+    3) JAVA='/lib/jvm/java-11-openjdk/jre/bin/java' ;;
+    ## If none of the above worked, try using the system's default java.
+    *) JAVA=`which java` ;;
+    esac
+    I=`expr $I+1`
+done
 
 ## Official 1.14.4 client options.
 # VANILLA_OPTS=$(echo                    \
@@ -56,7 +68,7 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 cd "$ENV_SERVER_ROOT"
-screen -d -m -S "$ENV_SCREEN_NAME" \
+# screen -d -m -S "$ENV_SCREEN_NAME" \
 "$JAVA" $JAVA_OPTS -jar "./$ENV_SERVER_JAR" --nogui #--forceUpgrade
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
 #NOTE: Press Ctrl+A, Ctrl+D to detatch from the SettleScape screen.
