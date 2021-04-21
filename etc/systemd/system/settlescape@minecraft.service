@@ -1,8 +1,11 @@
 [Unit]
 Description=settlescape server
+After=network.target
 
 [Service]
 Type=idle
+
+Environment="TERM=xterm-16color"
 
 ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.sh"
 ExecStop=/usr/bin/screen -S 'SettleScape' -X stuff 'stop \n'
