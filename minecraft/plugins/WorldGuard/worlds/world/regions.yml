@@ -25,10 +25,11 @@ regions:
         flags:
             other-explosion: deny
             frosted-ice-form: deny
-            snow-fall: deny
+            use: allow
             ice-melt: deny
-            interact: allow
+            snow-fall: deny
             vehicle-destroy: allow
+            interact: allow
             chest-access: allow
             firework-damage: deny
             ride: allow
@@ -62,8 +63,8 @@ regions:
         min: {x: -704, y: 0, z: -4848}
         max: {x: -353, y: 255, z: -4561}
         members: {}
-        flags: {other-explosion: deny, lava-fire: deny, chorus-fruit-teleport: deny,
-            dynmap-boost: true, block-trampling: deny, lighter: deny, vehicle-destroy: deny,
+        flags: {other-explosion: deny, chorus-fruit-teleport: deny, lava-fire: deny,
+            dynmap-boost: true, block-trampling: deny, vehicle-destroy: deny, lighter: deny,
             pistons: deny, chest-access: deny, block-place: deny, fire-spread: deny,
             enderpearl: deny, creeper-explosion: deny, vehicle-place: deny, create-shop: deny,
             town-creation: deny, item-frame-rotation: deny, block-break: deny, tnt: deny,
