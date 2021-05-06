@@ -10,7 +10,10 @@ chmod -Rc 'u+rw'      '.'
 chown -Rc 'minecraft' '.'
 chmod -Rc 'g+rw'      '.'
 chgrp -Rc 'minecraft' '.'
-chmod -Rc 'o-rw'      '.'
+chmod -Rc 'o-rwx'     '.'
 
-## Done
+## Special permissions
+chmod -Rc 'g-rw' '.ssh'
+
+## Done 
 exit 0
