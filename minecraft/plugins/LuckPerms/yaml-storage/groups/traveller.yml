@@ -20,7 +20,7 @@ permissions:
 
 # Basic quality of life improvements
 - essentials.workbench
-- essentials.cartographytable
+- essentials.stonecutter
 - essentials.clearinventory
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use

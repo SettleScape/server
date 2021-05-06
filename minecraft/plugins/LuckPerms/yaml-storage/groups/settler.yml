@@ -30,8 +30,11 @@ permissions:
 - townychat.chat.color
 - essentials.nick.color
 
+# Cosmetic crafting stations
+- essentials.loom
+- essentials.cartographytable
+
 # Misc
 - essentials.hat
 - essentials.itemlore
 - essentials.delhome
-- essentials.loom ## To help with cosmetics
