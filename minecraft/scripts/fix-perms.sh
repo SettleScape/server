@@ -13,7 +13,10 @@ chgrp -Rc 'minecraft' '.'
 chmod -Rc 'o-rwx'     '.'
 
 ## Special permissions
-chmod -Rc 'g-rw' '.ssh'
+chmod  -c 'go-x' '.'
+chmod -Rc 'g-w'  '.ssh'
+chmod  -c 'g-r'  '.ssh' '.ssh/id_rsa'
+#TODO: Exclude `.git` from all this somehow.
 
-## Done 
+## Done
 exit 0
