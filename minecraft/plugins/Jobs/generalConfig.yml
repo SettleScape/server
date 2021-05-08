@@ -239,7 +239,7 @@ Economy:
     # Username should be with Correct capitalization, it can be same as setup in server account before
     AccountName: Server
     # Amount in percentage. You can grant money and points permissions (jobs.tax.money.amount, jobs.tax.points.amount) for taxes.
-    Amount: 15.0
+    Amount: 10.0
     # Do you want to transfer taxes to server account?
     TransferToServerAccount: true
     # With this true, taxes will be taken from players payment and he will get less money than its shown in jobs info
@@ -309,7 +309,7 @@ Economy:
     PayForRenaming: true
   Enchant:
     # Do you want to give money for enchanting items in anvil?
-    PayForEnchantingOnAnvil: false
+    PayForEnchantingOnAnvil: true
     # Do you want to allow players to enchant their boosted items?
     AllowEnchantingBoostedItems: true
   Crafting:
@@ -332,16 +332,16 @@ ExploitProtections:
   Furnaces:
     # When enabled, players interacted furnaces will be saved into a file and will be reassigned after restart to keep giving out money
     # Players will no longer need to click on furnace to get paid from it after server restart
-    Reassign: true
+    Reassign: false
     # Defines max available furnaces each player can have to get paid from
     # This can be overridden with jobs.maxfurnaces.[amount] permission node
     MaxDefaultAvailable: 0
   BlastFurnaces:
     Reassign: false
-    MaxDefaultAvailable: 15
+    MaxDefaultAvailable: 0
   Smokers:
     Reassign: false
-    MaxDefaultAvailable: 15
+    MaxDefaultAvailable: 0
   BrewingStands:
     # When enabled, players interacted brewing stands will be saved into file and will be reassigned after restart to keep giving out money
     # Players will no longer need to click on brewing stand to get paid from it after server restart
@@ -445,7 +445,7 @@ ShowChatMessage:
   OnLevelChange: true
   OnEmptyServerAccount: true
 # Send title and chat message when a player reached the maximum level in a job.
-SendTitleMessageWhenMaxLevelReached: false
+SendTitleMessageWhenMaxLevelReached: true
 # Sounds
 # Extra sounds on some events
 # All sounds can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
