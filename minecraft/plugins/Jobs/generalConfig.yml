@@ -11,7 +11,7 @@ locale-language: en
 storage:
   # storage method, can be MySQL or sqlite
   method: sqlite
-# Requires Mysql.
+# Requires Mysql
 mysql:
   username: root
   password: ''
@@ -21,6 +21,8 @@ mysql:
   verify-server-certificate: false
   use-ssl: false
   auto-reconnect: true
+  characterEncoding: utf8
+  encoding: UTF-8
 # How often in minutes you want it to save. This must be a non-zero number
 save-period: 10
 # Should player data be saved on disconnect?
@@ -140,9 +142,12 @@ disablePaymentIfRiding: false
 add-xp-player: false
 # Do the jobs boost ignore the boosted items usage in off hand?
 enable-boosted-items-in-offhand: true
-# Do you want to prevent crop resizing payment when placing more cactus?
-# This option is only related to: sugar_cane, cactus, kelp, bamboo
-prevent-crop-resize-payment: true
+# Do the jobs boost ignore the boosted items usage in main hand?
+enable-boosted-items-in-mainhand: true
+# Do the jobs boost ignore the boosted items usage in armor slots?
+enable-boosted-armor-items: true
+# Allows to pay for stacked entities for each one. Requires StackMob or WildStacker.
+pay-for-stacked-entities: false
 # Allows, when losing maximum durability of item then it does not pay the player until it is repaired.
 # E.g. the player wants to enchant a item with enchanting table and the item has durability loss then not paying.
 allow-pay-for-durability-loss:
@@ -233,7 +238,7 @@ Economy:
     use: false
     # Username should be with Correct capitalization, it can be same as setup in server account before
     AccountName: Server
-    # Amount in percentage
+    # Amount in percentage. You can grant money and points permissions (jobs.tax.money.amount, jobs.tax.points.amount) for taxes.
     Amount: 15.0
     # Do you want to transfer taxes to server account?
     TransferToServerAccount: true
@@ -305,10 +310,17 @@ Economy:
   Enchant:
     # Do you want to give money for enchanting items in anvil?
     PayForEnchantingOnAnvil: false
+    # Do you want to allow players to enchant their boosted items?
+    AllowEnchantingBoostedItems: true
   Crafting:
     # With this true, player will get money for all crafted items instead of each crafting action (like with old payment mechanic)
     # By default its false, as you can make ALOT of money if prices kept from old payment mechanics
     PayForEachCraft: false
+    # true - if players tries to combine (repair) 2 same items, like armor or weapon do they get income for it?
+    PayForCombiningItems: true
+  VTrade:
+    # With this true, player will get money for all trade items instead of each trade action
+    payForEachTradeItem: false
   MilkingCow:
     # With this true, when timer is still going, cow milking event will be canceled
     # With this false, player will get bucket of milk, but still no payment
@@ -324,6 +336,12 @@ ExploitProtections:
     # Defines max available furnaces each player can have to get paid from
     # This can be overridden with jobs.maxfurnaces.[amount] permission node
     MaxDefaultAvailable: 0
+  BlastFurnaces:
+    Reassign: false
+    MaxDefaultAvailable: 15
+  Smokers:
+    Reassign: false
+    MaxDefaultAvailable: 15
   BrewingStands:
     # When enabled, players interacted brewing stands will be saved into file and will be reassigned after restart to keep giving out money
     # Players will no longer need to click on brewing stand to get paid from it after server restart
@@ -395,7 +413,10 @@ old-job:
 ActionBars:
   Messages:
     # When this set to true player will see action bar messages by default
+    # When false, players will see chat messages instead.
     EnabledByDefault: true
+    # If true, should we mute the payment messages from appearing in chat if actionbar is disabled?
+    SilentMode: false
 BossBar:
   # Enables BossBar feature
   # Works only from 1.9 mc version
@@ -423,6 +444,8 @@ ShowChatMessage:
   OnTitleChange: true
   OnLevelChange: true
   OnEmptyServerAccount: true
+# Send title and chat message when a player reached the maximum level in a job.
+SendTitleMessageWhenMaxLevelReached: false
 # Sounds
 # Extra sounds on some events
 # All sounds can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
@@ -487,10 +510,6 @@ JobsGUI:
   # With false left mouse button will show more info, right will join job or inversely.
   # Don't forget to adjust locale file!
   SwitcheButtons: false
-  # Do you want to use the left/right click button to leave from job?
-  # This option click type depend from SwitcheButtons option, if true using the left button and inversely.
-  # Don't forget to adjust locale file
-  UseInversedClickToLeave: false
   # Allows players to join a specified job via GUI.
   DisableJoiningJobThroughGui: false
   # Do you want to show the action names in GUI?

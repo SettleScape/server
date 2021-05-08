@@ -1,0 +1,96 @@
+Landscaper:
+  fullname: Landscaper
+  shortname: L
+  description: §7Paid for breaking shovel-blocks with a shovel and axe-blocks with
+    an axe.
+  ChatColour: YELLOW
+  chat-display: none
+  max-level: 100
+  leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+  income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) -
+    ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) -
+    ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  experience-progression-equation: baseexperience - (baseexperience * ((numjobs -
+    1) * 0.01))
+  rejoinCooldown: 3600
+  maxDailyQuests: 0
+  Gui:
+    Item: grass_block
+  Break:
+    red_sand:
+      income: 1
+      points: 1
+      experience: 1
+    coarse_dirt:
+      income: 1
+      points: 1
+      experience: 1
+    dirt:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    grass_block:
+      income: 0.3
+      points: 0.3
+      experience: 0.3
+    gravel:
+      income: 1
+      points: 1
+      experience: 1.0
+    sand:
+      income: 0.4
+      points: 0.4
+      experience: 0.5
+    clay:
+      income: 1
+      points: 1
+      experience: 1.0
+    oak_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    spruce_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    birch_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    jungle_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    acacia_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    dark_oak_log:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    stripped_oak_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25
+    stripped_spruce_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25
+    stripped_birch_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25
+    stripped_jungle_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25
+    stripped_acacia_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25
+    stripped_dark_oak_log:
+      income: 0.75
+      points: 0.75
+      experience: 0.25

@@ -1,0 +1,285 @@
+Hunter:
+  fullname: Hunter
+  shortname: H
+  description: §7Paid for killing. Includes fishing.
+  ChatColour: RED
+  chat-display: none
+  max-level: 100
+  leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+  income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) -
+    ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) -
+    ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  experience-progression-equation: baseexperience - (baseexperience * ((numjobs -
+    1) * 0.01))
+  rejoinCooldown: 3600
+  maxDailyQuests: 0
+  Gui:
+    Item: crossbow
+  Break:
+    cobweb:
+      income: 5.0
+      points: 5
+      experience: 5.0
+  Kill:
+    bat:
+      income: 2.0
+      points: 2
+      experience: 2.0
+    cat:
+      income: 2.0
+      points: 2
+      experience: 2.0
+    chicken:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    cod:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    cow:
+      income: 6.0
+      points: 6
+      experience: 6.0
+    donkey:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    horse:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    fox:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    mooshroom:
+      income: 7.0
+      points: 7
+      experience: 7.0
+    mule:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    ocelot:
+      income: 10.0
+      points: 10
+      experience: 10.0
+    parrot:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    pig:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    rabbit:
+      income: 2.0
+      points: 2
+      experience: 2.0
+    salmon:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    sheep:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    squid:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    tropical_fish:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    turtle:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    villager:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    wandering_trader:
+      income: 10.0
+      points: 10
+      experience: 10.0
+    pufferfish:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    dolphin:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    llama:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    trader_llama:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    panda:
+      income: 4.0
+      points: 4
+      experience: 4.0
+    polar_bear:
+      income: 10.0
+      points: 10
+      experience: 5.0
+    wolf:
+      income: 10.0
+      points: 10
+      experience: 5.0
+    blaze:
+      income: 20.0
+      points: 20
+      experience: 15.0
+    cave_spider:
+      income: 20.0
+      points: 20
+      experience: 15.0
+    creeper:
+      income: 15.0
+      points: 15
+      experience: 15.0
+    drowned:
+      income: 15.0
+      points: 15
+      experience: 15.0
+    elder_guardian:
+      income: 50.0
+      points: 50
+      experience: 50.0
+    enderman:
+      income: 20.0
+      points: 20
+      experience: 15.0
+    endermite:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    ghast:
+      income: 30.0
+      points: 30
+      experience: 30.0
+    evoker:
+      income: 20.0
+      points: 20
+      experience: 20.0
+    guardian:
+      income: 25.0
+      points: 25
+      experience: 25.0
+    husk:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    magma_cube:
+      income: 1.0
+      points: 1
+      experience: 1.0
+    phantom:
+      income: 7.0
+      points: 7
+      experience: 7.0
+    pillager:
+      income: 12.0
+      points: 12
+      experience: 15.0
+    ravager:
+      income: 15.0
+      points: 15
+      experience: 15.0
+    shulker:
+      income: 7.5
+      points: 7
+      experience: 7.0
+    silverfish:
+      income: 3.0
+      points: 3
+      experience: 5.0
+    skeleton:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    skeleton_horse:
+      income: 5.0
+      points: 5
+      experience: 5.0
+    slime:
+      income: 1.0
+      points: 1
+      experience: 1.0
+    spider:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    stray:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    vex:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    vindicator:
+      income: 12.0
+      points: 12
+      experience: 15.0
+    witch:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    wither_skeleton:
+      income: 15.0
+      points: 15
+      experience: 15.0
+    wither:
+      income: 250.0
+      points: 250
+      experience: 150.0
+    ender_dragon:
+      income: 2000.0
+      points: 2000
+      experience: 2000.0
+    zombie:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    zombie_villager:
+      income: 10.0
+      points: 10
+      experience: 15.0
+    zombie_pigman:
+      income: 12.0
+      points: 12
+      experience: 12.0
+    iron_golem:
+      income: 30.0
+      points: 30
+      experience: 30.0
+    Player:
+      income: 7.5
+      points: 7.5
+      experience: 7.5
+  Fish:
+    cod:
+      income: 15.0
+      points: 15.0
+      experience: 15.0
+    salmon:
+      income: 20.0
+      points: 20.0
+      experience: 25.0
+    tropical_fish:
+      income: 25.0
+      points: 25.0
+      experience: 25.0
+    pufferfish:
+      income: 25.0
+      points: 25.0
+      experience: 25.0

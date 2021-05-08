@@ -13,7 +13,7 @@ Dynmap-WorldGuard  CUSTOM     2019-12-15  2021-05-05  https://github.com/webbukk
 EditableSign       7.0.4      2019-08-16  2021-05-05  https://spigotmc.org/resources/2502/updates
 EisenRadar         1.3.1      2018-08-24  2021-05-05  https://spigotmc.org/resources/50316/updates
 EssentialsX        2.18.2     2020-11-16  2021-05-05  https://github.com/EssentialsX/Essentials/releases
-Jobs Reborn        4.16.0     2020-07-07  2020-08-08  https://spigotmc.org/resources/4216/updates
+Jobs Reborn        4.17.1     2021-03-17  2021-05-08  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.3.34     2021-05-02  2021-05-05  https://luckperms.net/download
 mcMMO              2.1.139    2020-08-06  2020-08-08  https://spigotmc.org/resources/64348/updates
 MineableSpawners   3.0.11     2020-11-04  2021-05-05  https://github.com/dnyferguson/MineableSpawners/releases

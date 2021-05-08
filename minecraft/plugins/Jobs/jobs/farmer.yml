@@ -1,0 +1,366 @@
+Farmer:
+  fullname: Farmer
+  shortname: F
+  description: §7Paid for breaking and placing things related to agriculture. Additionally
+    includes actions with hoes, actions with shears, milking animals, taming animals,
+    and breeding animals.
+  ChatColour: GREEN
+  chat-display: none
+  max-level: 100
+  leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+  income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) -
+    ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) -
+    ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  experience-progression-equation: baseexperience - (baseexperience * ((numjobs -
+    1) * 0.01))
+  rejoinCooldown: 3600
+  maxDailyQuests: 0
+  Gui:
+    Item: wheat
+  Tame:
+    Wolf:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+    Horse:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+    Parrot:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+    Ocelot:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+    Llama:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+  Breed:
+    Horse:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Sheep:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Cow:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    mushroom_cow:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Pig:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Chicken:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Wolf:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Ocelot:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Rabbit:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Llama:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Turtle:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+  Shear:
+    Red:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Orange:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Yellow:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Green:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Blue:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Navy:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Magenta:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Pink:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    White:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Light_Gray:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Black:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Brown:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Purple:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Cyan:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Gray:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+    Lime:
+      income: 4.0
+      points: 4.0
+      experience: 5.0
+  Milk:
+    Cow:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+  Break:
+    tube_coral_fan:
+      income: 2
+      points: 2
+      experience: 2
+    brain_coral_fan:
+      income: 2
+      points: 2
+      experience: 2
+    bubble_coral_fan:
+      income: 2
+      points: 2
+      experience: 2
+    fire_coral_fan:
+      income: 2
+      points: 2
+      experience: 2
+    horn_coral_fan:
+      income: 2
+      points: 2
+      experience: 2
+    kelp_plant:
+      income: 1
+      points: 1
+      experience: 1
+    kelp:
+      income: 1
+      points: 1
+      experience: 1
+    seagrass:
+      income: 1
+      points: 1
+      experience: 1
+    tall_seagrass:
+      income: 1
+      points: 1
+      experience: 1
+    sea_pickle:
+      income: 1
+      points: 1
+      experience: 1
+    chorus_plant:
+      income: 1.5
+      points: 1.5
+      experience: 3.0
+    chorus_flower:
+      income: 2
+      points: 2
+      experience: 2.0
+    beetroots-3:
+      income: 1.5
+      points: 1.5
+      experience: 3.0
+    wheat-7:
+      income: 1.5
+      points: 1.5
+      experience: 3.0
+    carrots-7:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    potatoes-7:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    pumpkin-7:
+      income: 0.5
+      points: 0.5
+      experience: 1.0
+    sugar_cane:
+      income: 0.2
+      points: 0.2
+      experience: 0.2
+    cocoa-2:
+      income: 3
+      points: 3
+      experience: 3.0
+    lily_pad:
+      income: 2
+      points: 2
+      experience: 2.0
+    dandelion:
+      income: 2
+      points: 2
+      experience: 2.0
+    poppy:
+      income: 1.5
+      points: 1.5
+      experience: 1.5
+    blue_orchid:
+      income: 2
+      points: 2
+      experience: 2.0
+    allium:
+      income: 2
+      points: 2
+      experience: 2.0
+    azure_bluet:
+      income: 2
+      points: 2
+      experience: 2.0
+    red_tulip:
+      income: 2
+      points: 2
+      experience: 2.0
+    orange_tulip:
+      income: 2
+      points: 2
+      experience: 2.0
+    white_tulip:
+      income: 2
+      points: 2
+      experience: 2.0
+    pink_tulip:
+      income: 2
+      points: 2
+      experience: 2.0
+    oxeye_daisy:
+      income: 2
+      points: 2
+      experience: 2.0
+    brown_mushroom:
+      income: 1.5
+      points: 1.5
+      experience: 1.5
+    red_mushroom:
+      income: 1.5
+      points: 1.5
+      experience: 1.5
+    vine:
+      income: 1.5
+      points: 1.5
+      experience: 1.5
+    cactus:
+      income: 1.5
+      points: 1.5
+      experience: 1.0
+    nether_wart:
+      income: 1
+      points: 1
+      experience: 1.0
+    pumpkin:
+      income: 0.5
+      points: 0.5
+      experience: 1.0
+    melon:
+      income: 0.5
+      points: 0.5
+      experience: 1.0
+  Place:
+    oak_sapling:
+      income: 2
+      points: 2
+      experience: 2.0
+    spruce_sapling:
+      income: 2
+      points: 2
+      experience: 2.0
+    birch_sapling:
+      income: 2
+      points: 2
+      experience: 2.0
+    jungle_sapling:
+      income: 3
+      points: 3
+      experience: 4.0
+    acacia_sapling:
+      income: 2
+      points: 2
+      experience: 2.0
+    dark_oak_sapling:
+      income: 2
+      points: 2
+      experience: 2.0
+    wheat:
+      income: 1
+      points: 1
+      experience: 1
+    potatoes:
+      income: 1
+      points: 1
+      experience: 1
+    carrots:
+      income: 1
+      points: 1
+      experience: 1
+    beetroots:
+      income: 1
+      points: 1
+      experience: 1
+    cocoa:
+      income: 1
+      points: 1
+      experience: 1
+    sugar_cane:
+      income: -1
+      points: -1
+      experience: -1
+    pumpkin_stem:
+      income: 1
+      points: 1
+      experience: 1
+    pumpkin-7:
+      income: 0.5
+      points: 0.5
+      experience: 1.0
+    melon_stem:
+      income: 1
+      points: 1
+      experience: 1

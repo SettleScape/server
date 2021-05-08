@@ -2,6 +2,7 @@
 !.gitignore
 !boostedItems.yml
 !generalConfig.yml
-!jobConfig.yml
 !restrictedBlocks.yml
 !titleConfig.yml
+!jobs
+!jobs/*.yml

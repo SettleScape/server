@@ -1,0 +1,39 @@
+Explorer:
+  fullname: Explorer
+  shortname: X
+  description: §7Paid for exploring.
+  ChatColour: AQUA
+  chat-display: none
+  max-level: 100
+  leveling-progression-equation: (10 * joblevel) + (joblevel * joblevel * 4)
+  income-progression-equation: baseincome + (baseincome * (joblevel - 1) * 0.01) -
+    ((baseincome + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  points-progression-equation: basepoints + (basepoints * (joblevel - 1) * 0.01) -
+    ((basepoints + (joblevel - 1) * 0.01) * ((numjobs - 1) * 0.05))
+  experience-progression-equation: baseexperience - (baseexperience * ((numjobs -
+    1) * 0.01))
+  rejoinCooldown: 3600
+  maxDailyQuests: 0
+  Gui:
+    Item: compass
+  Explore:
+    '1':
+      income: 3.5
+      points: 3.5
+      experience: 3.5
+    '2':
+      income: 2
+      points: 2
+      experience: 2
+    '3':
+      income: 1
+      points: 1
+      experience: 1
+    '4':
+      income: 0.5
+      points: 0.5
+      experience: 0.5
+    '5':
+      income: 0.1
+      points: 0.1
+      experience: 0.1
