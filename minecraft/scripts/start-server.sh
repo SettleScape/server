@@ -9,8 +9,8 @@ until [ -f "$JAVA" ]; do
     0) JAVA='/lib/jvm/java-8-jdk/jre/bin/java' ;;
     1) JAVA='/lib/jvm/java-8-openjdk/jre/bin/java' ;;
     ## Java 11 is an LTS release, and is well-tolerated by our plugins.
-    2) JAVA='/lib/jvm/java-11-jdk/jre/bin/java' ;;
-    3) JAVA='/lib/jvm/java-11-openjdk/jre/bin/java' ;;
+    2) JAVA='/lib/jvm/java-11-jdk/bin/java' ;;
+    3) JAVA='/lib/jvm/java-11-openjdk/bin/java' ;;
     ## If none of the above worked, try using the system's default java.
     *) JAVA=`which java` ;;
     esac
