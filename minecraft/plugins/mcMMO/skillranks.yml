@@ -335,15 +335,15 @@ Mining:
     # For now make sure rank 1 is the same as blast mining rank 1, it's a bit hacky, I'll fix it later
     BiggerBombs:
         Standard:
-            Rank_1: 13
+            Rank_1: 50
         RetroMode:
-            Rank_1: 130
+            Rank_1: 500
     # For now make sure rank 1 is the same as blast mining rank 1, it's a bit hacky, I'll fix it later
     DemolitionsExpertise:
         Standard:
-            Rank_1: 13
+            Rank_1: 25
         RetroMode:
-            Rank_1: 130
+            Rank_1: 250
     BlastMining:
         Standard:
             Rank_1: 13

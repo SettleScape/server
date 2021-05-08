@@ -1,7 +1,7 @@
 # Settings for the chat channels in mcMMO
 Chat:
     # Turn this off if you don't want mcMMO to process any chat (such as party chat or admin chat)
-    Enable: true
+    Enable: false
     Channels:
         Party:
             # Enable or disable party chat
@@ -10,10 +10,10 @@ Chat:
             Use_Display_Names: true
             Spies:
                 # Whether or not players with the chat spy permission join the server with chat spying toggled on
-                Automatically_Enable_Spying: false
+                Automatically_Enable_Spying: true
         Admin:
             # Enable or disable admin chat
-            Enable: true
+            Enable: false
             # Whether or not to use the current display name of a player
             Use_Display_Names: true
 # CUSTOMIZATION INFORMATION

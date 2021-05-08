@@ -61,9 +61,9 @@ General:
                 Distance_Restrictions:
                     Restrict_Distance: false
                     # When using Restrict_Distance the blow setting configures the range of the broadcast
-                    Restricted_Radius: 100
+                    Restricted_Radius: 256
         # How often to broadcast, you can change this to 1 to always broadcast a level up event, a setting of 100 will limit it to every 100 levels (for example level 100, level 200, etc)
-        Milestone_Interval: 100
+        Milestone_Interval: 10
         Broadcast_Targets:
             # Send the message to the console as well
             Send_To_Console: true
@@ -75,7 +75,7 @@ General:
             Distance_Restrictions:
                 Restrict_Distance: false
                 # When using Restrict_Distance the blow setting configures the range of the broadcast
-                Restricted_Radius: 100
+                Restricted_Radius: 256
 #
 #  Settings for the mcMMO scoreboards
 ###
