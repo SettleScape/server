@@ -1,7 +1,7 @@
 
 #
 #  mcMMO configuration
-#  Last updated on 2.1.139-b${BUILD_NUMBER}
+#  Last updated on 2.1.196-b${BUILD_NUMBER}
 #
 #####
 #
@@ -12,6 +12,7 @@ General:
         # Everything in your config related to skill level requirements, skill level bonuses, etc will be multiplied by 10 when this mode is on
         # This change is purely cosmetic, it retains the old feel of mcMMO where you could level up thousands of times
     RetroMode:
+        # Whether or not level up broadcasts are enabled
         Enabled: false
     Locale: en_US
     AprilFoolsEvent: true
@@ -41,6 +42,40 @@ General:
     # Enable to refresh the chunks around a player at the end of Super Breaker,
     # Giga Drill Breaker, and Berserk. Resource intensive for larger servers.
     Refresh_Chunks: true
+    # When players reach certain level milestones messages will be broadcast
+    Level_Up_Chat_Broadcasts:
+        Enabled: true
+        # Whether or not you want power level milestones to be broadcast
+        Broadcast_Powerlevels:
+            Enabled: true
+            # How often to broadcast, you can change this to 1 to always broadcast a level up event, a setting of 100 will limit it to every 100 levels (for example level 100, level 200, etc)
+            Milestone_Interval: 100
+            Broadcast_Targets:
+                # Send the message to the console as well
+                Send_To_Console: true
+                # Whether or not to only send chat messages to party members
+                Only_Party_Members: false
+                # Whether or not players who recieve a level up broadcast have to be on the same world as the one who leveled up
+                Only_Same_World: false
+                # Distance restrictions
+                Distance_Restrictions:
+                    Restrict_Distance: false
+                    # When using Restrict_Distance the blow setting configures the range of the broadcast
+                    Restricted_Radius: 100
+        # How often to broadcast, you can change this to 1 to always broadcast a level up event, a setting of 100 will limit it to every 100 levels (for example level 100, level 200, etc)
+        Milestone_Interval: 100
+        Broadcast_Targets:
+            # Send the message to the console as well
+            Send_To_Console: true
+            # Whether or not to only send chat messages to party members
+            Only_Party_Members: false
+            # Whether or not players who recieve a level up broadcast have to be on the same world as the one who leveled up
+            Only_Same_World: false
+            # Distance restrictions
+            Distance_Restrictions:
+                Restrict_Distance: false
+                # When using Restrict_Distance the blow setting configures the range of the broadcast
+                Restricted_Radius: 100
 #
 #  Settings for the mcMMO scoreboards
 ###
@@ -451,6 +486,7 @@ Bonus_Drops:
         Warped_Stem: true
         Warped_Fungus: true
         Crimson_Stem: true
+        Sweet_Berry_Bush: true
     Mining:
         Andesite: true
         Diorite: true
@@ -588,3 +624,11 @@ Particles:
 Sounds:
     # This setting controls the master volume. 1.0 is Max,  0 would be off
     MasterVolume: 1.0
+# Disable or Enable the Green Thumb auto replant feature for specific crops, use the name of the block not the crop itemstack
+Green_Thumb_Replanting_Crops:
+    Carrots: true
+    Wheat: true
+    Nether_Wart: true
+    Potatoes: true
+    Beetroots: true
+    Cocoa: true

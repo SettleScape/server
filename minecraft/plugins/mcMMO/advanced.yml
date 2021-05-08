@@ -1,7 +1,7 @@
 
 #
 #  Advanced configuration
-#  Last updated on 2.1.139-b${BUILD_NUMBER}
+#  Last updated on 2.1.196-b${BUILD_NUMBER}
 #
 #  For advanced users only! There is no need to change anything here.
 #
@@ -230,10 +230,18 @@ Skills:
             # This determines when Fisherman's Diet adds extra hunger recovery to food
             RankChange: 20
         MasterAngler:
-            # BoatMultiplier: Catch rate is multiplied by this modifier
-            # BiomeModifier: Catch rate is multiplied by this modifier
             BoatModifier: 2.0
             BiomeModifier: 2.0
+            Tick_Reduction_Per_Rank:
+                # Don't modify these two unless you fully understand what you are doing
+                Min_Wait: 10
+                Max_Wait: 30
+            Boat_Tick_Reduction:
+                Min_Wait: 10
+                Max_Wait: 30
+            Tick_Reduction_Caps:
+                Min_Wait: 40
+                Max_Wait: 100
     #
     #  Settings for Herbalism
     ###
@@ -262,8 +270,13 @@ Skills:
         ShroomThumb:
             # ChanceMax: Maximum chance of triggering Second Smelt
             # MaxBonusLevel: On this level, the chance to cause Second Smelt will be <ChanceMax>
-            # ChanceMax: Maximum chance of triggering bleeding
-            # MaxBonusLevel: On this level, the chance to cause Bleeding will be <ChanceMax>
+            # ChanceMax: Maximum chance of triggering a counter attack
+            # MaxBonusLevel: On this level, the chance to Counter will be <ChanceMax>
+            # ChanceMax: Maximum chance of triggering gore
+            # MaxBonusLevel: On this level, the chance to cause Gore will be <ChanceMax>
+            # ChanceMax: Maximum chance of disarming other players
+            # MaxBonusLevel: Level when the maximum chance to disarm is reached
+            # AntiTheft: Determines if only the disarmed player can retrieve disarmed items
             ChanceMax: 50.0
             MaxBonusLevel:
                 Standard: 100
@@ -274,13 +287,8 @@ Skills:
     Mining:
         DoubleDrops:
             SilkTouch: true
-            # ChanceMax: Maximum chance of triggering a counter attack
-            # MaxBonusLevel: On this level, the chance to Counter will be <ChanceMax>
-            # ChanceMax: Maximum chance of triggering gore
-            # MaxBonusLevel: On this level, the chance to cause Gore will be <ChanceMax>
-            # ChanceMax: Maximum chance of disarming other players
-            # MaxBonusLevel: Level when the maximum chance to disarm is reached
-            # AntiTheft: Determines if only the disarmed player can retrieve disarmed items
+            # ChanceMax: Maximum chance of deflecting arrows
+            # MaxBonusLevel: Level when the maximum chance to deflect is reached
             ChanceMax: 100.0
             MaxBonusLevel:
                 Standard: 100
@@ -336,6 +344,8 @@ Skills:
                 Rank_6: 3.0
                 Rank_7: 4.0
                 Rank_8: 4.0
+        SuperBreaker:
+            AllowTripleDrops: true
     #
     #  Settings for Repair
     ###
@@ -348,8 +358,8 @@ Skills:
                 Standard: 100
                 RetroMode: 1000
         SuperRepair:
-            # ChanceMax: Maximum chance of deflecting arrows
-            # MaxBonusLevel: Level when the maximum chance to deflect is reached
+            # ChanceMax: Maximum chance of preventing being disarmed
+            # MaxBonusLevel: Level when the maximum chance to prevent being disarmed is reached
             ChanceMax: 100.0
             MaxBonusLevel:
                 Standard: 100
@@ -409,8 +419,9 @@ Skills:
     ###
     Smelting:
         SecondSmelt:
-            # ChanceMax: Maximum chance of preventing being disarmed
-            # MaxBonusLevel: Level when the maximum chance to prevent being disarmed is reached
+            # ChanceMax & MaxBonusLevel are only used for Classic, I'll make that more clear in the future.
+            # ChanceMax: Maximum chance of receiving double drops (100 = 100%)
+            # MaxBonusLevel: Level when the maximum chance of receiving double drops is reached
             ChanceMax: 50.0
             MaxBonusLevel:
                 Standard: 100
@@ -435,20 +446,49 @@ Skills:
     ###
     Swords:
         Rupture:
-            # ChanceMax & MaxBonusLevel are only used for Classic, I'll make that more clear in the future.
-            # ChanceMax: Maximum chance of receiving double drops (100 = 100%)
-            # MaxBonusLevel: Level when the maximum chance of receiving double drops is reached
             ChanceMax: 33.0
             MaxBonusLevel:
                 Standard: 100
                 RetroMode: 1000
-            # DamagePlayer: Bleeding damage dealt to players
-            # DamageMobs: Bleeding damage dealt to mobs
             DamagePlayer: 2.0
             DamageMobs: 3.0
-            # These settings determine how long the Bleeding effect lasts
             MaxTicks: 8
             BaseTicks: 2
+            Rupture_Mechanics:
+                # This is % chance, 15 would mean 15% percent of the time
+                Chance_To_Apply_On_Hit:
+                    Rank_1: 15
+                    Rank_2: 33
+                    Rank_3: 40
+                    Rank_4: 66
+                Duration_In_Seconds:
+                    Against_Players: 5
+                    Against_Mobs: 5
+                # Tick interval damage is applied twice a second during rupture, it is "pure" and does not get lowered from armor or absorption etc
+                Tick_Interval_Damage:
+                    Against_Players:
+                        Rank_1: 0.1
+                        Rank_2: 0.15
+                        Rank_3: 0.2
+                        Rank_4: 0.3
+                    Against_Mobs:
+                        Rank_1: 0.5
+                        Rank_2: 0.75
+                        Rank_3: 0.9
+                        Rank_4: 1
+                # If Rupture runs for 5 seconds without being reapplied, it explodes
+                # this damage is **NOT** pure and is reduced dramatically vs armor/absorption/etc
+                Explosion_Damage:
+                    Against_Players:
+                        Rank_1: 10
+                        Rank_2: 20
+                        Rank_3: 30
+                        Rank_4: 40
+                    Against_Mobs:
+                        Rank_1: 10
+                        Rank_2: 20
+                        Rank_3: 30
+                        Rank_4: 40
         CounterAttack:
             ChanceMax: 30.0
             MaxBonusLevel:
@@ -510,18 +550,39 @@ Skills:
                 Standard: 100
                 RetroMode: 1000
         IronArmStyle:
+            IncreaseLevel: 10
+        SteelArmStyle:
             # BonusMin: Minimum bonus damage for unarmed
             # BonusMax: Maximum bonus damage for unarmed
             # IncreaseLevel: Bonus damage increases every increase level
-            IncreaseLevel: 10
+            Damage_Override: false
+            Override:
+                Rank_1: 1
+                Rank_2: 1.5
+                Rank_3: 2.0
+                Rank_4: 2.5
+                Rank_5: 3.0
+                Rank_6: 3.5
+                Rank_7: 4.0
+                Rank_8: 4.5
+                Rank_9: 5.0
+                Rank_10: 5.5
+                Rank_11: 6.0
+                Rank_12: 6.5
+                Rank_13: 7.0
+                Rank_14: 7.5
+                Rank_15: 8.0
+                Rank_16: 8.5
+                Rank_17: 9.0
+                Rank_18: 10.5
+                Rank_19: 12.0
+                Rank_20: 13.5
     #
     #  Settings for Woodcutting
     ###
     Woodcutting:
         TreeFeller:
-            # If set to true then tree feller will not use the new system and will use its old behaviour
             Classic: false
-            # This is the time in seconds to build a new charge of Tree Feller
             ChargeRate: 600
             Rank_Levels:
                 Rank_1:
@@ -539,6 +600,8 @@ Skills:
                 Rank_5:
                     TreeSizeMax: 500
                     Charges: 3
+            Knock_On_Wood:
+                Add_XP_Orbs_To_Drops: true
         # Double Drops
         HarvestLumber:
             ChanceMax: 100.0

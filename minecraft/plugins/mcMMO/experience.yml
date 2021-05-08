@@ -1,7 +1,7 @@
 
 #
 #  Experience configuration
-#  Last updated on 2.1.139-b${BUILD_NUMBER}
+#  Last updated on 2.1.196-b${BUILD_NUMBER}
 #
 #  Configure the experience formula and experience settings here.
 #
@@ -33,6 +33,10 @@ ExploitFix:
     TreeFellerReducedXP: true
     PistonCheating: true
     SnowGolemExcavation: true
+    # This include NPCs from stuff like Citizens, this is not a setting for Vanilla Minecraft Villagers (Which can be considered NPCs)
+    # mcMMO normally doesn't process attacks against an Entity if it is an NPC from another plugin
+    # Of course, mcMMO doesn't know for sure whether or not something is an NPC, it checks a few known things, see our source code to see how
+    PreventPluginNPCInteraction: true
 Experience_Bars:
     # Turn this to false if you wanna disable XP bars
     Enable: true
@@ -132,7 +136,6 @@ Experience_Formula:
     Multiplier:
         Global: 1.0
         PVP: 1.0
-    # Experience gained from mobs not naturally spawned will get multiplied by this value. 0 by default.
     Mobspawners:
         Multiplier: 0
     Breeding:
@@ -156,6 +159,11 @@ Experience_Formula:
     # with 1.25 by default, resulting in a 25% XP boost
     Custom_XP_Perk:
         Boost: 1.25
+    # Experience gained from mobs not naturally spawned will get multiplied by this value. 0 by default.
+    Eggs:
+        Multiplier: 0
+    Nether_Portal:
+        Multiplier: 0
 #
 # Settings for Diminished Returns
 ###
