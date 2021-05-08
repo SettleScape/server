@@ -2,7 +2,7 @@
 . './env.sh'
 
 ## Figure out which Java to use.  (Proprietary Java preferred.)
-I=0
+I=2
 until [ -f "$JAVA" ]; do
     case $I in
     ## Java 8 provides maximum compatibility for old plugins.
