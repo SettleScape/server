@@ -4,7 +4,7 @@ parents:
 suffixes:
 - '&c(mod)&r': {}
 permissions:
-- weight.22
+- weight.912
 # - displayname.mod
 
 # Chat

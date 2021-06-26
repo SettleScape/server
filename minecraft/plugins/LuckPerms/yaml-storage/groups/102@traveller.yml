@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&aTraveller&r': {}
 permissions:
-- weight.11
+- weight.102
 # - displayname.traveler
 - essentials.kits.traveller
 

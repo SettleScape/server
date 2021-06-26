@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&6Pathfinder&r': {}
 permissions:
-- weight.14
+- weight.105
 - essentials.kits.pathfinder
 
 # Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no new abilities or ranks exist.

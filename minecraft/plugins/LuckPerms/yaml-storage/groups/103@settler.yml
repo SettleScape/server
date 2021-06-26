@@ -4,7 +4,7 @@ parents:
 prefixes:
 - '&9Settler&r': {}
 permissions:
-- weight.12
+- weight.103
 - essentials.kits.settler
 
 # Limit increases

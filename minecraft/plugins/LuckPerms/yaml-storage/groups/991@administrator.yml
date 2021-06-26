@@ -4,7 +4,7 @@ parents:
 suffixes:
 - '&c(admin)&r': {}
 permissions:
-- weight.24
+- weight.991
 # - displayname.admin
 
 # Server info

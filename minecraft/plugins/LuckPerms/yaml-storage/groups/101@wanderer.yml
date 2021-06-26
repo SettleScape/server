@@ -5,7 +5,7 @@ prefixes:
 - '&8Wanderer&r': {}
 meta:
 permissions:
-- weight.10
+- weight.101
 - essentials.kits.wanderer
 
 # Limit increases

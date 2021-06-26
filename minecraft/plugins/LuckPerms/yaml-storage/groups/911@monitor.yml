@@ -4,7 +4,7 @@ parents:
 suffixes:
 - '&c(monitor)&r': {}
 permissions:
-- weight.21
+- weight.911
 # - displayname.mon
 
 # Chat

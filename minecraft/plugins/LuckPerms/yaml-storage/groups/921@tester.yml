@@ -4,7 +4,7 @@ parents:
 suffixes:
 - '&c(QA)&r': {}
 permissions:
-- weight.23
+- weight.921
 # - displayname.qa
 
 # Chat

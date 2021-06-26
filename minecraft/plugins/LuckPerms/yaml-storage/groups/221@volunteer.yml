@@ -4,4 +4,4 @@ parents:
 suffixes:
 - '&c(donor)&r': {}
 permissions:
-- weight.50
+- weight.221

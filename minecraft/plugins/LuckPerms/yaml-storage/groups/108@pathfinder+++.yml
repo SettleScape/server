@@ -2,7 +2,7 @@ name: pathfinder+++
 parents:
 - pathfinder++
 permissions:
-- weight.17
+- weight.108
 - displayname.pathfinder # Treated the same as Pathfinder for most purposes.
 
 # Limit increases
