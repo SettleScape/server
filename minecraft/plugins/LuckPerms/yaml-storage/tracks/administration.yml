@@ -1,6 +1,5 @@
 name: administration
 groups:
 - player
-- tester
 - administrator
 - owner
