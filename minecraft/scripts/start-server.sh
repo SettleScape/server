@@ -79,5 +79,5 @@ screen -dmS "$ENV_SCREEN_NAME" \
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
 #NOTE: Press Ctrl+A, Ctrl+D to detatch from the SettleScape screen.
 #NOTE: Type `screen -S 'SettleScape' -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
-[ -t 0 ] && screen -r "$ENV_SCREEN_NAME"
+[ -t 0 ] && exec screen -r "$ENV_SCREEN_NAME"
 exit 0
