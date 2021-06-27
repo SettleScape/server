@@ -2,21 +2,21 @@
 . './env.sh'
 
 ## Figure out which Java to use.  (Proprietary Java preferred.)
-I=3
+I=4
 until [ -f "$JAVA" ]; do
     case $I in
     ## Java 8 is an LTS release.
-    0) JAVA='/lib/jvm/java-8-jdk/jre/bin/java' ;;
-    1) JAVA='/lib/jvm/java-8-openjdk/jre/bin/java' ;;
-    5) JAVA='/lib/jvm/jre-8-openjdk/bin/java' ;;
+    1) JAVA='/lib/jvm/java-8-jdk/jre/bin/java'     ;;
+    2) JAVA='/lib/jvm/java-8-openjdk/jre/bin/java' ;;
+    3) JAVA='/lib/jvm/jre-8-openjdk/bin/java'      ;;
     ## Java 11 is an LTS release.
-    3) JAVA='/lib/jvm/java-11-jdk/bin/java' ;;
-    4) JAVA='/lib/jvm/java-11-openjdk/bin/java' ;;
-    5) JAVA='/lib/jvm/jre-11-openjdk/bin/java' ;;
+    4) JAVA='/lib/jvm/java-11-jdk/bin/java'     ;;
+    5) JAVA='/lib/jvm/java-11-openjdk/bin/java' ;;
+    6) JAVA='/lib/jvm/jre-11-openjdk/bin/java'  ;;
     ## Java 17 is an LTS release.
-    6) JAVA='/lib/jvm/java-17-jdk/bin/java' ;;
-    7) JAVA='/lib/jvm/java-17-openjdk/bin/java' ;;
-    8) JAVA='/lib/jvm/jre-17-openjdk/bin/java' ;;
+    7) JAVA='/lib/jvm/java-17-jdk/bin/java'     ;;
+    8) JAVA='/lib/jvm/java-17-openjdk/bin/java' ;;
+    9) JAVA='/lib/jvm/jre-17-openjdk/bin/java'  ;;
     ## If none of the above worked, try using the system's default java.
     *) JAVA=`which java` ;;
     esac
