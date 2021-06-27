@@ -35,6 +35,7 @@ until [[ -f "$JAVA" ]]; do
     esac
     I=`expr $I + 1`
 done
+# echo "$JAVA" && exit 1
 
 ## Get variables
 source './env.sh'
