@@ -1,6 +1,6 @@
 name: volunteer # volunteer should be a copy of donor.
 parents:
-- default
+- donor
 suffixes:
 - '&c(volunteer)&r': {}
 permissions:
