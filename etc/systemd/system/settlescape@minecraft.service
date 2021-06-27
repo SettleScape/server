@@ -5,19 +5,18 @@ After=network.target
 [Service]
 Type=idle
 
-Environment="TERM=xterm-16color"
-
-ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.sh"
-ExecRestart="/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh"
-ExecStop="/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh"
-
 Restart=on-failure
 RestartSec=1s
 
-WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
-
 User=minecraft
 Group=minecraft
+
+Environment="TERM=xterm-16color"
+WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
+
+ExecStart="start-server.sh"
+ExecRestart="restart-server.sh"
+ExecStop="stop-server.sh"
 
 [Install]
 WantedBy=multi-user.target
