@@ -50,41 +50,63 @@ done
 #     '-XX:G1HeapRegionSize=32M'         \
 # | xargs)
 
-## Aikar's tuned server options.
+## Aikar's tuned server options. (updated 2020)
 ## https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft
-# AIKAR_OPTS=$(echo                          \
-#     '-Xms6G'                               \
-#     '-Xmx6G'                               \
-#     '-XX:+UnlockExperimentalVMOptions'     \
-#     '-XX:+AlwaysPreTouch'                  \
-#     '-XX:+ParallelRefProcEnabled'          \
-#     '-XX:+DisableExplicitGC'               \
-#     '-XX:+UseG1GC'                         \
-#     '-XX:G1MixedGCLiveThresholdPercent=35' \
-#     '-XX:G1NewSizePercent=50'              \
-#     '-XX:G1MaxNewSizePercent=80'           \
-#     '-XX:TargetSurvivorRatio=90'           \
-#     '-XX:MaxGCPauseMillis=100'             \
-#     '-Dusing.aikars.flags=mcflags.emc.gs'  \
+# AIKAR_OPTS=$(echo                                 \
+#     '-Xms10G'                                     \
+#     '-Xmx10G'                                     \
+#     '-XX:+UseG1GC'                                \
+#     '-XX:+ParallelRefProcEnabled'                 \
+#     '-XX:MaxGCPauseMillis=200'                    \
+#     '-XX:+UnlockExperimentalVMOptions'            \
+#     '-XX:+DisableExplicitGC'                      \
+#     '-XX:+AlwaysPreTouch'                         \
+#     '-XX:G1NewSizePercent=30'                     \
+#     '-XX:G1MaxNewSizePercent=40'                  \
+#     '-XX:G1HeapRegionSize=8M'                     \
+#     '-XX:G1ReservePercent=20'                     \
+#     '-XX:G1HeapWastePercent=5'                    \
+#     '-XX:G1MixedGCCountTarget=4'                  \
+#     '-XX:InitiatingHeapOccupancyPercent=15'       \
+#     '-XX:G1MixedGCLiveThresholdPercent=90'        \
+#     '-XX:G1RSetUpdatingPauseTimePercent=5'        \
+#     '-XX:SurvivorRatio=32'                        \
+#     '-XX:+PerfDisableSharedMem'                   \
+#     '-XX:MaxTenuringThreshold=1'                  \
+#     '-Dusing.aikars.flags=https://mcflags.emc.gs' \
+#     '-Daikars.new.flags=true'                     \
 # | xargs)
 
-## Mixes the above options.
-## The percentages in these flags have been changed from their original values to better-align with duodecimal percentages.
-JAVA_OPTS=$(echo                           \
-    '-Xmx2G'                               \
-    '-XX:+UnlockExperimentalVMOptions'     \
-    '-XX:+AlwaysPreTouch'                  \
-    '-XX:+ParallelRefProcEnabled'          \
-    '-XX:+DisableExplicitGC'               \
-    '-XX:+UseG1GC'                         \
-    '-XX:G1HeapRegionSize=32M'             \
-    '-XX:G1ReservePercent=25'              \
+## Mixes the above options, and adds some custom tweaks.
+JAVA_OPTS=$(echo \
+    '-Xms2G'     \
+    '-Xmx2G'     \
+    \
+    '-XX:+UnlockExperimentalVMOptions' \
+    '-XX:+AlwaysPreTouch'              \
+    '-XX:+UseLargePagesInMetaspace'    \
+    '-XX:+ParallelRefProcEnabled'      \
+    '-XX:+PerfDisableSharedMem'        \
+    '-XX:+DisableExplicitGC'           \
+    '-XX:+UseG1GC'                     \
+    \
+    '-XX:G1HeapRegionSize=8M'              \
+    '-XX:G1HeapWastePercent=4'             \
+    '-XX:G1MixedGCCountTarget=4'           \
+    '-XX:G1MixedGCLiveThresholdPercent=92' \
+    '-XX:G1ReservePercent=21'              \
     '-XX:G1NewSizePercent=33'              \
-    '-XX:G1MaxNewSizePercent=75'           \
-    '-XX:G1MixedGCLiveThresholdPercent=33' \
-    '-XX:TargetSurvivorRatio=92'           \
-    '-XX:MaxGCPauseMillis=50'              \
-    '-Dusing.aikars.flags=mcflags.emc.gs'  \
+    '-XX:G1MaxNewSizePercent=42'           \
+    '-XX:G1RSetUpdatingPauseTimePercent=4' \
+    \
+    '-XX:InitiatingHeapOccupancyPercent=17' \
+    '-XX:MaxGCPauseMillis=200'              \
+    '-XX:MaxTenuringThreshold=1'            \
+    '-XX:SurvivorRatio=33'                  \
+    '-XX:TargetSurvivorRatio=92'            \
+    \
+    '-Dusing.aikars.flags=https://mcflags.emc.gs' \
+    '-Daikars.new.flags=true'                     \
 | xargs)
 # echo $JAVA_OPTS && exit
 
