@@ -8,7 +8,8 @@ Type=idle
 Environment="TERM=xterm-16color"
 
 ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.sh"
-ExecStop=/usr/bin/screen -S 'SettleScape' -X stuff 'stop \n'
+ExecRestart="/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh"
+ExecStop="/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh"
 
 Restart=on-failure
 RestartSec=1s
