@@ -1,8 +1,8 @@
-#!/bin/sh
-. './env.sh'
+#!/bin/bash
+source './env.sh'
 
 ## Helptext
-helptext() {
+function helptext {
     echo 'Starts up the SettleScape Minecraft server.'
     echo '  -d  Run as a daemon'
     echo '  -i  Run interactively'
@@ -18,8 +18,8 @@ case "$1" in
 esac
 
 ## Figure out which Java to use.  (Proprietary Java preferred.)
-I=4
-until [ -f "$JAVA" ]; do
+declare -i I=4
+until [[ -f "$JAVA" ]]; do
     case $I in
     ## Java 8 is an LTS release.
     1) JAVA='/lib/jvm/java-8-jdk/jre/bin/java'     ;;
@@ -90,11 +90,19 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 cd "$ENV_SERVER_ROOT"
-CMD="screen -DmS '$ENV_SCREEN_NAME' '$JAVA' $JAVA_OPTS -jar './$ENV_SERVER_JAR' --nogui" #--forceUpgrade
-[ ! -z $DAEMON ] && exec eval "$CMD"
-eval "$CMD"
+declare -a CMD=(
+    -mS "$ENV_SCREEN_NAME"
+    "$JAVA" $JAVA_OPTS -jar
+    "./$ENV_SERVER_JAR" --nogui #--forceUpgrade
+)
+if [[ ! -z $DAEMON ]]
+then exec screen -D "${CMD[@]}"
+else      screen -d "${CMD[@]}"
+fi
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
 #NOTE: Press Ctrl+A, Ctrl+D to detatch from the SettleScape screen.
 #NOTE: Type `screen -S 'SettleScape' -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
-[ ! -z $INTERACTIVE ] && exec screen -r "$ENV_SCREEN_NAME"
-exit 0
+if [[ ! -z $INTERACTIVE ]]
+then exec screen -r "$ENV_SCREEN_NAME"
+else exit 0
+fi

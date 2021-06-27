@@ -14,7 +14,7 @@ Group=minecraft
 Environment="TERM=xterm-16color"
 WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
 
-ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.sh -d"
+ExecStart="/srv/minecraft/settlescape/minecraft/scripts/start-server.bash -d"
 ExecReload="/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh -d"
 ExecStop="/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh"
 
