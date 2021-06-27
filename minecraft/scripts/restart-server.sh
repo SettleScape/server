@@ -1,2 +1,2 @@
 #!/bin/sh
-./stop-server.sh && eval ./start-server.sh
+./stop-server.sh && exec ./start-server.sh "$1"

@@ -1,6 +1,22 @@
 #!/bin/sh
 . './env.sh'
 
+## Helptext
+helptext() {
+    echo 'Starts up the SettleScape Minecraft server.'
+    echo '  -d  Run as a daemon'
+    echo '  -i  Run interactively'
+    echo '  -h  Print this helptext'
+}
+
+## Check input
+case "$1" in
+    '-d') DAEMON=1           ;;
+    '-i') INTERACTIVE=1      ;;
+    '-h') helptext && exit 0 ;;
+       *) helptext && exit 1 ;;
+esac
+
 ## Figure out which Java to use.  (Proprietary Java preferred.)
 I=4
 until [ -f "$JAVA" ]; do
@@ -75,9 +91,10 @@ JAVA_OPTS=$(echo                           \
 ## Start the server
 cd "$ENV_SERVER_ROOT"
 CMD="screen -DmS '$ENV_SCREEN_NAME' '$JAVA' $JAVA_OPTS -jar './$ENV_SERVER_JAR' --nogui" #--forceUpgrade
-[ ! -t 0 ] && CMD="exec $CMD"
-eval $CMD
+[ ! -z $DAEMON ] && exec eval "$CMD"
+eval "$CMD"
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
 #NOTE: Press Ctrl+A, Ctrl+D to detatch from the SettleScape screen.
 #NOTE: Type `screen -S 'SettleScape' -X stuff "$COMMAND\n"` to send a command to the SettleScape screen.
-[ -t 0 ] && exec screen -r "$ENV_SCREEN_NAME"
+[ ! -z $INTERACTIVE ] && exec screen -r "$ENV_SCREEN_NAME"
+exit 0
