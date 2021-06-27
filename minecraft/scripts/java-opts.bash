@@ -41,8 +41,8 @@ declare -a AIKARS_JAVA_OPTS=(
 
 ## Mixes the above options, and adds some custom tweaks.
 declare -a CUSTOM_JAVA_OPTS=(
-    '-Xms2G'
-    '-Xmx2G'
+    '-Xms1536M'
+    '-Xmx1536M'
 
     '-XX:+UnlockExperimentalVMOptions'
     '-XX:+AlwaysPreTouch'
