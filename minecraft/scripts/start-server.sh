@@ -74,7 +74,7 @@ JAVA_OPTS=$(echo                           \
 
 ## Start the server
 cd "$ENV_SERVER_ROOT"
-CMD='screen -dmS "$ENV_SCREEN_NAME" "$JAVA" $JAVA_OPTS -jar "./$ENV_SERVER_JAR" --nogui' #--forceUpgrade
+CMD='screen -DmS "$ENV_SCREEN_NAME" "$JAVA" $JAVA_OPTS -jar "./$ENV_SERVER_JAR" --nogui' #--forceUpgrade
 [ ! -t 0 ] && CMD="exec $CMD"
 eval $CMD
 #NOTE: Type `screen -r 'SettleScape'` to attach to the SettleScape screen.
