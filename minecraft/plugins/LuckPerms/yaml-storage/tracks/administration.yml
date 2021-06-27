@@ -1,4 +1,4 @@
-name: administration
+name: administration ## 990s
 groups:
 - player
 - administrator
