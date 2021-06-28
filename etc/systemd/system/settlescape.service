@@ -19,5 +19,6 @@ ExecReload=/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh -d
 ExecStop=/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh
 
 [Install]
-# WantedBy=multi-user.target ## For system instance
-WantedBy=default.target      ## For user instance
+## For system instance, use "multi-user".
+## For user instance, use "default".
+WantedBy=default.target
