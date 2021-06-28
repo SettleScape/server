@@ -8,8 +8,9 @@ Type=idle
 Restart=on-failure
 RestartSec=5s
 
- User=minecraft
-Group=minecraft
+## Uncomment when run as system service;  comment when run as user service.
+#  User=minecraft
+# Group=minecraft
 
 Environment="TERM=xterm-16color"
 WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
@@ -19,6 +20,5 @@ ExecReload=/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh -d
   ExecStop=/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh
 
 [Install]
-## For system instance, use "multi-user".
-## For user instance, use "default".
+## Use "multi-user" when a system service;  use "default" when a user service.
 WantedBy=default.target
