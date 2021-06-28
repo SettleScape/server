@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.2.11
+  version: 0.96.2.12
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.2.11
+  last_run_version: 0.96.2.12
 # The language file you wish to use
 language: english.yml
  
@@ -597,7 +597,7 @@ plugin:
     daily_backups: 'true'
     backups_are_deleted_after: 4d
  
-    # Valid entries are: tar for tar.gz and zip for zip, use none for no backup.
+    # Valid entries are: tar, tar.gz, zip, or none for no backup.
     flatfile_backup_type: tar.gz
  
   interfacing:
