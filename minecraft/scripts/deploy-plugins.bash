@@ -9,16 +9,24 @@ TWD='plugins'
 CWD=$(pwd)
 [[ ! "$CWD" == *"/$TWD" ]] && cd "../$TWD"
 
-## Handle input
-# INPUT=$@
+## Receive input
+# declare -a INPUT=$@
 [[ -z $INPUT ]] && INPUT=$(ls -A1 | grep '\.jar$')
 
-## Send specified plugins to the server
+## Validate 
+declare -a PLUGINS=()
 for PLUGIN in $INPUT; do
     [[ ! "$PLUGIN" == *'.jar' ]] && PLUGIN="${PLUGIN}.jar"
-    scp "$PLUGIN" "minecraft@settlescape.org:/srv/minecraft/settlescape/minecraft/$TWD/"
+    PLUGINS+=("$PLUGIN")
+    unset PLUGIN
 done
+unset INPUT
+
+## Send specified plugins to the server
+scp "${PLUGINS[@]}" "minecraft@settlescape.org:/srv/minecraft/settlescape/minecraft/$TWD/"
+unset PLUGINS
 
 ## Cleanup
 cd "$CWD"
+unset CWD TWD
 exit 0
