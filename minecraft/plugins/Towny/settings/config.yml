@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.2.19
+  version: 0.96.2.20
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.2.19
+  last_run_version: 0.96.2.20
 # The language file you wish to use
 language: english.yml
  
@@ -333,6 +333,11 @@ new_world_settings:
     # This setting overrides a towns' setting.
     force_pvp_on: 'false'
  
+    # Do new world have friendly fire enabled by default?
+    # Does not affect Arena Plots which have FF enabled all the time.
+    # When true players on the same town or nation will harm each other.
+    friendly_fire_enabled: 'false'
+ 
     # Do new worlds have their war_allowed enabled by default?
     war_allowed: 'false'
  
@@ -412,8 +417,17 @@ new_world_settings:
       # Enabling this will slowly regenerate holes created in the
       # wilderness by monsters exploding.
       enabled: 'true'
+      # The list of entities whose explosions should be reverted.
       entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull
       delay: 5s
+ 
+    # This section is applied to new worlds as default settings when new worlds are detected.
+    wild_revert_on_block_explosion:
+      # Enabling this will slowly regenerate holes created in the
+      # wilderness by exploding blocks like beds.
+      enabled: 'true'
+      # The list of blocks whose explosions should be reverted.
+      blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,RED_BED,BLACK_BED
  
  
   ############################################################
@@ -423,9 +437,6 @@ new_world_settings:
   ############################################################
  
 global_town_settings:
- 
-  # can residents/Allies harm other residents when in an area with pvp enabled? Other than an Arena plot.
-  friendly_fire: 'true'
  
   # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
   health_regen:
@@ -537,8 +548,8 @@ global_town_settings:
   nation_requires_proximity: '333.0'
  
   # List of blocks which can be modified on farm plots, as long as player is also allowed in the plot's '/plot perm' line.
-  # Not included by default but some servers add GRASS_BLOCK,FARMLAND,DIRT to their list.
-  farm_plot_allow_blocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE
+  # Not included by default but some servers add GRASS_BLOCK,FARMLAND,DIRT,NETHERRACK,CRIMSON_NYLIUM,WARPED_NYLIUM to their list.
+  farm_plot_allow_blocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS
  
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
@@ -1222,6 +1233,9 @@ economy:
  
     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
     price_purchased_bonus_townblock_increase: '1.0'
+ 
+    # The maximum price that bonus townblocks can cost to purchase. Set to -1.0 to deactivate this maxium.
+    price_purchased_bonus_townblock_max_price: '-1.0'
  
   death:
  

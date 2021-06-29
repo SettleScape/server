@@ -1,5 +1,6 @@
 pvp=true
 forcepvp=true
+friendlyFire=false
 # Can players found towns and claim plots in this world?
 claimable=true
 worldmobs=true
@@ -12,7 +13,6 @@ endermanprotect=true
 disableplayertrample=true
 disablecreaturetrample=true
 
-
 # Unclaimed Zone settings.
 unclaimedZoneBuild=true
 unclaimedZoneDestroy=true
@@ -23,25 +23,30 @@ unclaimedZoneName=Wilderness
 # The following are blocks that will bypass the above build, destroy, switch and itemuse settings.
 unclaimedZoneIgnoreIds=NONE
 
-
 # The following settings control what blocks are deleted upon a townblock being unclaimed
 usingPlotManagementDelete=false
 plotManagementDeleteIds=NONE
-
 
 # The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
 usingPlotManagementMayorDelete=false
 plotManagementMayorDelete=NONE
 
 # If enabled when a town claims a townblock a snapshot will be taken at the time it is claimed.
-# When the townblock is unclaimded its blocks will begin to revert to the original snapshot.
+# When the townblock is unclaimed its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air.
 plotManagementIgnoreIds=NONE,NETHER_PORTAL
 
-# If enabled any damage caused by explosions will repair itself.
+# The following settings control which entities/blocks' explosions are reverted in the wilderness.
+# If enabled any damage caused by entity explosions will repair itself.
 usingPlotManagementWildRegen=true
+# The list of entities whose explosions would be reverted.
 PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull,wither,witherskull
+# If enabled any damage caused by block explosions will repair itself.
+usingPlotManagementWildRegenBlocks=true
+# The list of entities whose explosions would be reverted.
+PlotManagementWildRegenBlocks=WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,RED_BED,BLACK_BED
+# The delay after which the explosion reverts will begin.
 usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
@@ -49,4 +54,5 @@ usingTowny=true
 
 # This setting is used to enable or disable Event war in this world.
 warAllowed=true
+
 metadata=
