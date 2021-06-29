@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.96.2.21
+  version: 0.96.2.22
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.96.2.21
+  last_run_version: 0.96.2.22
 # The language file you wish to use
 language: english.yml
  
@@ -40,6 +40,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 0.0
     townOutpostLimit: 0
+    debtCapModifier: '1.0'
   - numResidents: 1
     namePostfix: ' (Hermitage)'
     mayorPrefix: 'Hermit '
@@ -49,6 +50,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 2
     namePostfix: ' (Hamlet)'
     mayorPrefix: 'Chief '
@@ -58,6 +60,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 4
     namePostfix: ' (Village)'
     mayorPrefix: 'Lord '
@@ -67,6 +70,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 8
     namePostfix: ' (Town)'
     mayorPrefix: 'Baron '
@@ -76,6 +80,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 12
     namePostfix: ' (Large Town)'
     mayorPrefix: 'Viscount '
@@ -85,6 +90,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 16
     namePostfix: ' (City)'
     mayorPrefix: 'Count '
@@ -94,6 +100,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 24
     namePostfix: ' (Large City)'
     mayorPrefix: 'Marquess '
@@ -103,6 +110,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 32
     namePostfix: ' (Metropolis)'
     mayorPrefix: 'Duke '
@@ -112,6 +120,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 48
     namePostfix: ' (Sprawling Metropolis)'
     mayorPrefix: 'Grand Duke '
@@ -121,6 +130,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 72
     namePostfix: ' (Megacity)'
     mayorPrefix: 'Archduke '
@@ -130,6 +140,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   - numResidents: 108
     namePostfix: ' (Arcology)'
     mayorPrefix: 'Prince '
@@ -139,6 +150,7 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
+    debtCapModifier: '1.0'
   # default Nation levels.
   nation_level:
   - kingPostfix: ''
@@ -1375,6 +1387,11 @@ economy:
       # When set to greater than 0.0, this setting will override all other debt calculations and maximums,
       # making all towns have the same debt cap.
       override: '0.0'
+ 
+      # When true the debt_cap.override price will be multiplied by the debtCapModifier in the town_level
+      # section of the config. (Ex: debtCapModifier of 3.0 and debt_cap.override of 1000.0 would set 
+      # a debtcap of 3.0 x 1000 = 3000.
+      debt_cap_uses_town_levels: 'false'
  
     upkeep:
  
