@@ -1,0 +1,18 @@
+version:
+  # This is the current version.  Please do not edit.
+  version: 1.1.0
+  # This is for showing the changelog on updates.  Please do not edit.
+  last_run_version: 1.1.0
+# The language file you wish to use
+language: english.yml
+#########################################################
+# +------------------------------------------------------+ #
+# |                 Towny Cultures settings                 | #
+# |                                                         |
+# +------------------------------------------------------+ #
+############################################################
+ 
+townycultures:
+ 
+  # If this value is true, then TownyCultures is enabled.
+  enabled: 'true'

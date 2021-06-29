@@ -16,6 +16,7 @@ EssentialsX        2.18.2     2020-11-16              2021-05-05  https://github
 Jobs Reborn        4.17.1     2021-03-17              2021-05-08  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.3.34     2021-05-02              2021-05-05  https://luckperms.net/download
 mcMMO              2.1.196    2021-04-23              2021-05-08  https://spigotmc.org/resources/64348/updates
+mcMMO-Towny        1.0.1      2019-09-14              2021-06-29  https://github.com/TownyAdvanced/mcMMO-Towny/releases
 MineableSpawners   3.0.11     2020-11-04  1.17.X      ----------  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.5      2020-11-03              2021-05-05  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04              2021-05-05  https://github.com/SimonOrJ/PhantomSMP/releases
@@ -26,11 +27,12 @@ Rankup             3.11.3     2021-02-07              2021-05-05  https://spigot
 ShopChest          1.13-SS    2021-01-15              2021-05-05  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
 Towny              0.97.0.8   2021-06-24              2021-06-29  https://github.com/TownyAdvanced/Towny/releases
 TownyChat          0.88       2021-05-08              2021-06-29  https://github.com/TownyAdvanced/TownyChat/releases
-TownyNameUpdater   5.0        2020-04-25              2020-08-08  https://github.com/TownyAdvanced/TownyNameUpdater
+TownyCultures      1.1.0      2021-02-13              2021-06-29  https://github.com/TownyAdvanced/TownyCultures/releases
+TownyNameUpdater   5.0        2020-04-25              2021-06-29  https://github.com/TownyAdvanced/TownyNameUpdater
 TownyFlight        1.6.7      2021-04-06              2021-06-29  https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.79.2     2020-08-29              2021-05-05  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.3      2020-07-17              2021-05-05  https://spigotmc.org/resources/34315/updates
 WorldEdit          7.2.5      2021-04-20              2021-05-05  https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.3      2020-06-26  1.16.5      ----------  https://dev.bukkit.org/projects/worldguard/files
-WorldGuard-Towny   1.1.0      2020-01-03              2020-08-08  https://github.com/TownyAdvanced/WorldGuard-Towny/releases
+WorldGuard-Towny   1.1.0      2020-01-03              2021-06-29  https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  =========  ==========  ==========  ==========  ===
