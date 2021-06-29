@@ -24,7 +24,7 @@ PlaceholderAPI     2.10.9     2020-08-04              2021-05-05  https://spigot
 ProtocolLib        4.5.1      2020-06-03              2021-05-05  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.11.3     2021-02-07              2021-05-05  https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2021-01-15              2021-05-05  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
-Towny              0.97.0.0   2021-05-10              2021-06-29  https://github.com/TownyAdvanced/Towny/releases
+Towny              0.97.0.8   2021-06-24              2021-06-29  https://github.com/TownyAdvanced/Towny/releases
 TownyChat          0.88       2021-05-08              2021-06-29  https://github.com/TownyAdvanced/TownyChat/releases
 TownyNameUpdater   5.0        2020-04-25              2020-08-08  https://github.com/TownyAdvanced/TownyNameUpdater
 TownyFlight        1.6.7      2021-04-06              2021-06-29  https://github.com/TownyAdvanced/TownyFlight/releases
