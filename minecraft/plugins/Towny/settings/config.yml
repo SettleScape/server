@@ -1210,7 +1210,7 @@ economy:
     price_claim_townblock_increase: '1.0'
  
     # The maximum price for an additional townblock. No matter how many blocks a town has the price will not be above this. Set to -1 to deactivate this.
-    max_price_claim_townblock: '-1.0'
+    max_price_claim_townblock: '1000'
  
     # The amount refunded to a town when they unclaim a townblock.
     # Warning: do not set this higher than the cost to claim a townblock.
@@ -1344,7 +1344,7 @@ economy:
     # The debt has a ceiling equal to the estimated value of the town (from new town and claims costs)
     # The debt can be repaid using /t deposit x.
     # Once all debt is repaid, the town immediately returns to a normal state.
-    enabled: 'false'
+    enabled: 'true'
  
     # When using bankruptcy is enabled a Town a debtcap.
     # The debt cap is calculated by adding the following:
@@ -1355,7 +1355,7 @@ economy:
  
       # When set to greater than 0.0, this will be used to determine every town''s maximum debt,
       # overriding the above calculation if the calculation would be larger than the set maximum.
-      maximum: '0.0'
+      maximum: '10000.0'
  
       # When set to greater than 0.0, this setting will override all other debt calculations and maximums,
       # making all towns have the same debt cap.
@@ -1375,7 +1375,7 @@ economy:
       # True is recommended when using a Siege War style war/conquering system,
       # otherwise conquered towns will be able to leave the nation simply by not paying the nation tax.
       # False is recommended otherwise so that nations are not using abandoned towns to gather taxes.
-      do_bankrupt_towns_pay_nation_tax: 'false'
+      do_bankrupt_towns_pay_nation_tax: 'true'
  
       # If a town can no longer pay their nation tax with debt because they have
       # reach their debtcap, are they kicked from the nation?
