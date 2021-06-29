@@ -4,6 +4,7 @@ friendlyFire=false
 # Can players found towns and claim plots in this world?
 claimable=true
 worldmobs=true
+wildernessmobs=true
 forcetownmobs=false
 firespread=true
 forcefirespread=true
@@ -35,7 +36,7 @@ plotManagementMayorDelete=NONE
 # When the townblock is unclaimed its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air. This list also world on the WildRegen settings below.
-plotManagementIgnoreIds=NONE,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE
+plotManagementIgnoreIds=NONE,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE
 
 # The following settings control which entities/blocks' explosions are reverted in the wilderness.
 # If enabled any damage caused by entity explosions will repair itself.
