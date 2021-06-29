@@ -24,10 +24,10 @@ PlaceholderAPI     2.10.9     2020-08-04              2021-05-05  https://spigot
 ProtocolLib        4.5.1      2020-06-03              2021-05-05  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.11.3     2021-02-07              2021-05-05  https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2021-01-15              2021-05-05  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
-Towny              0.96.2.12  ----------              ----------  https://github.com/TownyAdvanced/Towny/releases
-TownyChat          0.77       ----------              ----------  https://github.com/TownyAdvanced/TownyChat/releases
+Towny              0.96.2.18  ----------              ----------  https://github.com/TownyAdvanced/Towny/releases
+TownyChat          0.79       ----------              ----------  https://github.com/TownyAdvanced/TownyChat/releases
 TownyNameUpdater   5.0        2020-04-25              2020-08-08  https://github.com/TownyAdvanced/TownyNameUpdater
-TownyFlight        1.6.2      2020-07-20              2020-08-08  https://github.com/TownyAdvanced/TownyFlight/releases
+TownyFlight        1.6.3      ----------              ----------  https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.79.2     2020-08-29              2021-05-05  https://github.com/Trophonix/TradePlus/releases
 Vault              1.7.3      2020-07-17              2021-05-05  https://spigotmc.org/resources/34315/updates
 WorldEdit          7.2.5      2021-04-20              2021-05-05  https://dev.bukkit.org/projects/worldedit/files

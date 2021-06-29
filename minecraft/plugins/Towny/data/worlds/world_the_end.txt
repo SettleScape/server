@@ -20,7 +20,7 @@ unclaimedZoneSwitch=true
 unclaimedZoneItemUse=true
 unclaimedZoneName=Wilderness
 
-# The following settings are only used if you are not using any permissions provider plugin
+# The following are blocks that will bypass the above build, destroy, switch and itemuse settings.
 unclaimedZoneIgnoreIds=NONE
 
 
@@ -37,11 +37,11 @@ plotManagementMayorDelete=NONE
 # When the townblock is unclaimded its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air.
-plotManagementIgnoreIds=NONE
+plotManagementIgnoreIds=NONE,NETHER_PORTAL
 
 # If enabled any damage caused by explosions will repair itself.
 usingPlotManagementWildRegen=true
-PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull
+PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull,wither,witherskull
 usingPlotManagementWildRegenDelay=5
 
 # This setting is used to enable or disable Towny in this world.
