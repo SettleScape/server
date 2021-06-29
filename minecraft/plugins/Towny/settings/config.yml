@@ -427,7 +427,7 @@ new_world_settings:
       # wilderness by exploding blocks like beds.
       enabled: 'true'
       # The list of blocks whose explosions should be reverted.
-      blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,RED_BED,BLACK_BED
+      blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED
  
  
   ############################################################
@@ -1235,7 +1235,7 @@ economy:
     price_purchased_bonus_townblock_increase: '1.0'
  
     # The maximum price that bonus townblocks can cost to purchase. Set to -1.0 to deactivate this maxium.
-    price_purchased_bonus_townblock_max_price: '-1.0'
+    price_purchased_bonus_townblock_max_price: '1000'
  
   death:
  
