@@ -97,16 +97,16 @@ world-settings:
     should-remove-dragon: false
     ender-dragons-death-always-places-dragon-egg: false
     update-pathfinding-on-block-update: true
-    fix-wither-targeting-bug: false
+    fix-wither-targeting-bug: true
     seed-based-feature-search-loads-chunks: true
     map-item-frame-cursor-limit: 128
     only-players-collide: false
     allow-vehicle-collisions: true
     portal-search-vanilla-dimension-scaling: true
-    fix-items-merging-through-walls: false
-    fix-climbing-bypassing-cramming-rule: false
+    fix-items-merging-through-walls: true
+    fix-climbing-bypassing-cramming-rule: true
     max-leash-distance: 10.0
-    zombies-target-turtle-eggs: true
+    zombies-target-turtle-eggs: false
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: false
     delay-chunk-unloads-by: 10s
@@ -220,7 +220,7 @@ world-settings:
       items:
         COBBLESTONE: 300
     anti-xray:
-      lava-obscures: false
+      lava-obscures: true
       use-permission: false
       enabled: true
       engine-mode: 1
