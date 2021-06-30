@@ -5,15 +5,17 @@
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or IRC channel.
 # 
-# Discord: https://paperdiscord.emc.gs
-# IRC: #paper @ irc.spi.gt ( http://irc.spi.gt/iris/?channels=paper )
+# Discord: https://discord.gg/papermc
+# IRC: #paper @ irc.esper.net ( https://webchat.esper.net/?channels=paper ) 
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
-allow-perm-block-break-exploits: false
+use-display-name-in-quit-message: false
 verbose: false
 config-version: 20
 settings:
+  track-plugin-scoreboards: false
+  fix-entity-position-desync: true
   max-joins-per-tick: 1
   player-auto-save-rate: -1
   max-player-auto-save-per-tick: 1
@@ -40,12 +42,15 @@ settings:
     early-warning-every: 5000
     early-warning-delay: 10000
   spam-limiter:
+    recipe-spam-increment: 1
+    recipe-spam-limit: 20
     tab-spam-increment: 1
     tab-spam-limit: 500
   book-size:
     page-max: 2560
     total-multiplier: 0.98
   unsupported-settings:
+    allow-headless-pistons: false
     allow-permanent-block-break-exploits: false
     allow-piston-duplication: false
     allow-permanent-block-break-exploits-readme: This setting controls if players
@@ -54,6 +59,19 @@ settings:
     allow-piston-duplication-readme: This setting controls if player should be able
       to use TNT duplication, but this also allows duplicating carpet, rails and potentially
       other items
+    allow-headless-pistons-readme: This setting controls if players should be able
+      to create headless pistons.
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
+  item-validation:
+    display-name: 8192
+    loc-name: 8192
+    lore-line: 8192
+    book:
+      title: 8192
+      author: 8192
+      page: 16384
 messages:
   no-permission: '&cYou do not have permission to use this command.&r'
   kick:
@@ -69,11 +87,26 @@ timings:
   hidden-config-entries:
   - database
   - settings.bungeecord-addresses
+  - settings.velocity-support.secret
   history-interval: 300
   history-length: 3600
   server-name: SettleScape
 world-settings:
   default:
+    allow-using-signs-inside-spawn-protection: false
+    should-remove-dragon: false
+    ender-dragons-death-always-places-dragon-egg: false
+    update-pathfinding-on-block-update: true
+    fix-wither-targeting-bug: false
+    seed-based-feature-search-loads-chunks: true
+    map-item-frame-cursor-limit: 128
+    only-players-collide: false
+    allow-vehicle-collisions: true
+    portal-search-vanilla-dimension-scaling: true
+    fix-items-merging-through-walls: false
+    fix-climbing-bypassing-cramming-rule: false
+    max-leash-distance: 10.0
+    zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: false
     delay-chunk-unloads-by: 10s
@@ -131,6 +164,8 @@ world-settings:
     all-chunks-are-slime-chunks: false
     mob-spawner-tick-rate: 2
     game-mechanics:
+      fix-curing-zombie-villager-discount-exploit: true
+      disable-mob-spawner-spawn-egg-transformation: false
       nerf-pigmen-from-nether-portals: false
       scan-for-legacy-ender-dragon: true
       disable-pillager-patrols: false
@@ -152,6 +187,9 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+      bamboo:
+        max: 16
+        min: 11
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 600
@@ -182,6 +220,8 @@ world-settings:
       items:
         COBBLESTONE: 300
     anti-xray:
+      lava-obscures: false
+      use-permission: false
       enabled: true
       engine-mode: 1
       chunk-edge-mode: 2
@@ -205,3 +245,31 @@ world-settings:
       maximum: 0.0
     viewdistances:
       no-tick-view-distance: -1
+    entity-per-chunk-save-limit:
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
+    spawn-limits:
+      monsters: -1
+      animals: -1
+      water-animals: -1
+      water-ambient: -1
+      ambient: -1
+    wandering-trader:
+      spawn-minute-length: 1200
+      spawn-day-length: 24000
+      spawn-chance-failure-increment: 25
+      spawn-chance-min: 25
+      spawn-chance-max: 75
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
+    unsupported-settings:
+      fix-invulnerable-end-crystal-exploit: true
