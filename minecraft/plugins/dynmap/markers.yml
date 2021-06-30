@@ -425,13 +425,13 @@ sets:
                 y: 65.0
                 z: 3791.0
                 label: Djin
-            marker_1:
+            nelta:
                 world: world_nether
                 markup: false
-                x: 53.0
-                icon: pin
-                y: 66.0
-                z: 253.0
+                x: 44.0
+                icon: portal
+                y: 64.0
+                z: 250.0
                 label: Nelta
             shovel:
                 world: world
