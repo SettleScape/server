@@ -29,10 +29,10 @@ sets:
                 world: world_nether
                 markup: false
                 x: 0.0
-                icon: tower
+                icon: portal
                 y: 0.0
                 z: 0.0
-                label: Server Jail
+                label: Spawn
             worldguard.world.spawn:
                 world: world
                 markup: false
@@ -41,7 +41,7 @@ sets:
                 y: 64.0
                 z: 0.0
                 label: Spawn
-            world:
+            worldguard.world.nearlands:
                 world: world
                 markup: false
                 x: -6546.0
@@ -57,6 +57,14 @@ sets:
                 y: 49.0
                 z: 0.0
                 label: Spawn
+            worldguard.world.hawthorne:
+                world: world
+                markup: false
+                x: -552.0
+                icon: default
+                y: 65.0
+                z: -4738.0
+                label: Hawthorne
         lines: {
             }
         layerprio: 1
