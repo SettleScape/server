@@ -93,14 +93,6 @@ sets:
                 y: 70.0
                 z: 1039.0
                 label: Gateway 16
-            gateway_0_out:
-                world: world_the_end
-                markup: false
-                x: 1083.0
-                icon: portal
-                y: 75.0
-                z: 0.0
-                label: Gateway 0
             gateway_8_in:
                 world: world_the_end
                 markup: false
@@ -109,6 +101,14 @@ sets:
                 y: 76.0
                 z: -56.0
                 label: Gateway 8
+            gateway_0_out:
+                world: world_the_end
+                markup: false
+                x: 1083.0
+                icon: portal
+                y: 75.0
+                z: 0.0
+                label: Gateway 0
             exit_portal:
                 world: world_the_end
                 markup: false
@@ -425,6 +425,14 @@ sets:
                 y: 65.0
                 z: 3791.0
                 label: Djin
+            marker_1:
+                world: world_nether
+                markup: false
+                x: 53.0
+                icon: pin
+                y: 66.0
+                z: 253.0
+                label: Nelta
             shovel:
                 world: world
                 markup: false
