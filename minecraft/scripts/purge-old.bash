@@ -17,7 +17,7 @@ declare -a EXTS=(
     '.log' 
     '.txt' 
     '.zip' 
-    '.zip' 
+    '.tar.gz' 
 )
 
 ## Set starting directory.
