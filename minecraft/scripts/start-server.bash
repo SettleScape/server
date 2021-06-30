@@ -15,7 +15,7 @@ case "$1" in
 esac
 
 ## Figure out which Java to use.  (Proprietary Java preferred.)
-declare -i I=4
+declare -i I=7 ## Paper requires a minimum of Java 16
 until [[ -f "$JAVA" ]]; do
     case $I in
     ## Java 8 is an LTS release.
