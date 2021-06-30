@@ -46,7 +46,6 @@ declare -a CUSTOM_JAVA_OPTS=(
 
     '-XX:+UnlockExperimentalVMOptions'
     '-XX:+AlwaysPreTouch'
-    '-XX:+UseLargePagesInMetaspace'
     '-XX:+ParallelRefProcEnabled'
     '-XX:+PerfDisableSharedMem'
     '-XX:+DisableExplicitGC'
