@@ -6,12 +6,10 @@ AutoUpdate: true
 AutoFileRemoval: true
 GlobalGui:
   # Defines item type in empty fields in GUI when its needed to be filled up
-  EmptyField: BLACK_STAINED_GLASS_PANE
+  EmptyField: GRAY_STAINED_GLASS_PANE
 Spawners:
   # List of spawners to pick from while using spawner:random variable
   mysterySpawners:
   - skeleton
   - zombie
   - silverfish
-  - panda
-  - fox

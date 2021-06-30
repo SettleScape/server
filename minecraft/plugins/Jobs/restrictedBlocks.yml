@@ -5,7 +5,7 @@
 # If you want to have default value for all blocks, enable GlobalBlockTimer in generalConfig file
 blocksTimer:
   OAK_SAPLING: 60
-  POTTED_ACACIA_SAPLING: 60
+  ACACIA_SAPLING: 60
   BIRCH_SAPLING: 60
   DARK_OAK_SAPLING: 60
   JUNGLE_SAPLING: 60

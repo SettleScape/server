@@ -167,5 +167,5 @@ blacklist:
             open-files: 10
 disable-permission-cache: false
 turtle-egg:
-    disable-creature-trampling: false
+    disable-creature-trampling: true
     disable-player-trampling: false

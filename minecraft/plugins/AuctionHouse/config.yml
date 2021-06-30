@@ -79,7 +79,7 @@ log:
 disabled-worlds: []
 auction:
   preventFilledContainers: false
-  integerPrice: false
+  integerPrice: true
   showRepairCost: true
   action_bar: false
   showSeconds: true
