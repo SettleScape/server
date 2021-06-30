@@ -1,7 +1,7 @@
 
 #
 #  Experience configuration
-#  Last updated on 2.1.196-b${BUILD_NUMBER}
+#  Last updated on 2.1.199-b${BUILD_NUMBER}
 #
 #  Configure the experience formula and experience settings here.
 #
@@ -242,6 +242,7 @@ Experience_Values:
         Snow_Block: 40
         Soul_Sand: 40
         Soul_Soil: 40
+        Rooted_Dirt: 60
     Woodcutting:
         Oak_Log: 70
         Spruce_Log: 80
@@ -365,6 +366,12 @@ Experience_Values:
         Warped_Fungus: 50
         Shroomlight: 250
         Crimson_Roots: 6
+        Small_Dripleaf: 140
+        Moss_Block: 150
+        Cave_Vines: 90
+        Glow_Lichen: 200
+        Cave_Vines_Plant: 90
+        Big_Dripleaf: 140
     Mining:
         Magma_Block: 30
         Tube_Coral_Block: 75
@@ -437,6 +444,27 @@ Experience_Values:
         Ancient_Debris: 7777
         Basalt: 40
         Crimson_Nylium: 5
+        Small_Amethyst_Bud: 10
+        Calcite: 400
+        Tuff: 10
+        Deepslate_Coal_Ore: 700
+        Deepslate_Emerald_Ore: 1700
+        Deepslate_Redstone_Ore: 900
+        Deepslate_Copper_Ore: 1900
+        Deepslate_Gold_Ore: 1900
+        Deepslate_Lapis_Ore: 1400
+        Cobbled_Deepslate: 15
+        Deepslate: 30
+        Deepslate_Iron_Ore: 1300
+        Large_Amethyst_Bud: 30
+        Deepslate_Diamond_Ore: 3600
+        Budding_Amethyst: 400
+        Block_Of_Amethyst: 500
+        Lapis_Lazuli_Ore: 800
+        Amethyst_Cluster: 60
+        Medium_Amethyst_Bud: 20
+        Copper_Ore: 1400
+        Smooth_Basalt: 300
     Repair:
         Base: 1000.0
         Wood: 0.6
@@ -459,6 +487,20 @@ Experience_Values:
         Redstone_Ore: 15
         Nether_Gold_Ore: 35
         Ancient_Debris: 200
+        Lapis_Lazuli_Ore: 40
+        Deepslate_Lapis_Lazuli_Ore: 60
+        Deepslate_Copper_Ore: 100
+        Deepslate_Gold_Ore: 50
+        Deepslate_Coal_Ore: 20
+        Raw_Gold: 35
+        Cobbled_Deepslate: 5
+        Copper_Ore: 75
+        Raw_Copper: 75
+        Deepslate_Emerald_Ore: 110
+        Deepslate_Redstone_Ore: 30
+        Deepslate_Iron_Ore: 40
+        Raw_Iron: 25
+        Deepslate_Diamond_Ore: 140
     Taming:
         Animal_Taming:
             Llama: 1200
@@ -474,6 +516,8 @@ Experience_Values:
             Fox: 1000
             Panda: 1000
             Bee: 100
+            Goat: 250
+            Axolotl: 600
     Combat:
         Multiplier:
             Animals: 1.0
@@ -543,3 +587,6 @@ Experience_Values:
             Zombie_Pigman: 3.0
             Piglin_Brute: 4.5
             Zombified_Piglin: 3.0
+            Glow_Squid: 1.5
+            Goat: 1.5
+            Axolotl: 1.75

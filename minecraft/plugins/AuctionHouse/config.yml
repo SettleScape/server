@@ -1,13 +1,23 @@
 # 
 # AuctionHouse
+economy: vault
 announce:
+  discord:
+    listings: false
+    purchases: false
   chat:
     listings: true
     purchases: true
   action_bar:
     listings: false
     purchases: false
-blacklist:
+restricted_items:
+  mcmmo:
+    lore:
+    - mcMMO Ability Tool
+  mcmmo_ability:
+    persistent_data:
+      mcmmo:super_ability_boosted: 0
   '0':
     item: minecraft:bedrock
   '1':
@@ -31,6 +41,7 @@ blacklist:
       level: 3
     - ench: minecraft:fire_aspect
       level: 2
+
 updateTicks: 20
 locale: en_us
 decimal_format: '#,##0.00'
@@ -67,6 +78,9 @@ log:
   purged: true
 disabled-worlds: []
 auction:
+  preventFilledContainers: false
+  integerPrice: false
+  showRepairCost: true
   action_bar: false
   showSeconds: true
   spawnerInfo: true
@@ -101,4 +115,4 @@ triggers:
   sign: '[AuctionHouse]'
   block_name: Auction House
   entity_name: Auction House
-configVersion: 25
+configVersion: 32

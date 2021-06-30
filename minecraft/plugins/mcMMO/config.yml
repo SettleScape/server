@@ -1,7 +1,7 @@
 
 #
 #  mcMMO configuration
-#  Last updated on 2.1.196-b${BUILD_NUMBER}
+#  Last updated on 2.1.199-b${BUILD_NUMBER}
 #
 #####
 #
@@ -487,6 +487,10 @@ Bonus_Drops:
         Warped_Fungus: true
         Crimson_Stem: true
         Sweet_Berry_Bush: true
+        Moss_Block: true
+        Cave_Vines: true
+        Glow_Berries: true
+        Cave_Vines_Plant: true
     Mining:
         Andesite: true
         Diorite: true
@@ -532,6 +536,31 @@ Bonus_Drops:
         Chiseled_Nether_Bricks: true
         Chain: true
         Gold_Nugget: true
+        Smooth_Basalt: true
+        Small_Amethyst_Bud: true
+        Amethyst_Shard: true
+        Block_Of_Amethyst: true
+        Amethyst_Cluster: true
+        Raw_Gold: true
+        Deepslate_Diamond_Ore: true
+        Tuff: true
+        Deepslate_Emerald_Ore: true
+        Raw_Iron: true
+        Deepslate_Copper_Ore: true
+        Calcite: true
+        Budding_Amethyst: true
+        Raw_Copper: true
+        Deepslate_Gold_Ore: true
+        Lapis_Lazuli_Ore: true
+        Deepslate_Coal_Ore: true
+        Deepslate_Redstone_Ore: true
+        Deepslate: true
+        Medium_Amethyst_Bud: true
+        Deepslate_Lapis_Ore: true
+        Copper_Ore: true
+        Deepslate_Iron_Ore: true
+        Cobbled_Deepslate: true
+        Large_Amethyst_Bud: true
     Woodcutting:
         Acacia_Wood: true
         Acacia_Log: true
@@ -564,6 +593,7 @@ Bonus_Drops:
         Nether_Quartz: true
         Quartz: true
         Redstone: true
+        Deepslate: true
 #
 #  Settings for commands
 ###

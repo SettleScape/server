@@ -24,6 +24,8 @@ regions:
     max-region-count-per-player:
         default: 0
     use-paper-entity-origin: true
+    disable-bypass-by-default: false
+    announce-bypass-status: false
 auto-invincible: false
 auto-invincible-group: false
 auto-no-drowning-group: false
@@ -51,6 +53,7 @@ protection:
     remove-infinite-stacks: true
     disable-xp-orb-drops: false
     disable-obsidian-generators: false
+    use-max-priority-association: false
 gameplay:
     block-potions: []
     block-potions-overly-reliably: false
@@ -101,6 +104,7 @@ mobs:
     block-other-explosions: false
     block-zombie-door-destruction: true
     block-creature-spawn: []
+    block-vehicle-entry: false
 player-damage:
     disable-fall-damage: false
     disable-lava-damage: false
@@ -161,3 +165,7 @@ blacklist:
             enable: false
             path: worldguard/logs/%Y-%m-%d.log
             open-files: 10
+disable-permission-cache: false
+turtle-egg:
+    disable-creature-trampling: false
+    disable-player-trampling: false

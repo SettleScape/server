@@ -198,13 +198,25 @@ Economy:
   # When this left at false penalty for action will remain unchanged
   ApplyToNegativeIncome: false
   MinimumOveralPayment:
-    # Determines minimum payment. In example if player uses McMMO treefeller and earns only 20%, but at same time he gets 25% penalty from dynamic payment. He can 'get' negative amount of money
+    # Determines minimum payment.
+    # In example if player uses McMMO treefeller and earns only 20%, but at same time player gets 25% penalty from dynamic payment.
+    # The player can 'get' negative amount of money
     # This will limit it to particular percentage
     # Works only when original payment is above 0
     use: true
     limit: 0.1
   MinimumOveralPoints:
-    # Determines minimum payment. In example if player uses McMMO treefeller and earns only 20%, but at same time he gets 25% penalty from dynamic payment. He can 'get' negative amount of money
+    # Determines minimum payment for points.
+    # In example if player uses McMMO treefeller and earns only 20%, but at same time player gets 25% penalty from dynamic payment.
+    # The player can 'get' negative amount of points
+    # This will limit it to particular percentage
+    # Works only when original payment is above 0
+    use: true
+    limit: 0.1
+  MinimumOveralExp:
+    # Determines minimum payment for experience.
+    # In example if player uses McMMO treefeller and earns only 20%, but at same time player gets 25% penalty from dynamic payment.
+    # The player can 'get' negative amount of experience
     # This will limit it to particular percentage
     # Works only when original payment is above 0
     use: true
@@ -444,9 +456,6 @@ ShowChatMessage:
   OnTitleChange: true
   OnLevelChange: true
   OnEmptyServerAccount: true
-# Send title and chat message when a player reached the maximum level in a job.
-SendTitleMessageWhenMaxLevelReached: true
-# Sounds
 # Extra sounds on some events
 # All sounds can be found in https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
 Sounds:
@@ -469,7 +478,7 @@ Fireworks:
     Random: true
     flicker: true
     trail: true
-    # Firework types
+    # Firework type
     # All types can be found in https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/FireworkEffect.Type.html
     type: STAR
     colors:
@@ -478,7 +487,7 @@ Fireworks:
     - 0,0,104
     power: 1
     # Fire shooting time in ticks.
-    # Example: 20 tick = 1 second
+    # 20 tick = 1 second
     ShootTime: 20
 # You can disable this to save SMALL amount of server resources
 Signs:
@@ -514,6 +523,8 @@ JobsGUI:
   DisableJoiningJobThroughGui: false
   # Do you want to show the action names in GUI?
   ShowActionNames: true
+  # Do we hide all item attributes in GUI?
+  HideItemAttributes: true
   # Defines size in rows of GUI
   Rows: 5
   # Defines back button slot in GUI

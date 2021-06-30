@@ -22,6 +22,8 @@ exampleBoost:
   enchants:
   - FIRE_ASPECT=1
   - DAMAGE_ALL=1
+  # (Optional) Leather armour colors (0-255)
+  leather-color: 82,34,125
   # [Required] Money boost: 1.1 is equals 10% more income when 0.9 is equals 10% less from base income
   moneyBoost: 1.0
   expBoost: 1.0
