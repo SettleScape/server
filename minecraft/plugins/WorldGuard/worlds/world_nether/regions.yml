@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    nether_spawn:
+        min: {x: -3, y: 51, z: -4}
+        max: {x: -1, y: 57, z: 1}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
         flags: {}
