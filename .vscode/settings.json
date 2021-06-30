@@ -27,5 +27,5 @@
         "**/WorldGuard/**/blacklist.txt": "ini",
     },
     "files.trimTrailingWhitespace": false,
-    "restructuredtext.confPath": ""
+    "terminal.integrated.allowChords": false,
 }
