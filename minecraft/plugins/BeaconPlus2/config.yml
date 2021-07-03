@@ -70,7 +70,7 @@ Calculator:
     GOLD_BLOCK: 2
     EMERALD_BLOCK: 3
     DIAMOND_BLOCK: 4
-  # NETHERITE_BLOCK: 5
+    NETHERITE_BLOCK: 5
   Maximum Height Check: 6
   Must Be Perfect: true
   Prevent Synchronously Run: true
