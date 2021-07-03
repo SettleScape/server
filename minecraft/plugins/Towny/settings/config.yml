@@ -1509,7 +1509,7 @@ economy:
  
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
-    price_nation_upkeep: '0.0'
+    price_nation_upkeep: '50.0'
  
     # Uses total number of towns in the nation to determine upkeep instead of nation level (Number of Residents)
     # calculated by (number of towns in nation X price_nation_upkeep).
@@ -1527,7 +1527,7 @@ economy:
     town_plotbased_upkeep: 'true'
  
     # If set to true, the plot-based-upkeep system will be modified by the Town Levels' upkeep modifiers.
-    town_plotbased_upkeep_affected_by_town_level_modifier: 'false'
+    town_plotbased_upkeep_affected_by_town_level_modifier: 'true'
  
     # If set to any amount over zero, if a town's plot-based upkeep totals less than this value, the town will pay the minimum instead.
     town_plotbased_upkeep_minimum_amount: '50.0'
@@ -1581,7 +1581,7 @@ economy:
  
       # If a town has reached their debt cap and is unable to pay the upkeep with debt,
       # will Towny delete them?
-      delete_towns_that_reach_debt_cap: 'true'
+      delete_towns_that_reach_debt_cap: 'false'
  
     nation_tax:
  
