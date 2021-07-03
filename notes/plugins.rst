@@ -23,7 +23,7 @@ OpenInv            4.1.5      2020-11-03              2021-06-30  https://github
 PhantomSMP         1.1.1      2019-06-04  Dead        2021-06-30  https://github.com/SimonOrJ/PhantomSMP/releases
 ParticleLib        1.6.3      2020-06-25              2021-06-30  https://github.com/bytez1337/particlelib/releases
 PlaceholderAPI     2.10.9     2020-08-04              2021-06-30  https://spigotmc.org/resources/6245/updates
-ProtocolLib        4.6.0      2021-02-15              2021-06-30  https://github.com/dmulloy2/ProtocolLib/releases
+ProtocolLib        4.7.0-SS   2021-06-27              2021-07-02  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.12.2     2021-06-26              2021-06-30  https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2021-01-15              2021-06-30  https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
 Towny              0.97.0.8   2021-06-24              2021-06-30  https://github.com/TownyAdvanced/Towny/releases
