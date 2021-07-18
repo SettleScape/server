@@ -93,6 +93,7 @@ timings:
   server-name: SettleScape
 world-settings:
   default:
+    show-sign-click-command-failure-msgs-to-player: false
     allow-using-signs-inside-spawn-protection: false
     should-remove-dragon: false
     ender-dragons-death-always-places-dragon-egg: false
