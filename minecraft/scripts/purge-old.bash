@@ -4,6 +4,7 @@ source './env.sh'
 
 ## Variables.
 declare -a DIRS=(
+    '.'
     'logs' 
     'crash-reports' 
     'plugins/AuctionHouse/logs' 
@@ -12,6 +13,7 @@ declare -a DIRS=(
     'plugins/Towny/backup' 
 )
 declare -a EXTS=(
+    '.log'
     '.log.gz' 
     '.txt' 
     '.log' 
