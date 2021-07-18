@@ -1,7 +1,7 @@
 # Language file you want to use
 Language: EN
 # When enabled plugin will try to keep CMILib up to date automatically
-AutoUpdate: true
+AutoUpdate: false
 # When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
 AutoFileRemoval: true
 GlobalGui:
