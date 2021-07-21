@@ -1,5 +1,5 @@
 #!/bin/sh
-. env.sh
+. './env.sh'
 
 systemctl --user daemon-reload
 systemctl --user start settlescape
