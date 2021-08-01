@@ -56,6 +56,19 @@ Beacon Range Calculator:
   # (percentage / 100) * power
   Percentage: 25
 
+Item Economy:
+#  <economy name>: 
+#     display-name: <String>
+#     item: <ItemStack>
+#  for more info, visit: https://www.spigotmc.org/wiki/itemstack-serialization/
+   Emerald:
+      display-name: 'Emerald'
+      currency-name: 'Emerald'
+      item:
+         ==: org.bukkit.inventory.ItemStack
+         type: EMERALD
+         amount: 1
+
 Beacon Ranges:
   '0': 0
   '9': 10
