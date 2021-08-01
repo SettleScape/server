@@ -1,7 +1,7 @@
 # 
 # AuctionHouse
 anticheat:
-  spam_check: false
+  spam_check: true
 economy: vault
 announce:
   discord:
