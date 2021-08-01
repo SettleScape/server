@@ -12,7 +12,7 @@ layer:
   showWilds: true
 visibility-by-town: true
 visibility-by-nation: true
-dynamic-nation-colors: true
+dynamic-nation-colors: false
 infowindow: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regionname%</h3>
   <p style="margin:0">%board%</p> <hr/> <p style="margin:0"> <b>Founded:</b> %founded%
   </p> <p style="margin:0"> <b>Mayor:</b> %playerowners% </p> <p style="margin:0">
