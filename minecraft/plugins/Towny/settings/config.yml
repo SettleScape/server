@@ -1,8 +1,8 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.97.0.8
+  version: 0.97.0.19
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.97.0.8
+  last_run_version: 0.97.0.19
 # The language file you wish to use
 # Available languages: chinese, danish, english, es-419, french, german, italian, korean,
 # norwegian, polish, pt-br, russian, se-SV, spanish, zh-TW
@@ -323,6 +323,11 @@ town:
   # near to each other, but want to keep outposts away from towns.
   min_distance_for_outpost_from_plot: '10'
  
+  # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
+  # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
+  # Do not set lower than min_distance_for_outpost_from_plot above.
+  max_distance_for_outpost_from_town_plot: '0'
+ 
   # Maximum distance between homeblocks.
   # This will force players to build close together.
   max_distance_between_homeblocks: '0'
@@ -463,6 +468,8 @@ new_world_settings:
       enabled: 'true'
       # The list of blocks whose explosions should be reverted.
       blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED
+    # The list of blocks to regenerate. (if empty all blocks will regenerate)
+    wild_revert_on_explosion_block_whitelist: ''
  
  
   ############################################################
@@ -557,6 +564,14 @@ global_town_settings:
   # When this is true, players will respawn to respawn anchors on death rather than their own town. 1.16+ only.
   respawn_anchor_higher_precendence: 'false'
  
+  # When set above 0, the amount of hours a town must wait after setting their homeblock, in order to move it again.
+  homeblock_movement_cooldown_hours: '0'
+ 
+  # When set above 0, the furthest number of townblocks a homeblock can be moved by.
+  # Example: setting it to 3 would mean the player can only move their homeblock over by 3 townblocks at a time.
+  # Useful when used with the above homeblock_movement_cooldown_hours setting.
+  homeblock_movement_distance_limit: '0'
+ 
   # Enables the [~Home] message.
   # If false it will make it harder for enemies to find the home block during a war
   show_town_notifications: 'true'
@@ -579,6 +594,10 @@ global_town_settings:
   # Warning: Outlaws can use this feature to spam residents with warnings!
   # It is recommended to set this to true only if you're using outlaw teleporting with a warmup of 0 seconds.
   warn_town_on_outlaw: 'false'
+ 
+  # If set to true, when a player is made into an outlaw using /t outlaw add NAME, and that new
+  # outlaw is within the town's borders, the new outlaw will be teleported away using the outlaw_teleport_warmup.
+  outlaw_teleport_away_on_becoming_outlawed: 'false'
  
   # How many seconds are required for outlaws to be teleported away?
   # You can set this to 0 to instantly teleport the outlaw from town.
@@ -712,6 +731,10 @@ global_town_settings:
   # When enabled, town names will automatically be capitalised upon creation.
   automatic_capitalisation: 'true'
  
+  # This setting determines the list of allowed town map colors.
+  # The color codes are in hex format.
+  allowed_map_colors: aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00
+ 
  
   ############################################################
   # +------------------------------------------------------+ #
@@ -777,6 +800,9 @@ global_nation_settings:
   # This setting determines the list of allowed nation map colors.
   # The color codes are in hex format.
   allowed_map_colors: aqua:00ffff, azure:f0ffff, beige:f5f5dc, black:000000, blue:0000ff, brown:a52a2a, cyan:00ffff, darkblue:00008b, darkcyan:008b8b, darkgrey:a9a9a9, darkgreen:006400, darkkhaki:bdb76b, darkmagenta:8b008b, darkolivegreen:556b2f, darkorange:ff8c00, darkorchid:9932cc, darkred:8b0000, darksalmon:e9967a, darkviolet:9400d3, fuchsia:ff00ff, gold:ffd700, green:008000, indigo:4b0082, khaki:f0e68c, lightblue:add8e6, lightcyan:e0ffff, lightgreen:90ee90, lightgrey:d3d3d3, lightpink:ffb6c1, lightyellow:ffffe0, lime:00ff00, magenta:ff00ff, maroon:800000, navy:000080, olive:808000, orange:ffa500, pink:ffc0cb, purple:800080, violet:800080, red:ff0000, silver:c0c0c0, white:ffffff, yellow:ffff00
+ 
+  # The maximum amount of allies that a nation can have, set to -1 to have no limit.
+  max_allies: '-1'
  
  
   ############################################################
@@ -874,9 +900,6 @@ plugin:
     enable: 'false'
     dev_name: ElgarL
  
-  # Record all messages to the towny.log
-  logging: 'false'
- 
   # If true this will cause the log to be wiped at every startup.
   reset_log_on_boot: 'true'
  
@@ -889,6 +912,14 @@ plugin:
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
   name_blacklist: ''
+  update_notifications:
+ 
+    # If enabled, players with the towny.admin.updatealerts permission will receive an update notification upon logging in.
+    alerts: 'true'
+ 
+    # If enabled, only full releases will trigger notifications if you are running a full release.
+    # This is ignored if the server is currently using a pre-release version.
+    major_only: 'true'
  
  
   ############################################################
@@ -1462,12 +1493,24 @@ economy:
     # Set to true to allow withdrawals from town banks
     town_allow_withdrawals: 'true'
  
+    # Minimum amount of money players are allowed to deposit in town bank at a time.
+    town_min_deposit: '0'
+ 
+    # Minimum amount of money players are allowed to withdraw from town bank at a time.
+    town_min_withdraw: '0'
+ 
     # Maximum amount of money allowed in nation bank
     # Use 0 for no limit
     nation_bank_cap: '50000.0'
  
     # Set to true to allow withdrawals from nation banks
     nation_allow_withdrawals: 'true'
+ 
+    # Minimum amount of money players are allowed to deposit in nation bank at a time.
+    nation_min_deposit: '0'
+ 
+    # Minimum amount of money players are allowed to withdraw from nation bank at a time.
+    nation_min_withdraw: '0'
  
     # When set to true, players can only use their town withdraw/deposit commands while inside of their own town.
     # Likewise, nation banks can only be withdrawn/deposited to while in the capital city.
@@ -1824,78 +1867,9 @@ war:
  
   ############################################################
   # +------------------------------------------------------+ #
-  # |                   Flag War Settings                  | #
-  # |                                                      | #
-  # |               [Separate from Event War]              | #
-  # |           --------------------------------           | #
-  # |        DEPRECATED: Minimally Supported Through       | #
-  # |             3rd Party Contributions Only             | #
-  # +------------------------------------------------------+ #
-  ############################################################
- 
-  enemy:
- 
-    # If false, players won't be able to place war flags, effectively disabling warzones.
-    allow_attacks: 'false'
- 
-    # If true, enemy's can only attack the edge plots of a town with war flags.
-    only_attack_borders: 'true'
- 
-    # This many people must be online in target town in order to place a war flag in their domain.
-    min_players_online_in_town: '2'
- 
-    # This many people must be online in target nation in order to place a war flag in their domain.
-    min_players_online_in_nation: '3'
- 
-    max_active_flags_per_player: '1'
- 
-    flag:
- 
-      # This setting modifies the time between a war flag's Material shift. Accepts `s`(seconds) and `m`(minutes).
-      # Currently, you would multiply this times 10 to get the total time a flag should be in play.
-      # (It can also be set to `h` and `d` - but ain't nobody got time fo' that.)
-      waiting_time: 1m
- 
-      # This is the block a player must place to trigger the attack event.
-      base_block: oak_fence
- 
-      # This is the block a player must place to trigger the attack event.
-      light_block: torch
- 
-    beacon:
- 
-      # Must be smaller than half the size of town_block_size.
-      radius: '3'
-      # The range the beacon will be drawn in. It's flexibility is in case the flag is close to the height limit.
-      # If a flag is too close to the height limit (lower than the minimum), it will not be drawn.
-      height_above_flag:
-        min: '3'
-        max: '64'
-      draw: 'true'
-      wireframe_block: glowstone
- 
-    # While true, prevent players from performing certain actions while their town
-    # has an active enemy war flag placed.
-    prevent_interaction_while_flagged: 'true'
- 
-    # While true, prevent players from performing certain actions while a town in their nation
-    # has an active enemy war flag placed.
-    prevent_nation_interaction_while_flagged: 'true'
- 
-    # This is how much time that must pass after a town in a nation has been flagged
-    # before certain actions can be performed, measured in milliseconds.
-    time_to_wait_after_flagged: '600000'
- 
-    # If set to true, when a war flag finishes it's countdown successfully, the attacking town takes full control of the townblock.
-    # Setting this to 'False' will result only in monetary exchanges.
-    flag_takes_ownership_of_townblocks: 'false'
- 
- 
-  ############################################################
-  # +------------------------------------------------------+ #
   # |              Warzone Block Permissions               | #
   # |                                                      | #
-  # |              Used in Flag & Event Wars               | #
+  # |                  Used in Event Wars                  | #
   # +------------------------------------------------------+ #
   ############################################################
  
@@ -1961,7 +1935,7 @@ town_ruining:
  
     # This value determines the maximum duration in which a town can lie in ruins
     # After this time is reached, the town will be completely deleted.
-    # Does not accept values greater than 1000.
+    # Does not accept values greater than 8760, which is equal to one year.
     max_duration_hours: '1000'
  
     # This value determines the minimum duration in which a town must lie in ruins,
@@ -1971,3 +1945,26 @@ town_ruining:
     # If this is true, then after a town has been ruined for the minimum configured time,
     # it can then be reclaimed by any resident who runs /t reclaim, and pays the required price. (price is configured in the eco section)
     reclaim_enabled: 'true'
+ 
+    # If this is true, when a town becomes a ruin they also receive public status,
+    # meaning anyone can use /t spawn NAME to teleport to that town.
+    ruins_become_public: 'false'
+ 
+ 
+  ############################################################
+  # +------------------------------------------------------+ #
+  # |                 Bank History settings                | #
+  # +------------------------------------------------------+ #
+  ############################################################
+ 
+bank_history:
+ 
+  # This allows you to modify the style displayed via bankhistory commands.
+  book: |-
+    {time}
+
+    {type} of {amount} {to-from} {name}
+
+    Reason: {reason}
+
+    Balance: {amount}

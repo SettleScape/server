@@ -45,8 +45,10 @@ usingPlotManagementWildRegen=true
 PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull,wither,witherskull
 # If enabled any damage caused by block explosions will repair itself.
 usingPlotManagementWildRegenBlocks=true
-# The list of entities whose explosions would be reverted.
+# The list of blocks whose explosions would be reverted.
 PlotManagementWildRegenBlocks=WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED
+# The list of blocks to regenerate. (if empty all blocks will regenerate)
+PlotManagementWildRegenBlockWhitelist=
 # The delay after which the explosion reverts will begin.
 usingPlotManagementWildRegenDelay=5
 

@@ -172,7 +172,7 @@ soundeffects:
   oncomplete: true
   oncountdown: true
 debug-mode: false
-configversion: 3.79
+configversion: 3.81
 trade-command-compatible-mode: false
 excess-chest:
   enabled: true

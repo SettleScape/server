@@ -140,3 +140,7 @@ item-pickups: false ## Not useful unless we're trying to detect hacked accounts,
 # Track all hopper transactions, such as when a hopper removes items from a
 # chest, furnace, or dispenser.
 hopper-transactions: false ## Not necessary, since you have to have build permissions to loot a chest with a hopper, and the way our server is configured, this always coincides with chest access.
+
+# If modified, will automatically attempt to translate languages phrases.
+# List of language codes: https://coreprotect.net/languages/
+language: en

@@ -1,5 +1,7 @@
 # 
 # AuctionHouse
+anticheat:
+  spam_check: false
 economy: vault
 announce:
   discord:
@@ -27,6 +29,8 @@ restricted_items:
   '3':
     item: minecraft:structure_block
   example:
+    unbreakable: true
+    custom_model_data: 1
     name: \u00a7cVorpal Sword
     item: minecraft:diamond_sword
     lore:
@@ -41,7 +45,6 @@ restricted_items:
       level: 3
     - ench: minecraft:fire_aspect
       level: 2
-
 updateTicks: 20
 locale: en_us
 decimal_format: '#,##0.00'
@@ -115,4 +118,4 @@ triggers:
   sign: '[AuctionHouse]'
   block_name: Auction House
   entity_name: Auction House
-configVersion: 32
+configVersion: 33
