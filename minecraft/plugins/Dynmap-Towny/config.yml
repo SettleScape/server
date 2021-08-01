@@ -1,7 +1,4 @@
 # Dynmap-Towny configuration
-dynamic-nation-colors: true
-visibility-by-town: false
-visibility-by-nation: false
 update:
   period: 300
 layer:
@@ -13,6 +10,9 @@ layer:
   showArenas: true
   showEmbassies: true
   showWilds: true
+visibility-by-town: false
+visibility-by-nation: false
+dynamic-nation-colors: true
 infowindow: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regionname%</h3>
   <p style="margin:0">%board%</p> <hr/> <p style="margin:0"> <b>Founded:</b> %founded%
   </p> <p style="margin:0"> <b>Mayor:</b> %playerowners% </p> <p style="margin:0">
@@ -20,12 +20,12 @@ infowindow: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regio
   <p style="margin:0"> <b>Upkeep:</b> %upkeep% </p> <p style="margin:0"> <b>Resident(s):</b>
   %residentcount% </p> </div>
 regionstyle:
-  homeicon: default
   strokeColor: '#000000'
   strokeOpacity: 0.75
   strokeWeight: 3
   fillColor: '#7F7F7F'
   fillOpacity: 0.33
+  homeicon: default
   capitalicon: bighouse
   fillColorShops: '#FFFF00'
   fillColorArenas: '#FF0000'
@@ -43,12 +43,12 @@ custstyle:
     y: 64
     boost: false
 nationstyle:
-  _none_:
-    homeicon: default
   NationOfBlue:
     strokeColor: '#0000FF'
     fillColor: '#0000FF'
     boost: false
+  _none_:
+    homeicon: default
 chat:
   sendlogin: false
   sendquit: false
