@@ -10,8 +10,8 @@ layer:
   showArenas: true
   showEmbassies: true
   showWilds: true
-visibility-by-town: false
-visibility-by-nation: false
+visibility-by-town: true
+visibility-by-nation: true
 dynamic-nation-colors: true
 infowindow: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regionname%</h3>
   <p style="margin:0">%board%</p> <hr/> <p style="margin:0"> <b>Founded:</b> %founded%
