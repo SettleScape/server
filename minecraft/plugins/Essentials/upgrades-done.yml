@@ -7,3 +7,5 @@ banFormatChange: true
 warnMetrics: true
 userMapRepaired: true
 updateUsersIgnoreListUUID: true
+updateUsersStupidLegacyPathNames: true
+updateUsersMailList: true
