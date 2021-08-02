@@ -74,6 +74,7 @@ permissions:
 - essentials.msg.multiple
 # - essentials.msg.url
 - essentials.helpop
+- essentials.discord.receive.main
 - towny.chat.general
 - towny.chat.local
 - townychat.chat.color

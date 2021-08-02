@@ -10,6 +10,7 @@ permissions:
 # Chat
 #-------------------------------------------------------------------------------
 - essentials.chat.ignoreexempt
+- essentials.discord.receive.mods
 - towny.chat.spy
 - towny.chat.mod
 - townychat.mod
