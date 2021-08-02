@@ -119,9 +119,9 @@ message-types:
   # Achievement/advancement messages sent when a player is awarded an achievement/advancement.
   advancement: main
   # Message sent when the server starts up.
-  server-start: news
+  server-start: main
   # Message sent when the server shuts down.
-  server-stop: news
+  server-stop: main
   # Message sent when a player is kicked from the Minecraft server.
   kick: mods
   # Message sent when a player's mute state is changed on the Minecraft server.
@@ -216,7 +216,7 @@ presence:
   # - "idle": Shows as yellow half-circle (Away)
   # - "dnd": Shows as red circle (Do Not Disturb)
   # - "invisible": Makes the bot appear offline
-  status: online
+  status: dnd
   # The activity of the bot to be prefixed before your message below. Must be one of the following;
   # - "playing": Shows up as "Playing <message>"
   # - "listening": Shows up as "Listening to <message>"
@@ -240,7 +240,7 @@ messages:
   # - {role}: The name of the user's topmost role on Discord. If the user doesn't have a role, the placeholder is empty.
   # - {color}: The minecraft color representative of the user's topmost role color on Discord. If the user doesn't have a role color, the placeholder is empty.
   # - {message}: The content of the message being sent
-  discord-to-mc: "&9Discorder&7 &f{nickname}&7 :arrow_right: &f{message}&r"
+  discord-to-mc: "&9Discorder&7 &f{nickname}&7 > &f{message}&r"
   # This is the message that is used to relay minecraft chat in Discord.
   # The following placeholders can be used here:
   # - {username}: The username of the player sending the message
@@ -250,7 +250,7 @@ messages:
   # - {prefix}: The prefix of the player sending the message
   # - {suffix}: The suffix of the player sending the message
   # ... PlaceholderAPI placeholders are also supported here too!
-  mc-to-discord: "&f{displayname}&7 :arrow_right: &f{message}&r"
+  mc-to-discord: "{message}"
   # This is the message sent to Discord when a player is temporarily muted in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
@@ -258,7 +258,7 @@ messages:
   # - {controllername}: The username of the user who muted the player
   # - {controllerdisplayname}: The display name of the user who muted the player
   # - {time}: The amount of time the player was muted for
-  temporary-mute: "&7* &f{controllerdisplayname}&7 has temporarily &cmuted&7 &f{displayname}&7 for &e{time}&7.&r"
+  temporary-mute: "***{controllerdisplayname}** has temporarily muted **{displayname}** for {time}.*"
   # This is the message sent to Discord when a player is temporarily muted (with a reason specified) in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
@@ -267,14 +267,14 @@ messages:
   # - {controllerdisplayname}: The display name of the user who muted the player
   # - {time}: The amount of time the player was muted for
   # - {reason}: The reason the player was muted for
-  temporary-mute-reason: "&7* &f{controllerdisplayname}&7 has temporarily &cmuted&7 &f{displayname}&7 for &e{time}&7. Reason: &f{reason}&7.&r"
+  temporary-mute-reason: "***{controllerdisplayname}** has temporarily muted **{displayname}** for {time}. Reason:* {reason}"
   # This is the message sent to Discord when a player is permanently muted in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
   # - {displayname}: The display name of the player being muted
   # - {controllername}: The username of the user who muted the player
   # - {controllerdisplayname}: The display name of the user who muted the player
-  permanent-mute: "&7* &f{controllerdisplayname}&7 has &cpermanently muted&7 &f{displayname}&7 for &e{time}&7.&r"
+  permanent-mute: "***{controllerdisplayname}** has permanently muted **{displayname}** for {time}.*"
   # This is the message sent to Discord when a player is permanently muted (with a reason specified) in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being muted
@@ -282,59 +282,59 @@ messages:
   # - {controllername}: The username of the user who muted the player
   # - {controllerdisplayname}: The display name of the user who muted the player
   # - {reason}: The reason the player was muted for
-  permanent-mute-reason: "&7* &f{controllerdisplayname}&7 has &cpermanently muted&7 &f{displayname}&7 for &e{time}&7. Reason: &f{reason}&7.&r"
+  permanent-mute-reason: "***{controllerdisplayname}** has permanently muted **{displayname}** for {time}. Reason:* {reason}"
   # This is the message sent to Discord when a player is unmuted in minecraft.
   # The following placeholders can be used here:
   # - {username}: The username of the player being unmuted
   # - {displayname}: The display name of the player being unmuted
-  unmute: "&7* &f{displayname}&7 has been &aunmuted&7.&r"
+  unmute: "***{displayname}** has been unmuted.**"
   # This is the message sent to Discord when a player joins the minecraft server.
   # The following placeholders can be used here:
   # - {username}: The name of the user joining
   # - {displayname}: The display name of the user joining
   # - {joinmessage}: The full default join message used in game
   # ... PlaceholderAPI placeholders are also supported here too!
-  join: "&7* &f{displayname}&7 has joined the game.&r"
+  join: "***{displayname}** has joined the game.*"
   # This is the message sent to Discord when a player leaves the minecraft server.
   # The following placeholders can be used here:
   # - {username}: The name of the user leaving
   # - {displayname}: The display name of the user leaving
   # - {quitmessage}: The full default leave message used in game
   # ... PlaceholderAPI placeholders are also supported here too!
-  quit: "&7* &f{displayname}&7 has left the game.&r"
+  quit: "***{displayname}** has left the game.*"
   # This is the message sent to Discord when a player dies.
   # The following placeholders can be used here:
   # - {username}: The name of the user who died
   # - {displayname}: The display name of the user who died
   # - {deathmessage}: The full default death message used in game
   # ... PlaceholderAPI placeholders are also supported here too!
-  death: "&7* {deathmessage}&r"
+  death: "*{deathmessage}*"
   # This is the message sent to Discord when a player becomes afk.
   # The following placeholders can be used here:
   # - {username}: The name of the user who became afk
   # - {displayname}: The display name of the user who became afk
   # ... PlaceholderAPI placeholders are also supported here too!
-  afk: "&7* &f{displayname}&7 is now AFK.&r"
+  afk: "*I am now AFK.*"
   # This is the message sent to Discord when a player is no longer afk.
   # The following placeholders can be used here:
   # - {username}: The name of the user who is no longer afk
   # - {displayname}: The display name of the user who is no longer afk
   # ... PlaceholderAPI placeholders are also supported here too!
-  un-afk: "&7* &f{displayname}&7 is no longer AFK.&r"
+  un-afk: "*I am no longer AFK.*"
   # This is the message sent to Discord when a player is awarded an advancement.
   # The following placeholders can be used here:
   # - {username}: The name of the user who was awarded the advancement.
   # - {displayname}: The display name of the user who was awarded the advancement.
   # - {advancement}: The name of the advancement.
   # ... PlaceholderAPI placeholders are also supported here too!
-  advancement: "&7* &f{displayname} has made the advancement &f[{advancement}]&r"
+  advancement: "***{displayname}** has made the advancement **[{advancement}]***"
   # This is the message sent to Discord when the server starts.
-  server-start: "&7The &fserver&7 is now &aonline&7.&r"
+  server-start: "*The server is now **online**.*"
   # This is the message sent to Discord when the server stops.
-  server-stop: "&7The &fserver&7 is now &coffline&7.&r"
+  server-stop: "*The server is now **offline**.*"
   # This is the message sent to Discord when a player is kicked from the server.
   # The following placeholders can be used here:
   # - {username}: The name of the user who got kicked
   # - {displayname}: The display name of the user who got kicked
   # - {reason}: The reason the player was kicked
-  kick: "&7* &f{displayname}&7 was &ckicked&7. Reason: &f{reason}&7.&r"
+  kick: "***{displayname}** was kicked. Reason: *{reason}"
