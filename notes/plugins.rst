@@ -21,7 +21,6 @@ mcMMO-Towny        1.0.1      2019-09-14  Old         2021-07-31  https://github
 MineableSpawners   3.1.0      2021-06-25              2021-07-31  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.5      2020-11-03              2021-07-31  https://github.com/lishid/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  Dead        2021-07-31  https://github.com/SimonOrJ/PhantomSMP/releases
-ParticleLib        1.6.4      2021-07-11              2021-07-31  https://github.com/bytez1337/particlelib/releases
 PlaceholderAPI     2.10.10    2021-07-10              2021-07-31  https://spigotmc.org/resources/6245/updates
 ProtocolLib        4.7.0      2021-07-09              2021-07-31  https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.12.2     2021-06-26              2021-07-31  https://spigotmc.org/resources/76964/updates
