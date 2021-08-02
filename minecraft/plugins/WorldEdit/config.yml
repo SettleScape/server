@@ -119,8 +119,8 @@ snapshots:
     directory:
 
 navigation-wand:
-    item: minecraft:compass
-    max-distance: 100
+    item: minecraft:phantom_membrane
+    max-distance: 32
 
 scripting:
     timeout: 3000
