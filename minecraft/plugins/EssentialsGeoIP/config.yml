@@ -10,7 +10,7 @@ database:
   update:
     enable: true
     by-every-x-days: 30
-show-on-login: true
+show-on-login: false
 show-on-whois: true
 # "enable-locale" enables locale on geolocation display.
 # Language is determined by Essentials/config.yml "locale" section.
