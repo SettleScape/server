@@ -175,12 +175,12 @@ crafting-recipes:
       'string': 9
     results:
       'cobweb': 1
-  extract_nether_wart: # Missing recipe.  In-line with other decompression recipes.
-    type: shapeless
-    ingredients:
-      'nether_wart_block': 1
-    results:
-      'nether_wart': 9
+  # extract_nether_wart: # Missing recipe.  In-line with other decompression recipes. #WARN: Exploitable in and after 1.16.
+  #   type: shapeless
+  #   ingredients:
+  #     'nether_wart_block': 1
+  #   results:
+  #     'nether_wart': 9
 
   extract_prismarine:
     type: shapeless
