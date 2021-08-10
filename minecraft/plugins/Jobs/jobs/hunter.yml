@@ -155,9 +155,9 @@ Hunter:
       points: 50
       experience: 50.0
     enderman:
-      income: 20.0
-      points: 20
-      experience: 15.0
+      income: 5.0
+      points: 5
+      experience: 5.0
     endermite:
       income: 5.0
       points: 5
