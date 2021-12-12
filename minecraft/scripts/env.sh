@@ -7,3 +7,4 @@ export \
     ENV_SERVER_JAR='server.jar'
     ENV_SERVER_ROOT='../' \
     ENV_VERSION='1.16.5' \
+    ENV_JAVA_VERSION='16' \
