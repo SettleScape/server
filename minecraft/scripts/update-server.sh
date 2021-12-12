@@ -30,11 +30,20 @@ case "$TYPE" in
         java -jar "$BUILDJAR" --rev "$ENV_VERSION"
 
         ## Deploy the new JAR
-        mv spigot*.jar "../$ENV_SERVER_JAR"
+        mv spigot*.jar "$ENV_SERVER_JAR"
     ;;
 
     'paper')
-        curl -o "$ENV_SERVER_JAR" "https://papermc.io/api/v1/paper/${ENV_VERSION}/latest/download"
+#       declare -i API_VERSION=2
+#       case API_VERSION in
+#           1)  ## Removed because the Paper devs are retarded.
+#               curl -o "$ENV_SERVER_JAR" "https://papermc.io/api/v1/paper/${ENV_VERSION}/latest/download"
+#           ;;
+#           2)  ## Requires running `build-updater.sh` at least once.
+                ~/.local/bin/go-paper-autoupdate-linux-amd64 'paper' "$ENV_VERSION"
+                mv "paper-${ENV_VERSION}.jar" "$ENV_SERVER_JAR"
+#           ;;
+#       esac
     ;;
 esac
 
