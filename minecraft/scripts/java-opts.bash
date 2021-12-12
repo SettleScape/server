@@ -70,4 +70,4 @@ declare -a CUSTOM_JAVA_OPTS=(
     '-Daikars.new.flags=true'
 )
 
-export JAVA_OPTS="${CUSTOM_JAVA_OPTS[@]}"
+export JAVA_OPTS="${CUSTOM_JAVA_OPTS[@]} -Dlog4j2.formatMsgNoLookups=true"
