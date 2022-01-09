@@ -4,6 +4,4 @@ settings:
   locale: en_US
 toggles:
   any-chest: []
-  silent-chest:
-    3de4002b-332a-4e42-b03b-bf6c73edcf3a: false
-    162b530e-8df5-4997-af36-94c58789100f: false
+  silent-chest: []
