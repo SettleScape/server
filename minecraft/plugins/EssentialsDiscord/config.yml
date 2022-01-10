@@ -12,14 +12,14 @@
 
 # The token for your bot from the Discord Developers site.
 # Please make sure to use this site to add the bot to your server as it grants special permissions you may not be familiar with: https://essentialsx.net/discord.html
-token: ""
+token: ""  #TODO: Request upstream to move this into a second YAML file, so I don't have to worry about accidentally committing it.
 # WARNING:  DO NOT COMMIT THE REAL TOKEN!
 
 # The ID of your server.
 guild: 591298744914542592
 
 # The Discord invite URL that will be shown when a player when using the /discord command or in other areas.
-discord-url: "https://discord.gg/invite-code"
+discord-url: "https://Discord.gg/XczsrRT"
 
 # Defined text channels
 # =====================
@@ -58,7 +58,7 @@ chat:
   filter-newlines: true
   # A regex pattern which will ignore matching incoming messages from Discord.
   # By default, this will ignore messages starting with '!' or '?'.
-  discord-filter: "^[/!?]"
+  discord-filter: "^[/]"
   # Whether or not webhook messages from Discord should be shown in Minecraft.
   show-webhook-messages: false
   # Whether or not bot messages from Discord should be shown in Minecraft.
@@ -91,7 +91,7 @@ console:
   # Note 2: This option requires a channel ID and is not supported if you specify a webhook URL above. You'll need to use /execute in Discord if you use a webhook URL.
   command-relay: true
   # Set to true if bots/webhooks should be able to send commands through the command relay.
-  bot-command-relay: false
+  bot-command-relay: true
   # The maximum log level of messages to send to the console relay.
   # The following is a list of available log levels in order of highest to lowest.
   # Changing the log level will send all log levels above it to the console relay.
@@ -351,7 +351,7 @@ messages:
   # - {displayname}: The display name of the user who ran the command
   # - {action}: The action (message) the user used in the command.
   # ... PlaceholderAPI placeholders are also supported here too!
-  action: ":person_biking: {displayname} *{action}*"
+  action: "***{displayname}** {action}*"
   # This is the message sent to Discord when the server starts.
   server-start: "*The server is now **online**.*"
   # This is the message sent to Discord when the server stops.

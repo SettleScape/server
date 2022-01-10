@@ -13,6 +13,7 @@ permissions:
 - bukkit.command.list
 - bukkit.command.plugins
 - bukkit.command.version
+- essentials.seen.uuid
 - essentials.whois.ip
 - shopchest.notification.update
 
@@ -43,6 +44,7 @@ permissions:
 #-------------------------------------------------------------------------------
 - bukkit.broadcast
 - bukkit.broadcast.admin
+- essentials.mail.sendtempall
 - towny.chat.admin
 
 # Offline actions (these ignore exemptions)

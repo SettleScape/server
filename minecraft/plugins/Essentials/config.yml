@@ -48,7 +48,7 @@ hide-displayname-in-vanish: true
 change-displayname: true
 
 # This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
-change-tab-complete-name: false
+change-tab-complete-name: true
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
@@ -241,7 +241,7 @@ use-bukkit-permissions: false
 skip-used-one-time-kits-from-kit-list: true
 
 # When enabled, armor from kits will automatically be equipped as long as the player's armor slots are empty.
-kit-auto-equip: false
+kit-auto-equip: true
 
 # Determines the functionality of the /createkit command.
 # If this is true, /createkit will give the user a link with the kit code.
@@ -256,7 +256,7 @@ pastebin-createkit: false
 # WARNING: When creating kits via /createkit with this option enabled, you will not be able to downgrade your server with these kit items.
 # This option only affects /createkit - you can still create kits by hand in `kits.yml` using Essentials' human-readable item format.
 # Default is false.
-use-nbt-serialization-in-createkit: false
+use-nbt-serialization-in-createkit: true
 
 # Essentials Sign Control
 # See http://wiki.ess3.net/wiki/Sign_Tutorial for instructions on how to use these.
@@ -562,7 +562,7 @@ tpa-accept-cancellation: 30
 # The maximum number of simultaneous tpa requests that can be pending for any player.
 # Once past this threshold, old requests will instantly time out.
 # Defaults to 5.
-tpa-max-requests: 5
+tpa-max-requests: 4
 
 # Allow players to set hats by clicking on their helmet slot.
 allow-direct-hat: true

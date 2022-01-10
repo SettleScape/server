@@ -15,6 +15,10 @@ permissions:
 - towny.chat.mod
 - townychat.mod
 
+# Espionage
+#-------------------------------------------------------------------------------
+- essentials.playtime.others
+
 # Punishments/Judgements/Actions
 #-------------------------------------------------------------------------------
 - essentials.mute

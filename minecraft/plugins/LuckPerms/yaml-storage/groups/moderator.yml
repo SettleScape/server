@@ -74,6 +74,7 @@ permissions:
 - essentials.togglejail # How you actually jail people
 - essentials.jails # Info about jails
 - essentials.jail.exempt # Cannot be jailed
+- essentials.jail.notify
 
 - essentials.kick
 - essentials.kick.notify
