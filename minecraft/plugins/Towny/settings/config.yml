@@ -1563,7 +1563,7 @@ economy:
  
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
-    price_town_upkeep: '1.0'
+    price_town_upkeep: '0.25'
  
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
