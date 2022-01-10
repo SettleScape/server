@@ -6,6 +6,8 @@ Messages:
   ConfigReloaded: "&a[ES] Success: config file is reloaded."
   ESOff: "&a[ES] You're no longer in Sign Edit mode."
   ESOn: "&a[ES] You're now in Sign Edit mode."
+  NoSuchCommand: "&c[ES] No such command!"
+
 
 HelpMessages:
   banner:
@@ -18,6 +20,16 @@ HelpMessages:
   debug:
     msg: "&a/es debug <true|false> : turn on / off the debug mode."
     permission: "EditableSign.debug"
+
+CommandAliases:
+  - "es"
+
+# this option is for the target outlet of the messages to go. Previously, they were all sent to chat.
+MessageOutlet:
+  Title: false
+  SubTitle: false
+  ActionBar: true
+  Chat: true
 
 #
 # the use of WorldGuard,
@@ -52,9 +64,14 @@ EventPriorityMap:
   PlayerJoinEvent: "HIGHEST"
   PlayerQuitEvent: "HIGHEST"
   SignChangeEvent: "MONITOR"
+  BlockBreakEvent: "MONITOR"
+  BlockPlaceEvent: "MONITOR"
 
 # event type
 ClickMode: RIGHT  # or LEFT
+
+# use of sneak
+UseSneak: true
 
 #
 BlacklistReplacement: "**"
