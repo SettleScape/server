@@ -14,36 +14,40 @@ case "$1" in
        *) documentation && exit 1 ;;
 esac
 
+## Preliminaries
+set -e
+source './env.sh'
+cd "$ENV_SERVER_ROOT"
+
 ## Figure out which Java to use.
 ## Do not use Java SE (Oracle's version) versions 11-16, as those require a hefty fee to use in production.
-## Java SE should otherwise be preferred, as unlike OpenJDK, it continues to update old versions after the release of a new one. 
+## Java SE should otherwise be preferred, as unlike OpenJDK, it continues to update old versions after the release of a new one.
 declare -i I=0
-until [[ -f "$JAVA" ]]; do
+unset JAVA_HOME
+until [[ -f "$JAVA_HOME/java" ]]; do
     case $I in
-    0) JAVA="$ENV_JAVA_PATH"                                         ;;
-    1) echo "No Java found at '$JAVA'.  Please download Java v$ENV_JAVA_VERSION and place it at that path, or SettleScape may not run correctly." >&2 ;;
-    2) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin/java"     ;;
-    3) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-openjdk/jre/bin/java" ;;
-    4) JAVA="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin/java"      ;;
+    0) JAVA_HOME="$ENV_JAVA_DIR/bin"                ;;
+    1) echo "No Java found in '$ENV_JAVA_DIR'.  Please download Java v$ENV_JAVA_VERSION and place it at that path, or SettleScape may not run correctly." >&2 ;;
+    ## If the custom Java path is missing, try looking for common system paths.
+    2) JAVA_HOME="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin"     ;;
+    3) JAVA_HOME="/lib/jvm/java-${ENV_JAVA_VERSION}-openjdk/jre/bin" ;;
+    4) JAVA_HOME="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin"      ;;
     ## If none of the above worked, try using the system's default java.
-    *) JAVA=`which java` ;;
+    *) JAVA_HOME=`which java | sed -r 's/\/java$//'` ;;
     esac
     I=`expr $I + 1`
 done
-export JAVA_HOME="$JAVA/bin"
-export JRE_HOME="$JAVA_HOME"
-# echo "$JAVA" && exit 1
+export JAVA_HOME JRE_HOME="$JAVA_HOME"
+# echo "$JAVA_HOME" && exit 1
 
-## Get variables
-source './env.sh'
-source './java-opts.bash'
+## Get Java opts
+source './scripts/java-opts.bash'
 # echo "$JAVA_OPTS" && exit 1
 
 ## Start the server
-cd "$ENV_SERVER_ROOT"
 declare -a CMD=(
     -mS "$ENV_SCREEN_NAME"
-    "$JAVA" $JAVA_OPTS -jar
+    "$JAVA_HOME/java" $JAVA_OPTS -jar
     "./$ENV_SERVER_JAR" --nogui #--forceUpgrade
 )
 if [[ ! -z $DAEMON ]]
