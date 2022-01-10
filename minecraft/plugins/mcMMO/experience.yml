@@ -154,7 +154,7 @@ Experience_Formula:
         Axes: 1.0
         Repair: 1.0
         Fishing: 0.3333
-        Alchemy: 1.0
+        Alchemy: 0.25
     # XP earned by players with the permission mcmmo.perks.xp.customboost.<skillname> will get multiplied
     # with 1.25 by default, resulting in a 25% XP boost
     Custom_XP_Perk:
