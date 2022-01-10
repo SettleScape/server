@@ -15,6 +15,9 @@ eval "$STUFF 'dynmap fullrender world \n'"         && sleep 1
 eval "$STUFF 'dynmap fullrender world_nether \n'"  && sleep 1
 eval "$STUFF 'dynmap fullrender world_the_end \n'" && sleep 1
 
+echo 'Cleaning Beacon+ data...'
+eval "$STUFF bp purgeemptydata" #WARN: Can take a long time and choke server resources.
+
 ## Done
 echo 'Done.'
 exit 0

@@ -3,7 +3,7 @@
 Plugin             Version    Released    Stuck 'til  Checked     URL
 =================  =========  ==========  ==========  ==========  ===
 AuctionHouse       2.2.1      2021-07-28  1.17.X      2021-07-31  https://spigotmc.org/resources/61836/updates
-BeaconPlus         2.1.35     2021-07-31              2021-07-31  https://spigotmc.org/resources/67056/updates
+BeaconPlus         2.1.57     2022-01-07              2022-01-09  https://spigotmc.org/resources/67056/updates
 CMILib             1.0.3.2    2021-07-29              2021-07-31  https://www.spigotmc.org/resources/cmilib.87610/updates
 CommandLog         1.2        2016-07-09  Dead        2021-07-31  https://spigotmc.org/resources/21176/updates
 CoreProtect        20.1       2021-07-27              2021-07-31  https://spigotmc.org/resources/8631/updates

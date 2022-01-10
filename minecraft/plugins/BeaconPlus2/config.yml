@@ -1,4 +1,4 @@
-Configuration Version: bp2-2.10
+Configuration Version: bp2-2.11
 
 Check Interval In Seconds: 3
 Power Check Interval In Seconds: 3
@@ -6,6 +6,15 @@ Power Check Interval In Seconds: 3
 Show Plugin Error: true
 
 Check For Update: true
+
+# Enable auto-pickup feature
+# When you break a Beacon, it will directly go to your inventory
+# If your inventory is full, then you cannot break the Beacon
+# WARNING: When auto pick up is enabled, beacon will immune to any explosion
+Auto Pick Up: false
+
+# Allow multiple beacons to handle entities/blocks
+Multiple Beacon Effect Stack: false
 
 # Beacon must have nothing above it in order to enable
 Must Beam Through Sky: true
@@ -95,16 +104,16 @@ Entity Filter:
 Beacon Effect:
   Activated Status: "&aActivated"
   Deactivated Status: "&cDeactivated"
-  Low Level Status: "&e?"
+  Low Level Status: "&eLow Level"
 
 Beacon Item:
-  Display Name: "Beacon"
+  Display Name: "&aBeacon"
   Lore:
   - "&8&l+ &7Effects:"
   - "&8&l  + {effects}"
   Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8)"
   Deactivated Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8) (&cDEACTIVATED&8)"
-  Effect Lore Empty: "&f?"
+  Effect Lore Empty: "&f- No Effect -"
 
 Economy:
   Vault:
@@ -134,15 +143,15 @@ Economy:
           '1000000000000000000000000000000': no
           '1000000000000000000000000000000000': dc
   Experience:
-    Currency: "XP"
+    Currency: "Exp"
     Display Name: "Experience"
     Formatting:
       Enable: true
       Raw Digits: true
       Strip Trailing Zeros: true
       Rounding:
-        Enable: true
-        Mode: CEILING
+        Enable: false
+        Mode: HALF_DOWN
         Scale: 2
       Suffixing:
         Enable: true
@@ -164,6 +173,8 @@ Listener:
   # the built-in listener anyway.
   Use Hard Coded Listener: false
   Priority:
+    Block Explode: MONITOR
+    Entity Explode: MONITOR
     Chunk Load: HIGHEST
     Chunk Unload: HIGHEST
     Player Quit: HIGHEST
@@ -180,6 +191,8 @@ Listener:
     Inventory Move: HIGHEST
     Player Teleport: HIGHEST
   Ignore Cancelled:
+    Block Explode: true
+    Entity Explode: true
     Chunk Load: true
     Chunk Unload: true
     Player Quit: true
