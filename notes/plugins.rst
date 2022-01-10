@@ -13,7 +13,7 @@ Dynmap-Towny       0.86       2021-07-30              2021-07-31  https://github
 Dynmap-WorldGuard  CUSTOM     2019-12-15  Dead        2021-07-31  https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.7.0      2021-12-04              2022-01-09  https://polymart.org/resource/editablesign.127/updates
 EisenRadar         1.3.1      2018-08-24  Dead        2022-01-09  https://spigotmc.org/resources/50316/updates
-EssentialsX        2.19.0-SS  ????-??-??              2021-08-01  https://essentialsx.net/downloads.html
+EssentialsX        2.19.2     2021-12-15              2022-01-09  https://essentialsx.net/downloads.html
 Jobs Reborn        4.17.2     2021-05-14              2021-07-31  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.3.55     2021-07-31              2021-07-31  https://luckperms.net/download
 mcMMO              2.1.200    2021-07-02              2021-07-31  https://spigotmc.org/resources/64348/updates

@@ -5,18 +5,21 @@
 #############################################################
 
 # This is the config file for EssentialsX Discord.
-# This config was generated for version 2.19.0-dev+227-9082896.
+# This config was generated for version 2.19.2.
 
 # You need to create a bot user in order to connect your server to Discord.
 # You can find instructions on this here: https://essentialsx.net/discord-tutorial
 
 # The token for your bot from the Discord Developers site.
 # Please make sure to use this site to add the bot to your server as it grants special permissions you may not be familiar with: https://essentialsx.net/discord.html
-token: "INSERT-TOKEN-HERE"
+token: ""
 # WARNING:  DO NOT COMMIT THE REAL TOKEN!
 
 # The ID of your server.
 guild: 591298744914542592
+
+# The Discord invite URL that will be shown when a player when using the /discord command or in other areas.
+discord-url: "https://discord.gg/invite-code"
 
 # Defined text channels
 # =====================
@@ -87,8 +90,10 @@ console:
   # console. It's recommended you stick to the /execute command which has role permission checks (see command configuration below).
   # Note 2: This option requires a channel ID and is not supported if you specify a webhook URL above. You'll need to use /execute in Discord if you use a webhook URL.
   command-relay: true
+  # Set to true if bots/webhooks should be able to send commands through the command relay.
+  bot-command-relay: false
   # The maximum log level of messages to send to the console relay.
-  # The following is a list of available log levels in order of lowest to highest.
+  # The following is a list of available log levels in order of highest to lowest.
   # Changing the log level will send all log levels above it to the console relay.
   # For example, setting this to 'info' will display log messages with info, warn, error, and fatal levels.
   # Log Levels:
@@ -99,6 +104,10 @@ console:
   # - debug
   # - trace
   log-level: warn
+  # Blocks any console message from sending to Discord if it matches this regex pattern.
+  # This is useful if you want to ignore certain messages from the console.
+  # Can also be a list of regex patterns in addition to a single regex pattern.
+  console-filter: ""
 
 # Configure which Discord channels different messages will be sent to.
 # You can either use the names of the channels listed above or just the id of a channel.
@@ -118,6 +127,8 @@ message-types:
   afk: main
   # Achievement/advancement messages sent when a player is awarded an achievement/advancement.
   advancement: main
+  # Action messages sent when a player runs the /me or /action commands.
+  action: main
   # Message sent when the server starts up.
   server-start: main
   # Message sent when the server shuts down.
@@ -128,10 +139,12 @@ message-types:
   mute: mods
 
 # Whether or not player messages should show their avatar as the profile picture in Discord.
+# The bot will require the "Manage Webhooks" permission in the defined channels in order to use this feature.
 show-avatar: true
 # The URL which should be used to get the avatars of users when "show-avatar" is set to true.
 # Any URL in here should only return a proper JPEG/PNG image and nothing else.
 # To include the UUID of the player in this URL, use "{uuid}".
+# To include the name of the player in this URL, use "{name}".
 avatar-url: "https://crafthead.net/helm/{uuid}"
 # Whether or not player messages should show their name as the bot name in Discord.
 show-name: true
@@ -293,6 +306,8 @@ messages:
   # - {username}: The name of the user joining
   # - {displayname}: The display name of the user joining
   # - {joinmessage}: The full default join message used in game
+  # - {online}: The amount of players online
+  # - {unique}: The amount of unique players to ever join the server
   # ... PlaceholderAPI placeholders are also supported here too!
   join: "***{displayname}** has joined the game.*"
   # This is the message sent to Discord when a player leaves the minecraft server.
@@ -300,6 +315,8 @@ messages:
   # - {username}: The name of the user leaving
   # - {displayname}: The display name of the user leaving
   # - {quitmessage}: The full default leave message used in game
+  # - {online}: The amount of players online
+  # - {unique}: The amount of unique players to ever join the server
   # ... PlaceholderAPI placeholders are also supported here too!
   quit: "***{displayname}** has left the game.*"
   # This is the message sent to Discord when a player dies.
@@ -328,6 +345,13 @@ messages:
   # - {advancement}: The name of the advancement.
   # ... PlaceholderAPI placeholders are also supported here too!
   advancement: "***{displayname}** has made the advancement **[{advancement}]***"
+  # This is the message sent to Discord when a player runs the /me or /action command.
+  # The following placeholders can be used here:
+  # - {username}: The name of the user who ran the command
+  # - {displayname}: The display name of the user who ran the command
+  # - {action}: The action (message) the user used in the command.
+  # ... PlaceholderAPI placeholders are also supported here too!
+  action: ":person_biking: {displayname} *{action}*"
   # This is the message sent to Discord when the server starts.
   server-start: "*The server is now **online**.*"
   # This is the message sent to Discord when the server stops.

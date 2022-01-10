@@ -9,3 +9,4 @@ userMapRepaired: true
 updateUsersIgnoreListUUID: true
 updateUsersStupidLegacyPathNames: true
 updateUsersMailList: true
+updatePurgeBrokenNpcAccounts: true

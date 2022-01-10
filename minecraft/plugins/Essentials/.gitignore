@@ -1,6 +1,7 @@
 **
 !.gitignore
 !config.yml
+!custom_items.yml
 !kits.yml
 !spawn.yml
 !motd.txt
