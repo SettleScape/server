@@ -41,7 +41,7 @@ Optimizations:
   # You need to have jobs.versioncheck permission node
   NewVersion: true
   # Can be used to check if your database contains any duplicated user entries.
-  InformDuplicates: false
+  InformDuplicates: true
   DecimalPlaces:
     # Decimal places to be shown
     Money: 2
@@ -152,7 +152,7 @@ enable-boosted-items-in-mainhand: true
 # Do the jobs boost ignore the boosted items usage in armor slots?
 enable-boosted-armor-items: true
 # When enabled we will try to pay player for blocks above broken ones. This only applies to sugarcane, bamboo and kelp
-pay-for-above: false
+pay-for-above: true
 # Allows to pay for stacked entities for each one. Requires StackMob or WildStacker.
 pay-for-stacked-entities: false
 # Allows, when losing maximum durability of item then it does not pay the player until it is repaired.
@@ -572,4 +572,4 @@ BlockOwnership:
   Range: 0
   # When enabled by interacting with furncae ownership will get transfered to new player
   # If set to false then furnace will belong to player who interacted with it first until its ownership is removed
-  TakeOver: false
+  TakeOver: true
