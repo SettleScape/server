@@ -16,7 +16,7 @@ EisenRadar         1.3.1      2018-08-24  Dead        2022-01-09  https://spigot
 EssentialsX        2.19.2     2021-12-15              2022-01-09  https://essentialsx.net/downloads.html
 Jobs Reborn        5.0.1.0    2021-11-29              2022-01-10  https://spigotmc.org/resources/4216/updates
 LuckPerms          5.3.98     2022-01-02              2022-01-10  https://luckperms.net/download
-mcMMO              2.1.200    2021-07-02              2021-07-31  https://spigotmc.org/resources/64348/updates
+mcMMO              2.1.202    2021-10-05  1.17.X      2022-01-10  https://spigotmc.org/resources/64348/updates
 mcMMO-Towny        1.0.1      2019-09-14  Old         2022-01-10  https://github.com/TownyAdvanced/mcMMO-Towny/releases
 MineableSpawners   3.1.2      2021-12-03              2022-01-10  https://github.com/dnyferguson/MineableSpawners/releases
 OpenInv            4.1.9      2021-12-02              2022-01-10  https://github.com/Jikoo/OpenInv/releases

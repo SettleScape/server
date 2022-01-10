@@ -1,7 +1,7 @@
 
 #
 #  mcMMO configuration
-#  Last updated on 2.1.200-b${BUILD_NUMBER}
+#  Last updated on 2.1.202-b${BUILD_NUMBER}
 #
 #####
 #
@@ -188,6 +188,7 @@ MySQL:
         SSL: true
         Port: 3306
         Address: localhost
+        allowPublicKeyRetrieval: true
     Debug: false
 #
 #  Settings for Hardcore mode

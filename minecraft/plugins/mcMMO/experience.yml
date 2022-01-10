@@ -1,7 +1,7 @@
 
 #
 #  Experience configuration
-#  Last updated on 2.1.199-b${BUILD_NUMBER}
+#  Last updated on 2.1.202-b${BUILD_NUMBER}
 #
 #  Configure the experience formula and experience settings here.
 #
@@ -465,6 +465,7 @@ Experience_Values:
         Medium_Amethyst_Bud: 20
         Copper_Ore: 1400
         Smooth_Basalt: 300
+        Amethyst_Block: 500
     Repair:
         Base: 1000.0
         Wood: 0.6
@@ -590,3 +591,6 @@ Experience_Values:
             Glow_Squid: 1.5
             Goat: 1.5
             Axolotl: 1.75
+Fishing_ExploitFix_Options:
+    MoveRange: 3
+    OverFishLimit: 10
