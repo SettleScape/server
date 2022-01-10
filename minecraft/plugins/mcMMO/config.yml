@@ -1,7 +1,7 @@
 
 #
 #  mcMMO configuration
-#  Last updated on 2.1.202-b${BUILD_NUMBER}
+#  Last updated on 2.1.207-b${BUILD_NUMBER}
 #
 #####
 #
@@ -140,7 +140,6 @@ Scoreboard:
 Mob_Healthbar:
     # Enabled: Whether or not the feature is enabled at all
     # Display_Type: Per player Default display for mob health bars - HEARTS, BAR, or DISABLED
-    # Display_Time: Amount of time (in seconds) to display. To display permanently, set to -1
     Enabled: true
     Display_Type: HEARTS
     Display_Time: 3
@@ -374,6 +373,7 @@ Skills:
         Anvil_Material: IRON_BLOCK
         # Ask for a confirmation when a player tries to repair an enchanted item
         Confirm_Required: true
+        Use_Enchanted_Materials: false
     Salvage:
         Level_Cap: 0
         Anvil_Messages: true
@@ -595,6 +595,8 @@ Bonus_Drops:
         Quartz: true
         Redstone: true
         Deepslate: true
+        Copper_Ingot: true
+        Netherite_Scrap: true
 #
 #  Settings for commands
 ###

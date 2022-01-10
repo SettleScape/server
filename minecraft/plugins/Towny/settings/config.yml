@@ -1,14 +1,28 @@
+ 
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.97.5.0
+  version: 0.97.5.9
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.97.5.0
-# The language file you wish to use
+  last_run_version: 0.97.5.9
+ 
+ 
+# The language file you wish to use for your default locale. Your default locale is what
+# will be shown in your console and for any player who doesn't use one of the locales below.
 # Available languages: bg-BG.yml, cz-CZ.yml, da-DK.yml, de-DE.yml, en-US.yml,
-# es-419.yml, es-ES.yml, fr-FR.yml, he-IL.yml, id-ID.yml, it-IT.yml, ja-JO.yml,
-# ko-KR.yml, nl-NL.yml, no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml,
-# ru-RU.yml, sv-SE.yml, th-TH.yml, tl-PH.yml, tr-TR.yml, vi-VN.yml, zh-CN.yml,
-# zh-TW.yml
+# es-419.yml, es-CL.yml, es-EC.yml, es-ES.yml, es-MX.yml, es-UY.yml, es-VE.yml,
+# fr-FR.yml, he-IL.yml, id-ID.yml, it-IT.yml, ja-JP.yml, ko-KR.yml, nl-NL.yml,
+# no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml, ru-RU.yml, sv-SE.yml,
+# th-TH.yml, tl-PH.yml, tr-TR.yml, vi-VN.yml, zh-CN.yml, zh-TW.yml
+#
+# If you want to override any of the files above with your own translations you must:
+# - Copy the file from the towny\settings\lang\reference\ folder 
+#   into the lang\override\ folder and do your edits to that file.
+# If you want to override ALL locales, to change colouring for instance, you must:
+# - Copy the language strings you want to override into 
+#   the towny\settings\lang\global.yml file.
+#
+# Your players will select what locale that Towny shows them 
+# by changing their Minecraft client's locale.
 language: en-US.yml
  
  
@@ -474,7 +488,7 @@ new_world_settings:
       # wilderness by exploding blocks like beds.
       enabled: 'true'
       # The list of blocks whose explosions should be reverted.
-      blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED
+      blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED,RESPAWN_ANCHOR
     # The list of blocks to regenerate. (if empty all blocks will regenerate)
     wild_revert_on_explosion_block_whitelist: ''
  
@@ -607,6 +621,9 @@ global_town_settings:
   # It is recommended to set this to true only if you're using outlaw teleporting with a warmup of 0 seconds.
   warn_town_on_outlaw: 'false'
  
+  # How many seconds in between warning messages, to prevent spam.
+  warn_town_on_outlaw_message_cooldown_in_seconds: '30'
+ 
   # If set to true, when a player is made into an outlaw using /t outlaw add NAME, and that new
   # outlaw is within the town's borders, the new outlaw will be teleported away using the outlaw_teleport_warmup.
   outlaw_teleport_away_on_becoming_outlawed: 'false'
@@ -646,10 +663,6 @@ global_town_settings:
   # If the number is 0, towns will not a proximity to a nation.
   nation_requires_proximity: '333.0'
  
-  # List of blocks which can be modified on farm plots, as long as player is also allowed in the plot's '/plot perm' line.
-  # Not included by default but some servers add GRASS_BLOCK,FARMLAND,DIRT,NETHERRACK,CRIMSON_NYLIUM,WARPED_NYLIUM to their list.
-  farm_plot_allow_blocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS,SHEARS
- 
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
  
@@ -664,7 +677,7 @@ global_town_settings:
   # If Towny should show players the townboard when they login
   display_board_onlogin: 'false'
  
-  # If set to true, Towny will prevent a town or plot from toggling PVP while an outsider is within the town's or plot's boundaries.
+  # If set to true, Towny will prevent a town or plot from enabling PVP while an outsider is within the town's or plot's boundaries.
   # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
   outsiders_prevent_pvp_toggle: 'true'
  
@@ -749,7 +762,9 @@ global_town_settings:
  
   # This setting determines the list of allowed town map colors.
   # The color codes are in hex format.
-  allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00, green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF, dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
+  allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00,
+    green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF,
+    dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
  
  
 ############################################################
@@ -818,7 +833,9 @@ global_nation_settings:
  
   # This setting determines the list of allowed nation map colors.
   # The color codes are in hex format.
-  allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00, green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF, dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
+  allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00,
+    green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF,
+    dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
  
   # The maximum amount of allies that a nation can have, set to -1 to have no limit.
   max_allies: '5'
@@ -856,8 +873,8 @@ plugin:
     # If neither Vault/Reserve or supported economy are present it will not be possible to create towns or do any operations that require money.
     using_economy: 'true'
  
-    # If enabled, Towny contexts will be available in LuckPerms.
-    # https://luckperms.net/wiki/Context
+    # If enabled, Towny contexts will be available in LuckPerms. https://luckperms.net/wiki/Context
+    # Towny will supply for LuckPerms: townyperms' ranks contexts, as well as location-based contexts.
     luckperms_contexts: 'true'
     web_map:
  
@@ -1105,7 +1122,7 @@ unclaimed:
   # Can players use items listed in the above protection.item_use_ids in the wilderness without restriction?
   unclaimed_zone_item_use: 'true'
  
-  # Can players interact with switch blocks listed in the above protectection.switch_ids in the wilderness without restriction?
+  # Can players interact with switch blocks listed in the above protection.switch_ids in the wilderness without restriction?
   unclaimed_zone_switch: 'true'
  
   # A list of blocks that will bypass the above settings and do not require the towny.wild.* permission node.
@@ -1364,6 +1381,8 @@ resident_settings:
  
   # If true, players who join the server for the first time will cause the msg_registration message in the language files to be shown server-wide.
   is_showing_welcome_message: 'true'
+  # If true, players who join the server for the first time will be informed about their locale, and about Towny translatable system.
+  is_showing_locale_message: 'true'
  
  
 ############################################################
@@ -1455,6 +1474,7 @@ economy:
     # The amount refunded to a town when they unclaim a townblock.
     # Warning: do not set this higher than the cost to claim a townblock.
     # It is advised that you do not set this to the same price as claiming either, otherwise towns will get around using outposts to claim far away.
+    # Optionally, set this to a negative amount if you want towns to pay money to unclaim their land.
     price_claim_townblock_refund: '-500.0'
  
     # How much it costs a player to buy extra blocks.
@@ -1652,32 +1672,6 @@ economy:
       # Does a conquered town which cannot pay the nation tax get deleted?
       does_nation_tax_delete_conquered_towns_that_cannot_pay: 'false'
  
-  plot_type_costs:
- 
-    # Cost to use /plot set shop to change a normal plot to a shop plot.
-    set_commercial: '0.0'
- 
-    # Cost to use /plot set arena to change a normal plot to a arena plot.
-    set_arena: '0.0'
- 
-    # Cost to use /plot set embassy to change a normal plot to a embassy plot.
-    set_embassy: '0.0'
- 
-    # Cost to use /plot set wilds to change a normal plot to a wilds plot.
-    set_wilds: '0.0'
- 
-    # Cost to use /plot set inn to change a normal plot to a inn plot.
-    set_inn: '0.0'
- 
-    # Cost to use /plot set jail to change a normal plot to a jail plot.
-    set_jail: '0.0'
- 
-    # Cost to use /plot set farm to change a normal plot to a farm plot.
-    set_farm: '0.0'
- 
-    # Cost to use /plot set bank to change a normal plot to a bank plot.
-    set_bank: '0.0'
- 
  
 ############################################################
 # +------------------------------------------------------+ #
@@ -1856,9 +1850,104 @@ bank_history:
   # This allows you to modify the style displayed via bankhistory commands.
   book: |-
     {time}
-
     {type} of {amount} {to-from} {name}
-
     Reason: {reason}
-
     Balance: {amount}
+ 
+ 
+############################################################
+# +------------------------------------------------------+ #
+# |                   Town Block Types                   | #
+# |                                                      | #
+# | You may add your own custom townblocks to this       | #
+# | section of the config. Removing the townblocks       | #
+# | supplied by Towny from this configuration is not     | #
+# | recommended.                                         | #
+# |                                                      | #
+# | name: The name used for this townblock, in-game and  | #
+# |    in the database.                                  | #
+# | cost: Cost a player pays to set a townblock to the   | #
+# |    type. If tax is set to 0, the towns' plot tax will| #
+# |    be used instead.                                  | #
+# | tax: The amount a player has to pay city each day to | #
+# |    continue owning the plot.                         | #
+# | mapKey: The character that shows on the //towny map  | #
+# |    commands.                                         | #
+# | itemUseIds: If empty, will use values defined in     | #
+# |    protection.item_use_ids. If not empty this defines| #
+# |    what items are considered item_use.               | #
+# | switchIds: If empty, will use values defined in      | #
+# |    protection.switch_ids. If not empty this defines  | #
+# |    what blocks are considered switches in the type.  | #
+# | allowedBlocks: will make it so players with build or | #
+# |   destroy permissions are only able to affect those  | #
+# |   blocks, see the farm type for an example.          | #
+# |                                                      | #
+# +------------------------------------------------------+ #
+############################################################
+ 
+townblocktypes:
+  types:
+  - name: default
+    cost: 0.0
+    tax: 0.0
+    mapKey: +
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: shop
+    cost: 0.0
+    tax: 0.0
+    mapKey: C
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: arena
+    cost: 0.0
+    tax: 0.0
+    mapKey: A
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: embassy
+    cost: 0.0
+    tax: 0.0
+    mapKey: E
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: wilds
+    cost: 0.0
+    tax: 0.0
+    mapKey: W
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: GOLD_ORE,IRON_ORE,COAL_ORE,COPPER_ORE,REDSTONE_ORE,EMERALD_ORE,LAPIS_ORE,DIAMOND_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_IRON_ORE,DEEPSLATE_COPPER_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_LAPIS_ORE,DEEPSLATE_DIAMOND_ORE,NETHER_GOLD_ORE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,OAK_LOG,SPRUCE_LOG,BIRCH_LOG,JUNGLE_LOG,ACACIA_LOG,DARK_OAK_LOG,CRIMSON_STEM,WARPED_STEM,ACACIA_LEAVES,OAK_LEAVES,DARK_OAK_LEAVES,JUNGLE_LEAVES,BIRCH_LEAVES,SPRUCE_LEAVES,CRIMSON_HYPHAE,WARPED_HYPHAE,ACACIA_SAPLING,BAMBOO_SAPLING,BIRCH_SAPLING,DARK_OAK_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,SPRUCE_SAPLING,TALL_GRASS,BROWN_MUSHROOM,RED_MUSHROOM,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,LARGE_FERN,TORCH,LADDER,CLAY,PUMPKIN,GLOWSTONE,VINE,NETHER_WART_BLOCK,COCOA
+  - name: inn
+    cost: 0.0
+    tax: 0.0
+    mapKey: I
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: jail
+    cost: 0.0
+    tax: 0.0
+    mapKey: J
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''
+  - name: farm
+    cost: 0.0
+    tax: 0.0
+    mapKey: F
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS,SHEARS
+  - name: bank
+    cost: 0.0
+    tax: 0.0
+    mapKey: B
+    itemUseIds: ''
+    switchIds: ''
+    allowedBlocks: ''

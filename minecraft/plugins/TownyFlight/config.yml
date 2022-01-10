@@ -29,7 +29,8 @@ language:
   flightDeactivatedConsoleMsg: §cCommand§6 issued; §r
  
   # Message shown when a player lacks a permission node.
-  noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here: §9Patreon.com/settlescape§6. §r'
+  noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here:
+    §9Patreon.com/settlescape§6. §r'
  
   # Message attached to noPermission when options.show_Permission_After_No_Permission_Message is true
   missingNode: §6, missing §f%s§r
@@ -38,7 +39,8 @@ language:
   notDuringWar: §6Flight is §cdisabled§6 during wars. §r
  
   # Message telling a player to return to an allowed flight area.
-  returnToAllowedArea: §6Flight will §cdeactivate§6 in %s seconds unless you return to a town. §r
+  returnToAllowedArea: §6Flight will §cdeactivate§6 in %s seconds unless you return
+    to a town. §r
  
   # Message when a town cannot be found by the name.
   noTownFound: §6TownyFlight cannot find a town by the name §f%s§6. §r
