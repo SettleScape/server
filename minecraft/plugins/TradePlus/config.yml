@@ -160,6 +160,19 @@ extras:
     - '&fClick to edit your offer!'
     taxpercent: 0
     enabled: false
+  beasttokens:
+    enabled: false
+    name: tokens
+    material: emerald
+    display: '&eYour tokens offer is &6%AMOUNT%'
+    theirdisplay: '&eTheir TokenManager tokens offer is &6%AMOUNT%'
+    lore:
+    - '&fClick to edit your offer!'
+    - '&fYou have %BALANCE% tokens.'
+    customModelData: 0
+    increment: 1
+    taxpercent: 0
+    mode: chat
 hooks:
   factions:
     allow-trades-in-enemy-territory: false
@@ -172,7 +185,7 @@ soundeffects:
   oncomplete: true
   oncountdown: true
 debug-mode: false
-configversion: 3.81
+configversion: 3.82
 trade-command-compatible-mode: false
 excess-chest:
   enabled: true

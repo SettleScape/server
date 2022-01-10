@@ -20,6 +20,8 @@ limits:
     max-blocks-changed:
         default: -1
         maximum: -1
+    vertical-height:
+        default: 256
     max-polygonal-points:
         default: -1
         maximum: 20
@@ -32,7 +34,7 @@ limits:
     disallowed-blocks:
     - "minecraft:oak_sapling"
     - "minecraft:jungle_sapling"
-    - "minecraft:dark_oak_sapling:"
+    - "minecraft:dark_oak_sapling"
     - "minecraft:spruce_sapling"
     - "minecraft:birch_sapling"
     - "minecraft:acacia_sapling"
@@ -149,3 +151,4 @@ no-op-permissions: false
 debug: false
 show-help-on-first-use: true
 server-side-cui: true
+command-block-support: false
