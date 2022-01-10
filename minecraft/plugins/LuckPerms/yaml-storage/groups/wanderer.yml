@@ -67,7 +67,7 @@ permissions:
 - essentials.tpa:       {value: false}
 - essentials.tpacancel: {value: false}
 - essentials.tpaccept:  {value: false}
-- essentials.tpahere:   {value: false}
+# - essentials.tpahere:   {value: false}
 
 # Special powers come with higher ranks
 - essentials.hat: {value: false}
