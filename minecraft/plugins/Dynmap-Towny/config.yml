@@ -1,4 +1,5 @@
 # Dynmap-Towny configuration
+dynamic-town-colors: true
 update:
   period: 300
 layer:

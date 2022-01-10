@@ -1,7 +1,6 @@
- 
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: '0.89'
+  version: '0.93'
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: '0.62'
  
@@ -113,6 +112,7 @@ modify_chat:
   alone_message: 'false'
   # This allows you to set your alone message.
   alone_message_string: No one in range can hear you or you are alone in this channel.
- 
-# If true players will see [Towny] Modes set: general when they log in.
 display_modes_set_on_join: 'false'
+ 
+# If true players will see You have joined channel {channel} message on joining the server.
+display_channel_join_message_on_joining_the_server: 'true'

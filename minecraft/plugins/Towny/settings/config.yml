@@ -1,12 +1,15 @@
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: 0.97.0.19
+  version: 0.97.5.0
   # This is for showing the changelog on updates.  Please do not edit.
-  last_run_version: 0.97.0.19
+  last_run_version: 0.97.5.0
 # The language file you wish to use
-# Available languages: chinese, danish, english, es-419, french, german, italian, korean,
-# norwegian, polish, pt-br, russian, se-SV, spanish, zh-TW
-language: english.yml
+# Available languages: bg-BG.yml, cz-CZ.yml, da-DK.yml, de-DE.yml, en-US.yml,
+# es-419.yml, es-ES.yml, fr-FR.yml, he-IL.yml, id-ID.yml, it-IT.yml, ja-JO.yml,
+# ko-KR.yml, nl-NL.yml, no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml,
+# ru-RU.yml, sv-SE.yml, th-TH.yml, tl-PH.yml, tr-TR.yml, vi-VN.yml, zh-CN.yml,
+# zh-TW.yml
+language: en-US.yml
  
  
 ############################################################
@@ -336,6 +339,10 @@ town:
   # Setting this value to 0 will instead use the level based jump values determined in the town level config.
   town_block_ratio: '0'
  
+  # The maximimum amount of townblocks a town can have, if town_block_ratio is 0 the max size will be decided by the town_levels.
+  # Set to 0 to have no size limit.
+  town_block_limit: '0'
+ 
   # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
   # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
   # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
@@ -343,19 +350,19 @@ town:
   town_block_size: '8'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |             Default new world settings               | #
-  # +------------------------------------------------------+ #
-  #                                                          #
-  #   These flags are only used at the initial setup of a    #
-  #   new world! When you first start Towny these settings   #
-  #   were applied to any world that already existed.        #
-  #   Many of these settings can be turned on and off in     #
-  #   their respective worlds using the /tw toggle command.  #
-  #   Settings are saved in the towny\data\worlds\ folder.   #
-  #                                                          #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |             Default new world settings               | #
+# +------------------------------------------------------+ #
+#                                                          #
+#   These flags are only used at the initial setup of a    #
+#   new world! When you first start Towny these settings   #
+#   were applied to any world that already existed.        #
+#   Many of these settings can be turned on and off in     #
+#   their respective worlds using the /tw toggle command.  #
+#   Settings are saved in the towny\data\worlds\ folder.   #
+#                                                          #
+############################################################
  
 new_world_settings:
   # Do new worlds have Towny enabled by default?
@@ -393,7 +400,7 @@ new_world_settings:
     world_explosions_enabled: 'true'
  
     # Do new worlds have force_explosions_on enabled by default.
-    # This setting overrides a towns' setting.
+    # This setting overrides a towns' setting, preventing them from turning explosions off in their town.
     force_explosions_on: 'false'
  
   fire:
@@ -472,11 +479,11 @@ new_world_settings:
     wild_revert_on_explosion_block_whitelist: ''
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                Global town settings                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                Global town settings                  | #
+# +------------------------------------------------------+ #
+############################################################
  
 global_town_settings:
  
@@ -551,15 +558,20 @@ global_town_settings:
   # plots having their PVP toggled using /plot toggle pvp.
   pvp_cooldown_time: '30'
  
-  # Respawn the player at his town spawn point when he/she dies
+  # When true Towny will handle respawning, with town or resident spawns.
   town_respawn: 'false'
+ 
+  # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
+  # Invulnerable players who attack other players will lose their invulnerability.
+  # Invulnerable players who teleport after respawn will also lose their invulnerability.
+  respawn_protection: 10s
  
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
   town_respawn_same_world_only: 'false'
  
   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
-  # Allowed options: unclaimed,enemy,neutral
-  prevent_town_spawn_in: enemy
+  # Allowed options: unclaimed,enemy,neutral,outlaw
+  prevent_town_spawn_in: enemy,outlaw
  
   # When this is true, players will respawn to respawn anchors on death rather than their own town. 1.16+ only.
   respawn_anchor_higher_precendence: 'false'
@@ -652,7 +664,7 @@ global_town_settings:
   # If Towny should show players the townboard when they login
   display_board_onlogin: 'false'
  
-  # If set to true, Towny will prevent a town from toggling PVP while an outsider is within the town's boundaries.
+  # If set to true, Towny will prevent a town or plot from toggling PVP while an outsider is within the town's or plot's boundaries.
   # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
   outsiders_prevent_pvp_toggle: 'true'
  
@@ -683,6 +695,10 @@ global_town_settings:
   # If People should keep their experience on death in a town.
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_town: 'false'
+ 
+  # If People should keep their experience on death in an arena townblock.
+  # Is not guaranteed to work with other keep experience plugins!
+  keep_experience_on_death_in_arena: 'false'
  
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
@@ -728,7 +744,7 @@ global_town_settings:
     # Commands have to be on town_command_blacklisting.town_blacklisted_commands, else this is not going to be checked.
     own_town_and_wilderness_limited_commands: sethome,home
  
-  # When enabled, town names will automatically be capitalised upon creation.
+  # When enabled, town (and nation) names will automatically be capitalised upon creation.
   automatic_capitalisation: 'true'
  
   # This setting determines the list of allowed town map colors.
@@ -736,11 +752,11 @@ global_town_settings:
   allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00, green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF, dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |              Global nation settings                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |              Global nation settings                  | #
+# +------------------------------------------------------+ #
+############################################################
  
 global_nation_settings:
  
@@ -771,6 +787,9 @@ global_nation_settings:
  
   # If Towny should show players the nationboard when they login.
   display_board_onlogin: 'false'
+ 
+  # If true the capital city of nation cannot be neutral/peaceful.
+  capitals_cannot_be_neutral: 'false'
  
   # If enabled, only allow the nation spawn to be set in the capital city.
   capital_spawn: 'true'
@@ -805,40 +824,15 @@ global_nation_settings:
   max_allies: '5'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Plugin interfacing                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                 Plugin interfacing                   | #
+# +------------------------------------------------------+ #
+############################################################
  
 plugin:
- 
-  # Valid load and save types are: flatfile and mysql.
+  # See database.yml file for flatfile/mysql settings.
   database:
-    database_load: flatfile
-    database_save: flatfile
- 
-    # When true Towny will use a background task to gather UUIDs for residents who do not have UUIDs.
-    # This process will greatly improve your database's ability to convert from playernames to UUIDs in the future.
-    gather_resident_uuids: 'true'
- 
-    # SQL database connection details (IF set to use SQL).
-    sql:
-      hostname: localhost
-      port: '3306'
-      dbname: towny
-      table_prefix: towny_
-      username: towny
-      password: ''
-      flags: ?verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf-8
- 
-      # Modifiable settings to control the connection pooling.
-      # Unless you actually know what you're doing and how Towny uses its mysql connection,
-      # it is strongly recommended you do not change these settings.
-      pooling:
-        max_pool_size: '5'
-        max_lifetime: '180000'
-        connection_timeout: '5000'
  
     # Flatfile backup settings.
     daily_backups: 'true'
@@ -865,15 +859,24 @@ plugin:
     # If enabled, Towny contexts will be available in LuckPerms.
     # https://luckperms.net/wiki/Context
     luckperms_contexts: 'true'
+    web_map:
+ 
+      # If enabled, players will be prompted to open a url when clicking on coordinates in towny status screens.
+      enabled: 'false'
+ 
+      # The url that players will be prompted to open when clicking on a coordinate in a status screen.
+      # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
+      url: https://example.com/map/?worldname={world}&mapname=flat&zoom=5&x={x}&y=64&z={z}
  
   day_timer:
  
-    # The number of hours in each "day".
-    # You can configure for 10 hour days. Default is 24 hours.
+    # The time for each "towny day", used for tax and upkeep collection and other daily timers.
+    # Default is 24 hours. Cannot be set for greater than 1 day, but can be set lower.
     day_interval: 1d
  
     # The time each "day", when taxes will be collected.
-    # MUST be less than day_interval. Default is 12h (midday).
+    # Only used when less than day_interval. Default is 12h (midday).
+    # If day_interval is set to something like 20m, the new_day_time is not used, day_interval will be used instead.
     new_day_time: 20h
  
     # Whether towns with no claimed townblocks should be deleted when the new day is run.
@@ -922,11 +925,11 @@ plugin:
     major_only: 'true'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |               Filters colour and chat                | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |               Filters colour and chat                | #
+# +------------------------------------------------------+ #
+############################################################
  
 filters_colour_chat:
  
@@ -988,11 +991,11 @@ filters_colour_chat:
     enemy: '&c'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |             block/item/mob protection                | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |             block/item/mob protection                | #
+# +------------------------------------------------------+ #
+############################################################
  
 protection:
  
@@ -1001,7 +1004,7 @@ protection:
   # A list of items, that are held in the hand, which can be protected against.
   # Group names you can use in this list: BOATS, MINECARTS
   # A full list of proper names can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html 
-  item_use_ids: BONE_MEAL,FLINT_AND_STEEL,BUCKET,WATER_BUCKET,LAVA_BUCKET,STORAGE_MINECART,INK_SACK,SHEARS,ENDER_PEARL,GLASS_BOTTLE,FIREBALL,ARMOR_STAND,SKULL_ITEM,END_CRYSTAL,POWERED_MINECART,COMMAND_MINECART,EXPLOSIVE_MINECART,HOPPER_MINECART,CHORUS_FRUIT,BLACK_DYE,BLUE_DYE,BROWN_DYE,CYAN_DYE,GRAY_DYE,GREEN_DYE,LIGHT_BLUE_DYE,LIGHT_GRAY_DYE,LIME_DYE,MAGENTA_DYE,ORANGE_DYE,PINK_DYE,PURPLE_DYE,RED_DYE,WHITE_DYE,YELLOW_DYE,DIAMOND_AXE,GOLDEN_AXE,IRON_AXE,WOODEN_AXE,STONE_AXE,NETHERITE_AXE
+  item_use_ids: BONE_MEAL,FLINT_AND_STEEL,BUCKET,WATER_BUCKET,LAVA_BUCKET,STORAGE_MINECART,INK_SACK,SHEARS,ENDER_PEARL,GLASS_BOTTLE,FIREBALL,ARMOR_STAND,SKULL_ITEM,END_CRYSTAL,POWERED_MINECART,COMMAND_MINECART,EXPLOSIVE_MINECART,HOPPER_MINECART,CHORUS_FRUIT,BLACK_DYE,BLUE_DYE,BROWN_DYE,CYAN_DYE,GRAY_DYE,GREEN_DYE,LIGHT_BLUE_DYE,LIGHT_GRAY_DYE,LIME_DYE,MAGENTA_DYE,ORANGE_DYE,PINK_DYE,PURPLE_DYE,RED_DYE,WHITE_DYE,YELLOW_DYE,DIAMOND_AXE,GOLDEN_AXE,IRON_AXE,WOODEN_AXE,STONE_AXE,NETHERITE_AXE,EGG
  
   # Blocks that are protected via town/plot flags.
   # These are blocks in the world that will be protected by a town/resident/plot's switch setting.
@@ -1071,25 +1074,25 @@ protection:
   prevent_frost_walker_freezing: 'true'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                Wilderness settings                   | #
-  # +------------------------------------------------------+ #
-  #                                                          #
-  # These are default settings only, applied to newly made   #
-  # worlds. They are copied to each world's data file upon   #
-  # first detection.                                         #
-  # If you are running Towny for the first time these have   #
-  # been applied to all your already existing worlds.        #
-  #                                                          #
-  # To make changes for each world edit the settings in the  #
-  # relevant worlds data file 'plugins/Towny/data/worlds/'   #
-  #                                                          #
-  # Furthermore: These settings are only used after Towny    #
-  # has exhausted testing the player for the towny.wild.*    #
-  # permission nodes.                                        #
-  #                                                          #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                Wilderness settings                   | #
+# +------------------------------------------------------+ #
+#                                                          #
+# These are default settings only, applied to newly made   #
+# worlds. They are copied to each world's data file upon   #
+# first detection.                                         #
+# If you are running Towny for the first time these have   #
+# been applied to all your already existing worlds.        #
+#                                                          #
+# To make changes for each world edit the settings in the  #
+# relevant worlds data file 'plugins/Towny/data/worlds/'   #
+#                                                          #
+# Furthermore: These settings are only used after Towny    #
+# has exhausted testing the player for the towny.wild.*    #
+# permission nodes.                                        #
+#                                                          #
+############################################################
  
 unclaimed:
  
@@ -1110,11 +1113,11 @@ unclaimed:
   unclaimed_zone_ignore: NONE
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Town Notifications                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                 Town Notifications                   | #
+# +------------------------------------------------------+ #
+############################################################
  
   # This is the format for the notifications sent as players move between plots.
   # Empty a particular format for it to be ignored.
@@ -1143,11 +1146,11 @@ notification:
     forsale: '&a(For Sale: %s)&r'
     notforsale: '&e[Not For Sale]'
     type: '&e(%s)&r'
+  group: '&d(%s)&r'
  
   # When set to true, town's names are the long form (townprefix)(name)(townpostfix) configured in the town_level section.
   # When false, it is only the town name.
   town_names_are_verbose: 'false'
-  group: '&d(%s)&r'
  
   # If set to true MC's Title and Subtitle feature will be used when crossing into a town.
   # Could be seen as intrusive/distracting, so false by default.
@@ -1161,6 +1164,7 @@ notification:
   # {town_motd} - Shows the townboard message.
   # {town_residents} - Shows the number of residents in the town.
   # {town_residents_online} - Shows the number of residents online currently.
+  # The notification.town_names_are_verbose setting will affect the {townname} placeholder.
   titles:
  
     # Entering Town Upper Title Line
@@ -1190,11 +1194,11 @@ notification:
   notification_actionbar_duration: '4'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |             Default Town/Plot flags                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |             Default Town/Plot flags                  | #
+# +------------------------------------------------------+ #
+############################################################
  
 default_perm_flags:
  
@@ -1265,11 +1269,11 @@ default_perm_flags:
       switch: 'false'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Towny Invite System                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                 Towny Invite System                  | #
+# +------------------------------------------------------+ #
+############################################################
  
 invite_system:
  
@@ -1334,16 +1338,13 @@ invite_system:
   maximum_distance_from_town_spawn: '1000'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                  Resident settings                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                  Resident settings                   | #
+# +------------------------------------------------------+ #
+############################################################
  
 resident_settings:
- 
-  # player is flagged as inactive after 1 hour (default)
-  inactive_after_time: 120s
  
   # if enabled old residents will be deleted, losing their town, townblocks, friends
   # after Two months (default) of not logging in
@@ -1365,11 +1366,11 @@ resident_settings:
   is_showing_welcome_message: 'true'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                  Economy settings                    | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                  Economy settings                    | #
+# +------------------------------------------------------+ #
+############################################################
  
 economy:
  
@@ -1554,6 +1555,11 @@ economy:
     # all of it's member town are kicked and the Nation is removed.
     price_nation_upkeep: '50.0'
  
+    # Uses the total number of plots which a nation has across all of its towns to determine upkeep
+    # instead of nation_pertown_upkeep and instead of nation level (number of residents.)
+    # Calculated by (price_nation_upkeep X number of plots owned by the nation's towns.)
+    nation_perplot_upkeep: 'false'
+ 
     # Uses total number of towns in the nation to determine upkeep instead of nation level (Number of Residents)
     # calculated by (number of towns in nation X price_nation_upkeep).
     nation_pertown_upkeep: 'true'
@@ -1574,6 +1580,9 @@ economy:
  
     # If set to any amount over zero, if a town's plot-based upkeep totals less than this value, the town will pay the minimum instead.
     town_plotbased_upkeep_minimum_amount: '50.0'
+ 
+    # If set to any amount over zero, if a town's plot-based upkeep totals more than this value, the town will pay the maximum instead.
+    town_plotbased_upkeep_maximum_amount: '0.0'
  
     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
     price_town_overclaimed_upkeep_penalty: '10.0'
@@ -1670,11 +1679,11 @@ economy:
     set_bank: '0.0'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Jail Plot settings                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                 Jail Plot settings                   | #
+# +------------------------------------------------------+ #
+############################################################
  
 jail:
  
@@ -1723,177 +1732,62 @@ jail:
   new_player_immunity: 1h
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Bank Plot settings                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
-  # Bank plots may be used by other economy plugins using the Towny API.
+############################################################
+# +------------------------------------------------------+ #
+# |                 Bank Plot settings                   | #
+# +------------------------------------------------------+ #
+############################################################
+# Bank plots may be used by other economy plugins using the Towny API.
  
 bank:
  
   # If true players will only be able to use /t deposit, /t withdraw, /n deposit & /n withdraw while inside bank plots belonging to the town or nation capital respectively.
   # Home plots will also allow deposit and withdraw commands.
   is_banking_limited_to_bank_plots: 'false'
- 
- 
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                     War settings                     | #
-  # +------------------------------------------------------+ #
-  ############################################################
- 
 war:
- 
-  #This setting allows you disable the ability for a nation to pay to remain neutral during a war.
   nation_can_be_neutral: 'true'
- 
-  #By setting this to true, nations will receive a prompt for alliances and alliances will show on both nations.
   disallow_one_way_alliance: 'true'
- 
- 
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |         Economy Transfers During War settings        | #
-  # +------------------------------------------------------+ #
-  ############################################################
- 
   economy:
     enemy:
- 
-      # Amount charged to place a warflag (payed to server).
       place_flag: '1000'
- 
-      # Amount payed from the flagbearer to the defender after defending the area.
       defended_attack: '1000'
- 
-    # Defending town pays attaking flagbearer. If a negative (attacker pays defending town),
-    # and the attacker can't pay, the attack is canceled.
     townblock_won: '100'
- 
-    # Same as townblock_won but for the special case of winning the homeblock.
     homeblock_won: '1000'
- 
- 
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 War Event settings                   | #
-  # +------------------------------------------------------+ #
-  ############################################################
- 
-  # This is started with /townyadmnin toggle war
- 
-  # In peace time War spoils are accumulated from towns and nations being
-  # deleted with any money left in the bank.
-  #
-  # These funds are increased during a war event upon a player death.
-  # An additional bonus to the war chest is set in base_spoils.
-  #
-  # During the event a town losing a townblock pays the wartime_town_block_loss_price to the attacking town.
-  # The war is won when the only nations left in the battle are allies, or only a single nation.
-  #
-  # The winning nations share half of the war spoils.
-  # The remaining half is paid to the town which took the most town blocks, and lost the least.
- 
   event:
- 
     warning_delay: '30'
- 
-    #If false all towns not in nations can be attacked during a war event.
     towns_are_neutral: 'false'
- 
     enemy:
- 
-      # If true, enemy's can only attack the edge plots of a town in war.
       only_attack_borders: 'false'
- 
     plots:
- 
-      # If true, nation members and allies can regen health on plots during war.
       healable: 'false'
- 
-      # If true, fireworks will be launched at plots being attacked or healed in war every war tick.
       firework_on_attacked: 'true'
- 
-    # If true and the monarch/king dies the nation is removed from the war.
-    # Also removes a town from the war event when the mayor dies.
     remove_on_monarch_death: 'false'
- 
-    # If enabled players will be able to break/place any blocks in enemy plots during a war.
-    # This setting SHOULD NOT BE USED unless you want the most chaotic war possible.
-    # The editable_materials list in the Warzone Block Permission section should be used instead.
     allow_block_griefing: 'false'
- 
-    # A townblock takes damage every 5 seconds that an enemy is stood in it.
     block_hp:
       town_block_hp: '50'
       home_block_hp: '100'
- 
     eco:
-      # This amount is new money injected into the economy with a war event.
       base_spoils: '100.0'
- 
-      # This amount is taken from the losing town for each plot lost.
       wartime_town_block_loss_price: '100.0'
- 
-      # This amount is taken from the player if they die during the event
       price_death_wartime: '100.0'
- 
-    # If set to true when a town drops an enemy townblock's HP to 0, the attacking town gains a bonus townblock,
-    # and the losing town gains a negative (-1) bonus townblock.
     costs_townblocks: 'false'
- 
-    # If set to true when a town drops an enemy townblock's HP to 0, the attacking town takes full control of the townblock.
-    # One available (bonus) claim is given to the victorious town, one available (bonus) claim is removed from the losing town.
-    # Will not have any effect if war.event.winner_takes_ownership_of_town is set to true.
     winner_takes_ownership_of_townblocks: 'false'
- 
-    # If set to true when a town knocks another town out of the war, the losing town will join the winning town's nation.
-    # The losing town will enter a conquered state and be unable to leave the nation until the conquered time has passed.
     winner_takes_ownership_of_town: 'false'
- 
-    # Number of Towny new days until a conquered town loses its conquered status.
     conquer_time: '7'
- 
     points:
       points_townblock: '5'
       points_town: '25'
       points_nation: '50'
       points_kill: '1'
- 
-    # The minimum height at which a player must stand to count as an attacker.
     min_height: '1'
- 
- 
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |              Warzone Block Permissions               | #
-  # |                                                      | #
-  # |                  Used in Event Wars                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
- 
   warzone:
- 
-    # List of materials that can be modified in a warzone.
-    # '*' = Allow all materials.
-    # Prepend a '-' in front of a material to remove it. Used in conjunction with when you use '*'.
-    # Eg: '*,-chest,-furnace'
     editable_materials: tnt,oak_fence,birch_fence,spruce_fence,jungle_fence,dark_oak_fence,acacia_fence,ladder,oak_door,birch_door,spruce_door,jungle_door,dark_oak_door,acacia_fence,iron_door,fire,end_crystal,dragon_egg,turtle_egg,chorus_flower,snow
     item_use: 'true'
     switch: 'true'
- 
-    # Add '-fire' to editable materials for complete protection when setting is false. This prevents fire to be created and spread.
     fire: 'true'
     explosions: 'true'
     explosions_break_blocks: 'true'
- 
-    # Only under affect when explosions_break_blocks is true.
     explosions_regen_blocks: 'true'
- 
-    # A list of blocks that will not be exploded, mostly because they won't regenerate properly.
-    # These blocks will also protect the block below them, so that blocks like doors do not dupe themselves.
-    # Only under affect when explosions_break_blocks is true.
     explosions_ignore_list: OAK_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR,IRON_DOOR,CHEST,TRAPPED_CHEST,FURNACE,BURNING_FURNACE,DROPPER,DISPENSER,HOPPER,ENDER_CHEST,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,SILVER_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,NOTE_BLOCK,LEVER,STONE_PLATE,IRON_DOOR_BLOCK,ACACIA_PLATE,BIRCH_PLATE,DARK_OAK_PLATE,JUNGLE_PLATE,OAK_PLATE,SPRUCE_PLATE,JUKEBOX,DIODE_BLOCK_OFF,DIODE_BLOCK_ON,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,JUNGLE_FENCE_GATE,OAK_FENCE_GATE,SPRUCE_FENCE_GATE,GOLD_PLATE,IRON_PLATE,REDSTONE_COMPARATOR_OFF,REDSTONE_COMPARATOR_ON,BEACON,LANTERN
  
  
@@ -1918,11 +1812,11 @@ nation:
   set_tag_automatically: 'true'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |               Town Ruining Settings                  | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |               Town Ruining Settings                  | #
+# +------------------------------------------------------+ #
+############################################################
  
 town_ruining:
   town_ruins:
@@ -1951,11 +1845,11 @@ town_ruining:
     ruins_become_public: 'true'
  
  
-  ############################################################
-  # +------------------------------------------------------+ #
-  # |                 Bank History settings                | #
-  # +------------------------------------------------------+ #
-  ############################################################
+############################################################
+# +------------------------------------------------------+ #
+# |                 Bank History settings                | #
+# +------------------------------------------------------+ #
+############################################################
  
 bank_history:
  

@@ -9,7 +9,7 @@ CommandLog         1.2        2016-07-09  2022-01-09  Dead        ????        ht
 CoreProtect        20.4       2022-01-04  2022-01-09              ????        https://spigotmc.org/resources/8631/updates
 CraftBook          3.10.3     2020-12-21  2022-01-09  1.17.X      ????        https://dev.bukkit.org/projects/craftbook/files
 Dynmap             3.3.0-b4   2021-12-27  2022-01-09              ????        https://spigotmc.org/resources/274/updates
-Dynmap-Towny       0.86       2021-07-30  2021-07-31              ????        https://github.com/TownyAdvanced/Dynmap-Towny/releases
+Dynmap-Towny       0.89       2021-11-15  2022-01-10              Yes         https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard  CUSTOM     2019-12-15  2021-07-31  Dead        ????        https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign       7.7.0      2021-12-04  2022-01-09              ????        https://polymart.org/resource/editablesign.127/updates
 EisenRadar         1.3.1      2018-08-24  2022-01-09  Dead        ????        https://spigotmc.org/resources/50316/updates
@@ -25,14 +25,14 @@ PlaceholderAPI     2.11.1     2021-12-27  2022-01-10              ????        ht
 ProtocolLib        4.7.0      2021-07-09  2022-01-10              ????        https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.13.2     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2021-09-27  2022-01-10              No          https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
-Towny              0.97.0.19  2021-07-31  2021-07-31              Yes         https://github.com/TownyAdvanced/Towny/releases
-TownyChat          0.89       2021-07-14  2021-07-31              Yes         https://github.com/TownyAdvanced/TownyChat/releases
-TownyCultures      1.1.0      2021-02-13  2021-07-31              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
-TownyNameUpdater   5.0        2020-04-25  2021-07-31              Yes         https://github.com/TownyAdvanced/TownyNameUpdater/releases
-TownyFlight        1.7.0      2021-07-14  2021-07-31              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
+Towny              0.97.5.0   2021-12-03  2022-01-10              Yes         https://github.com/TownyAdvanced/Towny/releases
+TownyChat          0.93       2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyChat/releases
+TownyCultures      1.4.0      2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
+TownyNameUpdater   5.0        2020-04-25  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyNameUpdater/releases
+TownyFlight        1.8.2      2022-01-06  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.82.6     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-01-10              ????        https://spigotmc.org/resources/34315/updates
 WorldEdit          7.2.8      2021-12-11  2022-01-10              ????        https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.5      2020-06-07  2022-01-10  1.17.X      ????        https://dev.bukkit.org/projects/worldguard/files
-WorldGuard-Towny   1.1.0      2020-01-03  2021-07-31              ????        https://github.com/TownyAdvanced/WorldGuard-Towny/releases
+WorldGuard-Towny   1.2.0      2020-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  =========  ==========  ==========  ==========  ==========  ===

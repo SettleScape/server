@@ -1,50 +1,84 @@
-# TownyFlight by LlmDl.
-Version: 1.7.0
-# Prefix to messages seen in game.
+Version: 1.8.2
+ 
 pluginPrefix: ''
+ 
 ####################
 # Language Strings #
 ####################
-
 language:
+ 
   # Message shown when flight activated.
   flightOnMsg: §6Set fly mode §cenabled§6. §r
+ 
   # Message shown when flight de-activated.
   flightOffMsg: §6Set fly mode §cdisabled§6. §r
+ 
   # Message shown when player lacks a town. 
   noTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
+ 
   # Message shown when flight cannot be turned on.
   notInTownMsg: §6Flight is §cdisabled§6 in the Wilderness. §r
+ 
   # Message shown when a player has flight taken away.
   flightDeactivatedMsg: §6Entering §cWilderness§6; §r
+ 
   # Message shown when a player has flight taken away because of PVP.
   flightDeactivatedPVPMsg: §6Entering §cPVP§6; §r
+ 
   # Message shown when a player has flight taken away by console.
   flightDeactivatedConsoleMsg: §cCommand§6 issued; §r
+ 
   # Message shown when a player lacks a permission node.
-  noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here:
-    §9Patreon.com/settlescape§6. §r'
+  noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here: §9Patreon.com/settlescape§6. §r'
+ 
+  # Message attached to noPermission when options.show_Permission_After_No_Permission_Message is true
+  missingNode: ', missing %s'
+ 
   # Message shown when war is active and flight is disallowed.
   notDuringWar: §6Flight is §cdisabled§6 during wars. §r
+ 
   # Message telling a player to return to an allowed flight area.
-  returnToAllowedArea: §6Flight will §cdeactivate§6 in %s seconds unless you return
-    to a town. §r
+  returnToAllowedArea: §6Flight will §cdeactivate§6 in %s seconds unless you return to a town. §r
+ 
+  # Message when a town cannot be found by the name.
+  noTownFound: 'TownyFlight cannot find a town by the name %s. '
+ 
+  # Message when a town has free flight enabled or disabled.
+  townWideFlight: 'Free flight has been %s in %s. '
+ 
+  # The word disabled.
+  disabled: disabled
+ 
+  # The world enabled.
+  enabled: enabled
+ 
+  # The component shown on towns' status screens when they have free flight enabled.
+  statusScreenComponent: Free Flight
+ 
+  # The hover text shown on the free flight status screen component.
+  statusScreenComponentHover: Flight enabled for everyone within this town's borders.
+ 
 #################
 #    Options    #
 #################
-
 options:
+ 
   # If set to true, players entering their town will have flight auto-enabled.
   # When set to true, the plugin will use slightly more resources due to the EnterTown listener.
-  auto_Enable_Flight: true
+  auto_Enable_Flight: 'true'
+ 
   # If set to true, players entering their town will have flight auto-enabled without being notified in chat.
-  auto_Enable_Silent: false
+  auto_Enable_Silent: 'false'
+ 
   # If set to false, players can still fly in their town while war is active.
-  disable_During_Wartime: true
+  disable_During_Wartime: 'true'
+ 
   # If set to false, TownyFlight will not prevent combat of flying people.
-  disable_Combat_Prevention: false
+  disable_Combat_Prevention: 'false'
+ 
   # If set to false, the language.noPermission message will not display the permission node.
-  show_Permission_After_No_Permission_Message: false
+  show_Permission_After_No_Permission_Message: 'false'
+ 
   # Number of seconds after leaving an allowed flight area before flight is taken away.
   # Set to 0 to take flight away immediately.
   flight_Disable_Timer: '3'
