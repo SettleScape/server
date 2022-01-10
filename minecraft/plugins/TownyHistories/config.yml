@@ -17,7 +17,7 @@ third_party:
 ruin_settings:
  
   # When set to true, a lectern will mark the ruin's old spawn point.
-  create_lectern_at_ruin_spawn: 'true'
+  create_lectern_at_ruin_spawn: 'false'
  
   # When set to true, players will not be able to destroy the lectern marking a ruin.
   preserve_lectern: 'true'
