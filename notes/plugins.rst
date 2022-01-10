@@ -26,9 +26,11 @@ ProtocolLib        4.7.0      2021-07-09  2022-01-10              ????        ht
 Rankup             3.13.2     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2021-09-27  2022-01-10              No          https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
 Towny              0.97.5.0   2021-12-03  2022-01-10              Yes         https://github.com/TownyAdvanced/Towny/releases
+TownyCamps         0.0.28     2022-01-05  2022-01-10              Yes         Discord channel ID#812838994105860106
 TownyChat          0.93       2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyChat/releases
 TownyCultures      1.4.0      2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
 TownyFlight        1.8.2      2022-01-06  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
+TownyHistories     0.0.18     2022-01-06  2022-01-10              Yes         Discord channel ID#860682040680775711
 TradePlus          3.82.6     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-01-10              ????        https://spigotmc.org/resources/34315/updates
 WorldEdit          7.2.8      2021-12-11  2022-01-10              ????        https://dev.bukkit.org/projects/worldedit/files

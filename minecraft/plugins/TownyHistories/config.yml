@@ -1,0 +1,32 @@
+version:
+  # This is the current version.  Please do not edit.
+  version: 0.0.18
+  # This is for showing the changelog on updates.  Please do not edit.
+  last_run_version: 0.0.18
+# The language file you wish to use
+language: english.yml
+ 
+ 
+third_party:
+  dynmap:
+ 
+    # When set to true, and dynmap is found on the server, Camps will appear on the dynmap.
+    enable_dynmap_support: 'true'
+ 
+ 
+ruin_settings:
+ 
+  # When set to true, a lectern will mark the ruin's old spawn point.
+  create_lectern_at_ruin_spawn: 'true'
+ 
+  # When set to true, players will not be able to destroy the lectern marking a ruin.
+  preserve_lectern: 'true'
+ 
+  # When set to true, players will not be able to build or destroy inside of ruins.
+  preserve_ruins: 'true'
+ 
+  # Setting this to false will allow people to steal the lectern books before the ruin is deleted.
+  protect_lectern_book: 'true'
+ 
+  # Defaults to ruin, any other dynmap marker can be used: https://github.com/webbukkit/dynmap/tree/v3.0/DynmapCore/src/main/resources/markers 
+  marker_icon: ruin
