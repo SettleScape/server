@@ -1,4 +1,9 @@
 **
+!kits
+!kits/**
+!warps
+!warps/**
+
 !.gitignore
 !config.yml
 !custom_items.yml
