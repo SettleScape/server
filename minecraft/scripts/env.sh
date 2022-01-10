@@ -13,3 +13,6 @@ export ENV_VERSION='1.16.5'
 ## Java variables
 export ENV_JAVA_VERSION='16'
 export ENV_JAVA_DIR="$ENV_SERVER_ROOT/java"
+
+## Other
+export ENV_PAPERUPD_BIN="$HOME/.local/bin/paper-autoupdater"

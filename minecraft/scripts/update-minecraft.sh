@@ -40,7 +40,7 @@ case "$TYPE" in
 #               curl -o "$ENV_SERVER_JAR" "https://papermc.io/api/v1/paper/${ENV_VERSION}/latest/download"
 #           ;;
 #           2)  ## Requires running `build-updater.sh` at least once.
-                ~/.local/bin/go-paper-autoupdate-linux-amd64 'paper' "$ENV_VERSION"
+                "$ENV_PAPERUPD_BIN" 'paper' "$ENV_VERSION"
                 mv "paper-${ENV_VERSION}.jar" "$ENV_SERVER_JAR"
 #           ;;
 #       esac
