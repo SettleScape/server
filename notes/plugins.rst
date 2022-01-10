@@ -28,7 +28,6 @@ ShopChest          1.13-SS    2021-09-27  2022-01-10              No          ht
 Towny              0.97.5.0   2021-12-03  2022-01-10              Yes         https://github.com/TownyAdvanced/Towny/releases
 TownyChat          0.93       2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyChat/releases
 TownyCultures      1.4.0      2021-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
-TownyNameUpdater   5.0        2020-04-25  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyNameUpdater/releases
 TownyFlight        1.8.2      2022-01-06  2022-01-10              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TradePlus          3.82.6     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-01-10              ????        https://spigotmc.org/resources/34315/updates
