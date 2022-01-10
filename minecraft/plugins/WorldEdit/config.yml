@@ -20,8 +20,8 @@ limits:
     max-blocks-changed:
         default: -1
         maximum: -1
-    vertical-height:
-        default: 256
+    # vertical-height:
+    #     default: 256
     max-polygonal-points:
         default: -1
         maximum: 20
@@ -151,4 +151,4 @@ no-op-permissions: false
 debug: false
 show-help-on-first-use: true
 server-side-cui: true
-command-block-support: false
+command-block-support: true
