@@ -39,7 +39,7 @@ discord-url: "https://Discord.gg/XczsrRT"
 # - staff, which will send kick/mute messages
 # (note: you will need to replace the zeros with the actual channel ID you want to use)
 channels:
-  main: 871583059156287508
+  primary: 871583059156287508
   news: 591413109252554789
   mods: 671172800295206914
 
@@ -116,23 +116,23 @@ console:
 # To disable a message from showing, use 'none' as the channel name.
 message-types:
   # Join messages sent when a player joins the Minecraft server.
-  join: main
+  join: primary
   # Leave messages sent when a player leaves the Minecraft server.
-  leave: main
+  leave: primary
   # Chat messages sent when a player chats on the Minecraft server.
-  chat: main
+  chat: primary
   # Death messages sent when a player dies on the Minecraft server.
-  death: main
+  death: primary
   # AFK status change messages sent when a player's AFK status changes.
-  afk: main
+  afk: primary
   # Achievement/advancement messages sent when a player is awarded an achievement/advancement.
-  advancement: main
+  advancement: primary
   # Action messages sent when a player runs the /me or /action commands.
-  action: main
+  action: primary
   # Message sent when the server starts up.
-  server-start: main
+  server-start: primary
   # Message sent when the server shuts down.
-  server-stop: main
+  server-stop: primary
   # Message sent when a player is kicked from the Minecraft server.
   kick: mods
   # Message sent when a player's mute state is changed on the Minecraft server.
