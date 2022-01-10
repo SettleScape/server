@@ -16,7 +16,7 @@ config-version: 24
 settings:
   lag-compensate-block-breaking: true
   send-full-pos-for-hard-colliding-entities: true
-  log-player-ip-addresses: true
+  log-player-ip-addresses: false
   track-plugin-scoreboards: false
   fix-entity-position-desync: true
   max-joins-per-tick: 1
@@ -75,7 +75,7 @@ settings:
       title: 8192
       author: 8192
       page: 16384
-  use-display-name-in-quit-message: false
+  use-display-name-in-quit-message: true
   loggers:
     deobfuscate-stacktraces: true
   chunk-loading:
@@ -84,7 +84,7 @@ settings:
     autoconfig-send-distance: true
     target-player-chunk-send-rate: 100.0
     global-max-chunk-send-rate: -1.0
-    enable-frustum-priority: false
+    enable-frustum-priority: true
     global-max-chunk-load-rate: -1.0
     player-max-concurrent-loads: 4.0
     global-max-concurrent-loads: 500.0
@@ -107,7 +107,7 @@ messages:
     flying-player: Flying without permission.
     flying-vehicle: Flying without permission.
 timings:
-  url: https://timings.aikar.co/
+  url: https://timings.aikar.co
   enabled: true
   verbose: false
   server-name-privacy: false
@@ -272,7 +272,7 @@ world-settings:
       items:
         COBBLESTONE: 300
     anti-xray:
-      max-block-height: 64
+      max-block-height: 128
       lava-obscures: true
       use-permission: false
       enabled: true

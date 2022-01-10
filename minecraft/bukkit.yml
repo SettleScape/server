@@ -37,7 +37,7 @@ chunk-gc:
   period-in-ticks: 600
   load-threshold: 1
 ticks-per:
-  water-underground-creature-spawns: 1
+  water-underground-creature-spawns: 4
   water-ambient-spawns: 1
   water-spawns: 4
   ambient-spawns: 4
@@ -45,7 +45,7 @@ ticks-per:
   monster-spawns: 4
   autosave: 6000
 spawn-limits:
-  water-underground-creature: 5
+  water-underground-creature: 4
   water-ambient: 20
   monsters: 12
   animals: 6
