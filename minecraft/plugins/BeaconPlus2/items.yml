@@ -5,7 +5,7 @@ Deactivate Item:
   Type: END_ROD
   Display Name: "&a&lACTIVATED"
 Too Low Item:
-  Type: LIGHT_GRAY_STAINED_GLASS_PANE
+  Type: GRAY_STAINED_GLASS_PANE
   Display Name: "&0"
 Back Item: 
   Type: BARRIER
@@ -39,8 +39,8 @@ Upgrade Button Experience:
   - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
   - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
 Maxed Upgrade Button Money:
-  Type: LIGHT_GRAY_STAINED_GLASS_PANE
+  Type: GRAY_STAINED_GLASS_PANE
   Display Name: "&0"
 Maxed Upgrade Button Experience:
-  Type: LIGHT_GRAY_STAINED_GLASS_PANE
+  Type: GRAY_STAINED_GLASS_PANE
   Display Name: "&0"
