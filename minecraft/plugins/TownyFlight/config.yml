@@ -8,7 +8,7 @@ pluginPrefix: ''
 language:
  
   # Message shown when flight activated.
-  flightOnMsg: §6Set fly mode §cenabled§6. §r
+  flightOnMsg: §6Set fly mode §aenabled§6. §r
  
   # Message shown when flight de-activated.
   flightOffMsg: §6Set fly mode §cdisabled§6. §r
@@ -32,7 +32,7 @@ language:
   noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here: §9Patreon.com/settlescape§6. §r'
  
   # Message attached to noPermission when options.show_Permission_After_No_Permission_Message is true
-  missingNode: ', missing %s'
+  missingNode: §6, missing §f%s§r
  
   # Message shown when war is active and flight is disallowed.
   notDuringWar: §6Flight is §cdisabled§6 during wars. §r
@@ -41,16 +41,16 @@ language:
   returnToAllowedArea: §6Flight will §cdeactivate§6 in %s seconds unless you return to a town. §r
  
   # Message when a town cannot be found by the name.
-  noTownFound: 'TownyFlight cannot find a town by the name %s. '
+  noTownFound: §6TownyFlight cannot find a town by the name §f%s§6. §r
  
   # Message when a town has free flight enabled or disabled.
-  townWideFlight: 'Free flight has been %s in %s. '
+  townWideFlight: §6Free flight has been §f%s§6 in §f%s§6. §r
  
   # The word disabled.
-  disabled: disabled
+  disabled: §cdisabled§r
  
   # The world enabled.
-  enabled: enabled
+  enabled: §aenabled§r
  
   # The component shown on towns' status screens when they have free flight enabled.
   statusScreenComponent: Free Flight

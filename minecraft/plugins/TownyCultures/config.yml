@@ -18,4 +18,4 @@ townycultures:
   enabled: 'true'
  
   # The maximum number of characters a culture name can be.
-  maximum_culture_name_length: '20'
+  maximum_culture_name_length: '16'

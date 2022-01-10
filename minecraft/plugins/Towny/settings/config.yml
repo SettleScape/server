@@ -564,7 +564,7 @@ global_town_settings:
   # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
   # Invulnerable players who attack other players will lose their invulnerability.
   # Invulnerable players who teleport after respawn will also lose their invulnerability.
-  respawn_protection: 10s
+  respawn_protection: 3s
  
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
   town_respawn_same_world_only: 'false'
@@ -698,7 +698,7 @@ global_town_settings:
  
   # If People should keep their experience on death in an arena townblock.
   # Is not guaranteed to work with other keep experience plugins!
-  keep_experience_on_death_in_arena: 'false'
+  keep_experience_on_death_in_arena: 'true'
  
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
@@ -866,7 +866,7 @@ plugin:
  
       # The url that players will be prompted to open when clicking on a coordinate in a status screen.
       # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
-      url: https://example.com/map/?worldname={world}&mapname=flat&zoom=5&x={x}&y=64&z={z}
+      url: http://map.settlescape.org/?worldname={world}&zoom=6&x={x}&y={y}&z={z}
  
   day_timer:
  
@@ -1582,7 +1582,7 @@ economy:
     town_plotbased_upkeep_minimum_amount: '50.0'
  
     # If set to any amount over zero, if a town's plot-based upkeep totals more than this value, the town will pay the maximum instead.
-    town_plotbased_upkeep_maximum_amount: '0.0'
+    town_plotbased_upkeep_maximum_amount: '500.0'
  
     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
     price_town_overclaimed_upkeep_penalty: '10.0'
