@@ -10,7 +10,7 @@ Upgrade GUI:
   Title: "Beacon"
   Items:
     " ":
-      Type: LIGHT_GRAY_STAINED_GLASS_PANE
+      Type: GRAY_STAINED_GLASS_PANE
       Display Name: "&0"
     B:
       Type: BEACON
@@ -26,11 +26,6 @@ Upgrade GUI:
       Type: EMERALD
       Template:
         Name: UPGRADE_BUTTON_MONEY
-        Value: "$value"
-    E:
-      Type: EXPERIENCE_BOTTLE
-      Template:
-        Name: UPGRADE_BUTTON_EXPERIENCE
         Value: "$value"
     X:
       Type: BARRIER
@@ -52,7 +47,7 @@ Main GUI:
   Title: "Beacon"
   Items:
     " ":
-      Type: LIGHT_GRAY_STAINED_GLASS_PANE
+      Type: GRAY_STAINED_GLASS_PANE
       Display Name: "&0"
     X:
       Type: BEACON

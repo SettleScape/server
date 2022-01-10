@@ -14,7 +14,7 @@ Check For Update: true
 Auto Pick Up: false
 
 # Allow multiple beacons to handle entities/blocks
-Multiple Beacon Effect Stack: false
+Multiple Beacon Effect Stack: true
 
 # Beacon must have nothing above it in order to enable
 Must Beam Through Sky: true
@@ -45,7 +45,7 @@ Particle:
   # EXPLOSION_LARGE, EXPLOSION_HUGE, SPELL, SPELL_INSTANT, SPELL_WITCH, DRIP_WATER, 
   # DRIP_LAVA, VILLAGER_ANGRY, LAVA, FOOTSTEP, SNOWBALL, SLIME, HEART, BARRIER, WATER_DROP, 
   # ITEM_TAKE, MOB_APPEARANCE
-  Type: SPELL_WITCH
+  Type: ENCHANTED_HIT
   # in ticks
   Interval: 7
   Stay On Top: true
@@ -54,8 +54,8 @@ Particle:
 Animation:
   Play transition on GUI open: false
   Play only once at the beginning: true
-  First Layer: PURPLE_STAINED_GLASS_PANE
-  Second Layer: MAGENTA_STAINED_GLASS_PANE
+  First Layer: CYAN_STAINED_GLASS_PANE
+  Second Layer: LIGHT_BLUE_STAINED_GLASS_PANE
 
 # When using this, it will ignore "Beacon Ranges" configuration.
 # this is 10 times faster than "Beacon Ranges"
@@ -104,7 +104,7 @@ Entity Filter:
 Beacon Effect:
   Activated Status: "&aActivated"
   Deactivated Status: "&cDeactivated"
-  Low Level Status: "&eLow Level"
+  Low Level Status: "&eLow Power"
 
 Beacon Item:
   Display Name: "&aBeacon"
@@ -113,7 +113,7 @@ Beacon Item:
   - "&8&l  + {effects}"
   Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8)"
   Deactivated Effect Lore: "&f{effect_name} &8(&eTier {effect_level_roman}&8) (&cDEACTIVATED&8)"
-  Effect Lore Empty: "&f- No Effect -"
+  Effect Lore Empty: "&f+ No Effect"
 
 Economy:
   Vault:
