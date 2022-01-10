@@ -31,3 +31,7 @@
 **/desktop.ini
 **/thumbs.db
 **.fuse_hidden*
+
+## Java
+/java
+/java*.tar.*

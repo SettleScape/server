@@ -14,18 +14,24 @@ case "$1" in
        *) documentation && exit 1 ;;
 esac
 
-## Figure out which Java to use.  (Proprietary Java preferred.)
-declare -i I=1
+## Figure out which Java to use.
+## Do not use Java SE (Oracle's version) versions 11-16, as those require a hefty fee to use in production.
+## Java SE should otherwise be preferred, as unlike OpenJDK, it continues to update old versions after the release of a new one. 
+declare -i I=0
 until [[ -f "$JAVA" ]]; do
     case $I in
-    1) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin/java"     ;;
-    2) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-openjdk/jre/bin/java" ;;
-    3) JAVA="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin/java"      ;;
+    0) JAVA="$ENV_JAVA_PATH"                                         ;;
+    1) echo "No Java found at '$JAVA'.  Please download Java v$ENV_JAVA_VERSION and place it at that path, or SettleScape may not run correctly." >&2 ;;
+    2) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin/java"     ;;
+    3) JAVA="/lib/jvm/java-${ENV_JAVA_VERSION}-openjdk/jre/bin/java" ;;
+    4) JAVA="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin/java"      ;;
     ## If none of the above worked, try using the system's default java.
     *) JAVA=`which java` ;;
     esac
     I=`expr $I + 1`
 done
+export JAVA_HOME="$JAVA/bin"
+export JRE_HOME="$JAVA_HOME"
 # echo "$JAVA" && exit 1
 
 ## Get variables

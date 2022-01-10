@@ -1,10 +1,15 @@
 #!/bin/sh
 ## This script just exports variables needed by other scripts.
 
-export \
-    ENV_MC_HOME='/srv/minecraft' \
-    ENV_SCREEN_NAME='SettleScape' \
-    ENV_SERVER_JAR='server.jar'
-    ENV_SERVER_ROOT='../' \
-    ENV_VERSION='1.16.5' \
-    ENV_JAVA_VERSION='16' \
+## User variables
+export ENV_MC_HOME='/srv/minecraft'
+
+## Minecraft variables
+export ENV_SCREEN_NAME='SettleScape'
+export ENV_SERVER_JAR='server.jar'
+export ENV_SERVER_ROOT='..'
+export ENV_VERSION='1.16.5'
+
+## Java variables
+export ENV_JAVA_VERSION='16'
+export ENV_JAVA_DIR="$ENV_SERVER_ROOT/java"
