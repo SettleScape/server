@@ -91,8 +91,8 @@ Calculator:
     IRON_BLOCK: 1
     COPPER_BLOCK: 2
     GOLD_BLOCK: 2
+    AMETHYST_BLOCK: 2
     EMERALD_BLOCK: 3
-    AMETHYST_BLOCK: 3
     DIAMOND_BLOCK: 4
     NETHERITE_BLOCK: 5
   Maximum Height Check: 6
