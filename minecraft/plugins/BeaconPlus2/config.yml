@@ -42,15 +42,15 @@ Permissions:
 
 Particle:
   Enable: true
-  # EXPLOSION_LARGE, EXPLOSION_HUGE, SPELL, SPELL_INSTANT, SPELL_WITCH, DRIP_WATER, 
-  # DRIP_LAVA, VILLAGER_ANGRY, LAVA, FOOTSTEP, SNOWBALL, SLIME, HEART, BARRIER, WATER_DROP, 
+  # EXPLOSION_LARGE, EXPLOSION_HUGE, SPELL, SPELL_INSTANT, SPELL_WITCH, DRIP_WATER,
+  # DRIP_LAVA, VILLAGER_ANGRY, LAVA, FOOTSTEP, SNOWBALL, SLIME, HEART, BARRIER, WATER_DROP,
   # ITEM_TAKE, MOB_APPEARANCE
   Type: SPELL
   # in ticks
   Interval: 7
   Stay On Top: true
   Prevent Synchronously Run: true
-  
+
 Animation:
   Play transition on GUI open: false
   Play only once at the beginning: true
@@ -66,7 +66,7 @@ Beacon Range Calculator:
   Percentage: 25
 
 Item Economy:
-#  <economy name>: 
+#  <economy name>:
 #     display-name: <String>
 #     item: <ItemStack>
 #  for more info, visit: https://www.spigotmc.org/wiki/itemstack-serialization/
@@ -89,8 +89,10 @@ Beacon Ranges:
 Calculator:
   Block Powers:
     IRON_BLOCK: 1
+    COPPER_BLOCK: 2
     GOLD_BLOCK: 2
     EMERALD_BLOCK: 3
+    AMETHYST_BLOCK: 3
     DIAMOND_BLOCK: 4
     NETHERITE_BLOCK: 5
   Maximum Height Check: 6
@@ -167,7 +169,7 @@ Economy:
           '1000000000000000000000000000': oc
           '1000000000000000000000000000000': no
           '1000000000000000000000000000000000': dc
-  
+
 Listener:
   # Disable the use of customized listener priority and ignore cancelled and use
   # the built-in listener anyway.
