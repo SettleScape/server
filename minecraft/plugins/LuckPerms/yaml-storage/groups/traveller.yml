@@ -56,6 +56,7 @@ permissions:
 - essentials.tpaccept
 - essentials.tpacancel
 - essentials.tpahere
+- essentials.warp
 
 # Misc
 - essentials.sethome
