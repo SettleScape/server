@@ -89,9 +89,11 @@ Beacon Ranges:
 Calculator:
   Block Powers:
     IRON_BLOCK: 1
+    REDSTONE_BLOCK: 1
     COPPER_BLOCK: 2
     GOLD_BLOCK: 2
     AMETHYST_BLOCK: 2
+    LAPIS_BLOCK: 3
     EMERALD_BLOCK: 3
     DIAMOND_BLOCK: 4
     NETHERITE_BLOCK: 5
