@@ -25,27 +25,32 @@ regions:
         flags:
             other-explosion: deny
             frosted-ice-form: deny
+            lava-fire: deny
             use: allow
-            ice-melt: deny
+            block-trampling: deny
             snow-fall: deny
-            vehicle-destroy: allow
+            ice-melt: deny
             interact: allow
+            vehicle-destroy: allow
             chest-access: allow
             firework-damage: deny
             ride: allow
+            fire-spread: deny
             sleep: allow
             vehicle-place: allow
             snowman-trails: deny
             block-break: deny
-            entity-painting-destroy: deny
             ravager-grief: deny
+            entity-painting-destroy: deny
+            respawn-anchors: allow
             mushroom-growth: deny
             ice-form: deny
             chorus-fruit-teleport: deny
             lighter: deny
             pvp: deny
-            deny-spawn: ['minecraft:zombie_pigman']
+            deny-spawn: []
             block-place: deny
+            mob-spawning: deny
             creeper-explosion: deny
             create-shop: deny
             town-creation: deny
@@ -64,11 +69,11 @@ regions:
         max: {x: -353, y: 255, z: -4561}
         members: {}
         flags: {other-explosion: deny, chorus-fruit-teleport: deny, lava-fire: deny,
-            dynmap-boost: true, block-trampling: deny, vehicle-destroy: deny, lighter: deny,
-            pistons: deny, chest-access: deny, block-place: deny, fire-spread: deny,
+            dynmap-boost: true, block-trampling: deny, lighter: deny, vehicle-destroy: deny,
+            chest-access: deny, pistons: deny, block-place: deny, fire-spread: deny,
             enderpearl: deny, creeper-explosion: deny, vehicle-place: deny, create-shop: deny,
-            town-creation: deny, item-frame-rotation: deny, block-break: deny, tnt: deny,
-            entity-painting-destroy: deny, entity-item-frame-destroy: deny}
+            town-creation: deny, item-frame-rotation: deny, block-break: deny, entity-painting-destroy: deny,
+            tnt: deny, entity-item-frame-destroy: deny}
         owners: {}
         type: cuboid
         priority: 0
