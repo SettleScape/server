@@ -112,7 +112,7 @@ permissions:
 #-------------------------------------------------------------------------------
 - beaconplus.open
 - beaconplus.upgrade
-- bukkit.command.gamemode.survival
+- essentials.gamemode.survival
 - craftbook.mech.ammeter.use
 - craftbook.mech.bookshelf.use
 - craftbook.mech.chair.use
