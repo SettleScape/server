@@ -42,6 +42,7 @@ permissions:
 - coreprotect.inspect # Lets you click to inspect a block
 - coreprotect.lookup # Lets you inspect blocks in a radius, with additional detail
 
+- essentials.gamemode.spectator
 # - essentials.vanish
 # - essentials.vanish.effect
 - vanish.vanish
