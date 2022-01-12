@@ -158,3 +158,6 @@
     position: relative;
     left: -50%;
 }
+.dynmap .playerName, .dynmap .playerNameSm {
+    display: none;
+}

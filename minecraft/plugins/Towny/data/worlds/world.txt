@@ -1,4 +1,4 @@
-pvp=true
+pvp=false
 forcepvp=false
 friendlyFire=false
 # Can players found towns and claim plots in this world?
@@ -56,6 +56,6 @@ usingPlotManagementWildRegenDelay=5
 usingTowny=true
 
 # This setting is used to enable or disable Event war in this world.
-warAllowed=true
+warAllowed=false
 
 metadata=

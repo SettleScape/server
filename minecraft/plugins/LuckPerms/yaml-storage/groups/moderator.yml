@@ -24,6 +24,7 @@ permissions:
 - essentials.seen.extra
 - essentials.whois
 - essentials.whois.ip
+- dynmap.playermarkers.seeall
 
 # Espionage
 #-------------------------------------------------------------------------------

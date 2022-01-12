@@ -1,6 +1,6 @@
 pvp=true
 forcepvp=true
-friendlyFire=false
+friendlyFire=true
 # Can players found towns and claim plots in this world?
 claimable=true
 worldmobs=true

@@ -40,9 +40,9 @@ components:
 
   - class: org.dynmap.InternalClientUpdateComponent
     sendhealth: false
-    sendposition: false
+    sendposition: true
     allowwebchat: false
-    webchat-interval: 5
+    webchat-interval: 0
     hidewebchatip: true
     trustclientname: false
     includehiddenplayers: false
@@ -55,19 +55,19 @@ components:
     # (optional) block player login IDs that are banned from chatting
     block-banned-player-chat: true
     # Require login for web-to-server chat (requires login-enabled: true)
-    webchat-requires-login: true
+    webchat-requires-login: false
     # If set to true, users must have dynmap.webchat permission in order to chat
     webchat-permissions: false
     # Limit length of single chat messages
-    chatlengthlimit: 256
+    chatlengthlimit: 0
     # Optional - make players hidden when they are inside/underground/in shadows (#=light level: 0=full shadow,15=sky)
-    hideifshadow: 4
+    hideifshadow: 0
     # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
-    hideifundercover: 14
+    hideifundercover: 0
     # (Optional) if true, players that are crouching/sneaking will be hidden
-    hideifsneaking: false
+    hideifsneaking: true
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
-    protected-player-info: true
+    protected-player-info: false
     # If true, hide players with invisibility potion effects active
     hide-if-invisiblity-potion: true
     # If true, player names are not shown on map, chat, list
@@ -97,10 +97,10 @@ components:
   #  hide-if-invisiblity-potion: true
   #  hidenames: false
 
-  - class: org.dynmap.SimpleWebChatComponent
-    allowchat: false
-    # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
-    allowurlname: false
+  # - class: org.dynmap.SimpleWebChatComponent
+  #   allowchat: false
+  #   # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
+  #   allowurlname: false
 
   # Note: this component is needed for the dmarker commands, and for the Marker API to be available to other plugins
   - class: org.dynmap.MarkersComponent
@@ -116,13 +116,13 @@ components:
     spawnicon: compass
     spawnlabel: "Spawn"
 
-    # (optional) layer for showing offline player's positions (for 'maxofflinetime' minutes after logoff)
-    showofflineplayers: false
-    offlinelabel: "Offline"
-    offlineicon: offlineuser
-    offlinehidebydefault: true
-    offlineminzoom: 0
-    maxofflinetime: 30
+    # # (optional) layer for showing offline player's positions (for 'maxofflinetime' minutes after logoff)
+    # showofflineplayers: false
+    # offlinelabel: "Offline"
+    # offlineicon: offlineuser
+    # offlinehidebydefault: false
+    # offlineminzoom: 0
+    # maxofflinetime: 30
 
     # (optional) layer for showing player's spawn beds
     showspawnbeds: false
@@ -135,42 +135,43 @@ components:
     # (optional) show world border (vanilla 1.8+)
     showworldborder: true
 
-  - class: org.dynmap.ClientComponent
-    type: chat
-    allowurlname: false
-
-  - class: org.dynmap.ClientComponent
-    type: chatballoon
-    focuschatballoons: false
-
-  - class: org.dynmap.ClientComponent
-    type: chatbox
-    showplayerfaces: true
-    messagettl: 0
-    # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
-    #scrollback: 100
-    # Optiona; set maximum number of lines visible for chatbox
-    #visiblelines: 10
-    # Optional: send push button
-    sendbutton: false
+  # - class: org.dynmap.ClientComponent
+  #   type: chat
+  #   allowurlname: false
 
   # - class: org.dynmap.ClientComponent
-  #   type: playermarkers
+  #   type: chatballoon
+  #   focuschatballoons: false
+
+  # - class: org.dynmap.ClientComponent
+  #   type: chatbox
   #   showplayerfaces: true
-  #   showplayerhealth: false
-  #   # If true, show player body too (only valid if showplayerfaces=true
-  #   showplayerbody: false
-  #   # Option to make player faces small - don't use with showplayerhealth
-  #   smallplayerfaces: true
-  #   # Optional - make player faces layer hidden by default
-  #   hidebydefault: true
-  #   # Optional - ordering priority in layer menu (low goes before high - default is 0)
-  #   layerprio: 0
-  #   # Optional - label for player marker layer (default is 'Players')
-  #   label: "Players"
+  #   messagettl: 0
+  #   # Optional: set number of lines in scrollable message history: if set, messagettl is not used to age out messages
+  #   #scrollback: 100
+  #   # Optiona; set maximum number of lines visible for chatbox
+  #   #visiblelines: 10
+  #   # Optional: send push button
+  #   sendbutton: false
+
+  - class: org.dynmap.ClientComponent
+    type: playermarkers
+    showplayerfaces: true
+    showplayerhealth: false
+    # If true, show player body too (only valid if showplayerfaces=true
+    showplayerbody: true
+    # Option to make player faces small - don't use with showplayerhealth
+    smallplayerfaces: false
+    # Optional - make player faces layer hidden by default
+    hidebydefault: false
+    # Optional - ordering priority in layer menu (low goes before high - default is 0)
+    layerprio: 999
+    # Optional - label for player marker layer (default is 'Players')
+    label: "Players"
 
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
+
   - class: org.dynmap.ClientComponent
     type: link
 
@@ -280,10 +281,10 @@ ctm-support: true
 custom-colors-support: true
 
 # Control loading of player faces (if set to false, skins are never fetched)
-#fetchskins: false
+fetchskins: true
 
 # Control updating of player faces, once loaded (if faces are being managed by other apps or manually)
-#refreshskins: false
+refreshskins: true
 
 # Customize URL used for fetching player skins (%player% is macro for name)
 skin-url: "http://skins.minecraft.net/MinecraftSkins/%player%.png"
