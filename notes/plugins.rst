@@ -19,6 +19,7 @@ LuckPerms          5.3.98     2022-01-02  2022-01-10              ????        ht
 mcMMO              2.1.207    2021-12-27  2022-01-10              Yes         https://spigotmc.org/resources/64348/updates
 mcMMO-Towny        1.0.1      2019-09-14  2022-01-10  Old         Yes         https://github.com/TownyAdvanced/mcMMO-Towny/releases
 MineableSpawners   3.1.2      2021-12-03  2022-01-10              ????        https://github.com/dnyferguson/MineableSpawners/releases
+NuVotifier         2.7.3      2021-07-06  2022-01-13              ????        https://github.com/NuVotifier/NuVotifier/releases
 OpenInv            4.1.9      2021-12-02  2022-01-10              ????        https://github.com/Jikoo/OpenInv/releases
 PhantomSMP         1.1.1      2019-06-04  2021-07-31  Fork avail. ????        https://github.com/SimonOrJ/PhantomSMP/releases
 PlaceholderAPI     2.11.1     2021-12-27  2022-01-10              ????        https://spigotmc.org/resources/6245/updates

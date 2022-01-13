@@ -16,6 +16,7 @@ chmod -Rc 'o-rwx'     '.'
 chmod  -c 'og-w' '.'
 chmod -Rc  'g-w' '.ssh'
 chmod  -c  'g-r' '.ssh'
+chmod  -c 'go-rwx' $(find . -type f -name "*.key")
 #TODO: Exclude `.git` from all this somehow.
 
 ## Done
