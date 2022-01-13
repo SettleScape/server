@@ -5,17 +5,17 @@
 ## Go to the right directory
 set -e; cd "$ENV_MC_HOME"; set +e
 
-## Generate list of paths to modify
-declare -a PATHS=($(find . !-name ".git"))
-
 ## Set owner and group
 chown -Rc 'minecraft' '.'
 chgrp -Rc 'minecraft' '.'
 
 ## Set rwx
-chmod  -c 'u+rw'      "${PATHS[@]}"
-chmod  -c 'g+rw'      "${PATHS[@]}"
-chmod  -c 'o-rwx'     "${PATHS[@]}"
+declare -a PATHS=($(find . ! -wholename "*/.git/*")) ## Generate list of paths to modify
+for EACH in "${PATHS[@]}"; do
+	chmod -c 'u+rw'      "$EACH"
+	chmod -c 'g+rw'      "$EACH"
+	chmod -c 'o-rwx'     "$EACH"
+done
 
 ## Special permissions
 chmod  -c 'og-w' '.'
