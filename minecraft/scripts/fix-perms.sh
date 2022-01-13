@@ -3,21 +3,25 @@
 . './env.sh'
 
 ## Go to the right directory
-cd "$ENV_MC_HOME"
+set -e; cd "$ENV_MC_HOME"; set +e
 
-## Do the thing
-chmod -Rc 'u+rw'      '.'
+## Generate list of paths to modify
+declare -a PATHS=($(find . !-name ".git"))
+
+## Set owner and group
 chown -Rc 'minecraft' '.'
-chmod -Rc 'g+rw'      '.'
 chgrp -Rc 'minecraft' '.'
-chmod -Rc 'o-rwx'     '.'
+
+## Set rwx
+chmod  -c 'u+rw'      "${PATHS[@]}"
+chmod  -c 'g+rw'      "${PATHS[@]}"
+chmod  -c 'o-rwx'     "${PATHS[@]}"
 
 ## Special permissions
 chmod  -c 'og-w' '.'
 chmod -Rc  'g-w' '.ssh'
 chmod  -c  'g-r' '.ssh'
 chmod  -c 'go-rwx' $(find . -type f -name "*.key")
-#TODO: Exclude `.git` from all this somehow.
 
 ## Done
 exit 0
