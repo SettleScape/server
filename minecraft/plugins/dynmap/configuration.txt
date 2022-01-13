@@ -21,7 +21,7 @@ deftemplatesuffix: hires
 #  mysql: MySQL database, at hostname:port in database, accessed via userid with password
 storage:
   # Filetree storage (standard tree of image files for maps)
-  type: filetree
+  #type: filetree
   # SQLite db for map storage (uses dbfile as storage location)
   type: sqlite
   dbfile: dynmap.db
@@ -30,7 +30,7 @@ storage:
   #hostname:
   #port: 3306
   #database:
-  #userid:
+  #userid: dynmap
   #password:
   #prefix: "map"
   #flags: "?allowReconnect=true"
