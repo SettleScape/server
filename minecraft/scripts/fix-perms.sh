@@ -9,13 +9,18 @@ set -e; cd "$ENV_MC_HOME"; set +e
 chown -Rc 'minecraft' '.'
 chgrp -Rc 'minecraft' '.'
 
-## Set rwx
-declare -a PATHS=($(find . ! -wholename "*/.git/*")) ## Generate list of paths to modify
-for EACH in "${PATHS[@]}"; do
-	chmod -c 'u+rw'      "$EACH"
-	chmod -c 'g+rw'      "$EACH"
-	chmod -c 'o-rwx'     "$EACH"
-done
+## Set rwx carefully (very slow)
+#declare -a PATHS=($(find . ! -wholename "*/.git/*")) ## Generate list of paths to modify
+#for EACH in "${PATHS[@]}"; do
+#	chmod -c 'u+rw'      "$EACH"
+#	chmod -c 'g+rw'      "$EACH"
+#	chmod -c 'o-rwx'     "$EACH"
+#done
+
+## Set rwx quickly
+chmod -Rc 'u+rw'  '.'
+chmod -Rc 'g+rw'  '.'
+chmod -Rc 'o-rwx' '.'
 
 ## Special permissions
 chmod  -c 'og-w' '.'
