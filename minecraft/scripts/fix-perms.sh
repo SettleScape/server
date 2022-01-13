@@ -26,7 +26,8 @@ chmod -Rc 'o-rwx' '.'
 chmod  -c 'og-w' '.'
 chmod -Rc  'g-w' '.ssh'
 chmod  -c  'g-r' '.ssh'
-chmod  -c 'go-rwx' $(find . -type f -name "*.key")
+chmod  -c 'go-rwx'      $(find . -type f -name "*.key")
+#TODO:  Treat folders named "rsa" the same as ".ssh"
 
 ## Done
 exit 0
