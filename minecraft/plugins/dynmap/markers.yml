@@ -28,21 +28,13 @@ sets:
             }
         label: WorldGuard
         markers:
-            worldguard.world_nether.spawn:
-                world: world_nether
-                markup: false
-                x: 0.0
-                icon: portal
-                y: 0.0
-                z: 0.0
-                label: Spawn
             worldguard.world.spawn:
                 world: world
                 markup: false
-                x: 0.0
-                icon: compass
+                x: 508.0
+                icon: door
                 y: 64.0
-                z: 0.0
+                z: 108.0
                 label: Spawn
             worldguard.world.nearlands:
                 world: world
@@ -52,11 +44,27 @@ sets:
                 y: 107.0
                 z: 4591.0
                 label: Nearlands
-            worldguard.world_the_end.spawn:
+            worldguard.world.origin:
+                world: world
+                markup: false
+                x: 0.0
+                icon: compass
+                y: 64.0
+                z: 0.0
+                label: Origin
+            worldguard.world_nether.origin:
+                world: world_nether
+                markup: false
+                x: 0.0
+                icon: portal
+                y: 0.0
+                z: 0.0
+                label: Origin
+            worldguard.world_the_end.origin:
                 world: world_the_end
                 markup: false
                 x: 100.0
-                icon: compass
+                icon: door
                 y: 49.0
                 z: 0.0
                 label: Spawn
@@ -96,14 +104,6 @@ sets:
                 y: 70.0
                 z: 1039.0
                 label: Gateway 16
-            gateway_0_out:
-                world: world_the_end
-                markup: false
-                x: 1083.0
-                icon: portal
-                y: 75.0
-                z: 0.0
-                label: Gateway 0
             gateway_8_in:
                 world: world_the_end
                 markup: false
@@ -112,6 +112,14 @@ sets:
                 y: 76.0
                 z: -56.0
                 label: Gateway 8
+            gateway_0_out:
+                world: world_the_end
+                markup: false
+                x: 1083.0
+                icon: portal
+                y: 75.0
+                z: 0.0
+                label: Gateway 0
             exit_portal:
                 world: world_the_end
                 markup: false

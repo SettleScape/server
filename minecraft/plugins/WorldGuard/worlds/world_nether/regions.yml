@@ -10,9 +10,9 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    spawn:
-        min: {x: -3, y: 51, z: -4}
-        max: {x: -1, y: 57, z: 1}
+    origin:
+        min: {x: -8, y: 0, z: -9}
+        max: {x: 7, y: 128, z: 6}
         members: {}
         flags: {}
         owners: {}

@@ -18,7 +18,7 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    spawn:
+    origin:
         min: {x: -272, y: 0, z: -272}
         max: {x: 272, y: 255, z: 272}
         members: {}
@@ -61,6 +61,42 @@ regions:
             tnt: deny
             entity-item-frame-destroy: deny
             use-admin-shop: allow
+        owners: {}
+        type: cuboid
+        priority: 0
+    spawn:
+        min: {x: 440, y: 0, z: 40}
+        max: {x: 575, y: 255, z: 175}
+        members: {}
+        flags:
+            other-explosion: deny
+            lava-fire: deny
+            use: allow
+            block-trampling: deny
+            interact: allow
+            vehicle-destroy: allow
+            firework-damage: deny
+            ride: allow
+            fire-spread: deny
+            sleep: allow
+            vehicle-place: allow
+            block-break: deny
+            ravager-grief: deny
+            entity-painting-destroy: deny
+            respawn-anchors: allow
+            mushroom-growth: deny
+            lighter: deny
+            pvp: deny
+            deny-spawn: []
+            block-place: deny
+            mob-spawning: deny
+            creeper-explosion: deny
+            create-shop: deny
+            town-creation: deny
+            item-frame-rotation: deny
+            potion-splash: deny
+            tnt: deny
+            entity-item-frame-destroy: deny
         owners: {}
         type: cuboid
         priority: 0

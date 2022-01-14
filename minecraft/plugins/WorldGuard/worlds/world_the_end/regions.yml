@@ -10,7 +10,7 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    spawn:
+    origin:
         min: {x: -272, y: 0, z: -272}
         max: {x: 272, y: 255, z: 272}
         members: {}
