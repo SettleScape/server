@@ -6,16 +6,16 @@ spawns:
     z: 106.5
     yaw: 0.0
     pitch: 15.0
-  world:
-    world: world
-    x: 0.5
-    y: 50.0
-    z: -0.5
-    yaw: 225.0
-    pitch: 0.0
-  end: world_the_end
-    x: 100.5
-    y: 49.0
-    z: 0.5
-    yaw: 90.0
-    pitch: 45.0
+  # world:
+  #   world: world
+  #   x: 0.5
+  #   y: 50.0
+  #   z: -0.5
+  #   yaw: 225.0
+  #   pitch: 0.0
+  # end: world_the_end
+  #   x: 100.5
+  #   y: 49.0
+  #   z: 0.5
+  #   yaw: 90.0
+  #   pitch: 45.0
