@@ -1,9 +1,9 @@
 spawns:
   default:
     world: world
-    x: 508
-    y: 63.5
-    z: 108
+    x: 507.5
+    y: 63.0
+    z: 107.5
     yaw: 315.0
     pitch: 15.0
   # world:
