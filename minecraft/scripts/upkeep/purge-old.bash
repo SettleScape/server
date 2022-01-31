@@ -1,6 +1,6 @@
 #!/bin/bash
 ## This script removes old files to save space.
-source './env.sh'
+source '.env'
 
 ## Variables.
 declare -a DIRS=(

@@ -16,7 +16,7 @@ esac
 
 ## Preliminaries
 set -e
-source './env.sh'
+source '.env'
 cd "$ENV_SERVER_ROOT"
 
 ## Figure out which Java to use.
@@ -41,14 +41,14 @@ export JAVA_HOME JRE_HOME="$JAVA_HOME"
 # echo "$JAVA_HOME" && exit 1
 
 ## Get Java opts
-source './scripts/java-opts.bash'
+source "$ENV_SERVER_ROOT/scripts/var/java-opts.bash"
 # echo "$JAVA_OPTS" && exit 1
 
 ## Start the server
 declare -a CMD=(
     -mS "$ENV_SCREEN_NAME"
     "$JAVA_HOME/java" $JAVA_OPTS -jar
-    "./$ENV_SERVER_JAR" --nogui #--forceUpgrade
+    "$ENV_SERVER_JAR" --nogui #--forceUpgrade
 )
 if [[ ! -z $DAEMON ]]
 then exec screen -D "${CMD[@]}"

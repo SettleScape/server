@@ -1,6 +1,8 @@
 #!/bin/sh
+## Updates the Minecraft server JAR to the latest, for a number of server types.
+
 set -e
-. './env.sh'
+. '.env'
 
 ## Variables
 TYPE='paper'
@@ -9,6 +11,10 @@ TYPE='paper'
 ## Do the thing
 cd "$ENV_SERVER_ROOT"
 case "$TYPE" in
+
+    'vanilla')
+        #TODO
+    ;;
 
     'bukkit')
         #TODO
@@ -39,7 +45,7 @@ case "$TYPE" in
 #           1)  ## Removed because the Paper devs are retarded.
 #               curl -o "$ENV_SERVER_JAR" "https://papermc.io/api/v1/paper/${ENV_VERSION}/latest/download"
 #           ;;
-#           2)  ## Requires running `build-updater.sh` at least once.
+#           2)  ## Requires running `updater.sh` at least once.
                 "$ENV_PAPERUPD_BIN" 'paper' "$ENV_VERSION"
                 mv "paper-${ENV_VERSION}.jar" "$ENV_SERVER_JAR"
 #           ;;

@@ -1,9 +1,10 @@
 #!/bin/sh
+## Builds a program that can be used to painlessly update PaperMC to the latest version.
 set -e
-. './env.sh'
+. '.env'
 
 ## Variables
-WHERE='../build'
+WHERE='build'
 REPO='go-paper-autoupdate'
  CWD=$(pwd)
 BUILD_SCRIPT='build.bash'

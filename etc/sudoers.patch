@@ -1,0 +1,2 @@
++ ## Allow the minecraft user to shutdown & reboot this system
++ minecraft localhost =NOPASSWD: /usr/bin/systemctl poweroff,/usr/bin/systemctl halt,/usr/bin/systemctl reboot

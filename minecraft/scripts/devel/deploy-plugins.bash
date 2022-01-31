@@ -2,12 +2,12 @@
 ## This script requires the [[ double-brackets ]] of `bash` in order to run;
 ## so a conversion to POSIX `sh` is not straightforward.
 set -e
-source './env.sh'
+source '.env'
 
 ## Handle paths
-TWD='plugins'
+TWD="$ENV_SERVER_ROOT/plugins"
 CWD=$(pwd)
-[[ ! "$CWD" == *"/$TWD" ]] && cd "../$TWD"
+[[ ! "$CWD" == "$TWD" ]] && cd "$TWD"
 
 ## Receive input
 # declare -a INPUT=$@
@@ -23,7 +23,7 @@ done
 unset INPUT
 
 ## Send specified plugins to the server
-scp "${PLUGINS[@]}" "minecraft@settlescape.org:/srv/minecraft/settlescape/minecraft/$TWD/"
+scp "${PLUGINS[@]}" "minecraft@settlescape.org:$TWD/"
 unset PLUGINS
 
 ## Cleanup

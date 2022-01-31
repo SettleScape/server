@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-. './env.sh'
+. '.env'
 
 ## Variables
 CWD=$(pwd)

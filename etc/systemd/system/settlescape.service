@@ -13,11 +13,11 @@ RestartSec=5s
 # Group=minecraft
 
 Environment="TERM=xterm-16color"
-WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts
+WorkingDirectory=/srv/minecraft/settlescape/minecraft
 
- ExecStart=/srv/minecraft/settlescape/minecraft/scripts/start-server.bash -d
-ExecReload=/srv/minecraft/settlescape/minecraft/scripts/restart-server.sh -d
-  ExecStop=/srv/minecraft/settlescape/minecraft/scripts/stop-server.sh
+ ExecStart=/srv/minecraft/settlescape/minecraft/scripts/run/tart-server.bash -d
+ExecReload=/srv/minecraft/settlescape/minecraft/scripts/run/restart-server.sh -d
+  ExecStop=/srv/minecraft/settlescape/minecraft/scripts/run/stop-server.sh
 
 [Install]
 ## Use "multi-user" when a system service;  use "default" when a user service.
