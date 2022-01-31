@@ -28,4 +28,4 @@ while [[ $I -gt 0 ]]; do
     I=$((I-1))
 done
 
-exec systemctl reboot -i
+# exec systemctl reboot -i #TODO: Allow minecraft user to reboot without sudo
