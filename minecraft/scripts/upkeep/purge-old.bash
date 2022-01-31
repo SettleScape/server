@@ -1,6 +1,7 @@
 #!/bin/bash
 ## This script removes old files to save space.
 source '../var/env.sh'
+CWD="$(pwd)"
 
 ## Variables.
 declare -a DIRS=(
@@ -22,11 +23,8 @@ declare -a EXTS=(
     '.tar.gz' 
 )
 
-## Set starting directory.
-CWD="$(pwd)/.."
-cd "$CWD"
-
 ## Do the thing.
+cd "$ENV_SERVER_ROOT"
 declare -i I=0
 while [[ I -lt ${#DIRS[@]} && I -lt ${#EXTS[@]} ]]; do
     if [[ -d "${DIRS[I]}" ]]; then
@@ -41,8 +39,11 @@ while [[ I -lt ${#DIRS[@]} && I -lt ${#EXTS[@]} ]]; do
         xargs rm -fv
 
         ## Done.
-        cd "$CWD"
+        cd "$ENV_SERVER_ROOT"
     fi
     I=$I+1
 done
+
+## Done
+cd "$CWD"
 exit 0
