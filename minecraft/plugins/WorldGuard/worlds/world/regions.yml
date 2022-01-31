@@ -20,7 +20,7 @@ regions:
         priority: 0
     origin:
         min: {x: -272, y: 0, z: -272}
-        max: {x: 272, y: 255, z: 272}
+        max: {x: 136, y: 255, z: 272}
         members: {}
         flags:
             other-explosion: deny
@@ -65,8 +65,8 @@ regions:
         type: cuboid
         priority: 0
     spawn:
-        min: {x: 440, y: 0, z: 40}
-        max: {x: 575, y: 255, z: 175}
+        min: {x: 136, y: 0, z: -272}
+        max: {x: 911, y: 255, z: 639}
         members: {}
         flags:
             other-explosion: deny
