@@ -13,9 +13,9 @@ RestartSec=5s
 # Group=minecraft
 
 Environment="TERM=xterm-16color"
-WorkingDirectory=/srv/minecraft/settlescape/minecraft
+WorkingDirectory=/srv/minecraft/settlescape/minecraft/scripts/run
 
- ExecStart=/srv/minecraft/settlescape/minecraft/scripts/run/tart-server.bash -d
+ ExecStart=/srv/minecraft/settlescape/minecraft/scripts/run/start-server.bash -d
 ExecReload=/srv/minecraft/settlescape/minecraft/scripts/run/restart-server.sh -d
   ExecStop=/srv/minecraft/settlescape/minecraft/scripts/run/stop-server.sh
 
