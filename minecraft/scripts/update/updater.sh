@@ -24,4 +24,5 @@ rm -rf "$REPO"
 
 ## Cleanup
 cd "$CWD"
+rmdir "$WHERE"
 exit 0
