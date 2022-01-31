@@ -1,5 +1,5 @@
 #!/bin/sh
-source '/srv/minecraft/settlescape/minecraft/scripts/env.sh'
+. '/srv/minecraft/settlescape/minecraft/scripts/env.sh'
 STUFF="screen -S "$ENV_SCREEN_NAME" -X stuff"
 
 I=600
@@ -13,5 +13,4 @@ while [ $I -gt 0 ]; do
     I=`expr I+1`
 done
 
-systemctl reboot -i
-exit 0
+exec systemctl reboot -i
