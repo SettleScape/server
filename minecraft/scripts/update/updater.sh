@@ -1,7 +1,7 @@
 #!/bin/sh
 ## Builds a program that can be used to painlessly update PaperMC to the latest version.
 set -e
-. '.env'
+. '../var/env.sh'
 
 ## Variables
 WHERE='build'

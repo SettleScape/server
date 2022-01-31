@@ -1,5 +1,5 @@
 #!/bin/sh
-. '.env'
+. '../var/env.sh'
 CWD=$(pwd)
 cd "$ENV_SERVER_ROOT"
 git pull

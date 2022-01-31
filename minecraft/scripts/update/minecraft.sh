@@ -2,7 +2,7 @@
 ## Updates the Minecraft server JAR to the latest, for a number of server types.
 
 set -e
-. '.env'
+. '../var/env.sh'
 
 ## Variables
 TYPE='paper'

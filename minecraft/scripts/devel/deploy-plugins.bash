@@ -2,7 +2,7 @@
 ## This script requires the [[ double-brackets ]] of `bash` in order to run;
 ## so a conversion to POSIX `sh` is not straightforward.
 set -e
-source '.env'
+. '../var/env.sh'
 
 ## Handle paths
 TWD="$ENV_SERVER_ROOT/plugins"

@@ -1,6 +1,6 @@
 #!/bin/sh
 ## Maintenance commands for the Dynmap plugin.
-. '.env'
+. '../../var/env.sh'
 
 echo 'Fixing splotchy maps...'
 eval "$ENV_MC_CMD 'dynmap fullrender world \n'"

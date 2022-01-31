@@ -1,6 +1,6 @@
 #!/bin/sh
 ## Maintenance commands for the CoreProtect plugin.
-. '.env'
+. '../../var/env.sh'
 
 echo 'Cleaning CoreProtect database...'
 eval "$ENV_MC_CMD 'co purge t:15d \n'"

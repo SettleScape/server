@@ -1,5 +1,5 @@
 #!/bin/sh
-. '.env'
+. '../var/env.sh'
 
 I=600
 while [ $I -gt 0 ]; do

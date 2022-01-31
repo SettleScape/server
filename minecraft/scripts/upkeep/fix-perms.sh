@@ -1,6 +1,6 @@
 #!/bin/sh
 ## This script ensures that the `minecraft` folder is permissioned correctly.
-. '.env'
+. '../var/env.sh'
 
 ## Go to the right directory
 set -e; cd "$ENV_MC_HOME"; set +e

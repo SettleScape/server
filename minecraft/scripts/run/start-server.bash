@@ -16,7 +16,7 @@ esac
 
 ## Preliminaries
 set -e
-source '.env'
+source '../var/env.sh'
 cd "$ENV_SERVER_ROOT"
 
 ## Figure out which Java to use.
