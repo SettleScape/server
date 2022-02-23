@@ -107,7 +107,7 @@ Entity Filter:
 Beacon Effect:
   Activated Status: "&aActivated"
   Deactivated Status: "&cDeactivated"
-  Low Level Status: "&eLow Power"
+  Low Level Status: "&eNot Unlocked"
   Low Power Status: "&eLow Power&r (min {level_min_power})"
 
 Beacon Item:
