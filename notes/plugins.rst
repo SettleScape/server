@@ -34,6 +34,7 @@ TownyFlight        1.8.2      2022-01-06  2022-01-10              Yes         ht
 TownyHistories     0.0.18     2022-01-06  2022-01-09              Yes         Discord channel ID#860682040680775711
 TradePlus          3.82.6     2022-01-06  2022-01-10              ????        https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-01-10              ????        https://spigotmc.org/resources/34315/updates
+Vivecraft          1.17.1     2021-08-16  2022-02-22  1.18.1      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
 WorldEdit          7.2.8      2021-12-11  2022-01-10              ????        https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.6      2021-09-16  2022-01-10              ????        https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny   1.2.0      2020-12-30  2022-01-10              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
