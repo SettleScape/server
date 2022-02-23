@@ -11,7 +11,6 @@ forcefirespread=true
 explosions=true
 forceexplosions=false
 endermanprotect=true
-disableplayertrample=true
 disablecreaturetrample=true
 
 # Unclaimed Zone settings.
@@ -22,27 +21,27 @@ unclaimedZoneItemUse=true
 unclaimedZoneName=Wilderness
 
 # The following are blocks that will bypass the above build, destroy, switch and itemuse settings.
-unclaimedZoneIgnoreIds=NONE
+unclaimedZoneIgnoreIds=
 
 # The following settings control what blocks are deleted upon a townblock being unclaimed
 usingPlotManagementDelete=false
-plotManagementDeleteIds=NONE
+plotManagementDeleteIds=
 
 # The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
 usingPlotManagementMayorDelete=false
-plotManagementMayorDelete=NONE
+plotManagementMayorDelete=
 
 # If enabled when a town claims a townblock a snapshot will be taken at the time it is claimed.
 # When the townblock is unclaimed its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air. This list also world on the WildRegen settings below.
-plotManagementIgnoreIds=NONE,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,RAW_IRON_BLOCK,RAW_GOLD_ORE
+plotManagementIgnoreIds=AIR,DEEPSLATE_COAL_ORE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,DEEPSLATE_DIAMOND_ORE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,RAW_IRON_BLOCK,NETHERITE_BLOCK,FURNACE,TNT,BREWING_STAND,SKELETON_SKULL,PLAYER_HEAD,ZOMBIE_HEAD,CREEPER_HEAD,DRAGON_HEAD,SMOKER,BLAST_FURNACE,GILDED_BLACKSTONE,FIRE,NETHER_PORTAL,SKELETON_WALL_SKULL,ZOMBIE_WALL_HEAD,PLAYER_WALL_HEAD,CREEPER_WALL_HEAD,DRAGON_WALL_HEAD
 
 # The following settings control which entities/blocks' explosions are reverted in the wilderness.
 # If enabled any damage caused by entity explosions will repair itself.
 usingPlotManagementWildRegen=true
 # The list of entities whose explosions would be reverted.
-PlotManagementWildRegenEntities=creeper,endercrystal,enderdragon,fireball,smallfireball,largefireball,dragonfireball,witherskull,wither,witherskull
+PlotManagementWildRegenEntities=
 # If enabled any damage caused by block explosions will repair itself.
 usingPlotManagementWildRegenBlocks=true
 # The list of blocks whose explosions would be reverted.

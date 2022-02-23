@@ -1,15 +1,10 @@
-
-# A volume of 1.0 is pretty loud
-# Keep this in mind
+ConfigPatchVersion: 2
 Sounds:
-    # 1.0 = Max volume
-    # 0.0 = No Volume
     MasterVolume: 1.0
     ANVIL:
         Enable: true
         Volume: 1.0
         Pitch: 0.3
-    #Fizz, and Pop make use of a adding and multiplying random numbers together to make a unique pitch everytime they are heard
     FIZZ:
         Enable: true
         Volume: 0.5
@@ -21,7 +16,6 @@ Sounds:
         Enable: true
         Volume: 1.0
         Pitch: 1.0
-    #Fizz, and Pop make use of a adding and multiplying random numbers together to make a unique pitch everytime they are heard
     POP:
         Enable: true
         Volume: 0.2

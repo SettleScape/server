@@ -20,3 +20,6 @@ Spawners:
   - skeleton
   - zombie
   - silverfish
+RMCCommands:
+  # When enabled we will include when posible a command to indicate which was performed while using rmc commands
+  ConsoleLog: true

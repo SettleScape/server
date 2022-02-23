@@ -1,7 +1,4 @@
-#
-#  Settings for Fishing Treasures / Shake Treasures
-#  Last updated on 12/28/2020
-###
+ConfigPatchVersion: 2
 Fishing:
     LEATHER_BOOTS:
         Amount: 1
@@ -247,78 +244,67 @@ Fishing:
         Amount: 1
         XP: 400
         Rarity: LEGENDARY
-# Uncomment the below 3 lines to use the Whitelist, Alternatively rename it Enchantments_Blacklist to use the blacklist
-# NOTE: Enchantments_Whitelist and Enchantments_Blacklist only do anything for Enchanted_Books at the moment, you can't use it with any other treasure definition
-#        Enchantments_Whitelist:
-#            - Fortune
-#            - Protection
     NETHERITE_SCRAP:
         Amount: 1
         XP: 400
         Rarity: LEGENDARY
-#
-#	Fishing drop rates
-###
 Item_Drop_Rates:
     Tier_1:
-        COMMON: 7.50
+        COMMON: 7.5
         UNCOMMON: 1.25
         RARE: 0.25
-        EPIC: 0.10
+        EPIC: 0.1
         LEGENDARY: 0.01
         MYTHIC: 0.01
     Tier_2:
-        COMMON: 6.50
+        COMMON: 6.5
         UNCOMMON: 1.75
         RARE: 0.75
-        EPIC: 0.50
+        EPIC: 0.5
         LEGENDARY: 0.05
         MYTHIC: 0.01
     Tier_3:
-        COMMON: 3.50
+        COMMON: 3.5
         UNCOMMON: 2.75
         RARE: 1.25
-        EPIC: 1.00
-        LEGENDARY: 0.10
+        EPIC: 1.0
+        LEGENDARY: 0.1
         MYTHIC: 0.01
     Tier_4:
-        COMMON: 2.00
-        UNCOMMON: 3.50
+        COMMON: 2.0
+        UNCOMMON: 3.5
         RARE: 2.25
-        EPIC: 1.50
-        LEGENDARY: 1.00
+        EPIC: 1.5
+        LEGENDARY: 1.0
         MYTHIC: 0.01
     Tier_5:
-        COMMON: 1.50
+        COMMON: 1.5
         UNCOMMON: 3.75
-        RARE: 2.50
-        EPIC: 2.00
-        LEGENDARY: 1.00
+        RARE: 2.5
+        EPIC: 2.0
+        LEGENDARY: 1.0
         MYTHIC: 0.01
     Tier_6:
-        COMMON: 1.00
+        COMMON: 1.0
         UNCOMMON: 3.25
         RARE: 3.75
-        EPIC: 2.50
-        LEGENDARY: 1.50
+        EPIC: 2.5
+        LEGENDARY: 1.5
         MYTHIC: 0.05
     Tier_7:
         COMMON: 0.25
         UNCOMMON: 2.75
-        RARE: 4.00
-        EPIC: 5.00
-        LEGENDARY: 2.50
-        MYTHIC: 0.10
+        RARE: 4.0
+        EPIC: 5.0
+        LEGENDARY: 2.5
+        MYTHIC: 0.1
     Tier_8:
-        COMMON: 0.10
-        UNCOMMON: 1.50
-        RARE: 6.00
-        EPIC: 7.50
-        LEGENDARY: 5.00
+        COMMON: 0.1
+        UNCOMMON: 1.5
+        RARE: 6.0
+        EPIC: 7.5
+        LEGENDARY: 5.0
         MYTHIC: 0.25
-#
-#	Fishing enchantment drop rates
-###
 Enchantments_Rarity:
     COMMON:
         EFFICIENCY: 1
@@ -420,65 +406,61 @@ Enchantments_Rarity:
         INFINITY: 1
 Enchantment_Drop_Rates:
     Tier_1:
-        COMMON: 5.00
-        UNCOMMON: 1.00
-        RARE: 0.10
+        COMMON: 5.0
+        UNCOMMON: 1.0
+        RARE: 0.1
         EPIC: 0.01
         LEGENDARY: 0.01
         MYTHIC: 0.01
     Tier_2:
-        COMMON: 7.50
-        UNCOMMON: 1.00
-        RARE: 0.10
+        COMMON: 7.5
+        UNCOMMON: 1.0
+        RARE: 0.1
         EPIC: 0.01
         LEGENDARY: 0.01
         MYTHIC: 0.01
     Tier_3:
-        COMMON: 7.50
-        UNCOMMON: 2.50
+        COMMON: 7.5
+        UNCOMMON: 2.5
         RARE: 0.25
-        EPIC: 0.10
+        EPIC: 0.1
         LEGENDARY: 0.01
         MYTHIC: 0.01
     Tier_4:
         COMMON: 10.0
         UNCOMMON: 2.75
-        RARE: 0.50
-        EPIC: 0.10
+        RARE: 0.5
+        EPIC: 0.1
         LEGENDARY: 0.05
         MYTHIC: 0.05
     Tier_5:
         COMMON: 10.0
-        UNCOMMON: 4.00
+        UNCOMMON: 4.0
         RARE: 0.75
         EPIC: 0.25
-        LEGENDARY: 0.10
-        MYTHIC: 0.10
+        LEGENDARY: 0.1
+        MYTHIC: 0.1
     Tier_6:
-        COMMON: 9.50
-        UNCOMMON: 5.50
+        COMMON: 9.5
+        UNCOMMON: 5.5
         RARE: 1.75
-        EPIC: 0.50
+        EPIC: 0.5
         LEGENDARY: 0.25
         MYTHIC: 0.25
     Tier_7:
-        COMMON: 8.50
-        UNCOMMON: 7.50
+        COMMON: 8.5
+        UNCOMMON: 7.5
         RARE: 2.75
         EPIC: 0.75
-        LEGENDARY: 0.50
-        MYTHIC: 0.50
+        LEGENDARY: 0.5
+        MYTHIC: 0.5
     Tier_8:
-        COMMON: 7.50
+        COMMON: 7.5
         UNCOMMON: 10.0
         RARE: 5.25
-        EPIC: 1.50
+        EPIC: 1.5
         LEGENDARY: 0.75
         MYTHIC: 0.75
-#
-#  Settings for Shake
-#  If you are in retro mode, Drop_Level is multiplied by 10.
-###
 Shake:
     BLAZE:
         BLAZE_ROD:

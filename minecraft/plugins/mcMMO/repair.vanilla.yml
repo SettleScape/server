@@ -1,94 +1,41 @@
-#
-#  Repair configuration
-#
-# Any file named repair.*.yml in the mcmmmo folder will be loaded as a repair config
-# All repair configs have a main section titled "Repairables"
-# Afterwards, all sub-items are considered a Repairable to be loaded. The names of each subitem should be the exact material name.
-# The bare minimum of a Repairable is that it have a RepairMaterial and a MaximumDurability
-#
-# ItemType: This is the type of item to be repaired, this is only important to permissions.
-## Valid values are ARMOR, TOOL, and OTHER.
-## This defaults to OTHER.
-#
-# ItemMaterialCategory: This is the type of the material of the item to be repaired, this is only important for permissions.
-## Valid values are STRING, LEATHER, WOOD, STONE, IRON, GOLD, DIAMOND, and OTHER
-## This defaults to OTHER.
-#
-# RepairMaterial: This is the material name of the item used to repair this repairable.
-## This is required to be set.
-#
-# RepairMaterialMetadata: This is the metadata of the item used to repair this repairable.
-## A value of -1 means to ignore all metadata when repairing.
-## This defaults to -1
-#
-# MaximumDurability: This is the maximum durability of the item.
-## This is required to be set.
-#
-# MinimumLevel: This is the minimum repair level needed to repair this item.
-## Valid values are => 0
-## This defaults to 0
-#
-# MinimumQuantity: This is the minimum number of items needed to repair this item ignoring all other repair bonuses.
-## This is typically the number of the repair material needed to create a new item, for example for a sword it is 2, for an axe it is 3
-## If this isn't set, mcMMO will try to look up the minimum quantity for the item via recipes. It is not necessary to define this field.
-#
-# XpMultiplier: This is the amount to multiply the xp bonus by.
-## This defaults to 1
-#
-#
-# The following is the default repair config that ships with mcMMO, it contains all vanilla items that are repairable.
-#
-#
-###
+ConfigPatchVersion: 2
 Repairables:
-    #
-    # Wooden repairables
-    ###
-    # Tools
     WOODEN_SWORD:
         MinimumLevel: 0
-        XpMultiplier: .25
+        XpMultiplier: 0.25
     WOODEN_SHOVEL:
         MinimumLevel: 0
-        XpMultiplier: .16
+        XpMultiplier: 0.16
     WOODEN_PICKAXE:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     WOODEN_AXE:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     WOODEN_HOE:
         MinimumLevel: 0
-        XpMultiplier: .25
-    #
-    # Stone repairables
-    ###
-    # Tools
+        XpMultiplier: 0.25
     STONE_SWORD:
         MinimumLevel: 0
-        XpMultiplier: .25
+        XpMultiplier: 0.25
     STONE_SHOVEL:
         MinimumLevel: 0
-        XpMultiplier: .16
+        XpMultiplier: 0.16
     STONE_PICKAXE:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     STONE_AXE:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     STONE_HOE:
         MinimumLevel: 0
-        XpMultiplier: .25
-    #
-    # Iron repairables
-    ###
-    # Tools
+        XpMultiplier: 0.25
     IRON_SWORD:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     IRON_SHOVEL:
         MinimumLevel: 0
-        XpMultiplier: .3
+        XpMultiplier: 0.3
     IRON_PICKAXE:
         MinimumLevel: 0
         XpMultiplier: 1
@@ -97,14 +44,13 @@ Repairables:
         XpMultiplier: 1
     IRON_HOE:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     SHEARS:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     FLINT_AND_STEEL:
         MinimumLevel: 0
-        XpMultiplier: .3
-    # Armor
+        XpMultiplier: 0.3
     IRON_HELMET:
         MinimumLevel: 0
         XpMultiplier: 2
@@ -117,10 +63,6 @@ Repairables:
     IRON_BOOTS:
         MinimumLevel: 0
         XpMultiplier: 2
-    #
-    # Gold repairables
-    ###
-    # Tools
     GOLDEN_SWORD:
         MinimumLevel: 0
         XpMultiplier: 4
@@ -136,7 +78,6 @@ Repairables:
     GOLDEN_HOE:
         MinimumLevel: 0
         XpMultiplier: 4
-    # Armor
     GOLDEN_HELMET:
         MinimumLevel: 0
         XpMultiplier: 4
@@ -149,16 +90,12 @@ Repairables:
     GOLDEN_BOOTS:
         MinimumLevel: 0
         XpMultiplier: 4
-    #
-    # Diamond repairables
-    ###
-    # Tools
     DIAMOND_SWORD:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     DIAMOND_SHOVEL:
         MinimumLevel: 0
-        XpMultiplier: .3
+        XpMultiplier: 0.3
     DIAMOND_PICKAXE:
         MinimumLevel: 0
         XpMultiplier: 1
@@ -167,8 +104,7 @@ Repairables:
         XpMultiplier: 1
     DIAMOND_HOE:
         MinimumLevel: 0
-        XpMultiplier: .5
-    # Armor
+        XpMultiplier: 0.5
     DIAMOND_HELMET:
         MinimumLevel: 0
         XpMultiplier: 6
@@ -181,10 +117,6 @@ Repairables:
     DIAMOND_BOOTS:
         MinimumLevel: 0
         XpMultiplier: 6
-    #
-    # Leather repairables
-    ###
-    # Armor
     LEATHER_HELMET:
         MinimumLevel: 0
         XpMultiplier: 1
@@ -197,16 +129,12 @@ Repairables:
     LEATHER_BOOTS:
         MinimumLevel: 0
         XpMultiplier: 1
-    #
-    # String repairables
-    ###
-    # Tools
     FISHING_ROD:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     BOW:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5
     CARROT_ON_A_STICK:
         MinimumLevel: 0
-        XpMultiplier: .5
+        XpMultiplier: 0.5

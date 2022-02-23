@@ -1,7 +1,7 @@
  
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.18
+  version: 0.0.21
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: 0.0.18
 # The language file you wish to use
@@ -11,7 +11,7 @@ language: english.yml
 third_party:
   dynmap:
  
-    # When set to true, and dynmap is found on the server, Camps will appear on the dynmap.
+    # When set to true, and dynmap is found on the server, Ruins will appear on the dynmap.
     enable_dynmap_support: 'true'
  
  

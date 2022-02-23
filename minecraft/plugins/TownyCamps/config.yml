@@ -1,8 +1,11 @@
  
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.28
-# The language file you wish to use
+  version: 0.0.33
+# The language file you wish to use.
+# Available: en-US.yml, zh-CN.yml
+# You can add your own localization using the correct locale filename and placing
+# your file into the townycamps\lang\override\ folder.
 language: english.yml
  
  
@@ -26,13 +29,13 @@ camps:
   protections:
  
     # Is PVP disabled in camps?
-    pvp: 'false'
+    disable_pvp: 'false'
  
     # Is fire disabled in camps?
-    fire: 'true'
+    disable_fire: 'true'
  
     # Are explosions disabled in camps?
-    explosion: 'true'
+    disable_explosion: 'true'
  
  
 third_party:
