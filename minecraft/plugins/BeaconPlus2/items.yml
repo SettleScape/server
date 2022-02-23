@@ -19,28 +19,24 @@ Upgrade Item:
 Upgrade Info:
   Display Name: "&f&lINFORMATION"
   Lore:
-  - "&8&l+ &7Level: &eTier {level_tier_roman}"
+  - "&8&l+ &7Level: &fTier &e{level_tier_roman}&f of &e{level_maxtier}"
   - "&8&l+ &7Effect: &f{level_description}&e{level_extradescription}"
+  - "&8&l+ &7Upgrade: &e${level_nextcost:Money}&f for &e{level_nextextradescription}"
 Maxed Upgrade Info:
   Display Name: "&f&lINFORMATION"
   Lore:
   - "&8&l+ &7Level: &eTier {level_tier_roman}"
   - "&8&l+ &7Effect: &f{level_description}&e{level_extradescription}"
-Upgrade Button Money:
+Upgrade Button:
   Type: EMERALD
-  Display Name: "&fSpend &e${level_nextcost:Money}&f to upgrade this effect"
-  Lore:
-  - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
-  - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
-Upgrade Button Experience:
-  Type: EXPERIENCE_BOTTLE
-  Display Name: "&fSpend &e{level_nextcost:Experience}&f to upgrade this effect"
+  Display Name: "&fSpend &emoney&f to upgrade this effect."
   Lore: 
-  - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
-  - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
-Maxed Upgrade Button Money:
-  Type: GRAY_STAINED_GLASS_PANE
-  Display Name: "&0"
-Maxed Upgrade Button Experience:
+  - "&8&l+ &7Hover the &eBeacon&7 in this menu for details."
+  #TODO: Get Beacon+ dev to re-add support for the following:
+  # Display Name: "&fSpend &e${level_nextcost:Money}&f to upgrade this effect"
+  # Lore:
+  # - "&8&l+ &7New Level: &e{level_nexttier}/{level_maxtier}"
+  # - "&8&l+ &7New Effect: &f{level_description}&e{level_nextextradescription}"
+Maxed Upgrade Button:
   Type: GRAY_STAINED_GLASS_PANE
   Display Name: "&0"
