@@ -1,10 +1,10 @@
 SendPlayerData:
   enabled: true
 CreeperRadius:
-  enabled: true
-  radius: 1.75
+  enabled: false
+  radius: 3
 setSpigotConfig:
-  enabled: true
+  enabled: false
   movedWronglyThreshold: 15
   movedTooQuickly: 64
 pvp:
@@ -13,10 +13,10 @@ pvp:
   SEATEDVRvsNONVR: true
   VRvsSEATEDVR: true
 bow:
-  standingmultiplier: 2
+  standingmultiplier: 1
   seatedmultiplier: 1
-  standingheadshotmultiplier: 3
-  seatedheadshotmultiplier: 2
+  standingheadshotmultiplier: 1
+  seatedheadshotmultiplier: 1
   headshotmobs: true
 permissions:
   enabled: false
@@ -25,31 +25,28 @@ permissions:
   freemovegroup: vive.freemovegroup
   climbperm: vive.climbanywhere
 welcomemsg:
-  enabled: false
   welcomeVR: '&player has joined with standing VR!'
   welcomenonVR: '&player has joined with Non-VR companion!'
   welcomeSeated: '&player has joined with seated VR!'
   welcomeVanilla: '&player has joined as a Muggle!'
   leaveMessage: '&player has disconnected from the server!'
+  enabled: false
 climbey:
   enabled: false
   blockmode: None
-  blocklist:
-  - white_wool
-  - dirt
-  - grass_block
+  blocklist: []
 crawling:
-  enabled: false
+  enabled: true
 teleport:
-  enable: true
-  limitedsurvival: false
+  enable: false
+  limitedsurvival: true
   uplimit: 1
   downlimit: 4
   horizontallimit: 16
 worldscale:
-  limitrange: false
-  max: 2
-  min: 0.5
+  limitrange: true
+  max: 1
+  min: 1
 general:
   debug: false
   checkforupdate: true
@@ -57,4 +54,4 @@ general:
   allow-op: true
   vive-only-kickmessage: This server is configured for Vivecraft VR players only.
   vive-only-kickwaittime: 200
-  vive-crafting: true
+  vive-crafting: false
