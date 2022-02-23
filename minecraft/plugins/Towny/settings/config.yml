@@ -1560,7 +1560,7 @@ economy:
     # When true, a nation's capital will pay the nation tax from the capital's town bank.
     # This feature is a bit redundant because the king can withdraw from both banks anyways,
     # but it might keep nation's from being deleted for not paying their upkeep.
-    do_nation_capitals_pay_nation_tax: 'false'
+    do_nation_capitals_pay_nation_tax: 'true'
  
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
@@ -1832,7 +1832,7 @@ town_ruining:
     # If this is true, when a town becomes a ruin they also become open to join,
     # meaning any townless player could join the town and reclaim it.
     # You should expect this to be abused by players who will reclaim a town to prevent someone else reclaiming it.
-    ruins_become_open: 'false'
+    ruins_become_open: 'true'
  
  
 ############################################################

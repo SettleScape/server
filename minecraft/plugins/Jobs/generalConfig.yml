@@ -451,7 +451,7 @@ BossBar:
   Timer: 6
   # If enabled, bossbar creation and management will be asynchronous.
   # This avoids TPS drops when the ShowOnEachAction option is activated.
-  Async: false
+  Async: true
 # You can enable/disable message shown for players in action bar
 ShowActionBars:
   OnTitleChange: true
