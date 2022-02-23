@@ -204,7 +204,7 @@ regeneration:
   Remove When Leave: true
   Type: BasicBeaconEffect
   Display Name: "Regeneration"
-  Description: "Heal over time "
+  Description: "Heal over time"
   Mode: "player or tamed"
   Effect: REGENERATION
   Levels:
