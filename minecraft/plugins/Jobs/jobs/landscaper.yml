@@ -94,3 +94,127 @@ Landscaper:
       income: 0.75
       points: 0.75
       experience: 0.25
+    mycelium:
+      income: 0.3
+      points: 0.3
+      experience: 0.3
+    stripped_jungle_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    rooted_dirt:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    shroomlight:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    crimson_stem:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    stripped_acacia_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    soul_sand:
+      income: 0.3
+      points: 0.3
+      experience: 0.3
+    crimson_hyphae:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    acacia_wood:
+      income: 1
+      points: 1
+      experience: 1
+    stripped_spruce_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    stripped_warped_hyphae:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    stripped_oak_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    snow_block:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    podzol:
+      income: 0.3
+      points: 0.3
+      experience: 0.3
+    soul_soil:
+      income: 0.3
+      points: 0.3
+      experience: 0.3
+    jungle_wood:
+      income: 1
+      points: 1
+      experience: 1
+    spruce_wood:
+      income: 1
+      points: 1
+      experience: 1
+    stripped_birch_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    stripped_crimson_hyphae:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    brown_mushroom_block:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    dark_oak_wood:
+      income: 1
+      points: 1
+      experience: 1
+    stripped_dark_oak_wood:
+      income: 0.75
+      points: 0.75
+      experience: 0.75
+    warped_stem:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    warped_hyphae:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    red_mushroom_block:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    oak_wood:
+      income: 1
+      points: 1
+      experience: 1
+    birch_wood:
+      income: 1
+      points: 1
+      experience: 1
+    snow:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    warped_wart_block:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    nether_wart_block:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    mushroom_stem:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
