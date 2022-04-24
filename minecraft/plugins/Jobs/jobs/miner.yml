@@ -957,6 +957,150 @@ Miner:
       income: 0.75
       points: 0.75
       experience: 0.75
+    gilded_blackstone:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    block_of_amethyst:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    nether_gold_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    crimson_nylium:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    sea_lantern:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    calcite:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    large_amethyst_bud:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_emerald_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    glowstone:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    end_bricks:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    small_amethyst_bud:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    basalt:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    budding_amethyst:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    amethyst_cluster:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    cobbled_deepslate:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_lapis_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    crying_obsidian:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    lapis_lazuli_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_coal_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_diamond_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    warped_nylium:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    chiseled_nether_bricks:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    copper_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    chain:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_redstone_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    medium_amethyst_bud:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_copper_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    ancient_debris:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    cracked_nether_bricks:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    smooth_basalt:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    tuff:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_iron_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    deepslate_gold_ore:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    amethyst_block:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
+    blackstone:
+      income: 0.25
+      points: 0.25
+      experience: 0.25
   Break:
     obsidian:
       income: 5
@@ -1914,6 +2058,150 @@ Miner:
       income: 3
       points: 3
       experience: 3
+    gilded_blackstone:
+      income: 1
+      points: 1
+      experience: 1
+    block_of_amethyst:
+      income: 1
+      points: 1
+      experience: 1
+    nether_gold_ore:
+      income: 1
+      points: 1
+      experience: 1
+    crimson_nylium:
+      income: 1
+      points: 1
+      experience: 1
+    sea_lantern:
+      income: 1
+      points: 1
+      experience: 1
+    calcite:
+      income: 1
+      points: 1
+      experience: 1
+    large_amethyst_bud:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_emerald_ore:
+      income: 1
+      points: 1
+      experience: 1
+    glowstone:
+      income: 1
+      points: 1
+      experience: 1
+    end_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    small_amethyst_bud:
+      income: 1
+      points: 1
+      experience: 1
+    basalt:
+      income: 1
+      points: 1
+      experience: 1
+    budding_amethyst:
+      income: 1
+      points: 1
+      experience: 1
+    amethyst_cluster:
+      income: 1
+      points: 1
+      experience: 1
+    cobbled_deepslate:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_lapis_ore:
+      income: 1
+      points: 1
+      experience: 1
+    crying_obsidian:
+      income: 1
+      points: 1
+      experience: 1
+    lapis_lazuli_ore:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_coal_ore:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_diamond_ore:
+      income: 1
+      points: 1
+      experience: 1
+    warped_nylium:
+      income: 1
+      points: 1
+      experience: 1
+    chiseled_nether_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate:
+      income: 1
+      points: 1
+      experience: 1
+    copper_ore:
+      income: 1
+      points: 1
+      experience: 1
+    chain:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_redstone_ore:
+      income: 1
+      points: 1
+      experience: 1
+    medium_amethyst_bud:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_copper_ore:
+      income: 1
+      points: 1
+      experience: 1
+    ancient_debris:
+      income: 1
+      points: 1
+      experience: 1
+    cracked_nether_bricks:
+      income: 1
+      points: 1
+      experience: 1
+    smooth_basalt:
+      income: 1
+      points: 1
+      experience: 1
+    tuff:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_iron_ore:
+      income: 1
+      points: 1
+      experience: 1
+    deepslate_gold_ore:
+      income: 1
+      points: 1
+      experience: 1
+    amethyst_block:
+      income: 1
+      points: 1
+      experience: 1
+    blackstone:
+      income: 1
+      points: 1
+      experience: 1
   Place:
     iron_ore:
       income: -5.0
