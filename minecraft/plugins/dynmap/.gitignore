@@ -7,6 +7,7 @@
 !custom-*.txt
 
 !web
+!web/index.html
 !web/images
 !web/images/dynmap.ico
 !web/css
