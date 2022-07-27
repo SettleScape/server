@@ -1,13 +1,4 @@
-#
-#  Item Weights configuration
-#  
-#  This file is used to determine the value of an item. This will only 
-#  happen when users are sharing items in a party using the EQUAL item share mode.
-#
-#  Rare items should have a higher value than common items. If an item is not listed
-#  here, the value from "Default" will be used instead.
-#
-#####
+ConfigPatchVersion: 2
 Item_Weights:
     Default: 5
     Quartz: 200
@@ -26,8 +17,6 @@ Item_Weights:
     Glowstone_Dust: 20
     Coal: 10
     Coal_Ore: 10
-
-    # Item weights for armor and tools
     Diamond_Sword: 150
     Diamond_Shovel: 150
     Diamond_Pickaxe: 150
@@ -52,45 +41,42 @@ Item_Weights:
     Iron_Chestplate: 60
     Iron_Leggings: 60
     Iron_Boots: 60
-
-# Items in this section will get added to the Misc share category.
-# Case insensitive, though the name must be exactly the same as set in the Bukkit Material enum.
 Party_Shareables:
     Misc_Items:
-        - Diamond_Sword
-        - Diamond_Shovel
-        - Diamond_Pickaxe
-        - Diamond_Axe
-        - Golden_Sword
-        - Golden_Shovel
-        - Golden_Pickaxe
-        - Golden_Axe
-        - Iron_Sword
-        - Iron_Shovel
-        - Iron_Pickaxe
-        - Iron_Axe
-        - Stone_Sword
-        - Stone_Shovel
-        - Stone_Pickaxe
-        - Stone_Axe
-        - Wooden_Sword
-        - Wooden_Shovel
-        - Wooden_Pickaxe
-        - Wooden_Axe
-        - Bow
-        - Diamond_Helmet
-        - Diamond_Chestplate
-        - Diamond_Leggings
-        - Diamond_Boots
-        - Golden_Helmet
-        - Golden_Chestplate
-        - Golden_Leggings
-        - Golden_Boots
-        - Iron_Helmet
-        - Iron_Chestplate
-        - Iron_Leggings
-        - Iron_Boots
-        - Leather_Helmet
-        - Leather_Chestplate
-        - Leather_Leggings
-        - Leather_Boots
+    - Diamond_Sword
+    - Diamond_Shovel
+    - Diamond_Pickaxe
+    - Diamond_Axe
+    - Golden_Sword
+    - Golden_Shovel
+    - Golden_Pickaxe
+    - Golden_Axe
+    - Iron_Sword
+    - Iron_Shovel
+    - Iron_Pickaxe
+    - Iron_Axe
+    - Stone_Sword
+    - Stone_Shovel
+    - Stone_Pickaxe
+    - Stone_Axe
+    - Wooden_Sword
+    - Wooden_Shovel
+    - Wooden_Pickaxe
+    - Wooden_Axe
+    - Bow
+    - Diamond_Helmet
+    - Diamond_Chestplate
+    - Diamond_Leggings
+    - Diamond_Boots
+    - Golden_Helmet
+    - Golden_Chestplate
+    - Golden_Leggings
+    - Golden_Boots
+    - Iron_Helmet
+    - Iron_Chestplate
+    - Iron_Leggings
+    - Iron_Boots
+    - Leather_Helmet
+    - Leather_Chestplate
+    - Leather_Leggings
+    - Leather_Boots
