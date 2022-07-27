@@ -21,5 +21,13 @@ Spawners:
   - zombie
   - silverfish
 RMCCommands:
-  # When enabled we will include when posible a command to indicate which was performed while using rmc commands
+  # When enabled we will include when possible a command to indicate which was performed while using rmc commands
   ConsoleLog: true
+Images:
+  # Symbol to be used to create image fields
+  # Color codes are NOT supported here
+  # This will take full effect after server restart due to some images being already cached
+  Filler: ⬛
+  # Symbol to be used to fill in empty image fields
+  # Color codes are supported here
+  EmptyFiller: '&7_|'

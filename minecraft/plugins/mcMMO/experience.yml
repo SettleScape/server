@@ -2,6 +2,10 @@ ConfigPatchVersion: 2
 EarlyGameBoost:
     Enabled: true
 ExploitFix:
+    Combat:
+        XPCeiling:
+            Enabled: true
+            Damage_Limit: 100
     COTWBreeding: true
     UnsafeEnchantments: false
     Fishing: true
