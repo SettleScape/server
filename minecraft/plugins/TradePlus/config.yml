@@ -1,5 +1,9 @@
 aliases:
 - trade+
+trade-command-compatible-mode: false
+excess-chest:
+  enabled: true
+  title: '&7Your inventory is full!'
 trade-logs: false
 allow-same-ip-trade: true
 permissions:
@@ -28,6 +32,12 @@ antiscam:
   cancelonchange: true
   preventchangeonaccept: true
   discrepancy-detection: true
+end-display:
+  enabled: false
+  timer: 0
+spectate:
+  enabled: true
+  broadcast: true
 gui:
   title: Your Items <|     |> Their Items
   spectator-title: Player 1 <|          |> Player 2
@@ -186,13 +196,3 @@ soundeffects:
   oncountdown: true
 debug-mode: false
 configversion: 3.83
-trade-command-compatible-mode: false
-excess-chest:
-  enabled: true
-  title: '&7Your inventory is full!'
-spectate:
-  enabled: true
-  broadcast: true
-end-display:
-  enabled: false
-  timer: 0

@@ -6,7 +6,7 @@ AuctionHouse       3.0.2      2021-08-14  2022-07-27  1.18.X      ????        ht
 BeaconPlus         2.1.61     2022-03-04  ----------              Rewrite     https://spigotmc.org/resources/67056/updates
 CMILib             1.2.2.0    2022-07-22  2022-07-27              Yes         https://spigotmc.org/resources/cmilib.87610/updates
 CommandLog         1.2        2016-07-09  2022-07-27  Dead        ????        https://spigotmc.org/resources/21176/updates
-CoreProtect        21.2       2022-03-21  2022-07-27              ????        https://spigotmc.org/resources/8631/updates
+CoreProtect        21.2       2022-03-21  2022-07-27              No          https://spigotmc.org/resources/8631/updates
 CraftBook          3.10.5     2021-12-01  2022-07-27  1.18.X      Yes         https://dev.bukkit.org/projects/craftbook/files
 Dynmap             3.4b5      2022-07-24  2022-07-27              Badly       https://dev.bukkit.org/projects/dynmap/files
 Dynmap-Towny       0.89       2021-11-15  2022-02-22              Yes         https://github.com/TownyAdvanced/Dynmap-Towny/releases
@@ -32,10 +32,10 @@ TownyChat          0.95       2022-02-02  2022-02-23              Yes         ht
 TownyCultures      1.4.0      2021-12-30  2022-02-23              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
 TownyFlight        1.8.4      2022-02-17  2022-02-23              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TownyHistories     0.0.21     2022-02-22  2022-02-23              Yes         Discord channel ID#860682040680775711
-TradePlus          3.83.1     2022-06-01  2022-07-27              Yes        https://spigotmc.org/resources/23138/updates
+TradePlus          3.83.1     2022-06-01  2022-07-27              Append      https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-07-27  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft          1.17.1     2021-08-16  2022-07-27  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
-WorldEdit          7.2.11b1   2022-06-17  2022-07-27              ????        https://dev.bukkit.org/projects/worldedit/files
+WorldEdit          7.2.11b1   2022-06-17  2022-07-27              No          https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.7      2021-03-06  2022-07-27              Yes         https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny   1.2.0      2020-12-30  2022-02-23              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 =================  =========  ==========  ==========  ==========  ==========  ===
