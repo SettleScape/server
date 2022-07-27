@@ -421,7 +421,7 @@ ExploitProtections:
   Brew:
     PreventBrewingStandFillUps: true
   # Do you want to show informational message when payments from blocks gets disabled due to hopper transfers
-  informOnPaymentDisable: true
+  informOnPaymentDisable: false
 # Breeder finder.
 # If you are not using breeding payment, you can disable this to save little resources. Really little.
 use-breeder-finder: true
