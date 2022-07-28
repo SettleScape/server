@@ -436,7 +436,7 @@ new_world_settings:
   
       # These entities will be deleted upon a plot being unclaimed.
       # Valid EntityTypes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
-      unclaim_delete: ENDER_CRYSTAL
+      unclaim_delete: ''
   
     # This section is applied to new worlds as default settings when new worlds are detected.
     mayor_plotblock_delete:
@@ -1147,7 +1147,7 @@ unclaimed:
   
   # A list of blocks that will bypass the above settings and do not require the towny.wild.* permission node.
   # These blocks are also used in determining which blocks can be interacted with in Towny Wilds plots in towns.
-  unclaimed_zone_ignore: NONE,SUGAR_CANE
+  unclaimed_zone_ignore: NONE
   
   
 ############################################################

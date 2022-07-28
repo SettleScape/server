@@ -30,7 +30,7 @@ plotManagementDeleteIds=
 # The following settings control what EntityTypes are deleted upon a townblock being unclaimed
 # Valid EntityTypes are listed here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
 isDeletingEntitiesOnUnclaim=false
-unclaimDeleteEntityTypes=ENDER_CRYSTAL
+unclaimDeleteEntityTypes=
 
 # The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
 usingPlotManagementMayorDelete=false

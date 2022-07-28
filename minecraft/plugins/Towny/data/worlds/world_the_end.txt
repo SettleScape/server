@@ -21,7 +21,7 @@ unclaimedZoneItemUse=true
 unclaimedZoneName=Wilderness
 
 # The following are blocks that will bypass the above build, destroy, switch and itemuse settings.
-unclaimedZoneIgnoreIds=SUGAR_CANE
+unclaimedZoneIgnoreIds=
 
 # The following settings control what blocks are deleted upon a townblock being unclaimed
 usingPlotManagementDelete=false
@@ -30,7 +30,7 @@ plotManagementDeleteIds=
 # The following settings control what EntityTypes are deleted upon a townblock being unclaimed
 # Valid EntityTypes are listed here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
 isDeletingEntitiesOnUnclaim=false
-unclaimDeleteEntityTypes=ENDER_CRYSTAL
+unclaimDeleteEntityTypes=
 
 # The following settings control what blocks are deleted upon a mayor issuing a '/plot clear' command
 usingPlotManagementMayorDelete=false
