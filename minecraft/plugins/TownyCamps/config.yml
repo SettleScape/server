@@ -1,45 +1,53 @@
- 
+  
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.33
+  version: 0.0.35
 # The language file you wish to use.
 # Available: en-US.yml, zh-CN.yml
 # You can add your own localization using the correct locale filename and placing
 # your file into the townycamps\lang\override\ folder.
 language: english.yml
- 
- 
+  
+  
 camps:
   # How long a camp can exist for, before being deleted.
   # Set to -1 to have camps last forever.
   duration: '-1'
- 
+  
   # How long after making a camp does a player have to wait to make a new one.
   # Set to 0h, to use no cooldown.
   creation_cooldown: 0h
- 
+  
   # Should the camp location be shown on the /resident status screen page.
   show_location_on_status_screen: 'true'
- 
+  
   # When showing location on the status screen, should the minecraft coordinate of the campfire be used,
   # instead of the Towny chunk coordinates. Set true to use minecraft coords, false to use Towny coords.
   show_location_as_minecraft_coords: 'false'
- 
- 
+  
+  # Overrides Towny's min_plot_distance_from_town_plot setting when checking for camp proximity to other towns.
+  # Set to -1 to use the value of min_plot_distance_from_town_plot.
+  min_plot_distance_camp_override: '-1'
+  
+  
   protections:
- 
+  
     # Is PVP disabled in camps?
     disable_pvp: 'false'
- 
+  
     # Is fire disabled in camps?
     disable_fire: 'true'
- 
+  
     # Are explosions disabled in camps?
     disable_explosion: 'true'
- 
- 
+  
+  
 third_party:
   dynmap:
- 
+  
     # When set to true, and dynmap is found on the server, Camps will appear on the dynmap.
     enable_dynmap_support: 'true'
+  combatlogx:
+  
+    # When set to true, and CombatLogX is enabled on the server, players will be unable to create camps while in combat.
+    enable_combatlogx_support: 'false'

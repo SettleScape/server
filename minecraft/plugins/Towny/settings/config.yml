@@ -1,11 +1,11 @@
- 
+  
 version:
   # This is the current version of Towny. Please do not edit.
-  version: 0.98.0.1
+  version: 0.98.3.3
   # This is for showing the changelog on updates. Please do not edit.
-  last_run_version: 0.98.0.1
- 
- 
+  last_run_version: 0.98.3.3
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |         A Note on Permission Nodes and Towny         | #
@@ -19,16 +19,17 @@ version:
 #                                                          #
 ############################################################
 permissions: ''
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                Town and Nation levels                | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 levels:
-  # default Town levels.
+  
+  # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   town_level:
   - numResidents: 0
     namePostfix: ' (Ghost Town)'
@@ -150,7 +151,8 @@ levels:
     upkeepModifier: 1.0
     townOutpostLimit: 2
     debtCapModifier: '1.0'
-  # default Nation levels.
+  
+  # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   nation_level:
   - kingPostfix: ''
     capitalPostfix: ''
@@ -224,132 +226,133 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |               Town Claim/new defaults                | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 town:
- 
+  
   # Default public status of the town (used for /town spawn)
   default_public: 'true'
- 
+  
   # Default Open status of the town (are new towns open and joinable by anyone at creation?)
   default_open: 'false'
- 
+  
   # Default neutral status of the town (are new towns neutral by default?)
   default_neutral: 'false'
- 
+  
   # Default town board
   default_board: ''
- 
+  
   # Setting this to true will set a town's tag automatically using the first four characters of the town's name.
   set_tag_automatically: 'true'
- 
+  
   # Default tax settings for new towns.
   default_taxes:
- 
+  
     # Default amount of tax of a new town. This must be lower than the economy.daily_taxes.max_town_tax_amount setting.
     tax: '1.0'
- 
+  
     # Default amount of shop tax of a new town.
     shop_tax: '1.0'
- 
+  
     # Default amount of embassy tax of a new town.
     embassy_tax: '1.0'
- 
+  
     # Default amount for town's plottax costs.
     plot_tax: '1.0'
- 
+  
     # Does a player's plot get put up for sale if they are unable to pay the plot tax?
     # When false the plot becomes town land and must be set up for-sale by town mayor or staff.
     does_non-payment_place_plot_for_sale: 'true'
- 
+  
     # Default status of new town's taxpercentage. True means that the default_tax is treated as a percentage instead of a fixed amount.
     taxpercentage: 'true'
- 
+  
     # A required minimum tax amount for the default_tax, will not change any towns which already have a tax set.
     # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
     minimumtax: '0.0'
- 
+  
   # Limits the maximum amount of bonus blocks a town can buy.
   # This setting does nothing when town.max_purchased_blocks_uses_town_levels is set to true.
   max_purchased_blocks: '9999'
- 
+  
   # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
   max_purchased_blocks_uses_town_levels: 'false'
- 
+  
   # maximum number of plots any single resident can own
   max_plots_per_resident: '9999'
- 
+  
   # maximum number used in /town claim/unclaim # commands.
   # set to 0 to disable limiting of claim radius value check.
   # keep in mind that the default value of 4 is a radius, 
   # and it will allow claiming 9x9 (80 plots) at once.
   max_claim_radius_value: '1'
- 
+  
   # Maximum number of towns allowed on the server.
   town_limit: '0'
- 
+  
   # The maximum distance (in townblocks) that 2 town's homeblocks can be to be eligible for merging.
   max_distance_for_merge: '10'
- 
+  
   # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
   # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
   min_distances_ignored_for_towns_in_same_nation: 'false'
- 
+  
   # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
   # will be ignored for towns that are mutually allied. Setting to false will keep all towns separated the same.
   min_distances_ignored_for_towns_in_allied_nation: 'false'
- 
+  
   # Minimum number of plots any towns plot must be from the next town's own plots.
   # Put in other words: the buffer area around every claim that no other town can claim into.
   # Does not affect towns which are in the same nation.
   # This will prevent town encasement to a certain degree.
   min_plot_distance_from_town_plot: '2'
- 
+  
   # Minimum number of plots any towns home plot must be from the next town.
   # Put in other words: the buffer area around every homeblock that no other town can claim into.
   # Does not affect towns which are in the same nation.
   # This will prevent someone founding a town right on your doorstep
   min_distance_from_town_homeblock: '10'
- 
+  
   # Minimum number of plots an outpost must be from any other town's plots.
   # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
   # near to each other, but want to keep outposts away from towns.
   min_distance_for_outpost_from_plot: '10'
- 
+  
   # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
   # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
   # Do not set lower than min_distance_for_outpost_from_plot above.
   max_distance_for_outpost_from_town_plot: '0'
+  
   # Minimum distance between homeblocks.
   min_distance_between_homeblocks: '0'
- 
+  
   # Maximum distance between homeblocks.
   # This will force players to build close together.
   max_distance_between_homeblocks: '0'
- 
+  
   # The maximum townblocks available to a town is (numResidents * ratio).
   # Setting this value to 0 will instead use the level based jump values determined in the town level config.
   # Setting this to -1 will result in every town having unlimited claims.
   town_block_ratio: '0'
- 
+  
   # The maximimum amount of townblocks a town can have, if town_block_ratio is 0 the max size will be decided by the town_levels.
   # Set to 0 to have no size limit.
   town_block_limit: '0'
- 
+  
   # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
   # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
   # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
   # Each cell is (town_block_size * town_block_size * height-of-the-world) in size, with height-of-the-world
   # being from the bottom to the top of the build-able world.
   town_block_size: '8'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |             Default new world settings               | #
@@ -363,78 +366,86 @@ town:
 #   Settings are saved in the towny\data\worlds\ folder.   #
 #                                                          #
 ############################################################
- 
+  
 new_world_settings:
   # Do new worlds have Towny enabled by default?
   using_towny: 'true'
- 
+  
   pvp:
     # Do new worlds have pvp enabled by default?
     world_pvp: 'true'
- 
+  
     # Do new worlds have pvp forced on by default?
     # This setting overrides a towns' setting.
     force_pvp_on: 'false'
- 
+  
     # Do new world have friendly fire enabled by default?
     # Does not affect Arena Plots which have FF enabled all the time.
     # When true players on the same town or nation will harm each other.
     friendly_fire_enabled: 'false'
- 
+  
     # Do new worlds have their war_allowed enabled by default?
     war_allowed: 'false'
- 
+  
   mobs:
     # Do new worlds have world_monsters_on enabled by default?
     world_monsters_on: 'true'
- 
+  
     # Do new worlds have wilderness_monsters_on enabled by default?
     wilderness_monsters_on: 'true'
- 
+  
     # Do new worlds have force_town_monsters_on enabled by default?
     # This setting overrides a towns' setting.
     force_town_monsters_on: 'false'
- 
+  
   explosions:
     # Do new worlds have explosions enabled by default?
     world_explosions_enabled: 'true'
- 
+  
     # Do new worlds have force_explosions_on enabled by default.
     # This setting overrides a towns' setting, preventing them from turning explosions off in their town.
     force_explosions_on: 'false'
- 
+  
   fire:
     # Do new worlds allow fire to be lit and spread by default?
     world_firespread_enabled: 'false'
- 
+  
     # Do new worlds have force_fire_on enabled by default?
     # This setting overrides a towns' setting.
     force_fire_on: 'false'
- 
+  
   # Do new worlds prevent Endermen from picking up and placing blocks, by default?
   enderman_protect: 'true'
- 
+  
   # Do new worlds disable creatures trampling crops, by default?
   disable_creature_crop_trampling: 'true'
- 
+  
   # World management settings to deal with un/claiming plots
   plot_management:
- 
+  
     # This section is applied to new worlds as default settings when new worlds are detected.
     block_delete:
       enabled: 'false'
- 
+  
       # These items will be deleted upon a plot being unclaimed
       unclaim_delete: NONE
- 
+  
+    # This section is applied to new worlds as default settings when new worlds are detected.
+    entity_delete:
+      enabled: 'false'
+  
+      # These entities will be deleted upon a plot being unclaimed.
+      # Valid EntityTypes can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+      unclaim_delete: ENDER_CRYSTAL
+  
     # This section is applied to new worlds as default settings when new worlds are detected.
     mayor_plotblock_delete:
       enabled: 'false'
- 
+  
       # These items will be deleted upon a mayor using /plot clear
       # To disable deleting replace the current entries with NONE.
       mayor_plot_delete: NONE
- 
+  
     # This section is applied to new worlds as default settings when new worlds are detected.
     revert_on_unclaim:
       # *** WARNING***
@@ -451,11 +462,11 @@ new_world_settings:
       # include any changes made before the plot was claimed.
       enabled: 'false'
       speed: 1s
- 
+  
       # These block types will NOT be regenerated by the revert-on-unclaim
       # or revert-explosion features.
       block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,NETHER_GOLD_ORE,ANCIENT_DEBRIS,SOUL_TORCH,SOUL_WALL_TORCH,CRIMSON_SIGN,CRIMSON_WALL_SIGN,WARPED_SIGN,WARPED_WALL_SIGN,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,RAW_IRON_BLOCK,RAW_GOLD_BLOCK,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD
- 
+  
     # This section is applied to new worlds as default settings when new worlds are detected.
     wild_revert_on_mob_explosion:
       # Enabling this will slowly regenerate holes created in the
@@ -464,7 +475,7 @@ new_world_settings:
       # The list of entities whose explosions should be reverted.
       entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull
       delay: 5s
- 
+  
     # This section is applied to new worlds as default settings when new worlds are detected.
     wild_revert_on_block_explosion:
       # Enabling this will slowly regenerate holes created in the
@@ -474,24 +485,24 @@ new_world_settings:
       blocks: WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED,RESPAWN_ANCHOR
     # The list of blocks to regenerate. (if empty all blocks will regenerate)
     wild_revert_on_explosion_block_whitelist: ''
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                Global town settings                  | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 global_town_settings:
- 
+  
   # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
   health_regen:
     speed: 3s
     enable: 'false'
- 
+  
   # Allow towns to claim outposts (a townblock not connected to town).
   allow_outposts: 'true'
- 
+  
   # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
   # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
   # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
@@ -501,265 +512,270 @@ global_town_settings:
   # to become under their limit. Likewise, towns that join a nation and receive bonus outposts will
   # be over their limit if they leave the nation.
   limit_outposts_using_town_and_nation_levels: 'true'
- 
+  
   # When limit_outposts_using_town_and_nation_levels is also true, towns which are over their outpost
   # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
   # until they have dropped below their limit.
   # eg: If their limit is 3 then they cannot use /t outpost 4
   over_outpost_limits_stops_teleports: 'true'
- 
+  
   # Allow the use of /town spawn
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
   allow_town_spawn: peace
- 
+  
   # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
   allow_town_spawn_travel: 'true'
- 
+  
   # Allow regular residents to use /town spawn [town] to other towns in your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
   allow_town_spawn_travel_nation: 'true'
- 
+  
   # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the town,
   # when there is a war or peace.
   allow_town_spawn_travel_ally: 'true'
- 
+  
   # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
   is_nation_ally_spawning_requiring_public_status: 'false'
- 
+  
   # If non zero it delays any spawn request by x seconds.
   teleport_warmup_time: '3'
- 
+  
   # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
   movement_cancels_spawn_warmup: 'true'
- 
+  
   # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
   damage_cancels_spawn_warmup: 'true'
- 
+  
   # Number of seconds that must pass before a player can use /t spawn or /res spawn.
   spawn_cooldown_time: '3'
- 
+  
   # Decides whether confirmations should appear if you spawn to an area with an associated cost.
   spawn_warnings: 'true'
- 
+  
   # Number of seconds that must pass before pvp can be toggled by a town.
   # Applies to residents of the town using /res toggle pvp, as well as
   # plots having their PVP toggled using /plot toggle pvp.
   pvp_cooldown_time: '30'
- 
+  
   # Number of seconds that must pass before peacfulness can be toggled by a town or nation.
   peaceful_cooldown_time: '30'
- 
+  
   # When true Towny will handle respawning, with town or resident spawns.
   town_respawn: 'false'
- 
-  # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
-  # Invulnerable players who attack other players will lose their invulnerability.
-  # Invulnerable players who teleport after respawn will also lose their invulnerability.
-  respawn_protection: 3s
- 
+  
+  respawn_protection:
+  
+    # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
+    # Invulnerable players who attack other players will lose their invulnerability.
+    # Invulnerable players who teleport after respawn will also lose their invulnerability.
+    time: 3s
+  
+    # If disabled, players will not be able to pickup items while under respawn protection.
+    allow_pickup: 'true'
+  
   # Town respawn only happens when the player dies in the same world as the town's spawn point.
   town_respawn_same_world_only: 'false'
- 
+  
   # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
   # Allowed options: unclaimed,enemy,neutral,outlaw
   prevent_town_spawn_in: enemy,outlaw
- 
+  
   # When this is true, players will respawn to respawn anchors on death rather than their own town. 1.16+ only.
   respawn_anchor_higher_precendence: 'false'
- 
+  
   # When set above 0, the amount of hours a town must wait after setting their homeblock, in order to move it again.
   homeblock_movement_cooldown_hours: '0'
- 
+  
   # When set above 0, the furthest number of townblocks a homeblock can be moved by.
   # Example: setting it to 3 would mean the player can only move their homeblock over by 3 townblocks at a time.
   # Useful when used with the above homeblock_movement_cooldown_hours setting.
   homeblock_movement_distance_limit: '0'
- 
+  
   # Enables the [~Home] message.
   # If false it will make it harder for enemies to find the home block during a war
   show_town_notifications: 'true'
- 
+  
   # Can outlaws roam freely on the towns they are outlawed in?
   # If false, outlaws will be teleported away if they spend too long in the towns they are outlawed in.
   # The time is set below in the outlaw_teleport_warmup.
   allow_outlaws_to_enter_town: 'true'
- 
+  
   # Can outlaws freely teleport out of the towns they are outlawed in?
   # If false, outlaws cannot use commands to teleport out of town.
   # If you want outlaws to not be able to use teleporting items as well, use allow_outlaws_use_teleport_items.
   allow_outlaws_to_teleport_out_of_town: 'false'
- 
+  
   # If false, outlawed players in towns cannot use items that teleport the player, ie: Ender Pearls & Chorus Fruit.
   # Setting this to false requires allow_outlaws_to_teleport_out_of_town to also be false.
   allow_outlaws_use_teleport_items: 'true'
- 
+  
   # Should towns be warned in case an outlaw roams the town?
   # Warning: Outlaws can use this feature to spam residents with warnings!
   # It is recommended to set this to true only if you're using outlaw teleporting with a warmup of 0 seconds.
   warn_town_on_outlaw: 'false'
- 
+  
   # How many seconds in between warning messages, to prevent spam.
   warn_town_on_outlaw_message_cooldown_in_seconds: '30'
- 
+  
   # If set to true, when a player is made into an outlaw using /t outlaw add NAME, and that new
   # outlaw is within the town's borders, the new outlaw will be teleported away using the outlaw_teleport_warmup.
   outlaw_teleport_away_on_becoming_outlawed: 'false'
- 
+  
   # How many seconds are required for outlaws to be teleported away?
   # You can set this to 0 to instantly teleport the outlaw from town.
   # This will not have any effect if allow_outlaws_to_enter_town is enabled.
   outlaw_teleport_warmup: '3'
- 
+  
   # What world do you want the outlaw teleported to if they aren't part of a town
   # and don't have a bedspawn outside of the town they are outlawed in.
   # They will go to the listed world's spawn. 
   # If blank, they will go to the spawnpoint of the world the town is in.
   outlaw_teleport_world: ''
- 
+  
   # Commands an outlawed player cannot use while in the town they are outlawed in.
   outlaw_blacklisted_commands: somecommandhere,othercommandhere
- 
+  
   # When set above zero this is the largest number of residents a town can support before they join/create a nation.
   # Do not set this value to an amount less than the required_number_residents_join_nation below.
   # Do not set this value to an amount less than the required_number_residents_create_nation below.
   maximum_number_residents_without_nation: '0'
- 
+  
   # The required number of residents in a town to join a nation
   # If the number is 0, towns will not require a certain amount of residents to join a nation
   required_number_residents_join_nation: '0'
- 
+  
   # The required number of residents in a town to create a nation
   # If the number is 0, towns will not require a certain amount of residents to create a nation
   required_number_residents_create_nation: '1'
- 
+  
   # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
   refund_disband_low_residents: 'true'
- 
+  
   # The maximum number of townblocks a town can be away from a nation capital,
   # Automatically precludes towns from one world joining a nation in another world.
   # If the number is 0, towns will not a proximity to a nation.
   nation_requires_proximity: '333.0'
- 
+  
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
- 
+  
   # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
   max_residents_per_town: '9'
- 
+  
   # The maximum number of residents that can be joined to a capital city.
   # Requires max_residents_capital_override to be above 0.
   # Uses the greater of max_residents_capital_override and max_residents_per_town.
   max_residents_capital_override: '18'
- 
+  
   # If Towny should show players the townboard when they login
   display_board_onlogin: 'false'
- 
+  
   # If set to true, Towny will prevent a town or plot from enabling PVP while an outsider is within the town's or plot's boundaries.
   # When active this feature can cause a bit of lag when the /t toggle pvp command is used, depending on how many players are online.
   outsiders_prevent_pvp_toggle: 'true'
- 
+  
   # If set to true, when a world has forcepvp set to true, homeblocks of towns will not be affected and have PVP set to off.
   # Does not have any effect when Event War is active.
   homeblocks_prevent_forcepvp: 'false'
- 
+  
   # The amount of residents a town needs to claim an outpost,
   # Setting this value to 0, means a town can claim outposts no matter how many residents
   minimum_amount_of_residents_in_town_for_outpost: '1'
- 
+  
   # If People should keep their inventories on death in a town.
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_town: 'false'
- 
+  
   # If People should keep their inventories on death in their own town.
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_own_town: 'false'
- 
+  
   # If People should keep their inventories on death in an allied town.
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_allied_town: 'false'
- 
+  
   # If People should keep their inventories on death in an arena townblock.
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_arena: 'false'
- 
+  
   # If People should keep their experience on death in a town.
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_town: 'false'
- 
+  
   # If People should keep their experience on death in an arena townblock.
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_arena: 'true'
- 
+  
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
   maximum_plot_price_cost: '1000000.0'
- 
+  
   # If set to true, the /town screen will display the xyz coordinate for a town's spawn rather than the homeblock's Towny coords.
   display_xyz_instead_of_towny_coords: 'true'
- 
+  
   # If set to true the /town list command will list randomly, rather than by whichever comparator is used, hiding resident counts.
   display_town_list_randomly: 'false'
- 
+  
   # The ranks to be given preference when assigning a new mayor, listed in order of descending preference.
   # All ranks should be as defined in `townyperms.yml`.
   # For example, to give a `visemayor` preference over an `assistant`, change this parameter to `visemayor,assistant`.
   order_of_mayoral_succession: heir,assistant,builder,sheriff
- 
+  
   # When enabled, blocks like lava or water will be unable to flow into other plots, if the owners aren't the same.
   prevent_fluid_griefing: 'true'
- 
+  
   # Allows blocking commands inside towns and limiting them to plots owned by the players only.
   # Useful for limiting sethome/home commands to plots owned by the players themselves and not someone else.
   # Admins and players with the towny.admin.town_commands.blacklist_bypass permission node will not be hindered.
   town_command_blacklisting:
- 
+  
     # Allows blocking commands inside towns through the town_blacklisted_commands setting.
     # This boolean allows you to disable this feature altogether if you don't need it
     enabled: 'false'
- 
+  
     # Comma separated list of commands which cannot be run inside of any town.
     town_blacklisted_commands: somecommandhere,othercommandhere
- 
+  
     # This allows the usage of blacklisted commands only in plots personally-owned by the player.
     # Players with the towny.claimed.townowned.* permission node will be able to run these commands
     # inside of town-owned land. This would include mayors, assistants and possibly a builder rank.
     # Players with the towny.claimed.owntown.* permission node (given to mayors/assistants usually,)
     # will also not be limited by this command blacklist.
     player_owned_plot_limited_commands: sethome,home
- 
+  
     # This allows the usage of blacklisted commands only in the player's town 
     # and the wilderness (essentially blocking commands from being ran by tourists/visitors)
     # Players with the towny.globally_welcome permission node are not going to be limited by this list.
     # Commands have to be on town_command_blacklisting.town_blacklisted_commands, else this is not going to be checked.
     own_town_and_wilderness_limited_commands: sethome,home
- 
+  
   # When enabled, town (and nation) names will automatically be capitalised upon creation.
   automatic_capitalisation: 'true'
- 
+  
   # This setting determines the list of allowed town map colors.
   # The color codes are in hex format.
   allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00,
     green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF,
     dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |              Global nation settings                  | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 global_nation_settings:
- 
+  
   # Nation Zones are a special type of wilderness surrounding Capitals of Nations or Nation Capitals and their Towns.
   # When it is enabled players who are members of the nation can use the wilderness surrounding the town like normal.
   # Players who are not part of that nation will find themselves unable to break/build/switch/itemuse in this part of the wilderness.
@@ -768,119 +784,127 @@ global_nation_settings:
   # It is recommended that whatever size you choose, these numbers should be less than the min_plot_distance_from_town_plot otherwise
   # someone might not be able to build/destroy in the wilderness outside their town.
   nationzone:
- 
+  
     # Nation zone feature is disabled by default. This is because it can cause a higher server load for servers with a large player count.
     enable: 'true'
- 
+  
     # When set to true, only the capital town of a nation will be surrounded by a nation zone type of wilderness.
     only_capitals: 'false'
- 
+  
     # Amount of buffer added to nation zone width surrounding capitals only. Creates a larger buffer around nation capitals.
     capital_bonus_size: '0'
- 
+  
     # When set to true, nation zones are disabled during the the Towny war types.
     war_disables: 'false'
- 
+  
     # When set to true, players will receive a notification when they enter into a nationzone.
     # Set to false by default because, like the nationzone feature, it will generate more load on servers.
     show_notifications: 'true'
- 
+  
   # If Towny should show players the nationboard when they login.
   display_board_onlogin: 'false'
- 
+  
   # If true the capital city of nation cannot be neutral/peaceful.
   capitals_cannot_be_neutral: 'false'
- 
+  
   # If enabled, only allow the nation spawn to be set in the capital city.
   capital_spawn: 'true'
- 
+  
   # Allow the use of /nation spawn
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the nation,
   # when there is a war or peace.
   allow_nation_spawn: 'false'
- 
+  
   # Allow regular residents to use /nation spawn [nation] (TP to other nations if they are public).
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the nation,
   # when there is a war or peace.
   allow_nation_spawn_travel: peace
- 
+  
   # Allow regular residents to use /nation spawn [nation] to other nations allied with your nation.
   # Valid values are: true, false, war, peace
   # When war or peace is set, it is only possible to teleport to the nations,
   # when there is a war or peace.
   allow_nation_spawn_travel_ally: 'true'
- 
+  
   # If higher than 0, it will limit how many towns can be joined into a nation.
   # Does not affect existing nations that are already over the limit.
   max_towns_per_nation: '5'
- 
+  
   # This setting determines the list of allowed nation map colors.
   # The color codes are in hex format.
   allowed_map_colors: dark_red:AA0000, red:FF5555, gold:FFAA00, yellow:FFFF55, dark_green:00AA00,
     green:55FF55, aqua:55FFFF, dark_aqua:00AAAA, dark_blue:0000AA, blue:5555FF, light_purple:FF55FF,
     dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
- 
+  
   # The maximum amount of allies that a nation can have, set to -1 to have no limit.
   max_allies: '5'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Plugin interfacing                   | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 plugin:
   # See database.yml file for flatfile/mysql settings.
   database:
- 
+  
     # Flatfile backup settings.
     daily_backups: 'true'
     backups_are_deleted_after: 4d
- 
+  
     # Valid entries are: tar, tar.gz, zip, or none for no backup.
     flatfile_backup_type: tar.gz
- 
+  
   interfacing:
- 
+  
     tekkit:
       # Add any fake players for client/server mods (aka Tekkit) here
       fake_residents: ''
- 
+  
     # Enable using_essentials if you are using cooldowns in essentials for teleports.
     using_essentials: 'true'
- 
+  
     # This enables/disables all the economy functions of Towny.
     # This will first attempt to use Vault or Reserve to bridge your economy plugin with Towny.
     # If Reserve/Vault is not present it will attempt to find a supported economy plugin.
     # If neither Vault/Reserve or supported economy are present it will not be possible to create towns or do any operations that require money.
     using_economy: 'true'
- 
-    # If enabled, Towny contexts will be available in LuckPerms. https://luckperms.net/wiki/Context
-    # Towny will supply for LuckPerms: townyperms' ranks contexts, as well as location-based contexts.
-    luckperms_contexts: 'true'
+  
+    luckperms:
+  
+      # If enabled, Towny contexts will be available in LuckPerms. https://luckperms.net/wiki/Context
+      # Towny will supply for LuckPerms: townyperms' ranks contexts, as well as location-based contexts.
+      contexts: 'true'
+  
+      # Configure what contexts to enable/disable here, contexts must be separated by a comma.
+      # Available contexts: towny:resident, towny:mayor, towny:king, towny:insidetown, towny:insideowntown, towny:insideownplot, towny:townrank
+      # towny:nationrank, towny:town, towny:nation
+      enabled_contexts: '*'
+  
     web_map:
- 
+  
       # If enabled, players will be prompted to open a url when clicking on coordinates in towny status screens.
       enabled: 'false'
- 
+  
       # The url that players will be prompted to open when clicking on a coordinate in a status screen.
       # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
       url: http://map.settlescape.org/?worldname={world}&zoom=6&x={x}&y={y}&z={z}
- 
+  
   day_timer:
- 
+  
     # The time for each "towny day", used for tax and upkeep collection and other daily timers.
     # Default is 24 hours. Cannot be set for greater than 1 day, but can be set lower.
     day_interval: 1d
- 
+  
     # The time each "day", when taxes will be collected.
     # Only used when less than day_interval. Default is 12h (midday).
     # If day_interval is set to something like 20m, the new_day_time is not used, day_interval will be used instead.
     new_day_time: 20h
- 
+  
     # Whether towns with no claimed townblocks should be deleted when the new day is run.
     delete_0_plot_towns: 'true'
   hour_timer:
@@ -893,121 +917,123 @@ plugin:
     # The interval of each "short" timer tick
     # Default is 20s.
     short_interval: 20s
- 
+  
   # Lots of messages to tell you what's going on in the server with time taken for events.
   debug_mode: 'false'
- 
+  
   # Info tool for server admins to use to query in game blocks and entities.
   info_tool: WOODEN_PICKAXE
- 
+  
   # Spams the player named in dev_name with all messages related to towny.
   dev_mode:
     enable: 'false'
     dev_name: ElgarL
- 
+  
   # If true this will cause the log to be wiped at every startup.
   reset_log_on_boot: 'true'
- 
+  
   # Sets the default size that /towny top commands display.
   towny_top_size: '10'
- 
+  
   # If enabled, particles will appear around town, nation, outpost & jail spawns.
   visualized_spawn_points_enabled: 'true'
- 
+  
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
   name_blacklist: ''
+  
   update_notifications:
- 
+  
     # If enabled, players with the towny.admin.updatealerts permission will receive an update notification upon logging in.
     alerts: 'true'
- 
+  
     # If enabled, only full releases will trigger notifications if you are running a full release.
     # This is ignored if the server is currently using a pre-release version.
     major_only: 'true'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |               Filters colour and chat                | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 filters_colour_chat:
- 
+  
   # This is the name given to any NPC assigned mayor.
   npc_prefix: NPC
- 
+  
   # Regex fields used in validating inputs.
   regex:
     name_filter_regex: '[\\\/]'
     name_check_regex: ^[\p{L}a-zA-Z0-9._\[\]-]*$
     string_check_regex: ^[a-zA-Z0-9 \s._\[\]\#\?\!\@\$\%\^\&\*\-\,\*\(\)\{\}]*$
     name_remove_regex: '[^\P{M}a-zA-Z0-9\&._\[\]-]'
- 
+  
   modify_chat:
- 
+  
     # Maximum length of Town and Nation names.
     max_name_length: '16'
- 
+  
     # Maximum length for Town and Nation tags.
     max_tag_length: '4'
- 
+  
     # Maximum length of titles and surnames.
     max_title_length: '16'
- 
+  
   # See the Placeholders wiki page for list of PAPI placeholders.
   # https://github.com/TownyAdvanced/Towny/wiki/Placeholders
   papi_chat_formatting:
- 
+  
     # When using PlaceholderAPI, and a tag would show both nation and town, this will determine how they are formatted.
     both: '&7[&b%n&7|&e%t&7]&r '
- 
+  
     # When using PlaceholderAPI, and a tag would showing a town, this will determine how it is formatted.
     town: '&7[&e%s&7]&r '
- 
+  
     # When using PlaceholderAPI, and a tag would show a nation, this will determine how it is formatted.
     nation: '&7[&b%s&7]&r '
+  
     # Colour code applied to player names using the %townyadvanced_towny_colour% placeholder.
     ranks:
       nomad: '&7'
       resident: '&e'
       mayor: '&b'
       king: '&d'
- 
+  
   # Colour codes used in the RELATIONAL placeholder %rel_townyadvanced_color% to display the relation between two players.
   papi_relational_formatting:
     # Used when two players have no special relationship.
     none: '&f'
- 
+  
     # Used when two players are in the same town.
     same_town: '&e'
- 
+  
     # Used when two players are in the same nation.
     same_nation: '&b'
- 
+  
     # Used when two players' nations are allied.
     ally: '&a'
- 
+  
     # Used when two players are enemies.
     enemy: '&c'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |             block/item/mob protection                | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 protection:
- 
+  
   # Items that can be blocked within towns via town/plot flags.
   # These items will be the ones restricted by a town/resident/plot's item_use setting.
   # A list of items, that are held in the hand, which can be protected against.
   # Group names you can use in this list: BOATS, MINECARTS
   # A full list of proper names can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html 
   item_use_ids: BONE_MEAL,FLINT_AND_STEEL,BUCKET,WATER_BUCKET,LAVA_BUCKET,STORAGE_MINECART,INK_SACK,SHEARS,ENDER_PEARL,GLASS_BOTTLE,FIREBALL,ARMOR_STAND,SKULL_ITEM,END_CRYSTAL,POWERED_MINECART,COMMAND_MINECART,EXPLOSIVE_MINECART,HOPPER_MINECART,CHORUS_FRUIT,BLACK_DYE,BLUE_DYE,BROWN_DYE,CYAN_DYE,GRAY_DYE,GREEN_DYE,LIGHT_BLUE_DYE,LIGHT_GRAY_DYE,LIME_DYE,MAGENTA_DYE,ORANGE_DYE,PINK_DYE,PURPLE_DYE,RED_DYE,WHITE_DYE,YELLOW_DYE,DIAMOND_AXE,GOLDEN_AXE,IRON_AXE,WOODEN_AXE,STONE_AXE,NETHERITE_AXE,EGG
- 
+  
   # Blocks that are protected via town/plot flags.
   # These are blocks in the world that will be protected by a town/resident/plot's switch setting.
   # Switches are blocks, that are in the world, which get right-clicked.
@@ -1017,69 +1043,74 @@ protection:
   #       to protect HORSES, DONKEYS, MULES, PIGS, STRIDERS (This is not recommended, unless you want players to not be able to
   #       re-mount their animals in towns they cannot switch in.)
   # A full list of proper names can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html 
-  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,CHEST,FURNACE,DISPENSER,HOPPER,DROPPER,COMPARATOR,REPEATER,ACACIA_DOOR,BIRCH_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,OAK_DOOR,SPRUCE_DOOR,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,OAK_FENCE_GATE,JUNGLE_FENCE_GATE,SPRUCE_FENCE_GATE,ACACIA_TRAPDOOR,BIRCH_TRAPDOOR,DARK_OAK_TRAPDOOR,JUNGLE_TRAPDOOR,OAK_TRAPDOOR,SPRUCE_TRAPDOOR,COMMAND_BLOCK,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,SMOKER,COMPOSTER,BLAST_FURNACE,BARREL,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BARREL,BREWING_STAND,CRIMSON_DOOR,WARPED_DOOR,CRIMSON_FENCE_GATE,WARPED_FENCE_GATE,CRIMSON_TRAPDOOR,WARPED_TRAPDOOR,RESPAWN_ANCHOR
- 
+  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,CHEST,FURNACE,DISPENSER,HOPPER,DROPPER,COMPARATOR,REPEATER,ACACIA_DOOR,BIRCH_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,OAK_DOOR,SPRUCE_DOOR,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,OAK_FENCE_GATE,JUNGLE_FENCE_GATE,SPRUCE_FENCE_GATE,ACACIA_TRAPDOOR,BIRCH_TRAPDOOR,DARK_OAK_TRAPDOOR,JUNGLE_TRAPDOOR,OAK_TRAPDOOR,SPRUCE_TRAPDOOR,COMMAND_BLOCK,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,SMOKER,COMPOSTER,BLAST_FURNACE,BARREL,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BARREL,BREWING_STAND,CRIMSON_DOOR,WARPED_DOOR,CRIMSON_FENCE_GATE,WARPED_FENCE_GATE,CRIMSON_TRAPDOOR,WARPED_TRAPDOOR,RESPAWN_ANCHOR,OAK_CHEST_BOAT
+  
   # Materials which can be lit on fire even when firespread is disabled.
   # Still requires the use of the flint and steel.
   fire_spread_bypass_materials: NETHERRACK,SOUL_SAND,SOUL_SOIL,OBSIDIAN,BEDROCK
- 
+  
   # permitted entities https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/LivingEntity.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig, 
   # PigZombie, Sheep, Skeleton, Slime, Spider, Squid, WaterMob, Wolf, Zombie, Shulker
   # Husk, Stray, SkeletonHorse, ZombieHorse, Vex, Vindicator, Evoker, Endermite, PolarBear, Axolotl, Goat, GlowSquid
- 
+  
   # Remove living entities within a town's boundaries, if the town has the mob removal flag set.
   town_mob_removal_entities: Blaze,Creeper,Dolphin,Drowned,ElderGuardian,Evoker,Ghast,Giant,Guardian,Husk,Illager,Illusioner,Phantom,PigZombie,Pillager,Raider,Ravager,Skeleton,SkeletonHorse,Spider,Squid,Stray,Vex,Vindicator,WanderingTrader,Witch,WitherSkeleton,Zombie,ZombieHorse,ZombieVillager
- 
+  
   # Whether the town mob removal should remove THE_KILLER_BUNNY type rabbits.
   town_mob_removal_killer_bunny: 'true'
- 
+  
   # Prevent the spawning of villager babies in towns.
   town_prevent_villager_breeding: 'false'
- 
+  
   # Disable creatures triggering stone pressure plates
   disable_creature_pressureplate_stone: 'false'
- 
+  
   # Remove living entities in the wilderness in all worlds that have wildernessmobs turned off.
   wilderness_mob_removal_entities: Monster,Flying,Slime,Shulker,SkeletonHorse,ZombieHorse
- 
+  
   # Globally remove living entities in all worlds that have worldmmobs turned off
   world_mob_removal_entities: Bat
- 
+  
   # Prevent the spawning of villager babies in the world.
   world_prevent_villager_breeding: 'false'
- 
+  
   # When set to true, mobs who've been named with a nametag will not be removed by the mob removal task.
   mob_removal_skips_named_mobs: 'true'
- 
+  
   # The maximum amount of time a mob could be inside a town's boundaries before being sent to the void.
   # Lower values will check all entities more often at the risk of heavier burden and resource use.
   # NEVER set below 1.
   mob_removal_speed: 86400s
- 
+  
   # permitted entities https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/package-summary.html
   # Animals, Chicken, Cow, Creature, Creeper, Flying, Ghast, Giant, Monster, Pig, 
   # PigZombie, Sheep, Skeleton, Slime, Spider, Squid, WaterMob, Wolf, Zombie
- 
+  
   # Protect living entities within a town's boundaries from being killed by players or mobs.
   mob_types: Animals,NPC,Snowman,IronGolem,ArmorStand,Hanging,Hanging
- 
+  
   # permitted Potion Types https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionType.html
   # ABSORPTION, BLINDNESS, CONFUSION, DAMAGE_RESISTANCE, FAST_DIGGING, FIRE_RESISTANCE, HARM, HEAL, HEALTH_BOOST, HUNGER, 
   # INCREASE_DAMAGE, INVISIBILITY, JUMP, NIGHT_VISION, POISON, REGENERATION, SATURATION, SLOW , SLOW_DIGGING, 
   # SPEED, WATER_BREATHING, WEAKNESS, WITHER.
- 
+  
   # When preventing PVP prevent the use of these potions.
   potion_types: BLINDNESS,CONFUSION,HARM,HUNGER,POISON,SLOW,SLOW_DIGGING,WEAKNESS,WITHER
- 
+  
   # When set to true, players with the Frost Walker enchant will need to be able to build where they are attempting to freeze.
   prevent_frost_walker_freezing: 'true'
- 
+  
   # When set to true, players will never trample crops. When false, players will still
   # have to be able to break the crop by hand in order to be able to trample crops.
   prevent_player_crop_trample: 'true'
- 
- 
+  
+  # When set to true, sculk will not spread into areas which have mobs disabled.
+  # This uses the wildernessmobs world setting when in the Towny wilderness.
+  # This setting is not used if your spigot is up to date. (They fixed the API after June 19, 2022.)
+  prevent_sculk_spread_in_mobs_off_locations: 'true'
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                Wilderness settings                   | #
@@ -1099,42 +1130,42 @@ protection:
 # permission nodes.                                        #
 #                                                          #
 ############################################################
- 
+  
 unclaimed:
- 
+  
   # Can players build with any block in the wilderness?
   unclaimed_zone_build: 'true'
- 
+  
   # Can player destroy any block in the wilderness?
   unclaimed_zone_destroy: 'true'
- 
+  
   # Can players use items listed in the above protection.item_use_ids in the wilderness without restriction?
   unclaimed_zone_item_use: 'true'
- 
+  
   # Can players interact with switch blocks listed in the above protection.switch_ids in the wilderness without restriction?
   unclaimed_zone_switch: 'true'
- 
+  
   # A list of blocks that will bypass the above settings and do not require the towny.wild.* permission node.
   # These blocks are also used in determining which blocks can be interacted with in Towny Wilds plots in towns.
-  unclaimed_zone_ignore: NONE
- 
- 
+  unclaimed_zone_ignore: NONE,SUGAR_CANE
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Town Notifications                   | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
   # This is the format for the notifications sent as players move between plots.
   # Empty a particular format for it to be ignored.
- 
+  
   # Example:
   # [notification.format]
   # ~ [notification.area_[wilderness/town]][notification.splitter][notification.[no_]owner][notification.splitter][notification.plot.format]
   # ... [notification.plot.format]
   # ... [notification.plot.homeblock][notification.plot.splitter][notification.plot.forsale][notification.plot.splitter][notification.plot.type]
   # ~ Wak Town - Lord Jebus - [Home] [For Sale: 50 Beli] [Shop]
- 
+  
 notification:
   format: '%s'
   splitter: ' '
@@ -1153,15 +1184,15 @@ notification:
     notforsale: '&e[Not For Sale]'
     type: '&e(%s)&r'
   group: '&d(%s)&r'
- 
+  
   # When set to true, town's names are the long form (townprefix)(name)(townpostfix) configured in the town_level section.
   # When false, it is only the town name.
   town_names_are_verbose: 'false'
- 
+  
   # If set to true MC's Title and Subtitle feature will be used when crossing into a town.
   # Could be seen as intrusive/distracting, so false by default.
   using_titles: 'false'
- 
+  
   # Requires the above using_titles to be set to true.
   # Title and Subtitle shown when entering a town or the wilderness. By default 1st line is blank, the 2nd line shows {townname} or {wilderness}.
   # You may use colour codes &f, &c and so on.
@@ -1172,42 +1203,40 @@ notification:
   # {town_residents_online} - Shows the number of residents online currently.
   # The notification.town_names_are_verbose setting will affect the {townname} placeholder.
   titles:
- 
+  
     # Entering Town Upper Title Line
     town_title: ''
- 
+  
     # Entering Town Lower Subtitle line.
     town_subtitle: '&6{townname}&r'
- 
+  
     # Entering Wilderness Upper Title Line
     wilderness_title: ''
- 
+  
     # Entering Wilderness Lower Subtitle line.
     wilderness_subtitle: '&4{wilderness}&r'
- 
+  
   # If the notification.owner option should show name or {title} name.
   # Titles are the ones granted by nation kings.
   owner_shows_nation_title: 'false'
- 
-  # When set to false the notifications will appear in the chat rather than the action bar.
-  notifications_appear_in_action_bar: 'true'
- 
-  # When enabled, notifications will appear on the bossbar instead of in chat or above the action bar.
-  # Uses the duration from below for how long the bossbar appears.
-  notifications_appear_on_bossbar: 'false'
- 
+  
+  # This setting controls where chunk notifications are displayed for players.
+  # By default, notifications appear in the player's action bar.
+  # Available options: action_bar, chat, bossbar, or none.
+  notifications_appear_as: action_bar
+  
   # This settings sets the duration the actionbar (The text above the inventory bar) or the bossbar lasts in seconds
   notification_actionbar_duration: '4'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |             Default Town/Plot flags                  | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 default_perm_flags:
- 
+  
   # Default permission flags for residents plots within a town
   #
   # Can allies/friends/outsiders perform certain actions in the town
@@ -1237,7 +1266,7 @@ default_perm_flags:
       destroy: 'false'
       item_use: 'false'
       switch: 'false'
- 
+  
   # Default permission flags for towns
   # These are copied into the town data file at creation
   #
@@ -1273,345 +1302,351 @@ default_perm_flags:
       destroy: 'false'
       item_use: 'false'
       switch: 'false'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Towny Invite System                  | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 invite_system:
- 
+  
   # Command used to accept towny invites)
   #e.g Player join town invite.
   accept_command: taccept
- 
+  
   # Command used to deny towny invites
   #e.g Player join town invite.
   deny_command: tdecline
- 
+  
   # Command used to confirm some towny actions/tasks)
   #e.g Purging database or removing a large amount of townblocks
   confirm_command: tconfirm
- 
+  
   # Command used to cancel some towny actions/tasks
   #e.g Purging database or removing a large amount of townblocks
   cancel_command: tcancel
- 
+  
   # How many seconds before a confirmation times out for the receiver.
   # This is used for cost-confirmations and confirming important decisions.
   confirmation_timeout: '10'
- 
+  
   # When set for more than 0m, the amount of time (in minutes) which must have passed between
   # a player's first log in and when they can be invited to a town.
   cooldowntime: 20m
- 
+  
   # When set for more than 0m, the amount of time until an invite is considered
   # expired and is removed. Invites are checked for expiration once every hour.
   # Valid values would include: 30s, 30m, 24h, 2d, etc.
   expirationtime: 0d
- 
+  
   # Max invites for Town & Nations, which they can send. Invites are capped to decrease load on large servers.
   # You can increase these limits but it is not recommended. Invites/requests are not saved between server reloads/stops.
   maximum_invites_sent:
- 
+  
     # How many invites a town can send out to players, to join the town.
     town_toplayer: '9'
- 
+  
     # How many invites a nation can send out to towns, to join the nation.
     nation_totown: '4'
- 
+  
     # How many requests a nation can send out to other nations, to ally with the nation.
     # Only used when war.disallow_one_way_alliance is set to true.
     nation_tonation: '4'
- 
+  
   # Max invites for Players, Towns & nations, which they can receive. Invites are capped to decrease load on large servers.
   # You can increase these limits but it is not recommended. Invites/requests are not saved between server reloads/stops.
   maximum_invites_received:
- 
+  
     # How many invites can one player have from towns.
     player: '4'
- 
+  
     # How many invites can one town have from nations.
     town: '4'
- 
+  
     # How many requests can one nation have from other nations for an alliance.
     nation: '9'
- 
+  
   # When set above 0, the maximum distance a player can be from a town's spawn in order to receive an invite.
   # Use this setting to require players to be near or inside a town before they can be invited.
   maximum_distance_from_town_spawn: '1000'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                  Resident settings                   | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 resident_settings:
- 
+  
   # if enabled old residents will be deleted, losing their town, townblocks, friends
-  # after Two months (default) of not logging in
+  # after Two months (default) of not logging in. If the player is a mayor their town
+  # will be inherited according to the order_of_mayoral_succession list in this config.
   delete_old_residents:
     enable: 'false'
     deleted_after_time: 180d
     delete_economy_account: 'false'
- 
+  
     # When true only residents who have no town will be deleted.
     delete_only_townless: 'false'
- 
+  
   # The name of the town a resident will automatically join when he first registers.
   default_town_name: ''
- 
+  
   # If true, players can only use beds in plots they personally own.
   deny_bed_use: 'false'
+  
   # If true, players who join the server for the first time will be informed about their locale, and about Towny translatable system.
   is_showing_locale_message: 'true'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                  Economy settings                    | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 economy:
- 
+  
   # By default it is set to true.
   # Rarely set to false. Set to false if you get concurrent modification errors on timers for daily tax collections.
   use_async: 'true'
- 
+  
   # The time that the town and nation bank accounts' balances are cached for, in seconds.
   # Default of 600s is equal to ten minutes. Requires the server to be stopped and started if you want to change this.
   # Cached balances are used for PlaceholderAPI placeholders, town and nation lists.
   bank_account_cache_timeout: 600s
- 
+  
   # Prefix to apply to all town economy accounts.
   town_prefix: town-
- 
+  
   # Prefix to apply to all nation economy accounts.
   nation_prefix: nation-
- 
+  
   # The cost of renaming a town.
   town_rename_cost: '500'
- 
+  
   # The cost of renaming a nation.
   nation_rename_cost: '1000'
- 
+  
   spawn_travel:
- 
+  
     # Cost to use /town spawn.
     price_town_spawn_travel: '0.0'
- 
+  
     # Cost to use '/town spawn [town]' to another town in your nation.
     price_town_nation_spawn_travel: '0.0'
- 
+  
     # Cost to use '/town spawn [town]' to another town in a nation that is allied with your nation.
     price_town_ally_spawn_travel: '0.0'
- 
+  
     # Maximum cost to use /town spawn [town] that mayors can set using /t set spawncost.
     # This is paid to the town you goto.
     price_town_public_spawn_travel: '0.0'
- 
+  
+    # When false, the price_town_public_spawn_travel will be used for public spawn costs, despite what mayors have their town spawncost set at.
+    # When true, the lower of either the town's spawncost or the config's price_town_public_spawn_travel setting will be used.
+    is_public_spawn_cost_affected_by_town_spawncost: 'true'
+  
     # When set to true, any cost paid by a player to use any variant of '/town spawn' will be paid to the town bank.
     # When false the amount will be paid to the server account whose name is set in the closed economy setting below..
     town_spawn_cost_paid_to_town: 'false'
- 
+  
   # The daily upkeep to remain neutral, paid by the Nation bank. If unable to pay, neutral/peaceful status is lost.
   # Neutrality will exclude you from a war event, as well as deterring enemies.
   price_nation_neutrality: '50.0'
- 
+  
   # The daily upkeep to remain neutral, paid by the Town bank. If unable to pay, neutral/peaceful status is lost.
   price_town_neutrality: '25.0'
- 
+  
   new_expand:
- 
+  
     # How much it costs to start a nation.
     price_new_nation: '30000.0'
- 
+  
     # How much it costs to start a town.
     price_new_town: '10000.0'
- 
+  
     # The base cost a town has to pay to merge with another town. The town that initiates the merge pays the cost.
     price_town_merge: '1000'
- 
+  
     # The percentage that a town has to pay per plot to merge with another town. The town that initiates the merge pays the cost.
     # This is based on the price_claim_townblock.
     price_town_merge_per_plot_percentage: '0'
- 
+  
     # How much it costs to reclaim a ruined town.
     # This is only applicable if the town-ruins & town-reclaim features are enabled.
     price_reclaim_ruined_town: '10000.0'
- 
+  
     # How much it costs to make an outpost. An outpost isn't limited to being on the edge of town.
     price_outpost: '10000.0'
- 
+  
     # The price for a town to expand one townblock.
     price_claim_townblock: '0.0'
- 
+  
     # How much every additionally claimed townblock increases in cost. Set to 1 to deactivate this. 1.3 means +30% to every bonus claim block cost.
     price_claim_townblock_increase: '1.0'
- 
+  
     # The maximum price for an additional townblock. No matter how many blocks a town has the price will not be above this. Set to -1 to deactivate this.
     max_price_claim_townblock: '1000'
- 
+  
     # The amount refunded to a town when they unclaim a townblock.
     # Warning: do not set this higher than the cost to claim a townblock.
     # It is advised that you do not set this to the same price as claiming either, otherwise towns will get around using outposts to claim far away.
     # Optionally, set this to a negative amount if you want towns to pay money to unclaim their land.
     price_claim_townblock_refund: '-500.0'
- 
+  
     # How much it costs a player to buy extra blocks.
     price_purchased_bonus_townblock: '1000.0'
- 
+  
     # How much every extra bonus block costs more. Set to 1 to deactivate this. 1.2 means +20% to every bonus claim block cost.
     price_purchased_bonus_townblock_increase: '1.0'
- 
+  
     # The maximum price that bonus townblocks can cost to purchase. Set to -1.0 to deactivate this maxium.
     price_purchased_bonus_townblock_max_price: '1000'
- 
+  
   death:
- 
+  
     # Either fixed or percentage.
     # For percentage 1.0 would be 100%. 0.01 would be 1%.
     price_death_type: percentage
- 
+  
     # A maximum amount paid out by a resident from their personal holdings for percentage deaths.
     # Set to 0 to have no cap.
     percentage_cap: '1000.0'
- 
+  
     # If True, only charge death prices for pvp kills. Not monsters/environmental deaths.
     price_death_pvp_only: 'false'
- 
+  
     price_death: '0.1'
- 
+  
     price_death_town: '0.0'
- 
+  
     price_death_nation: '0.00'
- 
+  
   banks:
- 
+  
     # Maximum amount of money allowed in town bank
     # Use 0 for no limit
     town_bank_cap: '50000.0'
- 
+  
     # Set to true to allow withdrawals from town banks
     town_allow_withdrawals: 'true'
- 
+  
     # Minimum amount of money players are allowed to deposit in town bank at a time.
     town_min_deposit: '0'
- 
+  
     # Minimum amount of money players are allowed to withdraw from town bank at a time.
     town_min_withdraw: '0'
- 
+  
     # Maximum amount of money allowed in nation bank
     # Use 0 for no limit
     nation_bank_cap: '50000.0'
- 
+  
     # Set to true to allow withdrawals from nation banks
     nation_allow_withdrawals: 'true'
- 
+  
     # Minimum amount of money players are allowed to deposit in nation bank at a time.
     nation_min_deposit: '0'
- 
+  
     # Minimum amount of money players are allowed to withdraw from nation bank at a time.
     nation_min_withdraw: '0'
- 
+  
     # When set to true, players can only use their town withdraw/deposit commands while inside of their own town.
     # Likewise, nation banks can only be withdrawn/deposited to while in the capital city.
     disallow_bank_actions_outside_town: 'true'
- 
+  
   closed_economy:
- 
+  
     # The name of the account that all money that normally disappears goes into.
     server_account: server
- 
+  
     # Turn on/off whether all transactions that normally don't have a second party are to be done with a certain account.
     # Eg: The money taken during Daily Taxes is just removed. With this on, the amount taken would be funneled into an account.
     #     This also applies when a player collects money, like when the player is refunded money when a delayed teleport fails.
     enabled: 'false'
- 
+  
   daily_taxes:
- 
+  
     # Enables taxes to be collected daily by town/nation
     # If a town can't pay it's tax then it is kicked from the nation.
     # if a resident can't pay his plot tax he loses his plot.
     # if a resident can't pay his town tax then he is kicked from the town.
     # if a town or nation fails to pay it's upkeep it is deleted.
     enabled: 'true'
- 
+  
     # Maximum tax amount allowed for townblocks sold to players.
     max_plot_tax_amount: '100.0'
- 
+  
     # Maximum tax amount allowed for towns when using flat taxes.
     max_town_tax_amount: '250.0'
- 
+  
     # Maximum tax amount allowed for nations when using flat taxes.
     max_nation_tax_amount: '250.0'
- 
+  
     # Maximum tax percentage allowed when taxing by percentages for towns.
     max_town_tax_percent: '10'
- 
+  
     # The maximum amount of money that can be taken from a balance when using a percent tax, this is the default for all new towns.
     max_town_tax_percent_amount: '1000'
- 
+  
     # When true, a nation's capital will pay the nation tax from the capital's town bank.
     # This feature is a bit redundant because the king can withdraw from both banks anyways,
     # but it might keep nation's from being deleted for not paying their upkeep.
     do_nation_capitals_pay_nation_tax: 'true'
- 
+  
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
     price_nation_upkeep: '50.0'
- 
+  
     # Uses the total number of plots which a nation has across all of its towns to determine upkeep
     # instead of nation_pertown_upkeep and instead of nation level (number of residents.)
     # Calculated by (price_nation_upkeep X number of plots owned by the nation's towns.)
     nation_perplot_upkeep: 'false'
- 
+  
     # Uses total number of towns in the nation to determine upkeep instead of nation level (Number of Residents)
     # calculated by (number of towns in nation X price_nation_upkeep).
     nation_pertown_upkeep: 'true'
- 
+  
     # If set to true, the per-town-upkeep system will be modified by the Nation Levels' upkeep modifiers.
     nation_pertown_upkeep_affected_by_nation_level_modifier: 'false'
- 
+  
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
     price_town_upkeep: '0.25'
- 
+  
     # Uses total amount of owned plots to determine upkeep instead of the town level (Number of residents)
     # calculated by (number of claimed plots X price_town_upkeep).
     town_plotbased_upkeep: 'true'
- 
+  
     # If set to true, the plot-based-upkeep system will be modified by the Town Levels' upkeep modifiers.
     town_plotbased_upkeep_affected_by_town_level_modifier: 'true'
- 
+  
     # If set to any amount over zero, if a town's plot-based upkeep totals less than this value, the town will pay the minimum instead.
     town_plotbased_upkeep_minimum_amount: '50.0'
- 
+  
     # If set to any amount over zero, if a town's plot-based upkeep totals more than this value, the town will pay the maximum instead.
     town_plotbased_upkeep_maximum_amount: '500.0'
- 
+  
     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
     price_town_overclaimed_upkeep_penalty: '10.0'
- 
+  
     # Uses total number of plots that the town is overclaimed by, to determine the price_town_overclaimed_upkeep_penalty cost.
     # If set to true the penalty is calculated (# of plots overclaimed X price_town_overclaimed_upkeep_penalty).
     price_town_overclaimed_upkeep_penalty_plotbased: 'true'
- 
+  
     # If enabled and you set a negative upkeep for the town
     # any funds the town gains via upkeep at a new day
     # will be shared out between the plot owners.
     use_plot_payments: 'false'
- 
+  
   # The Bankruptcy system in Towny will make it so that when a town cannot pay their upkeep costs,
   # rather than being deleted the towns will go into debt. Debt is capped based on the Town's costs
   # or overriden with the below settings.
   bankruptcy:
- 
+  
     # If this setting is true, then if a town runs out of money (due to upkeep, nation tax etc.),
     # it does not get deleted, but instead goes into a 'bankrupt state'.
     # While bankrupt, the town bank account is in debt, and the town cannot expand (e.g claim, recruit, or build).
@@ -1619,113 +1654,118 @@ economy:
     # The debt can be repaid using /t deposit x.
     # Once all debt is repaid, the town immediately returns to a normal state.
     enabled: 'true'
- 
+  
     # When using bankruptcy is enabled a Town a debtcap.
     # The debt cap is calculated by adding the following:
     # The cost of the town,
     # The cost of the town's purchased townblocks,
     # The cost of the town's purchased outposts.
     debt_cap:
- 
+  
       # When set to greater than 0.0, this will be used to determine every town''s maximum debt,
       # overriding the above calculation if the calculation would be larger than the set maximum.
       maximum: '0.0'
- 
+  
       # When set to greater than 0.0, this setting will override all other debt calculations and maximums,
       # making all towns have the same debt cap.
       override: '0.0'
- 
+  
       # When true the debt_cap.override price will be multiplied by the debtCapModifier in the town_level
       # section of the config. (Ex: debtCapModifier of 3.0 and debt_cap.override of 1000.0 would set 
       # a debtcap of 3.0 x 1000 = 3000.
       debt_cap_uses_town_levels: 'false'
- 
+  
     upkeep:
- 
+  
       # If a town has reached their debt cap and is unable to pay the upkeep with debt,
       # will Towny delete them?
       delete_towns_that_reach_debt_cap: 'false'
- 
+  
+    neutrality:
+  
+      # If a town is bankrupt can they still pay for neutrality?
+      can_bankrupt_towns_pay_for_neutrality: 'true'
+  
     nation_tax:
- 
+  
       # Will bankrupt towns pay their nation tax?
       # If false towns that are bankrupt will not pay any nation tax and will leave their nation.
       # If true the town will go into debt up until their debt cap is reached.
-      # True is recommended when using a Siege War style war/conquering system,
-      # otherwise conquered towns will be able to leave the nation simply by not paying the nation tax.
+      # True is recommended if using a war system where towns are forced to join a conqueror's nation,
+      # otherwise conquered towns would be able to leave the nation by choosing to go bankrupt.
       # False is recommended otherwise so that nations are not using abandoned towns to gather taxes.
       do_bankrupt_towns_pay_nation_tax: 'true'
- 
+  
       # If a town can no longer pay their nation tax with debt because they have
       # reach their debtcap, are they kicked from the nation?
       kick_towns_that_reach_debt_cap: 'false'
- 
+  
       # Does a conquered town which cannot pay the nation tax get deleted?
       does_nation_tax_delete_conquered_towns_that_cannot_pay: 'false'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Jail Plot settings                   | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 jail:
- 
+  
   #If true attacking players who die on enemy-town land will be placed into the defending town's jail if it exists.
   #Requires town_respawn to be true in order to work.
   is_jailing_attacking_enemies: 'true'
- 
+  
   #If true attacking players who are considered an outlaw, that are killed inside town land will be placed into the defending town's jail if it exists.
   #Requires town_respawn to be true in order to work.
   is_jailing_attacking_outlaws: 'true'
- 
+  
   #How many hours an attacking outlaw will be jailed for.
   outlaw_jail_hours: '4'
- 
+  
   #If true jailed players can use items that teleport, ie: Ender Pearls & Chorus Fruit, but are still barred from using other methods of teleporting.
   jail_allows_teleport_items: 'true'
- 
+  
   #If false jailed players can use /town leave, and escape a jail.
   jail_denies_town_leave: 'true'
- 
+  
   bail:
- 
+  
     #If true players can pay a bail amount to be unjailed.
     is_allowing_bail: 'true'
- 
+  
     #Amount that bail costs for normal residents/nomads.
     bail_amount: '100'
- 
+  
     #Amount that bail costs for Town mayors.
     bail_amount_mayor: '500'
- 
+  
     #Amount that bail costs for Nation kings.
     bail_amount_king: '1000'
- 
+  
   # Commands which a jailed player cannot use.
   blacklisted_commands: home,spawn,teleport,tp,tpa,tphere,tpahere,back,dback,ptp,jump,kill,warp,suicide,asc,desc,t,n
- 
+  
   # When true, jail plots will prevent any PVP from occuring. Applies to jailed residents only.
   do_jail_plots_deny_pvp: 'false'
- 
+  
   # When true, Towny will prevent a person who has been jailed by their mayor/town from logging out,
   # if they do log out they will be killed first, ensuring they respawn in the jail.
   prevent_newly_jailed_players_logging_out: 'false'
- 
+  
   # How long do new players have to be on the server before they can be jailed?
   new_player_immunity: 1h
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Bank Plot settings                   | #
 # +------------------------------------------------------+ #
 ############################################################
 # Bank plots may be used by other economy plugins using the Towny API.
- 
+  
 bank:
- 
+  
   # If true players will only be able to use /t deposit, /t withdraw, /n deposit & /n withdraw while inside bank plots belonging to the town or nation capital respectively.
   # Home plots will also allow deposit and withdraw commands.
   is_banking_limited_to_bank_plots: 'false'
@@ -1774,83 +1814,83 @@ war:
     explosions_break_blocks: 'true'
     explosions_regen_blocks: 'true'
     explosions_ignore_list: OAK_DOOR,ACACIA_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,BIRCH_DOOR,SPRUCE_DOOR,IRON_DOOR,CHEST,TRAPPED_CHEST,FURNACE,BURNING_FURNACE,DROPPER,DISPENSER,HOPPER,ENDER_CHEST,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,SILVER_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,NOTE_BLOCK,LEVER,STONE_PLATE,IRON_DOOR_BLOCK,ACACIA_PLATE,BIRCH_PLATE,DARK_OAK_PLATE,JUNGLE_PLATE,OAK_PLATE,SPRUCE_PLATE,JUKEBOX,DIODE_BLOCK_OFF,DIODE_BLOCK_ON,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,JUNGLE_FENCE_GATE,OAK_FENCE_GATE,SPRUCE_FENCE_GATE,GOLD_PLATE,IRON_PLATE,REDSTONE_COMPARATOR_OFF,REDSTONE_COMPARATOR_ON,BEACON,LANTERN
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |               New Nation Defaults                    | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 nation:
- 
+  
   # If set to true, any newly made nation will have their spawn set to public.
   default_public: 'false'
- 
+  
   # If set to true, any newly made nation will have open status and any town may join without an invite.
   default_open: 'false'
- 
+  
   # Default nation board
   default_board: ''
- 
+  
   # Setting this to true will set a nation's tag automatically using the first four characters of the nation's name.
   set_tag_automatically: 'true'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |               Town Ruining Settings                  | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 town_ruining:
   town_ruins:
- 
+  
     # If this is true, then if a town falls, it remains in a 'ruined' state for a time.
     # In this state, the town cannot be claimed, but can be looted.
     # The feature prevents mayors from escaping attack/occupation, 
     # by deleting then quickly recreating their town.
     enabled: 'false'
- 
+  
     # This value determines the maximum duration in which a town can lie in ruins
     # After this time is reached, the town will be completely deleted.
     # Does not accept values greater than 8760, which is equal to one year.
     max_duration_hours: '8760'
- 
+  
     # This value determines the minimum duration in which a town must lie in ruins,
     # before it can be reclaimed by a resident.
     min_duration_hours: '0'
- 
+  
     # If this is true, then after a town has been ruined for the minimum configured time,
     # it can then be reclaimed by any resident who runs /t reclaim, and pays the required price. (price is configured in the eco section)
     reclaim_enabled: 'true'
- 
+  
     # If this is true, when a town becomes a ruin they also receive public status,
     # meaning anyone can use /t spawn NAME to teleport to that town.
     ruins_become_public: 'true'
- 
+  
     # If this is true, when a town becomes a ruin they also become open to join,
     # meaning any townless player could join the town and reclaim it.
     # You should expect this to be abused by players who will reclaim a town to prevent someone else reclaiming it.
     ruins_become_open: 'true'
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                 Bank History settings                | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 bank_history:
- 
+  
   # This allows you to modify the style displayed via bankhistory commands.
   book: |-
     {time}
     {type} of {amount} {to-from} {name}
     Reason: {reason}
     Balance: {amount}
- 
- 
+  
+  
 ############################################################
 # +------------------------------------------------------+ #
 # |                   Town Block Types                   | #
@@ -1881,7 +1921,7 @@ bank_history:
 # |                                                      | #
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 townblocktypes:
   types:
   - name: default
@@ -1947,15 +1987,16 @@ townblocktypes:
     itemUseIds: ''
     switchIds: ''
     allowedBlocks: ''
- 
+  
 language:
   # The language file you wish to use for your default locale. Your default locale is what
   # will be shown in your console and for any player who doesn't use one of the locales below.
   # Available languages: bg-BG.yml, cz-CZ.yml, da-DK.yml, de-DE.yml, en-US.yml,
-  # es-419.yml, es-CL.yml, es-EC.yml, es-ES.yml, es-MX.yml, es-UY.yml, es-VE.yml,
+  # es-AR.yml, es-CL.yml, es-EC.yml, es-ES.yml, es-MX.yml, es-UY.yml, es-VE.yml,
   # fr-FR.yml, he-IL.yml, id-ID.yml, it-IT.yml, ja-JP.yml, ko-KR.yml, nl-NL.yml,
-  # no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml, ru-RU.yml, sv-SE.yml,
-  # th-TH.yml, tl-PH.yml, tr-TR.yml, vi-VN.yml, zh-CN.yml, zh-TW.yml
+  # no-NO.yml, pl-PL.yml, pt-BR.yml, pt-PT.yml, ro-RO.yml, ru-RU.yml, sr-CS.yml,
+  # sv-SE.yml, th-TH.yml, tl-PH.yml, tr-TR.yml, uk-UA.yml, vi-VN.yml, zh-CN.yml,
+  # zh-TW.yml
   #
   # If you want to override any of the files above with your own translations you must:
   # - Copy the file from the towny\settings\lang\reference\ folder 
@@ -1967,8 +2008,9 @@ language:
   # Your players will select what locale that Towny shows them 
   # by changing their Minecraft client's locale.
   language: en-US.yml
- 
+  
   # The languages you wish to have enabled. Set to '*' to use all available languages.
   # If you would like to only allow 4 languages use: en-US,ru-RU,es-ES,fr-FR
   # If a player's locale isn't enabled or isn't available it will use the language above instead.
+  # For compatibility reasons, en-US will always be considered enabled.
   enabled_languages: '*'

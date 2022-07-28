@@ -1,7 +1,7 @@
- 
+  
 version:
   # This is the current version.  Please do not edit.
-  version: 1.4.0
+  version: 1.4.2
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: 1.1.0
 # The language file you wish to use
@@ -12,11 +12,11 @@ language: english.yml
 # |                                                         |
 # +------------------------------------------------------+ #
 ############################################################
- 
+  
 townycultures:
- 
+  
   # If this value is true, then TownyCultures is enabled.
   enabled: 'true'
- 
+  
   # The maximum number of characters a culture name can be.
   maximum_culture_name_length: '16'
