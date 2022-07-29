@@ -4,6 +4,7 @@ Plugin             Version    Released    Checked     Stuck 'til  Autoconfig  UR
 =================  =========  ==========  ==========  ==========  ==========  ===
 AuctionHouse       3.0.2      2021-08-14  2022-07-27  1.18.X      ????        https://spigotmc.org/resources/61836/updates
 BeaconPlus         2.1.61     2022-03-04  ----------              Rewrite     https://spigotmc.org/resources/67056/updates
+Chunky             1.2.217    2022-06-25  2022-07-28              ????        https://www.spigotmc.org/resources/81534/
 CMILib             1.2.2.0    2022-07-22  2022-07-27              Yes         https://spigotmc.org/resources/87610/updates
 CommandLog         1.2        2016-07-09  2022-07-27  Dead        ????        https://spigotmc.org/resources/21176/updates
 CoreProtect        21.2       2022-03-21  2022-07-27              No          https://spigotmc.org/resources/8631/updates
