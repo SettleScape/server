@@ -2,6 +2,6 @@
 # https://github.com/pop4959/Chunky/wiki/Configuration
 version: 1
 language: en
-continue-on-restart: false
+continue-on-restart: true
 silent: false
 update-interval: 1
