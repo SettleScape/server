@@ -1,8 +1,8 @@
 cfg-version: 12
 message: '&cYou have reached the edge of this world.'
-round-border: false
+round-border: true
 debug-mode: false
-whoosh-effect: true
+whoosh-effect: false
 portal-redirection: true
 knock-back-dist: 3.0
 timer-delay-ticks: 5
@@ -17,6 +17,6 @@ deny-enderpearl: true
 fill-autosave-frequency: 30
 bypass-list-uuids: []
 fill-memory-tolerance: 500
-prevent-block-place: false
-prevent-mob-spawn: false
+prevent-block-place: true
+prevent-mob-spawn: true
 no-players-toggle: false
