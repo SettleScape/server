@@ -36,6 +36,7 @@ TownyHistories     0.0.24     2022-06-27  2022-07-27              Yes         Di
 TradePlus          3.83.1     2022-06-01  2022-07-27              Append      https://spigotmc.org/resources/23138/updates
 Vault              1.7.3      2020-07-17  2022-07-27  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft          1.17.1     2021-08-16  2022-07-27  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
+WorldBorder        2.1.5      2022-03-14  2022-08-01              ????        https://github.com/PryPurity/WorldBorder/releases
 WorldEdit          7.2.11b1   2022-06-17  2022-07-27              No          https://dev.bukkit.org/projects/worldedit/files
 WorldGuard         7.0.7      2021-03-06  2022-07-27              Yes         https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny   1.3.0      2022-07-22  2022-07-27              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
