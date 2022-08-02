@@ -9,14 +9,33 @@ timer-delay-ticks: 5
 remount-delay-ticks: 0
 dynmap-border-enabled: true
 dynmap-border-layer-label: WorldBorder
-dynmap-border-message: The border of the world.
+dynmap-border-message: World Border
 dynmap-border-hideByDefault: false
 dynmap-border-priority: 0
 player-killed-bad-spawn: false
 deny-enderpearl: true
 fill-autosave-frequency: 30
 bypass-list-uuids: []
-fill-memory-tolerance: 500
+fill-memory-tolerance: 512
 prevent-block-place: true
 prevent-mob-spawn: true
 no-players-toggle: false
+worlds:
+  world:
+    x: 3072.0
+    z: -512.0
+    radiusX: 6656
+    radiusZ: 5632
+    wrapping: false
+  world_nether:
+    x: 384.0
+    z: -64.0
+    radiusX: 832
+    radiusZ: 704
+    wrapping: false
+  world_the_end:
+    x: 0.0
+    z: 0.0
+    radiusX: 2048
+    radiusZ: 2048
+    wrapping: true
