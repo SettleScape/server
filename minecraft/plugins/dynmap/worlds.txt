@@ -11,10 +11,10 @@ worlds:
         y:   64
         z: -512
     visibilitylimits:
-    -   x0: -3584
-        z0: -6144
-        x1:  9728
-        z1:  5120
+    -   x0: -3680
+        z0: -6240
+        x1:  9824
+        z1:  5216
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
@@ -41,10 +41,10 @@ worlds:
         y:  64
         z: -64
     visibilitylimits:
-    -   x0: -448
-        z0: -768
-        x1: 1216
-        z1:  640
+    -   x0: -544
+        z0: -864
+        x1: 1312
+        z1:  736
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Cross-Section
@@ -71,10 +71,10 @@ worlds:
         y: 64
         z:  0
     visibilitylimits:
-    -   x0: -2048
-        z0: -2048
-        x1:  2048
-        z1:  2048
+    -   x0: -2144
+        z0: -2144
+        x1:  2144
+        z1:  2144
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
