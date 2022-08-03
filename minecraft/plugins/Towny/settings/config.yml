@@ -888,7 +888,7 @@ plugin:
     web_map:
   
       # If enabled, players will be prompted to open a url when clicking on coordinates in towny status screens.
-      enabled: 'false'
+      enabled: 'true'
   
       # The url that players will be prompted to open when clicking on a coordinate in a status screen.
       # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
@@ -1934,7 +1934,7 @@ townblocktypes:
   - name: shop
     cost: 0.0
     tax: 0.0
-    mapKey: C
+    mapKey: S
     itemUseIds: ''
     switchIds: ''
     allowedBlocks: ''
