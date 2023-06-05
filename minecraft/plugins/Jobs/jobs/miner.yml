@@ -961,7 +961,7 @@ Miner:
       income: 0.25
       points: 0.25
       experience: 0.25
-    block_of_amethyst:
+    amethyst_block:
       income: 0.25
       points: 0.25
       experience: 0.25
@@ -2062,7 +2062,7 @@ Miner:
       income: 1
       points: 1
       experience: 1
-    block_of_amethyst:
+    amethyst_block:
       income: 1
       points: 1
       experience: 1
