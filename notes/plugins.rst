@@ -22,7 +22,7 @@ MineableSpawners   3.1.4      2022-06-08  2022-07-27              ????        ht
 NuVotifier         2.7.3      2021-07-06  2022-07-27              ????        https://github.com/NuVotifier/NuVotifier/releases
 OpenInv            4.1.10     2021-12-02  2022-07-27  1.18.X      ????        https://github.com/Jikoo/OpenInv/releases
 PhantomSMP         1.1.2      2022-02-06  2022-07-27              ????        https://github.com/SimonOrJ/PhantomSMP/releases
-PlaceholderAPI     2.11.2     2023-07-03  2022-07-27              N/A         https://spigotmc.org/resources/6245/updates
+PlaceholderAPI     2.11.2     2022-07-03  2022-07-27              N/A         https://spigotmc.org/resources/6245/updates
 ProtocolLib        4.8.0      2021-07-09  2022-07-27              ????        https://github.com/dmulloy2/ProtocolLib/releases
 Rankup             3.13.3     2022-04-16  2022-07-27              ????        https://spigotmc.org/resources/76964/updates
 ShopChest          1.13-SS    2022-04-18  2022-07-27              No          https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
