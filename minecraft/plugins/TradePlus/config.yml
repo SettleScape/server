@@ -196,4 +196,4 @@ soundeffects:
   oncountdown: true
 debug-mode: false
 configversion: 3.84
-allow-shift-right-click: true
+allow-shift-right-click: false
