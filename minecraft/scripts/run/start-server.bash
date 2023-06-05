@@ -19,6 +19,12 @@ set -e
 source '../var/env.sh'
 cd "$ENV_SERVER_ROOT"
 
+## Workarounds
+set +e
+rm 'plugins/EisenRadar/lang/en_us.lang'
+rm 'plugins/EisenRadar/lang/de_de.lang'
+set -e
+
 ## Figure out which Java to use.
 ## Do not use Java SE (Oracle's version) versions 11-16, as those require a hefty fee to use in production.
 ## Java SE should otherwise be preferred, as unlike OpenJDK, it continues to update old versions after the release of a new one.
