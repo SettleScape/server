@@ -6,8 +6,9 @@ set -e
 
 ## Handle paths
 TWD="$ENV_SERVER_ROOT/plugins"
+LWD="$ENV_SERVER_ROOT/plugins"
 CWD=$(pwd)
-[[ ! "$CWD" == "$TWD" ]] && cd "$TWD"
+[[ ! "$CWD" == "$LWD" ]] && cd "$LWD"
 
 ## Receive input
 # declare -a INPUT=$@
@@ -28,5 +29,5 @@ unset PLUGINS
 
 ## Cleanup
 cd "$CWD"
-unset CWD TWD
+unset CWD LWD TWD
 exit 0
