@@ -1,0 +1,7 @@
+name: booster # booster should be a copy of donor.
+parents:
+- donor
+suffixes:
+- '&c(booster)&r': {}
+permissions:
+- weight.201

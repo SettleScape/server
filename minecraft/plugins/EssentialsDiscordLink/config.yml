@@ -12,13 +12,13 @@
 # - kick: Kicks the player with a link code and requires they link their discord account before they can join.
 # - freeze: Prevents player from moving/interacting/doing commands when they join until they link their discord account.
 # - none: Places no restrictions on players for unlinked accounts.
-link-policy: none
+link-policy: kick
 
 # Whether to ignore Discord messages from unlinked members and hide them from Minecraft chat.
 block-unlinked-chat: false
 
 # Whether someone's Minecraft account should be unlinked when they leave the Discord server.
-unlink-on-leave: true
+unlink-on-leave: false
 
 # Whether linked player's incoming mail should be DM'd to them on Discord.
 relay-mail: true
@@ -42,11 +42,22 @@ role-sync:
   # Players in the following groups listed here will receive the corresponding role ID on discord when they link
   # their Minecraft account to their Discord account.
   groups:
-    default: 000000000000000000
-    admin: 11111111111111111
+    owner: 591434676078510080
+    administrator: 591434676078510080
+    moderator: 591435541644312626
+    monitor: 1118947660536221908
+    volunteer: 858457803761123328
+    donor: 671169216446988302
+    pathfinder+++: 699859069112156161
+    pathfinder++: 699859069112156161
+    pathfinder+: 699859069112156161
+    pathfinder: 699859069112156161
+    explorer: 699859090850971679
+    settler: 699859111793393744
+    traveller: 699859136317489182
+    wanderer: 671171066982301707
   # Discord role ID to Minecraft group synchronization.
   # Users with the following roles listed here will receive the corresponding group in Minecraft when they link
   # their Discord account to their Minecraft account.
   roles:
-    22222222222222222: vip
-    33333333333333333: booster
+    858879788131024916: booster
