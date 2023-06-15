@@ -46,8 +46,6 @@ role-sync:
     administrator: 591434676078510080
     moderator: 591435541644312626
     monitor: 1118947660536221908
-    volunteer: 858457803761123328
-    donor: 671169216446988302
     pathfinder+++: 699859069112156161
     pathfinder++: 699859069112156161
     pathfinder+: 699859069112156161
@@ -61,3 +59,5 @@ role-sync:
   # their Discord account to their Minecraft account.
   roles:
     858879788131024916: booster
+    671169216446988302: donor
+    858457803761123328: volunteer
