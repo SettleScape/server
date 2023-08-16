@@ -42,7 +42,7 @@ plotManagementMayorDelete=
 # When the townblock is unclaimed its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air. This list also world on the WildRegen settings below.
-plotManagementIgnoreIds=DEEPSLATE_REDSTONE_ORE,CREEPER_HEAD,GILDED_BLACKSTONE,SMOKER,DEEPSLATE_COAL_ORE,DRAGON_WALL_HEAD,TNT,DEEPSLATE_IRON_ORE,PLAYER_HEAD,SKELETON_WALL_SKULL,ZOMBIE_HEAD,DEEPSLATE_EMERALD_ORE,DEEPSLATE_DIAMOND_ORE,ANCIENT_DEBRIS,ZOMBIE_WALL_HEAD,NETHERITE_BLOCK,PLAYER_WALL_HEAD,BLAST_FURNACE,DEEPSLATE_GOLD_ORE,NETHER_PORTAL,AIR,BREWING_STAND,CREEPER_WALL_HEAD,NETHER_QUARTZ_ORE,RAW_IRON_BLOCK,FURNACE,DEEPSLATE_LAPIS_ORE,DRAGON_HEAD,SKELETON_SKULL,FIRE
+plotManagementIgnoreIds=BLAST_FURNACE,DEEPSLATE_LAPIS_ORE,CREEPER_WALL_HEAD,TNT,FIRE,NETHERITE_BLOCK,PLAYER_HEAD,GILDED_BLACKSTONE,DEEPSLATE_GOLD_ORE,DEEPSLATE_REDSTONE_ORE,SMOKER,SKELETON_WALL_SKULL,DRAGON_HEAD,ZOMBIE_HEAD,FURNACE,AIR,RAW_IRON_BLOCK,ZOMBIE_WALL_HEAD,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,ANCIENT_DEBRIS,SKELETON_SKULL,PLAYER_WALL_HEAD,DRAGON_WALL_HEAD,NETHER_PORTAL,NETHER_QUARTZ_ORE,BREWING_STAND,DEEPSLATE_COAL_ORE,CREEPER_HEAD,DEEPSLATE_IRON_ORE
 revertOnUnclaimWhitelistMaterials=
 
 # The following settings control which entities/blocks' explosions are reverted in the wilderness.
@@ -53,7 +53,7 @@ PlotManagementWildRegenEntities=
 # If enabled any damage caused by block explosions will repair itself.
 usingPlotManagementWildRegenBlocks=true
 # The list of blocks whose explosions would be reverted.
-PlotManagementWildRegenBlocks=CYAN_BED,LIME_BED,LIGHT_BLUE_BED,PINK_BED,BROWN_BED,YELLOW_BED,WHITE_BED,GRAY_BED,LIGHT_GRAY_BED,PURPLE_BED,BLACK_BED,ORANGE_BED,MAGENTA_BED,BLUE_BED,GREEN_BED
+PlotManagementWildRegenBlocks=BLUE_BED,PURPLE_BED,ORANGE_BED,BLACK_BED,LIME_BED,PINK_BED,LIGHT_GRAY_BED,MAGENTA_BED,CYAN_BED,YELLOW_BED,WHITE_BED,LIGHT_BLUE_BED,GREEN_BED,BROWN_BED,GRAY_BED
 # The list of blocks to regenerate. (if empty all blocks will regenerate)
 PlotManagementWildRegenBlockWhitelist=
 # The delay after which the explosion reverts will begin.

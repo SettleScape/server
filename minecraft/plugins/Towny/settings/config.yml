@@ -1414,7 +1414,7 @@ notification:
   
     # The format used to format the {nationcapital} option. The name of the capital city and nation will replace the %s and %s.
     # Alternatively, you can use %t for townname and %n for nationname and show either one or both.
-    nationcapital_format: 'Capital City of %s'
+    nationcapital_format: Capital City of %s
   
     # The duration (in ticks) that the Title and Subtitle messages will appear for.
     # The default duration for minecraft is 70 ticks, which equates to 3.5 seconds.
