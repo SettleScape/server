@@ -18,7 +18,7 @@ Jobs Reborn          5.1.0.0    2022-06-24  2022-07-27              Partial     
 LuckPerms            5.4.79     2023-05-01  2023-06-05              ????        https://luckperms.net/download
 mcMMO                2.1.216    2022-07-24  2022-07-27              Yes         https://spigotmc.org/resources/64348/updates
 mcMMO-Towny          1.0.1      2019-09-14  2023-08-16  Old         Yes         https://github.com/TownyAdvanced/mcMMO-Towny/releases
-MineableSpawners     3.1.4u     2022-10-12  2023-06-05  Dead        ????        https://github.com/dnyferguson/MineableSpawners/releases
+MineableSpawners     3.1.4u     2022-10-12  2023-06-05  ----------  ????        https://github.com/dnyferguson/MineableSpawners/releases
 NuVotifier           2.7.3      2021-07-06  2023-06-05  Old         ????        https://github.com/NuVotifier/NuVotifier/releases
 OpenInv              4.1.10     2021-12-02  2022-07-27  1.18.X      ????        https://github.com/Jikoo/OpenInv/releases
 PhantomSMP           1.1.2      2022-02-06  2023-06-05  Old         ????        https://github.com/SimonOrJ/PhantomSMP/releases
