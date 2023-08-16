@@ -1,5 +1,8 @@
 # Language file you want to use
 Language: EN
+# Defines if you want to auto download default locale files from github repository
+# You can disable this if you are using EN or you already have your locale setup and you dont need to have other languages being downloaded
+LanguageDownload: true
 # When enabled plugin will try to keep CMILib up to date automatically
 AutoUpdate: false
 # When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
@@ -25,7 +28,7 @@ Spawners:
   - zombie
   - silverfish
 RMCCommands:
-  # When enabled we will include when possible a command to indicate which was performed while using rmc commands
+  # When enabled we will (where possible) include which command was performed when using rmc commands
   ConsoleLog: true
 Images:
   # Symbol to be used to create image fields
@@ -35,3 +38,10 @@ Images:
   # Symbol to be used to fill in empty image fields
   # Color codes are supported here
   EmptyFiller:  
+Colors:
+  # When enabled plugin will try to detect simplified hex color codes like #f6f6f6 or #ff6 in adition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and simplified format will not support gradients or named colors so you will still need to use more complex format for those
+  OfficialHex: false
+  # When enabled plugin will try to detect quirky hex color codes like &#f6f6f6 or &#ff6 in adition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and quirky format will not support gradients or named colors so you will still need to use more complex format for those
+  QuirkyHex: false
