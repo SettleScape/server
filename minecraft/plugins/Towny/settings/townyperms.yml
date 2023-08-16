@@ -16,7 +16,8 @@
 # You can add permission to a rank/group using the                                          #
 # /ta townyperms group [name] addperm [node] command.                                       #
 #                                                                                           #
-# You may change the names of any of the ranks except: nomad, default, mayor, king, ranks.  #
+# You may change the names of any of the ranks except: nomad, default, mayor, king, ranks,  #
+# peaceful.                                                                                 #
 #                                                                                           #
 # If you want to, you can negate permissions nodes from nodes by doing the following:       #
 # Ex:                                                                                       #
@@ -24,6 +25,17 @@
 #    - -towny.command.plot.set.jail                                                         #
 # In this example the user is given full rights to all of the /plot command nodes,          #
 # but has had their ability to set a plot to a Jail plot type disabled.                     #
+#                                                                                           #
+# The towns.ranks and nations.ranks sections support adding prefix and priorities, this     #
+# is done using two nodes: towny.rankpriority.# and towny.rankprefix.<prefix_here>.         #
+# Residents will have their ranks parsed until one rank is determined to be the highest     #
+# priority, this rank will then be searched for a prefix node. This prefix can be shown     #
+# using the %townyadvanced_resident_primary_rank% placeholder for PlaceholderAPI. A prefix  #
+# from a Nation rank will take precendence over a prefix from a Town rank.                  #
+# Ex:                                                                                       #
+#    - towny.rankpriority.100                                                               #
+#    - towny.rankprefix.&a<&2Sheriff&a>                                                     #
+#                                                                                           #
 #############################################################################################
   
   

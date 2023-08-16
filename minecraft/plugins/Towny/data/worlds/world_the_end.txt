@@ -1,3 +1,5 @@
+name=world_the_end
+uuid=808b39e3-7026-4871-9533-7e8304e9896b
 pvp=true
 forcepvp=false
 friendlyFire=false
@@ -40,7 +42,8 @@ plotManagementMayorDelete=
 # When the townblock is unclaimed its blocks will begin to revert to the original snapshot.
 usingPlotManagementRevert=false
 # Any block Id's listed here will not be respawned. Instead it will revert to air. This list also world on the WildRegen settings below.
-plotManagementIgnoreIds=AIR,DEEPSLATE_COAL_ORE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,DEEPSLATE_DIAMOND_ORE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,RAW_IRON_BLOCK,NETHERITE_BLOCK,FURNACE,TNT,BREWING_STAND,SKELETON_SKULL,PLAYER_HEAD,ZOMBIE_HEAD,CREEPER_HEAD,DRAGON_HEAD,SMOKER,BLAST_FURNACE,GILDED_BLACKSTONE,FIRE,NETHER_PORTAL,SKELETON_WALL_SKULL,ZOMBIE_WALL_HEAD,PLAYER_WALL_HEAD,CREEPER_WALL_HEAD,DRAGON_WALL_HEAD
+plotManagementIgnoreIds=ANCIENT_DEBRIS,SKELETON_SKULL,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_IRON_ORE,BREWING_STAND,DEEPSLATE_EMERALD_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_GOLD_ORE,TNT,RAW_IRON_BLOCK,ZOMBIE_HEAD,SMOKER,DRAGON_HEAD,DEEPSLATE_LAPIS_ORE,ZOMBIE_WALL_HEAD,GILDED_BLACKSTONE,DEEPSLATE_COAL_ORE,NETHER_QUARTZ_ORE,AIR,FURNACE,BLAST_FURNACE,FIRE,NETHERITE_BLOCK,SKELETON_WALL_SKULL,CREEPER_WALL_HEAD,DRAGON_WALL_HEAD,PLAYER_WALL_HEAD,NETHER_PORTAL,CREEPER_HEAD,PLAYER_HEAD
+revertOnUnclaimWhitelistMaterials=
 
 # The following settings control which entities/blocks' explosions are reverted in the wilderness.
 # If enabled any damage caused by entity explosions will repair itself.
@@ -50,7 +53,7 @@ PlotManagementWildRegenEntities=
 # If enabled any damage caused by block explosions will repair itself.
 usingPlotManagementWildRegenBlocks=true
 # The list of blocks whose explosions would be reverted.
-PlotManagementWildRegenBlocks=WHITE_BED,ORANGE_BED,MAGENTA_BED,LIGHT_BLUE_BED,YELLOW_BED,LIME_BED,PINK_BED,GRAY_BED,LIGHT_GRAY_BED,CYAN_BED,PURPLE_BED,BLUE_BED,BROWN_BED,GREEN_BED,BLACK_BED
+PlotManagementWildRegenBlocks=ORANGE_BED,PURPLE_BED,BLUE_BED,GRAY_BED,LIGHT_BLUE_BED,LIGHT_GRAY_BED,GREEN_BED,LIME_BED,BLACK_BED,MAGENTA_BED,CYAN_BED,BROWN_BED,PINK_BED,YELLOW_BED,WHITE_BED
 # The list of blocks to regenerate. (if empty all blocks will regenerate)
 PlotManagementWildRegenBlockWhitelist=
 # The delay after which the explosion reverts will begin.
