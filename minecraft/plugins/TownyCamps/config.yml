@@ -25,7 +25,7 @@ camps:
   creation_cooldown: 0h
   
   # When set above zero, this is determine the amount of money required to claim a camp.
-  creation_cost: '0.0'
+  creation_cost: '100.0'
   
   # Should the camp location be shown on the /resident status screen page.
   show_location_on_status_screen: 'true'
@@ -58,7 +58,7 @@ third_party:
     enable_dynmap_support: 'true'
   
     # Which layer should the Camps appear on in your web browser?
-    dynmap_layer_name: TownyCamps
+    dynmap_layer_name: Camps
   combatlogx:
   
     # When set to true, and CombatLogX is enabled on the server, players will be unable to create camps while in combat.

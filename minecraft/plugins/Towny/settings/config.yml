@@ -40,11 +40,11 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 0.0
     townOutpostLimit: 0
-    debtCapModifier: '1.0'
+    debtCapModifier: '0.0'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    resourceProductionModifier: '0.0'
+    peacefulCostMultiplier: '0.0'
+    bankCapModifier: '0.0'
   - numResidents: 1
     namePostfix: ' (Hermitage)'
     mayorPrefix: 'Hermit '
@@ -608,7 +608,7 @@ new_world_settings:
       enabled: 'true'
   
       # The list of entities whose explosions should be reverted.
-      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull,CREEPER
+      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull
   
       # How long before an entity-caused explosion begins reverting.
       delay: 3s
@@ -2421,8 +2421,8 @@ ascii_map_symbols:
   
   # The height of the map shown in /towny map and /res toggle map.
   # Minimum 7, maximum 18.
-  map_height: '7'
+  map_height: '11'
   
   # The width of the map shown in /towny map and /res toggle map.
   # Minimum 7, maximum 27, only odd numbers are accepted.
-  map_width: '27'
+  map_width: '11'

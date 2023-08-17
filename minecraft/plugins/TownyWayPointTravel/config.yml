@@ -18,6 +18,6 @@ prevent:
   joining_unvisited_towns: 'true'
   
 lang:
-  you_cannot_spawn: You have not visited %s yet, you cannot fast travel to this location.
-  you_cannot_join: '%s has not visited %s yet, they cannot join the town.'
+  you_cannot_spawn: You have not visited %s yet, so you cannot fast-travel there.
+  you_cannot_join: '%s has not visited %s yet, so they cannot join the town.'
   you_discovered: You have discovered the town of %s.
