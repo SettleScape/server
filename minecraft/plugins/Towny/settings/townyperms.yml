@@ -159,3 +159,7 @@ nations:
     - towny.command.nation.ally.*
     - towny.command.nation.enemy
     - towny.command.nation.deposit.other
+  
+# Nodes that are given to players who are in a peaceful/neutral town or nation.
+peaceful:
+- towny.peaceful

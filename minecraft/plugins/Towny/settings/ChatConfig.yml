@@ -1,7 +1,7 @@
   
 version:
   # This is the current version of Towny.  Please do not edit.
-  version: '0.96'
+  version: '0.108'
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: '0.62'
   
@@ -43,6 +43,8 @@ version:
 # {permgroupsuffix} - Permission group suffix.
 # {permprefix} - Permission group and user prefix.
 # {permsuffix} - Permission group and user suffix.
+#
+# {primaryresidentrank} - When a resident has a primary rank with a prefix this will display their prefix with a space added to the end.
 #
 # {playername} - Default player name.
 # {modplayername} - Modified player name (use if Towny is over writing some other plugins changes).
@@ -117,3 +119,6 @@ display_modes_set_on_join: 'false'
   
 # If true players will see You have joined channel {channel} message on joining the server.
 display_channel_join_message_on_joining_the_server: 'true'
+  
+# If true players that say !somewords will have their message sent to a global type channel with unlimited range (usually your general chat.)
+allow_exclamation_point_to_shout: 'true'

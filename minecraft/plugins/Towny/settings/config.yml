@@ -1,9 +1,9 @@
   
 version:
   # This is the current version of Towny. Please do not edit.
-  version: 0.99.5.11
+  version: 0.99.5.12
   # This is for showing the changelog on updates. Please do not edit.
-  last_run_version: 0.98.3.3
+  last_run_version: 0.99.5.12
   
   
 ############################################################
@@ -42,6 +42,9 @@ levels:
     townOutpostLimit: 0
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 1
     namePostfix: ' (Hermitage)'
     mayorPrefix: 'Hermit '
@@ -53,6 +56,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 2
     namePostfix: ' (Hamlet)'
     mayorPrefix: 'Chief '
@@ -64,6 +70,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 4
     namePostfix: ' (Village)'
     mayorPrefix: 'Lord '
@@ -75,6 +84,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 8
     namePostfix: ' (Town)'
     mayorPrefix: 'Baron '
@@ -86,6 +98,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 12
     namePostfix: ' (Large Town)'
     mayorPrefix: 'Viscount '
@@ -97,6 +112,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 16
     namePostfix: ' (City)'
     mayorPrefix: 'Count '
@@ -108,6 +126,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 24
     namePostfix: ' (Large City)'
     mayorPrefix: 'Marquess '
@@ -119,6 +140,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 32
     namePostfix: ' (Metropolis)'
     mayorPrefix: 'Duke '
@@ -130,6 +154,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 48
     namePostfix: ' (Sprawling Metropolis)'
     mayorPrefix: 'Grand Duke '
@@ -141,6 +168,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 72
     namePostfix: ' (Megacity)'
     mayorPrefix: 'Archduke '
@@ -152,6 +182,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - numResidents: 108
     namePostfix: ' (Arcology)'
     mayorPrefix: 'Prince '
@@ -163,6 +196,9 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
+    resourceProductionModifier: '1.0'
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   
   # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   nation_level:
@@ -178,6 +214,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
@@ -190,6 +228,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
@@ -202,6 +242,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
@@ -214,6 +256,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
@@ -226,6 +270,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
@@ -238,6 +284,8 @@ levels:
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.0'
   
   
 ############################################################
@@ -543,7 +591,7 @@ new_world_settings:
   
       # These block types will NOT be regenerated by the revert-on-unclaim
       # or revert-explosion features.
-      block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,NETHER_GOLD_ORE,ANCIENT_DEBRIS,SOUL_TORCH,SOUL_WALL_TORCH,CRIMSON_SIGN,CRIMSON_WALL_SIGN,WARPED_SIGN,WARPED_WALL_SIGN,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,RAW_IRON_BLOCK,RAW_GOLD_BLOCK,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD
+      block_ignore: GOLD_ORE,LAPIS_ORE,LAPIS_BLOCK,GOLD_BLOCK,IRON_ORE,IRON_BLOCK,MOSSY_COBBLESTONE,TORCH,SPAWNER,DIAMOND_ORE,DIAMOND_BLOCK,ACACIA_SIGN,BIRCH_SIGN,DARK_OAK_SIGN,JUNGLE_SIGN,OAK_SIGN,SPRUCE_SIGN,ACACIA_WALL_SIGN,BIRCH_WALL_SIGN,DARK_OAK_WALL_SIGN,JUNGLE_WALL_SIGN,OAK_WALL_SIGN,SPRUCE_WALL_SIGN,GLOWSTONE,EMERALD_ORE,EMERALD_BLOCK,BAMBOO,BAMBOO_SAPLING,JUNGLE_SAPLING,OAK_SAPLING,BIRCH_SAPLING,ACACIA_SAPLING,DARK_OAK_SAPLING,SPRUCE_SAPLING,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,NETHER_GOLD_ORE,ANCIENT_DEBRIS,SOUL_TORCH,SOUL_WALL_TORCH,CRIMSON_SIGN,CRIMSON_WALL_SIGN,WARPED_SIGN,WARPED_WALL_SIGN,LODESTONE,RESPAWN_ANCHOR,NETHER_PORTAL,FURNACE,BLAST_FURNACE,SMOKER,BREWING_STAND,TNT,AIR,FIRE,NETHER_QUARTZ_ORE,ANCIENT_DEBRIS,NETHERITE_BLOCK,GILDED_BLACKSTONE,DEEPSLATE_IRON_ORE,DEEPSLATE_GOLD_ORE,DEEPSLATE_COAL_ORE,DEEPSLATE_REDSTONE_ORE,DEEPSLATE_DIAMOND_ORE,DEEPSLATE_EMERALD_ORE,DEEPSLATE_LAPIS_ORE,RAW_IRON_BLOCK,RAW_GOLD_BLOCK,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD,PLAYER_HEAD,PLAYER_WALL_HEAD,SKELETON_SKULL,SKELETON_WALL_SKULL,CREEPER_HEAD,CREEPER_WALL_HEAD,ZOMBIE_HEAD,ZOMBIE_WALL_HEAD,DRAGON_HEAD,DRAGON_WALL_HEAD,DRAGON_EGG,CRYING_OBSIDIAN,MOVING_PISTON
   
       # The list of blocks that are allowed to regenerate, if this list is empty then all blocks will regenerate.
       # This list is useful for when you want only 'natural' blocks to regenerate like stone, grass, trees, etc.,
@@ -560,7 +608,7 @@ new_world_settings:
       enabled: 'true'
   
       # The list of entities whose explosions should be reverted.
-      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull
+      entities: Creeper,EnderCrystal,EnderDragon,Fireball,SmallFireball,LargeFireball,DragonFireball,WitherSkull,Wither,WitherSkull,CREEPER
   
       # How long before an entity-caused explosion begins reverting.
       delay: 3s
@@ -2340,13 +2388,20 @@ language:
   
 ############################################################
 # +------------------------------------------------------+ #
-# |                  ASCII MAP SYMBOLS                   | #
+# |               ASCII MAP SYMBOLS & SIZES              | #
 # |                                                      | #
 # | Used in the ascii maps for symbols not determined by | #
 # | townblocktype. See Town Block Types section for more | #
 # | options. When using Unicode use the \u#### format,   | #
 # | and use the HTML-code version of the unicode         | #
 # | character.                                           | #
+# |                                                      | #
+# | When setting sizes you cannot set a height of less   | #
+# | than seven or greater than 18. Your width must be    | #
+# | between seven and 27, and should always be an odd    | #
+# | number. These sizes will be used when displaying the | #
+# | output of the /towny map command, and not used when  | #
+# | the player uses the /towny map big command.          | #
 # +------------------------------------------------------+ #
 ############################################################
   
@@ -2363,3 +2418,11 @@ ascii_map_symbols:
   
   # The character used for plots which are unclaimed.
   wilderness: '-'
+  
+  # The height of the map shown in /towny map and /res toggle map.
+  # Minimum 7, maximum 18.
+  map_height: '7'
+  
+  # The width of the map shown in /towny map and /res toggle map.
+  # Minimum 7, maximum 27, only odd numbers are accepted.
+  map_width: '27'

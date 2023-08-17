@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.24
+  version: 0.0.27
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: 0.0.18
 # The language file you wish to use
@@ -13,6 +13,9 @@ third_party:
   
     # When set to true, and dynmap is found on the server, Ruins will appear on the dynmap.
     enable_dynmap_support: 'true'
+  
+    # Which layer should the Ruins appear on in your web browser?
+    dynmap_layer_name: TownyRuins
   
   
 ruin_settings:
@@ -28,6 +31,12 @@ ruin_settings:
   
   # Setting this to false will allow people to steal the lectern books before the ruin is deleted.
   protect_lectern_book: 'true'
+  
+  # When set to true, players will not be able to claim any land that belongs to a ruin.
+  prevent_claiming_ruin: 'false'
+  
+  # When set to true, players will not be able to claim the ruin's homeblock.
+  prevent_claiming_homeblock: 'false'
   
   # Defaults to ruin, any other dynmap marker can be used: https://github.com/webbukkit/dynmap/tree/v3.0/DynmapCore/src/main/resources/markers 
   marker_icon: ruin

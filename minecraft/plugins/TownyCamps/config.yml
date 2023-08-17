@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.35
+  version: 0.0.45
 # The language file you wish to use.
 # Available: en-US.yml, zh-CN.yml
 # You can add your own localization using the correct locale filename and placing
@@ -10,6 +10,12 @@ language: english.yml
   
   
 camps:
+  
+  # How long a camp can exist for, before being de-activated.
+  # De-activated camps can be re-lit to reset their time.
+  # Soft-expired camps will no long provide PVP protection.
+  soft_expiration_duration: 24h
+  
   # How long a camp can exist for, before being deleted.
   # Set to -1 to have camps last forever.
   duration: '-1'
@@ -17,6 +23,9 @@ camps:
   # How long after making a camp does a player have to wait to make a new one.
   # Set to 0h, to use no cooldown.
   creation_cooldown: 0h
+  
+  # When set above zero, this is determine the amount of money required to claim a camp.
+  creation_cost: '0.0'
   
   # Should the camp location be shown on the /resident status screen page.
   show_location_on_status_screen: 'true'
@@ -47,7 +56,14 @@ third_party:
   
     # When set to true, and dynmap is found on the server, Camps will appear on the dynmap.
     enable_dynmap_support: 'true'
+  
+    # Which layer should the Camps appear on in your web browser?
+    dynmap_layer_name: TownyCamps
   combatlogx:
   
     # When set to true, and CombatLogX is enabled on the server, players will be unable to create camps while in combat.
     enable_combatlogx_support: 'false'
+  papi:
+  
+    # The format for the %townycamps_has_camp% placeholder.
+    has_camp_placeholder: '[hasacamp]'
