@@ -72,7 +72,7 @@ pathfinder:
     requirements-not-met: '&cIn order to rank up to {RANK}, you need a balance of ${MONEY}, a power level of {AMOUNT mcmmo-power-level}, and the following items: 1 nether star and 1 conduit.'
 
 #-------------------------------------------------------------------------------
-pathfinder+:
+'pathfinder+':
   rank: 'pathfinder'
   next: 'pathfinder+'
   requirements:
@@ -84,7 +84,7 @@ pathfinder+:
 
 
 #-------------------------------------------------------------------------------
-pathfinder++:
+'pathfinder++':
   rank: 'pathfinder+'
   next: 'pathfinder++'
   requirements:
@@ -96,7 +96,7 @@ pathfinder++:
 
 
 #-------------------------------------------------------------------------------
-pathfinder+++:
+'pathfinder+++':
   rank: 'pathfinder++'
   next: 'pathfinder+++'
   requirements:

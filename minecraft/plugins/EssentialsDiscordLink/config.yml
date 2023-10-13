@@ -42,18 +42,18 @@ role-sync:
   # Players in the following groups listed here will receive the corresponding role ID on discord when they link
   # their Minecraft account to their Discord account.
   groups:
-    owner: 591434676078510080
-    administrator: 591434676078510080
-    moderator: 591435541644312626
-    monitor: 1118947660536221908
-    pathfinder+++: 699859069112156161
-    pathfinder++: 699859069112156161
-    pathfinder+: 699859069112156161
-    pathfinder: 699859069112156161
-    explorer: 699859090850971679
-    settler: 699859111793393744
-    traveller: 699859136317489182
-    wanderer: 671171066982301707
+    "owner": 591434676078510080
+    "administrator": 591434676078510080
+    "moderator": 591435541644312626
+    "monitor": 1118947660536221908
+    "pathfinder+++": 699859069112156161
+    "pathfinder++": 699859069112156161
+    "pathfinder+": 699859069112156161
+    "pathfinder": 699859069112156161
+    "explorer": 699859090850971679
+    "settler": 699859111793393744
+    "traveller": 699859136317489182
+    "wanderer": 671171066982301707
   # Discord role ID to Minecraft group synchronization.
   # Users with the following roles listed here will receive the corresponding group in Minecraft when they link
   # their Discord account to their Minecraft account.
