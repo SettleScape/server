@@ -1,4 +1,4 @@
-name: pathfinder+
+name: "pathfinder+"
 parents:
 - pathfinder
 permissions:

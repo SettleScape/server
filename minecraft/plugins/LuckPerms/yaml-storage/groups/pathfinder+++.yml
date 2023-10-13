@@ -1,6 +1,6 @@
-name: pathfinder+++
+name: "pathfinder+++"
 parents:
-- pathfinder++
+- "pathfinder++"
 permissions:
 - weight.108
 - displayname.pathfinder # Treated the same as Pathfinder for most purposes.
