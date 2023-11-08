@@ -42,8 +42,8 @@ role-sync:
   # Players in the following groups listed here will receive the corresponding role ID on discord when they link
   # their Minecraft account to their Discord account.
   groups:
-    "owner": 591434676078510080
-    "administrator": 591434676078510080
+    # "owner": 591434676078510080
+    # "administrator": 591434676078510080
     "moderator": 591435541644312626
     "monitor": 1118947660536221908
     "pathfinder+++": 699859069112156161
