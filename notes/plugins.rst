@@ -21,7 +21,7 @@ EssentialsX Discord Link  2.20.1     2023-08-05  2023-08-16              No     
 EssentialsX Protect       2.20.1     2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
 EssentialsX Spawn         2.20.1     2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
 Jobs Reborn               5.1.0.0    2022-06-24  ----------              Partial     https://spigotmc.org/resources/4216/updates
-LuckPerms                 5.4.102    2023-08-05  2023-08-16              ????        https://luckperms.net/download
+LuckPerms                 5.4.102    2023-08-05  2023-08-16              No          https://luckperms.net/download
 mcMMO                     2.1.216    2022-07-24  ----------              Yes         https://spigotmc.org/resources/64348/updates
 mcMMO-Towny               1.0.1      2019-09-14  2023-08-16  Old         Yes         https://github.com/TownyAdvanced/mcMMO-Towny/releases
 MineableSpawners          3.1.5      2023-06-21  2023-08-16              ????        https://github.com/dnyferguson/MineableSpawners/releases
