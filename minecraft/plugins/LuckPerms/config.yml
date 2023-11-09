@@ -460,7 +460,7 @@ context-satisfy-mode: at-least-one-value-per-key
 
 # LuckPerms has a number of built-in contexts. These can be disabled by adding the context key to
 # the list below.
-disabled-contexts:
+disabled-contexts: []
 #  - "world"
 
 # +----------------------------------------------------------------------------------------------+ #
@@ -494,7 +494,7 @@ apply-global-world-groups: true
 meta-value-selection-default: highest-number
 
 # Defines how meta values should be selected per key.
-meta-value-selection:
+meta-value-selection: {}
 #  max-homes: highest-number
 
 # +----------------------------------------------------------------------------------------------+ #
