@@ -1,19 +1,19 @@
 #!/bin/bash
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
-MAILTO=root
+MAILTO=minecraft
 ## IMPORTANT!:  DO NOT RUN ANY FILE IN `/srv/minecraft/settlescape` AS ROOT!  THESE FILES ARE PULLED AUTOMATICALLY FROM THE INTERNET!  HUGE SECURITY RISK!
 
 ## 3AM
-0 3 * * * /etc/scripts/update-system.sh
-0 3 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/update/minecraft.bash
-0 3 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/beacon-plus.sh
-0 3 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/coreprotect.sh
-0 3 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/purge-old.bash
+0 3 * * * root /etc/scripts/update-system.sh
+0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/update/minecraft.bash
+0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/beacon-plus.sh
+0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/coreprotect.sh
+0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/purge-old.bash
 
 ## 4AM
-0 4 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/fix-perms.sh
-0 4 * * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/reboot.sh; systemctl reboot -i
+0 4 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/fix-perms.sh
+0 4 * * * root sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/reboot.sh; systemctl reboot -i
 
 ## 5AM
-# 0 5 7,14,21,28 * * sudo -u minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/dynmap.sh
+# 0 5 7,14,21,28 * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/dynmap.sh
