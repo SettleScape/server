@@ -38,7 +38,6 @@ TownyCultures             2.0.0      2023-02-03  2023-08-16              Yes    
 TownyFlight               1.9.0      2023-05-09  2023-08-16              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TownyHistories            0.0.27     2023-08-11  2023-08-16              Yes         https://discord.com/channels/321452088519426058/860682040680775711
 TownyWayPointTravel       1.7        2023-07-23  2023-08-16              Yes         https://discord.com/channels/321452088519426058/1009243497922056292
-TradePlus                 3.84.6     2022-12-22  ----------  Dead        Append      https://spigotmc.org/resources/23138/updates
 Vault                     1.7.3      2020-07-17  2024-05-24  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft                 1.17.1     2021-08-16  ----------  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
 WorldBorder               2.1.5      2022-03-14  2023-08-16  Old         ????        https://github.com/PryPurity/WorldBorder/releases
