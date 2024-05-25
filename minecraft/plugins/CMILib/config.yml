@@ -5,8 +5,12 @@ Language: EN
 LanguageDownload: true
 # When enabled plugin will try to keep CMILib up to date automatically
 AutoUpdate: false
-# When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
-AutoFileRemoval: true
+ExploitPatcher:
+  Placeholders:
+    blocked:
+      # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
+      # Only disable this if you have dedicated protection for it
+      checkItem: true
 GlobalGui:
   # Defines item type in empty fields in GUI when its needed to be filled up
   EmptyField: GRAY_STAINED_GLASS_PANE
