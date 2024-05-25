@@ -140,7 +140,7 @@ world-settings:
     max-leash-distance: 10.0
     zombies-target-turtle-eggs: false
     phantoms-do-not-spawn-on-creative-players: true
-    phantoms-only-attack-insomniacs: false
+    phantoms-only-attack-insomniacs: true
     delay-chunk-unloads-by: 10s
     tracker-update-distance: 1.0
     light-queue-size: 20

@@ -27,7 +27,6 @@ mcMMO-Towny               1.0.1      2019-09-14  2023-08-16  Old         Yes    
 MineableSpawners          3.1.5      2023-06-21  2024-05-24  Dead,Forks  ????        https://github.com/itsfergydanny/MineableSpawners/forks
 NuVotifier                2.7.3      2021-07-06  2024-05-24  Old         ????        https://github.com/NuVotifier/NuVotifier/releases
 OpenInv                   4.1.10     2021-12-02  ----------  1.18.X      ????        https://github.com/Jikoo/OpenInv/releases
-PhantomSMP                1.1.2      2022-02-06  2024-05-24  Old         ????        https://github.com/SimonOrJ/PhantomSMP/releases
 PlaceholderAPI            2.11.6     2024-05-21  2024-05-24              N/A         https://spigotmc.org/resources/6245/updates
 ProtocolLib               4.8.0      2021-07-09  ----------  CraftBook   ????        https://github.com/dmulloy2/ProtocolLib/releases
 Rankup                    3.14.4     2023-11-19  2024-05-24              ????        https://spigotmc.org/resources/76964/updates
