@@ -1,7 +1,7 @@
 config-version: 4
 settings:
   disable-saving: false
-  locale: 'en_us'
+  locale: en_us
 toggles:
   any-chest: []
   silent-chest: []
