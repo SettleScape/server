@@ -31,6 +31,10 @@ When changing View Distance, you need to edit the following:
 
     * `hard` (Should generally be equal to the blocks loaded by the view-distance.)
 
+* `plugins/LagFixer/config.yml`
+
+  1. `view_distance` (Should be less than `view-distance`)
+
 Entity Collisions
 ================================================================================
 

@@ -10,8 +10,6 @@ main:
     permission: lagfixer.command
     aliases:
     - lf
-    - antilag
-    - lag
 modules:
   CustomAi:
     enabled: true
@@ -21,7 +19,7 @@ modules:
     - world_nether
     values:
       collides: true
-      silent: true
+      silent: false
       async: true
       load_all: true
       click_event: true
@@ -29,13 +27,13 @@ modules:
         animals: true
         monsters: true
         villagers: true
-        tameable: false
-        birds: false
+        tameable: true
+        birds: true
         others: true
       pathfinder:
         mobchip: false
         typeA:
-          enabled: true
+          enabled: false
           whitelist:
           - AttackableTarget
           - HurtByTarget
@@ -53,7 +51,7 @@ modules:
           - AvoidTarget
           - MoveTowards
         typeC:
-          enabled: false
+          enabled: true
       animals:
         tempt:
           enabled: true
@@ -85,18 +83,18 @@ modules:
       minecart:
         enabled: true
         remove_chest: false
-        silent: true
+        silent: false
         max_speed: 8
         physics: true
         culling: false
-        collides: false
+        collides: true
       boat:
         enabled: true
-        silent: true
+        silent: false
         max_speed: 8
         physics: true
         culling: false
-        collides: false
+        collides: true
   LagMonitor:
     enabled: true
     worlds:
@@ -107,17 +105,17 @@ modules:
       needed_mspt: 75
       durning_lags:
         simulation_distance: 2
-        view_distance: 2
+        view_distance: 4
         disable:
           entity_spawn: true
-          tick_hopper: true
+          tick_hopper: false
           redstone: false
           projectiles: false
           leaves_decay: true
           mobai: false
-          liquid_flow: true
-          random_tick_speed: true
-          view_distance: false
+          liquid_flow: false
+          random_tick_speed: false
+          view_distance: true
           simulation_distance: true
   ConsoleFilter:
     enabled: false
@@ -141,7 +139,7 @@ modules:
         - 'CONSOLE: Forcing save\.\..*'
         - 'CONSOLE: Save complete\..*'
   AntiClock:
-    enabled: true
+    enabled: false
     worlds:
     - world
     - world_the_end
@@ -151,7 +149,7 @@ modules:
       break_redstone: false
       lever_cooldown: 700
   EntityLimiter:
-    enabled: true
+    enabled: false
     worlds:
     - world
     - world_the_end
@@ -174,7 +172,7 @@ modules:
         axolotls: 5
         ambient: 15
   WorldCleaner:
-    enabled: true
+    enabled: false
     worlds:
     - world
     - world_the_end

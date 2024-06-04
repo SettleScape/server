@@ -24,6 +24,7 @@ permissions:
 - groupmanager.mansave
 - groupmanager.manuadd
 - groupmanager.manudel
+- lagfixer.command
 - shopchest.config
 
 # Operations
