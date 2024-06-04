@@ -21,6 +21,7 @@ EssentialsX Discord Link  2.20.1     2023-08-05  2023-08-16              No     
 EssentialsX Protect       2.20.1     2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
 EssentialsX Spawn         2.20.1     2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
 Jobs Reborn               5.1.0.0    2022-06-24  ----------              Partial     https://spigotmc.org/resources/4216/updates
+LagFixer                  1.3.14     2024-05-30  2024-06-04                          https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.128    2024-05-08  2024-05-24              No          https://luckperms.net/download
 mcMMO                     2.1.216    2022-07-24  ----------              Yes         https://spigotmc.org/resources/64348/updates
 mcMMO-Towny               1.0.1      2019-09-14  2023-08-16  Old         Yes         https://github.com/TownyAdvanced/mcMMO-Towny/releases
@@ -45,3 +46,8 @@ WorldEdit                 7.2.20     2024-02-29  2024-05-24  1.20.X      No     
 WorldGuard                7.0.7      2021-03-06  ----------  1.19.X      Yes         https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny          1.3.0      2022-07-22  2023-08-16              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 ========================  =========  ==========  ==========  ==========  ==========  ===
+
+Notes:
+
+* Investigate FastAsyncWorldEdit
+* Sign-editing was removed in 1.20, so on that version of higher, EditableSign should be removed.

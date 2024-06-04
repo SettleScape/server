@@ -1,0 +1,231 @@
+main:
+  prefix: '&8[&e&l⚡&8] '
+  prefix_hover: true
+  threads: 1
+  monitor_interval: 5
+  errors_reporter: true
+  updater: true
+  warnings: true
+  command:
+    permission: lagfixer.command
+    aliases:
+    - lf
+    - antilag
+    - lag
+modules:
+  CustomAi:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      collides: true
+      silent: true
+      async: true
+      load_all: true
+      click_event: true
+      entities:
+        animals: true
+        monsters: true
+        villagers: true
+        tameable: false
+        birds: false
+        others: true
+      pathfinder:
+        mobchip: false
+        typeA:
+          enabled: true
+          whitelist:
+          - AttackableTarget
+          - HurtByTarget
+          - Attack
+          - BowShoot
+          - Swell
+          - EatTile
+          - FishSchool
+        typeB:
+          enabled: false
+          blacklist:
+          - Random
+          - LookAt
+          - Panic
+          - AvoidTarget
+          - MoveTowards
+        typeC:
+          enabled: false
+      animals:
+        tempt:
+          enabled: true
+          range: 5.0
+          speed: 1.25
+          cooldown: 30
+          villagers: true
+          trigger_both_hands: true
+          event: false
+          teleport: false
+        breed:
+          enabled: true
+          range: 5.0
+          speed: 1.0
+          event: false
+          teleport: false
+        panic:
+          enabled: true
+          rangeFromPlayer: 7
+          speed: 1.95
+          cooldown: 15
+  CustomVehicles:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      minecart:
+        enabled: true
+        remove_chest: false
+        silent: true
+        max_speed: 8
+        physics: true
+        culling: false
+        collides: false
+      boat:
+        enabled: true
+        silent: true
+        max_speed: 8
+        physics: true
+        culling: false
+        collides: false
+  LagMonitor:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      needed_mspt: 75
+      durning_lags:
+        simulation_distance: 2
+        view_distance: 2
+        disable:
+          entity_spawn: true
+          tick_hopper: true
+          redstone: false
+          projectiles: false
+          leaves_decay: true
+          mobai: false
+          liquid_flow: true
+          random_tick_speed: true
+          view_distance: false
+          simulation_distance: true
+  ConsoleFilter:
+    enabled: false
+    values:
+      logs_limit: 10
+      filter:
+        enabled: false
+        save_filtered: true
+        error_filtering: false
+        patterns:
+        - ^<(([A-Za-z0-9_]{3,16}))> (.{0,})
+        - ^/([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\:([0-9]{1,5}) lost
+          connection
+        - Reached end of stream for /([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})\.([0-9]{1,3})$
+        - '([A-Za-z0-9_]{3,16}) issued server command: /(.{0,})'
+        - Read timed out
+        - ^.*logged in with entity id ([0-9]{0,}) at.*$
+        - '([A-Za-z0-9_]{3,16}) lost connection: Disconnected'
+        - ^(§e)([A-Za-z0-9_]{3,16}) left the game.
+        - Connection reset
+        - 'CONSOLE: Forcing save\.\..*'
+        - 'CONSOLE: Save complete\..*'
+  AntiClock:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      ticks_limit: 1100
+      break_redstone: false
+      lever_cooldown: 700
+  EntityLimiter:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      alerts: false
+      perchunk:
+        enabled: true
+        creatures: 15
+        items: 25
+        vehicles: 3
+        tiles: 10
+      perworld:
+        enabled: true
+        monsters: 70
+        animals: 10
+        water_animals: 5
+        water_ambient: 20
+        water_underground_creature: 5
+        axolotls: 5
+        ambient: 15
+  WorldCleaner:
+    enabled: true
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      interval: 240
+      alerts: true
+      clearitems:
+        enabled: true
+        abyss:
+          enabled: false
+          alerts: true
+          permission: lagfixer.abyss
+          menu_size: 54
+          item_despawn: true
+          close: 30
+          blacklist:
+          - BEDROCK
+          - BEACON
+      killmobs:
+        enabled: true
+        named: false
+        drop_items: false
+        whitelist:
+        - ZOMBIE
+        - SKELETON
+        - SLIME
+        - CREEPER
+        - SPIDER
+        - PHANTOM
+        - SQUID
+  CustomTracker:
+    enabled: false
+    worlds:
+    - world
+    - world_the_end
+    - world_nether
+    values:
+      needed_mspt: 35
+      check_interval: 40
+      untrack_interval: 400
+      disable_ticking: true
+      range: 10
+  CreatureStacker:
+    enabled: false
+    values:
+      seach_range: 5
+      interval: -1
+      similarity_check: true
+      whitelist: []
+      blacklist:
+      - VILLAGER
+      - ZOMBIE_VILLAGER
+      - PILLAGER
