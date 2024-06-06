@@ -51,7 +51,7 @@ modules:
           - AvoidTarget
           - MoveTowards
         typeC:
-          enabled: true
+          enabled: false
       animals:
         tempt:
           enabled: true
