@@ -21,7 +21,6 @@ modules:
       collides: true
       silent: false
       async: true
-      load_all: true
       click_event: true
       entities:
         animals: true
@@ -73,6 +72,7 @@ modules:
           rangeFromPlayer: 7
           speed: 1.95
           cooldown: 15
+      force_load: false
   CustomVehicles:
     enabled: true
     worlds:
