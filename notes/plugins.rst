@@ -50,4 +50,4 @@ WorldGuard-Towny          1.3.0       2022-07-22  2024-06-06              Yes   
 
 ## Notes
 * Investigate FastAsyncWorldEdit
-* Sign-editing was removed in 1.20, so on that version of higher, EditableSign should be removed.
+* Sign-editing was removed in 1.20, so on that version or higher, EditableSign should be removed.
