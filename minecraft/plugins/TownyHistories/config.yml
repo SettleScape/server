@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.27
+  version: 0.0.31
   # This is for showing the changelog on updates.  Please do not edit.
   last_run_version: 0.0.18
 # The language file you wish to use
@@ -28,6 +28,9 @@ ruin_settings:
   
   # When set to true, players will not be able to build or destroy inside of ruins.
   preserve_ruins: 'true'
+  
+  # When set to true, players will not be able to use Switches inside of ruins. These are containers, redstone, etc.
+  preserve_ruins_switches: 'false'
   
   # Setting this to false will allow people to steal the lectern books before the ruin is deleted.
   protect_lectern_book: 'true'

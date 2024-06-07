@@ -1,9 +1,9 @@
   
 version:
   # This is the current version of Towny. Please do not edit.
-  version: 0.99.5.12
+  version: 0.100.1.0
   # This is for showing the changelog on updates. Please do not edit.
-  last_run_version: 0.99.5.12
+  last_run_version: 0.100.1.0
   
   
 ############################################################
@@ -290,7 +290,7 @@ levels:
   
 ############################################################
 # +------------------------------------------------------+ #
-# |               Town Claim/new defaults                | #
+# |                   New Town Defaults                  | #
 # +------------------------------------------------------+ #
 ############################################################
   
@@ -340,120 +340,8 @@ town:
   
     # A required minimum tax amount for the default_tax, will not change any towns which already have a tax set.
     # Do not forget to set the default_tax to more than 0 or new towns will still begin with a tax of zero.
+    # This setting has no effect when negative taxes are allowed.
     minimumtax: '0.0'
-  
-  # Limits the maximum amount of bonus blocks a town can buy.
-  # This setting does nothing when town.max_purchased_blocks_uses_town_levels is set to true.
-  max_purchased_blocks: '9999'
-  
-  # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
-  max_purchased_blocks_uses_town_levels: 'false'
-  
-  # maximum number of plots any single resident can own
-  max_plots_per_resident: '9999'
-  
-  # maximum number used in /town claim/unclaim # commands.
-  # set to 0 to disable limiting of claim radius value check.
-  # keep in mind that the default value of 4 is a radius, 
-  # and it will allow claiming 9x9 (80 plots) at once.
-  max_claim_radius_value: '1'
-  
-  
-  overclaiming:
-  
-    # A feature that allows towns which have too many townblocks claimed (overclaimed) ie: 120/100 TownBlocks, 
-    # to have their land stolen by other towns which are not overclaimed. Using this incentivises Towns to keep
-    # their residents from leaving, and will mean that mayors will be more careful about which land they choose
-    # to claim.
-    # Overclaiming does not allow a town to be split into two separate parts, requiring the Town that is stealing
-    # land to work from the outside inwards.
-    # It is highly recommended to only use this on servers where outposts are disabled, and requiring 
-    # a number of adjacent claims over 1 is enabled.
-    # Towns take land using /t takeoverclaim.
-    being_overclaimed_allows_other_towns_to_steal_land: 'false'
-  
-    # While true, overclaiming is stopped by the min_distance_from_town_homeblock setting below.
-    # This prevents a town from having townblocks stolen surrounding their homeblocks.
-    overclaiming_prevented_by_homeblock_radius: 'true'
-  
-    # When in use, requires that a town be of a minimum age in order to overclaim another town. This prevents new towns being made just to overclaim someone.
-    # Default is for 7 days.
-    town_age_requirement: 7d
-  
-    # When in use, requires an amount of time to pass before the /t takeoverclaim command can be used again.
-    command_cooldown: 0m
-  
-  # Maximum number of towns allowed on the server.
-  town_limit: '0'
-  
-  # The maximum distance (in townblocks) that 2 town's homeblocks can be to be eligible for merging.
-  max_distance_for_merge: '10'
-  
-  # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
-  # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
-  min_distances_ignored_for_towns_in_same_nation: 'false'
-  
-  # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
-  # will be ignored for towns that are mutually allied. Setting to false will keep all towns separated the same.
-  min_distances_ignored_for_towns_in_allied_nation: 'false'
-  
-  # Minimum number of plots any towns plot must be from the next town's own plots.
-  # Put in other words: the buffer area around every claim that no other town can claim into.
-  # Does not affect towns which are in the same nation.
-  # This will prevent town encasement to a certain degree.
-  min_plot_distance_from_town_plot: '2'
-  
-  # Minimum number of plots any towns home plot must be from the next town.
-  # Put in other words: the buffer area around every homeblock that no other town can claim into.
-  # Does not affect towns which are in the same nation.
-  # This will prevent someone founding a town right on your doorstep
-  min_distance_from_town_homeblock: '10'
-  
-  # Minimum number of plots an outpost must be from any other town's plots.
-  # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
-  # near to each other, but want to keep outposts away from towns.
-  min_distance_for_outpost_from_plot: '10'
-  
-  # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
-  # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
-  # Do not set lower than min_distance_for_outpost_from_plot above.
-  max_distance_for_outpost_from_town_plot: '0'
-  
-  # Minimum distance between homeblocks.
-  min_distance_between_homeblocks: '0'
-  
-  # Maximum distance between homeblocks.
-  # This will force players to build close together.
-  max_distance_between_homeblocks: '0'
-  
-  # The minimum distance that a new town must be from nearby towns' plots.
-  # When set to -1, this will use the value of the min_plot_distance_from_town_plot option.
-  new_town_min_distance_from_town_plot: '10'
-  
-  # The minimum distance that a new town must be from nearby towns' homeblocks.
-  # When set to -1, this will use the value of the min_distance_from_town_homeblock setting.
-  new_town_min_distance_from_town_homeblock: '10'
-  
-  # The maximum townblocks available to a town is (numResidents * ratio).
-  # Setting this value to 0 will instead use the level based jump values determined in the town level config.
-  # Setting this to -1 will result in every town having unlimited claims.
-  town_block_ratio: '0'
-  
-  # The maximimum amount of townblocks a town can have, if town_block_ratio is 0 the max size will be decided by the town_levels.
-  # Set to 0 to have no size limit.
-  town_block_limit: '0'
-  
-  # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
-  # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
-  # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
-  # Each cell is (town_block_size * town_block_size * height-of-the-world) in size, with height-of-the-world
-  # being from the bottom to the top of the build-able world.
-  town_block_size: '8'
-  
-  # The minimum adjacent town blocks required to expand.
-  # This can prevent long lines and snake-like patterns.
-  # Set to -1 to disable. Set to 3 to force wider expansions of towns.
-  min_adjacent_blocks: '1'
   
   
 ############################################################
@@ -634,93 +522,16 @@ new_world_settings:
   
 global_town_settings:
   
+  # Maximum number of towns allowed on the server.
+  town_limit: '0'
+  
+  # The maximum distance (in townblocks) that 2 town's homeblocks can be to be eligible for merging.
+  max_distance_for_merge: '10'
+  
   # Players within their town or allied towns will regenerate half a heart after every health_regen_speed seconds.
   health_regen:
     speed: 3s
     enable: 'false'
-  
-  # Allow towns to claim outposts (a townblock not connected to town).
-  allow_outposts: 'true'
-  
-  # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
-  # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
-  # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
-  # larger can have more outposts.
-  # When activated, this setting will not cause towns who already have higher than their limit
-  # to lose outposts. They will not be able to start new outposts until they have unclaimed outposts
-  # to become under their limit. Likewise, towns that join a nation and receive bonus outposts will
-  # be over their limit if they leave the nation.
-  limit_outposts_using_town_and_nation_levels: 'true'
-  
-  # When limit_outposts_using_town_and_nation_levels is also true, towns which are over their outpost
-  # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
-  # until they have dropped below their limit.
-  # eg: If their limit is 3 then they cannot use /t outpost 4
-  over_outpost_limits_stops_teleports: 'true'
-  
-  # Allow the use of /town spawn
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the town,
-  # when there is a war or peace.
-  allow_town_spawn: peace
-  
-  # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the town,
-  # when there is a war or peace.
-  allow_town_spawn_travel: 'true'
-  
-  # Allow regular residents to use /town spawn [town] to other towns in your nation.
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the town,
-  # when there is a war or peace.
-  allow_town_spawn_travel_nation: 'true'
-  
-  # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the town,
-  # when there is a war or peace.
-  allow_town_spawn_travel_ally: 'true'
-  
-  # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
-  is_nation_ally_spawning_requiring_public_status: 'false'
-  
-  # When set to true, a player that is trusted by a town is allowed to spawn to the town as if they were a resident.
-  # Allows allows the residents of entire an town when that town is trusted by the town.
-  do_trusted_residents_count_as_residents: 'true'
-  
-  # When a resident joins a town, should they be prompted to use spawn to the town?
-  # This requires them to not already be standing in the town, and also to be able to use /t spawn and whatever costs may be associated with it.
-  are_new_residents_prompted_to_town_spawn: 'true'
-  
-  # If non zero it delays any spawn request by x seconds.
-  teleport_warmup_time: '3'
-  
-  # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
-  movement_cancels_spawn_warmup: 'true'
-  
-  # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
-  damage_cancels_spawn_warmup: 'true'
-  
-  spawning_cooldowns:
-  
-    # Number of seconds that must pass before a player can use /t spawn or /res spawn.
-    town_spawn_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player can use /t outpost.
-    outpost_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player of the same nation can use /t spawn.
-    nation_member_town_spawn_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player in an allied nation can use /t spawn.
-    nation_ally_town_spawn_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player who is not a member or ally of town can use /t spawn.
-    unaffiliated_town_spawn_cooldown_time: '3'
-  
-  # Decides whether confirmations should appear if you spawn to an area with an associated cost.
-  spawn_warnings: 'true'
   
   # Number of seconds that must pass before pvp can be toggled by a town.
   # Applies to residents of the town using /res toggle pvp, as well as
@@ -735,33 +546,6 @@ global_town_settings:
   
   # Number of seconds that must pass before a town that has unclaimed a townblock can claim it again.
   town_unclaim_cooldown_time: '1'
-  
-  # When true Towny will handle respawning, with town or resident spawns.
-  town_respawn: 'false'
-  
-  respawn_protection:
-  
-    # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
-    # Invulnerable players who attack other players will lose their invulnerability.
-    # Invulnerable players who teleport after respawn will also lose their invulnerability.
-    time: 3s
-  
-    # If disabled, players will not be able to pickup items while under respawn protection.
-    allow_pickup: 'true'
-  
-  # Town respawn only happens when the player dies in the same world as the town's spawn point.
-  town_respawn_same_world_only: 'false'
-  
-  # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
-  # Allowed options: unclaimed,enemy,neutral,outlaw
-  prevent_town_spawn_in: enemy,outlaw
-  
-  # When true, players will be allowed to spawn to peaceful/neutral towns in which they are considered enemies.
-  # Setting this to true will make town spawn points unsafe for private towns which are part of nations with enemies.
-  allow_enemies_spawn_to_peaceful_towns: 'false'
-  
-  # When this is true, players will respawn to respawn anchors on death rather than their own town. 1.16+ only.
-  respawn_anchor_higher_precendence: 'false'
   
   # When set above 0, the amount of hours a town must wait after setting their homeblock, in order to move it again.
   homeblock_movement_cooldown_hours: '0'
@@ -834,11 +618,6 @@ global_town_settings:
   # If set to true, if a nation is disbanded due to a lack of residents, the capital will be refunded the cost of nation creation.
   refund_disband_low_residents: 'true'
   
-  # The maximum number of townblocks a town can be away from a nation capital,
-  # Automatically precludes towns from one world joining a nation in another world.
-  # If the number is 0, towns will not a proximity to a nation.
-  nation_requires_proximity: '333.0'
-  
   # List of animals which can be killed on farm plots by town residents.
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
   
@@ -865,10 +644,6 @@ global_town_settings:
   # Does not have any effect when Event War is active.
   homeblocks_prevent_forcepvp: 'false'
   
-  # The amount of residents a town needs to claim an outpost,
-  # Setting this value to 0, means a town can claim outposts no matter how many residents
-  minimum_amount_of_residents_in_town_for_outpost: '1'
-  
   # If People should keep their inventories on death in a town.
   # Is not guaranteed to work with other keep inventory plugins!
   keep_inventory_on_death_in_town: 'false'
@@ -893,9 +668,16 @@ global_town_settings:
   # Is not guaranteed to work with other keep experience plugins!
   keep_experience_on_death_in_arena: 'true'
   
+  # The Maximum price that a town can be put for sale at. This refers to the price that
+  # someone could pay if they ran /t buytown, to buy a town that has been put up for sale.
+  max_buytown_price: '999999999'
+  
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
   maximum_plot_price_cost: '1000000.0'
+  
+  # maximum number of plots any single resident can own
+  max_plots_per_resident: '9999'
   
   # If set to true, the /town screen will display the xyz coordinate for a town's spawn rather than the homeblock's Towny coords.
   display_xyz_instead_of_towny_coords: 'true'
@@ -1004,37 +786,8 @@ global_nation_settings:
   # If true the capital city of nation cannot be neutral/peaceful.
   capitals_cannot_be_neutral: 'false'
   
-  # If enabled, only allow the nation spawn to be set in the capital city.
-  capital_spawn: 'true'
-  
-  # Allow the use of /nation spawn
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the nation,
-  # when there is a war or peace.
-  allow_nation_spawn: 'false'
-  
-  # Allow regular residents to use /nation spawn [nation] (TP to other nations if they are public).
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the nation,
-  # when there is a war or peace.
-  allow_nation_spawn_travel: peace
-  
-  # Allow regular residents to use /nation spawn [nation] to other nations allied with your nation.
-  # Valid values are: true, false, war, peace
-  # When war or peace is set, it is only possible to teleport to the nations,
-  # when there is a war or peace.
-  allow_nation_spawn_travel_ally: 'true'
-  
-  spawning_cooldowns:
-  
-    # Number of seconds that must pass before a player of the same nation can use /n spawn.
-    nation_member_nation_spawn_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player allied with the nation can use /n spawn.
-    nation_ally_nation_spawn_cooldown_time: '3'
-  
-    # Number of seconds that must pass before a player who is not a member or ally can use /n spawn.
-    unaffiliated_nation_spawn_cooldown_time: '3'
+  # When set to true, the nation's NationLevel is determined by the number of towns in the nations, instead of the number of residents.
+  nation_level_is_determined_by_town_count_instead_of_resident_count: 'false'
   
   # If higher than 0, it will limit how many towns can be joined into a nation.
   # Does not affect existing nations that are already over the limit.
@@ -1052,6 +805,28 @@ global_nation_settings:
   
   # The maximum amount of allies that a nation can have, set to -1 to have no limit.
   max_allies: '5'
+  
+  proximity:
+  
+    # The maximum number of townblocks a town's homeblock can be away from their nation capital's homeblock.
+    # Automatically precludes towns from one world joining a nation in another world.
+    # If the number is 0, towns will not require a proximity to a nation.
+    nation_proximity_to_capital_city: '333.0'
+  
+    # The maximum number of townblocks a town's homeblock can be away from other towns's homeblocks in the nation.
+    # This setting is only used when nation_proximity_to_capital_city is above 0.
+    # When used, and a town is out of range of their capital city, the remaining towns in the nation will be parsed,
+    # if one of those towns' homeblocks is close enough to the town's homeblock, the town can remain in the nation.
+    # Leave this setting at 0.0 in order to de-activate nations' towns granting further range for towns in the nation.
+    nation_proximity_to_other_nation_towns: '0.0'
+  
+    # The maximum number of townblocks a town's homeblock can be away from their nation's capital's homeblock,
+    # when the town is being allowed to go further out from the capital because of the nation_proximity_to_other_nation_towns
+    # setting above.
+    # This setting is what will stop a nation being able to go incredibly wide due to towns 'chaining' together.
+    # This setting is only used when nation_proximity_to_capital_city is above 0.
+    # Leave this setting at 0.0 in order to allow nations to chain towns together to go as wide as they like.
+    absolute_distance_from_capital: '0.0'
   
   # When disabled, nations will not be able to be created with or renamed to a name that contains numbers.
   # Disabling this option does not affect already created nations.
@@ -1128,6 +903,7 @@ plugin:
     # Whether towns with no claimed townblocks should be deleted when the new day is run.
     delete_0_plot_towns: 'true'
   hour_timer:
+  
     # The number of minutes in each "day".
     # Default is 60m.
     hour_interval: 60m
@@ -1154,9 +930,6 @@ plugin:
   
   # Sets the default size that /towny top commands display.
   towny_top_size: '10'
-  
-  # If enabled, particles will appear around town, nation, outpost & jail spawns.
-  visualized_spawn_points_enabled: 'true'
   
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
@@ -1192,7 +965,8 @@ filters_colour_chat:
   
   modify_chat:
   
-    # Maximum length of Town and Nation names.
+    # Maximum length of Town and Nation names. Setting this to a number below your current max_name_length could result in
+    # safe mode if the new value is below of your existing town and nation name lengths.
     max_name_length: '16'
   
     # Maximum length for Town and Nation tags.
@@ -1271,7 +1045,7 @@ protection:
   #       to protect HORSES, DONKEYS, MULES, PIGS, STRIDERS (This is not recommended, unless you want players to not be able to
   #       re-mount their animals in towns they cannot switch in.)
   # A full list of proper names can be found here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html 
-  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,CHEST,FURNACE,DISPENSER,HOPPER,DROPPER,COMPARATOR,REPEATER,ACACIA_DOOR,BIRCH_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,OAK_DOOR,SPRUCE_DOOR,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,OAK_FENCE_GATE,JUNGLE_FENCE_GATE,SPRUCE_FENCE_GATE,ACACIA_TRAPDOOR,BIRCH_TRAPDOOR,DARK_OAK_TRAPDOOR,JUNGLE_TRAPDOOR,OAK_TRAPDOOR,SPRUCE_TRAPDOOR,COMMAND_BLOCK,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,SMOKER,COMPOSTER,BLAST_FURNACE,BARREL,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BARREL,BREWING_STAND,CRIMSON_DOOR,WARPED_DOOR,CRIMSON_FENCE_GATE,WARPED_FENCE_GATE,CRIMSON_TRAPDOOR,WARPED_TRAPDOOR,RESPAWN_ANCHOR,OAK_CHEST_BOAT
+  switch_ids: JUKEBOX,NOTE_BLOCK,BEACON,CHEST,FURNACE,DISPENSER,HOPPER,DROPPER,COMPARATOR,REPEATER,ACACIA_DOOR,BIRCH_DOOR,DARK_OAK_DOOR,JUNGLE_DOOR,OAK_DOOR,SPRUCE_DOOR,ACACIA_FENCE_GATE,BIRCH_FENCE_GATE,DARK_OAK_FENCE_GATE,OAK_FENCE_GATE,JUNGLE_FENCE_GATE,SPRUCE_FENCE_GATE,ACACIA_TRAPDOOR,BIRCH_TRAPDOOR,DARK_OAK_TRAPDOOR,JUNGLE_TRAPDOOR,OAK_TRAPDOOR,SPRUCE_TRAPDOOR,COMMAND_BLOCK,COMMAND_BLOCK_MINECART,CHEST_MINECART,FURNACE_MINECART,HOPPER_MINECART,TNT_MINECART,SHULKER_BOX,WHITE_SHULKER_BOX,ORANGE_SHULKER_BOX,MAGENTA_SHULKER_BOX,LIGHT_BLUE_SHULKER_BOX,LIGHT_GRAY_SHULKER_BOX,YELLOW_SHULKER_BOX,LIME_SHULKER_BOX,PINK_SHULKER_BOX,GRAY_SHULKER_BOX,CYAN_SHULKER_BOX,PURPLE_SHULKER_BOX,BLUE_SHULKER_BOX,BROWN_SHULKER_BOX,GREEN_SHULKER_BOX,RED_SHULKER_BOX,BLACK_SHULKER_BOX,CARROT_STICK,DAYLIGHT_DETECTOR,SMOKER,COMPOSTER,BLAST_FURNACE,BARREL,DRAGON_EGG,ITEM_FRAME,POTTED_ACACIA_SAPLING,POTTED_ALLIUM,POTTED_AZURE_BLUET,POTTED_BAMBOO,POTTED_BIRCH_SAPLING,POTTED_BLUE_ORCHID,POTTED_BROWN_MUSHROOM,POTTED_CACTUS,POTTED_CORNFLOWER,POTTED_DANDELION,POTTED_DARK_OAK_SAPLING,POTTED_DEAD_BUSH,POTTED_FERN,POTTED_JUNGLE_SAPLING,POTTED_LILY_OF_THE_VALLEY,POTTED_OAK_SAPLING,POTTED_ORANGE_TULIP,POTTED_OXEYE_DAISY,POTTED_PINK_TULIP,POTTED_POPPY,POTTED_RED_MUSHROOM,POTTED_RED_TULIP,POTTED_SPRUCE_SAPLING,POTTED_WHITE_TULIP,POTTED_WITHER_ROSE,BARREL,BREWING_STAND,CRIMSON_DOOR,WARPED_DOOR,CRIMSON_FENCE_GATE,WARPED_FENCE_GATE,CRIMSON_TRAPDOOR,WARPED_TRAPDOOR,RESPAWN_ANCHOR,OAK_CHEST_BOAT,DECORATED_POT,CRAFTER
   
   # Materials which can be lit on fire even when firespread is disabled.
   # Still requires the use of the flint and steel.
@@ -1669,6 +1443,9 @@ resident_settings:
   # If true, players who join the server for the first time will be informed about their locale, and about Towny translatable system.
   is_showing_locale_message: 'false'
   
+  # The default resident about text, shown in the resident's status screen.
+  default_about: /res set about [msg]
+  
   
 ############################################################
 # +------------------------------------------------------+ #
@@ -1683,6 +1460,7 @@ economy:
   use_async: 'true'
   
   # The time that the town and nation bank accounts' balances are cached for, in seconds.
+  # This time is also used for the resident tax-owing value.
   # Default of 600s is equal to ten minutes. Requires the server to be stopped and started if you want to change this.
   # Cached balances are used for PlaceholderAPI placeholders, town and nation lists.
   bank_account_cache_timeout: 600s
@@ -1949,6 +1727,14 @@ economy:
     # by the town bank (if the town can afford it.)
     allow_negative_plot_tax: 'true'
   
+    # If enabled, and a town tax is set to a negative amount and is a fixed amount (not percentage,)
+    # it will result in every resident being paid by the town bank (if the town can afford it.)
+    allow_negative_town_tax: 'false'
+  
+    # If enabled, and a nation tax is set to a negative amount and is a fixed amount (not percentage,)
+    # it will result in every town in the nation being paid by the nation bank (if the nation can afford it.)
+    allow_negative_nation_tax: 'false'
+  
   # The Bankruptcy system in Towny will make it so that when a town cannot pay their upkeep costs,
   # rather than being deleted the towns will go into debt. Debt is capped based on the Town's costs
   # or overriden with the below settings.
@@ -2115,6 +1901,10 @@ bank:
   # If true players will only be able to use /t deposit, /t withdraw, /n deposit & /n withdraw while inside bank plots belonging to the town or nation capital respectively.
   # Home plots will also allow deposit and withdraw commands.
   is_banking_limited_to_bank_plots: 'true'
+  
+  # If true, towns which have one or more bank plots will no longer be able to use their homeblock for withdraw/depositing.
+  # Requires the above is_banking_limited_to_bank_plots to be true as well.
+  do_homeblocks_not_work_when_a_town_has_bank_plots: 'false'
 war:
   nation_can_be_neutral: 'true'
   disallow_one_way_alliance: 'true'
@@ -2193,6 +1983,7 @@ nation:
   
     # A required minimum tax amount for the default_tax, will not change any nations which already have a tax set.
     # Do not forget to set the default_tax to more than 0 or new nations will still begin with a tax of zero.
+    # This setting has no effect when negative taxes are allowed.
     minimumtax: '0.0'
   
     # The default amount of money that nations will charge their conquered towns.
@@ -2279,6 +2070,9 @@ bank_history:
 # |    commands. When using Unicode use the \u####       | #
 # |    format, and use the HTML-code version of the      | #
 # |    unicode character.                                | #
+# | colour: The colour code which will be used to colour | #
+# |    the townblocktype when viewed on the ascii maps.  | #
+# |    Leave this blank to not set any colour.           | #
 # | itemUseIds: If empty, will use values defined in     | #
 # |    protection.item_use_ids. If not empty this defines| #
 # |    what items are considered item_use.               | #
@@ -2349,7 +2143,7 @@ townblocktypes:
     mapKey: F
     itemUseIds: ''
     switchIds: ''
-    allowedBlocks: BAMBOO,BAMBOO_SAPLING,JUNGLE_LOG,JUNGLE_SAPLING,JUNGLE_LEAVES,OAK_LOG,OAK_SAPLING,OAK_LEAVES,BIRCH_LOG,BIRCH_SAPLING,BIRCH_LEAVES,ACACIA_LOG,ACACIA_SAPLING,ACACIA_LEAVES,DARK_OAK_LOG,DARK_OAK_SAPLING,DARK_OAK_LEAVES,SPRUCE_LOG,SPRUCE_SAPLING,SPRUCE_LEAVES,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS,SHEARS
+    allowedBlocks: COW_SPAWN_EGG,GOAT_SPAWN_EGG,MOOSHROOM_SPAWN_EGG,BAMBOO,BAMBOO_SAPLING,JUNGLE_LOG,JUNGLE_SAPLING,JUNGLE_LEAVES,OAK_LOG,OAK_SAPLING,OAK_LEAVES,BIRCH_LOG,BIRCH_SAPLING,BIRCH_LEAVES,ACACIA_LOG,ACACIA_SAPLING,ACACIA_LEAVES,DARK_OAK_LOG,DARK_OAK_SAPLING,DARK_OAK_LEAVES,SPRUCE_LOG,SPRUCE_SAPLING,SPRUCE_LEAVES,BEETROOTS,COCOA,CHORUS_PLANT,CHORUS_FLOWER,SWEET_BERRY_BUSH,KELP,SEAGRASS,TALL_SEAGRASS,GRASS,TALL_GRASS,FERN,LARGE_FERN,CARROTS,WHEAT,POTATOES,PUMPKIN,PUMPKIN_STEM,ATTACHED_PUMPKIN_STEM,NETHER_WART,COCOA,VINE,MELON,MELON_STEM,ATTACHED_MELON_STEM,SUGAR_CANE,CACTUS,ALLIUM,AZURE_BLUET,BLUE_ORCHID,CORNFLOWER,DANDELION,LILAC,LILY_OF_THE_VALLEY,ORANGE_TULIP,OXEYE_DAISY,PEONY,PINK_TULIP,POPPY,RED_TULIP,ROSE_BUSH,SUNFLOWER,WHITE_TULIP,WITHER_ROSE,CRIMSON_FUNGUS,CRIMSON_STEM,CRIMSON_HYPHAE,CRIMSON_ROOTS,MUSHROOM_STEM,NETHER_WART_BLOCK,BROWN_MUSHROOM,BROWN_MUSHROOM_BLOCK,RED_MUSHROOM,RED_MUSHROOM_BLOCK,SHROOMLIGHT,WARPED_FUNGUS,WARPED_HYPHAE,WARPED_ROOTS,WARPED_STEM,WARPED_WART_BLOCK,WEEPING_VINES_PLANT,WEEPING_VINES,NETHER_SPROUTS,SHEARS
   - name: bank
     cost: 0.0
     tax: 0.0
@@ -2426,3 +2220,326 @@ ascii_map_symbols:
   # The width of the map shown in /towny map and /res toggle map.
   # Minimum 7, maximum 27, only odd numbers are accepted.
   map_width: '11'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                Town Claiming Settings                | #
+# +------------------------------------------------------+ #
+############################################################
+  
+claiming:
+  
+  # The maximum townblocks available to a town is (numResidents * ratio).
+  # Setting this value to 0 will instead use the level based jump values determined in the town level config.
+  # Setting this to -1 will result in every town having unlimited claims.
+  town_block_ratio: '0'
+  
+  # The maximimum amount of townblocks a town can have, if town_block_ratio is 0 the max size will be decided by the town_levels.
+  # Set to 0 to have no size limit.
+  town_block_limit: '0'
+  
+  # The size of the square grid cell. Changing this value is suggested only when you first install Towny.
+  # Doing so after entering data will shift things unwantedly. Using smaller value will allow higher precision,
+  # at the cost of more work setting up. Also, extremely small values will render the caching done useless.
+  # Each cell is (town_block_size * town_block_size * height-of-the-world) in size, with height-of-the-world
+  # being from the bottom to the top of the build-able world.
+  town_block_size: '8'
+  
+  # When false players will not see the particle flood effect when they claim townblocks.
+  show_claiming_particles: 'true'
+  
+  # The minimum adjacent town blocks required to expand.
+  # This can prevent long lines and snake-like patterns.
+  # Set to -1 to disable. Set to 3 to force wider expansions of towns.
+  min_adjacent_blocks: '1'
+  
+  # maximum number used in /town claim/unclaim # commands.
+  # set to 0 to disable limiting of claim radius value check.
+  # keep in mind that the default value of 4 is a radius, 
+  # and it will allow claiming 9x9 (80 plots) at once.
+  max_claim_radius_value: '1'
+  
+  
+  biome_rules:
+  
+    # When a townblock is made up of too many blocks of these biomes, it will not be able to be claimed by a town.
+    unwanted_biomes:
+  
+      # When true, unwanted biomes will be tested for when a player is claiming land.
+      enabled: 'false'
+  
+      # A comma separated list of biome names that will add up towards a townblock's un-claim-ability.
+      # Use lower-case only or this will not work properly for you.
+      biomes: the_end,end_barrens,end_highlands,end_midlands,small_end_islands
+  
+      # The max amount of combined unwanted biomes as a percent, that will be allowed in plots being claimed by towns.
+      # For example, if a townblock would be more than X percent ocean it will not be able to be claimed.
+      threshold: '55'
+  
+  
+    ocean_blocking:
+  
+      # When true, any wilderness plot which has more Ocean biome in it than the allowed threshold (see below,)
+      # will not be able to be claimed.
+      enabled: 'false'
+  
+      # The max amount of combined ocean biomes as a percent, that will be allowed in plots being claimed by towns.
+      # For example, if a townblock would be more than X percent ocean it will not be able to be claimed.
+      threshold: '55'
+  
+  
+  distance_rules:
+  
+    # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
+    # will be ignored for towns that are in the same nation. Setting to false will keep all towns separated the same.
+    min_distances_ignored_for_towns_in_same_nation: 'false'
+  
+    # If true, the below settings: min_plot_distance_from_town_plot and min_distance_from_town_homeblock
+    # will be ignored for towns that are mutually allied. Setting to false will keep all towns separated the same.
+    min_distances_ignored_for_towns_in_allied_nation: 'false'
+  
+    # Minimum number of plots any towns plot must be from the next town's own plots.
+    # Put in other words: the buffer area around every claim that no other town can claim into.
+    # Does not affect towns which are in the same nation.
+    # This will prevent town encasement to a certain degree.
+    min_plot_distance_from_town_plot: '2'
+  
+    # Minimum number of plots any towns home plot must be from the next town.
+    # Put in other words: the buffer area around every homeblock that no other town can claim into.
+    # Does not affect towns which are in the same nation.
+    # This will prevent someone founding a town right on your doorstep
+    min_distance_from_town_homeblock: '10'
+  
+    # Minimum number of plots an outpost must be from any other town's plots.
+    # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
+    # near to each other, but want to keep outposts away from towns.
+    min_distance_for_outpost_from_plot: '10'
+  
+    # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
+    # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
+    # Do not set lower than min_distance_for_outpost_from_plot above.
+    max_distance_for_outpost_from_town_plot: '0'
+  
+    # Minimum distance between homeblocks.
+    min_distance_between_homeblocks: '0'
+  
+    # Maximum distance between homeblocks.
+    # This will force players to build close together.
+    max_distance_between_homeblocks: '0'
+  
+    # The minimum distance that a new town must be from nearby towns' plots.
+    # When set to -1, this will use the value of the min_plot_distance_from_town_plot option.
+    new_town_min_distance_from_town_plot: '10'
+  
+    # The minimum distance that a new town must be from nearby towns' homeblocks.
+    # When set to -1, this will use the value of the min_distance_from_town_homeblock setting.
+    new_town_min_distance_from_town_homeblock: '10'
+  
+  
+  outposts:
+  
+    # Allow towns to claim outposts (a townblock not connected to town).
+    allow_outposts: 'true'
+  
+    # When set to true outposts can be limited by the townOutpostLimit value of the Town Levels and
+    # the nationBonusOutpostLimit value in the Nation Levels. In this way nations can be made to be
+    # the only way of receiving outposts, or as an incentive to receive more outposts. Towns which are
+    # larger can have more outposts.
+    # When activated, this setting will not cause towns who already have higher than their limit
+    # to lose outposts. They will not be able to start new outposts until they have unclaimed outposts
+    # to become under their limit. Likewise, towns that join a nation and receive bonus outposts will
+    # be over their limit if they leave the nation.
+    limit_outposts_using_town_and_nation_levels: 'true'
+  
+    # When limit_outposts_using_town_and_nation_levels is also true, towns which are over their outpost
+    # limit will not be able to use their /town outpost teleports for the outpost #'s higher than their limit,
+    # until they have dropped below their limit.
+    # eg: If their limit is 3 then they cannot use /t outpost 4
+    over_outpost_limits_stops_teleports: 'true'
+  
+    # The amount of residents a town needs to claim an outpost,
+    # Setting this value to 0, means a town can claim outposts no matter how many residents
+    minimum_amount_of_residents_in_town_for_outpost: '1'
+  
+  
+  overclaiming:
+  
+    # A feature that allows towns which have too many townblocks claimed (overclaimed) ie: 120/100 TownBlocks, 
+    # to have their land stolen by other towns which are not overclaimed. Using this incentivises Towns to keep
+    # their residents from leaving, and will mean that mayors will be more careful about which land they choose
+    # to claim.
+    # Overclaiming does not allow a town to be split into two separate parts, requiring the Town that is stealing
+    # land to work from the outside inwards.
+    # It is highly recommended to only use this on servers where outposts are disabled, and requiring 
+    # a number of adjacent claims over 1 is enabled.
+    # Towns take land using /t takeoverclaim.
+    being_overclaimed_allows_other_towns_to_steal_land: 'false'
+  
+    # While true, overclaiming is stopped by the min_distance_from_town_homeblock setting below.
+    # This prevents a town from having townblocks stolen surrounding their homeblocks.
+    overclaiming_prevented_by_homeblock_radius: 'true'
+  
+    # When in use, requires that a town be of a minimum age in order to overclaim another town. This prevents new towns being made just to overclaim someone.
+    # Default is for 7 days.
+    town_age_requirement: 7d
+  
+    # When in use, requires an amount of time to pass before the /t takeoverclaim command can be used again.
+    command_cooldown: 0m
+  
+    # When true, when the towns involved in the overclaiming both have nations, the overclaiming town's nation will have to have the overclaimed town's nation declared as an enemy.
+    # Towns with no nation are not affected by this rule.
+    nations_required_to_be_enemies: 'false'
+  
+  
+  purchased_bonus_blocks:
+  
+    # Limits the maximum amount of bonus blocks a town can buy.
+    # This setting does nothing when town.max_purchased_blocks_uses_town_levels is set to true.
+    max_purchased_blocks: '9999'
+  
+    # When set to true, the town_level section of the config determines the maximum number of bonus blocks a town can purchase.
+    max_purchased_blocks_uses_town_levels: 'false'
+  
+  
+############################################################
+# +------------------------------------------------------+ #
+# |                   Spawning Settings                  | #
+# +------------------------------------------------------+ #
+############################################################
+  
+spawning:
+  
+  # Decides whether confirmations should appear if you spawn to an area with an associated cost.
+  spawn_cost_warnings: 'true'
+  
+  # If enabled, particles will appear around town, nation, outpost & jail spawns.
+  visualized_spawn_points_enabled: 'true'
+  
+  spawning_warmups:
+  
+    # If non zero it delays any spawn request by x seconds.
+    teleport_warmup_time: '3'
+  
+    # When set to true, if players are currently in a spawn warmup, moving will cancel their spawn.
+    movement_cancels_spawn_warmup: 'true'
+  
+    # When set to true, if players are damaged in any way while in a spawn warmup, their spawning will be cancelled.
+    damage_cancels_spawn_warmup: 'true'
+  
+  town_spawn:
+  
+    # Allow the use of /town spawn
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the town,
+    # when there is a war or peace.
+    allow_town_spawn: peace
+  
+    # Allow regular residents to use /town spawn [town] (TP to other towns if they are public).
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the town,
+    # when there is a war or peace.
+    allow_town_spawn_travel: 'true'
+  
+    # Allow regular residents to use /town spawn [town] to other towns in your nation.
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the town,
+    # when there is a war or peace.
+    allow_town_spawn_travel_nation: 'true'
+  
+    # Allow regular residents to use /town spawn [town] to other towns in a nation allied with your nation.
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the town,
+    # when there is a war or peace.
+    allow_town_spawn_travel_ally: 'true'
+  
+    # When set to true both nation and ally spawn travel will also require the target town to have their status set to public.
+    is_nation_ally_spawning_to_town_requiring_public_status: 'false'
+  
+    # When set to true, a player that is trusted by a town is allowed to spawn to the town as if they were a resident.
+    # Allows allows the residents of entire an town when that town is trusted by the town.
+    do_trusted_residents_count_as_residents: 'true'
+  
+    # When a resident joins a town, should they be prompted to use spawn to the town?
+    # This requires them to not already be standing in the town, and also to be able to use /t spawn and whatever costs may be associated with it.
+    are_new_residents_prompted_to_town_spawn: 'true'
+  
+    # Prevent players from using /town spawn while within unclaimed areas and/or enemy/neutral towns.
+    # Allowed options: unclaimed,enemy,neutral,outlaw
+    prevent_town_spawn_in: enemy,outlaw
+  
+    # When true, players will be allowed to spawn to peaceful/neutral towns in which they are considered enemies.
+    # Setting this to true will make town spawn points unsafe for private towns which are part of nations with enemies.
+    allow_enemies_spawn_to_peaceful_towns: 'false'
+  
+    spawning_cooldowns:
+  
+      # Number of seconds that must pass before a player can use /t spawn or /res spawn.
+      town_spawn_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player can use /t outpost.
+      outpost_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player of the same nation can use /t spawn.
+      nation_member_town_spawn_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player in an allied nation can use /t spawn.
+      nation_ally_town_spawn_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player who is not a member or ally of town can use /t spawn.
+      unaffiliated_town_spawn_cooldown_time: '3'
+  
+  nation_spawn:
+  
+    # If enabled, only allow the nation spawn to be set in the capital city.
+    force_nation_spawn_in_capital: 'true'
+  
+    # Allow the use of /nation spawn
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the nation,
+    # when there is a war or peace.
+    allow_nation_spawn: 'false'
+  
+    # Allow regular residents to use /nation spawn [nation] (TP to other nations if they are public).
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the nation,
+    # when there is a war or peace.
+    allow_nation_spawn_travel: peace
+  
+    # Allow regular residents to use /nation spawn [nation] to other nations allied with your nation.
+    # Valid values are: true, false, war, peace
+    # When war or peace is set, it is only possible to teleport to the nations,
+    # when there is a war or peace.
+    allow_nation_spawn_travel_ally: 'true'
+  
+    spawning_cooldowns:
+  
+      # Number of seconds that must pass before a player of the same nation can use /n spawn.
+      nation_member_nation_spawn_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player allied with the nation can use /n spawn.
+      nation_ally_nation_spawn_cooldown_time: '3'
+  
+      # Number of seconds that must pass before a player who is not a member or ally can use /n spawn.
+      unaffiliated_nation_spawn_cooldown_time: '3'
+  
+  respawning:
+  
+    # When true Towny will handle respawning, with town or resident spawns.
+    town_respawn: 'false'
+  
+    # Town respawn only happens when the player dies in the same world as the town's spawn point.
+    town_respawn_same_world_only: 'false'
+  
+    # When this is true, players will respawn to respawn anchors on death rather than their own town.
+    respawn_anchor_higher_precendence: 'false'
+  
+    respawn_protection:
+  
+      # When greater than 0s, the amount of time a player who has respawned is considered invulnerable.
+      # Invulnerable players who attack other players will lose their invulnerability.
+      # Invulnerable players who teleport after respawn will also lose their invulnerability.
+      time: 3s
+  
+      # If disabled, players will not be able to pickup items while under respawn protection.
+      allow_pickup: 'true'

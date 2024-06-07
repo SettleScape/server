@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: '1.7'
+  version: '1.9'
   
 prevent:
   
@@ -21,3 +21,18 @@ lang:
   you_cannot_spawn: You have not visited %s yet, so you cannot fast-travel there.
   you_cannot_join: '%s has not visited %s yet, so they cannot join the town.'
   you_discovered: You have discovered the town of %s.
+  
+towns:
+  
+  # A list of town names that players will be allowed to spawn to by default.
+  # If you want to have a server city accessible to all from the start, this is where you would put that town name.
+  default_towns: ''
+  
+discovery_commands:
+  
+  # When true the below commands will be run when a player discovers a town.
+  enabled: 'false'
+  
+  # When discovery commands are enabled, the list of commands that are ran when a player discovers a town for the firs time.
+  # Optionally you can use {playername} to use the player's name in the commands, or {townname} to use the town name which the player discovered.
+  commandlist: /some command,/commandusing {playername},/commandusing {townname}

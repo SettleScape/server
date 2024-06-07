@@ -1,40 +1,67 @@
-# Dynmap-Towny configuration
 dynamic-town-colors: true
+  
+  
 update:
-  period: 300
+  # Seconds between updating Towny information on the dynmap.
+  period: '300'
+  
+  
 layer:
+  
+  # The name of the Towny layer on dynmap.
   name: Towny
-  hidebydefault: false
-  layerprio: 2
-  minzoom: 0
-  showShops: true
-  showArenas: true
-  showEmbassies: true
-  showWilds: true
+  
+  # Is the Towny layer hidden by default?
+  hidebydefault: 'false'
+  
+  # Ordering priority in layer menu (low goes before high - default is 0)
+  layerprio: '2'
+  
+  # (optional) set minimum zoom level before layer is visible (0 = defalt, always visible)
+  minzoom: '0'
 visibility-by-town: true
 visibility-by-nation: true
 dynamic-nation-colors: true
-infowindow: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regionname%</h3>
-  <p style="margin:0">%board%</p> <hr/> <p style="margin:0"> <b>Founded:</b> %founded%
-  </p> <p style="margin:0"> <b>Mayor:</b> %playerowners% </p> <p style="margin:0">
-  <b>Nation:</b> %nation% </p> <hr/> <p style="margin:0"> <b>Bank:</b> %bank% </p>
-  <p style="margin:0"> <b>Upkeep:</b> %upkeep% </p> <p style="margin:0"> <b>Resident(s):</b>
-  %residentcount% </p> </div>
+  
+  
+infowindow:
+  
+  # Format for town popup.
+  town_info_window: <div class="infowindow"> <h3 style="font-size:large;margin:0">%regionname%</h3>
+    <p style="margin:0">%board%</p> <hr/> <p style="margin:0"> <b>Founded:</b> %founded%
+    </p> <p style="margin:0"> <b>Mayor:</b> %playerowners% </p> <p style="margin:0">
+    <b>Nation:</b> %nation% </p> <hr/> <p style="margin:0"> <b>Bank:</b> %bank% </p>
+    <p style="margin:0"> <b>Upkeep:</b> %upkeep% </p> <p style="margin:0"> <b>Resident(s):</b>
+    %residentcount% </p> </div>
+  
+  # What is shown in the info window's %nation% when a town has no nation.
+  nonationslug: ''
+  
+  
 regionstyle:
-  strokeColor: '#000000'
-  strokeOpacity: 0.75
-  strokeWeight: 3
-  fillColor: '#7F7F7F'
-  fillOpacity: 0.33
-  homeicon: default
-  capitalicon: bighouse
-  fillColorShops: '#FFFF00'
-  fillColorArenas: '#FF0000'
-  fillColorEmbassies: '#000000'
-  fillColorWilds: '#00FF00'
-  boost: false
-visibleregions: []
-hiddenregions: []
+  strokecolor: '#000000'
+  strokeopacity: '0.75'
+  strokeweight: '3'
+  fillcolor: '#7F7F7F'
+  fillopacity: '0.33'
+  boost: 'false'
+  
+  # Allowed icon names found here: https://github.com/webbukkit/dynmap/wiki/Using-Markers
+  icons:
+    homeicon: default
+    capitalicon: bighouse
+    outposticon: pin
+    ruinicon: warning
+  
+# Optional setting to limit which regions to show, by name - if commented out, all regions are shown.
+# To show all regions on a given world, add 'world:<worldname>' to the list.
+visibleregions: '[]'
+  
+# Optional setting to hide specific regions, by name.
+# To hide all regions on a given world, add 'world:<worldname>' to the list.
+hiddenregions: '[]'
+  
+  
 custstyle:
   customregion1:
     strokeColor: '#00FF00'
@@ -43,6 +70,8 @@ custstyle:
     strokeColor: '#007F00'
     y: 64
     boost: false
+  
+  
 nationstyle:
   NationOfBlue:
     strokeColor: '#0000FF'
@@ -50,7 +79,64 @@ nationstyle:
     boost: false
   _none_:
     homeicon: default
+  
+# Chat settings for use with TownyChat.
 chat:
-  sendlogin: false
-  sendquit: false
+  sendlogin: 'false'
+  sendquit: 'false'
   format: '&color;2[WEB] %playername%: &color;f%message%'
+  
+version:
+  # This is the current version.  Please do not edit.
+  version: 1.1.2
+  
+# Requires Player-Info-Is-Protected enabled in dynmap.
+player_visibility:
+  
+  # Allow all residents of a given town to see one another.
+  visibility-by-town: 'true'
+  
+  # Allow all residents of a given nation to see one another.
+  visibility-by-nation: 'true'
+  
+  
+townblock_colours:
+  shops:
+  
+    # Show shop plots with their own fill colour.
+    showshops: 'true'
+  
+    # The colour shops plots are filled with.
+    fillcolour: '#FFFF00'
+  arenas:
+  
+    # Show arena plots with their own fill colour.
+    showarenas: 'true'
+  
+    # The colour arena plots are filled with.
+    fillcolour: '#FF0000'
+  embassies:
+  
+    # Show embassy plots with their own fill colour.
+    showembassies: 'true'
+  
+    # The colour embassy plots are filled with.
+    fillcolour: '#000000'
+  wilds:
+  
+    # Show wilds plots with their own fill colour.
+    showwilds: 'true'
+  
+    # The colour wilds plots are filled with.
+    fillcolour: '#00FF00'
+  
+  
+dynamic_colours:
+  
+  # Use dynamic nation colors, which are set in-game by individual nations (using /t set mapcolor <colour>)
+  town_colours: 'true'
+  
+  # Use dynamic nation colors, which are set in-game by individual nations (using /n set mapcolor <colour>)
+  nation_colours: 'true'
+# The language file you wish to use
+language: english.yml

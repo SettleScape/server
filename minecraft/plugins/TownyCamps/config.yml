@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.45
+  version: 0.0.47
 # The language file you wish to use.
 # Available: en-US.yml, zh-CN.yml
 # You can add your own localization using the correct locale filename and placing
@@ -49,6 +49,17 @@ camps:
   
     # Are explosions disabled in camps?
     disable_explosion: 'true'
+  
+  
+  home_setting:
+  
+    # When enabled, player that have the specified permission node to use /set home, will be prompted to set their home via a Confirmation,
+    # when they create their Camps.
+    enabled: 'false'
+  
+    # This permission node will be tested for when a player creates a camp and home_setting has been enabled.
+    # If the player has this node they will receive a confirmation, which will cause the player to run /sethome, if they accept.
+    permission_node: essentials.sethome
   
   
 third_party:

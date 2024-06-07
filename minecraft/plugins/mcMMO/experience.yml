@@ -16,6 +16,7 @@ ExploitFix:
     PistonCheating: true
     SnowGolemExcavation: true
     PreventPluginNPCInteraction: true
+    PreventArmorStandInteraction: true
 Experience_Bars:
     Enable: true
     Update:
@@ -85,6 +86,18 @@ Experience_Bars:
         Enable: true
         Color: DARK_GREEN
         BarStyle: SEGMENTED_12
+    Crossbows:
+        Enable: true
+        Color: BLUE
+        BarStyle: SEGMENTED_6
+    Maces:
+        Enable: true
+        Color: BLUE
+        BarStyle: SEGMENTED_6
+    Tridents:
+        Enable: true
+        Color: BLUE
+        BarStyle: SEGMENTED_6
 Experience_Formula:
     Curve: LINEAR
     Linear_Values:
@@ -122,6 +135,23 @@ Experience_Formula:
         Multiplier: 0.5
     Nether_Portal:
         Multiplier: 1
+    Skill_Multiplier:
+        Maces: 1.0
+        Crossbows: 1.0
+        Tridents: 1.0
+        Swords: 1.0
+        Taming: 1.0
+        Acrobatics: 1.0
+        Excavation: 1.0
+        Herbalism: 1.0
+        Unarmed: 1.0
+        Woodcutting: 1.0
+        Mining: 1.0
+        Archery: 1.0
+        Axes: 1.0
+        Repair: 1.0
+        Fishing: 1.0
+        Alchemy: 1.0
 Diminished_Returns:
     Guaranteed_Minimum_Percentage: 0.05
     Enabled: false
@@ -139,6 +169,9 @@ Diminished_Returns:
         Repair: 20000
         Fishing: 20000
         Alchemy: 20000
+        Crossbows: 20000
+        Tridents: 20000
+        Maces: 20000
     Time_Interval: 10
 Conversion:
     Exp_Modifier: 1
@@ -156,6 +189,12 @@ Experience_Values:
         Potion_Stage_3: 60
         Potion_Stage_4: 120
         Potion_Stage_5: 0
+        Potion_Brewing:
+            Stage_1: 666
+            Stage_2: 1111
+            Stage_3: 1750
+            Stage_4: 2250
+            Stage_5: 0
     Archery:
         Distance_Multiplier: 0.025
     Fishing:
@@ -179,6 +218,8 @@ Experience_Values:
         Soul_Sand: 40
         Soul_Soil: 40
         Rooted_Dirt: 60
+        Mud: 80
+        Muddy_Mangrove_Roots: 90
     Woodcutting:
         Oak_Log: 70
         Spruce_Log: 80
@@ -216,6 +257,16 @@ Experience_Values:
         Warped_Wart_Block: 1
         Stripped_Crimson_Hyphae: 50
         Nether_Wart_Block: 1
+        Cherry_Log: 105
+        Stripped_Cherry_Log: 105
+        Stripped_Cherry_Wood: 70
+        Stripped_Mangrove_Log: 110
+        Stripped_Crimson_Stem: 50
+        Stripped_Warped_Stem: 50
+        Cherry_Wood: 105
+        Mangrove_Wood: 80
+        Mangrove_Log: 95
+        Mangrove_Roots: 10
     Herbalism:
         Bee_Nest: 200
         Sweet_Berry_Bush: 300
@@ -308,6 +359,10 @@ Experience_Values:
         Glow_Lichen: 200
         Cave_Vines_Plant: 90
         Big_Dripleaf: 140
+        Pitcher_Plant: 160
+        Pink_Petals: 10
+        Short_Grass: 10
+        Torchflower: 90
     Mining:
         Magma_Block: 30
         Tube_Coral_Block: 75
@@ -402,6 +457,15 @@ Experience_Values:
         Copper_Ore: 1400
         Smooth_Basalt: 300
         Amethyst_Block: 500
+        Sculk: 4
+        Sculk_Vein: 3
+        Sculk_Sensor: 6
+        Sculk_Catalyst: 10
+        Sculk_Shrieker: 12
+        Reinforced_Deepslate: 500
+        Packed_Mud: 30
+        Mud_Bricks: 40
+        Dripstone_Block: 35
     Repair:
         Base: 1000.0
         Wood: 0.6
@@ -455,6 +519,10 @@ Experience_Values:
             Bee: 100
             Goat: 250
             Axolotl: 600
+            Camel: 1300
+            Sniffer: 1500
+            Snifflet: 900
+            Frog: 900
     Combat:
         Multiplier:
             Animals: 1.0
@@ -527,6 +595,14 @@ Experience_Values:
             Glow_Squid: 1.5
             Goat: 1.5
             Axolotl: 1.75
+            Armadillo: 1.1
+            Allay: 0.2
+            Frog: 1.7
+            Warden: 6.0
+            Tadpole: 0.2
+            Sniffer: 1.1
+            Snifflet: 1.1
+            Camel: 1.2
 Fishing_ExploitFix_Options:
     MoveRange: 3
     OverFishLimit: 10

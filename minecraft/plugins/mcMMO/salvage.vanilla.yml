@@ -181,9 +181,37 @@ Salvageables:
         XpMultiplier: 0.5
     NETHERITE_CHESTPLATE:
         MaximumQuantity: 4
+        MinimumLevel: 100
+        XpMultiplier: 6
     NETHERITE_BOOTS:
         MaximumQuantity: 4
+        MinimumLevel: 100
+        XpMultiplier: 6
     NETHERITE_HELMET:
         MaximumQuantity: 4
+        MinimumLevel: 100
+        XpMultiplier: 6
     NETHERITE_LEGGINGS:
+        MaximumQuantity: 4
+        MinimumLevel: 100
+        XpMultiplier: 6
+    NETHERITE_SWORD:
+        MinimumLevel: 100
+        XpMultiplier: 0.5
+        MaximumQuantity: 4
+    NETHERITE_SHOVEL:
+        MinimumLevel: 100
+        XpMultiplier: 0.3
+        MaximumQuantity: 4
+    NETHERITE_PICKAXE:
+        MinimumLevel: 100
+        XpMultiplier: 1
+        MaximumQuantity: 4
+    NETHERITE_AXE:
+        MinimumLevel: 100
+        XpMultiplier: 1
+        MaximumQuantity: 4
+    NETHERITE_HOE:
+        MinimumLevel: 100
+        XpMultiplier: 0.5
         MaximumQuantity: 4

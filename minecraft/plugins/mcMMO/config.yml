@@ -39,6 +39,9 @@ General:
             Distance_Restrictions:
                 Restrict_Distance: false
                 Restricted_Radius: 256
+    PowerLevel:
+        Skill_Mastery:
+            Enabled: true
 Scoreboard:
     UseScoreboards: false
     Power_Level_Tags: false
@@ -359,6 +362,9 @@ Bonus_Drops:
         Cave_Vines: true
         Glow_Berries: true
         Cave_Vines_Plant: true
+        Pitcher_Plant: true
+        Torchflower: true
+        Pink_Petals: true
     Mining:
         Andesite: true
         Diorite: true
@@ -429,6 +435,7 @@ Bonus_Drops:
         Deepslate_Iron_Ore: true
         Cobbled_Deepslate: true
         Large_Amethyst_Bud: true
+        Quartz: true
     Woodcutting:
         Acacia_Wood: true
         Acacia_Log: true
@@ -451,6 +458,10 @@ Bonus_Drops:
         Crimson_Stem: true
         Crimson_Hyphae: true
         Stripped_Warped_Hyphae: true
+        Cherry_Wood: true
+        Cherry_Log: true
+        Mangrove_Wood: true
+        Mangrove_Log: true
     Smelting:
         Iron_Ingot: true
         Gold_Ingot: true

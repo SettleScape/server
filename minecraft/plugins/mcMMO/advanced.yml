@@ -185,6 +185,11 @@ Skills:
             MaxBonusLevel:
                 Standard: 100
                 RetroMode: 1000
+        VerdantBounty:
+            ChanceMax: 50.0
+            MaxBonusLevel:
+                Standard: 1000
+                RetroMode: 10000
     Mining:
         DoubleDrops:
             SilkTouch: true
@@ -238,8 +243,15 @@ Skills:
                 Rank_6: 3.0
                 Rank_7: 4.0
                 Rank_8: 4.0
+            Bonus_Drops:
+                Enabled: true
         SuperBreaker:
             AllowTripleDrops: true
+        MotherLode:
+            MaxBonusLevel:
+                Standard: 1000
+                RetroMode: 10000
+            ChanceMax: 50.0
     Repair:
         RepairMastery:
             MaxBonusPercentage: 200.0
@@ -453,3 +465,8 @@ Skills:
             MaxBonusLevel:
                 Standard: 100
                 RetroMode: 1000
+        CleanCuts:
+            ChanceMax: 50.0
+            MaxBonusLevel:
+                Standard: 1000
+                RetroMode: 10000

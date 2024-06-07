@@ -67,6 +67,7 @@ nomad:
 - towny.command.plot.group.*
 - towny.command.town.ranklist
 - towny.command.nation.ranklist
+- towny.command.resident.set.about
   
 # This section of permissions covers players who are members of a town.
 towns:

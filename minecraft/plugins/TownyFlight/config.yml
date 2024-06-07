@@ -1,4 +1,4 @@
-Version: 1.9.0
+Version: 1.10.2
   
 pluginPrefix: ''
   
@@ -27,6 +27,9 @@ language:
   
   # Message shown when a player has flight taken away by console.
   flightDeactivatedConsoleMsg: §cCommand§6 issued; §r
+  
+  # Message shown when a player has flight taken away because their tempflight ran out.
+  flightDeactivatedTimeMsg: 'You ran out of flight time. '
   
   # Message shown when a player lacks a permission node.
   noPermission: '§6Flight requires the §4Donor§6 subrank, which you can get here:
@@ -59,6 +62,15 @@ language:
   
   # The hover text shown on the free flight status screen component.
   statusScreenComponentHover: Flight enabled for everyone within this town's borders.
+  
+  # The message shown to the admin/console when temp flight is given to a player.
+  tempFlightGrantedToPlayer: '%s has had tempflight granted for %s.'
+  
+  # The message shown to the player when they receive temp flight.
+  youHaveReceivedTempFlight: You have been given %s of tempflight priviledges.
+  
+  # The message shown to the player when they run out of temp flight.
+  yourTempFlightHasExpired: Your tempflight priviledges have expired.
   
 #################
 #    Options    #
