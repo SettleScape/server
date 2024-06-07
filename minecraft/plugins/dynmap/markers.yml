@@ -420,66 +420,6 @@ sets:
         lines: {
             }
         layerprio: 2
-    outposts:
-        hide: false
-        circles: {
-            }
-        deficon: pin
-        areas: {
-            }
-        label: Outposts
-        markers:
-            djin:
-                world: world
-                markup: false
-                x: 3048.0
-                icon: pin
-                y: 65.0
-                z: 3791.0
-                label: Djin
-            shovel:
-                world: world
-                markup: false
-                x: 8004.0
-                icon: pin
-                y: 66.0
-                z: -2501.0
-                label: Temple of Shovel
-            kuiil:
-                world: world
-                markup: false
-                x: 6604.0
-                icon: pin
-                y: 65.0
-                z: 2665.0
-                label: Kuiil
-            omega:
-                world: world_the_end
-                markup: false
-                x: 1083.0
-                icon: pin
-                y: 74.0
-                z: -4.0
-                label: Omega
-            nelta:
-                world: world_nether
-                markup: false
-                x: 44.0
-                icon: portal
-                y: 64.0
-                z: 250.0
-                label: Nelta
-            serenisle:
-                world: world
-                markup: false
-                x: 3867.0
-                icon: pin
-                y: 65.0
-                z: 35.0
-                label: Serenity
-        lines: {
-            }
-        layerprio: 3
     markers:
         hide: true
         circles: {

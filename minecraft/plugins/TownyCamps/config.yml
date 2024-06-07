@@ -55,7 +55,7 @@ camps:
   
     # When enabled, player that have the specified permission node to use /set home, will be prompted to set their home via a Confirmation,
     # when they create their Camps.
-    enabled: 'false'
+    enabled: 'true'
   
     # This permission node will be tested for when a player creates a camp and home_setting has been enabled.
     # If the player has this node they will receive a confirmation, which will cause the player to run /sethome, if they accept.

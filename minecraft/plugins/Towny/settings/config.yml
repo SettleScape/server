@@ -787,7 +787,7 @@ global_nation_settings:
   capitals_cannot_be_neutral: 'false'
   
   # When set to true, the nation's NationLevel is determined by the number of towns in the nations, instead of the number of residents.
-  nation_level_is_determined_by_town_count_instead_of_resident_count: 'false'
+  nation_level_is_determined_by_town_count_instead_of_resident_count: 'true'
   
   # If higher than 0, it will limit how many towns can be joined into a nation.
   # Does not affect existing nations that are already over the limit.
@@ -1904,7 +1904,7 @@ bank:
   
   # If true, towns which have one or more bank plots will no longer be able to use their homeblock for withdraw/depositing.
   # Requires the above is_banking_limited_to_bank_plots to be true as well.
-  do_homeblocks_not_work_when_a_town_has_bank_plots: 'false'
+  do_homeblocks_not_work_when_a_town_has_bank_plots: 'true'
 war:
   nation_can_be_neutral: 'true'
   disallow_one_way_alliance: 'true'
@@ -2271,7 +2271,7 @@ claiming:
   
       # A comma separated list of biome names that will add up towards a townblock's un-claim-ability.
       # Use lower-case only or this will not work properly for you.
-      biomes: the_end,end_barrens,end_highlands,end_midlands,small_end_islands
+      biomes: ''
   
       # The max amount of combined unwanted biomes as a percent, that will be allowed in plots being claimed by towns.
       # For example, if a townblock would be more than X percent ocean it will not be able to be claimed.
