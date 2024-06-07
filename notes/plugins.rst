@@ -1,3 +1,4 @@
+# Plugins
 
 ========================  =========  ==========  ==========  ==========  ==========  ===
 Plugin                    Version    Released    Checked     Stuck 'til  Autoconfig  URL
@@ -47,7 +48,6 @@ WorldGuard                7.0.7      2021-03-06  ----------  1.19.X      Yes    
 WorldGuard-Towny          1.3.0      2022-07-22  2023-08-16              Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 ========================  =========  ==========  ==========  ==========  ==========  ===
 
-Notes:
-
+## Notes
 * Investigate FastAsyncWorldEdit
 * Sign-editing was removed in 1.20, so on that version of higher, EditableSign should be removed.
