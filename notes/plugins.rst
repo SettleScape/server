@@ -10,7 +10,7 @@ CommandLog                1.2         2016-07-09  ----------  Dead        ????  
 CoreProtect               22.4        2024-05-14  2024-06-06              No          https://spigotmc.org/resources/8631/updates
 CraftBook                 3.10.5      2021-12-01  ----------  1.18.X      Yes         https://dev.bukkit.org/projects/craftbook/files
 Dynmap                    3.7b5       2024-04-28  2024-06-06              Badly       https://dev.bukkit.org/projects/dynmap/files
-Dynmap-Towny              1.1.2       2024-05-02  2024-06-06              Badly       https://github.com/TownyAdvanced/Dynmap-Towny/releases
+Dynmap-Towny              1.1.2b      2024-06-07  2024-06-08              Badly       https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard         CUSTOM      2022-02-23  TODO                    ????        https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign              8.3.0       2023-10-31  2024-06-06              No          https://polymart.org/resource/127/updates
 EisenRadar                1.3.1       2018-08-24  ----------  PermaDead   ????        https://spigotmc.org/resources/50316/updates
