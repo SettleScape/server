@@ -39,6 +39,7 @@ TownyChat                 0.115       2025-02-19  2024-06-07              Yes   
 TownyCultures             2.0.1       2024-03-18  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
 TownyFlight               1.10.2      2024-04-19  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TownyHistories            0.0.31      2024-05-23  2024-06-07              Yes         https://discord.com/channels/321452088519426058/860682040680775711
+TownyMenus                0.0.9       2024-05-20  2024-06-08              ????        https://github.com/TownyAdvanced/TownyMenus/releases
 TownyWayPointTravel       1.9         2024-08-25  2024-06-07              Yes         https://discord.com/channels/321452088519426058/1009243497922056292
 Vault                     1.7.3       2020-07-17  2024-06-06  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft                 1.17.1      2021-08-16  ----------  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
