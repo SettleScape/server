@@ -959,7 +959,7 @@ plugin:
   
   # A blacklist used for validating town/nation names.
   # Names must be seperated by a comma: name1,name2
-  name_blacklist: ''
+  name_blacklist: 'arse,arsehole,ass,asshole,ballbag,bastard,bitch,bitchass,bollocks,bugger,cock,cocksucker,crap,cunt,damn,damned,dick,dickface,dickhead,dipshit,douche,douchebag,dumbass,dyke,fag,faggot,fuck,fucked,fucker,goddamn,goddamned,jackass,motherfucker,piss,prick,pus,puss,pussy,shit,shitter,shitass,shitface,shitfaced,shithead,slut,slutty,tit,tits,tosser,twat,wank,wanker,whore,whoreson'
   
   update_notifications:
   
