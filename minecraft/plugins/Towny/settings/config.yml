@@ -54,7 +54,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 1
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -96,7 +96,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 3
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -110,7 +110,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 3
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -124,7 +124,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 4
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -138,7 +138,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 4
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -152,7 +152,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 5
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -166,7 +166,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 5
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -180,7 +180,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 6
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
@@ -194,7 +194,7 @@ levels:
     mayorPostfix: ''
     townBlockLimit: 1
     upkeepModifier: 1.0
-    townOutpostLimit: 2
+    townOutpostLimit: 6
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
