@@ -958,12 +958,12 @@ plugin:
   debug_mode: 'false'
   
   # Info tool for server admins to use to query in game blocks and entities.
-  info_tool: WOODEN_PICKAXE
+  info_tool: STICK
   
   # Spams the player named in dev_name with all messages related to towny.
   dev_mode:
     enable: 'false'
-    dev_name: ElgarL
+    dev_name: LlmDl
   
   # If true this will cause the log to be wiped at every startup.
   reset_log_on_boot: 'true'
