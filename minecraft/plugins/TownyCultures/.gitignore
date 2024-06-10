@@ -1,3 +1,7 @@
 **
 !.gitignore
 !config.yml
+
+!lang
+!override
+!override/**

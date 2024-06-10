@@ -10,3 +10,7 @@
 !settings/config.yml
 !settings/townyperms.yml
 !**/ReadMe.md
+
+!settings/lang
+!settings/override
+!settings/override/**
