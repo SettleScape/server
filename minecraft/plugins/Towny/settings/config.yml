@@ -45,7 +45,7 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '0.0'
     peacefulCostMultiplier: '0.0'
-    bankCapModifier: '0.0'
+    bankCapModifier: '0.2'
   - numResidents: 1
     namePostfix: ' (Hermitage)'
     mayorPrefix: 'Hermit '
@@ -59,7 +59,7 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '0.6'
   - numResidents: 2
     namePostfix: ' (Hamlet)'
     mayorPrefix: 'Chief '
@@ -73,10 +73,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '0.8'
   - numResidents: 4
     namePostfix: ' (Village)'
-    mayorPrefix: 'Lord '
+    mayorPrefix: 'Chief '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -90,7 +90,7 @@ levels:
     bankCapModifier: '1.0'
   - numResidents: 8
     namePostfix: ' (Town)'
-    mayorPrefix: 'Baron '
+    mayorPrefix: 'Lord '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -101,10 +101,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.2'
   - numResidents: 12
     namePostfix: ' (Large Town)'
-    mayorPrefix: 'Viscount '
+    mayorPrefix: 'Lord '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -115,10 +115,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.4'
   - numResidents: 16
     namePostfix: ' (City)'
-    mayorPrefix: 'Count '
+    mayorPrefix: 'Commissioner '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -129,10 +129,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.6'
   - numResidents: 24
     namePostfix: ' (Large City)'
-    mayorPrefix: 'Marquess '
+    mayorPrefix: 'Commissioner '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -143,10 +143,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.8'
   - numResidents: 32
     namePostfix: ' (Metropolis)'
-    mayorPrefix: 'Duke '
+    mayorPrefix: 'Governor '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -157,10 +157,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '2.0'
   - numResidents: 48
     namePostfix: ' (Sprawling Metropolis)'
-    mayorPrefix: 'Grand Duke '
+    mayorPrefix: 'Governor '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -171,10 +171,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '2.2'
   - numResidents: 72
     namePostfix: ' (Megacity)'
-    mayorPrefix: 'Archduke '
+    mayorPrefix: 'President '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -185,10 +185,10 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '2.4'
   - numResidents: 108
     namePostfix: ' (Arcology)'
-    mayorPrefix: 'Prince '
+    mayorPrefix: 'President '
     townBlockBuyBonusLimit: 9999
     namePrefix: ''
     mayorPostfix: ''
@@ -199,7 +199,7 @@ levels:
     townBlockTypeLimits: {}
     resourceProductionModifier: '1.0'
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '2.6'
   
   # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
   # One note: You can add and remove levels from this list, but you should never remove the first numResidents: 0 block.
@@ -207,87 +207,101 @@ levels:
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
-    kingPrefix: ''
+    kingPrefix: 'Baron '
     capitalPrefix: ''
     numResidents: 1
+    nationBonusOutpostLimit: 1
+    namePostfix: ' (Barony)'
+    townBlockLimitBonus: 0
+    namePrefix: ''
+    nationZonesSize: 1
+    nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '0.6'
+  - kingPostfix: ''
+    capitalPostfix: ''
+    upkeepModifier: 1.0
+    kingPrefix: 'Count '
+    capitalPrefix: '(Capital) '
+    numResidents: 2
     nationBonusOutpostLimit: 2
-    namePostfix: ' (City-State)'
+    namePostfix: ' (County)'
+    townBlockLimitBonus: 0
+    namePrefix: ''
+    nationZonesSize: 1
+    nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '0.8'
+  - kingPostfix: ''
+    capitalPostfix: ''
+    upkeepModifier: 1.0
+    kingPrefix: 'Duke '
+    capitalPrefix: '(Capital) '
+    numResidents: 4
+    nationBonusOutpostLimit: 3
+    namePostfix: ' (Duchy)'
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '1.0'
     bankCapModifier: '1.0'
+  - kingPostfix: ''
+    capitalPostfix: ''
+    upkeepModifier: 1.0
+    kingPrefix: 'Archduke '
+    capitalPrefix: '(Capital) '
+    numResidents: 6
+    nationBonusOutpostLimit: 3
+    namePostfix: ' (Archduchy)'
+    townBlockLimitBonus: 0
+    namePrefix: ''
+    nationZonesSize: 1
+    nationTownUpkeepModifier: 1.0
+    peacefulCostMultiplier: '1.0'
+    bankCapModifier: '1.2'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
     kingPrefix: 'Prince '
     capitalPrefix: '(Capital) '
-    numResidents: 2
-    nationBonusOutpostLimit: 2
-    namePostfix: ' (Microstate)'
+    numResidents: 8
+    nationBonusOutpostLimit: 4
+    namePostfix: ' (Principality)'
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
-  - kingPostfix: ''
-    capitalPostfix: ''
-    upkeepModifier: 1.0
-    kingPrefix: 'Grand Prince '
-    capitalPrefix: '(Capital) '
-    numResidents: 10
-    nationBonusOutpostLimit: 2
-    namePostfix: ' (Small Nation)'
-    townBlockLimitBonus: 0
-    namePrefix: ''
-    nationZonesSize: 1
-    nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.4'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
     kingPrefix: 'King '
     capitalPrefix: '(Capital) '
-    numResidents: 20
-    nationBonusOutpostLimit: 2
-    namePostfix: ' (Nation)'
+    numResidents: 12
+    nationBonusOutpostLimit: 4
+    namePostfix: ' (Kingdom)'
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
-  - kingPostfix: ''
-    capitalPostfix: ''
-    upkeepModifier: 1.0
-    kingPrefix: 'High King '
-    capitalPrefix: '(Capital) '
-    numResidents: 30
-    nationBonusOutpostLimit: 2
-    namePostfix: ' (Large Nation)'
-    townBlockLimitBonus: 0
-    namePrefix: ''
-    nationZonesSize: 1
-    nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '1.7'
   - kingPostfix: ''
     capitalPostfix: ''
     upkeepModifier: 1.0
     kingPrefix: 'Emperor '
     capitalPrefix: '(Capital) '
-    numResidents: 40
-    nationBonusOutpostLimit: 2
+    numResidents: 16
+    nationBonusOutpostLimit: 5
     namePostfix: ' (Empire)'
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 1
     nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '1.0'
-    bankCapModifier: '1.0'
+    bankCapModifier: '2.0'
   
   
 ############################################################
@@ -625,7 +639,7 @@ global_town_settings:
   # When set above zero this is the largest number of residents a town can support before they join/create a nation.
   # Do not set this value to an amount less than the required_number_residents_join_nation below.
   # Do not set this value to an amount less than the required_number_residents_create_nation below.
-  maximum_number_residents_without_nation: '0'
+  maximum_number_residents_without_nation: '12'
   
   # The required number of residents in a town to join a nation
   # If the number is 0, towns will not require a certain amount of residents to join a nation
@@ -642,15 +656,15 @@ global_town_settings:
   farm_animals: PIG,COW,CHICKEN,SHEEP,MOOSHROOM,TURTLE
   
   # The maximum number of residents that can be joined to a town. Setting to 0 disables this feature.
-  max_residents_per_town: '9'
+  max_residents_per_town: '0'
   
   # The maximum number of residents that can be joined to a capital city.
   # Requires max_residents_capital_override to be above 0.
   # Uses the greater of max_residents_capital_override and max_residents_per_town.
-  max_residents_capital_override: '18'
+  max_residents_capital_override: '0'
   
   # If Towny should show players the townboard when they login
-  display_board_onlogin: 'false'
+  display_board_onlogin: 'true'
   
   # If set to true, Towny will prevent a townblock from being unclaimed while an outsider is within the townblock's boundaries.
   # When active this feature can cause a bit of lag when the /t unclaim command is used, depending on how many players are online.
@@ -670,23 +684,23 @@ global_town_settings:
   
   # If People should keep their inventories on death in a town.
   # Is not guaranteed to work with other keep inventory plugins!
-  keep_inventory_on_death_in_town: 'false'
+  keep_inventory_on_death_in_town: 'true'
   
   # If People should keep their inventories on death in their own town.
   # Is not guaranteed to work with other keep inventory plugins!
-  keep_inventory_on_death_in_own_town: 'false'
+  keep_inventory_on_death_in_own_town: 'true'
   
   # If People should keep their inventories on death in an allied town.
   # Is not guaranteed to work with other keep inventory plugins!
-  keep_inventory_on_death_in_allied_town: 'false'
+  keep_inventory_on_death_in_allied_town: 'true'
   
   # If People should keep their inventories on death in an arena townblock.
   # Is not guaranteed to work with other keep inventory plugins!
-  keep_inventory_on_death_in_arena: 'false'
+  keep_inventory_on_death_in_arena: 'true'
   
   # If People should keep their experience on death in a town.
   # Is not guaranteed to work with other keep experience plugins!
-  keep_experience_on_death_in_town: 'false'
+  keep_experience_on_death_in_town: 'true'
   
   # If People should keep their experience on death in an arena townblock.
   # Is not guaranteed to work with other keep experience plugins!
@@ -694,7 +708,7 @@ global_town_settings:
   
   # The Maximum price that a town can be put for sale at. This refers to the price that
   # someone could pay if they ran /t buytown, to buy a town that has been put up for sale.
-  max_buytown_price: '999999999'
+  max_buytown_price: '1000000.0'
   
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
@@ -809,7 +823,7 @@ global_nation_settings:
     show_notifications: 'true'
   
   # If Towny should show players the nationboard when they login.
-  display_board_onlogin: 'false'
+  display_board_onlogin: 'true'
   
   # If true the capital city of nation cannot be neutral/peaceful.
   capitals_cannot_be_neutral: 'false'
@@ -819,7 +833,7 @@ global_nation_settings:
   
   # If higher than 0, it will limit how many towns can be joined into a nation.
   # Does not affect existing nations that are already over the limit.
-  max_towns_per_nation: '5'
+  max_towns_per_nation: '0'
   
   # If higher than 0, it will limit how many residents can join a nation.
   # Does not affect existing nations that are already over the limit.
@@ -832,21 +846,21 @@ global_nation_settings:
     dark_purple:AA00AA, white:FFFFFF, gray:AAAAAA, dark_gray:555555, black:000000
   
   # The maximum amount of allies that a nation can have, set to -1 to have no limit.
-  max_allies: '5'
+  max_allies: '4'
   
   proximity:
   
     # The maximum number of townblocks a town's homeblock can be away from their nation capital's homeblock.
     # Automatically precludes towns from one world joining a nation in another world.
     # If the number is 0, towns will not require a proximity to a nation.
-    nation_proximity_to_capital_city: '333.0'
+    nation_proximity_to_capital_city: '0.0'
   
     # The maximum number of townblocks a town's homeblock can be away from other towns's homeblocks in the nation.
     # This setting is only used when nation_proximity_to_capital_city is above 0.
     # When used, and a town is out of range of their capital city, the remaining towns in the nation will be parsed,
     # if one of those towns' homeblocks is close enough to the town's homeblock, the town can remain in the nation.
     # Leave this setting at 0.0 in order to de-activate nations' towns granting further range for towns in the nation.
-    nation_proximity_to_other_nation_towns: '0.0'
+    nation_proximity_to_other_nation_towns: '180.0'
   
     # The maximum number of townblocks a town's homeblock can be away from their nation's capital's homeblock,
     # when the town is being allowed to go further out from the capital because of the nation_proximity_to_other_nation_towns
@@ -854,7 +868,7 @@ global_nation_settings:
     # This setting is what will stop a nation being able to go incredibly wide due to towns 'chaining' together.
     # This setting is only used when nation_proximity_to_capital_city is above 0.
     # Leave this setting at 0.0 in order to allow nations to chain towns together to go as wide as they like.
-    absolute_distance_from_capital: '0.0'
+    absolute_distance_from_capital: '360.0'
   
   # When disabled, nations will not be able to be created with or renamed to a name that contains numbers.
   # Disabling this option does not affect already created nations.
@@ -1510,16 +1524,16 @@ economy:
   nation_prefix: nation-
   
   # The cost of renaming a town.
-  town_rename_cost: '500'
+  town_rename_cost: '1000'
   
   # The cost of renaming a nation.
   nation_rename_cost: '1000'
   
   # The cost of setting a town's mapcolour.
-  town_set_mapcolour_cost: '0'
+  town_set_mapcolour_cost: '1000'
   
   # The cost of setting a nation's mapcolour.
-  nation_set_mapcolour_cost: '0'
+  nation_set_mapcolour_cost: '1000'
   
   spawn_travel:
   
