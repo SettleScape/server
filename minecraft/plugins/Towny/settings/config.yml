@@ -319,7 +319,7 @@ town:
   set_tag_automatically: 'true'
   
   # When set, all new Towns will have their map color set to this color. You must use a colour listed in the global_town_settings.allowed_map_colors setting below, ie aqua, azure, etc.
-  default_map_color: ''
+  default_map_color: 'gray'
   
   # Default tax settings for new towns.
   default_taxes:
@@ -526,7 +526,7 @@ new_world_settings:
     # This list is useful if you have a death chest plugin which could put a player's inventory inside chest
     # that is inside of a regenerating creeper explosion pit. For Example: By putting CHEST here you can 
     # prevent the chest from being overwritten by the dirt block that used to be there.
-    wild_revert_explosions_blocks_to_not_replace: ''
+    wild_revert_explosions_blocks_to_not_replace: 'CHEST'
   
   
 ############################################################
@@ -551,7 +551,7 @@ global_town_settings:
   saturation_regen:
   
     # When true players cannot become hungrier when in their own or an allied town.
-    also_prevent_saturation_loss: 'true'
+    also_prevent_saturation_loss: 'false'
   
   # Number of seconds that must pass before pvp can be toggled by a town.
   # Applies to residents of the town using /res toggle pvp, as well as
@@ -1005,7 +1005,7 @@ filters_colour_chat:
     # Kings require towny.command.nation.set.title.colours, mayors require towny.command.town.set.title.colours.
     # These nodes are not given out by the default townyperms.yml and must be added to the mayor and king section
     # when this setting has been made true.
-    does_adding_colour_codes_require_permission_node: 'false'
+    does_adding_colour_codes_require_permission_node: 'true'
   
   # See the Placeholders wiki page for list of PAPI placeholders.
   # https://github.com/TownyAdvanced/Towny/wiki/Placeholders
@@ -1041,16 +1041,16 @@ filters_colour_chat:
     no_town: '&f'
   
     # Used when two players are in the same town.
-    same_town: '&e'
+    same_town: '&a'
   
     # Used when two players are in the same nation.
     same_nation: '&b'
   
     # Used when the player is a member of one of your nation's conquered towns.
-    conquered_town: '&e'
+    conquered_town: '&d'
   
     # Used when two players' nations are allied.
-    ally: '&a'
+    ally: '&9'
   
     # Used when two players are enemies.
     enemy: '&c'
