@@ -41,34 +41,34 @@
   
 # The 'nomad' permissions are given to all players in all Towny worlds, townless and players who are part of a town.
 nomad:
-- towny.wild.*
+- towny.chat.general
+- towny.command.nation.allylist
+- towny.command.nation.enemylist
+- towny.command.nation.list
+- towny.command.nation.ranklist
+- towny.command.nation.townlist
+- towny.command.plot.group.*
+- towny.command.plot.perm
+- towny.command.plot.trust
+- towny.command.resident.outlawlist
+- towny.command.resident.set.about
+- towny.command.town.here
+- towny.command.town.join
+- towny.command.town.list
+- towny.command.town.new
+- towny.command.town.online
+- towny.command.town.ranklist
 - towny.command.towny.map
 - towny.command.towny.prices
-- towny.command.towny.tree
 - towny.command.towny.time
+- towny.command.towny.tree
 - towny.command.towny.universe
 - towny.command.towny.version
 - towny.command.towny.war
-- towny.command.town.online
-- towny.command.town.here
-- towny.command.town.new
-- towny.command.town.join
-- towny.command.town.list
-- towny.command.plot.perm
-- towny.command.nation.list
-- towny.command.nation.allylist
-- towny.command.nation.townlist
-- towny.command.nation.enemylist
 - towny.command.towny.war.hud
 - towny.town.resident
 - towny.town.spawn.public
-- towny.chat.general
-- towny.command.plot.trust
-- towny.command.plot.group.*
-- towny.command.town.ranklist
-- towny.command.nation.ranklist
-- towny.command.resident.set.about
-- towny.command.resident.outlawlist
+- towny.wild.*
   
 # This section of permissions covers players who are members of a town.
 towns:
@@ -76,30 +76,30 @@ towns:
   # 'default' is the permission set which is auto assigned to any normal town member.
   default:
   - towny.chat.town
-  - towny.command.resident.*
   - towny.command.plot.claim
-  - towny.command.plot.unclaim
   - towny.command.plot.forsale
   - towny.command.plot.notforsale
-  - towny.command.plot.toggle.*
   - towny.command.plot.set.perm
   - towny.command.plot.set.reset
-  - towny.command.town.online
-  - towny.command.town.leave
+  - towny.command.plot.toggle.*
+  - towny.command.plot.unclaim
+  - towny.command.resident.*
   - towny.command.town.deposit
-  - towny.town.spawn.town
+  - towny.command.town.leave
+  - towny.command.town.online
   - towny.command.town.reclaim
+  - towny.town.spawn.town
   
   # Mayors get these permissions in addition to the default set.
   mayor:
-  - towny.command.nation.new
+  - towny.claimed.owntown.*
   - towny.command.nation.join
   - towny.command.nation.leave
+  - towny.command.nation.new
   - towny.command.plot.*
   - towny.command.town.*
   - towny.command.towny.top
   - towny.outlaw.jailer
-  - towny.claimed.owntown.*
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
@@ -107,31 +107,30 @@ towns:
   
     # assistants are able to grant VIP and helper rank.
     assistant:
+    - towny.command.town.rank.sheriff
+    - towny.command.town.rank.builter
+    - towny.claimed.owntown
+    - towny.claimed.owntown.*
     - towny.command.plot.*
-    - towny.command.town.withdraw
+    - towny.command.town.buy
+    - towny.command.town.claim.town
     - towny.command.town.deposit
     - towny.command.town.invite.add
     - towny.command.town.kick
-    - towny.command.town.buy
-    - towny.command.town.claim.town
-    - towny.command.town.unclaim
-    - towny.command.town.toggle.*
-    - towny.claimed.owntown.switch.*
-    - towny.command.town.rank.sheriff
-    - towny.command.town.rank.builter
     - towny.command.town.outlaw
-    - towny.command.town.toggle.jail
+    - towny.command.town.toggle.*
+    - towny.command.town.unclaim
+    - towny.command.town.withdraw
     - towny.outlaw.jailer
-    - towny.claimed.owntown.*
   
     # Sheriff rank is able to jail other town members.
     sheriff:
+    - towny.command.town.jail
+    - towny.command.town.jail.list
     - towny.command.town.outlaw
     - towny.command.town.toggle.jail
-    - towny.outlaw.jailer
-    - towny.command.town.jail
     - towny.command.town.unjail
-    - towny.command.town.jail.list
+    - towny.outlaw.jailer
     builder:
     - towny.claimed.townowned.*
   
@@ -140,27 +139,26 @@ nations:
   
   # All nation members get these permissions.
   default:
-  - towny.chat.nation
   - towny.chat.alliance
-  - towny.command.nation.online
+  - towny.chat.nation
   - towny.command.nation.deposit
+  - towny.command.nation.online
   - towny.command.nation.spawn
-  - towny.nation.spawn.nation
   - towny.nation.spawn.ally
-  - towny.town.spawn.nation
+  - towny.nation.spawn.nation
   - towny.town.spawn.ally
+  - towny.town.spawn.nation
   
   # Kings get these permissions in addition to the default set.
   king:
   - towny.command.nation.*
-  - towny.command.nation.deposit.other
   ranks:
     assistant:
     - towny.command.nation.add
-    - towny.command.nation.invite.add
     - towny.command.nation.ally.*
-    - towny.command.nation.enemy
     - towny.command.nation.deposit.other
+    - towny.command.nation.enemy
+    - towny.command.nation.invite.add
   
 # Nodes that are given to players who are in a peaceful/neutral town or nation.
 peaceful:
