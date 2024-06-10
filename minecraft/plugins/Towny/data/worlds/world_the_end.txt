@@ -56,6 +56,8 @@ usingPlotManagementWildRegenBlocks=true
 PlotManagementWildRegenBlocks=BROWN_BED,GRAY_BED,MAGENTA_BED,BLUE_BED,WHITE_BED,BLACK_BED,CYAN_BED,LIGHT_BLUE_BED,YELLOW_BED,ORANGE_BED,GREEN_BED,PINK_BED,LIGHT_GRAY_BED,PURPLE_BED,LIME_BED
 # The list of blocks to regenerate. (if empty all blocks will regenerate)
 PlotManagementWildRegenBlockWhitelist=
+# The list of blocks to that should not get replaced when an explosion is reverted in the wilderness, ie: a chest placed in a creeper hole that is reverting.
+wildRegenBlocksToNotOverwrite=
 # The delay after which the explosion reverts will begin.
 usingPlotManagementWildRegenDelay=5
 

@@ -33,7 +33,7 @@ PlaceholderAPI            2.11.6      2024-05-21  2024-06-06              N/A   
 ProtocolLib               4.8.0       2021-07-09  ----------  CraftBook   ????        https://github.com/dmulloy2/ProtocolLib/releases
 Rankup                    3.14.4      2023-11-19  2024-06-06              ????        https://spigotmc.org/resources/76964/updates
 ShopChest                 1.13-SS     2022-04-18  2024-06-06  Old         No          https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
-Towny                     0.100.1.0   2024-01-10  TODO                    Yes         https://github.com/TownyAdvanced/Towny/releases
+Towny                     0.100.3.0   2024-06-09  ----------  1.19.X      Yes         https://github.com/TownyAdvanced/Towny/releases
 TownyCamps                0.0.47      2024-05-01  2024-06-07              Yes         https://discord.com/channels/321452088519426058/812838994105860106
 TownyChat                 0.115       2025-02-19  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyChat/releases
 TownyCultures             2.0.1       2024-03-18  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
