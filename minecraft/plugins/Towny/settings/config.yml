@@ -2159,14 +2159,14 @@ townblocktypes:
   - name: default
     cost: 0.0
     tax: 0.0
-    mapKey: +
+    mapKey: '-'
     itemUseIds: ''
     switchIds: ''
     allowedBlocks: ''
   - name: shop
     cost: 0.0
     tax: 0.0
-    mapKey: S
+    mapKey: $
     itemUseIds: ''
     switchIds: ''
     allowedBlocks: ''
@@ -2201,7 +2201,7 @@ townblocktypes:
   - name: jail
     cost: 0.0
     tax: 0.0
-    mapKey: J
+    mapKey: '#'
     itemUseIds: ''
     switchIds: ''
     allowedBlocks: ''
@@ -2270,24 +2270,24 @@ language:
 ascii_map_symbols:
   
   # The character used for the home symbol.
-  home: H
+  home: '@'
   
   # The character used for the outpost symbol.
-  outpost: O
+  outpost: '@'
   
   # The character used for plots which are forsale.
-  forsale: $
+  forsale: +
   
   # The character used for plots which are unclaimed.
   wilderness: '-'
   
   # The height of the map shown in /towny map and /res toggle map.
   # Minimum 7, maximum 18.
-  map_height: '11'
+  map_height: '8'
   
   # The width of the map shown in /towny map and /res toggle map.
   # Minimum 7, maximum 27, only odd numbers are accepted.
-  map_width: '11'
+  map_width: '27'
   
   
 ############################################################
