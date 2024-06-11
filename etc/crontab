@@ -6,7 +6,7 @@ MAILTO=minecraft
 
 ## 3AM
 0 3 * * * root /etc/scripts/update-system.sh
-0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/update/minecraft.bash
+0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/update/minecraft.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/beacon-plus.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/coreprotect.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/purge-old.bash
