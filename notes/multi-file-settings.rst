@@ -21,15 +21,15 @@ When changing View Distance, you need to edit the following:
 
   1. `view-distance` (Should be same as in `server.properties`.)
 
-  2. `mob-spawn-range` (Should generally be `1` less than `view-distance`.)
+  * `mob-spawn-range` (Should generally be `1` less than `view-distance`.)
 
-  3. `*range*` (Make sure these don't exceed the blocks loaded by the view-distance.)
+  * `*range*` (Make sure these don't exceed the blocks loaded by `view-distance`.)
 
 * `paper.yml`
 
-  2. `despawn-ranges`
+  * `despawn-ranges`
 
-    * `hard` (Should generally be equal to the blocks loaded by the view-distance.)
+    * `hard` (Should generally be equal to the blocks loaded by `view-distance`.)
 
 * `plugins/LagFixer/config.yml`
 
