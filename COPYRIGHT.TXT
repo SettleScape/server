@@ -3,12 +3,12 @@ Files in this repository for which the SettleScape Team owns the Copyright:
 apart from the `- ` at the start of each line.)
 - /**
 - !/minecraft/
-- **/.gitignore
+- /minecraft/**/.gitignore
 - /minecraft/*.png
 - /minecraft/*.svg
 - /minecraft/scripts/**
 - /minecraft/plugins/CraftBook/crafting-recipes.yml
-- /minecraft/plugins/dynmap/marers.yml
+- /minecraft/plugins/dynmap/markers.yml
 - /minecraft/plugins/dynmap/worlds.txt
 - /minecraft/plugins/dynmap/web/css/embedded.css
 - /minecraft/plugins/dynmap/web/css/override.css
