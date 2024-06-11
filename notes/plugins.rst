@@ -24,7 +24,7 @@ EssentialsX Spawn         2.20.1      2023-08-05  2023-08-16              No    
 Jobs Reborn               5.1.0.0     2022-06-24  TODO                    Partial     https://spigotmc.org/resources/4216/updates
 LagFixer                  1.3.15      2024-06-05  2024-06-06              Yes         https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.131     2024-06-02  2024-06-06              No          https://luckperms.net/download
-mcMMO                     2.1.218     2022-12-04  TODO                    Yes         https://spigotmc.org/resources/64348/updates
+mcMMO                     2.1.231     2024-03-10  ----------  1.18.X      Yes         https://spigotmc.org/resources/64348/updates
 mcMMO-Towny               1.0.1       2019-09-14  2024-06-06  Old         Yes         https://github.com/TownyAdvanced/mcMMO-Towny/releases
 MineableSpawners          3.1.5       2023-06-21  TODO        Dead,Forks  ????        https://github.com/itsfergydanny/MineableSpawners/forks
 NuVotifier                2.7.3       2021-07-06  2024-06-06  Old         ????        https://github.com/NuVotifier/NuVotifier/releases
