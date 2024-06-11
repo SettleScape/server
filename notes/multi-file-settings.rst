@@ -29,11 +29,15 @@ When changing View Distance, you need to edit the following:
 
   * `despawn-ranges`
 
-    * `hard` (Should generally be equal to the blocks loaded by `view-distance`.)
+    2. `hard` (Should generally be equal to the blocks loaded by `view-distance`.)
 
 * `plugins/LagFixer/config.yml`
 
   1. `view_distance` (Should be less than `view-distance`)
+
+* `scripts/upkeep/plugins/wborder.sh`
+
+  2. (The final number in the commands should be equal to or greater than the blocks loadd by `view-distance`.)
 
 Entity Collisions
 ================================================================================
