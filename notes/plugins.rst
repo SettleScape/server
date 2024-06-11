@@ -14,13 +14,13 @@ Dynmap-Towny              1.1.2b      2024-06-07  2024-06-08              Badly 
 Dynmap-WorldGuard         CUSTOM      2022-02-23  TODO                    ????        https://github.com/webbukkit/Dynmap-WorldGuard/releases
 EditableSign              8.3.0       2023-10-31  2024-06-06              No          https://polymart.org/resource/127/updates
 EisenRadar                1.3.1       2018-08-24  ----------  PermaDead   ????        https://spigotmc.org/resources/50316/updates
-EssentialsX               2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX AntiBuild     2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX Chat          2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX Discord       2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX Discord Link  2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX Protect       2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
-EssentialsX Spawn         2.20.1      2023-08-05  2023-08-16              No          https://essentialsx.net/downloads.html
+EssentialsX               2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX AntiBuild     2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX Chat          2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX Discord       2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX Discord Link  2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX Protect       2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
+EssentialsX Spawn         2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
 Jobs Reborn               5.1.0.0     2022-06-24  TODO                    Partial     https://spigotmc.org/resources/4216/updates
 LagFixer                  1.3.15      2024-06-05  2024-06-06              Yes         https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.131     2024-06-02  2024-06-06              No          https://luckperms.net/download
