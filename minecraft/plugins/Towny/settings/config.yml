@@ -664,7 +664,7 @@ global_town_settings:
   max_residents_capital_override: '0'
   
   # If Towny should show players the townboard when they login
-  display_board_onlogin: 'true'
+  display_board_onlogin: 'false'
   
   # If set to true, Towny will prevent a townblock from being unclaimed while an outsider is within the townblock's boundaries.
   # When active this feature can cause a bit of lag when the /t unclaim command is used, depending on how many players are online.
@@ -823,7 +823,7 @@ global_nation_settings:
     show_notifications: 'true'
   
   # If Towny should show players the nationboard when they login.
-  display_board_onlogin: 'true'
+  display_board_onlogin: 'false'
   
   # If true the capital city of nation cannot be neutral/peaceful.
   capitals_cannot_be_neutral: 'false'
@@ -2090,7 +2090,7 @@ town_ruining:
     ruins_become_open: 'true'
   
     # If this is true, when a town becomes a ruin, and they are a member of a nation, any money in the town bank will be deposited to the nation bank.
-    town_bank_is_sent_to_nation: 'false'
+    town_bank_is_sent_to_nation: 'true'
   
     # If this is true, when a town becomes a ruin, every hour more and more of their plots will have their permissions turned to allow
     # build, destroy, switch, itemuse to on. This will affect the newest claims first and progress until the first claims made are opened up
