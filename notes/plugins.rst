@@ -37,7 +37,7 @@ Towny                     0.100.3.1   2024-06-17  ----------  1.19.X      Yes   
 TownyCamps                0.0.47      2024-05-01  2024-06-07              Yes         https://discord.com/channels/321452088519426058/812838994105860106
 TownyChat                 0.115       2025-02-19  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyChat/releases
 TownyCultures             2.0.1       2024-03-18  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyCultures/releases
-TownyFlight               1.10.2      2024-04-19  2024-06-07              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
+TownyFlight               1.11.0      2024-06-17  2024-06-20              Yes         https://github.com/TownyAdvanced/TownyFlight/releases
 TownyHistories            0.0.31      2024-05-23  2024-06-07              Yes         https://discord.com/channels/321452088519426058/860682040680775711
 TownyMenus                0.0.9       2024-05-20  2024-06-08              ????        https://github.com/TownyAdvanced/TownyMenus/releases
 TownyWayPointTravel       1.9         2024-08-25  2024-06-07              Yes         https://discord.com/channels/321452088519426058/1009243497922056292
