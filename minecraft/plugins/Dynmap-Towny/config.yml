@@ -32,7 +32,7 @@ infowindow:
     </p> <p style="margin:0"> <b>Mayor:</b> %playerowners% </p> <b>Resident(s):</b>
     %residentcount% </p> <hr/> <p style="margin:0"> <b>Bank:</b> %bank% </p> <p style="margin:0">
     <b>Upkeep:</b> %upkeep% </p> <p style="margin:0"> <hr/> <p style="margin:0"> <b>Nation:</b>
-    %nation% </p> </div>
+    %nation% </p> <b>Culture:</b> %culture% </p> </div>
   
   # What is shown in the info window's %nation% when a town has no nation.
   nonationslug: None
