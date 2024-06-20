@@ -74,6 +74,7 @@ permissions:
 - shopchest.remove.other
 - shopchest.create.admin
 - shopchest.remove.admin
+- towny.admin
 
 # Misc (Unevaluated)
 #-------------------------------------------------------------------------------
