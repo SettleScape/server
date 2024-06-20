@@ -10,7 +10,7 @@ main:
     permission: lagfixer.command
     aliases:
     - lf
-  bStats: true
+  bStats: false
 modules:
   CustomAi:
     enabled: true
@@ -206,7 +206,7 @@ modules:
     worlds:
     - '*'
     values:
-      alerts: true
+      alerts: false
       ticks_limit:
         redstone: 1100
         piston: 50
@@ -220,7 +220,7 @@ modules:
         - GRAVEL
       click_cooldown: 1500
   InstantLeafDecay:
-    enabled: true
+    enabled: false
     worlds:
     - world
     - world_nether
