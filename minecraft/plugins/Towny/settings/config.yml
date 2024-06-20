@@ -41,10 +41,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 0.0
     townOutpostLimit: 0
-    debtCapModifier: '0.0'
+    debtCapModifier: '0.2'
     townBlockTypeLimits: {}
     resourceProductionModifier: '0.0'
-    peacefulCostMultiplier: '0.0'
+    peacefulCostMultiplier: '0.2'
     bankCapModifier: '0.2'
   - numResidents: 1
     namePostfix: ' (Hermitage)'
@@ -55,10 +55,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 1
-    debtCapModifier: '1.0'
+    debtCapModifier: '0.6'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '0.1'
+    peacefulCostMultiplier: '0.6'
     bankCapModifier: '0.6'
   - numResidents: 2
     namePostfix: ' (Hamlet)'
@@ -69,10 +69,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 2
-    debtCapModifier: '1.0'
+    debtCapModifier: '0.8'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '0.2'
+    peacefulCostMultiplier: '0.8'
     bankCapModifier: '0.8'
   - numResidents: 4
     namePostfix: ' (Village)'
@@ -85,7 +85,7 @@ levels:
     townOutpostLimit: 2
     debtCapModifier: '1.0'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
+    resourceProductionModifier: '0.4'
     peacefulCostMultiplier: '1.0'
     bankCapModifier: '1.0'
   - numResidents: 8
@@ -97,10 +97,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 3
-    debtCapModifier: '1.0'
+    debtCapModifier: '1.2'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '0.8'
+    peacefulCostMultiplier: '1.2'
     bankCapModifier: '1.2'
   - numResidents: 12
     namePostfix: ' (Large Town)'
@@ -111,10 +111,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 3
-    debtCapModifier: '1.0'
+    debtCapModifier: '1.4'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '1.2'
+    peacefulCostMultiplier: '1.4'
     bankCapModifier: '1.4'
   - numResidents: 16
     namePostfix: ' (City)'
@@ -125,10 +125,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 4
-    debtCapModifier: '1.0'
+    debtCapModifier: '1.6'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '1.6'
+    peacefulCostMultiplier: '1.6'
     bankCapModifier: '1.6'
   - numResidents: 24
     namePostfix: ' (Large City)'
@@ -139,10 +139,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 4
-    debtCapModifier: '1.0'
+    debtCapModifier: '1.8'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '2.4'
+    peacefulCostMultiplier: '1.8'
     bankCapModifier: '1.8'
   - numResidents: 32
     namePostfix: ' (Metropolis)'
@@ -153,10 +153,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 5
-    debtCapModifier: '1.0'
+    debtCapModifier: '2.0'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '3.2'
+    peacefulCostMultiplier: '2.0'
     bankCapModifier: '2.0'
   - numResidents: 48
     namePostfix: ' (Sprawling Metropolis)'
@@ -167,10 +167,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 5
-    debtCapModifier: '1.0'
+    debtCapModifier: '2.2'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '4.8'
+    peacefulCostMultiplier: '2.2'
     bankCapModifier: '2.2'
   - numResidents: 72
     namePostfix: ' (Megacity)'
@@ -181,10 +181,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 6
-    debtCapModifier: '1.0'
+    debtCapModifier: '2.4'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '7.2'
+    peacefulCostMultiplier: '2.4'
     bankCapModifier: '2.4'
   - numResidents: 108
     namePostfix: ' (Arcology)'
@@ -195,10 +195,10 @@ levels:
     townBlockLimit: 1
     upkeepModifier: 1.0
     townOutpostLimit: 6
-    debtCapModifier: '1.0'
+    debtCapModifier: '2.6'
     townBlockTypeLimits: {}
-    resourceProductionModifier: '1.0'
-    peacefulCostMultiplier: '1.0'
+    resourceProductionModifier: '10.8'
+    peacefulCostMultiplier: '2.6'
     bankCapModifier: '2.6'
   
   # Guide On How to Configure: https://github.com/TownyAdvanced/Towny/wiki/How-Towny-Works#configuring-town_level-and-nation_level
@@ -206,7 +206,7 @@ levels:
   nation_level:
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 0.6
     kingPrefix: 'Baron '
     capitalPrefix: ''
     numResidents: 1
@@ -214,13 +214,13 @@ levels:
     namePostfix: ' (Barony)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
-    nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    nationZonesSize: 4
+    nationTownUpkeepModifier: 3.0
+    peacefulCostMultiplier: '0.6'
     bankCapModifier: '0.6'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 0.8
     kingPrefix: 'Count '
     capitalPrefix: '(Capital) '
     numResidents: 2
@@ -228,9 +228,23 @@ levels:
     namePostfix: ' (County)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
+    nationTownUpkeepModifier: 2.0
+    peacefulCostMultiplier: '0.8'
+    bankCapModifier: '0.8'
+  - kingPostfix: ''
+    capitalPostfix: ''
+    upkeepModifier: 0.8
+    kingPrefix: 'Count '
+    capitalPrefix: '(Capital) '
+    numResidents: 3
+    nationBonusOutpostLimit: 2
+    namePostfix: ' (County)'
+    townBlockLimitBonus: 0
+    namePrefix: ''
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    peacefulCostMultiplier: '0.8'
     bankCapModifier: '0.8'
   - kingPostfix: ''
     capitalPostfix: ''
@@ -242,13 +256,13 @@ levels:
     namePostfix: ' (Duchy)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '1.0'
     bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 1.2
     kingPrefix: 'Archduke '
     capitalPrefix: '(Capital) '
     numResidents: 6
@@ -256,13 +270,13 @@ levels:
     namePostfix: ' (Archduchy)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    peacefulCostMultiplier: '1.2'
     bankCapModifier: '1.2'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 1.4
     kingPrefix: 'Prince '
     capitalPrefix: '(Capital) '
     numResidents: 8
@@ -270,13 +284,13 @@ levels:
     namePostfix: ' (Principality)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    peacefulCostMultiplier: '1.4'
     bankCapModifier: '1.4'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 1.7
     kingPrefix: 'King '
     capitalPrefix: '(Capital) '
     numResidents: 12
@@ -284,13 +298,13 @@ levels:
     namePostfix: ' (Kingdom)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    peacefulCostMultiplier: '1.7'
     bankCapModifier: '1.7'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.0
+    upkeepModifier: 2.0
     kingPrefix: 'Emperor '
     capitalPrefix: '(Capital) '
     numResidents: 16
@@ -298,9 +312,9 @@ levels:
     namePostfix: ' (Empire)'
     townBlockLimitBonus: 0
     namePrefix: ''
-    nationZonesSize: 1
+    nationZonesSize: 4
     nationTownUpkeepModifier: 1.0
-    peacefulCostMultiplier: '1.0'
+    peacefulCostMultiplier: '2.0'
     bankCapModifier: '2.0'
   
   
@@ -813,7 +827,7 @@ global_nation_settings:
     only_capitals: 'false'
   
     # Amount of buffer added to nation zone width surrounding capitals only. Creates a larger buffer around nation capitals.
-    capital_bonus_size: '0'
+    capital_bonus_size: '2'
   
     # When set to true, nation zones are disabled during the the Towny war types.
     war_disables: 'false'
@@ -887,7 +901,7 @@ plugin:
   
     # Flatfile backup settings.
     daily_backups: 'true'
-    backups_are_deleted_after: 4d
+    backups_are_deleted_after: 7d
   
     # Valid entries are: tar, tar.gz, zip, or none for no backup.
     flatfile_backup_type: tar.gz
@@ -1474,14 +1488,14 @@ resident_settings:
   # will be inherited according to the order_of_mayoral_succession list in this config.
   delete_old_residents:
     enable: 'false'
-    deleted_after_time: 180d
+    deleted_after_time: 365d
     delete_economy_account: 'false'
   
     # When true only residents who have no town will be deleted.
     delete_only_townless: 'false'
   
     # When true players will be removed from their town and become a nomad instead of being fully deleted.
-    only_remove_town: 'false'
+    only_remove_town: 'true'
   
   # The name of the town a resident will automatically join when he first registers.
   default_town_name: ''
@@ -1490,7 +1504,7 @@ resident_settings:
   deny_bed_use: 'false'
   
   # The default resident about text, shown in the resident's status screen.
-  default_about: /res set about [msg]
+  default_about: ''
   
   
 ############################################################
@@ -1723,10 +1737,10 @@ economy:
     max_town_tax_percent_amount: '1000'
   
     # Maximum tax percentage allowed when taxing by percentages for nations.
-    max_nation_tax_percent: '25'
+    max_nation_tax_percent: '10'
   
     # The maximum amount of money that can be taken from a balance when using a percent tax, this is the default for all new nations.
-    max_nation_tax_percent_amount: '10000'
+    max_nation_tax_percent_amount: '1000'
   
     # When true, a nation's capital will pay the nation tax from the capital's town bank.
     # This feature is a bit redundant because the king can withdraw from both banks anyways,
@@ -1735,7 +1749,7 @@ economy:
   
     # The server's daily charge on each nation. If a nation fails to pay this upkeep
     # all of it's member town are kicked and the Nation is removed.
-    price_nation_upkeep: '50.0'
+    price_nation_upkeep: '27.4'
   
     # Uses the total number of plots which a nation has across all of its towns to determine upkeep
     # instead of nation_pertown_upkeep and instead of nation level (number of residents.)
@@ -1747,7 +1761,7 @@ economy:
     nation_pertown_upkeep: 'true'
   
     # If set to true, the per-town-upkeep system will be modified by the Nation Levels' upkeep modifiers.
-    nation_pertown_upkeep_affected_by_nation_level_modifier: 'false'
+    nation_pertown_upkeep_affected_by_nation_level_modifier: 'true'
   
     # The server's daily charge on each town. If a town fails to pay this upkeep
     # all of it's residents are kicked and the town is removed.
@@ -1761,10 +1775,10 @@ economy:
     town_plotbased_upkeep_affected_by_town_level_modifier: 'true'
   
     # If set to any amount over zero, if a town's plot-based upkeep totals less than this value, the town will pay the minimum instead.
-    town_plotbased_upkeep_minimum_amount: '50.0'
+    town_plotbased_upkeep_minimum_amount: '27.4'
   
     # If set to any amount over zero, if a town's plot-based upkeep totals more than this value, the town will pay the maximum instead.
-    town_plotbased_upkeep_maximum_amount: '500.0'
+    town_plotbased_upkeep_maximum_amount: '328.5'
   
     # The server's daily charge on a town which has claimed more townblocks than it is allowed.
     price_town_overclaimed_upkeep_penalty: '10.0'
@@ -1785,11 +1799,11 @@ economy:
   
     # If enabled, and a town tax is set to a negative amount and is a fixed amount (not percentage,)
     # it will result in every resident being paid by the town bank (if the town can afford it.)
-    allow_negative_town_tax: 'false'
+    allow_negative_town_tax: 'true'
   
     # If enabled, and a nation tax is set to a negative amount and is a fixed amount (not percentage,)
     # it will result in every town in the nation being paid by the nation bank (if the nation can afford it.)
-    allow_negative_nation_tax: 'false'
+    allow_negative_nation_tax: 'true'
   
   # The Bankruptcy system in Towny will make it so that when a town cannot pay their upkeep costs,
   # rather than being deleted the towns will go into debt. Debt is capped based on the Town's costs
@@ -1822,14 +1836,14 @@ economy:
       # When true the debt_cap.override price will be multiplied by the debtCapModifier in the town_level
       # section of the config. (Ex: debtCapModifier of 3.0 and debt_cap.override of 1000.0 would set 
       # a debtcap of 3.0 x 1000 = 3000.
-      debt_cap_uses_town_levels: 'false'
+      debt_cap_uses_town_levels: 'true'
   
       # When true a town will only be allowed to be bankrupt for a specific number of days, before they will be deleted,
       # requires delete_towns_that_reach_debt_cap to be true.
       debt_cap_uses_fixed_days: 'false'
   
       # When debt_cap_uses_fixed_days is set to true, how many days will a town be allowed to be bankrupt?
-      allowed_days: '7'
+      allowed_days: '28'
   
     upkeep:
   
@@ -1901,16 +1915,16 @@ jail:
     is_allowing_bail: 'true'
   
     # Amount that bail costs for outlaw or POW arrests.
-    bail_amount: '100'
+    bail_amount: '1000'
   
     # Max bail cost that a mayor can set.
-    bailmax_amount: '1000'
+    bailmax_amount: '10000'
   
     # Amount that bail costs for Town mayors if captured.
-    bail_amount_mayor: '500'
+    bail_amount_mayor: '3333'
   
     # Amount that bail costs for Nation kings if captured.
-    bail_amount_king: '1000'
+    bail_amount_king: '10000'
   
   # Amount of potential jailed players per town, set to -1 to disable.
   max_jailed_count: '-1'
@@ -1938,7 +1952,7 @@ jail:
   prevent_newly_jailed_players_logging_out: 'false'
   
   # How long do new players have to be on the server before they can be jailed?
-  new_player_immunity: 1h
+  new_player_immunity: 24h
   
   # Most types of unjailing result in a player being teleported when they are freed.
   # Setting this to false will prevent that teleporting, resulting in the player not being teleported when they are freed.
@@ -1966,17 +1980,17 @@ war:
   disallow_one_way_alliance: 'true'
   economy:
     enemy:
-      place_flag: '1000'
-      defended_attack: '1000'
-    townblock_won: '100'
-    homeblock_won: '1000'
+      place_flag: '500'
+      defended_attack: '500'
+    townblock_won: '500'
+    homeblock_won: '5000'
   event:
     warning_delay: '30'
     towns_are_neutral: 'false'
     enemy:
       only_attack_borders: 'false'
     plots:
-      healable: 'false'
+      healable: 'true'
       firework_on_attacked: 'true'
     remove_on_monarch_death: 'false'
     allow_block_griefing: 'false'
@@ -1984,9 +1998,9 @@ war:
       town_block_hp: '50'
       home_block_hp: '100'
     eco:
-      base_spoils: '100.0'
-      wartime_town_block_loss_price: '100.0'
-      price_death_wartime: '100.0'
+      base_spoils: '500.0'
+      wartime_town_block_loss_price: '500.0'
+      price_death_wartime: '500.0'
     costs_townblocks: 'false'
     winner_takes_ownership_of_townblocks: 'false'
     winner_takes_ownership_of_town: 'false'
@@ -2462,7 +2476,7 @@ claiming:
   
     # When true, when the towns involved in the overclaiming both have nations, the overclaiming town's nation will have to have the overclaimed town's nation declared as an enemy.
     # Towns with no nation are not affected by this rule.
-    nations_required_to_be_enemies: 'false'
+    nations_required_to_be_enemies: 'true'
   
   
   purchased_bonus_blocks:

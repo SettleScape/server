@@ -114,3 +114,42 @@ This one is weird, in that the same setting is in the same file twice.
 
   * `heal-cooldown`
   * `command-cooldowns`
+
+Nation Prices & Upkeep
+================================================================================
+
+* `plugins/Towny/settings/config.yml`
+
+  * `price_new_nation` (Should be some multiple of `price_new_town`.)
+  * `nation_pertown_upkeep` (Should be true.)
+  * `nationTownUpkeepModifier` (Should be set so that the effective `price_nation_upkeep * numResidents` is never lower than `price_new_nation / 365.24` -- players should be able to afford to pay for a nation at least once a year.)
+  * `price_nation_upkeep` (Should be equal to `town_plotbased_upkeep_minimum_amount`.)
+  * `bail_amount_king` (Should be the same multiple of `bail_amount_mayor` as `price_new_nation` is of `price_new_town`)
+  * `bailmax_amount` (Should be `bail_amount_king` -- a king's ransom.)
+
+Town Prices & Upkeep
+================================================================================
+
+* `plugins/Towny/settings/config.yml`
+
+  * `price_new_town`
+  * `max_nation_conquered_tax`
+  * `price_outpost`
+  * `price_reclaim_ruined_town`
+  * `town_plotbased_upkeep_minimum_amount` (Should be divided by `365.25` -- players should be able to afford to pay for a town at least once a year.)
+  * `bail_amount_mayor` (Should be some multiple of `bail_amount`.)
+
+Plot Prices & Upkeep
+================================================================================
+
+* `plugins/Towny/settings/config.yml`
+
+  * `price_purchased_bonus_townblock`
+  * `bail_amount`
+  * `default_nation_conquered_tax`
+  * `max_price_claim_townblock`
+  * `price_claim_townblock_refund` (Should be divided by `-2` to discourage abusing reclaims to avoid paying for an outpost.)
+  * `price_purchased_bonus_townblock_max_price`
+  * `price_town_merge`
+  * `takeoverclaim.price`
+  * `town_plotbased_upkeep` (Should be `true`.)
