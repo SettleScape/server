@@ -160,3 +160,11 @@ Plot Prices & Upkeep
   * `price_town_merge`
   * `takeoverclaim.price`
   * `town_plotbased_upkeep` (Should be `true`.)
+
+Town Plot Limits
+================================================================================
+
+* `plugins/Towny/settings/config.yml`
+
+  * `townBlockBuyBonusLimit`
+  * `max_buytown_price` (Should be `townBlockBuyBonusLimit * price_purchased_bonus_townblock`)

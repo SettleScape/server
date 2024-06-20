@@ -722,11 +722,11 @@ global_town_settings:
   
   # The Maximum price that a town can be put for sale at. This refers to the price that
   # someone could pay if they ran /t buytown, to buy a town that has been put up for sale.
-  max_buytown_price: '1000000.0'
+  max_buytown_price: '9999999.0'
   
   # Maximum amount that a town can set their plot, embassy, shop, etc plots' prices to.
   # Setting this higher can be dangerous if you use Towny in a mysql database. Large numbers can become shortened to scientific notation. 
-  maximum_plot_price_cost: '1000000.0'
+  maximum_plot_price_cost: '99999.0'
   
   # maximum number of plots any single resident can own
   max_plots_per_resident: '9999'
