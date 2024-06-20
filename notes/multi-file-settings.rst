@@ -39,6 +39,13 @@ When changing View Distance, you need to edit the following:
 
   2. (The final number in the commands should be equal to or greater than the blocks loadd by `view-distance`.)
 
+* `plugins/Towny/settings/config.yml` (All values should be the number of plots that equal `view-distance`.)
+
+  * `min_distance_between_homeblocks`
+  * `min_distance_for_outpost_from_plot`
+  * `min_plot_distance_from_town_plot`
+  * `nationZonesSize` 
+
 Entity Collisions
 ================================================================================
 
