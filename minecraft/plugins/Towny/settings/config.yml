@@ -206,7 +206,7 @@ levels:
   nation_level:
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 0.6
+    upkeepModifier: 3.0
     kingPrefix: 'Baron '
     capitalPrefix: ''
     numResidents: 1
@@ -215,12 +215,12 @@ levels:
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 10
-    nationTownUpkeepModifier: 3.0
+    nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '0.6'
     bankCapModifier: '0.6'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 0.8
+    upkeepModifier: 2.0
     kingPrefix: 'Count '
     capitalPrefix: '(Capital) '
     numResidents: 2
@@ -229,12 +229,12 @@ levels:
     townBlockLimitBonus: 0
     namePrefix: ''
     nationZonesSize: 10
-    nationTownUpkeepModifier: 2.0
+    nationTownUpkeepModifier: 1.0
     peacefulCostMultiplier: '0.8'
     bankCapModifier: '0.8'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 0.8
+    upkeepModifier: 1.0
     kingPrefix: 'Count '
     capitalPrefix: '(Capital) '
     numResidents: 3
@@ -262,7 +262,7 @@ levels:
     bankCapModifier: '1.0'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.2
+    upkeepModifier: 1.0
     kingPrefix: 'Archduke '
     capitalPrefix: '(Capital) '
     numResidents: 6
@@ -276,7 +276,7 @@ levels:
     bankCapModifier: '1.2'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.4
+    upkeepModifier: 1.0
     kingPrefix: 'Prince '
     capitalPrefix: '(Capital) '
     numResidents: 8
@@ -290,7 +290,7 @@ levels:
     bankCapModifier: '1.4'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 1.7
+    upkeepModifier: 1.0
     kingPrefix: 'King '
     capitalPrefix: '(Capital) '
     numResidents: 12
@@ -304,7 +304,7 @@ levels:
     bankCapModifier: '1.7'
   - kingPostfix: ''
     capitalPostfix: ''
-    upkeepModifier: 2.0
+    upkeepModifier: 1.0
     kingPrefix: 'Emperor '
     capitalPrefix: '(Capital) '
     numResidents: 16
