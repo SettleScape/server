@@ -10,6 +10,7 @@ main:
     permission: lagfixer.command
     aliases:
     - lf
+  bStats: true
 modules:
   CustomAi:
     enabled: true
@@ -73,6 +74,10 @@ modules:
           speed: 1.95
           cooldown: 15
       force_load: false
+      blacklist:
+      - WOLF
+      - MOOSHROOM
+      - IRON_GOLEM
   CustomVehicles:
     enabled: true
     worlds:
@@ -103,7 +108,7 @@ modules:
     - world_nether
     values:
       needed_mspt: 75
-      durning_lags:
+      during_lags:
         simulation_distance: 2
         view_distance: 4
         disable:
@@ -138,16 +143,6 @@ modules:
         - Connection reset
         - 'CONSOLE: Forcing save\.\..*'
         - 'CONSOLE: Save complete\..*'
-  AntiClock:
-    enabled: false
-    worlds:
-    - world
-    - world_the_end
-    - world_nether
-    values:
-      ticks_limit: 1100
-      break_redstone: false
-      lever_cooldown: 700
   EntityLimiter:
     enabled: false
     worlds:
@@ -196,7 +191,9 @@ modules:
         enabled: true
         named: false
         drop_items: false
-        whitelist:
+        babies: false
+        list:
+        - BAT
         - ZOMBIE
         - SKELETON
         - SLIME
@@ -204,26 +201,30 @@ modules:
         - SPIDER
         - PHANTOM
         - SQUID
-  CustomTracker:
+  RedstoneLimiter:
     enabled: false
     worlds:
+    - '*'
+    values:
+      alerts: true
+      ticks_limit:
+        redstone: 1100
+        piston: 50
+      break_block:
+        redstone: false
+        piston: false
+      piston:
+        push_blacklist:
+        - SAND
+        - RED_SAND
+        - GRAVEL
+      click_cooldown: 1500
+  InstantLeafDecay:
+    enabled: true
+    worlds:
     - world
-    - world_the_end
     - world_nether
     values:
-      needed_mspt: 35
-      check_interval: 40
-      untrack_interval: 400
-      disable_ticking: true
-      range: 10
-  CreatureStacker:
-    enabled: false
-    values:
-      seach_range: 5
-      interval: -1
-      similarity_check: true
-      whitelist: []
-      blacklist:
-      - VILLAGER
-      - ZOMBIE_VILLAGER
-      - PILLAGER
+      drop_items: true
+      tree_distance: 7
+      leaves_decay: true
