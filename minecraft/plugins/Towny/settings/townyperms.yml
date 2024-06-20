@@ -92,18 +92,20 @@ towns:
   
   # Mayors get these permissions in addition to the default set.
   mayor:
-  - towny.claimed.owntown.*
-  - towny.command.nation.join
-  - towny.command.nation.leave
-  - towny.command.nation.new
-  - towny.command.plot.*
-  - towny.command.town.*
-  - towny.command.towny.top
-  - towny.outlaw.jailer
+  - towny.command.town.rank.comayor
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
   ranks:
+    comayor:
+    - towny.command.town.rank.heir
+    - towny.command.nation.join
+    - towny.command.nation.leave
+    - towny.command.nation.new
+    - towny.command.town.*
+    - towny.command.towny.top
+    heir:
+    - towny.command.town.rank.assistant
   
     # assistants are able to grant VIP and helper rank.
     assistant:
@@ -111,6 +113,7 @@ towns:
     - towny.command.town.rank.builter
     - towny.claimed.owntown
     - towny.claimed.owntown.*
+    - towny.command.plot
     - towny.command.plot.*
     - towny.command.town.buy
     - towny.command.town.claim.town
@@ -151,6 +154,7 @@ nations:
   
   # Kings get these permissions in addition to the default set.
   king:
+  - towny.command.nation.rank.assistant
   - towny.command.nation.*
   ranks:
     assistant:

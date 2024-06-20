@@ -740,7 +740,7 @@ global_town_settings:
   # The ranks to be given preference when assigning a new mayor, listed in order of descending preference.
   # All ranks should be as defined in `townyperms.yml`.
   # For example, to give a `visemayor` preference over an `assistant`, change this parameter to `visemayor,assistant`.
-  order_of_mayoral_succession: heir,assistant,builder,sheriff
+  order_of_mayoral_succession: comayor,heir,assistant,builder,sheriff
   
   # When enabled, blocks like lava or water will be unable to flow into other plots, if the owners aren't the same.
   prevent_fluid_griefing: 'true'
