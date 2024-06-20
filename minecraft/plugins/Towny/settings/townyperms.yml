@@ -97,7 +97,6 @@ towns:
   - towny.command.nation.new
   - towny.command.town.*
   - towny.command.towny.top
-  - towny.claimed.owntown
   - towny.claimed.owntown.*
   - towny.claimed.townowned.*
   - towny.command.plot.*
@@ -120,7 +119,6 @@ towns:
     assistant:
     - towny.command.town.rank.sheriff
     - towny.command.town.rank.builter
-    - towny.claimed.owntown
     - towny.claimed.owntown.*
     - towny.command.plot.*
     - towny.command.town.buy
