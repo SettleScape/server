@@ -12,7 +12,7 @@ CraftBook                 3.10.5      2021-12-01  ----------  1.18.X      Yes   
 Dynmap                    3.7b5       2024-04-28  2024-06-06              Badly       https://dev.bukkit.org/projects/dynmap/files
 Dynmap-Towny              1.1.2b      2024-06-07  2024-06-08              Badly       https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard         CUSTOM      2022-02-23  TODO                    ????        https://github.com/webbukkit/Dynmap-WorldGuard/releases
-EditableSign              8.2.0       2023-03-15  ----------  1.1?.X      No          https://polymart.org/resource/127/updates
+EditableSign              8.2.0       2023-03-15  ----------  1.20.X      No          https://polymart.org/resource/127/updates
 EisenRadar                1.3.1       2018-08-24  ----------  PermaDead   ????        https://spigotmc.org/resources/50316/updates
 EssentialsX               2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
 EssentialsX AntiBuild     2.20.1      2023-08-05  2024-06-10              No          https://essentialsx.net/downloads.html
