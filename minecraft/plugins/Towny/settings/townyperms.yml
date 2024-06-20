@@ -92,7 +92,16 @@ towns:
   
   # Mayors get these permissions in addition to the default set.
   mayor:
-  - towny.command.town.rank.comayor
+  - towny.command.nation.join
+  - towny.command.nation.leave
+  - towny.command.nation.new
+  - towny.command.town.*
+  - towny.command.towny.top
+  - towny.claimed.owntown
+  - towny.claimed.owntown.*
+  - towny.claimed.townowned.*
+  - towny.command.plot.*
+  - towny.outlaw.jailer
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
@@ -113,7 +122,6 @@ towns:
     - towny.command.town.rank.builter
     - towny.claimed.owntown
     - towny.claimed.owntown.*
-    - towny.command.plot
     - towny.command.plot.*
     - towny.command.town.buy
     - towny.command.town.claim.town
