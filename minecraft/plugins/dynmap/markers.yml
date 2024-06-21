@@ -151,6 +151,72 @@ sets:
         lines: {
             }
         layerprio: 1
+    worldborder.markerset:
+        hide: false
+        circles: {
+            }
+        deficon: construction
+        areas:
+            worldborder_world_nether:
+                markup: false
+                ytop: 255.0
+                fillOpacity: 0.0
+                strokeWeight: 3
+                label: World Border
+                fillColor: 0
+                world: world_nether
+                x:
+                - -384.0
+                - 1152.0
+                z:
+                - -896.0
+                - 640.0
+                ybottom: 0.0
+                strokeColor: 11861503
+                desc: ''
+                strokeOpacity: 0.5
+            worldborder_world_the_end:
+                markup: false
+                ytop: 255.0
+                fillOpacity: 0.0
+                strokeWeight: 3
+                label: World Border
+                fillColor: 0
+                world: world_the_end
+                x:
+                - -2048.0
+                - 2048.0
+                z:
+                - -2048.0
+                - 2048.0
+                ybottom: 0.0
+                strokeColor: 11861503
+                desc: ''
+                strokeOpacity: 0.5
+            worldborder_world:
+                markup: false
+                ytop: 255.0
+                fillOpacity: 0.0
+                strokeWeight: 3
+                label: World Border
+                fillColor: 0
+                world: world
+                x:
+                - -3072.0
+                - 9216.0
+                z:
+                - -7168.0
+                - 5120.0
+                ybottom: 0.0
+                strokeColor: 11861503
+                desc: ''
+                strokeOpacity: 0.5
+        label: World Border
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 99
     portals:
         hide: false
         circles: {
@@ -176,14 +242,6 @@ sets:
                 y: 70.0
                 z: 1039.0
                 label: Gateway 16
-            gateway_8_in:
-                world: world_the_end
-                markup: false
-                x: -77.0
-                icon: portal
-                y: 76.0
-                z: -56.0
-                label: Gateway 8
             gateway_0_out:
                 world: world_the_end
                 markup: false
@@ -192,6 +250,14 @@ sets:
                 y: 75.0
                 z: 0.0
                 label: Gateway 0
+            gateway_8_in:
+                world: world_the_end
+                markup: false
+                x: -77.0
+                icon: portal
+                y: 76.0
+                z: -56.0
+                label: Gateway 8
             exit_portal:
                 world: world_the_end
                 markup: false
@@ -491,5 +557,18 @@ sets:
         lines: {
             }
         layerprio: 2
+    markers:
+        hide: false
+        circles: {
+            }
+        deficon: default
+        areas: {
+            }
+        label: Markers
+        markers: {
+            }
+        lines: {
+            }
+        layerprio: 0
 playersets: {
     }

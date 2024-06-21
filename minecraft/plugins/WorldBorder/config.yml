@@ -11,7 +11,7 @@ dynmap-border-enabled: true
 dynmap-border-layer-label: World Border
 dynmap-border-message: World Border
 dynmap-border-hideByDefault: false
-dynmap-border-priority: -99
+dynmap-border-priority: 99
 player-killed-bad-spawn: false
 deny-enderpearl: true
 fill-autosave-frequency: 30

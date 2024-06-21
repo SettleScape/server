@@ -1,5 +1,7 @@
 # Plugins
 
+## Active
+
 ========================  ==========  ==========  ==========  ==========  ==========  ===
 Plugin                    Version     Released    Checked     Stuck 'til  Autoconfig  URL
 ========================  ==========  ==========  ==========  ==========  ==========  ===
@@ -10,7 +12,6 @@ CommandLog                1.2         2016-07-09  ----------  Dead        ????  
 CoreProtect               22.4        2024-05-14  2024-06-06              No          https://spigotmc.org/resources/8631/updates
 CraftBook                 3.10.5      2021-12-01  ----------  1.18.X      Yes         https://dev.bukkit.org/projects/craftbook/files
 Dynmap                    3.7b6       2024-06-18  2024-06-20              Badly       https://dev.bukkit.org/projects/dynmap/files
-Dynmap-Essentials         1.0b1       2022-02-02  2024-06-20              ????        https://dev.bukkit.org/projects/dynmap-essentialsx/files
 Dynmap-Towny              1.1.2b      2024-06-07  2024-06-20              Badly       https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard         CUSTOM      2022-02-23  TODO                    ????        https://github.com/webbukkit/Dynmap-WorldGuard
 EditableSign              8.2.0       2023-03-15  ----------  1.20.X      No          https://polymart.org/resource/127/updates
@@ -44,10 +45,18 @@ TownyMenus                0.0.9       2024-05-20  2024-06-20              ????  
 TownyWayPointTravel       1.9         2024-08-25  2024-06-20              Yes         https://discord.com/channels/321452088519426058/1009243497922056292
 Vault                     1.7.3       2020-07-17  2024-06-20  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft                 1.17.1      2021-08-16  ----------  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
-WorldBorder               2.1.5       2022-03-14  2024-06-20  Old         ????        https://github.com/PryPurity/WorldBorder/releases
 WorldEdit                 7.2.20      2024-02-29  ----------  1.20.X      No          https://dev.bukkit.org/projects/worldedit/files
 WorldGuard                7.0.7       2021-03-06  ----------  1.19.X      Yes         https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny          1.3.0       2022-07-22  2024-06-20  Old         Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
+========================  ==========  ==========  ==========  ==========  ==========  ===
+
+## Development-only
+
+========================  ==========  ==========  ==========  ==========  ==========  ===
+Plugin                    Version     Released    Checked     Stuck 'til  Autoconfig  URL
+========================  ==========  ==========  ==========  ==========  ==========  ===
+Dynmap-Essentials         1.0b1       2022-02-02  2024-06-20              ????        https://dev.bukkit.org/projects/dynmap-essentialsx/files
+WorldBorder               2.1.5       2022-03-14  2024-06-20  Old         ????        https://github.com/PryPurity/WorldBorder/releases
 ========================  ==========  ==========  ==========  ==========  ==========  ===
 
 ## Notes
