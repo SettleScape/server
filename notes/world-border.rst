@@ -31,3 +31,4 @@ Synergistic settings
 * `plugins/dynmap/worlds.txt`
 
   * `visibilitylimits`:  This defines a series of boxes that Dynmap is supposed to render.  We should not render outside of the world border.
+  * `showborder`: This would seem to be handy, and it *is*, but its aesthetics are unconfigurable -- it's better to use a custom outline in `plugins/dynmap/markers.yml`.  And when `plugins/WorldBorder.jar` is active, this setting is wholly redundant;  this plugin also automatically prefills settings for its configured world borders to `markers.yml`.
