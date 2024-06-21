@@ -242,14 +242,6 @@ sets:
                 y: 70.0
                 z: 1039.0
                 label: Gateway 16
-            gateway_0_out:
-                world: world_the_end
-                markup: false
-                x: 1083.0
-                icon: portal
-                y: 75.0
-                z: 0.0
-                label: Gateway 0
             gateway_8_in:
                 world: world_the_end
                 markup: false
@@ -258,6 +250,14 @@ sets:
                 y: 76.0
                 z: -56.0
                 label: Gateway 8
+            gateway_0_out:
+                world: world_the_end
+                markup: false
+                x: 1083.0
+                icon: portal
+                y: 75.0
+                z: 0.0
+                label: Gateway 0
             exit_portal:
                 world: world_the_end
                 markup: false
@@ -556,12 +556,12 @@ sets:
                 label: Gateway 8
         lines: {
             }
-        layerprio: 2
+        layerprio: 10
     markers:
         hide: false
         circles: {
             }
-        deficon: default
+        deficon: pin
         areas: {
             }
         label: Markers

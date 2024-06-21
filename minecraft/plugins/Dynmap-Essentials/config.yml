@@ -7,7 +7,7 @@ layer:
     enable: false
     name: Homes
     hidebydefault: true
-    layerprio: 20
+    layerprio: 12
     minzoom: 0
     deficon: walk
     labelfmt: Home (%name%)
@@ -15,10 +15,10 @@ layer:
     hiddenmarkers: []
     online-only: false
   warps:
-    enable: true
+    enable: false
     name: Warps
     hidebydefault: false
-    layerprio: 21
+    layerprio: 11
     minzoom: 0
     deficon: door
     labelfmt: '%name%'
