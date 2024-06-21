@@ -65,8 +65,8 @@ regions:
         type: cuboid
         priority: 0
     spawn:
-        min: {x: 2560, y: 0, z: -1536}
-        max: {x: 3584, y: 255, z: -512}
+        min: {x: 2816, y: 0, z: -1280}
+        max: {x: 3328, y: 255, z: -768}
         members: {}
         flags:
             other-explosion: deny
