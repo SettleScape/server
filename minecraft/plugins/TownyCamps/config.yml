@@ -69,7 +69,7 @@ third_party:
     enable_dynmap_support: 'false'
   
     # Which layer should the Camps appear on in your web browser?
-    dynmap_layer_name: Homes
+    dynmap_layer_name: Campes
   combatlogx:
   
     # When set to true, and CombatLogX is enabled on the server, players will be unable to create camps while in combat.
