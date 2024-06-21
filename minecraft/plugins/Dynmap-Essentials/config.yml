@@ -1,0 +1,27 @@
+# Dynmap-Essentials configuration
+update:
+  period: 300.0
+  player-period: 5.0
+layer:
+  homes:
+    enable: true
+    name: Homes
+    hidebydefault: false
+    layerprio: 20
+    minzoom: 0
+    deficon: house
+    labelfmt: '%name%(home)'
+    visiblemarkers: []
+    hiddenmarkers: []
+    online-only: false
+  warps:
+    enable: true
+    name: Warps
+    hidebydefault: false
+    layerprio: 21
+    minzoom: 0
+    deficon: portal
+    labelfmt: '[%name%]'
+    visiblemarkers: []
+    hiddenmarkers: []
+hide-when-hidden: true
