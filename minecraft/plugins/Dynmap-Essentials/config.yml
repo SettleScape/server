@@ -4,13 +4,13 @@ update:
   player-period: 5.0
 layer:
   homes:
-    enable: true
+    enable: false
     name: Homes
-    hidebydefault: false
+    hidebydefault: true
     layerprio: 20
     minzoom: 0
-    deficon: house
-    labelfmt: '%name%(home)'
+    deficon: walk
+    labelfmt: Home (%name%)
     visiblemarkers: []
     hiddenmarkers: []
     online-only: false
@@ -20,8 +20,11 @@ layer:
     hidebydefault: false
     layerprio: 21
     minzoom: 0
-    deficon: portal
-    labelfmt: '[%name%]'
+    deficon: door
+    labelfmt: '%name%'
     visiblemarkers: []
-    hiddenmarkers: []
+    hiddenmarkers:
+    - spawn
+    - hawthorne
+    - nearlands
 hide-when-hidden: true
