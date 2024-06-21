@@ -2,7 +2,8 @@
 Misc: `pin`
 Portals: `portal`
 Spawns: `compass`
-Abandoned towns: `house`
-Proto-towns: `house`
+Abandoned towns: `temple`
+Outposts: `house`
 Towns: `default`
 Nation capitals: `bighouse`
+Personal teleports: `walk`
