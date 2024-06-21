@@ -420,6 +420,42 @@ sets:
         lines: {
             }
         layerprio: 2
+    towny.markerset:
+        hide: false
+        circles: {
+            }
+        deficon: house
+        areas: {
+            }
+        label: Towny
+        markers:
+            djin:
+                world: world
+                markup: false
+                x: 3048.0
+                icon: house
+                y: 65.0
+                z: 3791.0
+                label: Djin
+            shovel:
+                world: world
+                markup: false
+                x: 8004.0
+                icon: house
+                y: 66.0
+                z: -2501.0
+                label: Temple of Shovel
+            kuiil:
+                world: world
+                markup: false
+                x: 6604.0
+                icon: house
+                y: 65.0
+                z: 2665.0
+                label: Kuiil
+        lines: {
+            }
+        layerprio: 3
     markers:
         hide: true
         circles: {
