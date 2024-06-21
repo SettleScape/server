@@ -15,7 +15,7 @@ third_party:
     enable_dynmap_support: 'true'
   
     # Which layer should the Ruins appear on in your web browser?
-    dynmap_layer_name: Ruins
+    dynmap_layer_name: Towny
   
   
 ruin_settings:
@@ -36,10 +36,10 @@ ruin_settings:
   protect_lectern_book: 'true'
   
   # When set to true, players will not be able to claim any land that belongs to a ruin.
-  prevent_claiming_ruin: 'false'
+  prevent_claiming_ruin: 'true'
   
   # When set to true, players will not be able to claim the ruin's homeblock.
-  prevent_claiming_homeblock: 'false'
+  prevent_claiming_homeblock: 'true'
   
   # Defaults to ruin, any other dynmap marker can be used: https://github.com/webbukkit/dynmap/tree/v3.0/DynmapCore/src/main/resources/markers 
-  marker_icon: ruin
+  marker_icon: temple
