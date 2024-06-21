@@ -24,7 +24,7 @@ layer:
     labelfmt: '%name%'
     visiblemarkers: []
     hiddenmarkers:
-    - spawn
+    - origin
     - hawthorne
     - nearlands
 hide-when-hidden: true
