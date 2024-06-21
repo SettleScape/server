@@ -4,14 +4,14 @@ round-border: true
 debug-mode: false
 whoosh-effect: false
 portal-redirection: true
-knock-back-dist: 3.0
+knock-back-dist: 1.0
 timer-delay-ticks: 5
 remount-delay-ticks: 0
 dynmap-border-enabled: true
-dynmap-border-layer-label: WorldBorder
+dynmap-border-layer-label: World Border
 dynmap-border-message: World Border
 dynmap-border-hideByDefault: false
-dynmap-border-priority: 0
+dynmap-border-priority: -99
 player-killed-bad-spawn: false
 deny-enderpearl: true
 fill-autosave-frequency: 30
@@ -23,19 +23,22 @@ no-players-toggle: false
 worlds:
   world:
     x: 3072.0
-    z: -512.0
-    radiusX: 6656
-    radiusZ: 5632
+    z: -1024.0
+    radiusX: 6144
+    radiusZ: 6144
     wrapping: false
+    shape-round: false
   world_nether:
     x: 384.0
-    z: -64.0
-    radiusX: 832
-    radiusZ: 704
+    z: -128.0
+    radiusX: 768
+    radiusZ: 768
     wrapping: false
+    shape-round: false
   world_the_end:
     x: 0.0
     z: 0.0
     radiusX: 2048
     radiusZ: 2048
-    wrapping: true
+    wrapping: false
+    shape-round: false

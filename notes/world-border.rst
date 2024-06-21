@@ -12,18 +12,18 @@ Current world borders
 
 **Overworld**
 
-* `worldborder set 65536` (While I think a worldborder of 32768 is a better, size, our particular seed needs at least around 65536 in order to give players access to certain rare biomes.)
-* `worldborder center 3072 0` (This centers the world border on the central ocean.)
+* `worldborder set 12288` (I think a world border at 32768 is probably ideal as a size, but our particular seed needs at least around 65536 in order to give players access to certain rare biomes. To save space space and take advantage of updated terrain generation in newer versions, I've opted to limit the size of the world to just 24 regions.)
+* `worldborder center 3072 -1024` (This essentially centers the 24x24-region world's border on the central ocean.)
 
 **Nether**
 
-* `worldborder set 8192` (This has to be 1/8 the Overworld worldborder.)
-* `worldborder center 384 0` (This has to be 1/8 the Overworld center's coordinates.)
+* `worldborder set 1536` (This has to be 1/8 the Overworld world border.)
+* `worldborder center 384 -128` (This has to be 1/8 the Overworld center's coordinates.)
 
 **The End**
 
-* `worldborder set 8192` (There is nothing interesting far-out in the End;  therefore, we should make the worldborder small, to save storage space.)
-* `worldborder center 0 0`
+* `worldborder set 2048` (There is nothing interesting far-out in the End;  therefore, we should make the world border small, to save storage space.  8192 is pretty reasonable in terms of functionality;  but I think I'm going to set it at 2048 and gradually increase it from there as newer and newer versions come out, to pace exploration.)
+* `worldborder center 0 0` (Should be centered on origin, where the return fountain is.)
 
 Synergistic settings
 ================================================================================

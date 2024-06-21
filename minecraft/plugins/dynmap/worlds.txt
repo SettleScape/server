@@ -7,14 +7,14 @@ worlds:
     showborder: true
     hidestyle:  air
     center:
-        x: 3072
-        y:   64
-        z: -512
+        x:   3072
+        y:     64
+        z:  -1024
     visibilitylimits:
-    -   x0: -4096
-        z0: -6656
-        x1: 10240
-        z1:  5632
+    -   x0: -3072
+        z0: -7168
+        x1:  9216
+        z1:  5120
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
@@ -37,14 +37,14 @@ worlds:
     showborder: true
     hidestyle:  air
     center:
-        x: 384
-        y:  64
-        z: -64
+        x:   384
+        y:    64
+        z:  -128
     visibilitylimits:
-    -   x0: -1024
-        z0: -1024
-        x1:  1536
-        z1:  1024
+    -   x0: -384
+        z0: -896
+        x1: 1152
+        z1:  640
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Cross-Section
@@ -71,10 +71,10 @@ worlds:
         y: 64
         z:  0
     visibilitylimits:
-    -   x0: -2560
-        z0: -2560
-        x1:  2560
-        z1:  2560
+    -   x0: -1024
+        z0: -1024
+        x1:  1024
+        z1:  1024
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
