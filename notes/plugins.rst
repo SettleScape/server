@@ -1,5 +1,9 @@
 # Plugins
 
+## Notes
+* Investigate FastAsyncWorldEdit
+* Sign-editing was added to vanilla in 1.20, so on that version or higher, EditableSign should be removed.
+
 ## Active
 
 ========================  ==========  ==========  ==========  ==========  ==========  ===
@@ -58,7 +62,3 @@ Plugin                    Version     Released    Checked     Stuck 'til  Autoco
 Dynmap-Essentials         1.0b1       2022-02-02  2024-06-20              ????        https://dev.bukkit.org/projects/dynmap-essentialsx/files
 WorldBorder               2.1.5       2022-03-14  2024-06-20  Old         ????        https://github.com/PryPurity/WorldBorder/releases
 ========================  ==========  ==========  ==========  ==========  ==========  ===
-
-## Notes
-* Investigate FastAsyncWorldEdit
-* Sign-editing was added to vanilla in 1.20, so on that version or higher, EditableSign should be removed.
