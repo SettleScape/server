@@ -91,19 +91,6 @@ sets:
         lines: {
             }
         layerprio: 2
-    geography:
-        hide: true
-        circles: {
-            }
-        deficon: world
-        areas: {
-            }
-        label: Geography
-        markers: {
-            }
-        lines: {
-            }
-        layerprio: 0
     worldguard.markerset:
         hide: false
         circles: {
@@ -504,18 +491,5 @@ sets:
         lines: {
             }
         layerprio: 2
-    markers:
-        hide: true
-        circles: {
-            }
-        deficon: pin
-        areas: {
-            }
-        label: Detail
-        markers: {
-            }
-        lines: {
-            }
-        layerprio: 1
 playersets: {
     }
