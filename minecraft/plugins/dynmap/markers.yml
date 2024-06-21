@@ -7,6 +7,90 @@ icons:
     townycamps.camp:
         label: campfire
 sets:
+    towny.markerset:
+        hide: false
+        circles: {
+            }
+        deficon: house
+        areas: {
+            }
+        label: Towny
+        markers:
+            Ugab_Outpost_1:
+                world: world
+                markup: false
+                x: -1484.0
+                icon: house
+                y: 64.0
+                z: 1004.0
+                label: Outpost
+                desc: Ugab Outpost 2
+            Mithrandir_Outpost_2:
+                world: world
+                markup: false
+                x: 6604.0
+                icon: house
+                y: 65.0
+                z: 2665.0
+                label: Kuiil
+                desc: Mithrandir Outpost 2
+            Mithrandir_Outpost_3:
+                world: world
+                markup: false
+                x: 3048.0
+                icon: house
+                y: 65.0
+                z: 3791.0
+                label: Djin
+                desc: Mithrandir Outpost 3
+            Ugab_Outpost_2:
+                world: world_nether
+                markup: false
+                x: -188.0
+                icon: house
+                y: 64.0
+                z: 108.0
+                label: Outpost
+                desc: Ugab Outpost 2
+            Delta_Outpost_2:
+                world: world_the_end
+                markup: false
+                x: 1084.0
+                icon: house
+                y: 64.0
+                z: -4.0
+                label: Omega Station
+                desc: Delta Outpost 2
+            Eventide_Outpost_1:
+                world: world
+                markup: false
+                x: 8004.0
+                icon: house
+                y: 66.0
+                z: -2501.0
+                label: Temple of Shovel
+                desc: Eventide Outpost 1
+            Delta_Outpost_1:
+                world: world_nether
+                markup: false
+                x: 52.0
+                icon: house
+                y: 64.0
+                z: 252.0
+                label: Nelta
+                desc: Delta Outpost 2
+            Mithrandir_Outpost_1:
+                world: world
+                markup: false
+                x: 3868.0
+                icon: house
+                y: 64.0
+                z: 36.0
+                label: Serenity
+                desc: Mithrandir Outpost 1
+        lines: {
+            }
+        layerprio: 2
     geography:
         hide: true
         circles: {
@@ -420,42 +504,6 @@ sets:
         lines: {
             }
         layerprio: 2
-    towny.markerset:
-        hide: false
-        circles: {
-            }
-        deficon: house
-        areas: {
-            }
-        label: Towny
-        markers:
-            djin:
-                world: world
-                markup: false
-                x: 3048.0
-                icon: house
-                y: 65.0
-                z: 3791.0
-                label: Djin
-            shovel:
-                world: world
-                markup: false
-                x: 8004.0
-                icon: house
-                y: 66.0
-                z: -2501.0
-                label: Temple of Shovel
-            kuiil:
-                world: world
-                markup: false
-                x: 6604.0
-                icon: house
-                y: 65.0
-                z: 2665.0
-                label: Kuiil
-        lines: {
-            }
-        layerprio: 3
     markers:
         hide: true
         circles: {

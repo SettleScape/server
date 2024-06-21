@@ -12,10 +12,10 @@ third_party:
   dynmap:
   
     # When set to true, and dynmap is found on the server, Ruins will appear on the dynmap.
-    enable_dynmap_support: 'true'
+    enable_dynmap_support: 'false'
   
     # Which layer should the Ruins appear on in your web browser?
-    dynmap_layer_name: towny.markerset
+    dynmap_layer_name: Ruins
   
   
 ruin_settings:
