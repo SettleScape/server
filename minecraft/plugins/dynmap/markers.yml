@@ -103,10 +103,10 @@ sets:
             worldguard.world.spawn:
                 world: world
                 markup: false
-                x: 508.0
+                x: 3072.0
                 icon: door
                 y: 64.0
-                z: 108.0
+                z: -1024.0
                 label: Spawn
             worldguard.world.nearlands:
                 world: world
