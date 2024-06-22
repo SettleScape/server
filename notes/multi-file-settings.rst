@@ -35,16 +35,14 @@ When changing View Distance, you need to edit the following:
 
   1. `view_distance` (Should be less than `view-distance`)
 
-* `scripts/upkeep/plugins/wborder.sh`
-
-  2. (The final number in the commands should be equal to or greater than the blocks loadd by `view-distance`.)
-
 * `plugins/Towny/settings/config.yml` (All values should be the number of plots that equal `view-distance`.)
 
   * `min_distance_between_homeblocks`
   * `min_distance_for_outpost_from_plot`
   * `min_plot_distance_from_town_plot`
   * `nationZonesSize` 
+
+* The world border -- see `./world-border.rst` for more info.
 
 Entity Collisions
 ================================================================================
