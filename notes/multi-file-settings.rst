@@ -185,3 +185,9 @@ World border display
 * `plugins/dynmap/markers.yml`
 
   3. `worldborder.markerset`
+
+Notes
+--------------------------------------------------------------------------------
+* While Dynmap's ability to show the world border sounds handy (it *is*), its aesthetics are unconfigurable -- it's better to use a custom outline in `plugins/dynmap/markers.yml`. 
+* The same limitation applies to WorldBorder's ability to show the world border.
+* WorldBorder can prefill settings for its configured world borders to `markers.yml`.

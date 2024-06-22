@@ -166,11 +166,11 @@ sets:
                 fillColor: 0
                 world: world_nether
                 x:
-                - -384.0
-                - 1152.0
+                - -372.0
+                - 1140.0
                 z:
-                - -896.0
-                - 640.0
+                - -884.0
+                - 628.0
                 ybottom: 0.0
                 strokeColor: 11861503
                 desc: ''
@@ -184,11 +184,11 @@ sets:
                 fillColor: 0
                 world: world_the_end
                 x:
-                - -2048.0
-                - 2048.0
+                - -1952.0
+                - 1952.0
                 z:
-                - -2048.0
-                - 2048.0
+                - -1952.0
+                - 1952.0
                 ybottom: 0.0
                 strokeColor: 11861503
                 desc: ''
@@ -202,11 +202,11 @@ sets:
                 fillColor: 0
                 world: world
                 x:
-                - -3072.0
-                - 9216.0
+                - -2976.0
+                - 9120.0
                 z:
-                - -7168.0
-                - 5120.0
+                - -7072.0
+                - 5024.0
                 ybottom: 0.0
                 strokeColor: 11861503
                 desc: ''
