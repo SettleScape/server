@@ -42,7 +42,7 @@ When changing View Distance, you need to edit the following:
   * `min_plot_distance_from_town_plot`
   * `nationZonesSize` 
 
-* The world border -- see `./world-border.rst` for more info.
+* The world border -- see `./world-sizes-and-borders.rst` for more info.
 
 Entity Collisions
 ================================================================================
