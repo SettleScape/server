@@ -30,8 +30,8 @@ Nether
 
 The End
 --------------------------------------------------------------------------------
-* Size: `2048` (There is nothing interesting far-out in the End;  therefore, we should make the world border small, to save storage space.  8192 is pretty reasonable in terms of functionality;  but I think I'm going to set it at 2048 and gradually increase it from there as newer and newer versions come out, to pace exploration.)
-* Border: `1952`
+* Size: `4096` (There is nothing interesting far-out in the End;  therefore, we should make the world border small, to save storage space.  8192 is pretty reasonable in terms of functionality;  but I think I'm going to set it at 4096 and gradually increase it from there as newer and newer versions come out, to pace exploration.)
+* Border: `4000`
 * Center: `0 0` (Should be centered on origin, where the return fountain is.)
 
 Synergistic settings
