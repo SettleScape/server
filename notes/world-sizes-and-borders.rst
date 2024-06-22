@@ -45,7 +45,7 @@ Set to world size
   * `visibilitylimits` (This defines a series of boxes that Dynmap is supposed to render.  There is no reason to render outside of the target world size.)
   * `showborder` (This would seem to be handy, and it *is*, but its aesthetics are unconfigurable -- it's better to use a custom outline in `plugins/dynmap/markers.yml`.  And when `plugins/WorldBorder.jar` is active, this setting is wholly redundant;  this plugin also automatically prefills settings for its configured world borders to `markers.yml`.)
 
-* `minecraft/plugins/WorldBorder/config.yml`
+* `plugins/WorldBorder/config.yml`
 
   * `worlds` (The WorldBorder plugin should be configured at the world size and not the world border, because this facilitates easy and mistakeless pregeneration.)
 
@@ -59,7 +59,7 @@ Set to world border size
 
 * `plugins/dynmap/markers.yml`
 
-  * `worldborder.markerset` (Note that these values will conflict with the plugin that normally defines that markerset, so make sure its config is set so that `dynmap-border-enabled` is `false`, just in case.)
+  * `worldborder.markerset` (Note that these values will conflict with the plugin that normally defines that markerset (WorldBorder), so make sure its config (`plugins/WorldBorder/config.yml`) is set so that `dynmap-border-enabled` is `false`, just in case.)
 
 Pregeneration
 ================================================================================

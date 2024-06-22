@@ -166,3 +166,22 @@ Town Plot Limits
 
   * `townBlockBuyBonusLimit`
   * `max_buytown_price` (Should be `townBlockBuyBonusLimit * price_purchased_bonus_townblock`)
+
+World border display
+================================================================================
+
+* `plugins/dynmap/configuration.txt`
+
+  1. `showworldborder`
+
+* `plugins/dynmap/worlds.txt`
+
+  1. `showborder`
+
+* `plugins/WorldBorder/config.yml`
+
+  2. `dynmap-border-enabled`
+
+* `plugins/dynmap/markers.yml`
+
+  3. `worldborder.markerset`
