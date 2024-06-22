@@ -65,4 +65,4 @@ Pregeneration
 ================================================================================
 
 * We should make sure that the regions immediately adjacent to the world border are pregenerated, so that there is land for players to look out at past the world border.
-  * Example command: `wb world fill 60 512 false`
+  * Example command: `wborder world fill 60 0 false`
