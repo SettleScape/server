@@ -47,7 +47,7 @@ export JAVA_HOME JRE_HOME="$JAVA_HOME"
 # echo "$JAVA_HOME" && exit 1
 
 ## Get Java opts
-source "$ENV_SERVER_ROOT/scripts/var/java-opts.bash"
+source "$ENV_SERVER_ROOT/scripts/var/java-opts/server.bash"
 # echo "$JAVA_OPTS" && exit 1
 
 ## Start the server

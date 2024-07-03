@@ -1,14 +1,24 @@
 #!/bin/bash
 ## Configures the JVM.
 
-## The server's custom options tweaked for use on clients, with special input from BruceTheMoose's guide.
-declare -a CLIENT_JAVA_OPTS=(
+## Aikar's server options:
+## * https://docs.papermc.io/paper/aikars-flags
+## * https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft
+##
+## BruceTheMoose's server options:
+## * https://github.com/Mukul1127/Minecraft-Performance-Flags-Benchmarks
+##
+## Overview of transparent huge pages:
+## * https://alexandrnikitin.github.io/blog/transparent-hugepages-measuring-the-performance-impact
+
+## My personal collection of Java Opts:
+declare -a SERVER_JAVA_OPTS=(
     '-XX:+UnlockExperimentalVMOptions'
     '-XX:+UnlockDiagnosticVMOptions'
 
     ## Memory Settings
-    '-Xms2048M'
-    '-Xmx2048M'
+    '-Xms1536M'
+    '-Xmx1536M'
     '-XX:+AlwaysPreTouch'
     '-XX:+UseTransparentHugePages'
     '-XX:+UseLargePagesInMetaspace'
@@ -16,7 +26,7 @@ declare -a CLIENT_JAVA_OPTS=(
     '-XX:InitiatingHeapOccupancyPercent=10'
 
     ## Misc
-    '-XX:+NeverActAsServerClassMachine'
+    '-XX:+AlwaysActAsServerClassMachine'
     '-XX:+ParallelRefProcEnabled'
     '-XX:+PerfDisableSharedMem'
     '-XX:+UseVectorCmov'
@@ -27,7 +37,7 @@ declare -a CLIENT_JAVA_OPTS=(
     ## GC settings
     '-XX:+DisableExplicitGC'
     '-XX:GCTimeRatio=50' ## Compromise value;  needs tuning.
-    '-XX:MaxGCPauseMillis=37'
+    '-XX:MaxGCPauseMillis=130'
     '-XX:MaxTenuringThreshold=1'
     '-XX:SurvivorRatio=32'
     '-XX:TargetSurvivorRatio=92'
@@ -39,8 +49,8 @@ declare -a CLIENT_JAVA_OPTS=(
     '-XX:G1MixedGCCountTarget=3'
     '-XX:G1MixedGCLiveThresholdPercent=90'
     '-XX:G1ReservePercent=20'
-    '-XX:G1NewSizePercent=23'
-    '-XX:G1MaxNewSizePercent=33'
+    '-XX:G1NewSizePercent=28'
+    '-XX:G1MaxNewSizePercent=38'
     '-XX:G1RSetUpdatingPauseTimePercent=0'
     '-XX:G1SATBBufferEnqueueingThresholdPercent=30'
     '-XX:G1ConcMarkStepDurationMillis=5'
@@ -51,7 +61,8 @@ declare -a CLIENT_JAVA_OPTS=(
     '-XX:-DontCompileHugeMethods'
     '-XX:MaxNodeLimit=240000'
     '-XX:NodeLimitFudgeFactor=8000'
-    # '-XX:+UseStringDeduplication' ## Only when memory-constrained
+    '-XX:+UseStringDeduplication' ## Only when memory-constrained
+    ## Skip the below when low on memory:
     '-XX:NmethodSweepActivity=1'
     '-XX:ReservedCodeCacheSize=400M'
     '-XX:NonNMethodCodeHeapSize=12M'
@@ -63,6 +74,13 @@ declare -a CLIENT_JAVA_OPTS=(
     # '-Dgraal.LoopRotation=true'
     # '-Dgraal.TuneInlinerExploration=1'
 
+    ## Reporting
+    '-Dusing.aikars.flags=https://mcflags.emc.gs'
+    '-Daikars.new.flags=true'
+
     ## Security
     '-Dlog4j2.formatMsgNoLookups=true'
 )
+
+## Export to the environment
+export JAVA_OPTS="${SERVER_JAVA_OPTS[@]}"
