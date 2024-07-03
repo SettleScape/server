@@ -227,7 +227,7 @@ sets:
             }
         layerprio: 99
     portals:
-        hide: false
+        hide: true
         circles: {
             }
         deficon: portal
