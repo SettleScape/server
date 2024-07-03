@@ -70,6 +70,13 @@ worlds:
         x:  0
         y: 64
         z:  0
+    fullrenderlocations:
+    -   x: 1024
+        y: 64
+        z: 1024
+    -   x: -1024
+        y: 64
+        z: -1024
     visibilitylimits:
     -   x0: -2048
         z0: -2048
