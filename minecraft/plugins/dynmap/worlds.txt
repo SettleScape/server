@@ -43,8 +43,8 @@ worlds:
     visibilitylimits:
     -   x0: -468
         z0: -980
-        x1:  852
-        z1:  1236
+        x1:  1236
+        z1:  724
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Cross-Section

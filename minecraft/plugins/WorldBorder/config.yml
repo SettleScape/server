@@ -31,8 +31,8 @@ worlds:
   world_nether:
     x: 384.0
     z: -128.0
-    radiusX: 768
-    radiusZ: 768
+    radiusX: 1024
+    radiusZ: 1024
     wrapping: false
     shape-round: false
   world_the_end:

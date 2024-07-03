@@ -27,7 +27,7 @@ Overworld
 Nether
 --------------------------------------------------------------------------------
 * Size: `2048` (This has to be the smallest multiple of `512` that is greater than or equal to the visibility.)
-* Visibility: `1704` (This is the border plus `viewDistance + 1 * chunkSize * 2`)
+* Visibility: `1704` (This is the border plus `(viewDistance + 1) * chunkSize * 2`)
 * Border: `1512` (This has to be 1/8 the Overworld world border.)
 * Center: `384 -128` (This has to be 1/8 the Overworld center's coordinates.)
 
