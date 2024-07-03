@@ -36,6 +36,7 @@ MineableSpawners          3.1.5       2023-06-21  TODO        Dead,Forks  ????  
 NuVotifier                2.7.3       2021-07-06  2024-06-20  Old         ????        https://github.com/NuVotifier/NuVotifier/releases
 OpenInv                   4.1.10      2021-12-02  ----------  1.18.X      ????        https://github.com/Jikoo/OpenInv/releases
 PlaceholderAPI            2.11.6      2024-05-21  2024-06-20              N/A         https://spigotmc.org/resources/6245/updates
+PlugManX                  2.4.1       2024-06-26  2024-07-03                          https://github.com/Test-Account666/PlugManX/releases
 ProtocolLib               4.8.0       2021-07-09  ----------  CraftBook   ????        https://github.com/dmulloy2/ProtocolLib/releases
 Rankup                    3.14.4      2023-11-19  2024-06-20              ????        https://spigotmc.org/resources/76964/updates
 ShopChest                 1.13-SS     2022-04-18  2024-06-20  Old         No          https://ci.codemc.io/job/EpicEricEE/job/ShopChest/lastStableBuild
