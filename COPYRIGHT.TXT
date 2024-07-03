@@ -19,6 +19,8 @@ apart from the `- ` at the start of each line.)
 - /minecraft/plugins/Essentials/spawn.yml
 - /minecraft/plugins/GroupManager/config.yml
 - /minecraft/plugins/GroupManager/worlds/world/groups.yml
+- /minecraft/plugins/LuckPerms/yaml-storage/groups/*
+- /minecraft/plugins/LuckPerms/yaml-storage/tracks/*
 - /minecraft/plugins/Rankup/rankups.yml
 
 Files with the following extensions are to be considered "source-code" for the
