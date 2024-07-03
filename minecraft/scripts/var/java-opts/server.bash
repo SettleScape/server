@@ -21,7 +21,7 @@ declare -a SERVER_JAVA_OPTS=(
     '-Xmx1536M'
     '-XX:+AlwaysPreTouch'
     '-XX:+UseTransparentHugePages'
-    '-XX:+UseLargePagesInMetaspace'
+    # '-XX:+UseLargePagesInMetaspace' ## Fails when I try it.
     '-XX:AllocatePrefetchStyle=3' #NOTE: Breaks ZGC and Shenandoah; fine for G1GC.
     '-XX:InitiatingHeapOccupancyPercent=10'
 
