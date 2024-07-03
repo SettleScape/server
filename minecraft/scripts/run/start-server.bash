@@ -32,12 +32,12 @@ declare -i I=0
 unset JAVA_HOME
 until [[ -f "$JAVA_HOME/java" ]]; do
     case $I in
-    0) JAVA_HOME="$ENV_JAVA_DIR/bin"                ;;
+    0) JAVA_HOME="$ENV_JAVA_DIR/bin" ;;
     1) echo "No Java found in '$ENV_JAVA_DIR'.  Please download Java v$ENV_JAVA_VERSION and place it at that path, or SettleScape may not run correctly." >&2 ;;
     ## If the custom Java path is missing, try looking for common system paths.
-    2) JAVA_HOME="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin"     ;;
+    2) JAVA_HOME="/lib/jvm/java-${ENV_JAVA_VERSION}-jdk/jre/bin" ;;
     3) JAVA_HOME="/lib/jvm/java-${ENV_JAVA_VERSION}-openjdk/jre/bin" ;;
-    4) JAVA_HOME="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin"      ;;
+    4) JAVA_HOME="/lib/jvm/jre-${ENV_JAVA_VERSION}-openjdk/bin" ;;
     ## If none of the above worked, try using the system's default java.
     *) JAVA_HOME=`which java | sed -r 's/\/java$//'` ;;
     esac
