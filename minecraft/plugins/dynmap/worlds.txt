@@ -71,10 +71,10 @@ worlds:
         y: 64
         z:  0
     visibilitylimits:
-    -   x0: -1024
-        z0: -1024
-        x1:  1024
-        z1:  1024
+    -   x0: -2048
+        z0: -2048
+        x1:  2048
+        z1:  2048
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
