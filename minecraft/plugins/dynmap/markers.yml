@@ -60,7 +60,7 @@ sets:
                 y: 64.0
                 z: 2668.0
                 label: Death Star
-                desc: Ugab_Outpost_3
+                desc: Ugab Outpost 3
             Delta_Outpost_2:
                 world: world_the_end
                 markup: false
