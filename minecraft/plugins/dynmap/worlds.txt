@@ -94,5 +94,5 @@ worlds:
         perspective:  iso_S_90_lowres
         image-format: png
         mapzoomin:  1
-        mapzoomout: 2
+        mapzoomout: 3
 ################################################################################
