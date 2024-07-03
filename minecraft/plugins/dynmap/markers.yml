@@ -16,15 +16,6 @@ sets:
             }
         label: Towny
         markers:
-            Ugab_Outpost_1:
-                world: world
-                markup: false
-                x: -1484.0
-                icon: house
-                y: 64.0
-                z: 1004.0
-                label: Outpost
-                desc: Ugab Outpost 2
             Mithrandir_Outpost_2:
                 world: world
                 markup: false
@@ -34,6 +25,15 @@ sets:
                 z: 2665.0
                 label: Kuiil
                 desc: Mithrandir Outpost 2
+            Ugab_Outpost_1:
+                world: world
+                markup: false
+                x: -1484.0
+                icon: house
+                y: 64.0
+                z: 1004.0
+                label: Outpost
+                desc: Ugab Outpost 2
             Mithrandir_Outpost_3:
                 world: world
                 markup: false
@@ -52,6 +52,15 @@ sets:
                 z: 108.0
                 label: Outpost
                 desc: Ugab Outpost 2
+            Ugab_Outpost_3:
+                world: world
+                markup: false
+                x: -2660.0
+                icon: house
+                y: 64.0
+                z: 2668.0
+                label: Ugab_Outpost_3
+                desc: Death Star
             Delta_Outpost_2:
                 world: world_the_end
                 markup: false
@@ -242,14 +251,6 @@ sets:
                 y: 70.0
                 z: 1039.0
                 label: Gateway 16
-            gateway_0_out:
-                world: world_the_end
-                markup: false
-                x: 1083.0
-                icon: portal
-                y: 75.0
-                z: 0.0
-                label: Gateway 0
             gateway_8_in:
                 world: world_the_end
                 markup: false
@@ -258,6 +259,14 @@ sets:
                 y: 76.0
                 z: -56.0
                 label: Gateway 8
+            gateway_0_out:
+                world: world_the_end
+                markup: false
+                x: 1083.0
+                icon: portal
+                y: 75.0
+                z: 0.0
+                label: Gateway 0
             exit_portal:
                 world: world_the_end
                 markup: false
