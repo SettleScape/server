@@ -59,8 +59,8 @@ sets:
                 icon: house
                 y: 64.0
                 z: 2668.0
-                label: Ugab_Outpost_3
-                desc: Death Star
+                label: Death Star
+                desc: Ugab_Outpost_3
             Delta_Outpost_2:
                 world: world_the_end
                 markup: false
