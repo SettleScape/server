@@ -70,9 +70,9 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:NonProfiledCodeHeapSize=194M'
 
     ## GraalVM
-    # '-XX:+EagerJVMCI'
-    # '-Dgraal.LoopRotation=true'
-    # '-Dgraal.TuneInlinerExploration=1'
+    '-XX:+EagerJVMCI'
+    '-Dgraal.LoopRotation=true'
+    '-Dgraal.TuneInlinerExploration=1'
 
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'

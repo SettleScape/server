@@ -13,7 +13,8 @@ case "$ENV_JAVA_VERSION" in
 
     17)
         OUT="java${ENV_JAVA_VERSION}.tar.gz"
-        curl "https://download.oracle.com/java/${ENV_JAVA_VERSION}/latest/jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT"
+        # curl "https://download.oracle.com/java/${ENV_JAVA_VERSION}/latest/jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT"
+        curl "https://download.oracle.com/graalvm/${ENV_JAVA_VERSION}/latest/graalvm-jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT"
         tar -xf "$OUT" -C "$ENV_JAVA_DIR"
         mv "$ENV_JAVA_DIR"/*/* "$ENV_JAVA_DIR"/
         rm "$OUT"
