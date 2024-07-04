@@ -91,7 +91,7 @@ options:
   disable_Combat_Prevention: 'false'
   
   # The list of areas which allow tempflight, allowed words: owntown, nationtowns, alliedtowns, alltowns, trustedtowns, wilderness
-  tempflight_allowed_areas: owntown,nationtowns
+  tempflight_allowed_areas: owntown,nationtowns,trustedtowns
   
   # If set to false, the language.noPermission message will not display the permission node.
   show_Permission_After_No_Permission_Message: 'false'
