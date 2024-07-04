@@ -70,6 +70,7 @@ permissions:
 #-------------------------------------------------------------------------------
 - craftbook.mech.chunk
 - fawe.admin
+- fawe.bypass
 - minecraft.command.forceload
 - shopchest.extend.other
 - shopchest.remove.other

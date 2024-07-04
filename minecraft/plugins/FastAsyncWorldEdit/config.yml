@@ -112,7 +112,7 @@ experimental:
   #  - Note: If entities become hidden, increase the server view distance to 3
   dynamic-chunk-rendering: -1
   # Allows brushes to be persistent (default: true)
-  persistent-brushes: false
+  persistent-brushes: true
   # [SAFE] Keep entities that are positioned in non-air blocks when editing an area (default: true)
   #  - Might cause client-side FPS lag in some situations
   #  - Requires fast-placement to be true
@@ -146,11 +146,11 @@ queue:
     #  - Currently not implemented
     display: "chat"
     # How often edit progress is displayed
-    interval: 1
+    interval: 5
     # Delay sending progress in milliseconds (so quick edits don't spam)
     delay: 5000
   # This should equal the number of processors you have
-  parallel-threads: 1 ## Keep this at 1 to avoid possible world corruption
+  parallel-threads: 1
   # When doing edits that effect more than this many chunks:
   #  - FAWE will start placing before all calculations are finished
   #  - A larger value will use slightly less CPU time
@@ -171,7 +171,7 @@ queue:
   #  - A good (relatively) safe way to set this is
   #  - Use 128 x GB of RAM / number of players expected to be using WE at the same time
   #  - Paper and derivatives only. (requires delay-chunk-unloads-by to be set).
-  preload-chunk-count: 512
+  preload-chunk-count: 128
   # If pooling is enabled (reduces GC, higher memory usage)
   #  - Enable to improve performance at the expense of memory
   pool: false
@@ -307,7 +307,7 @@ limits:
     # Place chunks instead of individual blocks:
     #  - Disabling this will negatively impact performance
     #  - Only disable this for compatibility or cinematic placement
-    fast-placement: false ## Leave disabled to avoid world corruption
+    fast-placement: false
     # Should WorldEdit use inventory?
     # 0 = No inventory usage (creative)
     # 1 = Inventory for removing and placing (freebuild)
