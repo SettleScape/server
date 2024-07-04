@@ -16,7 +16,7 @@ player-killed-bad-spawn: false
 deny-enderpearl: true
 fill-autosave-frequency: 30
 bypass-list-uuids: []
-fill-memory-tolerance: 512
+fill-memory-tolerance: 256
 prevent-block-place: true
 prevent-mob-spawn: true
 no-players-toggle: false
