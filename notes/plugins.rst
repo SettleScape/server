@@ -10,7 +10,7 @@ Plugin                    Version     Released    Checked     Stuck 'til  Autoco
 ========================  ==========  ==========  ==========  ==========  ==========  ===
 AuctionHouse              3.0.2       2021-08-14  ----------  1.18.X      ????        https://spigotmc.org/resources/61836/updates
 BeaconPlus                2.1.61      2022-03-04  TODO                    Rewrite     https://spigotmc.org/resources/67056/updates
-CMILib                    1.5.0.1     2024-06-18  2024-06-20              Yes         https://spigotmc.org/resources/87610/updates
+CMILib                    1.5.0.5     2024-07-03  2024-07-04              Yes         https://spigotmc.org/resources/87610/updates
 CommandLog                1.2         2016-07-09  ----------  Dead        ????        https://spigotmc.org/resources/21176/updates
 CoreProtect               22.4        2024-05-14  2024-06-06              No          https://spigotmc.org/resources/8631/updates
 CraftBook                 3.10.5      2021-12-01  ----------  1.18.X      Yes         https://dev.bukkit.org/projects/craftbook/files
@@ -27,7 +27,7 @@ EssentialsX Discord Link  2.20.1      2023-08-05  2024-06-20              No    
 EssentialsX Protect       2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 EssentialsX Spawn         2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 FastAsyncWorldEdit        2.8.4       2023-12-22  2024-07-03  1.18.X      ????        https://ci.athion.net/job/FastAsyncWorldEdit
-Jobs Reborn               5.2.1.2     2023-09-25  TODO                    Partial     https://spigotmc.org/resources/4216/updates
+Jobs Reborn               5.2.4.0     2024-06-28  2024-07-04              Partial     https://spigotmc.org/resources/4216/updates
 LagFixer                  1.3.24      2024-06-14  2024-06-20              Badly       https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.134     2024-06-15  2024-06-20              No          https://luckperms.net/download
 mcMMO                     2.1.231     2024-03-10  ----------  1.18.X      Yes         https://spigotmc.org/resources/64348/updates
