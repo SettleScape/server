@@ -13,14 +13,14 @@ worlds:
     visibilitylimits:
     -   x0: -3072
         z0: -7168
-        x1:  9216
-        z1:  5120
+        x1:  9215
+        z1:  5119
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
         prefix: surface
         name:   surface
-        maximumheight: 320
+        maximumheight: 255
         background:      "#3F3F3F"
        #backgroundnight: "#090B13"
         lighting:     shadows-smooth
@@ -43,8 +43,8 @@ worlds:
     visibilitylimits:
     -   x0: -468
         z0: -980
-        x1:  1236
-        z1:  724
+        x1:  1235
+        z1:  723
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Cross-Section
@@ -71,28 +71,28 @@ worlds:
         y: 64
         z:  0
     fullrenderlocations:
-    -   x: 1024
+    -   x: 1023
         y: 64
-        z: 1024
+        z: 1023
     -   x: -1024
         y: 64
         z: -1024
     visibilitylimits:
     -   x0: -2048
         z0: -2048
-        x1:  2048
-        z1:  2048
+        x1:  2047
+        z1:  2047
     maps:
     -   class:  org.dynmap.hdmap.HDMap
         title:  Surface
         prefix: the_end
         name:   the_end
-        maximumheight: 320
+        maximumheight: 255
         background:  "#110d18"
         lighting:     brightnight-smooth
         shader:       stdtexture
         perspective:  iso_S_90_lowres
         image-format: png
         mapzoomin:  1
-        mapzoomout: 3
+        mapzoomout: 2
 ################################################################################

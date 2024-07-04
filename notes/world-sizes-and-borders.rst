@@ -11,6 +11,8 @@ For optimality, we should try to get the world size to align with region boundar
 Because terrain generates around players up to the server's view distance, we should make the world border `(viewDistance + 1) * chunkSize * 2` smaller in each dimension (with the `+1` to act as a buffer / margin of error, just in case).
 Because positions in the Nether are linked to those in the overworld and we need these to be in-sync, the Nether border must be exactly 1/8 the overworld border.  This means that the area outside the Nether's world border will always be quite large, given the requirement that we always generate to region boundaries.
 
+Lastly, it's important to note that positive coordinates are bounded 1 lower than negative ones.  (ie, -512 to -1 is 0 to 511.)  A heuristic for whether you did this right is whether your positive bounds are all odd.
+
 Current world sizes and borders
 ================================================================================
 
