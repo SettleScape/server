@@ -1,0 +1,8 @@
+**
+!.gitignore
+
+!config.yml
+!worldedit-config.yml
+
+!schematics
+!sessions

@@ -1,7 +1,6 @@
 # Plugins
 
 ## Notes
-* Investigate FastAsyncWorldEdit
 * Sign-editing was added to vanilla in 1.20, so on that version or higher, EditableSign should be removed.
 
 ## Active
@@ -27,6 +26,7 @@ EssentialsX Discord       2.20.1      2023-08-05  2024-06-20              No    
 EssentialsX Discord Link  2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 EssentialsX Protect       2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 EssentialsX Spawn         2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
+FastAsyncWorldEdit        2.8.4       2023-12-22  2024-07-03  1.18.X      ????        https://ci.athion.net/job/FastAsyncWorldEdit
 Jobs Reborn               5.1.0.0     2022-06-24  TODO                    Partial     https://spigotmc.org/resources/4216/updates
 LagFixer                  1.3.24      2024-06-14  2024-06-20              Badly       https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.134     2024-06-15  2024-06-20              No          https://luckperms.net/download
@@ -50,7 +50,6 @@ TownyMenus                0.0.9       2024-05-20  2024-06-20              ????  
 TownyWayPointTravel       1.9         2024-08-25  2024-06-20              Yes         https://discord.com/channels/321452088519426058/1009243497922056292
 Vault                     1.7.3       2020-07-17  2024-06-20  Old         ????        https://github.com/MilkBowl/Vault/releases
 Vivecraft                 1.17.1      2021-08-16  ----------  1.18.X      ????        https://github.com/jrbudda/Vivecraft_Spigot_Extensions/releases
-WorldEdit                 7.2.20      2024-02-29  ----------  1.20.X      No          https://dev.bukkit.org/projects/worldedit/files
 WorldGuard                7.0.7       2021-03-06  ----------  1.19.X      Yes         https://dev.bukkit.org/projects/worldguard/files
 WorldGuard-Towny          1.3.0       2022-07-22  2024-06-20  Old         Yes         https://github.com/TownyAdvanced/WorldGuard-Towny/releases
 ========================  ==========  ==========  ==========  ==========  ==========  ===

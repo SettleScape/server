@@ -163,5 +163,7 @@ world-settings:
       min: 45.0
   worldeditregentempworld:
     verbose: false
+  faweregentempworld:
+    verbose: false
 players:
   disable-saving: false
