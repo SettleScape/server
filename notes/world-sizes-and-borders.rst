@@ -21,6 +21,7 @@ World1
 
 Overworld
 --------------------------------------------------------------------------------
+* Regions: -6 18 | -14 10
 * Size: `12288`
 * Visibility: `12288`
 * Border: `12096` (I think a world border at 32768 is probably ideal as a size, but our particular seed needs at least around 65536 in order to give players access to certain rare biomes. To save space space and take advantage of updated terrain generation in newer versions, I've opted to limit the size of the world to just 24 regions, which fits pretty well with the world's terrain.)
@@ -28,6 +29,7 @@ Overworld
 
 Nether
 --------------------------------------------------------------------------------
+* Regions: -2 2 | -2 2
 * Size: `2048` (This has to be the smallest multiple of `512` that is greater than or equal to the visibility.)
 * Visibility: `1704` (This is the border plus `(viewDistance + 1) * chunkSize * 2`)
 * Border: `1512` (This has to be 1/8 the Overworld world border.)
@@ -35,6 +37,7 @@ Nether
 
 The End
 --------------------------------------------------------------------------------
+* Regions: -4 4 | -4 4
 * Size: `4096` (There is nothing interesting far-out in the End;  therefore, we should make the world border small, to save storage space.  8192 is pretty reasonable in terms of functionality;  but I think I'm going to set it at 4096 and gradually increase it from there as newer and newer versions come out, to pace exploration.)
 * Visibility: `4096`
 * Border: `3904`
@@ -42,6 +45,11 @@ The End
 
 Synergistic settings
 ================================================================================
+
+Set to world region bounds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `scripts/worlds/validate-regions.bash` (Ensure the variables at the start of the script match the values in this file before you run it.)
 
 Set to world size
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
