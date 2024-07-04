@@ -15,7 +15,7 @@ Crafter:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: crafting_table
+    ItemStack: crafting_table
   Craft:
     stick:
       income: 0.1

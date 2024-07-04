@@ -17,7 +17,7 @@ Farmer:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: wheat
+    ItemStack: wheat
   Tame:
     Wolf:
       income: 5.0

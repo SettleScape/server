@@ -15,7 +15,7 @@ Builder:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: brick_stairs
+    ItemStack: brick_stairs
   Place:
     oak_log:
       income: 1.75

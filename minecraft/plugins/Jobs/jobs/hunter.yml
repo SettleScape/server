@@ -15,7 +15,7 @@ Hunter:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: crossbow
+    ItemStack: crossbow
   Break:
     cobweb:
       income: 5.0

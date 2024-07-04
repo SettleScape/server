@@ -15,7 +15,7 @@ Explorer:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: compass
+    ItemStack: compass
   Explore:
     '1':
       income: 3.5

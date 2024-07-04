@@ -16,7 +16,7 @@ Landscaper:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: grass_block
+    ItemStack: grass_block
   Break:
     red_sand:
       income: 1

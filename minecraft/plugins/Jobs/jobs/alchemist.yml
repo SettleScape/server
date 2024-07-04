@@ -16,7 +16,7 @@ Alchemist:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: experience_bottle
+    ItemStack: experience_bottle
   Brew:
     nether_wart:
       income: 6.0

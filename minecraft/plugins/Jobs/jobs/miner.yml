@@ -15,7 +15,7 @@ Miner:
   rejoinCooldown: 3600
   maxDailyQuests: 0
   Gui:
-    Item: iron_pickaxe
+    ItemStack: iron_pickaxe
   TNTBreak:
     chipped_anvil:
       income: 0.75
