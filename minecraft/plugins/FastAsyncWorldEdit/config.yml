@@ -8,11 +8,11 @@ platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
 # fawe.<plugin>  permission. See the Permissions page for supported region plugins.
-region-restrictions: true
+region-restrictions: false
 # FAWE will cancel non admin edits when memory consumption exceeds this %
 #  - Bypass with `/wea` or `//fast` or `fawe.bypass`
 #  - Disable with 100 or -1.
-max-memory-percent: 95
+max-memory-percent: 80
 
 # Enable or disable core components
 enabled-components:
@@ -21,7 +21,7 @@ enabled-components:
   # Leave it off if you don't need it, it can spam your console.
   debug: false
   # Whether or not FAWE should notify you on startup about new versions available.
-  update-notifications: true
+  update-notifications: false
 
 clipboard:
   # Store the clipboard on disk instead of memory
@@ -36,7 +36,7 @@ clipboard:
   #  - levels over 6 require ZSTD 1.4.8+ to be installed to the system
   compression-level: 1
   # Number of days to keep history on disk before deleting it
-  delete-after-days: 1
+  delete-after-days: 2
   # If a player's clipboard should be deleted upon logout
   delete-on-logout: false
   # Allows NBT stored in a clipboard to be written to disk
@@ -51,12 +51,12 @@ clipboard:
 lighting:
   # If packet sending should be delayed until relight is finished
   delay-packet-sending: true
-  async: true
+  async: false
   # The relighting mode to use:
   #  - 0 = None (Do no relighting)
   #  - 1 = Optimal (Relight changed light sources and changed blocks)
   #  - 2 = All (Slowly relight every blocks)
-  mode: 1
+  mode: 2
   # If existing lighting should be removed before relighting
   remove-first: true
 
@@ -89,14 +89,12 @@ web:
   #  - Adding '*' to the list will allow any host, but this is NOT adviseable
   #  - Crash exploits exist with malformed images
   #  - See: https://medium.com/chargebee-engineering/perils-of-parsing-pixel-flood-attack-on-java-imageio-a97aeb06637d
-  allowed-image-hosts: 
-  - "i.imgur.com"
+  allowed-image-hosts: []
 
 extent:
   # Don't bug console when these plugins slow down WorldEdit operations
   #  - You'll see a message in console or ingame if you need to change this option
-  allowed-plugins: 
-  - "com.example.ExamplePlugin"
+  allowed-plugins: []
   # Should debug messages be sent when third party extents are used?
   debug: true
 
@@ -114,11 +112,11 @@ experimental:
   #  - Note: If entities become hidden, increase the server view distance to 3
   dynamic-chunk-rendering: -1
   # Allows brushes to be persistent (default: true)
-  persistent-brushes: true
+  persistent-brushes: false
   # [SAFE] Keep entities that are positioned in non-air blocks when editing an area (default: true)
   #  - Might cause client-side FPS lag in some situations
   #  - Requires fast-placement to be true
-  keep-entities-in-blocks: true
+  keep-entities-in-blocks: false
   # [SAFE] Attempt to remove entities from the world if they were not present in the expected chunk (default: true)
   #  - Sometimes an entity may have moved into a different chunk to that which FAWE expected
   #  - This option allows FAWE to attempt to remove the entity, even if present in a different chunk
@@ -133,7 +131,7 @@ experimental:
   allow-tick-fluids: false
   # Sets a maximum limit (in kb) for the size of a player's schematics directory (per-player mode only)
   # Set to -1 to disable
-  per-player-file-size-limit: -1
+  per-player-file-size-limit: 1024
   # Sets a maximum limit for the amount of schematics in a player's schematics directory (per-player mode only)
   # Set to -1 to disable
   per-player-file-num-limit: -1
@@ -146,13 +144,13 @@ queue:
     #  - title = Display progress titles
     #  - chat = Display progress in chat
     #  - Currently not implemented
-    display: "false"
+    display: "chat"
     # How often edit progress is displayed
     interval: 1
     # Delay sending progress in milliseconds (so quick edits don't spam)
     delay: 5000
   # This should equal the number of processors you have
-  parallel-threads: 16
+  parallel-threads: 1 ## Keep this at 1 to avoid possible world corruption
   # When doing edits that effect more than this many chunks:
   #  - FAWE will start placing before all calculations are finished
   #  - A larger value will use slightly less CPU time
@@ -176,7 +174,7 @@ queue:
   preload-chunk-count: 512
   # If pooling is enabled (reduces GC, higher memory usage)
   #  - Enable to improve performance at the expense of memory
-  pool: true
+  pool: false
   # When using fastmode do not bother to tick existing/placed blocks/fluids
   # Only works in versions up to 1.17.1
   no-tick-fastmode: true
@@ -199,7 +197,7 @@ history:
   # Do not wait for a chunk's history to save before sending it
   #  - Undo/redo commands will wait until the history has been written to disk before executing
   #  - Requires combine-stages = true
-  send-before-history: true
+  send-before-history: false
   # Higher compression reduces the size of history at the expense of CPU
   # 0 = Uncompressed byte array (fastest)
   # 1 = 1 pass fast compressor (default)
@@ -221,7 +219,7 @@ history:
   # Delete history on disk after a number of days
   delete-after-days: 7
   # Delete history in memory on logout (does not effect disk)
-  delete-on-logout: true
+  delete-on-logout: false
   # If history should be enabled by default for plugins using WorldEdit:
   #  - It is faster to have disabled
   #  - It is faster to have disabled
@@ -256,14 +254,13 @@ region-restrictions-options:
   # Allow region blacklists.
   #  - Currently only implemented for WorldGuard
   #  - see region-restrictions-options.worldguard-region-blacklist
-  allow-blacklists: false
+  allow-blacklists: true
   # List of plugin mask managers that should be exclusive. Exclusive managers are not 
   # checked for edit restrictions if another manager already allowed an edit, and further 
   # managers are not checked if an exclusive manager allows an edit.
   #  - May be useful to add PlotSquared if using both P2 and WorldGuard on a server
   #  - Some custom-implementations in other plugins may override this setting
-  exclusive-managers: 
-  - "ExamplePlugin"
+  exclusive-managers: []
   # If a worldguard-protected world should be considered as a region blacklist.
   #  - This will create a blacklist of regions where an edit cannot operate.
   #  - Useful for a "freebuild" worlds with few protected areas.
@@ -291,16 +288,16 @@ limits:
     # Number of times a change can fail (e.g. if the player can't access that region)
     max-fails: 50000000
     # Allowed brush iterations (e.g. `//brush smooth`)
-    max-iterations: 1000
+    max-iterations: 1024
     # Max allowed entities (e.g. cows)
-    max-entities: 1337
+    max-entities: 1024
     # Blockstates include Banner, Beacon, BrewingStand, Chest, CommandBlock, 
     # CreatureSpawner, Dispenser, Dropper, EndGateway, Furnace, Hopper, Jukebox, 
     # NoteBlock, Sign, Skull, Structure
-    max-blockstates: 1337
+    max-blockstates: 1024
     # Maximum size of the player's history in Megabytes:
     #  - History on disk or memory will be deleted
-    max-history-mb: -1
+    max-history-mb: 24
     # Maximum time in milliseconds //calc can execute
     max-expression-ms: 50
     # Cinematic block placement:
@@ -310,7 +307,7 @@ limits:
     # Place chunks instead of individual blocks:
     #  - Disabling this will negatively impact performance
     #  - Only disable this for compatibility or cinematic placement
-    fast-placement: true
+    fast-placement: false ## Leave disabled to avoid world corruption
     # Should WorldEdit use inventory?
     # 0 = No inventory usage (creative)
     # 1 = Inventory for removing and placing (freebuild)
@@ -338,10 +335,7 @@ limits:
     #  - "minecraft:conduit[waterlogged=true]"
     #  - "minecraft:piston[extended=false,facing=west]"
     #  - "minecraft:wheat[age=7]"
-    disallowed-blocks: 
-    - "minecraft:wheat"
-    - "minecraft:fire"
-    - "minecraft:redstone_wire"
+    disallowed-blocks: []
     # List of block properties that should be remapped if used in an edit. Entries should take the form
     # "property_name[value1_old:value1_new,value2_old:value2_new]". For example:
     #  - "waterlogged[true:false]"

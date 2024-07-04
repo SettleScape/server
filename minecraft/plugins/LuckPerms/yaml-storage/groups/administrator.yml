@@ -69,6 +69,7 @@ permissions:
 # Misc
 #-------------------------------------------------------------------------------
 - craftbook.mech.chunk
+- fawe.admin
 - minecraft.command.forceload
 - shopchest.extend.other
 - shopchest.remove.other
