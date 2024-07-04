@@ -87,7 +87,7 @@ Optimizations:
     - world
   Explore:
     # Do you want to use new exploration tracking method. Only for 1.14+ servers
-    NewMethod: true
+    NewMethod: false
     # By setting this to true when there is max amount of players explored a chunk then it will be marked as fully explored and exact players who explored it will not be saved to save some memory
     Compact: true
     # While enabled explored chunk data will be saved into database and will persist over server restarts
