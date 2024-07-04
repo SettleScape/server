@@ -4,26 +4,9 @@
 # Name which will be used to identify this particular item boost
 # This is EXAMPLE boost and will be ignored
 exampleBoost:
-  # Item Id which can be any material name as of 1.13 update
-  # This is only used when performing command like /jobs give, but boost itself is not dependent on item type
+  # Item information, on usage read more at https://www.zrips.net/cmi/commands/icwol/
   # You can use ingame command /jobs edititemboost to give particular boost to any item you are holding
-  id: Golden_shovel
-  # (Optional) Item custom name
-  # Custom colors like &2 &5 can be used
-  name: '&2Custom item name'
-  # (Optional) Item custom lore
-  # Same as name, supports color codes
-  lore:
-  - '&2Some random'
-  - '&5Lore with some'
-  - '&7Colors'
-  # (Optional) Item custom enchants
-  # All enchantment names can be found https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html
-  enchants:
-  - FIRE_ASPECT=1
-  - DAMAGE_ALL=1
-  # (Optional) Leather armour colors (0-255)
-  leather-color: 82,34,125
+  ItemStack: Golden_shovel;n{&2Custom_item_name};l{&2Some_random\n&5Lore_with_some\n{#pink}Colors};FIRE_ASPECT:1,DAMAGE_ALL:1
   # [Required] Money boost: 1.1 is equals 10% more income when 0.9 is equals 10% less from base income
   moneyBoost: 1.0
   expBoost: 1.0

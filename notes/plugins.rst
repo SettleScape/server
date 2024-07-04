@@ -27,7 +27,7 @@ EssentialsX Discord Link  2.20.1      2023-08-05  2024-06-20              No    
 EssentialsX Protect       2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 EssentialsX Spawn         2.20.1      2023-08-05  2024-06-20              No          https://essentialsx.net/downloads.html
 FastAsyncWorldEdit        2.8.4       2023-12-22  2024-07-03  1.18.X      ????        https://ci.athion.net/job/FastAsyncWorldEdit
-Jobs Reborn               5.1.0.0     2022-06-24  TODO                    Partial     https://spigotmc.org/resources/4216/updates
+Jobs Reborn               5.2.1.2     2023-09-25  TODO                    Partial     https://spigotmc.org/resources/4216/updates
 LagFixer                  1.3.24      2024-06-14  2024-06-20              Badly       https://www.spigotmc.org/resources/lagfixer-1-16-1-20-6-%E2%9A%A1%EF%B8%8F-best-performance-solution-%E2%AD%95-used-by-500-servers-%E2%9C%85-folia-supported.111684/updates
 LuckPerms                 5.4.134     2024-06-15  2024-06-20              No          https://luckperms.net/download
 mcMMO                     2.1.231     2024-03-10  ----------  1.18.X      Yes         https://spigotmc.org/resources/64348/updates
