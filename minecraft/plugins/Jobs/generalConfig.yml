@@ -92,7 +92,7 @@ Optimizations:
     Compact: true
     # While enabled explored chunk data will be saved into database and will persist over server restarts
     # While disabled expored chunk data resets on every server startup which will freeup memory and speedup server startups and stop in some cases
-    SaveIntoDatabase: false
+    SaveIntoDatabase: true
 Logging:
   # With this set to true all players jobs actions will be logged to database for easy to see statistics
   # This is still in development and in future it will expand
@@ -109,7 +109,7 @@ broadcast:
     - 100
 DailyQuests:
   # Enables or disables daily quests
-  Enabled: true
+  Enabled: false
   # Defines time in 24hour format when we want to give out new daily quests
   # Any daily quests given before reset will be invalid and new ones will be given out
   ResetTime:
@@ -145,7 +145,7 @@ hide-jobsinfo-without-permission: false
 # Prevent players to enchant items from the shop in the anvil with enchanted books
 prevent-shop-item-enchanting: true
 # Enables or disables jobs shop
-jobs-shop-enabled: true
+jobs-shop-enabled: false
 # Option to allow payment to be made when killing mobs from a spawner.
 # Use jobs.nearspawner.[amount] to define multiplayer. Example jobs.nearspawner.-0.5 will pay half of payment, jobs.nearspawner.-1 will not pay at all
 enable-pay-near-spawner: false
@@ -316,7 +316,7 @@ Economy:
       # Time in 24 hour format when limit should reset. This will override TimeLimit if defined
       # Example: '00:00:00' will reset timer at midnight, '04:30:00' will reset at 4:30 in the morning
       # Set to empty field if you want to use TimeLimit
-      ResetTime: ''
+      ResetTime: '20:00:00'
       # Delay between announcements about reached money limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
       AnnouncementDelay: 30
@@ -338,7 +338,7 @@ Economy:
       # Time in 24 hour format when limit should reset. This will override TimeLimit if defined
       # Example: '00:00:00' will reset timer at midnight, '04:30:00' will reset at 4:30 in the morning
       # Set to empty field if you want to use TimeLimit
-      ResetTime: ''
+      ResetTime: '20:00:00'
       # Delay between announcements about reached limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
       AnnouncementDelay: 30
@@ -361,7 +361,7 @@ Economy:
       # Time in 24 hour format when limit should reset. This will override TimeLimit if defined
       # Example: '00:00:00' will reset timer at midnight, '04:30:00' will reset at 4:30 in the morning
       # Set to empty field if you want to use TimeLimit
-      ResetTime: ''
+      ResetTime: '20:00:00'
       # Delay between announcements about reached Exp limit
       # Keep this from 30 to 5 min (300), as players can get annoyed of constant message displaying
       AnnouncementDelay: 30
@@ -455,7 +455,7 @@ ExploitProtections:
       Percentage: 25
       # When enabled we will avoid checking damage done to ender dragon, wither and warden
       # This can help out in case you have server with custom damage sources which might not be registered and payouts might not be given out
-      IgnoreBosses: true
+      IgnoreBosses: false
   # McMMO abilities
   McMMO:
     # Players will get part of money from cutting trees with treefeller ability enabled.
@@ -627,7 +627,7 @@ Commands:
   # Default - behaves like before and will open jobs help page with list of commands player can access
   # Browse - will open jobs browse GUI where player can check existing jobs and their actions
   # Last option is to define command you want to perform, use [playerName] variable to replace it with players name who performed it. Multiple commands can be provided too. Commands will be performed from console.
-  Jobs: Default
+  Jobs: Browse
   PageRow:
     JobsTop:
       # Defines amount of players to be shown in one page for /jobs top & /jobs gtop

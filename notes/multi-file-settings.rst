@@ -186,6 +186,17 @@ World border display
 
   3. `worldborder.markerset`
 
+Server Day Changeover
+================================================================================
+
+* `plugins/Towny/settings/config.yml`
+
+  * `plugin.daytimer.new_day_time`
+
+* `plugins/Jobs/generalConfig.yml`
+
+  * `Economy.Limit.*.ResetTime`
+
 Notes
 --------------------------------------------------------------------------------
 * While Dynmap's ability to show the world border sounds handy (it *is*), its aesthetics are unconfigurable -- it's better to use a custom outline in `plugins/dynmap/markers.yml`. 
