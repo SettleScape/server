@@ -11,7 +11,7 @@ For optimality, we should try to get the world size to align with region boundar
 Because terrain generates around players up to the server's view distance, we should make the world border `(viewDistance + 1) * chunkSize * 2` smaller in each dimension (with the `+1` to act as a buffer / margin of error, just in case).
 Because positions in the Nether are linked to those in the overworld and we need these to be in-sync, the Nether border must be exactly 1/8 the overworld border.  This means that the area outside the Nether's world border will always be quite large, given the requirement that we always generate to region boundaries.
 
-Lastly, it's important to note that positive coordinates are bounded 1 lower than negative ones.  (ie, -512 to -1 is 0 to 511.)  A heuristic for whether you did this right is whether your positive bounds are all odd.
+Lastly, it's important to note that positive coordinates are bounded 1 lower than negative ones.  (ie, -512 to -1 is 0 to 511.)  (This is true both of individual blocks and of region coordinates.)  A quick heuristic for whether your values are right is whether your positive bounds are all odd.
 
 Current world sizes and borders
 ================================================================================
@@ -21,7 +21,7 @@ World1
 
 Overworld
 --------------------------------------------------------------------------------
-* Regions: -6 18 | -14 10
+* Regions: -6 17 | -14 9
 * Size: `12288`
 * Visibility: `12288`
 * Border: `12096` (I think a world border at 32768 is probably ideal as a size, but our particular seed needs at least around 65536 in order to give players access to certain rare biomes. To save space space and take advantage of updated terrain generation in newer versions, I've opted to limit the size of the world to just 24 regions, which fits pretty well with the world's terrain.)
@@ -29,7 +29,7 @@ Overworld
 
 Nether
 --------------------------------------------------------------------------------
-* Regions: -2 2 | -2 2
+* Regions: -2 1 | -2 1
 * Size: `2048` (This has to be the smallest multiple of `512` that is greater than or equal to the visibility.)
 * Visibility: `1704` (This is the border plus `(viewDistance + 1) * chunkSize * 2`)
 * Border: `1512` (This has to be 1/8 the Overworld world border.)
@@ -37,7 +37,7 @@ Nether
 
 The End
 --------------------------------------------------------------------------------
-* Regions: -4 4 | -4 4
+* Regions: -4 3 | -4 3
 * Size: `4096` (There is nothing interesting far-out in the End;  therefore, we should make the world border small, to save storage space.  8192 is pretty reasonable in terms of functionality;  but I think I'm going to set it at 4096 and gradually increase it from there as newer and newer versions come out, to pace exploration.)
 * Visibility: `4096`
 * Border: `3904`

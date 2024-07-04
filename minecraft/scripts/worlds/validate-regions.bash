@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 ## Identifies regions outside the world bounds.
+#TODO: Allow the user to enter the name of the world they want to check.
 
 declare -i MIN_X=-6
-declare -i MAX_X=18
+declare -i MAX_X=17
 declare -i MIN_Z=-14
-declare -i MAX_Z=10
+declare -i MAX_Z=9
 
 shopt -s nullglob
 for F in r.*.*.mca; do
