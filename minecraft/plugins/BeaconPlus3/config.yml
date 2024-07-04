@@ -1,0 +1,86 @@
+Configuration Version: "1.0"
+
+Default Language: "en_us"
+
+# Used to replace internal world name to world alias
+# in {beacon_world}
+World Alias:
+  world: "Overworld"
+  world_nether: "The Nether Dimension"
+  world_the_end: "The End Dimension"
+
+# Convert Automatically data from BeaconPlus 2 to BeaconPlus 3
+Legacy Conversion:
+  Enable: false
+  Effect Mapping:
+    jump:
+      New Effect: "jump"
+    fastdig:
+      New Effect: "fastdig"
+    cure:
+      New Effect: "cure"
+    furnace:
+      New Effect: "furnace"
+    strength:
+      New Effect: "strength"
+    regeneration:
+      New Effect: "regeneration"
+    resist:
+      New Effect: "resist"
+    crops:
+      New Effect: "crops"
+    spawners:
+      New Effect: "spawners"
+    slowdown:
+      New Effect: "slowdown"
+    speed:
+      New Effect: "speed"
+    peaceful:
+      New Effect: "peaceful"
+    nightvision:
+      New Effect: "nightvision"
+    flying:
+      New Effect: "flying"
+    experience:
+      New Effect: "exp_boost"
+
+Economy:
+  PlayerPoints:
+    Currency: "{language.economy.playerpoints-currency}"
+    Display Name: "{language.economy.playerpoints-display-name}"
+    Format: "{amount} {economy_currency}"
+  Vault:
+    Currency: "$"
+    Display Name: "{language.economy.vault-display-name}"
+    Format: "{economy_currency}{amount}"
+  Level:
+    Currency: "{language.economy.level-currency}"
+    Display Name: "{language.economy.level-display-name}"
+    Format: "{amount} {economy_currency}"
+  Item:
+    Emerald:
+      Currency: "{language.economy.emerald-currency}"
+      Display Name: "{language.economy.emerald-display-name}"
+      Format: "{amount}x {economy_currency}"
+      Item:
+        type: EMERALD
+
+Animation:
+  Slide:
+    Cover 1:
+      type: PURPLE_STAINED_GLASS_PANE
+      meta:
+        display-name: '&7  '
+    Cover 2:
+      type: MAGENTA_STAINED_GLASS_PANE
+      meta:
+        display-name: '&7  '
+  Dissolve:
+    Cover 1:
+      type: PURPLE_STAINED_GLASS_PANE
+      meta:
+        display-name: '&7  '
+    Cover 2:
+      type: MAGENTA_STAINED_GLASS_PANE
+      meta:
+        display-name: '&7  '

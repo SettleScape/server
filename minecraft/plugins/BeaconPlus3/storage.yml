@@ -1,0 +1,17 @@
+
+# STORAGE does not save BEACON DATA!
+# It only saves PLAYER DATA such as
+# - player language
+# - player toggle on/off animation
+# - player toggle on/off particles
+Storage:
+  Type: FILE
+  File:
+    Players Directory: "Players"
+  MySQL:
+    Host: localhost
+    Port: 3306
+    Database Name: DATABASE NAME
+    Username: USERNAME
+    Password: PASSWORD
+    Players Table: "beacon_players"

@@ -1,0 +1,1235 @@
+Configuration Version: '1.1'
+Effects:
+  furnace:
+    Display Name: '{language.effects.furnace-name}'
+    Item:
+      type: FURNACE
+    Description: '{language.effects.furnace-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 12500
+          Emerald: 30
+          Level: 25
+        Description: '{language.effects.furnace-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: FURNACE_BOOST
+            Speed Up Time: 12
+            Fuel Speed Up Time: 5
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 10
+      - Cost:
+          Vault: 25000
+          Emerald: 60
+          Level: 30
+        Description: '{language.effects.furnace-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: FURNACE_BOOST
+            Speed Up Time: 25
+            Fuel Speed Up Time: 10
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 10
+      - Cost:
+          Vault: 60000
+          Emerald: 120
+          Level: 35
+        Description: '{language.effects.furnace-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: FURNACE_BOOST
+            Speed Up Time: 50
+            Fuel Speed Up Time: 20
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 10
+      - Cost:
+          Vault: 150000
+          Emerald: 240
+          Level: 40
+        Description: '{language.effects.furnace-tier-4}'
+        Power Consumption: 4
+        Effects:
+          - Type: FURNACE_BOOST
+            Speed Up Time: 75
+            Fuel Speed Up Time: 30
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 10
+  strength:
+    Display Name: '{language.effects.strength-name}'
+    Item:
+      type: IRON_SWORD
+    Description: '{language.effects.strength-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 10
+          Level: 5
+        Description: '{language.effects.strength-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: INCREASE_DAMAGE
+            Duration: 300
+            Amplifier: 0
+            Condition:
+              Type: TYPE_FILTER
+              Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 20
+          Level: 10
+        Description: '{language.effects.strength-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: INCREASE_DAMAGE
+            Duration: 300
+            Amplifier: 1
+            Condition:
+              Type: TYPE_FILTER
+              Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.strength-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: INCREASE_DAMAGE
+            Duration: 300
+            Amplifier: 2
+            Condition:
+              Type: TYPE_FILTER
+              Filter: PLAYER
+  invisible:
+    Display Name: '{language.effects.invis-name}'
+    Item:
+      type: ENDER_PEARL
+    Description: '{language.effects.invis-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 25000
+          Emerald: 50
+          Level: 15
+        Description: '{language.effects.invis-tier-1}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: INVISIBILITY
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 50000
+          Emerald: 50
+          Level: 30
+        Description: '{language.effects.invis-tier-2}'
+        Power Consumption: 6
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: INVISIBILITY
+            Duration: 300
+            Amplifier: 0
+            Ambient: false
+            Particles: false
+  regeneration:
+    Display Name: '{language.effects.regen-name}'
+    Item:
+      type: APPLE
+    Description: '{language.effects.regen-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 100
+          Level: 30
+        Description: '{language.effects.regen-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: REGENERATION
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER or TAMED or VILLAGER
+      - Power Consumption: 2
+        Cost:
+          Vault: 150000
+          Emerald: 300
+          Level: 60
+        Description: '{language.effects.regen-tier-2}'
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: REGENERATION
+            Duration: 300
+            Amplifier: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER or TAMED or VILLAGER
+  resist:
+    Display Name: '{language.effects.resist-name}'
+    Item:
+      type: GOLDEN_HELMET
+    Description: '{language.effects.resist-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 10
+          Level: 5
+        Description: '{language.effects.resist-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: DAMAGE_RESISTANCE
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 20
+          Level: 10
+        Description: '{language.effects.resist-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: DAMAGE_RESISTANCE
+            Duration: 300
+            Amplifier: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.resist-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: DAMAGE_RESISTANCE
+            Duration: 300
+            Amplifier: 2
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  fastdig:
+    Display Name: '{language.effects.dig-name}'
+    Item:
+      type: GOLDEN_PICKAXE
+    Description: '{language.effects.dig-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 10
+          Level: 5
+        Description: '{language.effects.dig-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: FAST_DIGGING
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 20
+          Level: 10
+        Description: '{language.effects.dig-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: FAST_DIGGING
+            Duration: 300
+            Amplifier: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.dig-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: FAST_DIGGING
+            Duration: 300
+            Amplifier: 2
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  cure:
+    Display Name: '{language.effects.cure-name}'
+    Item:
+      type: POTION
+    Description: '{language.effects.cure-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 15000
+          Emerald: 32
+          Level: 15
+        Description: '{language.effects.cure-tier-1}'
+        Power Consumption: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+        Effects:
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HARM
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WITHER
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BAD_OMEN
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW_DIGGING
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: CONFUSION
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WEAKNESS
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: POISON
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: LEVITATION
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: UNLUCK
+            Duration Boost Tick: -40
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BLINDNESS
+            Duration Boost Tick: -40
+      - Cost:
+          Vault: 30000
+          Emerald: 64
+          Level: 30
+        Description: '{language.effects.cure-tier-2}'
+        Power Consumption: 2
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+        Effects:
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HARM
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WITHER
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BAD_OMEN
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW_DIGGING
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: CONFUSION
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WEAKNESS
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: POISON
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: LEVITATION
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: UNLUCK
+            Duration Boost Tick: -60
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BLINDNESS
+            Duration Boost Tick: -60
+      - Cost:
+          Vault: 60000
+          Emerald: 128
+          Level: 60
+        Description: '{language.effects.cure-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HARM
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WITHER
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BAD_OMEN
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: SLOW_DIGGING
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: CONFUSION
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: WEAKNESS
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: HUNGER
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: POISON
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: LEVITATION
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: UNLUCK
+            Duration Boost Tick: -80
+          - Type: POTION_DURATION_BOOST
+            Potion Effect Type: BLINDNESS
+            Duration Boost Tick: -80
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  crops:
+    Display Name: '{language.effects.crops-name}'
+    Item:
+      type: WHEAT
+    Type: CropsBoostEffect
+    Description: '{language.effects.crops-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 25000
+          Emerald: 60
+          Level: 20
+        Description: '{language.effects.crops-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 1
+            Crops Blacklist:
+              - VINE
+      - Cost:
+          Vault: 60000
+          Emerald: 120
+          Level: 25
+        Description: '{language.effects.crops-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 2
+            Crops Blacklist:
+              - VINE
+      - Cost:
+          Vault: 150000
+          Emerald: 240
+          Level: 30
+        Description: '{language.effects.crops-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 3
+            Crops Blacklist:
+              - VINE
+      - Cost:
+          Vault: 400000
+          Emerald: 300
+          Level: 35
+        Description: '{language.effects.crops-tier-4}'
+        Power Consumption: 4
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 4
+            Crops Blacklist:
+              - VINE
+      - Cost:
+          Vault: 1000000
+          Emerald: 720
+          Level: 40
+        Description: '{language.effects.crops-tier-5}'
+        Power Consumption: 5
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 5
+            Crops Blacklist:
+              - VINE
+      - Cost:
+          Vault: 2400000
+          Emerald: 1500
+          Level: 45
+        Description: '{language.effects.crops-tier-6}'
+        Power Consumption: 6
+        Effects:
+          - Type: CROPS_BOOST
+            Speed Up Stage: 6
+            Crops Blacklist:
+              - VINE
+  spawners:
+    Display Name: '{language.effects.spawner-name}'
+    Item:
+      type: SPAWNER
+    Description: '{language.effects.spawner-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 25000
+          Emerald: 60
+          Level: 50
+        Description: '{language.effects.spawner-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: SPAWNER_BOOST
+            Speed Up Percentage: 10
+      - Cost:
+          Vault: 60000
+          Level: 60
+          Emrald: 120
+        Description: '{language.effects.spawner-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: SPAWNER_BOOST
+            Speed Up Percentage: 20
+      - Cost:
+          Vault: 150000
+          Emerald: 300
+          Level: 70
+        Description: '{language.effects.spawner-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: SPAWNER_BOOST
+            Speed Up Percentage: 30
+      - Cost:
+          Vault: 400000
+          Emerald: 720
+          Level: 80
+        Description: '{language.effects.spawner-tier-4}'
+        Power Consumption: 4
+        Effects:
+          - Type: SPAWNER_BOOST
+            Speed Up Percentage: 40
+      - Cost:
+          Vault: 1000000
+          Emerald: 1500
+          Level: 90
+        Description: '{language.effects.spawner-tier-5}'
+        Power Consumption: 5
+        Effects:
+          - Type: SPAWNER_BOOST
+            Speed Up Percentage: 50
+  slowdown:
+    Display Name: '{language.effects.slow-name}'
+    Item:
+      type: COBWEB
+    Description: '{language.effects.slow-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 10
+          Level: 5
+        Description: '{language.effects.slow-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SLOW
+            Amplifier: 0
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT TAMED
+      - Cost:
+          Vault: 10000
+          Emerald: 20
+          Level: 10
+        Description: '{language.effects.slow-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SLOW
+            Amplifier: 1
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT TAMED
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.slow-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SLOW
+            Amplifier: 2
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT TAMED
+  speed:
+    Display Name: '{language.effects.speed-name}'
+    Item:
+      type: GOLDEN_BOOTS
+    Description: '{language.effects.speed-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 10
+          Level: 5
+        Description: '{language.effects.speed-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SPEED
+            Amplifier: 0
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 20
+          Level: 10
+        Description: '{language.effects.speed-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SPEED
+            Amplifier: 1
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.speed-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: SPEED
+            Amplifier: 2
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  peaceful:
+    Display Name: '{language.effects.peaceful-name}'
+    Item:
+      type: OXEYE_DAISY
+    Description: '{language.effects.peaceful-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000000
+          Emerald: 2304
+          Level: 140
+        Description: '{language.effects.peaceful-tier}'
+        Power Consumption: 1
+        Effects:
+          - Type: STUPID_AI
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 100
+      - Cost:
+          Vault: 100000000
+          Emerald: 4608
+          Level: 150
+        Description: '{language.effects.peaceful-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: STUPID_AI
+          - Type: PREVENT_MOB_SPAWNING
+            Condition:
+              Type: TYPE_FILTER
+              Filter: MONSTER
+  nightvision:
+    Display Name: '{language.effects.vis-name}'
+    Item:
+      type: ENDER_EYE
+    Description: '{language.effects.vis-description}'
+    Enabled: true
+    Levels:
+      - Amplifier: 0
+        Cost:
+          Vault: 17500
+          Emerald: 35
+          Level: 18
+        Description: '{language.effects.vis-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: NIGHT_VISION
+            Amplifier: 0
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  flying:
+    Display Name: '{language.effects.fly-name}'
+    Item:
+      type: FEATHER
+    Description: '{language.effects.fly-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 100
+          Level: 50
+        Description: '{language.effects.fly-tier-1}'
+        Power Consumption: 2
+        Effects:
+          - Type: FLY
+            Height: 10
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 30
+      - Cost:
+          Vault: 100000
+          Emerald: 200
+          Level: 75
+        Description: '{language.effects.fly-tier-2}'
+        Power Consumption: 4
+        Effects:
+          - Type: FLY
+            Height: 20
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 50
+      - Cost:
+          Vault: 200000
+          Emerald: 400
+          Level: 100
+        Description: '{language.effects.fly-tier-3}'
+        Power Consumption: 6
+        Effects:
+          - Type: FLY
+            Height: 30
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 70
+      - Cost:
+          Vault: 400000
+          Emerald: 800
+          Level: 125
+        Description: '{language.effects.fly-tier-4}'
+        Power Consumption: 8
+        Effects:
+          - Type: FLY
+            Height: 40
+        Condition:
+          Type: POWER_REQUIREMENT
+          Minimum: 90
+  exp_boost:
+    Display Name: '{language.effects.level-name}'
+    Item:
+      type: EXPERIENCE_BOTTLE
+    Description: '{language.effects.level-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 240000
+          Emerald: 320
+          Level: -1
+        Description: '{language.effects.level-tier-1}'
+        Power Consumption: 3
+        Effects:
+          - Type: EXP_BOOST
+            Multipler: 1.5
+      - Cost:
+          Vault: 280000
+          Emerald: 400
+          Level: -1
+        Description: '{language.effects.level-tier-2}'
+        Power Consumption: 6
+        Effects:
+          - Type: EXP_BOOST
+            Multipler: 1.6
+      - Cost:
+          Vault: 300000
+          Emerald: 440
+          Level: -1
+        Description: '{language.effects.level-tier-3}'
+        Power Consumption: 9
+        Effects:
+          - Type: EXP_BOOST
+            Multipler: 1.7
+      - Cost:
+          Vault: 320000
+          Emerald: 480
+          Level: -1
+        Description: '{language.effects.level-tier-4}'
+        Power Consumption: 12
+        Effects:
+          - Type: EXP_BOOST
+            Multipler: 1.8
+      - Cost:
+          Vault: 340000
+          Emerald: 520
+          Level: -1
+        Description: '{language.effects.level-tier-5}'
+        Power Consumption: 15
+        Effects:
+          - Type: EXP_BOOST
+            Multipler: 1.9
+  luck:
+    Display Name: '{language.effects.luck-name}'
+    Item:
+      type: DROPPER
+    Description: '{language.effects.luck-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 200
+          Level: 50
+        Description: '{language.effects.luck-tier-1}'
+        Power Consumption: 20
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: LUCK
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 100000
+          Emerald: 400
+          Level: 100
+        Description: '{language.effects.luck-tier-2}'
+        Power Consumption: 40
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: LUCK
+            Duration: 300
+            Amplifier: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 200000
+          Emerald: 800
+          Level: 200
+        Description: '{language.effects.luck-tier-3}'
+        Power Consumption: 60
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: LUCK
+            Duration: 300
+            Amplifier: 2
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  burner:
+    Display Name: '{language.effects.burner-name}'
+    Description: '{language.effects.burner-description}'
+    Item:
+      type: FLINT_AND_STEEL
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.burner-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: FIRE_CONTROL
+            Fire Tick: 100
+        Condition:
+          Type: TYPE_FILTER
+          Filter: ZOMBIE OR SKELETON
+  water_breathing:
+    Display Name: '{language.effects.wbreath-name}'
+    Description: '{language.effects.wbreath-description}'
+    Item:
+      type: WATER_BUCKET
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 200
+          Level: 50
+        Description: '{language.effects.wbreath-tier-1}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: WATER_BREATHING
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  fireExtinguisher:
+    Display Name: '{language.effects.fext-name}'
+    Description: '{language.effects.fext-description}'
+    Item:
+      type: REDSTONE_TORCH
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.fext-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: FIRE_CONTROL
+            Fire Tick: -1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  poison:
+    Display Name: '{language.effects.poison-name}'
+    Item:
+      type: POISONOUS_POTATO
+    Description: '{language.effects.poison-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.poison-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: POISON
+            Duration: 300
+            Amplifier: 0
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT ANIMALS AND NOT TAMED AND NOT VILLAGER
+      - Cost:
+          Vault: 10000
+          Emerald: 40
+          Level: 10
+        Description: '{language.effects.poison-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: POISON
+            Duration: 300
+            Amplifier: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT ANIMALS AND NOT TAMED AND NOT VILLAGER
+      - Cost:
+          Vault: 20000
+          Emerald: 80
+          Level: 20
+        Description: '{language.effects.poison-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: POISON
+            Duration: 300
+            Amplifier: 2
+        Condition:
+          Type: TYPE_FILTER
+          Filter: NOT PLAYER AND NOT ANIMALS AND NOT TAMED AND NOT VILLAGER
+  gravity_well:
+    Display Name: '{language.effects.gravity-name}'
+    Item:
+      type: HOPPER
+    Description: '{language.effects.gravity-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.gravity-tier-1}'
+        Power Consumption: 2
+        Effects:
+          - Type: MAGNET
+            Magnitude: 0.1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+          Negate: true
+      - Cost:
+          Vault: 10000
+          Emerald: 40
+          Level: 10
+        Description: '{language.effects.gravity-tier-2}'
+        Power Consumption: 4
+        Effects:
+          - Type: MAGNET
+            Magnitude: 0.25
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+          Negate: true
+      - Cost:
+          Vault: 20000
+          Emerald: 40
+          Level: 20
+        Description: '{language.effects.gravity-tier-3}'
+        Power Consumption: 6
+        Effects:
+          - Type: MAGNET
+            Magnitude: 0.5
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+          Negate: true
+  jump:
+    Display Name: '{language.effects.jump-name}'
+    Item:
+      type: STRING
+    Description: '{language.effects.jump-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.jump-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: JUMP
+            Amplifier: 0
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 40
+          Level: 10
+        Description: '{language.effects.jump-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: JUMP
+            Amplifier: 1
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 80
+          Level: 20
+        Description: '{language.effects.jump-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: POTION_EFFECT
+            Effect: JUMP
+            Amplifier: 2
+            Duration: 300
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  exp_gain:
+    Display Name: '{language.effects.exp-gain-name}'
+    Item:
+      type: TOTEM_OF_UNDYING
+    Description: '{language.effects.exp-gain-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 100
+        Description: '{language.effects.exp-gain-tier-1}'
+        Power Consumption: 20
+        Effects:
+          # This will give 0.25 exp per second to the player
+          # This takes about 28 seconds to get 1 level (from 0 to 1)
+          # and takes about 5580 seconds (93 minutes/1 hour and 33 minutes) to get 30 levels
+          # see https://minecraft.fandom.com/wiki/Experience#Leveling_up
+          - Type: EXP_GAIN
+            Exp: 0.25
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 100000
+          Emerald: 200
+        Description: '{language.effects.exp-gain-tier-2}'
+        Power Consumption: 40
+        Effects:
+          # This will give 0.5 exp per second to the player
+          # This takes about 14 seconds to get 1 level (from 0 to 1)
+          # and takes about 2790 seconds (49 minutes) to get 30 levels
+          - Type: EXP_GAIN
+            Exp: 0.5
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 200000
+          Emerald: 400
+        Description: '{language.effects.exp-gain-tier-3}'
+        Power Consumption: 60
+        Effects:
+          # This will give 0.75 exp per second to the player
+          # This takes about 9 seconds to get 1 level (from 0 to 1)
+          # and takes about 1860 seconds (31 minutes) to get 30 levels
+          - Type: EXP_GAIN
+            Exp: 0.75
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 400000
+          Emerald: 800
+        Description: '{language.effects.exp-gain-tier-4}'
+        Power Consumption: 80
+        Effects:
+          # This will give 1 exp per second to the player
+          # This takes about 7 seconds to get 1 level (from 0 to 1)
+          # and takes about 1395 seconds (23 minutes) to get 30 levels
+          - Type: EXP_GAIN
+            Exp: 1
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  cooldown_reduction:
+    Display Name: '{language.effects.cooldown-name}'
+    Item:
+      type: CLOCK
+    Description: '{language.effects.cooldown-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 5000
+          Emerald: 20
+          Level: 5
+        Description: '{language.effects.cooldown-tier-1}'
+        Power Consumption: 1
+        Effects:
+          - Type: COOLDOWN_REDUCTION
+            Cooldown Reduction Percentage: 25
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 10000
+          Emerald: 40
+          Level: 10
+        Description: '{language.effects.cooldown-tier-2}'
+        Power Consumption: 2
+        Effects:
+          - Type: COOLDOWN_REDUCTION
+            Cooldown Reduction Percentage: 50
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 20000
+          Emerald: 80
+          Level: 20
+        Description: '{language.effects.cooldown-tier-3}'
+        Power Consumption: 3
+        Effects:
+          - Type: COOLDOWN_REDUCTION
+            Cooldown Reduction Percentage: 75
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+  immortality:
+    Display Name: '{language.effects.immortality-name}'
+    Item:
+      type: NETHER_STAR
+    Description: '{language.effects.immortality-description}'
+    Enabled: true
+    Levels:
+      - Cost:
+          Vault: 50000
+          Emerald: 200
+          Level: 50
+        Description: '{language.effects.immortality-tier-1}'
+        Power Consumption: 30
+        Effects:
+          - Type: IMMORTALITY_FIELD
+            Min Health: 1
+            Survival Chance: 25
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 100000
+          Emerald: 400
+          Level: 100
+        Description: '{language.effects.immortality-tier-2}'
+        Power Consumption: 50
+        Effects:
+          - Type: IMMORTALITY_FIELD
+            Min Health: 1
+            Survival Chance: 50
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 200000
+          Emerald: 800
+          Level: 200
+        Description: '{language.effects.immortality-tier-3}'
+        Power Consumption: 70
+        Effects:
+          - Type: IMMORTALITY_FIELD
+            Min Health: 1
+            Survival Chance: 75
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER
+      - Cost:
+          Vault: 400000
+          Emerald: 1600
+          Level: 400
+        Description: '{language.effects.immortality-tier-4}'
+        Power Consumption: 90
+        Effects:
+          - Type: IMMORTALITY_FIELD
+            Min Health: 1
+            Survival Chance: 100
+        Condition:
+          Type: TYPE_FILTER
+          Filter: PLAYER

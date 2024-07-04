@@ -1,0 +1,148 @@
+Configuration Version: "1.0"
+
+Beacon Particle: SPELL_WITCH
+
+Beacon Effect Condition:
+  Type: PLOTSQUARED_IS_SAME_PLOT
+
+# Example of Beacon Effect Condition for GriefPrevention
+# This will make the beacon only works if the player is in the same claim
+# Beacon Effect Condition:
+#   Type: GRIEFPREVENTION_SAME_CLAIM
+#
+# This will make the beacon only works if the player has the permission
+# The permissions are Build, Edit, Inventory, Access, and Manage
+# Beacon Effect Condition:
+#   Type: GRIEFPREVENTION_PERMISSION
+#   Permission: "Build"
+#
+# This will make the beacon only works if the player is the owner of the claim
+# Beacon Effect Condition:
+#   Type: GRIEFPREVENTION_OWNER
+#
+# This will make the beacon only works if the beacon is placed in claimed land
+# Beacon Effect Condition:
+#   Type: GRIEFPREVENTION_CLAIMED
+
+Beacon Particle Condition:
+  Type: HAS_PERMISSION
+  Permission: "beaconplus.see.particle"
+
+# BeaconPlus Permissions (does not affect vanilla)
+Permissions:
+  Craft: "beaconplus.craft"
+  Open Menu: "beaconplus.open"
+  Open Upgrade: "beaconplus.open.upgrade"
+  Open Settings: "beaconplus.open.settings"
+  Open Language: "beaconplus.open.language"
+  Upgrade: "beaconplus.upgrade"
+  Break: "beaconplus.beacon.break"
+  Place: "beaconplus.beacon.place"
+
+# If the player has no permission for breaking beacon,
+# it can still be broken/placed if the beacon has no effect
+Allow Break If Has No Effect: true
+Allow Place If Has No Effect: true
+
+Range Calculator:
+  # REMAINING_POWER : Use remaining power as range
+  # TOTAL_POWER : Use total power as range
+  Power Source: REMAINING_POWER
+  # CLASSIFIED / PERCENTILE / EXPONENTIAL
+  Mode: EXPONENTIAL
+  Classified:
+    '0': 0
+    '9': 10
+    '34': 20
+    '83': 30
+    '164': 40
+    '285': 50
+  # Formula: power * (percentile / 100)
+  Percentile:
+    Min Range: 0
+    Percentage: 100
+    Max Range: 500
+  # Formula: power^exponent
+  Exponential:
+    Min Range: 0
+    Exponent: 0.9
+    Max Range: 500
+
+# Maximum Height for Pyramid Scanning
+Max Scan Height: 6
+
+# Only count pyramid layers that has full blocks?
+Perfect Pyramid Structure: true
+
+# Beacons only work if the beam goes through the sky
+Beam Through Sky: true
+
+# Entities under pyramid lowest Y will not be affected by the beacon
+Pyramid Lowest Y As Bounding Box Limit: false
+
+# Make your beacon works in nether
+Ignore Beam In Nether: true
+
+# Beacon Area Type:
+# INFINITE_CYLINDER - cylindrical beacon area with no height limit
+# CYLINDER - cylindrical beacon area with height limit (to range)
+# SPHERE - spherical beacon area
+# INFINITE_CUBE - cubical beacon area with no height limit
+# CUBE - cubical beacon area with height limit (to range)
+Beacon Area Type: INFINITE_CYLINDER
+
+Power Sources:
+  GOLD_BLOCK: 1
+  IRON_BLOCK: 1
+  EMERALD_BLOCK: 3
+  DIAMOND_BLOCK: 2
+  NETHERITE_BLOCK: 4
+
+Vanilla Beacon Item:
+  # If this set to true
+  # any vanilla beacon will turn into beaconplus beacon
+  Disable Vanilla: false
+  # Remove Vanilla Beacon Recipe from the server?
+  Disable Recipe: false
+
+Beacon Item:
+  # Beacon Item auto Pick up
+  # If Auto Pick Up is set to false,
+  # the beacon item will be dropped instead
+  Auto Pick Up: true
+  # Cancel Beacon Break if Auto Pick Up is true and Inventory is Full
+  Cancel If Inventory Full: true
+  # When placed in creative, the beacon item will be taken from the inventory
+  Creative No Dupe: true
+  # Custom Recipes for BeaconPlus
+  Recipes:
+    example_recipe:
+      Shape:
+        - "GLG"
+        - "PNR"
+        - "OAO"
+      Ingredient:
+        G:
+          type: GLASS
+        R:
+          type: REDSTONE_BLOCK
+        P:
+          type: CLOCK
+        N:
+          type: END_CRYSTAL
+        O:
+          type: OBSIDIAN
+        A:
+          type: ANVIL
+        L:
+          type: LEVER
+  Display:
+    # must be beacon
+    type: BEACON
+    meta:
+      display-name: "&a{beacon_title}"
+      lore:
+        - "&7"
+        - "&8   [&b&l+&8] &7{language.item.lore-effects}:"
+        - "{effect_list}"
+        - "&7"

@@ -1,0 +1,7 @@
+**
+!.gitignore
+!beacon.yml
+!config.yml
+!effects.yml
+!gui.yml
+!storage.yml

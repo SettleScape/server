@@ -1,0 +1,332 @@
+Configuration Version: "1.0"
+
+Max Title Length: 32
+Title Overflow: "..."
+
+Menus:
+  Settings:
+    Title: '&1{language.menu.settings-title}'
+    Transition:
+      Enable: true
+      Animation: RANDOM
+    Layout:
+      - GGGGGGGGG
+      - HGQRU SGH
+      - GGGGGGGGG
+  Language:
+    Title: '&1{language.menu.language-title}'
+    Transition:
+      Enable: true
+      Animation: RANDOM
+    Layout:
+      - GGGGGGGGG
+      - HGTTTTTGH
+      - HPTTTTTIH
+      - HGTTTTTGH
+      - GGGGJGGGG
+  Beacon:
+    Transition:
+      Enable: true
+      # RANDOM, RANDOM_SAME, SLIDE, DISSOLVE
+      Animation: RANDOM
+    Layout:
+      - GGGGGGGGG
+      - HGBBBBBGH
+      - HPBBBBBIH
+      - HGBBBBBGH
+      - GGGKGLGGG
+    Title: '&1{beacon_title}'
+  Upgrade:
+    Transition:
+      Enable: true
+      # RANDOM, RANDOM_SAME, SLIDE, DISSOLVE
+      Animation: RANDOM
+    Layout:
+      - GGGGGGGGG
+      - HGD E FGH
+      - GGGCAJGGG
+    Title: '&1{language.menu.beacon-upgrade-title} - {effect_name}'
+Items:
+  Language:
+    Layout Key: T
+    Display:
+      type: BOOK
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&a{language.name}'
+        lore:
+          - '&7{language.menu.item-language-select}'
+  Change Language:
+    Layout Key: S
+    Display:
+      type: OAK_SIGN
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &c&l{language.menu.item-language}&8 ]'
+        lore:
+          - '&7{language.menu.item-language-info}: &b{language.name}'
+  Toggle Show Beacon Particles:
+    Layout Key: U
+    Enabled:
+      type: LIME_WOOL
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &a&l{language.menu.item-particles-beacon}&8 ]'
+    Disabled:
+      type: LIGHT_GRAY_WOOL
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &7&l{language.menu.item-particles-beacon}&8 ]'
+  Toggle Show Particles:
+    Layout Key: R
+    Enabled:
+      type: LIME_WOOL
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &a&l{language.menu.item-particles}&8 ]'
+    Disabled:
+      type: LIGHT_GRAY_WOOL
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &7&l{language.menu.item-particles}&8 ]'
+  Toggle Show Animation:
+    Layout Key: Q
+    Enabled:
+      sound: UI_BUTTON_CLICK
+      type: LIME_WOOL
+      meta:
+        display-name: '&8[ &a&l{language.menu.item-animation}&8 ]'
+    Disabled:
+      type: LIGHT_GRAY_WOOL
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &7&l{language.menu.item-animation}&8 ]'
+  Upgrade Info:
+    Maxed Display:
+      meta:
+        lore:
+          - '&7'
+          - '&7    &8[&b&l+&8] &7{language.economy.level-currency}: &e{effect_max_tier}/{effect_max_tier}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-upgrade}: &c&l{language.menu.item-max-upgrade}'
+          - '&7'
+        display-name: '&8[ &a&l{language.menu.item-information}&8 ]'
+      type: IRON_BARS
+    Layout Key: C
+    Not Affected Display:
+      meta:
+        lore:
+          - '&7'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-level}: &e{level_next_tier}/{effect_max_tier}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-level-power-consumption}: &e{level_next_power_consumption}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-upgrade-cost}:'
+          - '{upgrade_cost_list}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-upgrade}:'
+          - '&8          ▶ &f{level_next_description}'
+          - '&7    &8[&6&l!&8] &7{language.menu.item-warn-not-affected}'
+          - '{not_affected_reason_list}'
+          - '&7'
+        display-name: '&8[ &a&l{language.menu.item-information}&8 ]'
+        type: BOOK
+    Display:
+      meta:
+        lore:
+          - '&7'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-level}: &e{level_next_tier}/{effect_max_tier}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-level-power-consumption}: &e{level_next_power_consumption}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-upgrade-cost}:'
+          - '{upgrade_cost_list}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-next-upgrade}:'
+          - '&8          ▶ &f{level_next_description}'
+          - '&7'
+        display-name: '&8[ &a&l{language.menu.item-information}&8 ]'
+      type: BOOK
+  Back:
+    Layout Key: J
+    Display:
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8[ &e&l{language.menu.item-back}&8 ]'
+      type: ARROW
+  Upgrade Button:
+    Economy:
+      Emerald:
+        Layout Key: F
+        Disabled:
+          type: EMERALD
+          sound: BLOCK_NOTE_BLOCK_BASS
+          meta:
+            display-name: '&8[ &c&l{language.menu.item-upgrade-disabled-emerald}&8 ]'
+        Display:
+          sound: BLOCK_NOTE_BLOCK_PLING
+          meta:
+            lore:
+              - '&7'
+              - '&7    &8<&5&l!&8> &d{language.menu.item-upgrade-info}
+                                      &8<&5&l!&8>'
+              - '&7'
+            display-name: '&8[ &a&l{language.menu.item-upgrade-emerald}&8 ]'
+          type: EMERALD
+      Level:
+        Layout Key: E
+        Disabled:
+          type: EXPERIENCE_BOTTLE
+          sound: BLOCK_NOTE_BLOCK_BASS
+          meta:
+            display-name: '&8[ &c&l{language.menu.item-upgrade-disabled-level}&8 ]'
+        Display:
+          sound: BLOCK_NOTE_BLOCK_PLING
+          meta:
+            lore:
+              - '&7'
+              - '&7    &8<&5&l!&8> &d{language.menu.item-upgrade-info} &8<&5&l!&8>'
+              - '&7'
+            display-name: '&8[ &a&l{language.menu.item-upgrade-level}&8 ]'
+          type: EXPERIENCE_BOTTLE
+      Vault:
+        Layout Key: D
+        Disabled:
+          type: PAPER
+          sound: BLOCK_NOTE_BLOCK_BASS
+          meta:
+            display-name: '&8[ &c&l{language.menu.item-upgrade-disabled-money}&8 ]'
+        Display:
+          sound: BLOCK_NOTE_BLOCK_PLING
+          meta:
+            lore:
+              - '&7'
+              - '&7    &8<&5&l!&8> &d{language.menu.item-upgrade-info} &8<&5&l!&8>'
+              - '&7'
+            display-name: '&8[ &a&l{language.menu.item-upgrade-money}&8 ]'
+          type: PAPER
+  Other Items:
+    G:
+      Display:
+        meta:
+          display-name: '&a  '
+        type: GRAY_STAINED_GLASS_PANE
+    H:
+      Display:
+        meta:
+          display-name: '&a  '
+        type: RAIL
+    K:
+      Display:
+        meta:
+          lore:
+            - '&7'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-location}'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-range}: &e{beacon_range} {language.menu.item-blocks}'
+            - '&7'
+          display-name: '&8[ &a&l{language.menu.item-information}&8 ]'
+        type: BOOK
+    L:
+      Display:
+        meta:
+          lore:
+            - '&7'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-power}: &e{beacon_power}'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-power-free}: &e{beacon_free_power}'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-power-used}: &e{beacon_used_power}'
+            - '&7    &8[&b&l+&8] &7{language.menu.item-sources}:'
+            - '{power_source_list}'
+            - '&7'
+          display-name: '&8[ &a&l{language.menu.item-power-sources}&8 ]'
+        type: BLAZE_POWDER
+  Next Page:
+    Enabled:
+      Display:
+        sound: UI_BUTTON_CLICK
+        meta:
+          display-name: '&a→'
+        type: SLIME_BALL
+    Disabled:
+      Display:
+        sound: BLOCK_NOTE_BLOCK_BASS
+        meta:
+          display-name: '&7→'
+        type: FIREWORK_STAR
+    Layout Key: I
+  Toggle Activate:
+    Activated:
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8> &a&l{language.menu.item-activated}&8 <'
+        lore:
+          - '&7{language.menu.item-click-info1}'
+          - '&7{language.menu.item-click-info2}'
+          - '&7'
+          - '&8          ▶ &7{language.menu.item-selected-level}: &b{effect_selected_level}/{effect_level}'
+          - '&8          ▶ &6({level_description})'
+          - '&8          ▶ &7{language.menu.item-power-consumption}: &e{level_power_consumption}'
+      type: LIME_DYE
+    Deactivated:
+      sound: UI_BUTTON_CLICK
+      meta:
+        display-name: '&8> &7&l{language.menu.item-deactivated}&8 <'
+        lore:
+          - '&7{language.menu.item-click-info1}'
+          - '&7{language.menu.item-click-info2}'
+          - '&7'
+          - '&8          ▶ &7{language.menu.item-selected-level}: &b{effect_selected_level}/{effect_level}'
+      type: GRAY_DYE
+    Level Too Low:
+      sound: BLOCK_NOTE_BLOCK_BASS
+      meta:
+        display-name: '&8> &c&l{language.menu.item-low-level}&8 <'
+      type: GRAY_DYE
+    Layout Key: A
+  Upgrade:
+    Layout Key: B
+    Not Affected:
+      sound: UI_BUTTON_CLICK
+      meta:
+        lore:
+          - '&7'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-description}:'
+          - '&8          ▶ &f{effect_description}'
+          - '&8          ▶ &6({level_description})'
+          - '&8          ▶ &7{language.menu.item-power-consumption}: &e{level_power_consumption}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-current-level}: &e{language.tier} {level_tier_roman}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-status}: &e{level_status}'
+          - '&7'
+          - '&7    &8[&6&l!&8] &7{language.menu.item-not-affected}'
+          - '{not_affected_reason_list}'
+          - '&7'
+        display-name: '&8[ &d&l{effect_name}&8 ]'
+        ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_POTION_EFFECTS
+      type: '{effect_item_display}'
+    Display:
+      sound: UI_BUTTON_CLICK
+      meta:
+        lore:
+          - '&7'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-description}:'
+          - '&8          ▶ &f{effect_description}'
+          - '&8          ▶ &6({level_description})'
+          - '&8          ▶ &7{language.menu.item-power-consumption}: &e{level_power_consumption}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-current-level}: &e{language.tier} {level_tier_roman}'
+          - '&7    &8[&b&l+&8] &7{language.menu.item-status}: &e{level_status}'
+          - '&7'
+        display-name: '&8[ &d&l{effect_name}&8 ]'
+        ItemFlags:
+          - HIDE_ENCHANTS
+          - HIDE_ATTRIBUTES
+          - HIDE_POTION_EFFECTS
+      type: '{effect_item_display}'
+  Previous Page:
+    Enabled:
+      Display:
+        sound: UI_BUTTON_CLICK
+        meta:
+          display-name: '&a←'
+        type: SLIME_BALL
+    Disabled:
+      Display:
+        sound: BLOCK_NOTE_BLOCK_BASS
+        meta:
+          display-name: '&7←'
+        type: FIREWORK_STAR
+    Layout Key: P

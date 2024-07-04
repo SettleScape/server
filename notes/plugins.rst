@@ -9,7 +9,7 @@
 Plugin                    Version     Released    Checked     Stuck 'til  Autoconfig  URL
 ========================  ==========  ==========  ==========  ==========  ==========  ===
 AuctionHouse              3.0.2       2021-08-14  ----------  1.18.X      ????        https://spigotmc.org/resources/61836/updates
-BeaconPlus                2.1.61      2022-03-04  TODO                    Rewrite     https://spigotmc.org/resources/67056/updates
+BeaconPlus                3.0.75      2024-06-27  2024-07-04              Rewrite     https://spigotmc.org/resources/67056/updates
 CMILib                    1.5.0.5     2024-07-03  2024-07-04              Yes         https://spigotmc.org/resources/87610/updates
 CommandLog                1.2         2016-07-09  ----------  Dead        ????        https://spigotmc.org/resources/21176/updates
 CoreProtect               22.4        2024-05-14  2024-06-06              No          https://spigotmc.org/resources/8631/updates
