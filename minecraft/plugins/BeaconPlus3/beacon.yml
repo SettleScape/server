@@ -1,10 +1,9 @@
 Configuration Version: "1.0"
+BBeacon Particle: SPELL
 
-Beacon Particle: SPELL_WITCH
-
-Beacon Effect Condition:
-  Type: PLOTSQUARED_IS_SAME_PLOT
-
+# Beacon Effect Condition:
+#   Type: PLOTSQUARED_IS_SAME_PLOT
+#
 # Example of Beacon Effect Condition for GriefPrevention
 # This will make the beacon only works if the player is in the same claim
 # Beacon Effect Condition:
@@ -41,32 +40,34 @@ Permissions:
 
 # If the player has no permission for breaking beacon,
 # it can still be broken/placed if the beacon has no effect
-Allow Break If Has No Effect: true
-Allow Place If Has No Effect: true
+Allow Break If Has No Effect: false
+Allow Place If Has No Effect: false
 
 Range Calculator:
   # REMAINING_POWER : Use remaining power as range
   # TOTAL_POWER : Use total power as range
   Power Source: REMAINING_POWER
   # CLASSIFIED / PERCENTILE / EXPONENTIAL
-  Mode: EXPONENTIAL
-  Classified:
-    '0': 0
-    '9': 10
-    '34': 20
-    '83': 30
-    '164': 40
-    '285': 50
+  Mode: PERCENTILE ## Classified would be best if it were interpolated;  alas, it is not, which makes it effectively broken given that the left side is power and not blocks.  The power forumla sucks because it can't have a slope.  That leaves the linear formula, which does pretty well on the whole.
+  Classified: ## Left side is sum of squares of odd numbers `n` and lower;  right side is `2^(n+2)`.  (In other words:  For every layer you add to the beacon, you get twice as much range.)  Formula that yields values very close to the below:  y=2^((9x+(1944x^2-64)^0.5)/24)^0.333+((9x-(1944x^2-64)^0.5)/24)^0.333+2
+    '0': 1.5 ## The minimum needed to get beacon effect without standing on-top of it
+    '1': 8 ## Not used
+    '9': 16 ## The size of a chunk
+    '34': 32
+    '83': 64
+    '164': 128
+    '285': 256
+    '454': 512 ## The size of a region
   # Formula: power * (percentile / 100)
-  Percentile:
-    Min Range: 0
-    Percentage: 100
-    Max Range: 500
+  Percentile: ## Slope of best-fit 0-intercept line between 9,16 and 454,512.  (R^2 of 0.9997218747352613)
+    Min Range: 1.5
+    Percentage: 112.8008651920
+    Max Range: 512
   # Formula: power^exponent
-  Exponential:
-    Min Range: 0
-    Exponent: 0.9
-    Max Range: 500
+  Exponential: ## The exponent that raises 454 to 512.
+    Min Range: 1.5
+    Exponent: 1.0196511142445808
+    Max Range: 512
 
 # Maximum Height for Pyramid Scanning
 Max Scan Height: 6
@@ -78,7 +79,7 @@ Perfect Pyramid Structure: true
 Beam Through Sky: true
 
 # Entities under pyramid lowest Y will not be affected by the beacon
-Pyramid Lowest Y As Bounding Box Limit: false
+Pyramid Lowest Y As Bounding Box Limit: true
 
 # Make your beacon works in nether
 Ignore Beam In Nether: true
@@ -89,19 +90,27 @@ Ignore Beam In Nether: true
 # SPHERE - spherical beacon area
 # INFINITE_CUBE - cubical beacon area with no height limit
 # CUBE - cubical beacon area with height limit (to range)
-Beacon Area Type: INFINITE_CYLINDER
+Beacon Area Type: INFINITE_CUBE
 
 Power Sources:
-  GOLD_BLOCK: 1
-  IRON_BLOCK: 1
-  EMERALD_BLOCK: 3
-  DIAMOND_BLOCK: 2
-  NETHERITE_BLOCK: 4
+    IRON_BLOCK: 0.8
+    COPPER_BLOCK: 1.0
+    REDSTONE_BLOCK: 1.2
+    GOLD_BLOCK: 1.6
+    AMETHYST_BLOCK: 1.8
+    LAPIS_BLOCK: 2.2
+    EMERALD_BLOCK: 2.6
+    DIAMOND_BLOCK: 3.2
+    NETHERITE_BLOCK: 4.0
 
 Vanilla Beacon Item:
   # If this set to true
   # any vanilla beacon will turn into beaconplus beacon
-  Disable Vanilla: false
+  Disable Vanilla: true
+
+  # If this set to true
+  # any vanilla beacon will turn into beaconplus beacon
+  Disable Vanilla: true
   # Remove Vanilla Beacon Recipe from the server?
   Disable Recipe: false
 

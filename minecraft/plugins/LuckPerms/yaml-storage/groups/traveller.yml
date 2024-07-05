@@ -25,6 +25,7 @@ permissions:
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
 - craftbook.mech.paintingswitch.use
+- beaconplus.see.particle
 
 # Handy sign utilities
 - craftbook.mech.pay

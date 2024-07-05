@@ -110,7 +110,13 @@ permissions:
 
 # Misc
 #-------------------------------------------------------------------------------
+- beaconplus.break
+- beaconplus.craft
+- beaconplus.language
 - beaconplus.open
+- beaconplus.open.upgrade
+- beaconplus.place
+- beaconplus.settings
 - beaconplus.upgrade
 - essentials.gamemode.survival
 - craftbook.mech.ammeter.use

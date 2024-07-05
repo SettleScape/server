@@ -68,19 +68,19 @@ Economy:
 Animation:
   Slide:
     Cover 1:
-      type: PURPLE_STAINED_GLASS_PANE
+      type: AIR
       meta:
         display-name: '&7  '
     Cover 2:
-      type: MAGENTA_STAINED_GLASS_PANE
+      type: AIR
       meta:
         display-name: '&7  '
   Dissolve:
     Cover 1:
-      type: PURPLE_STAINED_GLASS_PANE
+      type: AIR
       meta:
         display-name: '&7  '
     Cover 2:
-      type: MAGENTA_STAINED_GLASS_PANE
+      type: AIR
       meta:
         display-name: '&7  '
