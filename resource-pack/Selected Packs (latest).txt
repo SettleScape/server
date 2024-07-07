@@ -1,12 +1,8 @@
 Vanilla Tweaks Resource Pack
-Version: 1.16
+Version: 1.17
 Packs:
 	ItemStitchingFix
-	JappaSigns
 	JappaObserver
-	JappaCompass
-	JappaClock
-	JappaPaintingBack
 	JappaToasts
 	JappaRecipeButton
 	ConsistentUIFix
@@ -14,8 +10,6 @@ Packs:
 	JappaSpecIcons
 	ConsistentOarColors
 	ConsistentHelmets
-	AccurateSpectralArrow
-	JungleDoorItemFix
 	CactusBottomFix
 	PixelConsistentBat
 	PixelConsistentGhast
@@ -28,31 +22,30 @@ Packs:
 	SoulSoilSoulCampfire
 	BlazeFix
 	EffectBoxFix
-	BrewingStandIconsFix
 	NicerFastLeaves
 	ProperBreakParticles
 	IronBarsFix
 	DoubleSlabFix
 	ItemHoldFix
 	HoeFix
-	StonecutterFix
 	VillagerCloakFix
 	HopperBottomFix
 	CatFix
-	GuardianPixelFix
-	SmokerFix
+	RedstoneWireFix
+	CocoaBeansTopFix
+	SlimeParticleFix
 	BedrockExplosion
 	BedrockDriedKelpItem
 	DungeonsAlexSteve
-	BlueWidgetsHighlight
 	Bedrock
 	SmootherFont
-	DarkUI
-	NumberedHotbar
 	MoreCrosshairs-PlusDot
 	WitherHearts
 	PingColorIndicator
 	RainbowExperience
+	3DBookshelves
+	3DChains
+	3DPointedDripstone
 	3DTiles
 	3DLadders
 	3DRails
@@ -60,16 +53,22 @@ Packs:
 	3DIronBars
 	3DLilyPads
 	3DMushrooms
+	3DTrapdoors
+	3DDoors
 	3DVines
 	3DStonecutters
 	3DSunMoon
+	3DGlowLichen
+	3DAmethyst
 	UnobtrusiveRain
 	UnobtrusiveSnow
 	UnobtrusiveScaffolding
 	LowerFire
 	LowerShield
 	TransparentPumpkin
+	TransparentSpyglassOverlay
 	SmallerUtilities
+	VisualWaxedCopperItems
 	Age25Kelp
 	ClearBannerPatterns
 	HungerPreview
@@ -81,14 +80,12 @@ Packs:
 	GroovyLevers
 	VisibleTripwires
 	CompassLodestone
-	BrewingGuideDark
 	VisualHoney
 	VisualSaplingGrowth
 	NoteblockBanners
 	ArabicNumerals
 	VisualInfestedStoneItems
 	NoCaveSounds
-	VariatedBookshelves+ConnectedBookshelves
 	VariatedGrass
 	VariatedCobblestone
 	VariatedBricks
@@ -108,13 +105,12 @@ Packs:
 	LowerSnow
 	LowerCrimsonNylium
 	LowerWarpedNylium
-	DarkerDarkOakLeaves
+	WavyWater
 	CircleLogTops
 	SmootherOakLog
 	SmoothDirt
 	ShorterGrass
 	ShorterTallGrass
-	117Ores
 	CherryPicking
 	DifferentStems
 	RedIronGolemFlowers
@@ -125,6 +121,17 @@ Packs:
 	FlintTippedArrows
 	BedIcons
 	SplashXpBottle
+	AccurateSpyglass
 	PlainLeatherArmor
 	GoldenCrown
 	PhantomElytra
+	WavyLeaves
+	DarkerDarkOakLeaves
+	NumberedHotbar
+	DarkUI
+	BrewingGuide
+	BlueWidgetsHighlight
+
+Combined packs:
+	BlueWidgetsHighlight+BrewingGuide+DarkUI+NumberedHotbar
+	DarkerDarkOakLeaves+WavyLeaves
