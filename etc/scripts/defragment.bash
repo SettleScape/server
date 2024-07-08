@@ -3,20 +3,20 @@
 set -e
 
 ## Configurable variables:
-DRY_RUN=1
+declare -i DRY_RUN=1
 FRAGMENTATION_THRESHOLD=10
 LOGFILE='/var/log/defragmentation.log'
-NO_LOG=1
+declare -i NO_LOG=1
 
 ## Logging function
 function log {
-    if [[ -n "$NO_LOG" ]]; then
+    if [[ ! "$NO_LOG" -eq 0 ]]; then
         echo "$1"
     else
         echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOGFILE"
     fi
 }
-echo >>> "$LOGFILE"
+[[ "$NO_LOG" -eq 0 ]] && echo >> "$LOGFILE"
 
 ## Find all filesystems that are ext# and on an HDD.
 log 'Looking for hard-drive ext# partitions...'
@@ -52,7 +52,7 @@ unset EXT_HDD_DEVICES
 [[ ${#FRAGMENTED_EXT_HDD_DEVICES[@]} -eq 0 ]] && log 'No hard-drive ext# partition is fragmented!' && exit 0
 
 ## Exit now if a dry run
-if [[ -n "$DRY_RUN" ]]; then
+if [[ ! "$DRY_RUN" -eq 0 ]]; then
     log "Dry run enabled. The following devices would be defragmented: ${FRAGMENTED_EXT_HDD_DEVICES[*]}"
     exit 0
 fi
