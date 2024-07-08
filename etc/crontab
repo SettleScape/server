@@ -17,3 +17,4 @@ MAILTO=minecraft
 
 ## 5AM
 # 0 5 7,14,21,28 * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/dynmap.sh
+0 5 7,14,21,28 * * root /etc/scripts/defragment.sh
