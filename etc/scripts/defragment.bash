@@ -4,7 +4,7 @@ set -e
 
 ## Configurable variables:
 declare -i DRY_RUN=1
-FRAGMENTATION_THRESHOLD=10
+declare -i FRAGMENTATION_THRESHOLD=10
 LOGFILE='/var/log/defragmentation.log'
 declare -i NO_LOG=1
 
@@ -42,8 +42,8 @@ log 'Checking for fragmentation...'
 declare -a FRAGMENTED_EXT_HDD_DEVICES=()
 for DEVICE in "${EXT_HDD_DEVICES[@]}"; do
 
-    FRAG_PERCENT=$(e4defrag -c "$DEVICE" | grep -oP '\d+(?=% fragmented)' | head -n 1)
-    if [ "$FRAG_PERCENT" -ge "$FRAGMENTATION_THRESHOLD" ]; then
+    declare -i FRAG_PERCENT=$(e4defrag -c "$DEVICE" | grep -oP '\d+(?=% fragmented)' | head -n 1)
+    if [[ "$FRAG_PERCENT" -ge "$FRAGMENTATION_THRESHOLD" ]]; then
         FRAGMENTED_EXT_HDD_DEVICES+=("$DEVICE")
     fi
 
