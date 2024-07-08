@@ -3,7 +3,7 @@
 set -e
 
 ## Configurable variables:
-declare -i DRY_RUN=1
+declare -i DRY_RUN=0
 declare -i FRAGMENTATION_THRESHOLD=10
 LOGFILE='/var/log/defragmentation.log'
 declare -i NO_LOG=1
