@@ -42,7 +42,7 @@ For the purposes of this file, a "section" is defined as the area vertically
 between two '§' signs, and each section's name being the text horizontally
 between the '§' sign immediately above the section.  This definition of
 "section" does not apply to the use of the word "section" in any section except
-for this section, the "Copyright" section.)
+for this section, the "Copyright" section.
 
 The LGPL3, AGPL3, and CC BY-SA 4 are provided in-full and verbatim, with each
 in its own section.  Where contradictions occur, certain sections will
