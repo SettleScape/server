@@ -17,7 +17,7 @@ The Copyrights of the files in this repo vary, since this repo is a collection o
 While this does unfortunately preclude SettleScape copyrighting most of the config files, there are still a few files in this repo that we do own the copyright for;  these are listed in ``/COPYRIGHT.txt``, and are subject to the following licenses:
 
 + Code is licensed under the GNU Lesser Affero General Public License 3.0 (LAGPL 3).
-+ Non-code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4) license
++ Non-code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4) license.
 + All specified files are Copyright (C) from 2019-2024 by SettleScape.
 
 Usage
