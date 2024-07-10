@@ -1,6 +1,6 @@
 name: owner # Operator / God
 parents:
-- donor
+- member
 - moderator
 - administrator
 suffixes:

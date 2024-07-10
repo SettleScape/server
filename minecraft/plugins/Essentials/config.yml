@@ -310,7 +310,7 @@ per-warp-permission: false
 list: {}
     # To merge groups, list the groups you wish to merge
     #Staff: owner admin tester moderator monitor
-    #Players: pathfinder explorer settler traveller wanderer default '*' donor
+    #Players: pathfinder explorer settler traveller wanderer default '*' member
     # To limit groups, set a max user limit
     #default: 0
     # To hide groups, set the group as hidden

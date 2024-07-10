@@ -1,6 +1,6 @@
-name: booster # booster should be a copy of donor.
+name: booster # booster should be a copy of member.
 parents:
-- donor
+- member
 suffixes:
 - '&c(booster)&r': {}
 permissions:

@@ -1,17 +1,17 @@
-# Purely cosmetic benefits only, per EULA. If the EULA ever allows functional benefits again, please do not give donors any perks that a bad actor could use to damage the server.
-name: donor
+# Purely cosmetic benefits only, per EULA. If the EULA ever allows functional benefits again, please do not give members any perks that a bad actor could use to damage the server.
+name: member
 parents:
 - default
 suffixes:
-- '&c(donor)&r': {}
+- '&c(member)&r': {}
 permissions:
 - weight.211
 
-# Item cosmetics (exclusive to donors)
+# Item cosmetics (exclusive)
 - essentials.hat
 - essentials.itemlore
 
-# Nickname prettification (exclusive to donors)
+# Nickname prettification (exclusive)
 - essentials.nick.changecolors
 - essentials.nick.color
 - essentials.nick.format
