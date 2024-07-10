@@ -10,7 +10,8 @@ permissions:
 # brings into effect nasty regulations.
 - essentials.balancetop: {value: false}
 - towny.list ## This one has been configured to display towns in a random order so that it is not a leaderboard.
-- mcmmo.commands.mctop ## This one is kinda essential, so that makes mcMMO skills competitive.
+- mcmmo.commands.mctop ## This one is kinda essential, so that means that mcMMO skill levels are legally competitive.
+- jobs.command.gtob ## If `/mctop` is allowed, then by extension this one should be too, meaning that job skill levels are also legally competitive.
 
 # Info about the server
 #-------------------------------------------------------------------------------
