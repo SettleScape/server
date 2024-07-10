@@ -1,4 +1,4 @@
-name: donor # Important:  Donor perks must not allow a rich griefer to mess with the server.
+name: donor #TODO
 parents:
 - default
 suffixes:
@@ -6,17 +6,49 @@ suffixes:
 permissions:
 - weight.211
 
-# Jobs are generally seen as fixed class specializations;  but donors may change theirs.
-- jobs.command.leave
-- jobs.command.leaveall
+# Item cosmetics (exclusive to donors)
+- essentials.hat
+- essentials.itemlore
 
-# Only applies to those who already have `/back`
-- essentials.back.ondeath
+# Nickname prettification (exclusive to donors)
+- essentials.nick.color
+- essentials.nick.format
+- essentials.nick.magic
+- essentials.nick.rgb
 
-# Donors don't get kicked for AFKing.  This is the closest you'll get to permaloading a chunk.
-- essentials.afk.kickexempt
+# Out-of-pallette colors (exclusive)
+- essentials.msg.rgb
+- essentials.signs.rgb
+- essentials.editsign.rgb
+- essentials.chat.rgb
 
-# Fly
-- townyflight.command.tfly
-- townyflight.alltowns
-# - essentials.fly.safelogin
+# Text colors (exclusive)
+- essentials.msg.color
+- essentials.chat.color
+- townychat.chat.color
+
+# Access to URL formatting (since they're unlikely to be a spammer if they've paid)
+- essentials.msg.url
+- essentials.chat.url
+
+# Standard text formatting (Traveller)
+- essentials.msg.format
+- essentials.chat.format
+
+# Sign formatting (Settler)
+- essentials.editsign.color
+- essentials.sign.color
+- essentials.signs.format
+
+# Text magic (Explorer)
+- essentials.msg.magic
+- essentials.signs.magic
+- essentials.chat.magic
+- townychat.chat.format.magic
+
+# Extras
+# Access to the live chat channel on the server Discord
+# A special Discord rank
+# Priority support
+# The ability to help decide on the server's future via polls and discussions
+# Increased likelihood that the server will persist through the ages

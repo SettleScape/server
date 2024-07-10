@@ -1,4 +1,4 @@
-name: wanderer # Starting rank.  Basically a vanilla experience.
+name: wanderer # Starting rank.  Basically a vanilla experience.  Removes everything that gets added-back in higher ranks.
 parents:
 - player
 prefixes:
@@ -19,30 +19,43 @@ permissions:
 - essentials.delhome: {value: false}
 - essentials.sethome: {value: false}
 - essentials.sethome.multiple: {value: false}
+- essentials.home.compass: {value: false}
+
+# Disable features that are easy to abuse.  Admins can set nicknames on Wanderers at their request.
+- essentials.nick: {value: false}
+- essentials.mail.send: {value: false}
+- essentials.msg: {value: false}
+- essentials.msg.multiple: {value: false}
+- essentials.chat.url: {value: false}
+- essentials.msg.url:  {value: false}
 
 # Basic text formatting is reserved for a higher rank, since it *can* be kind of spammy.
-- townychat.chat.format:   {value: false}
-- essentials.chat.format:  {value: false}
 - essentials.msg.format:   {value: false}
 - essentials.nick.format:  {value: false}
 - essentials.signs.format: {value: false}
+- essentials.chat.format:  {value: false}
+- townychat.chat.format:   {value: false}
 
 # Text colors are reserved for a higher rank, since they *can* be kind of spammy.
-- townychat.chat.color:   {value: false}
-- essentials.chat.color:  {value: false}
 - essentials.msg.color:   {value: false}
-- essentials.nick.color:  {value: false}
 - essentials.signs.color: {value: false}
+- essentials.editsign.color:  {value: false}
+- essentials.nick.color:  {value: false}
+- essentials.chat.color:  {value: false}
+- townychat.chat.color:   {value: false}
+
+# RGB colors are reserved for a higher rank, since they *can* be kind of spammy.
+- essentials.msg.rgb:   {value: false}
+- essentials.nick.rgb:  {value: false}
+- essentials.signs.rgb: {value: false}
+- essentials.chat.rgb:  {value: false}
+- townychat.chat.rgb:   {value: false}
 
 # Text magic is spammy, and so reserved for a higher rank.
-- essentials.chat.magic:  {value: false}
 - essentials.msg.magic:   {value: false}
-- essentials.nick.magic:  {value: false}
 - essentials.signs.magic: {value: false}
-
-# URLs in chat can be used to spam and phish, and is reserved for a higher rank.
-- essentials.chat.url: {value: false}
-- essentials.msg.url:  {value: false}
+- essentials.nick.magic:  {value: false}
+- essentials.chat.magic:  {value: false}
 
 # Saving text in-game should be reserved for higher, more-trusted ranks.
 - essentials.itemlore: {value: false}
@@ -51,14 +64,28 @@ permissions:
 - craftbook.mech.ammeter.use: {value: false}
 - craftbook.mech.lightstone.use: {value: false}
 - craftbook.mech.paintingswitch.use: {value: false}
-- craftbook.mech.pay: {value: false}
 - essentials.clearinventory: {value: false}
+- essentials.compass: {value: false}
+- essentials.depth: {value: false}
+- essentials.getpos: {value: false}
+- essentials.recipe: {value: false}
+- essentials.exp: {value: false}
+
+# Command-crafting comes with higher ranks
+- essentials.anvil: {value: false}
+- essentials.cartographytable: {value: false}
+- essentials.grindstone: {value: false}
+- essentials.loom: {value: false}
+- essentials.smithingtable: {value: false}
+- essentials.stonecutter: {value: false}
 - essentials.workbench: {value: false}
+
+# Sign powers come with higher ranks
+- craftbook.mech.pay: {value: false}
 - essentials.signs.create.disposal: {value: false}
 - essentials.signs.use.disposal: {value: false}
 - essentials.signs.break.disposal: {value: false}
 - essentials.signs.create.mail: {value: false}
-- essentials.signs.use.mail: {value: false}
 - essentials.signs.break.mail: {value: false}
 - essentials.editsign: {value: false}
 - editablesign.edit: {value: false}
@@ -66,10 +93,18 @@ permissions:
 # No casual teleports -- we want Wanderers to have to actually explore the world (and escape Spawn), rather than just teleport to the biggest town and instantly gear up.
 - essentials.tpa:       {value: false}
 # - essentials.tpacancel: {value: false}
-- essentials.tpaccept:  {value: false}
-# - essentials.tpahere:   {value: false}
+# - essentials.tpaccept:  {value: false} ## Commented so that newbies with friends can join them.
+- essentials.tpahere:   {value: false}
 - essentials.warp:      {value: false}
+- essentials.warp.list: {value: false}
 
 # Special powers come with higher ranks
 - essentials.hat: {value: false}
 - mineablespawners.mine: {value: false}
+- beaconplus.see.particle: {value: false}
+- essentials.back.ondeath: {value: false}
+- essentials.ext: {value: false}
+- essentials.feed: {value: false}
+- essentials.heal: {value: false}
+- essentials.repair: {value: false}
+- essentials.rest: {value: false}

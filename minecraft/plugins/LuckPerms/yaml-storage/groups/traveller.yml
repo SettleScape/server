@@ -20,37 +20,27 @@ permissions:
 
 # Basic quality of life improvements
 - essentials.workbench
-- essentials.stonecutter
 - essentials.clearinventory
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
 - craftbook.mech.paintingswitch.use
-- beaconplus.see.particle
-
-# Handy sign utilities
-- craftbook.mech.pay
-- editablesign.edit
-- essentials.editsign
-- essentials.signs.create.disposal
-- essentials.signs.use.disposal
-- essentials.signs.break.disposal
-# - essentials.signs.create.mail
-# - essentials.signs.use.mail
-# - essentials.signs.break.mail
+- essentials.home.compass # Makes a compass point towards your first home
+- essentials.compass # Print your bearing
+- essentials.depth
+- essentials.getpos
+- essentials.recipe
+- essentials.exp
 
 # Access to standard text formatting
-- essentials.chat.format
 - essentials.msg.format
-- townychat.chat.format.bold
-- townychat.chat.format.italic
-- townychat.chat.format.underline
-- townychat.chat.format.strike
-- essentials.nick.format
-- essentials.signs.format
+- essentials.chat.format
 
-# Access to URL formatting (since they're unlikely to be a spammer if they've gotten this far)
+# Access to easily-abused chat features (since they're less-likely to be a spammer if they've gotten this far)
 - essentials.chat.url
 - essentials.msg.url
+- essentials.msg
+- essentials.mail.send
+- essentials.nick
 
 # Has escaped Spawn legitimately; may now teleport.
 - essentials.tpa
@@ -58,7 +48,8 @@ permissions:
 - essentials.tpacancel
 - essentials.tpahere
 - essentials.warp
+- essentials.warp.list
 
 # Misc
-- essentials.sethome
-- mineablespawners.mine
+- essentials.sethome # You have a home now; you need to be able to set it.
+- mineablespawners.mine # You have unlocked the lowest non-zero chance of successfully silk-touching a spawner

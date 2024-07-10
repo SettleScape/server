@@ -1,4 +1,4 @@
-name: settler # Has beaten the Nether. Adds cosmetic features; reduces griefing prevention.
+name: settler # Has beaten the Nether. Reduces griefing prevention; gives power over signs; additional crafting stations.
 parents:
 - traveller
 prefixes:
@@ -24,17 +24,29 @@ permissions:
 - essentials.protect.exemptplacement
 - essentials.protect.exemptusage
 
-# Text colors
-- essentials.chat.color
-- essentials.msg.color
-- townychat.chat.color
-- essentials.nick.color
+# Access to very easily abused chat abilities (they're probably safe if they've made it this far)
+- essentials.msg.multiple
 
-# Cosmetic crafting stations
-- essentials.loom
+# Handy sign utilities
+- craftbook.mech.pay
+- editablesign.edit
+- essentials.editsign
+- essentials.signs.create.balance
+- essentials.signs.break.balance
+- essentials.signs.create.disposal
+- essentials.signs.break.disposal
+- essentials.signs.create.mail
+- essentials.signs.break.mail
+
+# Access to sign formatting
+- essentials.editsign.color
+- essentials.sign.color
+- essentials.signs.format
+
+# Additional crafting stations
 - essentials.cartographytable
+- essentials.loom
+- essentials.stonecutter
 
 # Misc
-- essentials.hat
-- essentials.itemlore
-- essentials.delhome
+- essentials.delhome # You can have more than one home now, meaning deletion becomes relevant.

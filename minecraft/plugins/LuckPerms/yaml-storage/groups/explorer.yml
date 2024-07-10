@@ -27,3 +27,9 @@ permissions:
 # New abilities
 - essentials.back
 - essentials.enderchest
+- beaconplus.see.particle
+
+# Flight (you have Elytra at this point anyway)
+- townyflight.command.tfly
+- townyflight.alltowns
+# - essentials.fly.safelogin

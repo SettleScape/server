@@ -1,4 +1,4 @@
-name: player
+name: player # Things that everyone would have access to on a server that doesn't have ranks.
 permissions:
 - weight.-1
 # - displayname.default
@@ -21,10 +21,11 @@ permissions:
 # - bukkit.command.me
 - essentials.me
 - essentials.exp
+- essentials.exp.*: {value: false}
 - essentials.ping
-- essentials.getpos
-- essentials.depth
 - essentials.compass
+- essentials.depth
+- essentials.getpos
 - essentials.jail.allow.ping
 - essentials.seen
 - groupmanager.notify.self
@@ -55,30 +56,37 @@ permissions:
 - auctionhouse.sold
 - auctionhouse.use
 
-# Chat
+# Chat capabilities
 #-------------------------------------------------------------------------------
+# - bukkit.command.tell
 # - bukkit.broadcast.user
-- essentials.chat.color
-- essentials.chat.format
-- essentials.chat.magic
 - essentials.chat.question
-# - essentials.chat.url
+- essentials.discord
+- essentials.discord.receive.main
+- essentials.discord.link
+- essentials.discord.unlink
 - essentials.ignore
+- essentials.helpop
 - essentials.mail
 - essentials.mail.send
-# - bukkit.command.tell
 - essentials.msg
-- essentials.msg.color
-- essentials.msg.format
-- essentials.msg.magic
 - essentials.msg.multiple
-# - essentials.msg.url
-- essentials.helpop
-- essentials.discord.receive.main
 - towny.chat.general
 - towny.chat.local
+
+# Chat styles
+#-------------------------------------------------------------------------------
+- essentials.chat.color
+- essentials.chat.format
+# - essentials.chat.magic
+- essentials.chat.url
+- essentials.msg.color
+- essentials.msg.format
+# - essentials.msg.magic
+- essentials.msg.url
 - townychat.chat.color
 - townychat.chat.format
+- townychat.chat.format.reset
 
 # Teleportation
 #-------------------------------------------------------------------------------
@@ -134,9 +142,6 @@ permissions:
 - essentials.build
 - essentials.hat
 - essentials.nick
-- essentials.nick.color
-- essentials.nick.format
-- essentials.nick.magic
 - essentials.clearinventory
 - essentials.workbench
 # - essentials.enderchest
@@ -148,18 +153,10 @@ permissions:
 - essentials.editsign
 - essentials.signs.format
 - essentials.signs.magic
-- essentials.signs.create.disposal
+- essentials.signs.use.balance
 - essentials.signs.use.disposal
-- essentials.signs.break.disposal
-# - essentials.signs.create.mail
-# - essentials.signs.use.mail
-# - essentials.signs.break.mail
+- essentials.signs.use.mail
 - mcmmo.commands.mcrank
 - OpenInv.spectate
 - rankup.auto: {value: false}
 - rankup.playtime.get
-
-# Restrictions
-#-------------------------------------------------------------------------------
-- jobs.command.leave: {value: false}
-- jobs.command.leaveall: {value: false}
