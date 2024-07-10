@@ -59,7 +59,7 @@ fire_resistance:
 
 ################################################################################
 flight:
-  Enabled: false ## This is currently just a donor perk;  but I'm open to enabling this.
+  Enabled: false ## This is currently an Explorer-exclusive perk, but I'm open to enabling this.
   Remove When Leave: true
   Display Name: "Hover"
   Type: FlyEffect
