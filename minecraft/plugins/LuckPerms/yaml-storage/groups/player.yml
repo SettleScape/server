@@ -3,6 +3,15 @@ permissions:
 - weight.-1
 # - displayname.default
 
+# Leaderboards
+#-------------------------------------------------------------------------------
+# For legal reasons, we should disable as many of these as we can.  Every single
+# leaderboard makes whatever it lists "competitive" per the EULA & MUG, and
+# brings into effect nasty regulations.
+- essentials.balancetop: {value: false}
+- towny.list ## This one has been configured to display towns in a random order so that it is not a leaderboard.
+- mcmmo.commands.mctop ## This one is kinda essential, so that makes mcMMO skills competitive.
+
 # Info about the server
 #-------------------------------------------------------------------------------
 - essentials.help

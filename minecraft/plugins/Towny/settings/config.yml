@@ -735,7 +735,7 @@ global_town_settings:
   display_xyz_instead_of_towny_coords: 'true'
   
   # If set to true the /town list command will list randomly, rather than by whichever comparator is used, hiding resident counts.
-  display_town_list_randomly: 'false'
+  display_town_list_randomly: 'true'
   
   # The ranks to be given preference when assigning a new mayor, listed in order of descending preference.
   # All ranks should be as defined in `townyperms.yml`.
