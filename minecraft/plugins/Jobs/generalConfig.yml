@@ -646,7 +646,7 @@ Commands:
     ConfirmExpiryTime: 5
   JobsInfo:
     # Open up the jobs browse action list, when your performed /jobs info command?
-    open-browse: false
+    open-browse: true
 BlockOwnership:
   # Set to 0 or lower if you want to disable this. Setting to positive number will mean that player needs to be in this range from owner block to get paid
   Range: 0
