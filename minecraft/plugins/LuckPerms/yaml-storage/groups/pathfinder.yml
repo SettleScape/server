@@ -7,7 +7,7 @@ permissions:
 - weight.105
 - essentials.kits.pathfinder
 
-# Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no new abilities or ranks exist.
+# Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no further ranks exist, and no new abilities are granted until the final increment.
 - rankup.auto
 
 # Limit increases

@@ -1,4 +1,4 @@
-name: traveller # Has beaten the Overworld.  Adds some Quality of Life features;  reduces spam prevention.
+name: traveller # Has beaten the Overworld.  Adds teleportation;  adds some Quality of Life features;  reduces spam prevention.
 parents:
 - wanderer
 prefixes:
