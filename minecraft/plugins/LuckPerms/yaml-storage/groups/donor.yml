@@ -1,0 +1,32 @@
+# Per EULA+MUG: Purely cosmetic benefits and nothing exclusive.
+name: donor
+parents:
+- default
+suffixes:
+- '&c(donor)&r': {}
+permissions:
+- weight.211
+
+# Access to URL formatting (since they're unlikely to be a spammer if they've paid)
+- essentials.msg.url
+- essentials.chat.url
+
+# Standard text formatting (Traveller)
+- essentials.msg.format
+- essentials.chat.format
+
+# Sign formatting (Settler)
+- essentials.editsign.color
+- essentials.sign.color
+- essentials.signs.format
+
+# Text magic (Explorer)
+- essentials.msg.magic
+- essentials.signs.magic
+- essentials.chat.magic
+- townychat.chat.format.magic
+
+# Extras
+# Access to the live chat channel on the server Discord
+# A special Discord rank
+# Increased likelihood that the server will persist through the ages

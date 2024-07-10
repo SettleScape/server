@@ -1,55 +1,37 @@
-# Purely cosmetic benefits only, per EULA. If the EULA ever allows functional benefits again, please do not give members any perks that a bad actor could use to damage the server.
+# Per EULA+MUG: Cannot be given any abilities that significantly impact any competitive parts of the server.
+# Caution:  Do not give members any perks that a bad actor could use to damage the server.
 name: member
 parents:
-- default
+- donor ## Members get all the same perks as donors
 suffixes:
 - '&c(member)&r': {}
 permissions:
 - weight.211
 
-# Item cosmetics (exclusive)
+# Item cosmetics
 - essentials.hat
 - essentials.itemlore
 
-# Nickname prettification (exclusive)
+# Nickname prettification
 - essentials.nick.changecolors
 - essentials.nick.color
 - essentials.nick.format
 - essentials.nick.magic
 - essentials.nick.rgb
 
-# Out-of-pallette colors (exclusive)
+# Out-of-pallette colors
 - essentials.msg.rgb
 - essentials.signs.rgb
 - essentials.editsign.rgb
 - essentials.chat.rgb
 
-# Text colors (exclusive)
+# Text colors
 - essentials.msg.color
 - essentials.chat.color
 - townychat.chat.color
 
-# Colorful item names (exclusive, but requires Pathfinder)
+# Colorful item names (requires Pathfinder)
 - essentials.itemname.*
-
-# Access to URL formatting (since they're unlikely to be a spammer if they've paid)
-- essentials.msg.url
-- essentials.chat.url
-
-# Standard text formatting (Traveller)
-- essentials.msg.format
-- essentials.chat.format
-
-# Sign formatting (Settler)
-- essentials.editsign.color
-- essentials.sign.color
-- essentials.signs.format
-
-# Text magic (Explorer)
-- essentials.msg.magic
-- essentials.signs.magic
-- essentials.chat.magic
-- townychat.chat.format.magic
 
 # Extras
 # Access to the live chat channel on the server Discord
