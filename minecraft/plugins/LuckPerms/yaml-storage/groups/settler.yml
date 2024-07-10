@@ -47,6 +47,7 @@ permissions:
 - essentials.cartographytable
 - essentials.loom
 - essentials.stonecutter
+- essentials.workbench
 
 # Misc
 - essentials.delhome # You can have more than one home now, meaning deletion becomes relevant.

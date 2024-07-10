@@ -19,7 +19,6 @@ permissions:
 - mineablespawners.minechance.6
 
 # Basic quality of life improvements
-- essentials.workbench
 - essentials.clearinventory
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
