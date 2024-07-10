@@ -1,4 +1,5 @@
-name: settler # Has beaten the Nether. Reduces griefing prevention; gives power over signs; additional crafting stations.
+# Has beaten the Nether. Reduces griefing prevention, gives power over signs, gives crafting station commands.
+name: settler
 parents:
 - traveller
 prefixes:
@@ -48,6 +49,7 @@ permissions:
 - essentials.loom
 - essentials.stonecutter
 - essentials.workbench
+- essentials.condense # QoL that would otherwise require a workbench
 
 # Misc
 - essentials.delhome # You can have more than one home now, meaning deletion becomes relevant.

@@ -1,4 +1,5 @@
-name: traveller # Has beaten the Overworld.  Adds teleportation;  adds some Quality of Life features;  reduces spam prevention.
+# Has beaten the Overworld.  Adds common server features like teleportation and various Quality of Life features; also reduces spam prevention.  Apart from teleportation, does not provide commands that might be considered cheats in Survival.
+name: traveller # servrer
 parents:
 - wanderer
 prefixes:
@@ -20,6 +21,7 @@ permissions:
 
 # Basic quality of life improvements
 - essentials.clearinventory
+- essentials.disposal
 - craftbook.mech.ammeter.use
 - craftbook.mech.lightstone.use
 - craftbook.mech.paintingswitch.use

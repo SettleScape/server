@@ -1,4 +1,5 @@
-name: donor #TODO
+# Purely cosmetic benefits only, per EULA. If the EULA ever allows functional benefits again, please do not give donors any perks that a bad actor could use to damage the server.
+name: donor
 parents:
 - default
 suffixes:
@@ -11,6 +12,7 @@ permissions:
 - essentials.itemlore
 
 # Nickname prettification (exclusive to donors)
+- essentials.nick.changecolors
 - essentials.nick.color
 - essentials.nick.format
 - essentials.nick.magic
@@ -26,6 +28,9 @@ permissions:
 - essentials.msg.color
 - essentials.chat.color
 - townychat.chat.color
+
+# Colorful item names (exclusive, but requires Pathfinder)
+- essentials.itemname.*
 
 # Access to URL formatting (since they're unlikely to be a spammer if they've paid)
 - essentials.msg.url

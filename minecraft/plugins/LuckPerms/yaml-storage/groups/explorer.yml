@@ -1,4 +1,5 @@
-name: explorer # Has beaten the End. Adds End-related abilities.
+# Has beaten the End. Adds End-related abilities.
+name: explorer # magician
 parents:
 - settler
 prefixes:

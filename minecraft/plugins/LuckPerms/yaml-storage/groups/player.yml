@@ -21,7 +21,6 @@ permissions:
 # - bukkit.command.me
 - essentials.me
 - essentials.exp
-- essentials.exp.*: {value: false}
 - essentials.ping
 - essentials.compass
 - essentials.depth
@@ -71,6 +70,7 @@ permissions:
 - essentials.mail.send
 - essentials.msg
 - essentials.msg.multiple
+- essentials.msg.toggle
 - towny.chat.general
 - towny.chat.local
 
@@ -160,3 +160,4 @@ permissions:
 - OpenInv.spectate
 - rankup.auto: {value: false}
 - rankup.playtime.get
+- essentials.condense

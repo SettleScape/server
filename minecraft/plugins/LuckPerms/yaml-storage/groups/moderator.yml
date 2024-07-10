@@ -57,7 +57,7 @@ permissions:
 - vanish.silentquit
 - essentials.list.hidden
 
-# - essentials.invsee
+- essentials.invsee
 - OpenInv.openinv
 - OpenInv.openender
 - OpenInv.openenderall

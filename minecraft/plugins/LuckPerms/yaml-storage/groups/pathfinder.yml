@@ -1,4 +1,5 @@
-name: pathfinder # Has beaten Minecraft. Gets special powers.
+# Has beaten the Wither. Gains power over life and death.
+name: pathfinder # necromancer
 parents:
 - explorer
 prefixes:
@@ -7,7 +8,7 @@ permissions:
 - weight.105
 - essentials.kits.pathfinder
 
-# Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no further ranks exist, and no new abilities are granted until the final increment.
+# Has reached the final rank!  From here on out, additional bonuses are gained every 200 PL, but no further ranks exist and no new abilities are granted.
 - rankup.auto
 
 # Limit increases
@@ -29,8 +30,11 @@ permissions:
 
 # Superpowers
 - essentials.back.ondeath # Instantly return to the place of your previous death, so long as you have not teleported since then.
-- essentials.ext    # Puts you out if you're on fire.  Nice.
-- essentials.feed   # Fills your hunger bar.  No idea what it does to satiation.
-- essentials.heal   # Also removes potion effects.  Hopefully only negative?  Haven't tested.
+- essentials.keepxp   # Keep your in-game exp on death
+- essentials.keepinv  # Keep your inventory on death
+- essentials.ext      # Puts you out if you're on fire.  Nice.
+- essentials.feed     # Fills your hunger bar.  No idea what it does to satiation.
+- essentials.heal     # Also removes potion effects.  Hopefully only negative?  Haven't tested.
+- essentials.rest     # Counts as having slept, and therefore resets the phantom counter.
 # - essentials.repair # Can be used to repair one held item. #FIXME: Conflicts with `repair` from mcMMO.
-- essentials.rest   # Counts as having slept, and therefore resets the phantom counter.
+- essentials.itemname # Can rename items without exp

@@ -1,4 +1,5 @@
-name: wanderer # Starting rank.  Basically a vanilla experience.  Removes everything that gets added-back in higher ranks.
+# Starting rank.  Intended to be a more-or-less just a simple, vanilla experience.  Removes everything that gets added-back in higher ranks.
+name: wanderer # vaniller
 parents:
 - player
 prefixes:
@@ -70,6 +71,7 @@ permissions:
 - essentials.getpos: {value: false}
 - essentials.recipe: {value: false}
 - essentials.exp: {value: false}
+- essentials.disposal: {value: false}
 
 # Command-crafting comes with higher ranks
 - essentials.anvil: {value: false}
@@ -79,6 +81,7 @@ permissions:
 - essentials.smithingtable: {value: false}
 - essentials.stonecutter: {value: false}
 - essentials.workbench: {value: false}
+- essentials.condense: {value: false}
 
 # Sign powers come with higher ranks
 - craftbook.mech.pay: {value: false}

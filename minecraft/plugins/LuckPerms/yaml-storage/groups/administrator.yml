@@ -15,6 +15,7 @@ permissions:
 - bukkit.command.version
 - essentials.seen.uuid
 - essentials.whois.ip
+- essentials.gc
 - shopchest.notification.update
 
 # Configuration
@@ -47,6 +48,7 @@ permissions:
 - bukkit.broadcast.admin
 - essentials.mail.sendtempall
 - towny.chat.admin
+- essentials.helpop.receive
 
 # Offline actions (these ignore exemptions)
 #-------------------------------------------------------------------------------
