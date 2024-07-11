@@ -77,7 +77,7 @@ third_party:
   townyprovinces:
   
     # When false players will not be able to make camps in Wasteland provinces.
-    allow_camps_in_wasteland: 'false'
+    allow_camps_in_wasteland: 'true'
   
     # When false players will not be able to make camps in Ocean provinces.
     allow_camps_in_oceans: 'false'
