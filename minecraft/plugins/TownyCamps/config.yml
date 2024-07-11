@@ -1,7 +1,7 @@
   
 version:
   # This is the current version.  Please do not edit.
-  version: 0.0.48
+  version: 0.0.49
 # The language file you wish to use.
 # Available: en-US.yml, zh-CN.yml
 # You can add your own localization using the correct locale filename and placing
@@ -74,6 +74,16 @@ third_party:
   
     # When set to true, and CombatLogX is enabled on the server, players will be unable to create camps while in combat.
     enable_combatlogx_support: 'false'
+  townyprovinces:
+  
+    # When false players will not be able to make camps in Wasteland provinces.
+    allow_camps_in_wasteland: 'false'
+  
+    # When false players will not be able to make camps in Ocean provinces.
+    allow_camps_in_oceans: 'false'
+  
+    # When false players will not be able to make camps in provinces that have been claimed already.
+    allow_camps_in_claimed_provinces: 'false'
   papi:
   
     # The format for the %townycamps_has_camp% placeholder.

@@ -32,7 +32,7 @@ language:
   flightDeactivatedTimeMsg: 'You ran out of flight time. '
   
   # Message shown when a player lacks a permission node.
-  noPermission: '§6Flight requires the §4Explorer§6 rank. §r'
+  noPermission: §6Flight requires the §4Explorer§6 rank. §r
   
   # Message attached to noPermission when options.show_Permission_After_No_Permission_Message is true
   missingNode: §6, missing §f%s§r
