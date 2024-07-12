@@ -8,8 +8,10 @@ Not personal data, but should delete:
 * `minecraft/plugins/BeaconPlus2/`: Is an old version of BeaconPlus.
 
 Files needing remediation:
-* `minecraft/plugins/dynmap/ids-by-ip.txt`: Is a relation of usernames to IPs.  We need to disable this file, or at least reset it daily.
 * `minecraft/plugins/Essentials/usermap.bin`: Contains a bunch of usernames.  Is a binary format, so I can't modify it.  We need to find a way to disable the use of this file if we can, because we physically cannot make it GDPR-compliant.
+
+Files containing personal information that are wiped on server start (so, at least once per day):
+* `minecraft/plugins/dynmap/ids-by-ip.txt`: Is a relation of usernames to IPs.  We need to disable this file, or at least reset it daily.
 
 Files containing personal data that are automatically deleted every 7 days by the `purge-old.bash` script:
 * `minecraft/logs/*`: Can contain IPs, usernames, UUIDs, chat messages, and more.
@@ -30,7 +32,7 @@ Files that contain personal data long-term:
 * `minecraft/plugins/LuckPerms/yaml-storage/users`: Is a directory containing all users who have ever connected to the server.  The files contain, among other things, the user's username.
 * `minecraft/plugins/mcMMO/flatfile/mcmmo.users`: Contains usernames of all users who have ever eaned mcMMO experience.
 * `minecraft/plugins/ShopChest/shops.db`: Contains a mapping of usernames to UUIDs.
-* `minecraft/plugins/Towny/data/residents`: Contains a mapping of usernames to UUIDs, a list of their friends, and optionally user-defined "about" message.
+* `minecraft/plugins/Towny/data/residents`: Contains a mapping of usernames to UUIDs, a list of their friends, and optionally a user-defined "about" message.
 * `minecraft/plugins/Towny/data/towns/**`: Contains usernames, a configurable MotD, a configurable culture name, and some user UUIDs.
 * `minecraft/permissions.yml`: We don't use this file, but it can contain usernames.
 * `minecraft/usercache.json`: Contains a mapping of usernames to UUIDs.

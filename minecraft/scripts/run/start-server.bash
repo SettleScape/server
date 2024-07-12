@@ -19,10 +19,11 @@ set -e
 source '../var/env.sh'
 cd "$ENV_SERVER_ROOT"
 
-## Workarounds
+## File deletions
 set +e
-rm 'plugins/EisenRadar/lang/en_us.lang'
-rm 'plugins/EisenRadar/lang/de_de.lang'
+rm -f 'plugins/EisenRadar/lang/en_us.lang' ## Workaround
+rm -f 'plugins/EisenRadar/lang/de_de.lang' ## Workaround
+rm -f 'plugins/dynmap/ids-by-ip.txt' ## Needs to be wiped on server restart for privacy reasons.
 set -e
 
 ## Figure out which Java to use.
