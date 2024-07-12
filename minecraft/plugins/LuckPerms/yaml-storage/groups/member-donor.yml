@@ -1,0 +1,9 @@
+## This is a special cosmetic rank for those who donate above the membership cost
+name: member-donor
+parents:
+- donor
+- member
+suffixes:
+- '&c(member-donor)&r': {}
+permissions:
+- weight.213
