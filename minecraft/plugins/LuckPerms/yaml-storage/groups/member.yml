@@ -6,7 +6,7 @@ parents:
 suffixes:
 - '&c(member)&r': {}
 permissions:
-- weight.211
+- weight.212
 
 # Functional perks
 - essentials.afk.kickexempt ## It feels wrong to kick players who are helping pay for the server.  We kick because loading chunks costs system resources which costs money.  Because members are paying for the chunks they are loading, there is no reason to kick them.
