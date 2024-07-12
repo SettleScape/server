@@ -4,6 +4,8 @@ This document records files' relative paths and what kinds of personal data is s
 
 Current roadblocks to GDPR compliance:
 * I currently have no way to edit SQLite databases while the server is running, nor indeed on the server itself -- I have to move the data to my personal computer, read or edit it there by hand, and re-upload to the server, causing significant downtime *and* the moving of data to a new location.
+* There are some compressed binary files that I cannot read or edit that I would *guess* at least contain UUIDs.
+* I cannot audit the world and somehow find every sign and custom book and named/lored item in the game.  It's just not humanly possible.
 
 Not personal data, but should delete:
 * `minecraft/plugins/AuctionHouse/auctions.bak`: Is from an old version of AuctionHouse.
