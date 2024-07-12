@@ -8,6 +8,11 @@ suffixes:
 permissions:
 - weight.211
 
+# Functional perks
+- essentials.afk.kickexempt ## It feels wrong to kick players who are helping pay for the server.  We kick because loading chunks costs system resources which costs money.  Because members are paying for the chunks they are loading, there is no reason to kick them.
+# - townyflight.command.tfly ## Disabled until Towny makes it so flight auto-disables over PvP plots.
+# - townyflight.alltowns ## Disabled until Towny makes it so flight auto-disables over PvP plots.
+
 # Item cosmetics
 - essentials.hat
 - essentials.itemlore
@@ -39,3 +44,25 @@ permissions:
 # Priority support
 # The ability to help decide on the server's future via polls and discussions
 # Increased likelihood that the server will persist through the ages
+
+## Stuff from Traveller (inventory clearing, private messaging, teleportation)
+- essentials.clearinventory
+- essentials.disposal
+- essentials.msg
+- essentials.mail.send
+- essentials.tpa
+- essentials.tpaccept
+- essentials.tpacancel
+- essentials.tpahere
+- essentials.warp
+- essentials.warp.list
+- essentials.sethome
+
+## Stuff from Settler (ability to place lava, can message multiple people at once)
+- essentials.protect.exemptbreak
+- essentials.protect.exemptplacement
+- essentials.protect.exemptusage
+- essentials.msg.multiple
+
+## Stuff from Pathfinder (ability to skip phantoms)
+- essentials.rest

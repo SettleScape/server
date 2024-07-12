@@ -82,6 +82,7 @@ permissions:
 - essentials.kick.notify
 - essentials.kick.exempt
 - essentials.afk.kickexempt
+- essentials.kickall.exempt
 
 - essentials.tempban
 - essentials.tempbanip

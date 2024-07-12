@@ -7,20 +7,21 @@ suffixes:
 permissions:
 - weight.211
 
-# Access to URL formatting (since they're unlikely to be a spammer if they've paid)
+# Traveller: Access to easily-abused chat features (since they're less-likely to be a spammer if they've paid)
 - essentials.msg.url
 - essentials.chat.url
+- essentials.nick
 
-# Standard text formatting (Traveller)
+# Traveller: Standard text formatting
 - essentials.msg.format
 - essentials.chat.format
 
-# Sign formatting (Settler)
+# Settler: Sign formatting
 - essentials.editsign.color
 - essentials.sign.color
 - essentials.signs.format
 
-# Text magic (Explorer)
+# Explorer: Text magic
 - essentials.msg.magic
 - essentials.signs.magic
 - essentials.chat.magic
