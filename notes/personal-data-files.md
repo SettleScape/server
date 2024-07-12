@@ -2,6 +2,9 @@ Files that contain personal data
 --------------------------------
 This document records files' relative paths and what kinds of personal data is stored in them.
 
+Current roadblocks to GDPR compliance:
+* I currently have no way to edit SQLite databases while the server is running, nor indeed on the server itself -- I have to move the data to my personal computer, read or edit it there by hand, and re-upload to the server, causing significant downtime *and* the moving of data to a new location.
+
 Not personal data, but should delete:
 * `minecraft/plugins/AuctionHouse/auctions.bak`: Is from an old version of AuctionHouse.
 * `minecraft/plugins/AuctionHouse/auctions.old`: Is from an old version of AuctionHouse.
@@ -81,6 +84,3 @@ Files that contain block data (and therefore might contain signs, books, named/l
 Files that contain personal data which is necessary for the continued operation of the site and so cannot be deleted but which can be requested:
 * `minecraft/banned-ips.json`: A list of banned IP addresses.  The most a user can request is it their IP address is in it, and the only way they can request that is by giving us their IP address.
 * `minecraft/banned-players.json`: Contains a list of usernames, UUIDs, and ban reasons.
-
-Current roadblocks to GDPR compliance:
-* I currently have no way to edit SQLite databases while the server is running, nor indeed on the server itself -- I have to move the data to my personal computer, edit it there by hand, and re-upload to the server, causing significant downtime *and* the moving of data to a new location.
