@@ -1,4 +1,6 @@
 name: donation ## 210s
 groups:
 - player
+- donor
 - member
+- member-donor
