@@ -1,4 +1,4 @@
-name: donation ## 210s
+name: subscription ## 210s
 groups:
 - player
 - donor
