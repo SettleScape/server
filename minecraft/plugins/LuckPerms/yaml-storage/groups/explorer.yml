@@ -31,6 +31,6 @@ permissions:
 - beaconplus.see.particle
 
 # Flight (you have Elytra at this point anyway)
-- townyflight.command.tfly
-- townyflight.alltowns
+# - townyflight.command.tfly
+# - townyflight.alltowns
 # - essentials.fly.safelogin

@@ -10,8 +10,7 @@ permissions:
 
 # Functional perks
 - essentials.afk.kickexempt ## It feels wrong to kick players who are helping pay for the server.  We kick because loading chunks costs system resources which costs money.  Because members are paying for the chunks they are loading, there is no reason to kick them.
-# - townyflight.command.tfly ## Disabled until Towny makes it so flight auto-disables over PvP plots.
-# - townyflight.alltowns ## Disabled until Towny makes it so flight auto-disables over PvP plots.
+- townyflight.command.tfly ## PvP is disabled during flight and flight does not provide any significant advantage for mcMMO or Jobs (both of which have leaderboards) and, in actuality, for mcMMO, flight is actually a debuff for the Acrobatics skill, specifically, since it prevents gaining experience in that skill.  And the theoretical exploit of flying up, disabling flight, and falling... repeatedly... doesn't work because mcMMO has quick good abuse prevention mechanisms.
 
 # Item cosmetics
 - essentials.hat
