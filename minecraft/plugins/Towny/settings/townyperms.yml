@@ -92,33 +92,56 @@ towns:
   
   # Mayors get these permissions in addition to the default set.
   mayor:
+  ## Inherited from Comayor
+  - towny.command.nation.join
+  - towny.command.nation.leave
+  - towny.command.nation.new
+  - towny.claimed.owntown.*
+  - towny.claimed.townowned.*
+  - towny.command.town.*
+  ## Inherited from Assistant
   - towny.command.nation.join
   - towny.command.nation.leave
   - towny.command.nation.new
   - towny.command.town.*
-  - towny.command.towny.top
   - towny.claimed.owntown.*
-  - towny.claimed.townowned.*
   - towny.command.plot.*
+  - towny.command.town.buy
+  - towny.command.town.claim.town
+  - towny.command.town.deposit
+  - towny.command.town.invite.add
+  - towny.command.town.kick
+  - towny.command.town.outlaw
+  - towny.command.town.toggle.*
+  - towny.command.town.unclaim
+  - towny.command.town.withdraw
   - towny.outlaw.jailer
+  ## Inherited from Sheriff
+  - towny.command.town.jail
+  - towny.command.town.jail.list
+  - towny.command.town.outlaw
+  - towny.command.town.toggle.jail
+  - towny.command.town.unjail
+  - towny.outlaw.jailer
+  ## Inherited from Builder
+  - towny.claimed.townowned.*
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
   ranks:
     comayor:
-    - towny.command.town.rank.heir
+    ## Inherited from Major
+    - towny.command.nation.join
+    - towny.command.nation.leave
+    - towny.command.nation.new
+    - towny.claimed.owntown.*
+    - towny.claimed.townowned.*
+    - towny.command.town.*
+    ## Inherited from Assistant
     - towny.command.nation.join
     - towny.command.nation.leave
     - towny.command.nation.new
     - towny.command.town.*
-    - towny.command.towny.top
-    heir:
-    - towny.command.town.rank.assistant
-  
-    # assistants are able to grant VIP and helper rank.
-    assistant:
-    - towny.command.town.rank.sheriff
-    - towny.command.town.rank.builder
     - towny.claimed.owntown.*
     - towny.command.plot.*
     - towny.command.town.buy
@@ -131,6 +154,66 @@ towns:
     - towny.command.town.unclaim
     - towny.command.town.withdraw
     - towny.outlaw.jailer
+    ## Inherited from Sheriff
+    - towny.command.town.jail
+    - towny.command.town.jail.list
+    - towny.command.town.outlaw
+    - towny.command.town.toggle.jail
+    - towny.command.town.unjail
+    - towny.outlaw.jailer
+    ## Inherited from Builder
+    - towny.claimed.townowned.*
+    heir:
+    ## Inherited from Assistant
+    - towny.command.nation.join
+    - towny.command.nation.leave
+    - towny.command.nation.new
+    - towny.command.town.*
+    - towny.claimed.owntown.*
+    - towny.command.plot.*
+    - towny.command.town.buy
+    - towny.command.town.claim.town
+    - towny.command.town.deposit
+    - towny.command.town.invite.add
+    - towny.command.town.kick
+    - towny.command.town.outlaw
+    - towny.command.town.toggle.*
+    - towny.command.town.unclaim
+    - towny.command.town.withdraw
+    - towny.outlaw.jailer
+    ## Inherited from Sheriff
+    - towny.command.town.jail
+    - towny.command.town.jail.list
+    - towny.command.town.outlaw
+    - towny.command.town.toggle.jail
+    - towny.command.town.unjail
+    - towny.outlaw.jailer
+    ## Inherited from Builder
+    - towny.claimed.townowned.*
+  
+    # assistants are able to grant VIP and helper rank.
+    assistant:
+    - towny.claimed.owntown.*
+    - towny.command.plot.*
+    - towny.command.town.buy
+    - towny.command.town.claim.town
+    - towny.command.town.deposit
+    - towny.command.town.invite.add
+    - towny.command.town.kick
+    - towny.command.town.outlaw
+    - towny.command.town.toggle.*
+    - towny.command.town.unclaim
+    - towny.command.town.withdraw
+    - towny.outlaw.jailer
+    ## Inherited from Sheriff
+    - towny.command.town.jail
+    - towny.command.town.jail.list
+    - towny.command.town.outlaw
+    - towny.command.town.toggle.jail
+    - towny.command.town.unjail
+    - towny.outlaw.jailer
+    ## Inherited from Builder
+    - towny.claimed.townowned.*
   
     # Sheriff rank is able to jail other town members.
     sheriff:
