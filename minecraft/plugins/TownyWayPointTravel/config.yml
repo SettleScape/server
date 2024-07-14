@@ -12,7 +12,7 @@ prevent:
   spawning_allowed_to_nation_capital: 'false'
   
   # When true, other Bukkit plugins that use Bukkit TeleportEvents will also have their spawns cancelled, if the destination is a town which the player has not discovered.
-  teleports_from_3rd_party_plugins: 'true'
+  teleports_from_3rd_party_plugins: 'false'
   
   # When true, a player has to have visited a town to be able to join a town.
   joining_unvisited_towns: 'true'
