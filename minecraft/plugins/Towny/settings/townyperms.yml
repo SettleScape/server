@@ -118,7 +118,7 @@ towns:
     # assistants are able to grant VIP and helper rank.
     assistant:
     - towny.command.town.rank.sheriff
-    - towny.command.town.rank.builter
+    - towny.command.town.rank.builder
     - towny.claimed.owntown.*
     - towny.command.plot.*
     - towny.command.town.buy
