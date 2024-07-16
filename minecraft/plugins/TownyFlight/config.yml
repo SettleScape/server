@@ -87,7 +87,7 @@ options:
   disable_During_Wartime: 'true'
   
   # If set to false, TownyFlight will not prevent combat of flying people.
-  disable_Combat_Prevention: 'false'
+  disable_Combat_Prevention: 'true'
   
   # The list of areas which allow tempflight, allowed words: owntown, nationtowns, alliedtowns, alltowns, trustedtowns, wilderness
   tempflight_allowed_areas: owntown,nationtowns,trustedtowns
