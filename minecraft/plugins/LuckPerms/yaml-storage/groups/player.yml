@@ -13,7 +13,7 @@ permissions:
 - mcmmo.commands.mctop ## This one is kinda essential, so that means that mcMMO skill levels are legally competitive.
 - jobs.command.gtob ## If `/mctop` is allowed, then by extension this one should be too, meaning that job skill levels are also legally competitive.
 
-# Info about the server
+# Helptext
 #-------------------------------------------------------------------------------
 - essentials.help
 - essentials.list # See who's online.  Like a CLI version of the `Tab` menu.
@@ -25,6 +25,11 @@ permissions:
 - bukkit.command.tps
 - essentials.time
 # - bukkit.command.time
+
+# Authentication
+#-------------------------------------------------------------------------------
+essentials.link
+essentials.unlink
 
 # Info about the player
 #-------------------------------------------------------------------------------
