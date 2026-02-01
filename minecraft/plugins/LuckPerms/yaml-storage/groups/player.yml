@@ -28,8 +28,8 @@ permissions:
 
 # Authentication
 #-------------------------------------------------------------------------------
-essentials.link
-essentials.unlink
+- essentials.link
+- essentials.unlink
 
 # Info about the player
 #-------------------------------------------------------------------------------
