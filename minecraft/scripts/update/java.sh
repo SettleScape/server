@@ -9,22 +9,16 @@ CWD=$(pwd)
 cd "$ENV_SERVER_ROOT"
 rm -rf "$ENV_JAVA_DIR"
 mkdir -p "$ENV_JAVA_DIR"
-case "$ENV_JAVA_VERSION" in
-
-    17)
-        OUT="java${ENV_JAVA_VERSION}.tar.gz"
-        # curl "https://download.oracle.com/java/${ENV_JAVA_VERSION}/latest/jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT"
-        curl "https://download.oracle.com/graalvm/${ENV_JAVA_VERSION}/latest/graalvm-jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT"
-        tar -xf "$OUT" -C "$ENV_JAVA_DIR"
-        mv "$ENV_JAVA_DIR"/*/* "$ENV_JAVA_DIR"/
-        rm "$OUT"
-    ;;
-
-    *)
-        echo "Automatic updates unsupported for Java v${ENV_JAVA_VERSION}."
-    ;;
-
+OUT="java${ENV_JAVA_VERSION}.tar.gz"
+UPSTREAM='coretto'
+case "$UPSTREAM" in
+    'coretto') curl "https://corretto.aws/downloads/latest/amazon-corretto-${ENV_JAVA_VERSION}-x64-linux-jdk.tar.gz" > "$OUT" ;;
+    'graal')   curl "https://download.oracle.com/graalvm/${ENV_JAVA_VERSION}/latest/graalvm-jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT" ;;
+    'oracle')  curl "https://download.oracle.com/java/${ENV_JAVA_VERSION}/latest/jdk-${ENV_JAVA_VERSION}_linux-x64_bin.tar.gz" > "$OUT" ;;
 esac
+tar -xf "$OUT" -C "$ENV_JAVA_DIR"
+mv "$ENV_JAVA_DIR"/*/* "$ENV_JAVA_DIR"/
+rm "$OUT"
 
 ## Cleanup
 cd "$CWD"
