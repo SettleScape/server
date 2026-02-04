@@ -14,6 +14,7 @@ CMILib                    1.5.0.6     2024-07-08  2024-07-10              Yes   
 CommandLog                1.2         2016-07-09  ----------  Dead        ????        https://spigotmc.org/resources/21176/updates
 CoreProtect               22.4        2024-05-14  2024-07-10              No          https://spigotmc.org/resources/8631/updates
 CraftBook                 3.10.5      2021-12-01  ----------  1.18.X      Yes         https://dev.bukkit.org/projects/craftbook/files
+Distant Horizons Support  ----------  ----------  2026-02-03  1.19.2                  https://gitlab.com/distant-horizons-team/distant-horizons-server-plugin/-/releases
 Dynmap                    3.7b6       2024-06-18  2024-07-10              Badly       https://dev.bukkit.org/projects/dynmap/files
 Dynmap-Towny              1.1.2b      2024-06-07  2024-07-10              Badly       https://github.com/TownyAdvanced/Dynmap-Towny/releases
 Dynmap-WorldGuard         CUSTOM      2022-02-23  TODO                    ????        https://github.com/webbukkit/Dynmap-WorldGuard
