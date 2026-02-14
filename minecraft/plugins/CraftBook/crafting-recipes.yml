@@ -181,6 +181,12 @@ crafting-recipes:
   #     'nether_wart_block': 1
   #   results:
   #     'nether_wart': 9
+  ice: # In-line with other icey compression recipes.
+    type: shapeless
+    ingredients:
+      'snow_block': 9
+    results:
+      'ice': 1
 
   extract_prismarine:
     type: shapeless
