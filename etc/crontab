@@ -4,7 +4,7 @@ MAILTO=minecraft
 ## IMPORTANT!:  DO NOT RUN ANY FILE IN `/srv/minecraft/settlescape` AS ROOT!  THESE FILES ARE PULLED AUTOMATICALLY FROM THE INTERNET!  HUGE SECURITY RISK!
 
 ## 3AM
-0 3 * * * root /etc/scripts/update-system.sh
+# 0 3 * * * root /etc/scripts/update-system.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/update/minecraft.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/beacon-plus.sh
 0 3 * * * minecraft /srv/minecraft/settlescape/minecraft/scripts/upkeep/plugins/coreprotect.sh
