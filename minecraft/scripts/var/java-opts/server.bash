@@ -77,6 +77,7 @@ declare -a SERVER_JAVA_OPTS=(
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'
     '-Daikars.new.flags=true'
+    "-Xlog:gc*,gc+heap=info:file=./gc-logs/$(date +'%Y-%m-%d_%H-%M-%S').log:time,uptime,level,tags"
 
     ## Security
     '-Dlog4j2.formatMsgNoLookups=true'
