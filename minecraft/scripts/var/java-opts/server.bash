@@ -41,7 +41,7 @@ declare -a SERVER_JAVA_OPTS=(
     ## GC settings
     '-XX:+DisableExplicitGC'
     # '-XX:GCTimeRatio=50' ## This fights `MaxGCPauseMillis`. It is better to set Millis and let Ratio be dynamic.
-    '-XX:MaxGCPauseMillis=50' ## I've tuned this to be the same as 1TPS. High values can cause obvious stutter for players, so it's best to tune low. (Too low is obviously not great either, of course.) An occasional 1TPS of stutter is unlikely to be seriously noticed by anyone, and so I would consider it to be a reasonable value. PaperMC, however, goes with a more-conservative 4TPS.
+    '-XX:MaxGCPauseMillis=100' ## This is a target, not a guarantee. High values are the best for performance, but they also cause worse stuttering during collection. PaperMC suggests 200 (which they got from Aikar), but that is a noticeable amount of stutter; 100 is less-likely to be noticed.
     '-XX:MaxTenuringThreshold=1'
     '-XX:SurvivorRatio=33'
     '-XX:TargetSurvivorRatio=92'
