@@ -61,17 +61,6 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:G1ConcRefinementServiceIntervalMillis=150'
     '-XX:G1ConcRSHotCardLimit=16'
 
-    ## Code optimizations
-    # '-XX:-DontCompileHugeMethods'
-    # '-XX:MaxNodeLimit=12000'
-    # '-XX:NodeLimitFudgeFactor=4000'
-    # '-XX:NmethodSweepActivity=1'
-    # '-XX:ReservedCodeCacheSize=192M'
-    # '-XX:ReservedCodeCacheSize=400M'
-    # '-XX:NonNMethodCodeHeapSize=12M'
-    # '-XX:ProfiledCodeHeapSize=194M'
-    # '-XX:NonProfiledCodeHeapSize=194M'
-
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'
     '-Daikars.new.flags=true'
