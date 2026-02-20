@@ -5,3 +5,9 @@
 #TODO: Create minecraft user/group/home.
 
 #TODO: Clone SettleScape repo, and copy files to `/etc/`.
+
+## Non-TODOs:
+. ./oomd.sh
+. ./swap.sh
+. ./systemd.sh
+. ./thp.sh
