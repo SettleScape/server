@@ -50,6 +50,7 @@ export JAVA_HOME JRE_HOME="$JAVA_HOME"
 ## Get Java opts
 source "$ENV_SERVER_ROOT/scripts/var/java-opts/server.bash"
 # echo "$JAVA_OPTS" && exit 1
+mkdir -p ./gc-logs
 
 ## Start the server
 declare -a CMD=(

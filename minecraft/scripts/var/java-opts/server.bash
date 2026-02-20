@@ -50,7 +50,7 @@ declare -a SERVER_JAVA_OPTS=(
     # '-XX:G1HeapRegionSize=8M' ## Anything >= 50% of this is considered "humongous" and handled suboptimally. Apparently, you want this to be determined automatically (`round(heap / 2048)`) unless the automatic answer is above 8M. Minecraft 1.21.11 ships 32M, which is apparently frankly insane.
 
     ## Reporting
-    "-Xlog:gc,gc+heap=info:file=./gc-logs/%p_%t.log:time,uptime,level,tags:filecount=4,filesize=5M"
+    "-Xlog:gc,gc+heap=info:file=./gc-logs/%p_%t.log:time,uptime,level,tags:filecount=4,filesize=5M" #NOTE: This `gc-logs` directory is referenced by `purge-old.bash` and `start-server.bash`.
     # "-Xlog:gc*,gc+heap=info,gc+age=trace,gc+humongous:file=./gc-logs/%p_%t.log:time,uptime,level,tags:filecount=4,filesize=20M" ## More-verbose option for testing, not for prod.
 
     ## Security
