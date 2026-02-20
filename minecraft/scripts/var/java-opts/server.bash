@@ -11,6 +11,9 @@
 ## BruceTheMoose's server options: (Superceded by PaperMC's guide)
 ## * https://github.com/Mukul1127/Minecraft-Performance-Flags-Benchmarks
 ##
+## JewishLewish's flags:
+## * https://github.com/JewishLewish/minecraft-aikar-flags-optimization/blob/main/README.md
+##
 ## Overview of transparent huge pages:
 ## * https://alexandrnikitin.github.io/blog/transparent-hugepages-measuring-the-performance-impact
 
@@ -24,7 +27,7 @@ declare -a SERVER_JAVA_OPTS=(
     '-Xmx1536M'
     '-XX:+AlwaysPreTouch'
     '-XX:+UseTransparentHugePages' ## Our `enabled` is set to `madvise` and our `defrag` is set to `defer+madvise`.
-    # '-XX:+UseLargePagesInMetaspace' ## Fails when I try it.
+    '-XX:+UseLargePages'
     '-XX:AllocatePrefetchStyle=3' #NOTE: Breaks ZGC and Shenandoah; fine for G1GC.
     '-XX:InitiatingHeapOccupancyPercent=15'
     '-XX:+UseStringDeduplication' ## Trades higher CPU use for reduced memory consumption. We're unfortunately low on both.
@@ -33,10 +36,14 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:+AlwaysActAsServerClassMachine'
     '-XX:+ParallelRefProcEnabled'
     '-XX:+PerfDisableSharedMem'
-    '-XX:+UseVectorCmov'
-    '-XX:+UseFastUnorderedTimeStamps'
-    '-XX:+UseCriticalJavaThreadPriority'
     # '-XX:ThreadPriorityPolicy=1' ## Requires `sudo` on Linux, ergo not worth.
+    '-XX:+UseAdaptiveSizePolicy'
+    '-XX:+UseCompressedOops'
+    '-XX:+UseCriticalJavaThreadPriority'
+    '-XX:+UseFastAccessorMethods'
+    '-XX:+UseFastUnorderedTimeStamps'
+    '-XX:+UseTLAB'
+    '-XX:+UseVectorCmov'
 
     ## GC settings
     '-XX:+DisableExplicitGC'
@@ -45,6 +52,8 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:MaxTenuringThreshold=1'
     '-XX:SurvivorRatio=33'
     '-XX:TargetSurvivorRatio=92'
+    '-XX:+UseParNewGC'
+    '-XX:+UseConcMarkSweepGC'
 
     ## G1GC settings
     '-XX:+UseG1GC'
@@ -68,6 +77,7 @@ declare -a SERVER_JAVA_OPTS=(
 
     ## Security
     '-Dlog4j2.formatMsgNoLookups=true'
+    '-Djdk.tls.ephemeralDHKeySize=2048'
 )
 
 ## Export to the environment
