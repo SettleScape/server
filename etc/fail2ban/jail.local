@@ -1,0 +1,14 @@
+[DEFAULT]
+banaction = firewallcmd-rich-rules
+backend = systemd
+maxretry = 5
+findtime = 10m
+bantime = 1h
+bantime.increment = true
+bantime.factor = 2
+bantime.max = 24h
+
+[sshd]
+enabled = true
+port = ssh
+#logpath = /var/log/secure

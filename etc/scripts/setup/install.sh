@@ -7,6 +7,8 @@
 #TODO: Clone SettleScape repo, and copy files to `/etc/`.
 
 ## Non-TODOs:
+. ./fail2ban.sh
+. ./logrotate.sh
 . ./oomd.sh
 . ./swap.sh
 . ./systemd.sh
