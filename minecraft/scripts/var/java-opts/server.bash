@@ -27,6 +27,7 @@ declare -a SERVER_JAVA_OPTS=(
     # '-XX:+UseLargePagesInMetaspace' ## Fails when I try it.
     '-XX:AllocatePrefetchStyle=3' #NOTE: Breaks ZGC and Shenandoah; fine for G1GC.
     '-XX:InitiatingHeapOccupancyPercent=15'
+    '-XX:+UseStringDeduplication' ## Trades higher CPU use for reduced memory consumption. We're unfortunately low on both.
 
     ## Misc
     '-XX:+AlwaysActAsServerClassMachine'
@@ -39,10 +40,10 @@ declare -a SERVER_JAVA_OPTS=(
 
     ## GC settings
     '-XX:+DisableExplicitGC'
-    '-XX:GCTimeRatio=50' ## Compromise value; needs tuning.
-    '-XX:MaxGCPauseMillis=200'
+    # '-XX:GCTimeRatio=50' ## This fights `MaxGCPauseMillis`. It is better to set Millis and let Ratio be dynamic.
+    '-XX:MaxGCPauseMillis=50' ## I've tuned this to be the same as 1TPS. High values can cause obvious stutter for players, so it's best to tune low. (Too low is obviously not great either, of course.) An occasional 1TPS of stutter is unlikely to be seriously noticed by anyone, and so I would consider it to be a reasonable value. PaperMC, however, goes with a more-conservative 4TPS.
     '-XX:MaxTenuringThreshold=1'
-    '-XX:SurvivorRatio=32'
+    '-XX:SurvivorRatio=33'
     '-XX:TargetSurvivorRatio=92'
 
     ## G1GC settings
@@ -61,16 +62,15 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:G1ConcRSHotCardLimit=16'
 
     ## Code optimizations
-    '-XX:-DontCompileHugeMethods'
-    '-XX:MaxNodeLimit=240000'
-    '-XX:NodeLimitFudgeFactor=8000'
-    '-XX:+UseStringDeduplication' ## Only when memory-constrained (which we absolutely are)
-    ## Skip the below when low on memory:
-    '-XX:NmethodSweepActivity=1'
-    '-XX:ReservedCodeCacheSize=400M'
-    '-XX:NonNMethodCodeHeapSize=12M'
-    '-XX:ProfiledCodeHeapSize=194M'
-    '-XX:NonProfiledCodeHeapSize=194M'
+    # '-XX:-DontCompileHugeMethods'
+    # '-XX:MaxNodeLimit=12000'
+    # '-XX:NodeLimitFudgeFactor=4000'
+    # '-XX:NmethodSweepActivity=1'
+    # '-XX:ReservedCodeCacheSize=192M'
+    # '-XX:ReservedCodeCacheSize=400M'
+    # '-XX:NonNMethodCodeHeapSize=12M'
+    # '-XX:ProfiledCodeHeapSize=194M'
+    # '-XX:NonProfiledCodeHeapSize=194M'
 
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'
