@@ -5,23 +5,23 @@ CWD="$(pwd)"
 
 ## Variables.
 declare -a DIRS=(
-    '.' 
-    'gc-logs' 
-    'logs' 
-    'crash-reports' 
-    'plugins/AuctionHouse/logs' 
-    'plugins/CommandLog' 
-    'plugins/mcMMO/backup' 
-    'plugins/Towny/backup' 
+    '.'
+    'gc-logs'
+    'logs'
+    'crash-reports'
+    'plugins/AuctionHouse/logs'
+    'plugins/CommandLog'
+    'plugins/mcMMO/backup'
+    'plugins/Towny/backup'
 )
 declare -a EXTS=(
-    '.log' 
-    '.log.gz' 
-    '.txt' 
-    '.log' 
-    '.txt' 
-    '.zip' 
-    '.tar.gz' 
+    '.log'
+    '.log.gz'
+    '.txt'
+    '.log'
+    '.txt'
+    '.zip'
+    '.tar.gz'
 )
 
 ## Do the thing.
