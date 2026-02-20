@@ -1,11 +1,14 @@
 #!/bin/bash
 ## Configures the JVM.
 
-## Aikar's server options:
+## PaperMC's suggested options:
+## * https://docs.papermc.io/paper/aikars-flags
+##
+## Aikar's server options: (Superceded by PaperMC's guide)
 ## * https://docs.papermc.io/paper/aikars-flags
 ## * https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft
 ##
-## BruceTheMoose's server options:
+## BruceTheMoose's server options: (Superceded by PaperMC's guide)
 ## * https://github.com/Mukul1127/Minecraft-Performance-Flags-Benchmarks
 ##
 ## Overview of transparent huge pages:
@@ -20,10 +23,10 @@ declare -a SERVER_JAVA_OPTS=(
     '-Xms1536M'
     '-Xmx1536M'
     '-XX:+AlwaysPreTouch'
-    '-XX:+UseTransparentHugePages' ## Likely to be beneficial because our `enabled` is set to `madvise` and our `defrag` is set to `defer+madvise`.
+    '-XX:+UseTransparentHugePages' ## Our `enabled` is set to `madvise` and our `defrag` is set to `defer+madvise`.
     # '-XX:+UseLargePagesInMetaspace' ## Fails when I try it.
     '-XX:AllocatePrefetchStyle=3' #NOTE: Breaks ZGC and Shenandoah; fine for G1GC.
-    '-XX:InitiatingHeapOccupancyPercent=10'
+    '-XX:InitiatingHeapOccupancyPercent=15'
 
     ## Misc
     '-XX:+AlwaysActAsServerClassMachine'
@@ -37,21 +40,21 @@ declare -a SERVER_JAVA_OPTS=(
     ## GC settings
     '-XX:+DisableExplicitGC'
     '-XX:GCTimeRatio=50' ## Compromise value; needs tuning.
-    '-XX:MaxGCPauseMillis=130'
+    '-XX:MaxGCPauseMillis=200'
     '-XX:MaxTenuringThreshold=1'
     '-XX:SurvivorRatio=32'
     '-XX:TargetSurvivorRatio=92'
 
     ## G1GC settings
     '-XX:+UseG1GC'
-    '-XX:G1HeapRegionSize=16M'
-    '-XX:G1HeapWastePercent=18'
-    '-XX:G1MixedGCCountTarget=3'
+    '-XX:G1HeapRegionSize=8M'
+    '-XX:G1HeapWastePercent=5'
+    '-XX:G1MixedGCCountTarget=4'
     '-XX:G1MixedGCLiveThresholdPercent=90'
     '-XX:G1ReservePercent=20'
-    '-XX:G1NewSizePercent=28'
-    '-XX:G1MaxNewSizePercent=38'
-    '-XX:G1RSetUpdatingPauseTimePercent=0'
+    '-XX:G1NewSizePercent=30'
+    '-XX:G1MaxNewSizePercent=40'
+    '-XX:G1RSetUpdatingPauseTimePercent=5'
     '-XX:G1SATBBufferEnqueueingThresholdPercent=30'
     '-XX:G1ConcMarkStepDurationMillis=5'
     '-XX:G1ConcRefinementServiceIntervalMillis=150'
@@ -72,7 +75,7 @@ declare -a SERVER_JAVA_OPTS=(
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'
     '-Daikars.new.flags=true'
-    "-Xlog:gc*,gc+heap=info:file=./gc-logs/$(date +'%Y-%m-%d_%H-%M-%S').log:time,uptime,level,tags"
+    "-Xlog:gc*,gc+heap=info:file=./gc-logs/$(date +'%Y-%m-%d_%H-%M-%S').log:time,uptime,level,tags:filecount=1,filesize=1M"
 
     ## Security
     '-Dlog4j2.formatMsgNoLookups=true'
