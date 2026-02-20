@@ -20,7 +20,7 @@ declare -a SERVER_JAVA_OPTS=(
     '-Xms1536M'
     '-Xmx1536M'
     '-XX:+AlwaysPreTouch'
-    '-XX:+UseTransparentHugePages'
+    '-XX:+UseTransparentHugePages' ## Likely to be beneficial because our `enabled` is set to `madvise` and our `defrag` is set to `defer+madvise`.
     # '-XX:+UseLargePagesInMetaspace' ## Fails when I try it.
     '-XX:AllocatePrefetchStyle=3' #NOTE: Breaks ZGC and Shenandoah; fine for G1GC.
     '-XX:InitiatingHeapOccupancyPercent=10'
@@ -32,11 +32,11 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:+UseVectorCmov'
     '-XX:+UseFastUnorderedTimeStamps'
     '-XX:+UseCriticalJavaThreadPriority'
-    # '-XX:ThreadPriorityPolicy=1' ## Requires `sudo` on Linux.
+    # '-XX:ThreadPriorityPolicy=1' ## Requires `sudo` on Linux, ergo not worth.
 
     ## GC settings
     '-XX:+DisableExplicitGC'
-    '-XX:GCTimeRatio=50' ## Compromise value;  needs tuning.
+    '-XX:GCTimeRatio=50' ## Compromise value; needs tuning.
     '-XX:MaxGCPauseMillis=130'
     '-XX:MaxTenuringThreshold=1'
     '-XX:SurvivorRatio=32'
@@ -61,7 +61,7 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:-DontCompileHugeMethods'
     '-XX:MaxNodeLimit=240000'
     '-XX:NodeLimitFudgeFactor=8000'
-    '-XX:+UseStringDeduplication' ## Only when memory-constrained
+    '-XX:+UseStringDeduplication' ## Only when memory-constrained (which we absolutely are)
     ## Skip the below when low on memory:
     '-XX:NmethodSweepActivity=1'
     '-XX:ReservedCodeCacheSize=400M'
