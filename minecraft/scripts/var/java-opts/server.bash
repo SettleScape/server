@@ -69,11 +69,6 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:ProfiledCodeHeapSize=194M'
     '-XX:NonProfiledCodeHeapSize=194M'
 
-    ## GraalVM (irrelevant, as we aren't using GraalVM)
-    '-XX:+EagerJVMCI'
-    '-Dgraal.LoopRotation=true'
-    '-Dgraal.TuneInlinerExploration=1'
-
     ## Reporting
     '-Dusing.aikars.flags=https://mcflags.emc.gs'
     '-Daikars.new.flags=true'
