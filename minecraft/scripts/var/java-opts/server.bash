@@ -69,7 +69,7 @@ declare -a SERVER_JAVA_OPTS=(
     '-XX:ProfiledCodeHeapSize=194M'
     '-XX:NonProfiledCodeHeapSize=194M'
 
-    ## GraalVM
+    ## GraalVM (irrelevant, as we aren't using GraalVM)
     '-XX:+EagerJVMCI'
     '-Dgraal.LoopRotation=true'
     '-Dgraal.TuneInlinerExploration=1'
